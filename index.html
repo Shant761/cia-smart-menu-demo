@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f7f2e9" />
+  <title>CIA Smart Menu</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="hero">
+      <div class="topbar">
+        <div class="brand-mark">CIA</div>
+        <div class="language-switcher" aria-label="Language">
+          <button class="lang-btn active" data-lang="ru">Рус</button>
+          <button class="lang-btn" data-lang="hy">Հայ</button>
+          <button class="lang-btn" data-lang="en">Eng</button>
+        </div>
+      </div>
+
+      <div class="restaurant-copy">
+        <span class="eyebrow">SMART QR MENU</span>
+        <h1 id="restaurantName">Garden Table</h1>
+        <p id="restaurantMeta">Европейская кухня • Ереван</p>
+      </div>
+
+      <label class="search-box">
+        <span>⌕</span>
+        <input id="searchInput" type="search" placeholder="Поиск блюд" autocomplete="off" />
+      </label>
+
+      <button id="personalizeBtn" class="personalize-card" type="button">
+        <div>
+          <strong id="personalizeTitle">Настроить меню под себя</strong>
+          <span id="personalizeSubtitle">Исключите продукты и аллергены</span>
+        </div>
+        <span class="arrow">→</span>
+      </button>
+
+      <div id="activeFilterBar" class="active-filter-bar hidden">
+        <span id="activeFilterText"></span>
+        <button id="editFiltersBtn" type="button">Изменить</button>
+      </div>
+    </header>
+
+    <main>
+      <nav id="categoryNav" class="category-nav" aria-label="Menu categories"></nav>
+
+      <section class="menu-heading">
+        <div>
+          <span class="eyebrow" id="menuEyebrow">МЕНЮ</span>
+          <h2 id="menuTitle">Все блюда</h2>
+        </div>
+        <span id="resultCount" class="result-count">0 блюд</span>
+      </section>
+
+      <section id="menuGrid" class="menu-grid" aria-live="polite"></section>
+
+      <section id="emptyState" class="empty-state hidden">
+        <div class="empty-icon">◎</div>
+        <h3>Ничего не найдено</h3>
+        <p>Измените поиск или выбранные ограничения.</p>
+      </section>
+    </main>
+  </div>
+
+  <div id="sheetBackdrop" class="backdrop hidden"></div>
+
+  <aside id="filterSheet" class="bottom-sheet" aria-hidden="true">
+    <div class="sheet-handle"></div>
+    <div class="sheet-header">
+      <div>
+        <span class="eyebrow">ПЕРСОНАЛИЗАЦИЯ</span>
+        <h2>Что вы хотите исключить?</h2>
+      </div>
+      <button class="icon-btn" id="closeFilterSheet" type="button" aria-label="Close">×</button>
+    </div>
+
+    <p class="sheet-intro">Отметьте продукты, которые не должны встречаться в блюдах.</p>
+    <div id="allergenOptions" class="allergen-options"></div>
+
+    <div class="mode-block">
+      <span class="mode-label">Показывать</span>
+      <label class="radio-row">
+        <input type="radio" name="filterMode" value="safe" checked />
+        <span>
+          <strong>Только подходящие блюда</strong>
+          <small>Скрывать блюда с выбранными аллергенами</small>
+        </span>
+      </label>
+      <label class="radio-row">
+        <input type="radio" name="filterMode" value="all" />
+        <span>
+          <strong>Все блюда</strong>
+          <small>Показывать предупреждение при конфликте</small>
+        </span>
+      </label>
+    </div>
+
+    <div class="sheet-footer">
+      <button id="clearFiltersBtn" class="ghost-btn" type="button">Сбросить</button>
+      <button id="applyFiltersBtn" class="primary-btn" type="button">Применить</button>
+    </div>
+  </aside>
+
+  <aside id="dishSheet" class="bottom-sheet dish-sheet" aria-hidden="true">
+    <div class="sheet-handle"></div>
+    <button class="icon-btn dish-close" id="closeDishSheet" type="button" aria-label="Close">×</button>
+    <div id="dishDetail"></div>
+  </aside>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

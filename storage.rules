@@ -1,0 +1,10 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Storage opens later, when product-image upload and public delivery are implemented.
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

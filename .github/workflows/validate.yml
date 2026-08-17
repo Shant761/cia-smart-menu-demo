@@ -1,0 +1,25 @@
+name: Validate static demo
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Check JavaScript syntax
+        run: node --check app.js
+
+      - name: Validate menu JSON
+        run: |
+          python -m json.tool data/products.json > /dev/null
+          python -m json.tool data/allergens.json > /dev/null

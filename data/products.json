@@ -1,0 +1,100 @@
+{
+  "restaurant": {
+    "name": {"ru":"Garden Table","en":"Garden Table","hy":"Garden Table"},
+    "meta": {"ru":"Европейская кухня • Ереван","en":"European cuisine • Yerevan","hy":"Եվրոպական խոհանոց • Երևան"}
+  },
+  "categories": [
+    {"id":"all","name":{"ru":"Все","en":"All","hy":"Բոլորը"}},
+    {"id":"popular","name":{"ru":"Популярное","en":"Popular","hy":"Հայտնի"}},
+    {"id":"salads","name":{"ru":"Салаты","en":"Salads","hy":"Աղցաններ"}},
+    {"id":"hot","name":{"ru":"Горячее","en":"Mains","hy":"Տաք ուտեստներ"}},
+    {"id":"desserts","name":{"ru":"Десерты","en":"Desserts","hy":"Աղանդեր"}},
+    {"id":"drinks","name":{"ru":"Напитки","en":"Drinks","hy":"Ըմպելիքներ"}}
+  ],
+  "products": [
+    {
+      "id":101,"category":"popular","emoji":"🍔","price":4500,
+      "name":{"ru":"Бургер CIA","en":"CIA Burger","hy":"CIA բուրգեր"},
+      "description":{"ru":"Говядина, томат, салат, сыр и фирменный соус","en":"Beef, tomato, lettuce, cheese and house sauce","hy":"Տավարի միս, լոլիկ, հազար, պանիր և ֆիրմային սոուս"},
+      "ingredients":{"ru":["Говяжья котлета","Булочка","Чеддер","Томат","Салат","Фирменный соус"],"en":["Beef patty","Bun","Cheddar","Tomato","Lettuce","House sauce"],"hy":["Տավարի կոտլետ","Բուլկի","Չեդդեր","Լոլիկ","Հազար","Ֆիրմային սոուս"]},
+      "allergens":[{"id":"milk","status":"confirmed"},{"id":"gluten","status":"confirmed"},{"id":"egg","status":"suggested"}]
+    },
+    {
+      "id":102,"category":"salads","emoji":"🥗","price":3900,
+      "name":{"ru":"Цезарь с курицей","en":"Chicken Caesar","hy":"Կեսար հավով"},
+      "description":{"ru":"Романо, курица, пармезан, сухарики и соус Цезарь","en":"Romaine, chicken, parmesan, croutons and Caesar dressing","hy":"Ռոմանո, հավ, պարմեզան, չորահաց և Կեսար սոուս"},
+      "ingredients":{"ru":["Куриное филе","Салат романо","Пармезан","Сухарики","Соус Цезарь"],"en":["Chicken fillet","Romaine","Parmesan","Croutons","Caesar dressing"],"hy":["Հավի ֆիլե","Ռոմանո","Պարմեզան","Չորահաց","Կեսար սոուս"]},
+      "allergens":[{"id":"milk","status":"confirmed"},{"id":"gluten","status":"confirmed"},{"id":"egg","status":"confirmed"},{"id":"mustard","status":"suggested"}]
+    },
+    {
+      "id":103,"category":"salads","emoji":"🥑","price":3600,
+      "name":{"ru":"Зелёный салат с авокадо","en":"Avocado Green Salad","hy":"Կանաչ աղցան ավոկադոյով"},
+      "description":{"ru":"Авокадо, огурец, зелень, лимон и оливковое масло","en":"Avocado, cucumber, herbs, lemon and olive oil","hy":"Ավոկադո, վարունգ, կանաչի, կիտրոն և ձիթապտղի յուղ"},
+      "ingredients":{"ru":["Авокадо","Огурец","Микс зелени","Лимон","Оливковое масло"],"en":["Avocado","Cucumber","Mixed greens","Lemon","Olive oil"],"hy":["Ավոկադո","Վարունգ","Կանաչի","Կիտրոն","Ձիթապտղի յուղ"]},
+      "allergens":[]
+    },
+    {
+      "id":104,"category":"hot","emoji":"🥩","price":8900,
+      "name":{"ru":"Стейк рибай","en":"Ribeye Steak","hy":"Ռիբայ սթեյք"},
+      "description":{"ru":"Рибай на гриле, картофель и перечный соус","en":"Grilled ribeye, potatoes and pepper sauce","hy":"Գրիլ ռիբայ, կարտոֆիլ և պղպեղային սոուս"},
+      "ingredients":{"ru":["Рибай","Картофель","Сливочное масло","Перечный соус"],"en":["Ribeye","Potatoes","Butter","Pepper sauce"],"hy":["Ռիբայ","Կարտոֆիլ","Կարագ","Պղպեղային սոուս"]},
+      "allergens":[{"id":"milk","status":"confirmed"}]
+    },
+    {
+      "id":105,"category":"hot","emoji":"🍗","price":5200,
+      "name":{"ru":"Курица с овощами","en":"Chicken & Vegetables","hy":"Հավ բանջարեղենով"},
+      "description":{"ru":"Куриное филе, сезонные овощи и травы","en":"Chicken fillet, seasonal vegetables and herbs","hy":"Հավի ֆիլե, սեզոնային բանջարեղեն և խոտաբույսեր"},
+      "ingredients":{"ru":["Куриное филе","Кабачок","Перец","Морковь","Травы"],"en":["Chicken fillet","Zucchini","Pepper","Carrot","Herbs"],"hy":["Հավի ֆիլե","Դդմիկ","Պղպեղ","Գազար","Խոտաբույսեր"]},
+      "allergens":[]
+    },
+    {
+      "id":106,"category":"hot","emoji":"🍝","price":4400,
+      "name":{"ru":"Паста с креветками","en":"Shrimp Pasta","hy":"Պաստա ծովախեցգետնով"},
+      "description":{"ru":"Паста, креветки, сливочный соус и пармезан","en":"Pasta, shrimp, cream sauce and parmesan","hy":"Պաստա, ծովախեցգետին, սերուցքային սոուս և պարմեզան"},
+      "ingredients":{"ru":["Паста","Креветки","Сливки","Пармезан","Чеснок"],"en":["Pasta","Shrimp","Cream","Parmesan","Garlic"],"hy":["Պաստա","Ծովախեցգետին","Սերուցք","Պարմեզան","Սխտոր"]},
+      "allergens":[{"id":"gluten","status":"confirmed"},{"id":"crustaceans","status":"confirmed"},{"id":"milk","status":"confirmed"}]
+    },
+    {
+      "id":107,"category":"popular","emoji":"🍣","price":6900,
+      "name":{"ru":"Суши сет","en":"Sushi Set","hy":"Սուշի սեթ"},
+      "description":{"ru":"Лосось, креветка, авокадо, рис и соевый соус","en":"Salmon, shrimp, avocado, rice and soy sauce","hy":"Սաղմոն, ծովախեցգետին, ավոկադո, բրինձ և սոյայի սոուս"},
+      "ingredients":{"ru":["Лосось","Креветка","Авокадо","Рис","Нори","Соевый соус"],"en":["Salmon","Shrimp","Avocado","Rice","Nori","Soy sauce"],"hy":["Սաղմոն","Ծովախեցգետին","Ավոկադո","Բրինձ","Նորի","Սոյայի սոուս"]},
+      "allergens":[{"id":"fish","status":"confirmed"},{"id":"crustaceans","status":"confirmed"},{"id":"soy","status":"confirmed"},{"id":"gluten","status":"suggested"}]
+    },
+    {
+      "id":108,"category":"desserts","emoji":"🍰","price":2600,
+      "name":{"ru":"Чизкейк","en":"Cheesecake","hy":"Չիզքեյք"},
+      "description":{"ru":"Сливочный чизкейк с ягодным соусом","en":"Creamy cheesecake with berry sauce","hy":"Սերուցքային չիզքեյք հատապտղային սոուսով"},
+      "ingredients":{"ru":["Сливочный сыр","Сливки","Яйцо","Печенье","Ягодный соус"],"en":["Cream cheese","Cream","Egg","Biscuit","Berry sauce"],"hy":["Սերուցքային պանիր","Սերուցք","Ձու","Թխվածքաբլիթ","Հատապտղային սոուս"]},
+      "allergens":[{"id":"milk","status":"confirmed"},{"id":"egg","status":"confirmed"},{"id":"gluten","status":"confirmed"}]
+    },
+    {
+      "id":109,"category":"desserts","emoji":"🍫","price":2400,
+      "name":{"ru":"Шоколадный десерт","en":"Chocolate Dessert","hy":"Շոկոլադե աղանդեր"},
+      "description":{"ru":"Тёмный шоколад, ореховый крем и какао","en":"Dark chocolate, nut cream and cocoa","hy":"Մուգ շոկոլադ, ընկույզի կրեմ և կակաո"},
+      "ingredients":{"ru":["Тёмный шоколад","Ореховый крем","Какао","Сахар"],"en":["Dark chocolate","Nut cream","Cocoa","Sugar"],"hy":["Մուգ շոկոլադ","Ընկույզի կրեմ","Կակաո","Շաքար"]},
+      "allergens":[{"id":"nuts","status":"confirmed"},{"id":"milk","status":"suggested"}]
+    },
+    {
+      "id":110,"category":"desserts","emoji":"🍓","price":2200,
+      "name":{"ru":"Ягодное сорбе","en":"Berry Sorbet","hy":"Հատապտղային սորբե"},
+      "description":{"ru":"Ягоды, лимон и сахар","en":"Berries, lemon and sugar","hy":"Հատապտուղներ, կիտրոն և շաքար"},
+      "ingredients":{"ru":["Ягоды","Лимон","Сахар"],"en":["Berries","Lemon","Sugar"],"hy":["Հատապտուղներ","Կիտրոն","Շաքար"]},
+      "allergens":[]
+    },
+    {
+      "id":111,"category":"drinks","emoji":"☕","price":1800,
+      "name":{"ru":"Капучино","en":"Cappuccino","hy":"Կապուչինո"},
+      "description":{"ru":"Эспрессо и взбитое молоко","en":"Espresso and steamed milk","hy":"Էսպրեսսո և փրփրած կաթ"},
+      "ingredients":{"ru":["Эспрессо","Молоко"],"en":["Espresso","Milk"],"hy":["Էսպրեսսո","Կաթ"]},
+      "allergens":[{"id":"milk","status":"confirmed"}]
+    },
+    {
+      "id":112,"category":"drinks","emoji":"🍋","price":1700,
+      "name":{"ru":"Домашний лимонад","en":"House Lemonade","hy":"Տնական լիմոնադ"},
+      "description":{"ru":"Лимон, мята, цитрусовый сироп и газированная вода","en":"Lemon, mint, citrus syrup and sparkling water","hy":"Կիտրոն, անանուխ, ցիտրուսային օշարակ և գազավորված ջուր"},
+      "ingredients":{"ru":["Лимон","Мята","Цитрусовый сироп","Газированная вода"],"en":["Lemon","Mint","Citrus syrup","Sparkling water"],"hy":["Կիտրոն","Անանուխ","Ցիտրուսային օշարակ","Գազավորված ջուր"]},
+      "allergens":[]
+    }
+  ]
+}

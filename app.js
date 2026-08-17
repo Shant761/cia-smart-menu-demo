@@ -9,6 +9,23 @@ const state = {
   draftSelected: new Set()
 };
 
+// Demo nutrition data. Later this can be replaced by values calculated from
+// Poster recipes / ingredient weights without changing the UI.
+const nutritionByProduct = {
+  101: { calories: 720 },
+  102: { calories: 430 },
+  103: { calories: 260 },
+  104: { calories: 810 },
+  105: { calories: 340 },
+  106: { calories: 680 },
+  107: { calories: 610 },
+  108: { calories: 470 },
+  109: { calories: 520 },
+  110: { calories: 180 },
+  111: { calories: 90 },
+  112: { calories: 210 }
+};
+
 const i18n = {
   ru: {
     search: 'Поиск блюд', personalize: 'Настроить меню под себя', personalizeSub: 'Исключите продукты и аллергены',
@@ -20,7 +37,8 @@ const i18n = {
     ingredients: 'Состав', allergens: 'Аллергены', noAllergens: 'Подтверждённые аллергены не указаны',
     contains: 'По текущей техкарте содержит выбранные вами аллергены:', safety: 'При тяжёлой аллергии уточните у персонала возможность перекрёстного контакта на кухне.',
     suggested: 'требует подтверждения', emptyTitle: 'Ничего не найдено', emptyText: 'Измените поиск или выбранные ограничения.',
-    activePrefix: 'Ваш фильтр:'
+    activePrefix: 'Ваш фильтр:', calories: 'ккал', dietSalads: 'Диетические салаты', light: 'Лёгкое', nutrition: 'Пищевая ценность',
+    nutritionNote: 'Калорийность указана на одну порцию.'
   },
   en: {
     search: 'Search dishes', personalize: 'Personalize your menu', personalizeSub: 'Exclude ingredients and allergens',
@@ -32,7 +50,8 @@ const i18n = {
     ingredients: 'Ingredients', allergens: 'Allergens', noAllergens: 'No confirmed allergens listed',
     contains: 'According to the current recipe this dish contains:', safety: 'For severe allergies, please ask staff about possible cross-contact in the kitchen.',
     suggested: 'needs confirmation', emptyTitle: 'Nothing found', emptyText: 'Change your search or selected exclusions.',
-    activePrefix: 'Your filter:'
+    activePrefix: 'Your filter:', calories: 'kcal', dietSalads: 'Light salads', light: 'Light', nutrition: 'Nutrition',
+    nutritionNote: 'Calories are shown per serving.'
   },
   hy: {
     search: 'Որոնել ուտեստներ', personalize: 'Կարգավորել մենյուն ձեզ համար', personalizeSub: 'Բացառեք բաղադրիչներն ու ալերգենները',
@@ -44,7 +63,8 @@ const i18n = {
     ingredients: 'Բաղադրություն', allergens: 'Ալերգեններ', noAllergens: 'Հաստատված ալերգեններ նշված չեն',
     contains: 'Ըստ ընթացիկ տեխնոլոգիական քարտի պարունակում է՝', safety: 'Ծանր ալերգիայի դեպքում ճշտեք անձնակազմից խոհանոցում հնարավոր խաչաձև շփման մասին։',
     suggested: 'պետք է հաստատվի', emptyTitle: 'Ոչինչ չի գտնվել', emptyText: 'Փոխեք որոնումը կամ ընտրված սահմանափակումները։',
-    activePrefix: 'Ձեր ֆիլտրը՝'
+    activePrefix: 'Ձեր ֆիլտրը՝', calories: 'կկալ', dietSalads: 'Դիետիկ աղցաններ', light: 'Թեթև', nutrition: 'Սննդային արժեք',
+    nutritionNote: 'Կալորիականությունը նշված է մեկ չափաբաժնի համար։'
   }
 };
 
@@ -53,6 +73,11 @@ const $$ = (selector) => [...document.querySelectorAll(selector)];
 const txt = (obj) => obj?.[state.lang] || obj?.ru || obj?.en || '';
 const tr = (key) => i18n[state.lang][key] || i18n.ru[key] || key;
 const allergenById = (id) => state.allergens.find((item) => item.id === id);
+const getNutrition = (product) => nutritionByProduct[product.id] || null;
+const isLightDish = (product) => {
+  const nutrition = getNutrition(product);
+  return Boolean(nutrition && nutrition.calories <= 350);
+};
 
 function loadPrefs() {
   try {
@@ -71,8 +96,26 @@ function savePrefs() {
   }));
 }
 
+function injectNutritionStyles() {
+  if ($('#nutritionStyles')) return;
+  const style = document.createElement('style');
+  style.id = 'nutritionStyles';
+  style.textContent = `
+    .nutrition-row { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-top:10px; }
+    .calorie-pill { display:inline-flex; align-items:center; gap:5px; min-height:28px; padding:5px 9px; border-radius:999px; background:#f4f1e9; color:#5f594f; font-size:12px; font-weight:700; }
+    .light-pill { display:inline-flex; align-items:center; min-height:28px; padding:5px 9px; border-radius:999px; background:#e8f5e9; color:#2e6c3b; font-size:12px; font-weight:800; }
+    .category-chip.diet-chip { border-color:#b8d8bd; background:#eef8ef; color:#2e6c3b; }
+    .category-chip.diet-chip.active { background:#2f6f3e; color:white; border-color:#2f6f3e; }
+    .nutrition-panel { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:14px 16px; border-radius:16px; background:#f7f5ef; margin:14px 0 2px; }
+    .nutrition-panel strong { display:block; font-size:24px; line-height:1; }
+    .nutrition-panel span { color:#756f64; font-size:12px; }
+  `;
+  document.head.appendChild(style);
+}
+
 async function init() {
   loadPrefs();
+  injectNutritionStyles();
   try {
     const [menuResponse, allergenResponse] = await Promise.all([
       fetch('data/products.json'),
@@ -162,9 +205,13 @@ function renderStaticCopy() {
 
 function renderCategories() {
   const nav = $('#categoryNav');
-  nav.innerHTML = state.menu.categories.map((category) => `
+  const regularCategories = state.menu.categories.map((category) => `
     <button class="category-chip ${category.id === state.category ? 'active' : ''}" data-category="${category.id}">${txt(category.name)}</button>
   `).join('');
+  const dietChip = `
+    <button class="category-chip diet-chip ${state.category === 'diet-salads' ? 'active' : ''}" data-category="diet-salads">🥗 ${tr('dietSalads')}</button>
+  `;
+  nav.innerHTML = regularCategories + dietChip;
 
   nav.querySelectorAll('.category-chip').forEach((button) => button.addEventListener('click', () => {
     state.category = button.dataset.category;
@@ -200,7 +247,9 @@ function productMatchesSearch(product) {
 
 function filteredProducts() {
   return state.menu.products.filter((product) => {
-    const categoryMatch = state.category === 'all' || product.category === state.category;
+    const categoryMatch = state.category === 'diet-salads'
+      ? product.category === 'salads' && isLightDish(product)
+      : state.category === 'all' || product.category === state.category;
     const searchMatch = productMatchesSearch(product);
     const conflict = getConflicts(product).length > 0;
     const safetyMatch = state.mode === 'all' || !conflict;
@@ -211,7 +260,9 @@ function filteredProducts() {
 function renderMenu() {
   const products = filteredProducts();
   const selectedCategory = state.menu.categories.find((category) => category.id === state.category);
-  $('#menuTitle').textContent = state.category === 'all' ? tr('allDishes') : txt(selectedCategory?.name);
+  $('#menuTitle').textContent = state.category === 'diet-salads'
+    ? tr('dietSalads')
+    : state.category === 'all' ? tr('allDishes') : txt(selectedCategory?.name);
   $('#resultCount').textContent = `${products.length} ${tr('dishes')}`;
   $('#menuGrid').innerHTML = products.map(renderCard).join('');
   $('#emptyState').classList.toggle('hidden', products.length > 0);
@@ -222,6 +273,8 @@ function renderCard(product) {
   const hasSuggested = product.allergens.some((item) => item.status === 'suggested');
   const statusClass = conflicts.length ? 'warn' : hasSuggested ? 'review' : 'safe';
   const statusText = conflicts.length ? tr('conflict') : hasSuggested ? tr('review') : (state.selected.size ? tr('suitable') : '');
+  const nutrition = getNutrition(product);
+  const light = isLightDish(product);
   const pills = product.allergens.slice(0, 4).map((item) => {
     const allergen = allergenById(item.id);
     if (!allergen) return '';
@@ -239,6 +292,7 @@ function renderCard(product) {
           <span class="dish-price">${formatPrice(product.price)}</span>
         </div>
         <p class="dish-desc">${txt(product.description)}</p>
+        ${nutrition ? `<div class="nutrition-row"><span class="calorie-pill">🔥 ${nutrition.calories} ${tr('calories')}</span>${light ? `<span class="light-pill">🌿 ${tr('light')}</span>` : ''}</div>` : ''}
         <div class="allergen-row">${pills}</div>
         ${statusText ? `<div class="status-line ${statusClass}">${statusText}</div>` : ''}
       </div>
@@ -272,8 +326,9 @@ function openDish(productId) {
   const product = state.menu.products.find((item) => item.id === productId);
   if (!product) return;
   const conflicts = getConflicts(product);
-  const confirmed = product.allergens.filter((item) => item.status === 'confirmed');
   const suggested = product.allergens.filter((item) => item.status === 'suggested');
+  const nutrition = getNutrition(product);
+  const light = isLightDish(product);
 
   const allergenMarkup = product.allergens.length
     ? product.allergens.map((item) => {
@@ -290,6 +345,7 @@ function openDish(productId) {
         <div class="detail-price">${formatPrice(product.price)}</div>
       </div>
       <p class="detail-description">${txt(product.description)}</p>
+      ${nutrition ? `<div class="nutrition-panel"><div><span>${tr('nutrition')}</span><strong>🔥 ${nutrition.calories} ${tr('calories')}</strong><span>${tr('nutritionNote')}</span></div>${light ? `<span class="light-pill">🌿 ${tr('light')}</span>` : ''}</div>` : ''}
       ${conflicts.length ? `<div class="conflict-box">${tr('contains')} ${conflicts.map((item) => `${allergenById(item.id)?.emoji || ''} ${txt(allergenById(item.id)?.name)}`).join(', ')}</div>` : ''}
       <section class="detail-section">
         <h3>${tr('ingredients')}</h3>

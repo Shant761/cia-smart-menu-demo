@@ -1,0 +1,12 @@
+[
+  {"id":"milk","emoji":"🥛","name":{"ru":"Молоко","en":"Milk","hy":"Կաթ"}},
+  {"id":"egg","emoji":"🥚","name":{"ru":"Яйца","en":"Eggs","hy":"Ձու"}},
+  {"id":"gluten","emoji":"🌾","name":{"ru":"Глютен","en":"Gluten","hy":"Գլյուտեն"}},
+  {"id":"peanut","emoji":"🥜","name":{"ru":"Арахис","en":"Peanut","hy":"Գետնանուշ"}},
+  {"id":"nuts","emoji":"🌰","name":{"ru":"Орехи","en":"Tree nuts","hy":"Ընկույզ"}},
+  {"id":"soy","emoji":"🌱","name":{"ru":"Соя","en":"Soy","hy":"Սոյա"}},
+  {"id":"fish","emoji":"🐟","name":{"ru":"Рыба","en":"Fish","hy":"Ձուկ"}},
+  {"id":"crustaceans","emoji":"🦐","name":{"ru":"Ракообразные","en":"Crustaceans","hy":"Խեցգետնակերպեր"}},
+  {"id":"sesame","emoji":"◌","name":{"ru":"Кунжут","en":"Sesame","hy":"Քունջութ"}},
+  {"id":"mustard","emoji":"🟡","name":{"ru":"Горчица","en":"Mustard","hy":"Մանանեխ"}}
+]

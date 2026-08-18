@@ -319,7 +319,7 @@ async function sync() {
         posterCategoryId: categoryId,
         posterWorkshopId: mergedPoster?.workshop ?? product?.workshop ?? null,
         posterType: mergedPoster?.type ?? product?.type ?? null,
-        posterSpotId: spot?.spot_id ?? requestedSpotId || null,
+        posterSpotId: (spot?.spot_id ?? requestedSpotId) || null,
         posterVisibleAtSpot: visibleAtSpot,
         posterPriceMinor: toNumber(rawPrice),
         posterPhotoPath: photoPath,

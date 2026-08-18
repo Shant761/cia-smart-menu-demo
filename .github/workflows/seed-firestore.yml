@@ -32,3 +32,5 @@ jobs:
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
         run: node scripts/seed-firestore.cjs
+
+# Triggered after Firestore rules deployment.

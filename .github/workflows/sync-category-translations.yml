@@ -1,0 +1,84 @@
+name: Sync category translations
+
+on:
+  workflow_dispatch:
+    inputs:
+      restaurant_id:
+        description: Firestore restaurant slug
+        required: true
+        default: poster-test
+        type: string
+  push:
+    branches:
+      - main
+    paths:
+      - 'data/*-category-translations.json'
+      - 'scripts/sync-category-translations.cjs'
+      - '.github/workflows/sync-category-translations.yml'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate category translation files
+        run: |
+          node --check scripts/sync-category-translations.cjs
+          node - <<'NODE'
+          const fs = require('fs');
+          const files = fs.readdirSync('data').filter(name => /-category-translations\.json$/.test(name));
+          for (const file of files) JSON.parse(fs.readFileSync(`data/${file}`, 'utf8'));
+          console.log(`Category translation JSON OK: ${files.length} file(s)`);
+          NODE
+
+      - name: Install Firebase Admin SDK
+        run: npm install --no-save firebase-admin@14.2.0
+
+      - name: Sync category translations
+        id: category_sync
+        continue-on-error: true
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+          POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_ACCESS_TOKEN }}
+          CIA_RESTAURANT_ID: ${{ github.event_name == 'workflow_dispatch' && inputs.restaurant_id || 'poster-test' }}
+        shell: bash
+        run: |
+          set +e
+          node scripts/sync-category-translations.cjs > category-translations.log 2>&1
+          status=$?
+          cat category-translations.log
+          exit $status
+
+      - name: Publish category translation status
+        if: always()
+        uses: actions/github-script@v7
+        env:
+          CATEGORY_OUTCOME: ${{ steps.category_sync.outcome }}
+        with:
+          script: |
+            const fs = require('fs');
+            const title = 'Category translation status';
+            const raw = fs.existsSync('category-translations.log') ? fs.readFileSync('category-translations.log','utf8') : 'No log produced.';
+            const success = process.env.CATEGORY_OUTCOME === 'success';
+            const body = `${success ? 'SUCCESS' : 'FAILED'}: Category Translation Sync\n\nRun: ${context.runId}\n\n\`\`\`text\n${raw.slice(-12000)}\n\`\`\``;
+            const { data: issues } = await github.rest.issues.listForRepo({ owner: context.repo.owner, repo: context.repo.repo, state: 'all', per_page: 100 });
+            const prior = issues.find(issue => issue.title === title);
+            if (prior) {
+              await github.rest.issues.update({ owner: context.repo.owner, repo: context.repo.repo, issue_number: prior.number, body, state: success ? 'closed' : 'open' });
+            } else {
+              await github.rest.issues.create({ owner: context.repo.owner, repo: context.repo.repo, title, body });
+            }
+
+      - name: Fail after diagnostic
+        if: steps.category_sync.outcome == 'failure'
+        run: exit 1

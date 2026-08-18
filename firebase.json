@@ -13,6 +13,7 @@
       "storage.rules",
       "README.md",
       "FIREBASE_SPARK.md",
+      ".git/**",
       ".github/**",
       "functions/**",
       "**/node_modules/**"

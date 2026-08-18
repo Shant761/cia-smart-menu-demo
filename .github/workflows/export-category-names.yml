@@ -1,0 +1,59 @@
+name: Export Poster category names
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/export-category-names.yml'
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Firebase Admin SDK
+        run: npm install --no-save firebase-admin@14.2.0
+      - name: Export category names
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+        run: |
+          node - <<'NODE' > categories.log
+          const { initializeApp, cert } = require('firebase-admin/app');
+          const { getFirestore } = require('firebase-admin/firestore');
+          const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT || '{}');
+          if (!serviceAccount.client_email) throw new Error('FIREBASE_SERVICE_ACCOUNT missing');
+          initializeApp({ credential: cert(serviceAccount), projectId: 'cia-smart-menu' });
+          const db = getFirestore();
+          (async () => {
+            const snap = await db.collection('restaurants').doc('poster-test').collection('categories').get();
+            const rows = snap.docs.map(doc => {
+              const d = doc.data();
+              const source = String(d.posterOriginalName || d?.name?.hy || d?.name?.ru || d?.name?.en || '').replace(/\s+/g, ' ').trim();
+              return { id: doc.id, source, order: Number(d.order || 0), active: d.active !== false, sourceType: d.source || '' };
+            }).sort((a,b) => a.order-b.order || a.id.localeCompare(b.id));
+            console.log(JSON.stringify(rows));
+          })().catch(error => { console.error(error); process.exit(1); });
+          NODE
+          cat categories.log
+      - name: Publish category export
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const title = 'Temporary category name export';
+            const raw = fs.existsSync('categories.log') ? fs.readFileSync('categories.log','utf8') : 'No export produced';
+            const { data: issues } = await github.rest.issues.listForRepo({ owner: context.repo.owner, repo: context.repo.repo, state: 'all', per_page: 100 });
+            const prior = issues.find(i => i.title === title);
+            const body = `Run: ${context.runId}\n\n\`\`\`json\n${raw.slice(-60000)}\n\`\`\``;
+            if (prior) await github.rest.issues.update({ owner: context.repo.owner, repo: context.repo.repo, issue_number: prior.number, body, state: 'closed' });
+            else await github.rest.issues.create({ owner: context.repo.owner, repo: context.repo.repo, title, body });

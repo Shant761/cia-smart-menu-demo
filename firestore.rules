@@ -2,26 +2,66 @@ rules_version = '2';
 
 service cloud.firestore {
   match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
     function restaurantIsPublished(restaurantId) {
       return get(/databases/$(database)/documents/restaurants/$(restaurantId)).data.published == true;
     }
 
+    function isRestaurantAdmin(restaurantId) {
+      return signedIn()
+        && exists(/databases/$(database)/documents/restaurants/$(restaurantId)/admins/$(request.auth.uid))
+        && get(/databases/$(database)/documents/restaurants/$(restaurantId)/admins/$(request.auth.uid)).data.active == true;
+    }
+
     match /restaurants/{restaurantId} {
-      allow read: if resource.data.published == true;
+      allow read: if resource.data.published == true || isRestaurantAdmin(restaurantId);
       allow write: if false;
 
-      match /categories/{categoryId} {
-        allow read: if restaurantIsPublished(restaurantId);
+      // Membership is provisioned only by the trusted Firebase Admin workflow.
+      // A signed-in user may read only their own membership document.
+      match /admins/{adminUid} {
+        allow read: if signedIn() && request.auth.uid == adminUid;
         allow write: if false;
+      }
+
+      match /categories/{categoryId} {
+        allow read: if restaurantIsPublished(restaurantId) || isRestaurantAdmin(restaurantId);
+        allow update: if isRestaurantAdmin(restaurantId)
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+            'smartMenuPublished',
+            'restaurantReview',
+            'updatedAt'
+          ]);
+        allow create, delete: if false;
       }
 
       match /products/{productId} {
-        allow read: if restaurantIsPublished(restaurantId);
+        allow read: if restaurantIsPublished(restaurantId) || isRestaurantAdmin(restaurantId);
+        allow update: if isRestaurantAdmin(restaurantId)
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+            'smartMenuPublished',
+            'restaurantReview',
+            'allergens',
+            'allergenReview',
+            'allergenCustomization',
+            'updatedAt'
+          ]);
+        allow create, delete: if false;
+      }
+
+      // Derived recipe analysis contains source gram weights and normalization
+      // metadata. It is visible only to restaurant admins and remains read-only
+      // from the browser. Poster tech cards are never writable from Smart Menu.
+      match /product_analysis/{productId} {
+        allow read: if isRestaurantAdmin(restaurantId);
         allow write: if false;
       }
 
-      // Table tokens, orders, service requests and integrations are intentionally
-      // not public. They will be accessed only through the protected backend.
+      // Ingredient catalog and future private operational collections remain
+      // server-only unless a narrower rule is added explicitly.
       match /{privateDocument=**} {
         allow read, write: if false;
       }

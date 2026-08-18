@@ -37,11 +37,15 @@ async function loadPublicMenu(restaurantId = 'garden-table') {
 
   const categories = categorySnapshot.docs
     .map((item) => ({ id: item.id, ...item.data() }))
+    .filter((item) => item.active !== false && (item.id === 'all' || item.smartMenuPublished !== false))
     .sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
 
+  const visibleCategoryIds = new Set(categories.filter((item) => item.id !== 'all').map((item) => String(item.id)));
   const products = productSnapshot.docs
     .map((item) => ({ id: Number(item.data().id ?? item.id), ...item.data() }))
     .filter((item) => item.active !== false)
+    .filter((item) => item.smartMenuPublished !== false)
+    .filter((item) => visibleCategoryIds.has(String(item.category)))
     .sort((a, b) => (a.sortOrder ?? 9999) - (b.sortOrder ?? 9999));
 
   return {

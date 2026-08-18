@@ -20,9 +20,12 @@ jobs:
       - name: Check JavaScript syntax
         run: |
           node --check app.js
+          node --check admin.js
           node --check customization.js
           node --check firestore-menu-bridge.js
           node --check poster-customization-guard.js
+          node --check scripts/apply-admin-reviews.cjs
+          node --check scripts/grant-restaurant-admin.cjs
           node --check scripts/apply-ingredient-overrides.cjs
           node --check scripts/enrich-products-from-ingredient-catalog.cjs
           node --check scripts/sync-poster-to-firestore.cjs
@@ -32,7 +35,7 @@ jobs:
           python -m json.tool data/products.json > /dev/null
           python -m json.tool data/allergens.json > /dev/null
           python -m json.tool data/ingredient-normalization-rules.json > /dev/null
-          for file in data/*-ingredient-overrides*.json data/*-product-translations*.json; do
+          for file in data/*-ingredient-overrides*.json data/*-product-translations*.json data/*-category-translations*.json; do
             [ -e "$file" ] || continue
             python -m json.tool "$file" > /dev/null
           done

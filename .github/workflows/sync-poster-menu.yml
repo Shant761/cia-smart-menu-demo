@@ -53,6 +53,7 @@ jobs:
           node --check scripts/apply-ingredient-overrides.cjs
           node --check scripts/apply-product-title-translations.cjs
           node --check scripts/enrich-products-from-ingredient-catalog.cjs
+          node --check scripts/apply-admin-reviews.cjs
           node -e "JSON.parse(require('fs').readFileSync('data/ingredient-normalization-rules.json','utf8')); console.log('Rules JSON OK')"
 
       - name: Install Firebase Admin SDK
@@ -119,3 +120,9 @@ jobs:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
           CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
         run: node scripts/enrich-products-from-ingredient-catalog.cjs
+
+      - name: Reapply restaurant admin review decisions
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+          CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
+        run: node scripts/apply-admin-reviews.cjs

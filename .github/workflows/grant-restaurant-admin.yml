@@ -1,0 +1,54 @@
+name: Grant restaurant admin
+
+on:
+  workflow_dispatch:
+    inputs:
+      restaurant_id:
+        description: Firestore restaurant slug
+        required: true
+        default: poster-test
+        type: string
+      uid:
+        description: Firebase Authentication UID from /admin.html
+        required: true
+        type: string
+      role:
+        description: Admin role
+        required: true
+        default: owner
+        type: choice
+        options:
+          - owner
+          - reviewer
+      active:
+        description: Enable this admin
+        required: true
+        default: true
+        type: boolean
+
+jobs:
+  grant:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate script
+        run: node --check scripts/grant-restaurant-admin.cjs
+
+      - name: Install Firebase Admin SDK
+        run: npm install --no-save firebase-admin@14.2.0
+
+      - name: Grant restaurant admin membership
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+          CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
+          CIA_ADMIN_UID: ${{ inputs.uid }}
+          CIA_ADMIN_ROLE: ${{ inputs.role }}
+          CIA_ADMIN_ACTIVE: ${{ inputs.active }}
+        run: node scripts/grant-restaurant-admin.cjs

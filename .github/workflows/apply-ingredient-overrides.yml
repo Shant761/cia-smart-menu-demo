@@ -15,6 +15,7 @@ on:
       - 'data/*-ingredient-overrides*.json'
       - 'scripts/apply-ingredient-overrides.cjs'
       - 'scripts/enrich-products-from-ingredient-catalog.cjs'
+      - 'scripts/apply-admin-reviews.cjs'
       - '.github/workflows/apply-ingredient-overrides.yml'
 
 jobs:
@@ -37,6 +38,7 @@ jobs:
         run: |
           node --check scripts/apply-ingredient-overrides.cjs
           node --check scripts/enrich-products-from-ingredient-catalog.cjs
+          node --check scripts/apply-admin-reviews.cjs
           node - <<'NODE'
           const fs = require('fs');
           const files = fs.readdirSync('data').filter(name => /-ingredient-overrides(?:-v\d+)?\.json$/.test(name));
@@ -67,8 +69,16 @@ jobs:
           else
             enrich_status=1
           fi
+          if [ "$override_status" -eq 0 ] && [ "$enrich_status" -eq 0 ]; then
+            echo "" >> ingredient-overrides.log
+            echo "[Pipeline] Reapplying restaurant admin allergen decisions..." >> ingredient-overrides.log
+            node scripts/apply-admin-reviews.cjs >> ingredient-overrides.log 2>&1
+            review_status=$?
+          else
+            review_status=1
+          fi
           cat ingredient-overrides.log
-          if [ "$override_status" -ne 0 ] || [ "$enrich_status" -ne 0 ]; then exit 1; fi
+          if [ "$override_status" -ne 0 ] || [ "$enrich_status" -ne 0 ] || [ "$review_status" -ne 0 ]; then exit 1; fi
 
       - name: Publish override status
         if: always()

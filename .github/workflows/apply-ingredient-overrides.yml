@@ -14,6 +14,7 @@ on:
     paths:
       - 'data/*-ingredient-overrides*.json'
       - 'scripts/apply-ingredient-overrides.cjs'
+      - 'scripts/enrich-products-from-ingredient-catalog.cjs'
       - '.github/workflows/apply-ingredient-overrides.yml'
 
 jobs:
@@ -35,6 +36,7 @@ jobs:
       - name: Validate override packs
         run: |
           node --check scripts/apply-ingredient-overrides.cjs
+          node --check scripts/enrich-products-from-ingredient-catalog.cjs
           node - <<'NODE'
           const fs = require('fs');
           const files = fs.readdirSync('data').filter(name => /-ingredient-overrides(?:-v\d+)?\.json$/.test(name));
@@ -45,7 +47,7 @@ jobs:
       - name: Install Firebase Admin SDK
         run: npm install --no-save firebase-admin@14.2.0
 
-      - name: Apply overrides
+      - name: Apply overrides and refresh product enrichment
         id: overrides
         continue-on-error: true
         env:
@@ -54,10 +56,19 @@ jobs:
         shell: bash
         run: |
           set +e
-          node scripts/apply-ingredient-overrides.cjs > ingredient-overrides.log 2>&1
-          status=$?
+          : > ingredient-overrides.log
+          node scripts/apply-ingredient-overrides.cjs >> ingredient-overrides.log 2>&1
+          override_status=$?
+          if [ "$override_status" -eq 0 ]; then
+            echo "" >> ingredient-overrides.log
+            echo "[Pipeline] Refreshing public product ingredients/allergens after overrides..." >> ingredient-overrides.log
+            node scripts/enrich-products-from-ingredient-catalog.cjs >> ingredient-overrides.log 2>&1
+            enrich_status=$?
+          else
+            enrich_status=1
+          fi
           cat ingredient-overrides.log
-          exit "$status"
+          if [ "$override_status" -ne 0 ] || [ "$enrich_status" -ne 0 ]; then exit 1; fi
 
       - name: Publish override status
         if: always()
@@ -72,7 +83,7 @@ jobs:
               ? fs.readFileSync('ingredient-overrides.log', 'utf8')
               : 'No override log was produced.';
             const success = process.env.OVERRIDE_OUTCOME === 'success';
-            const body = `${success ? 'SUCCESS' : 'FAILED'}: Restaurant Ingredient Overrides\n\nRun: ${context.runId}\n\n\`\`\`text\n${raw.slice(-10000)}\n\`\`\``;
+            const body = `${success ? 'SUCCESS' : 'FAILED'}: Restaurant Ingredient Overrides + Product Refresh\n\nRun: ${context.runId}\n\n\`\`\`text\n${raw.slice(-12000)}\n\`\`\``;
             const { data: issues } = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,

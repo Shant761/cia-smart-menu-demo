@@ -90,6 +90,34 @@ jobs:
               });
             }
 
+      - name: Publish seed success
+        if: steps.install.outcome == 'success' && steps.seed.outcome == 'success'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = 'Firestore seed diagnostic';
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'all',
+              per_page: 100
+            });
+            const prior = issues.find(issue => issue.title === title);
+            if (prior) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prior.number,
+                body: `Seed succeeded. Firestore demo menu was written successfully. Run: ${context.runId}`
+              });
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prior.number,
+                state: 'closed'
+              });
+            }
+
       - name: Fail job after diagnostics
         if: steps.install.outcome == 'failure' || steps.seed.outcome == 'failure'
         run: exit 1

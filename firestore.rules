@@ -33,8 +33,6 @@ service cloud.firestore {
       allow read: if resource.data.published == true || isRestaurantAdmin(restaurantId);
       allow write: if false;
 
-      // Membership is provisioned only by the trusted Firebase Admin workflow.
-      // A signed-in user may read only their own membership document.
       match /admins/{adminUid} {
         allow read: if signedIn() && request.auth.uid == adminUid;
         allow write: if false;
@@ -53,6 +51,8 @@ service cloud.firestore {
 
       match /products/{productId} {
         allow read: if restaurantIsPublished(restaurantId) || isRestaurantAdmin(restaurantId);
+        // Only per-item Smart Menu overrides/review fields may be changed from Admin.
+        // Poster recipe contents, quantities, prices and photos remain read-only.
         allow update: if isRestaurantAdmin(restaurantId)
           && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
             'smartMenuPublished',
@@ -69,16 +69,11 @@ service cloud.firestore {
         allow create, delete: if false;
       }
 
-      // Derived recipe analysis contains source gram weights and normalization
-      // metadata. It is visible only to restaurant admins and remains read-only
-      // from the browser. Poster tech cards are never writable from Smart Menu.
       match /product_analysis/{productId} {
         allow read: if isRestaurantAdmin(restaurantId);
         allow write: if false;
       }
 
-      // Ingredient catalog and future private operational collections remain
-      // server-only unless a narrower rule is added explicitly.
       match /{privateDocument=**} {
         allow read, write: if false;
       }

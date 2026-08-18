@@ -2,6 +2,11 @@
   const nativeFetch = window.fetch.bind(window);
   const targetSuffix = 'data/products.json';
 
+  const params = new URLSearchParams(window.location.search);
+  const explicitRestaurantId = params.get('restaurant');
+  const restaurantId = explicitRestaurantId || 'garden-table';
+  const allowDemoFallback = !explicitRestaurantId || restaurantId === 'garden-table';
+
   const waitForFirebase = (timeoutMs = 1800) => new Promise((resolve) => {
     if (window.ciaFirebase?.loadPublicMenu) {
       resolve(window.ciaFirebase);
@@ -21,18 +26,24 @@
     window.setTimeout(() => finish(window.ciaFirebase || null), timeoutMs);
   });
 
+  const firestoreErrorResponse = (message) => new Response(JSON.stringify({
+    restaurant: { name: { ru: 'Меню временно недоступно', en: 'Menu temporarily unavailable', hy: 'Մենյուն ժամանակավորապես անհասանելի է' }, meta: {} },
+    categories: [],
+    products: [],
+    error: message
+  }), {
+    status: 503,
+    headers: { 'Content-Type': 'application/json; charset=utf-8' }
+  });
+
   window.fetch = async (input, init) => {
     const url = typeof input === 'string' ? input : input?.url || '';
     const isMenuRequest = url === targetSuffix || url.endsWith(`/${targetSuffix}`);
-
-    if (!isMenuRequest) {
-      return nativeFetch(input, init);
-    }
+    if (!isMenuRequest) return nativeFetch(input, init);
 
     try {
       const firebase = await waitForFirebase();
       if (firebase?.loadPublicMenu) {
-        const restaurantId = new URLSearchParams(window.location.search).get('restaurant') || 'garden-table';
         const menu = await firebase.loadPublicMenu(restaurantId);
         if (menu?.products?.length) {
           console.info('[CIA Smart Menu] Menu loaded from Firestore:', restaurantId);
@@ -43,9 +54,13 @@
         }
       }
     } catch (error) {
-      console.warn('[CIA Smart Menu] Firestore unavailable, using JSON fallback.', error);
+      console.warn('[CIA Smart Menu] Firestore menu load failed.', error);
+      if (!allowDemoFallback) return firestoreErrorResponse('firestore_unavailable');
     }
 
-    return nativeFetch(input, init);
+    // The static Garden Table JSON is a demo-only fallback. A real restaurant
+    // must never silently show demo products if Firestore is unavailable.
+    if (allowDemoFallback) return nativeFetch(input, init);
+    return firestoreErrorResponse('restaurant_menu_unavailable');
   };
 })();

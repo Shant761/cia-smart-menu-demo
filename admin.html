@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f5f3ed" />
+  <title>CIA Smart Menu — Admin</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <div class="admin-shell">
+    <header class="admin-topbar">
+      <div class="admin-brand">
+        <div class="brand-mark">CIA</div>
+        <div>
+          <strong>CIA Smart Menu</strong>
+          <span>Restaurant Admin</span>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <a id="openMenuLink" class="ghost-link" href="/?restaurant=poster-test" target="_blank" rel="noopener">Открыть меню ↗</a>
+        <button id="signOutBtn" class="ghost-btn hidden" type="button">Выйти</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="authView" class="auth-view">
+        <div class="auth-card">
+          <span class="eyebrow">ЗАЩИЩЁННАЯ ПАНЕЛЬ</span>
+          <h1>Проверка меню ресторана</h1>
+          <p>Войдите через Google. Доступ к изменениям есть только у пользователей, добавленных как администраторы конкретного ресторана.</p>
+          <button id="signInBtn" class="primary-btn" type="button">Войти через Google</button>
+          <div id="authError" class="notice error hidden"></div>
+        </div>
+      </section>
+
+      <section id="pendingAccessView" class="auth-view hidden">
+        <div class="auth-card wide">
+          <span class="eyebrow">ОЖИДАЕТ ДОСТУПА</span>
+          <h1>Аккаунт вошёл, но ещё не назначен администратором</h1>
+          <p>Скопируйте UID ниже. Он не является паролем или API-ключом. После добавления UID в список администраторов перезагрузите страницу.</p>
+          <div class="uid-box">
+            <code id="currentUid">—</code>
+            <button id="copyUidBtn" class="secondary-btn" type="button">Копировать UID</button>
+          </div>
+          <div class="identity-row">
+            <span id="currentUserEmail">—</span>
+            <button id="retryAccessBtn" class="primary-btn" type="button">Проверить доступ снова</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="adminView" class="admin-view hidden">
+        <div class="page-heading">
+          <div>
+            <span class="eyebrow">РЕСТОРАН</span>
+            <h1 id="restaurantTitle">Poster Restaurant</h1>
+            <p id="restaurantSubtitle">Проверка состава, аллергенов и публикации. Техкарта Poster доступна только для чтения.</p>
+          </div>
+          <div class="user-pill">
+            <span class="user-avatar" id="userAvatar">A</span>
+            <div>
+              <strong id="userName">Администратор</strong>
+              <span id="userEmail">—</span>
+            </div>
+          </div>
+        </div>
+
+        <section class="stats-grid" aria-label="Статистика">
+          <article class="stat-card"><span>Блюд</span><strong id="statProducts">0</strong></article>
+          <article class="stat-card"><span>Требует проверки</span><strong id="statNeedsReview">0</strong></article>
+          <article class="stat-card"><span>Подтверждено</span><strong id="statVerified">0</strong></article>
+          <article class="stat-card"><span>Скрыто</span><strong id="statHidden">0</strong></article>
+        </section>
+
+        <div class="workspace">
+          <aside class="sidebar">
+            <button class="nav-btn active" data-view="products" type="button"><span>🍽️</span> Блюда</button>
+            <button class="nav-btn" data-view="categories" type="button"><span>▦</span> Категории</button>
+            <div class="sidebar-note">
+              <strong>Источник: Poster</strong>
+              <span>Цена, фото и техкарты не редактируются из этой панели.</span>
+            </div>
+          </aside>
+
+          <section class="content-card">
+            <div id="productsToolbar" class="content-toolbar">
+              <label class="search-box">
+                <span>⌕</span>
+                <input id="productSearch" type="search" placeholder="Поиск блюда" autocomplete="off" />
+              </label>
+              <select id="productFilter" class="select-control">
+                <option value="all">Все блюда</option>
+                <option value="needs_review">Требует проверки</option>
+                <option value="verified">Подтверждено</option>
+                <option value="hidden">Скрыто</option>
+              </select>
+            </div>
+
+            <div id="productsView">
+              <div id="productList" class="product-list"></div>
+              <div id="productsEmpty" class="empty-state hidden">Блюда не найдены.</div>
+            </div>
+
+            <div id="categoriesView" class="hidden">
+              <div class="category-heading">
+                <div>
+                  <h2>Категории меню</h2>
+                  <p>Скрытая категория вместе со своими блюдами не показывается гостям Smart Menu.</p>
+                </div>
+              </div>
+              <div id="categoryList" class="category-list"></div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="drawerBackdrop" class="drawer-backdrop hidden"></div>
+  <aside id="productDrawer" class="product-drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <div>
+        <span class="eyebrow">ПРОВЕРКА БЛЮДА</span>
+        <h2 id="drawerTitle">Блюдо</h2>
+      </div>
+      <button id="closeDrawerBtn" class="icon-btn" type="button" aria-label="Закрыть">×</button>
+    </div>
+    <div id="drawerBody" class="drawer-body"></div>
+    <div class="drawer-footer">
+      <span id="saveHint" class="save-hint">Изменения не затрагивают техкарту Poster.</span>
+      <button id="saveProductBtn" class="primary-btn" type="button">Сохранить проверку</button>
+    </div>
+  </aside>
+
+  <div id="toast" class="toast hidden" role="status"></div>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

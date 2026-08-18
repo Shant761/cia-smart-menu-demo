@@ -44,8 +44,10 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Validate sync script syntax
-        run: node --check scripts/sync-poster-to-firestore.cjs
+      - name: Validate scripts
+        run: |
+          node --check scripts/sync-poster-to-firestore.cjs
+          node --check scripts/build-ingredient-catalog.cjs
 
       - name: Install Firebase Admin SDK
         run: npm install --no-save firebase-admin@14.2.0
@@ -74,3 +76,9 @@ jobs:
           POSTER_SYNC_RECIPES: ${{ inputs.sync_recipes }}
           CIA_PUBLISH_MENU: ${{ inputs.publish_menu }}
         run: node scripts/sync-poster-to-firestore.cjs
+
+      - name: Build ingredient catalog
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+          CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
+        run: node scripts/build-ingredient-catalog.cjs

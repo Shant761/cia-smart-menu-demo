@@ -27,17 +27,36 @@ jobs:
           node-version: '22'
 
       - name: Install Firebase Admin SDK
-        run: npm install --no-save firebase-admin@14.2.0
+        id: install
+        continue-on-error: true
+        shell: bash
+        run: |
+          set +e
+          npm install --no-save firebase-admin@14.2.0 > install-output.log 2>&1
+          status=$?
+          if [ "$status" -ne 0 ]; then
+            python - <<'PY'
+          import json
+          from pathlib import Path
+          text = Path('install-output.log').read_text(errors='replace')[-4000:]
+          Path('seed-error.txt').write_text(json.dumps({
+              'stage': 'install',
+              'message': text
+          }, ensure_ascii=False, indent=2))
+          PY
+          fi
+          exit "$status"
 
       - name: Seed Firestore
         id: seed
+        if: steps.install.outcome == 'success'
         continue-on-error: true
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
         run: node scripts/seed-firestore.cjs
 
       - name: Publish safe diagnostic issue
-        if: steps.seed.outcome == 'failure'
+        if: steps.install.outcome == 'failure' || steps.seed.outcome == 'failure'
         uses: actions/github-script@v7
         with:
           script: |
@@ -45,21 +64,21 @@ jobs:
             const path = 'seed-error.txt';
             const diagnostic = fs.existsSync(path)
               ? fs.readFileSync(path, 'utf8')
-              : JSON.stringify({ message: 'Seed failed before a diagnostic file was produced.' }, null, 2);
+              : JSON.stringify({ message: 'Workflow failed before a diagnostic file was produced.' }, null, 2);
             const title = 'Firestore seed diagnostic';
             const { data: existing } = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,
               state: 'open',
-              labels: 'firestore-seed',
-              per_page: 10
+              per_page: 100
             });
+            const prior = existing.find(issue => issue.title === title);
             const body = `Automatic Firestore seed failed. Safe diagnostic:\n\n\`\`\`json\n${diagnostic}\n\`\`\`\n\nRun: ${context.runId}`;
-            if (existing.length) {
+            if (prior) {
               await github.rest.issues.createComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                issue_number: existing[0].number,
+                issue_number: prior.number,
                 body
               });
             } else {
@@ -67,11 +86,10 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 title,
-                body,
-                labels: ['firestore-seed']
+                body
               });
             }
 
       - name: Fail job after diagnostics
-        if: steps.seed.outcome == 'failure'
+        if: steps.install.outcome == 'failure' || steps.seed.outcome == 'failure'
         run: exit 1

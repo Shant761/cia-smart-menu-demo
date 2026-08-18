@@ -12,7 +12,7 @@ on:
     branches:
       - main
     paths:
-      - 'data/*-ingredient-overrides.json'
+      - 'data/*-ingredient-overrides*.json'
       - 'scripts/apply-ingredient-overrides.cjs'
       - '.github/workflows/apply-ingredient-overrides.yml'
 
@@ -32,12 +32,15 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Validate override script
+      - name: Validate override packs
         run: |
           node --check scripts/apply-ingredient-overrides.cjs
-          if [ -f data/poster-test-ingredient-overrides.json ]; then
-            node -e "JSON.parse(require('fs').readFileSync('data/poster-test-ingredient-overrides.json','utf8')); console.log('Override JSON OK')"
-          fi
+          node - <<'NODE'
+          const fs = require('fs');
+          const files = fs.readdirSync('data').filter(name => /-ingredient-overrides(?:-v\d+)?\.json$/.test(name));
+          for (const file of files) JSON.parse(fs.readFileSync(`data/${file}`, 'utf8'));
+          console.log(`Override JSON OK: ${files.length} file(s)`);
+          NODE
 
       - name: Install Firebase Admin SDK
         run: npm install --no-save firebase-admin@14.2.0
@@ -69,7 +72,7 @@ jobs:
               ? fs.readFileSync('ingredient-overrides.log', 'utf8')
               : 'No override log was produced.';
             const success = process.env.OVERRIDE_OUTCOME === 'success';
-            const body = `${success ? 'SUCCESS' : 'FAILED'}: Restaurant Ingredient Overrides\n\nRun: ${context.runId}\n\n\`\`\`text\n${raw.slice(-6000)}\n\`\`\``;
+            const body = `${success ? 'SUCCESS' : 'FAILED'}: Restaurant Ingredient Overrides\n\nRun: ${context.runId}\n\n\`\`\`text\n${raw.slice(-10000)}\n\`\`\``;
             const { data: issues } = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,

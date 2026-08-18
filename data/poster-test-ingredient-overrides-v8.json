@@ -1,0 +1,26 @@
+{
+  "version": 8,
+  "restaurantId": "poster-test",
+  "description": "Source-reviewed mappings for obvious Poster spelling/transliteration variants. Russian display remains the raw Poster source; these rules only enable canonical identity, HY/EN translation and suggested allergen analysis. Ambiguous entries stay blocked.",
+  "ingredients": {
+    "47": {"canonicalId":"nutella","names":{"hy":"Nutella շոկոլադե-պնդուկային կրեմ","ru":"Нутелла","en":"Nutella hazelnut spread"},"category":"chocolate_spread","allergens":["milk","nuts","soy"],"prepared":true,"needsReview":true,"expectedSourceNames":["Нутелла"]},
+    "157": {"canonicalId":"lori_cheese","names":{"hy":"Լոռի պանիր","ru":"Сыр Лори","en":"Lori cheese"},"category":"cheese","allergens":["milk"],"expectedSourceNames":["Лоры"]},
+    "183": {"canonicalId":"whitefish","names":{"hy":"Սիգ ձուկ","ru":"Сиг","en":"Whitefish"},"category":"fish","allergens":["fish"],"expectedSourceNames":["Сига"]},
+    "232": {"canonicalId":"jagermeister","names":{"hy":"Jägermeister լիկյոր","ru":"Ликёр Jägermeister","en":"Jägermeister herbal liqueur"},"category":"alcoholic_beverage","allergens":[],"expectedSourceNames":["Jagermeister"]},
+    "247": {"canonicalId":"kahlua","names":{"hy":"Kahlúa սուրճի լիկյոր","ru":"Кофейный ликёр Kahlúa","en":"Kahlúa coffee liqueur"},"category":"alcoholic_beverage","allergens":[],"expectedSourceNames":["Kahlua"]},
+    "297": {"canonicalId":"perrier","names":{"hy":"Perrier գազավորված ջուր","ru":"Perrier","en":"Perrier sparkling water"},"category":"water","allergens":[],"expectedSourceNames":["Перриер"]},
+    "298": {"canonicalId":"red_bull","names":{"hy":"Red Bull էներգետիկ ըմպելիք","ru":"Red Bull","en":"Red Bull energy drink"},"category":"beverage","allergens":[],"expectedSourceNames":["Ред Булл"]},
+    "338": {"canonicalId":"soy_seeds","names":{"hy":"Սոյայի սերմեր","ru":"Семена сои","en":"Soy seeds"},"category":"legume","allergens":["soy"],"expectedSourceNames":["Семена сои"]},
+    "419": {"canonicalId":"narsharab","names":{"hy":"Նարշարաբ","ru":"Наршараб","en":"Narsharab pomegranate sauce"},"category":"sauce","allergens":[],"prepared":true,"needsReview":true,"expectedSourceNames":["Нашараб"]},
+    "423": {"canonicalId":"worcestershire_sauce","names":{"hy":"Վուսթերշիրի սոուս","ru":"Вустерширский соус","en":"Worcestershire sauce"},"category":"sauce","allergens":[],"prepared":true,"needsReview":true,"expectedSourceNames":["соус вольчестор"]},
+    "446": {"canonicalId":"tkemali_sauce","names":{"hy":"Տղեմալի սոուս","ru":"Ткемали","en":"Tkemali sauce"},"category":"sauce","allergens":[],"prepared":true,"needsReview":true,"expectedSourceNames":["тхемали"]},
+    "488": {"canonicalId":"tabasco_sauce","names":{"hy":"Tabasco սոուս","ru":"Соус Tabasco","en":"Tabasco sauce"},"category":"sauce","allergens":[],"prepared":true,"needsReview":true,"expectedSourceNames":["табаско"]},
+    "491": {"canonicalId":"broccoli","names":{"hy":"Բրոկոլի","ru":"Брокколи","en":"Broccoli"},"category":"vegetable","allergens":[],"expectedSourceNames":["броколли/чищенный"]},
+    "492": {"canonicalId":"burrata","names":{"hy":"Բուրատա Z","ru":"Буррата Z","en":"Burrata Z"},"category":"cheese","allergens":["milk"],"expectedSourceNames":["буратта Z"]},
+    "558": {"canonicalId":"asian_sauce","names":{"hy":"Ասիական սոուս","ru":"Соус Азия","en":"Asian sauce"},"category":"sauce","allergens":[],"prepared":true,"needsReview":true,"expectedSourceNames":["соус Азия"]},
+    "602": {"canonicalId":"kavurma","names":{"hy":"Ղավուրմա","ru":"Кавурма","en":"Kavurma preserved meat"},"category":"prepared_meat","allergens":[],"prepared":true,"needsReview":true,"expectedSourceNames":["каурма"]},
+    "626": {"canonicalId":"pepper_sauce","names":{"hy":"Պղպեղի սոուս","ru":"Перечный соус","en":"Pepper sauce"},"category":"sauce","allergens":[],"prepared":true,"needsReview":true,"expectedSourceNames":["соус пепер"]},
+    "665": {"canonicalId":"ribs_sauce","names":{"hy":"Կողերի սոուս","ru":"Соус для рёбер","en":"Ribs sauce"},"category":"sauce","allergens":[],"prepared":true,"needsReview":true,"expectedSourceNames":["соус для рибсов"]},
+    "720": {"canonicalId":"prague_cake_cream","names":{"hy":"Պրահա տորթի կրեմ","ru":"Крем для торта Прага","en":"Prague cake cream"},"category":"dessert_component","allergens":["milk","egg"],"prepared":true,"needsReview":true,"expectedSourceNames":["крем для праги"]}
+  }
+}

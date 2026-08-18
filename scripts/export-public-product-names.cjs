@@ -1,6 +1,7 @@
 const { initializeApp, cert } = require('firebase-admin/app');
 const { getFirestore } = require('firebase-admin/firestore');
 
+// Safe export: public product IDs + display names only. No recipes or gram weights.
 const PROJECT_ID = 'cia-smart-menu';
 const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT || '{}');
 const restaurantId = (process.env.CIA_RESTAURANT_ID || 'poster-test').trim();

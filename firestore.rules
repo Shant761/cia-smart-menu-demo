@@ -16,6 +16,19 @@ service cloud.firestore {
         && get(/databases/$(database)/documents/restaurants/$(restaurantId)/admins/$(request.auth.uid)).data.active == true;
     }
 
+    function validNameOverrides(data) {
+      let names = data.get('nameOverrides', {});
+      return names is map
+        && names.keys().hasOnly(['hy', 'ru', 'en'])
+        && names.get('hy', '') is string
+        && names.get('ru', '') is string
+        && names.get('en', '') is string;
+    }
+
+    function validIngredientNameOverrides(data) {
+      return data.get('ingredientNameOverrides', {}) is map;
+    }
+
     match /restaurants/{restaurantId} {
       allow read: if resource.data.published == true || isRestaurantAdmin(restaurantId);
       allow write: if false;
@@ -47,8 +60,12 @@ service cloud.firestore {
             'allergens',
             'allergenReview',
             'allergenCustomization',
+            'nameOverrides',
+            'ingredientNameOverrides',
             'updatedAt'
-          ]);
+          ])
+          && validNameOverrides(request.resource.data)
+          && validIngredientNameOverrides(request.resource.data);
         allow create, delete: if false;
       }
 

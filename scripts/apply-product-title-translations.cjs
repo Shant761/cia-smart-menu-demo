@@ -49,7 +49,10 @@ async function commitWrites(writes) {
 
 async function main() {
   const { files, entries, version } = loadPacks();
-  if (!files.length) throw new Error(`No translation packs found for ${restaurantId}`);
+  if (!files.length) {
+    console.log(`[Product translations] No translation packs for ${restaurantId}; skipped.`);
+    return;
+  }
 
   const restaurantRef = db.collection('restaurants').doc(restaurantId);
   if (!(await restaurantRef.get()).exists) throw new Error(`Restaurant ${restaurantId} not found`);

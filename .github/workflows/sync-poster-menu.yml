@@ -48,6 +48,8 @@ jobs:
         run: |
           node --check scripts/sync-poster-to-firestore.cjs
           node --check scripts/build-ingredient-catalog.cjs
+          node --check scripts/normalize-ingredients-rules.cjs
+          node -e "JSON.parse(require('fs').readFileSync('data/ingredient-normalization-rules.json','utf8')); console.log('Rules JSON OK')"
 
       - name: Install Firebase Admin SDK
         run: npm install --no-save firebase-admin@14.2.0
@@ -82,3 +84,9 @@ jobs:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
           CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
         run: node scripts/build-ingredient-catalog.cjs
+
+      - name: Normalize ingredients with deterministic rules
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+          CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
+        run: node scripts/normalize-ingredients-rules.cjs

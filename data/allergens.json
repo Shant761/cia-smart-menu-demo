@@ -7,6 +7,10 @@
   {"id":"soy","emoji":"🌱","name":{"ru":"Соя","en":"Soy","hy":"Սոյա"}},
   {"id":"fish","emoji":"🐟","name":{"ru":"Рыба","en":"Fish","hy":"Ձուկ"}},
   {"id":"crustaceans","emoji":"🦐","name":{"ru":"Ракообразные","en":"Crustaceans","hy":"Խեցգետնակերպեր"}},
+  {"id":"molluscs","emoji":"🐚","name":{"ru":"Моллюски","en":"Molluscs","hy":"Փափկամարմիններ"}},
   {"id":"sesame","emoji":"◌","name":{"ru":"Кунжут","en":"Sesame","hy":"Քունջութ"}},
-  {"id":"mustard","emoji":"🟡","name":{"ru":"Горчица","en":"Mustard","hy":"Մանանեխ"}}
+  {"id":"mustard","emoji":"🟡","name":{"ru":"Горчица","en":"Mustard","hy":"Մանանեխ"}},
+  {"id":"celery","emoji":"🌿","name":{"ru":"Сельдерей","en":"Celery","hy":"Նեխուր"}},
+  {"id":"sulphites","emoji":"⚗️","name":{"ru":"Сульфиты","en":"Sulphites","hy":"Սուլֆիտներ"}},
+  {"id":"lupin","emoji":"🌼","name":{"ru":"Люпин","en":"Lupin","hy":"Լյուպին"}}
 ]

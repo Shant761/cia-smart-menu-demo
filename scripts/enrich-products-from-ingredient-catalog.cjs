@@ -13,6 +13,32 @@ db.settings({ ignoreUndefinedProperties: true });
 const clean = (value) => String(value || '').replace(/\s+/g, ' ').trim();
 const number = (value) => Number.isFinite(Number(value)) ? Number(value) : 0;
 
+const PUBLIC_ALLERGEN_ALIASES = {
+  milk: 'milk',
+  dairy: 'milk',
+  egg: 'egg',
+  eggs: 'egg',
+  gluten: 'gluten',
+  peanut: 'peanut',
+  peanuts: 'peanut',
+  nuts: 'nuts',
+  tree_nuts: 'nuts',
+  soy: 'soy',
+  fish: 'fish',
+  crustacean: 'crustaceans',
+  crustaceans: 'crustaceans',
+  mollusc: 'molluscs',
+  molluscs: 'molluscs',
+  sesame: 'sesame',
+  mustard: 'mustard',
+  celery: 'celery',
+  sulphite: 'sulphites',
+  sulphites: 'sulphites',
+  sulfite: 'sulphites',
+  sulfites: 'sulphites',
+  lupin: 'lupin'
+};
+
 function dedupe(values) {
   const seen = new Set();
   const out = [];
@@ -24,6 +50,39 @@ function dedupe(values) {
     out.push(text);
   }
   return out;
+}
+
+function candidateId(candidate) {
+  const raw = typeof candidate === 'string'
+    ? candidate
+    : candidate?.id || candidate?.allergenId || candidate?.allergen || '';
+  const key = clean(raw).toLowerCase().replace(/[\s-]+/g, '_');
+  return PUBLIC_ALLERGEN_ALIASES[key] || null;
+}
+
+function buildPublicAllergens(privateRows, existingAllergens) {
+  const confirmed = [];
+  const seen = new Set();
+
+  for (const item of Array.isArray(existingAllergens) ? existingAllergens : []) {
+    const id = PUBLIC_ALLERGEN_ALIASES[clean(item?.id).toLowerCase().replace(/[\s-]+/g, '_')];
+    const isConfirmed = item?.status === 'confirmed' || item?.verified === true || item?.restaurantVerified === true;
+    if (!id || !isConfirmed || seen.has(id)) continue;
+    seen.add(id);
+    confirmed.push({ ...item, id, status: 'confirmed' });
+  }
+
+  const suggested = [];
+  for (const row of privateRows) {
+    for (const candidate of Array.isArray(row.allergenCandidates) ? row.allergenCandidates : []) {
+      const id = candidateId(candidate);
+      if (!id || seen.has(id)) continue;
+      seen.add(id);
+      suggested.push({ id, status: 'suggested', source: 'normalized_tech_card' });
+    }
+  }
+
+  return [...confirmed, ...suggested];
 }
 
 async function commit(writes) {
@@ -56,6 +115,9 @@ async function main() {
   let recipeRows = 0;
   let matchedRows = 0;
   let productsWithFullCoverage = 0;
+  let productsWithAllergens = 0;
+  let suggestedAllergenLinks = 0;
+  const allergenProductCounts = new Map();
 
   for (const doc of productSnapshot.docs) {
     const product = doc.data();
@@ -110,7 +172,15 @@ async function main() {
     const coverage = recipe.length ? matched / recipe.length : 1;
     if (coverage === 1) productsWithFullCoverage += 1;
 
-    // Private document: contains gram weights and analysis candidates. Current Firestore rules deny public reads here.
+    const publicAllergens = buildPublicAllergens(privateRows, product.allergens);
+    const suggestedCount = publicAllergens.filter((item) => item.status === 'suggested').length;
+    if (publicAllergens.length) productsWithAllergens += 1;
+    suggestedAllergenLinks += suggestedCount;
+    for (const item of publicAllergens) {
+      allergenProductCounts.set(item.id, (allergenProductCounts.get(item.id) || 0) + 1);
+    }
+
+    // Private document: contains gram weights and detailed analysis candidates. Firestore rules deny public reads here.
     writes.push({
       ref: restaurantRef.collection('product_analysis').doc(doc.id),
       data: {
@@ -121,11 +191,13 @@ async function main() {
         normalizedRows: matched,
         normalizationCoverage: coverage,
         needsReview: privateRows.some((item) => item.analysisStatus === 'needs_review'),
+        publicAllergenIds: publicAllergens.map((item) => item.id),
         updatedAt: FieldValue.serverTimestamp()
       }
     });
 
-    // Public product: display names only. No recipe gram weights or private allergen candidates are exposed.
+    // Public product: translated ingredient names plus allergen IDs only. No recipe gram weights or private reasoning are exposed.
+    // Generated allergens stay "suggested" until the restaurant confirms them. The frontend already treats suggested conflicts conservatively.
     writes.push({
       ref: doc.ref,
       data: {
@@ -133,6 +205,13 @@ async function main() {
           hy: dedupe(display.hy),
           ru: dedupe(display.ru),
           en: dedupe(display.en)
+        },
+        allergens: publicAllergens,
+        allergenAnalysis: {
+          source: 'normalized_tech_card',
+          status: suggestedCount ? 'needs_restaurant_confirmation' : 'no_candidate_detected',
+          suggestedCount,
+          updatedAt: FieldValue.serverTimestamp()
         },
         ingredientNormalization: {
           recipeRows: recipe.length,
@@ -152,6 +231,9 @@ async function main() {
       recipeRows,
       normalizedRows: matchedRows,
       productsWithFullCoverage,
+      productsWithAllergens,
+      suggestedAllergenLinks,
+      allergenProductCounts: Object.fromEntries([...allergenProductCounts.entries()].sort()),
       lastRunAt: FieldValue.serverTimestamp()
     },
     updatedAt: FieldValue.serverTimestamp()
@@ -162,6 +244,9 @@ async function main() {
   console.log(`[Product enrichment] Recipe rows: ${recipeRows}`);
   console.log(`[Product enrichment] Normalized recipe rows: ${matchedRows}`);
   console.log(`[Product enrichment] Products with full recipe normalization: ${productsWithFullCoverage}/${products}`);
+  console.log(`[Product enrichment] Products with allergen candidates: ${productsWithAllergens}/${products}`);
+  console.log(`[Product enrichment] Suggested allergen links: ${suggestedAllergenLinks}`);
+  console.log(`[Product enrichment] Allergen product counts: ${JSON.stringify(Object.fromEntries([...allergenProductCounts.entries()].sort()))}`);
 }
 
 main().catch((error) => {

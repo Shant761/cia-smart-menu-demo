@@ -1,14 +1,16 @@
 const fs = require('fs');
 const path = require('path');
-const admin = require('firebase-admin');
+const { initializeApp, cert } = require('firebase-admin/app');
+const { getFirestore, FieldValue } = require('firebase-admin/firestore');
 
 const projectId = 'cia-smart-menu';
 const restaurantId = 'garden-table';
 const rawCredentials = process.env.FIREBASE_SERVICE_ACCOUNT;
 const diagnosticPath = path.join(__dirname, '..', 'seed-error.txt');
 
-function writeDiagnostic(error) {
+function writeDiagnostic(error, stage = 'seed') {
   const diagnostic = {
+    stage,
     name: error?.name || 'Error',
     code: error?.code || null,
     message: String(error?.message || error || 'Unknown error')
@@ -18,30 +20,33 @@ function writeDiagnostic(error) {
   fs.writeFileSync(diagnosticPath, JSON.stringify(diagnostic, null, 2));
 }
 
-if (!rawCredentials) {
-  const error = new Error('FIREBASE_SERVICE_ACCOUNT is required');
-  writeDiagnostic(error);
-  throw error;
-}
+async function main() {
+  if (!rawCredentials) {
+    throw Object.assign(new Error('FIREBASE_SERVICE_ACCOUNT is required'), { stage: 'credentials' });
+  }
 
-let credentials;
-try {
-  credentials = JSON.parse(rawCredentials);
-} catch (error) {
-  writeDiagnostic(error);
-  throw error;
-}
+  let credentials;
+  try {
+    credentials = JSON.parse(rawCredentials);
+  } catch (error) {
+    error.stage = 'credentials-json';
+    throw error;
+  }
 
-admin.initializeApp({
-  credential: admin.credential.cert(credentials),
-  projectId
-});
+  try {
+    initializeApp({
+      credential: cert(credentials),
+      projectId
+    });
+  } catch (error) {
+    error.stage = 'initialize';
+    throw error;
+  }
 
-const db = admin.firestore();
-const sourcePath = path.join(__dirname, '..', 'data', 'products.json');
-const source = JSON.parse(fs.readFileSync(sourcePath, 'utf8'));
+  const db = getFirestore();
+  const sourcePath = path.join(__dirname, '..', 'data', 'products.json');
+  const source = JSON.parse(fs.readFileSync(sourcePath, 'utf8'));
 
-async function seed() {
   const restaurantRef = db.collection('restaurants').doc(restaurantId);
   const batch = db.batch();
 
@@ -52,7 +57,7 @@ async function seed() {
     meta: source.restaurant.meta,
     published: true,
     source: 'demo',
-    updatedAt: admin.firestore.FieldValue.serverTimestamp()
+    updatedAt: FieldValue.serverTimestamp()
   }, { merge: true });
 
   source.categories.forEach((category, index) => {
@@ -74,7 +79,7 @@ async function seed() {
       sortOrder: index,
       posterProductId: product.posterProductId ?? null,
       source: 'demo',
-      updatedAt: admin.firestore.FieldValue.serverTimestamp()
+      updatedAt: FieldValue.serverTimestamp()
     }, { merge: true });
   });
 
@@ -83,10 +88,10 @@ async function seed() {
   console.log(`Seeded ${source.categories.length} categories and ${source.products.length} products for ${restaurantId}.`);
 }
 
-seed()
+main()
   .then(() => process.exit(0))
   .catch((error) => {
-    writeDiagnostic(error);
+    writeDiagnostic(error, error?.stage || 'seed');
     console.error(`${error?.code || error?.name || 'Error'}: ${error?.message || error}`);
     process.exit(1);
   });

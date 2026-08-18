@@ -1,0 +1,19 @@
+{
+  "version": 6,
+  "restaurantId": "poster-test",
+  "description": "Correction after direct Firestore diagnostic: Poster ingredient 551 is pizza dough, not sea buckthorn. This prepared component remains reviewable while exposing gluten only as a suggested allergen candidate.",
+  "ingredients": {
+    "551": {
+      "canonicalId": "pizza_dough",
+      "names": {
+        "hy": "Պիցցայի խմոր",
+        "ru": "Тесто для пиццы",
+        "en": "Pizza dough"
+      },
+      "category": "dough",
+      "allergens": ["gluten"],
+      "prepared": true,
+      "needsReview": true
+    }
+  }
+}

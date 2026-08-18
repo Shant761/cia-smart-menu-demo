@@ -273,7 +273,10 @@ function boot() {
 
   const drawerBody = $('#drawerBody');
   if (drawerBody) {
-    new MutationObserver(scheduleRender).observe(drawerBody, { childList: true, subtree: true });
+    new MutationObserver(() => {
+      if ($('#nameEditor')) return;
+      scheduleRender();
+    }).observe(drawerBody, { childList: true });
   }
 
   const drawer = $('#productDrawer');

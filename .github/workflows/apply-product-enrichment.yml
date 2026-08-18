@@ -1,0 +1,94 @@
+name: Apply product translations and enrichment
+
+on:
+  workflow_dispatch:
+    inputs:
+      restaurant_id:
+        description: Firestore restaurant slug
+        required: true
+        default: poster-test
+        type: string
+  push:
+    branches:
+      - main
+    paths:
+      - 'data/*-product-translations*.json'
+      - 'scripts/apply-product-title-translations.cjs'
+      - 'scripts/enrich-products-from-ingredient-catalog.cjs'
+      - '.github/workflows/apply-product-enrichment.yml'
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate translation packs and scripts
+        run: |
+          node --check scripts/apply-product-title-translations.cjs
+          node --check scripts/enrich-products-from-ingredient-catalog.cjs
+          node - <<'NODE'
+          const fs = require('fs');
+          const files = fs.readdirSync('data').filter(n => /-product-translations(?:-v\d+)?\.json$/.test(n));
+          let count = 0;
+          for (const file of files) {
+            const x = JSON.parse(fs.readFileSync(`data/${file}`, 'utf8'));
+            count += Object.keys(x.products || {}).length;
+          }
+          console.log(`Translation JSON OK; raw entries across packs=${count}`);
+          NODE
+
+      - name: Install Firebase Admin SDK
+        run: npm install --no-save firebase-admin@14.2.0
+
+      - name: Apply translations and ingredient enrichment
+        id: apply
+        continue-on-error: true
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+          CIA_RESTAURANT_ID: ${{ github.event_name == 'workflow_dispatch' && inputs.restaurant_id || 'poster-test' }}
+        shell: bash
+        run: |
+          set +e
+          {
+            node scripts/apply-product-title-translations.cjs
+            a=$?
+            node scripts/enrich-products-from-ingredient-catalog.cjs
+            b=$?
+            if [ "$a" -ne 0 ] || [ "$b" -ne 0 ]; then exit 1; fi
+          } > product-enrichment.log 2>&1
+          status=$?
+          cat product-enrichment.log
+          exit "$status"
+
+      - name: Publish product enrichment status
+        if: always()
+        uses: actions/github-script@v7
+        env:
+          APPLY_OUTCOME: ${{ steps.apply.outcome }}
+        with:
+          script: |
+            const fs = require('fs');
+            const title = 'Product translation and enrichment status';
+            const raw = fs.existsSync('product-enrichment.log') ? fs.readFileSync('product-enrichment.log', 'utf8') : 'No log produced.';
+            const success = process.env.APPLY_OUTCOME === 'success';
+            const body = `${success ? 'SUCCESS' : 'FAILED'}: Product translations + ingredient enrichment\n\nRun: ${context.runId}\n\n\`\`\`text\n${raw.slice(-12000)}\n\`\`\``;
+            const { data: issues } = await github.rest.issues.listForRepo({ owner: context.repo.owner, repo: context.repo.repo, state: 'all', per_page: 100 });
+            const prior = issues.find(issue => issue.title === title);
+            if (prior) {
+              await github.rest.issues.update({ owner: context.repo.owner, repo: context.repo.repo, issue_number: prior.number, body, state: success ? 'closed' : 'open' });
+            } else {
+              await github.rest.issues.create({ owner: context.repo.owner, repo: context.repo.repo, title, body });
+            }
+
+      - name: Fail after diagnostic
+        if: steps.apply.outcome == 'failure'
+        run: exit 1

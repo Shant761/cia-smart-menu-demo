@@ -1,5 +1,6 @@
 name: Apply product translations and enrichment
 
+# Runs after curated translation packs or enrichment logic changes.
 on:
   workflow_dispatch:
     inputs:

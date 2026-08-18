@@ -2,8 +2,31 @@ rules_version = '2';
 
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Phase 1: the browser does not access Firestore directly.
-    // CIA Cloud Functions use the Admin SDK and are not affected by these rules.
+    function restaurantIsPublished(restaurantId) {
+      return get(/databases/$(database)/documents/restaurants/$(restaurantId)).data.published == true;
+    }
+
+    match /restaurants/{restaurantId} {
+      allow read: if resource.data.published == true;
+      allow write: if false;
+
+      match /categories/{categoryId} {
+        allow read: if restaurantIsPublished(restaurantId);
+        allow write: if false;
+      }
+
+      match /products/{productId} {
+        allow read: if restaurantIsPublished(restaurantId);
+        allow write: if false;
+      }
+
+      // Table tokens, orders, service requests and integrations are intentionally
+      // not public. They will be accessed only through the protected backend.
+      match /{privateDocument=**} {
+        allow read, write: if false;
+      }
+    }
+
     match /{document=**} {
       allow read, write: if false;
     }

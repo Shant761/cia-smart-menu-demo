@@ -12,19 +12,10 @@
       "firestore.indexes.json",
       "storage.rules",
       "README.md",
+      "FIREBASE_SPARK.md",
       ".github/**",
       "functions/**",
       "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "/api/**",
-        "function": {
-          "functionId": "api",
-          "region": "europe-west1",
-          "pinTag": true
-        }
-      }
     ]
   },
   "firestore": {

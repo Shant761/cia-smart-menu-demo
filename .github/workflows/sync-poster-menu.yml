@@ -1,12 +1,6 @@
 name: Sync Poster menu to Firestore
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - '.github/workflows/sync-poster-menu.yml'
-      - 'scripts/sync-poster-to-firestore.cjs'
   workflow_dispatch:
     inputs:
       restaurant_id:
@@ -40,7 +34,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      issues: write
 
     steps:
       - name: Checkout repository
@@ -58,8 +51,6 @@ jobs:
         run: npm install --no-save firebase-admin@14.2.0
 
       - name: Verify required secrets
-        id: secrets
-        continue-on-error: true
         env:
           POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_ACCESS_TOKEN }}
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
@@ -72,80 +63,14 @@ jobs:
             echo "Missing GitHub Actions secret: FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU"
             exit 1
           fi
-          echo "Required secrets are present."
 
       - name: Sync Poster menu into Firestore
-        id: sync
-        if: steps.secrets.outcome == 'success'
-        continue-on-error: true
-        shell: bash
         env:
           POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_ACCESS_TOKEN }}
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-          CIA_RESTAURANT_ID: ${{ github.event_name == 'workflow_dispatch' && inputs.restaurant_id || 'poster-test' }}
-          CIA_RESTAURANT_NAME: ${{ github.event_name == 'workflow_dispatch' && inputs.restaurant_name || 'Poster Test' }}
-          POSTER_SPOT_ID: ${{ github.event_name == 'workflow_dispatch' && inputs.spot_id || '' }}
-          POSTER_SYNC_RECIPES: ${{ github.event_name == 'workflow_dispatch' && format('{0}', inputs.sync_recipes) || 'true' }}
-          CIA_PUBLISH_MENU: ${{ github.event_name == 'workflow_dispatch' && format('{0}', inputs.publish_menu) || 'true' }}
-        run: |
-          set -o pipefail
-          node scripts/sync-poster-to-firestore.cjs 2>&1 | tee poster-sync-output.log
-
-      - name: Publish Poster sync status
-        if: always() && (steps.secrets.outcome == 'failure' || steps.sync.outcome == 'failure' || steps.sync.outcome == 'success')
-        uses: actions/github-script@v7
-        env:
-          SECRET_CHECK: ${{ steps.secrets.outcome }}
-          SYNC_CHECK: ${{ steps.sync.outcome }}
-        with:
-          script: |
-            const fs = require('fs');
-            const title = 'Poster sync status';
-            const secretOk = process.env.SECRET_CHECK === 'success';
-            const syncOk = process.env.SYNC_CHECK === 'success';
-            let diagnostic = '';
-            if (fs.existsSync('poster-sync-output.log')) {
-              diagnostic = fs.readFileSync('poster-sync-output.log', 'utf8').slice(-3500);
-            }
-            if (!diagnostic) {
-              diagnostic = secretOk
-                ? 'Poster sync did not produce a diagnostic log.'
-                : 'Required GitHub Actions secret is missing.';
-            }
-            const success = secretOk && syncOk;
-            const body = success
-              ? `SUCCESS: Poster menu was synchronized to Firestore.\n\nRun: ${context.runId}\n\n\`\`\`text\n${diagnostic}\n\`\`\``
-              : `FAILED: Poster menu synchronization did not complete.\n\nRun: ${context.runId}\n\n\`\`\`text\n${diagnostic}\n\`\`\``;
-            const { data: issues } = await github.rest.issues.listForRepo({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              state: 'all',
-              per_page: 100
-            });
-            let issue = issues.find(item => item.title === title);
-            if (!issue) {
-              const created = await github.rest.issues.create({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                title,
-                body
-              });
-              issue = created.data;
-            } else {
-              await github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: issue.number,
-                body
-              });
-            }
-            await github.rest.issues.update({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: issue.number,
-              state: success ? 'closed' : 'open'
-            });
-
-      - name: Fail after diagnostic
-        if: steps.secrets.outcome == 'failure' || steps.sync.outcome == 'failure'
-        run: exit 1
+          CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
+          CIA_RESTAURANT_NAME: ${{ inputs.restaurant_name }}
+          POSTER_SPOT_ID: ${{ inputs.spot_id }}
+          POSTER_SYNC_RECIPES: ${{ inputs.sync_recipes }}
+          CIA_PUBLISH_MENU: ${{ inputs.publish_menu }}
+        run: node scripts/sync-poster-to-firestore.cjs

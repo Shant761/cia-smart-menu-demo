@@ -1,0 +1,65 @@
+name: Export public product names
+
+on:
+  workflow_dispatch:
+    inputs:
+      restaurant_id:
+        description: Firestore restaurant slug
+        required: true
+        default: poster-test
+        type: string
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/export-public-product-names.cjs'
+      - '.github/workflows/export-public-product-names.yml'
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install Firebase Admin SDK
+        run: npm install --no-save firebase-admin@14.2.0
+
+      - name: Export only public active product names
+        id: export
+        continue-on-error: true
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+          CIA_RESTAURANT_ID: ${{ github.event_name == 'workflow_dispatch' && inputs.restaurant_id || 'poster-test' }}
+        run: node scripts/export-public-product-names.cjs > product-names.tsv 2>&1
+
+      - name: Publish translation input
+        if: always()
+        uses: actions/github-script@v7
+        env:
+          EXPORT_OUTCOME: ${{ steps.export.outcome }}
+        with:
+          script: |
+            const fs = require('fs');
+            const title = 'Public product names for translation';
+            const raw = fs.existsSync('product-names.tsv') ? fs.readFileSync('product-names.tsv', 'utf8') : 'No output.';
+            const success = process.env.EXPORT_OUTCOME === 'success';
+            const body = `${success ? 'SUCCESS' : 'FAILED'}: Public product-name export\n\nOnly active product IDs and public display names are included; no recipes or gram weights.\n\n\`\`\`text\n${raw.slice(0, 60000)}\n\`\`\``;
+            const { data: issues } = await github.rest.issues.listForRepo({ owner: context.repo.owner, repo: context.repo.repo, state: 'all', per_page: 100 });
+            const prior = issues.find(issue => issue.title === title);
+            if (prior) {
+              await github.rest.issues.update({ owner: context.repo.owner, repo: context.repo.repo, issue_number: prior.number, body, state: success ? 'closed' : 'open' });
+            } else {
+              await github.rest.issues.create({ owner: context.repo.owner, repo: context.repo.repo, title, body });
+            }
+
+      - name: Fail after diagnostic
+        if: steps.export.outcome == 'failure'
+        run: exit 1

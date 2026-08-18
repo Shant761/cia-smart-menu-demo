@@ -5,12 +5,32 @@ const admin = require('firebase-admin');
 const projectId = 'cia-smart-menu';
 const restaurantId = 'garden-table';
 const rawCredentials = process.env.FIREBASE_SERVICE_ACCOUNT;
+const diagnosticPath = path.join(__dirname, '..', 'seed-error.txt');
 
-if (!rawCredentials) {
-  throw new Error('FIREBASE_SERVICE_ACCOUNT is required');
+function writeDiagnostic(error) {
+  const diagnostic = {
+    name: error?.name || 'Error',
+    code: error?.code || null,
+    message: String(error?.message || error || 'Unknown error')
+      .replace(/-----BEGIN PRIVATE KEY-----[\s\S]*?-----END PRIVATE KEY-----/g, '[REDACTED PRIVATE KEY]')
+      .replace(/AIza[0-9A-Za-z_-]{20,}/g, '[REDACTED API KEY]')
+  };
+  fs.writeFileSync(diagnosticPath, JSON.stringify(diagnostic, null, 2));
 }
 
-const credentials = JSON.parse(rawCredentials);
+if (!rawCredentials) {
+  const error = new Error('FIREBASE_SERVICE_ACCOUNT is required');
+  writeDiagnostic(error);
+  throw error;
+}
+
+let credentials;
+try {
+  credentials = JSON.parse(rawCredentials);
+} catch (error) {
+  writeDiagnostic(error);
+  throw error;
+}
 
 admin.initializeApp({
   credential: admin.credential.cert(credentials),
@@ -59,12 +79,14 @@ async function seed() {
   });
 
   await batch.commit();
+  if (fs.existsSync(diagnosticPath)) fs.unlinkSync(diagnosticPath);
   console.log(`Seeded ${source.categories.length} categories and ${source.products.length} products for ${restaurantId}.`);
 }
 
 seed()
   .then(() => process.exit(0))
   .catch((error) => {
-    console.error(error);
+    writeDiagnostic(error);
+    console.error(`${error?.code || error?.name || 'Error'}: ${error?.message || error}`);
     process.exit(1);
   });

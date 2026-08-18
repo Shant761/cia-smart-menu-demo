@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "restaurantId": "poster-test",
+  "description": "Second deterministic normalization pack for real Poster ingredients. Complex branded/prepared items remain marked needsReview.",
+  "ingredients": {
+    "115": {"canonicalId":"havana_club_3_rum","names":{"hy":"Havana Club 3 Años ռոմ","ru":"Ром Havana Club 3 Años","en":"Havana Club 3 Años rum"},"category":"alcoholic_beverage","allergens":[]}
+  }
+}

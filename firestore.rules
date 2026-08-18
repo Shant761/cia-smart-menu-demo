@@ -71,3 +71,5 @@ service cloud.firestore {
     }
   }
 }
+
+// Deployment trigger: keep this ruleset explicitly synced to Firebase.

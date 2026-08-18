@@ -1,0 +1,13 @@
+{
+  "version": 7,
+  "restaurantId": "poster-test",
+  "ingredients": {
+    "516": {
+      "canonicalId": "pomegranate",
+      "names": {"hy":"Նուռ","ru":"Гранат","en":"Pomegranate"},
+      "category": "fruit",
+      "allergens": [],
+      "expectedSourceNames": ["гранат","гранат очищенный","зерна граната","зёрна граната"]
+    }
+  }
+}

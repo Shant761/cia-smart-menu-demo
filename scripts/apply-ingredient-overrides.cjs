@@ -4,6 +4,7 @@ const { initializeApp, cert } = require('firebase-admin/app');
 const { getFirestore, FieldValue } = require('firebase-admin/firestore');
 
 const PROJECT_ID = 'cia-smart-menu';
+const DATA_DIR = path.join(process.cwd(), 'data');
 
 function requiredEnv(name) {
   const value = process.env[name]?.trim();
@@ -11,18 +12,56 @@ function requiredEnv(name) {
   return value;
 }
 
+function escapeRegex(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function loadOverridePacks(restaurantId) {
+  const safe = escapeRegex(restaurantId);
+  const matcher = new RegExp(`^${safe}-ingredient-overrides(?:-v(\\d+))?\\.json$`);
+  const files = fs.readdirSync(DATA_DIR)
+    .map((name) => {
+      const match = name.match(matcher);
+      if (!match) return null;
+      return {
+        name,
+        versionFromName: match[1] ? Number(match[1]) : 1
+      };
+    })
+    .filter(Boolean)
+    .sort((a, b) => a.versionFromName - b.versionFromName || a.name.localeCompare(b.name));
+
+  if (!files.length) return { files: [], entries: {}, version: 0 };
+
+  const entries = {};
+  let version = 0;
+  for (const file of files) {
+    const fullPath = path.join(DATA_DIR, file.name);
+    const config = JSON.parse(fs.readFileSync(fullPath, 'utf8'));
+    if (config.restaurantId && config.restaurantId !== restaurantId) {
+      throw new Error(`${file.name} restaurantId=${config.restaurantId} does not match ${restaurantId}`);
+    }
+    const packVersion = Number(config.version || file.versionFromName || 1);
+    version = Math.max(version, packVersion);
+    if (config.ingredients && typeof config.ingredients === 'object') {
+      Object.assign(entries, config.ingredients);
+    }
+  }
+
+  return { files: files.map((item) => item.name), entries, version };
+}
+
 const serviceAccount = JSON.parse(requiredEnv('FIREBASE_SERVICE_ACCOUNT'));
 const restaurantId = (process.env.CIA_RESTAURANT_ID || 'poster-test').trim();
-const overridePath = path.join(process.cwd(), 'data', `${restaurantId}-ingredient-overrides.json`);
+const packs = loadOverridePacks(restaurantId);
 
-if (!fs.existsSync(overridePath)) {
-  console.log(`[Ingredient overrides] No override file for ${restaurantId}; nothing to do.`);
+if (!packs.files.length) {
+  console.log(`[Ingredient overrides] No override files for ${restaurantId}; nothing to do.`);
   process.exit(0);
 }
 
-const config = JSON.parse(fs.readFileSync(overridePath, 'utf8'));
-const entries = config.ingredients && typeof config.ingredients === 'object' ? config.ingredients : {};
-const version = Number(config.version || 1);
+const entries = packs.entries;
+const version = packs.version;
 
 initializeApp({ credential: cert(serviceAccount), projectId: PROJECT_ID });
 const db = getFirestore();
@@ -35,6 +74,16 @@ function allergenCandidates(ids) {
     source: 'restaurant_rule_override',
     reason: 'Poster ingredient ID mapped by deterministic restaurant-specific rule; candidate until restaurant verification.'
   }));
+}
+
+async function commitWrites(writes) {
+  for (let offset = 0; offset < writes.length; offset += 400) {
+    const batch = db.batch();
+    for (const write of writes.slice(offset, offset + 400)) {
+      batch.set(write.ref, write.data, { merge: true });
+    }
+    await batch.commit();
+  }
 }
 
 async function main() {
@@ -82,6 +131,7 @@ async function main() {
         analysisStatus: rule.needsReview === true ? 'needs_review' : 'rule_analyzed',
         restaurantRuleOverride: {
           version,
+          sourceFiles: packs.files,
           posterIngredientId: String(posterId),
           sourceHash: item.sourceHash || null,
           needsReview: rule.needsReview === true,
@@ -93,33 +143,53 @@ async function main() {
     applied += 1;
   }
 
-  for (let offset = 0; offset < writes.length; offset += 400) {
-    const batch = db.batch();
-    for (const write of writes.slice(offset, offset + 400)) {
-      batch.set(write.ref, write.data, { merge: true });
-    }
-    await batch.commit();
-  }
+  await commitWrites(writes);
+
+  const refreshed = await restaurantRef.collection('ingredients_catalog').get();
+  const active = refreshed.docs
+    .map((doc) => ({ id: doc.id, ...doc.data() }))
+    .filter((item) => item.activeInMenu !== false);
+  const normalized = active.filter((item) => Boolean(item.canonicalId));
+  const unresolved = active
+    .filter((item) => !item.canonicalId)
+    .sort((a, b) => (b.occurrences || 0) - (a.occurrences || 0));
+  const reviewNow = active.filter((item) => item.analysisStatus === 'needs_review').length;
 
   await restaurantRef.set({
     restaurantIngredientOverrides: {
       version,
+      sourceFiles: packs.files,
       lastRunAt: FieldValue.serverTimestamp(),
       configured: Object.keys(entries).length,
       applied,
       missing,
       protected: protectedCount,
-      needsReview
+      needsReview,
+      coverage: {
+        activeIngredients: active.length,
+        normalized: normalized.length,
+        unresolved: unresolved.length,
+        needsReview: reviewNow
+      }
     },
     updatedAt: FieldValue.serverTimestamp()
   }, { merge: true });
 
   console.log(`[Ingredient overrides] Restaurant: ${restaurantId}`);
-  console.log(`[Ingredient overrides] Configured: ${Object.keys(entries).length}`);
+  console.log(`[Ingredient overrides] Packs: ${packs.files.join(', ')}`);
+  console.log(`[Ingredient overrides] Configured unique Poster IDs: ${Object.keys(entries).length}`);
   console.log(`[Ingredient overrides] Applied: ${applied}`);
-  console.log(`[Ingredient overrides] Needs review: ${needsReview}`);
+  console.log(`[Ingredient overrides] Needs review in configured rules: ${needsReview}`);
   console.log(`[Ingredient overrides] Missing Poster IDs: ${missing}`);
   console.log(`[Ingredient overrides] Protected AI/restaurant records skipped: ${protectedCount}`);
+  console.log(`[Ingredient overrides] Coverage: normalized=${normalized.length}/${active.length}, unresolved=${unresolved.length}, needsReview=${reviewNow}`);
+
+  if (unresolved.length) {
+    console.log('[Ingredient overrides] Top unresolved ingredients after all rules:');
+    for (const item of unresolved.slice(0, 120)) {
+      console.log(`- ${item.id} | uses=${Number(item.occurrences || 0)} | ${item.primaryName || (item.sourceNames || [])[0] || ''}`);
+    }
+  }
 }
 
 main().catch((error) => {

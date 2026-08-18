@@ -1,6 +1,10 @@
 name: Audit Russian recipe ingredients
 
 on:
+  push:
+    paths:
+      - 'scripts/audit-russian-recipe-ingredients.cjs'
+      - '.github/workflows/audit-russian-recipe-ingredients.yml'
   workflow_dispatch:
     inputs:
       restaurant_id:
@@ -30,5 +34,5 @@ jobs:
       - name: Audit
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-          CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
+          CIA_RESTAURANT_ID: ${{ github.event.inputs.restaurant_id || 'poster-test' }}
         run: node scripts/audit-russian-recipe-ingredients.cjs

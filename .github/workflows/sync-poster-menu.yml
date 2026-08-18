@@ -47,6 +47,7 @@ jobs:
       - name: Validate scripts
         run: |
           node --check scripts/sync-poster-to-firestore.cjs
+          node --check scripts/sync-category-translations.cjs
           node --check scripts/build-ingredient-catalog.cjs
           node --check scripts/normalize-ingredients-rules.cjs
           node --check scripts/apply-ingredient-overrides.cjs
@@ -81,6 +82,13 @@ jobs:
           POSTER_SYNC_RECIPES: ${{ inputs.sync_recipes }}
           CIA_PUBLISH_MENU: ${{ inputs.publish_menu }}
         run: node scripts/sync-poster-to-firestore.cjs
+
+      - name: Reapply source-safe category translations
+        env:
+          POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_ACCESS_TOKEN }}
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+          CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
+        run: node scripts/sync-category-translations.cjs
 
       - name: Build ingredient catalog
         env:

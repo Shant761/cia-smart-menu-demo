@@ -19,6 +19,62 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
+const clean = (value) => String(value ?? '').replace(/\s+/g, ' ').trim();
+const LANGS = ['hy', 'ru', 'en'];
+
+function ingredientOverrideKey(row, index) {
+  const id = row?.ingredientId ?? row?.posterIngredientId;
+  if (id !== null && id !== undefined && clean(id)) return `id:${clean(id)}`;
+  return `name:${clean(row?.name ?? row?.sourceName ?? '') || `row-${index}`}`;
+}
+
+function applyProductNameOverrides(product) {
+  const nameOverrides = product?.nameOverrides;
+  if (nameOverrides && typeof nameOverrides === 'object') {
+    product.name = {
+      ...(product.name || {}),
+      ...Object.fromEntries(LANGS.filter((lang) => clean(nameOverrides[lang])).map((lang) => [lang, clean(nameOverrides[lang])]))
+    };
+  }
+
+  const overrides = product?.ingredientNameOverrides;
+  const recipe = Array.isArray(product?.posterRecipeIngredients) ? product.posterRecipeIngredients : [];
+  const baseIngredients = product?.ingredients || {};
+  if (!overrides || typeof overrides !== 'object' || !recipe.length) return product;
+
+  const nextIngredients = { hy: [], ru: [], en: [] };
+  const seenSourceNames = new Set();
+  let baseIndex = 0;
+
+  for (let index = 0; index < recipe.length; index += 1) {
+    const row = recipe[index] || {};
+    const sourceName = clean(row.name);
+    const sourceKey = sourceName.toLocaleLowerCase('und');
+    if (seenSourceNames.has(sourceKey)) continue;
+    seenSourceNames.add(sourceKey);
+
+    const key = ingredientOverrideKey(row, index);
+    const override = overrides[key] && typeof overrides[key] === 'object' ? overrides[key] : {};
+
+    for (const lang of LANGS) {
+      const list = Array.isArray(baseIngredients[lang]) ? baseIngredients[lang] : [];
+      const base = clean(list[baseIndex] || sourceName);
+      const value = clean(override[lang]) || base;
+      nextIngredients[lang].push(value);
+    }
+    baseIndex += 1;
+  }
+
+  for (const lang of LANGS) {
+    if (nextIngredients[lang].length) {
+      product.ingredients = product.ingredients || {};
+      product.ingredients[lang] = [...new Set(nextIngredients[lang].filter(Boolean))];
+    }
+  }
+
+  return product;
+}
+
 async function loadPublicMenu(restaurantId = 'garden-table') {
   const restaurantSnapshot = await getDoc(doc(db, 'restaurants', restaurantId));
   if (!restaurantSnapshot.exists()) {
@@ -42,7 +98,7 @@ async function loadPublicMenu(restaurantId = 'garden-table') {
 
   const visibleCategoryIds = new Set(categories.filter((item) => item.id !== 'all').map((item) => String(item.id)));
   const products = productSnapshot.docs
-    .map((item) => ({ id: Number(item.data().id ?? item.id), ...item.data() }))
+    .map((item) => applyProductNameOverrides({ id: Number(item.data().id ?? item.id), ...item.data() }))
     .filter((item) => item.active !== false)
     .filter((item) => item.smartMenuPublished !== false)
     .filter((item) => visibleCategoryIds.has(String(item.category)))

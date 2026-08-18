@@ -25,6 +25,7 @@ jobs:
           node --check firestore-menu-bridge.js
           node --check poster-customization-guard.js
           node --check scripts/apply-admin-reviews.cjs
+          node --check scripts/grant-restaurant-admin.cjs
           node --check scripts/apply-ingredient-overrides.cjs
           node --check scripts/enrich-products-from-ingredient-catalog.cjs
           node --check scripts/sync-poster-to-firestore.cjs

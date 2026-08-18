@@ -121,3 +121,87 @@ jobs:
       - name: Fail job after diagnostics
         if: steps.install.outcome == 'failure' || steps.seed.outcome == 'failure'
         run: exit 1
+
+  poster-check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install Firebase Admin SDK
+        run: npm install --no-save firebase-admin@14.2.0
+
+      - name: Verify and sync Poster
+        id: poster
+        continue-on-error: true
+        shell: bash
+        env:
+          POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_ACCESS_TOKEN }}
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+          CIA_RESTAURANT_ID: poster-test
+          CIA_RESTAURANT_NAME: Poster Test
+          POSTER_SYNC_RECIPES: 'true'
+          CIA_PUBLISH_MENU: 'true'
+        run: |
+          set -o pipefail
+          if [ -z "$POSTER_ACCESS_TOKEN" ]; then
+            echo "POSTER_ACCESS_TOKEN secret is missing." | tee poster-check.log
+            exit 1
+          fi
+          node scripts/sync-poster-to-firestore.cjs 2>&1 | tee poster-check.log
+
+      - name: Publish Poster check result
+        if: always()
+        uses: actions/github-script@v7
+        env:
+          POSTER_OUTCOME: ${{ steps.poster.outcome }}
+        with:
+          script: |
+            const fs = require('fs');
+            const title = 'Poster sync status';
+            const success = process.env.POSTER_OUTCOME === 'success';
+            const diagnostic = fs.existsSync('poster-check.log')
+              ? fs.readFileSync('poster-check.log', 'utf8').slice(-3500)
+              : 'Poster check produced no log.';
+            const body = `${success ? 'SUCCESS' : 'FAILED'}: Poster → Firestore test.\n\nRun: ${context.runId}\n\n\`\`\`text\n${diagnostic}\n\`\`\``;
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'all',
+              per_page: 100
+            });
+            let issue = issues.find(item => item.title === title);
+            if (!issue) {
+              issue = (await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body
+              })).data;
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body
+              });
+            }
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              state: success ? 'closed' : 'open'
+            });
+
+      - name: Fail Poster check after diagnostic
+        if: steps.poster.outcome == 'failure'
+        run: exit 1

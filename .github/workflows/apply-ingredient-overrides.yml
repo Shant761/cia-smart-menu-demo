@@ -1,0 +1,99 @@
+name: Apply ingredient overrides
+
+on:
+  workflow_dispatch:
+    inputs:
+      restaurant_id:
+        description: Firestore restaurant slug
+        required: true
+        default: poster-test
+        type: string
+  push:
+    branches:
+      - main
+    paths:
+      - 'data/*-ingredient-overrides.json'
+      - 'scripts/apply-ingredient-overrides.cjs'
+      - '.github/workflows/apply-ingredient-overrides.yml'
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate override script
+        run: |
+          node --check scripts/apply-ingredient-overrides.cjs
+          if [ -f data/poster-test-ingredient-overrides.json ]; then
+            node -e "JSON.parse(require('fs').readFileSync('data/poster-test-ingredient-overrides.json','utf8')); console.log('Override JSON OK')"
+          fi
+
+      - name: Install Firebase Admin SDK
+        run: npm install --no-save firebase-admin@14.2.0
+
+      - name: Apply overrides
+        id: overrides
+        continue-on-error: true
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+          CIA_RESTAURANT_ID: ${{ github.event_name == 'workflow_dispatch' && inputs.restaurant_id || 'poster-test' }}
+        shell: bash
+        run: |
+          set +e
+          node scripts/apply-ingredient-overrides.cjs > ingredient-overrides.log 2>&1
+          status=$?
+          cat ingredient-overrides.log
+          exit "$status"
+
+      - name: Publish override status
+        if: always()
+        uses: actions/github-script@v7
+        env:
+          OVERRIDE_OUTCOME: ${{ steps.overrides.outcome }}
+        with:
+          script: |
+            const fs = require('fs');
+            const title = 'Ingredient override status';
+            const raw = fs.existsSync('ingredient-overrides.log')
+              ? fs.readFileSync('ingredient-overrides.log', 'utf8')
+              : 'No override log was produced.';
+            const success = process.env.OVERRIDE_OUTCOME === 'success';
+            const body = `${success ? 'SUCCESS' : 'FAILED'}: Restaurant Ingredient Overrides\n\nRun: ${context.runId}\n\n\`\`\`text\n${raw.slice(-6000)}\n\`\`\``;
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'all',
+              per_page: 100
+            });
+            const prior = issues.find(issue => issue.title === title);
+            if (prior) {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prior.number,
+                body,
+                state: success ? 'closed' : 'open'
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body
+              });
+            }
+
+      - name: Fail after diagnostic
+        if: steps.overrides.outcome == 'failure'
+        run: exit 1

@@ -1,0 +1,34 @@
+name: Seed Firestore demo menu
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/seed-firestore.cjs'
+      - 'data/products.json'
+      - '.github/workflows/seed-firestore.yml'
+  workflow_dispatch:
+
+jobs:
+  seed:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install Firebase Admin SDK
+        run: npm install --no-save firebase-admin@14.2.0
+
+      - name: Seed Firestore
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+        run: node scripts/seed-firestore.cjs

@@ -16,6 +16,19 @@ service cloud.firestore {
         && get(/databases/$(database)/documents/restaurants/$(restaurantId)/admins/$(request.auth.uid)).data.active == true;
     }
 
+    function onlyMenuNameFieldsChanged() {
+      return request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+        'smartMenuPublished',
+        'restaurantReview',
+        'allergens',
+        'allergenReview',
+        'allergenCustomization',
+        'nameOverrides',
+        'ingredientNameOverrides',
+        'updatedAt'
+      ]);
+    }
+
     match /restaurants/{restaurantId} {
       allow read: if resource.data.published == true || isRestaurantAdmin(restaurantId);
       allow write: if false;
@@ -39,20 +52,9 @@ service cloud.firestore {
       match /products/{productId} {
         allow read: if restaurantIsPublished(restaurantId) || isRestaurantAdmin(restaurantId);
 
-        // Admin may change only Smart Menu review/publication data and
-        // the manual display-name overrides. Poster source data remains read-only.
-        allow update: if isRestaurantAdmin(restaurantId)
-          && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
-            'smartMenuPublished',
-            'restaurantReview',
-            'allergens',
-            'allergenReview',
-            'allergenCustomization',
-            'nameOverrides',
-            'ingredientNameOverrides',
-            'updatedAt'
-          ]);
-
+        // Poster source data remains read-only. Admin can change only Smart Menu
+        // review/publication fields and the manual display-name overrides.
+        allow update: if isRestaurantAdmin(restaurantId) && onlyMenuNameFieldsChanged();
         allow create, delete: if false;
       }
 
@@ -72,4 +74,4 @@ service cloud.firestore {
   }
 }
 
-// Deployment trigger: keep this ruleset explicitly synced to Firebase.
+// Deployment trigger: explicitly redeploy the current Firestore ruleset.

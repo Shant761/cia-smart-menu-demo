@@ -60,7 +60,7 @@ async function main() {
   let matched = 0, ambiguous = 0, missing = 0;
 
   for (const item of items) {
-    const query = String(item.nutritionLookupQuery || item.ai?.nutritionLookupQuery || item.primaryName || '').trim();
+    const query = String(item.nutritionLookupQuery || item.primaryName || '').trim();
     if (!query) continue;
     const foods = await search(query);
     const food = foods[0];
@@ -74,7 +74,14 @@ async function main() {
     const protein = nutrient(food, [1003]);
     const fat = nutrient(food, [1004]);
     const carbs = nutrient(food, [1005]);
-    const confidence = foods.length > 1 && score(foods[0], query) === score(foods[1], query) ? 'review' : 'matched';
+    const topScore = score(food, query);
+    const secondScore = foods.length > 1 ? score(foods[1], query) : -1;
+
+    // USDA often returns several foods with score 0 for a perfectly valid query.
+    // That is not real ambiguity: only flag a review when multiple results actually
+    // match query terms equally well. Require calories to exist before publishing.
+    const hasNutrition = kcal !== null && protein !== null && fat !== null && carbs !== null;
+    const confidence = hasNutrition && !(topScore > 0 && topScore === secondScore) ? 'matched' : 'review';
     if (confidence === 'review') ambiguous += 1; else matched += 1;
 
     await item.ref.set({
@@ -84,6 +91,7 @@ async function main() {
         fdcId: food.fdcId,
         description: food.description || '',
         query,
+        matchScore: topScore,
         per100g: { calories: kcal, protein_g: protein, fat_g: fat, carbs_g: carbs },
         sourceHash: item.sourceHash,
         retrievedAt: FieldValue.serverTimestamp(),
@@ -93,7 +101,7 @@ async function main() {
     }, { merge: true });
   }
 
-  await restaurant.set({ nutritionLookup: { source: 'USDA FoodData Central', lastRunAt: FieldValue.serverTimestamp(), matched, ambiguous, missing, version: 1 }, updatedAt: FieldValue.serverTimestamp() }, { merge: true });
+  await restaurant.set({ nutritionLookup: { source: 'USDA FoodData Central', lastRunAt: FieldValue.serverTimestamp(), matched, ambiguous, missing, version: 2 }, updatedAt: FieldValue.serverTimestamp() }, { merge: true });
   console.log(`[USDA nutrition] matched=${matched}, ambiguous=${ambiguous}, missing=${missing}`);
 }
 

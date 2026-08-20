@@ -12,6 +12,7 @@ function requiredEnv(name) {
 
 const serviceAccount = JSON.parse(requiredEnv('FIREBASE_SERVICE_ACCOUNT'));
 const restaurantId = (process.env.CIA_RESTAURANT_ID || 'poster-test').trim();
+const forceBuild = String(process.env.FORCE_CATALOG_BUILD || 'false').toLowerCase() === 'true';
 
 if (!/^[a-zA-Z0-9][a-zA-Z0-9_-]{0,63}$/.test(restaurantId)) {
   throw new Error('CIA_RESTAURANT_ID must contain only letters, numbers, _ or -');
@@ -52,7 +53,21 @@ async function commitWrites(writes) {
 
 async function buildCatalog() {
   const restaurantRef = db.collection('restaurants').doc(restaurantId);
-  if (!(await restaurantRef.get()).exists) throw new Error(`Restaurant ${restaurantId} was not found in Firestore`);
+  const restaurantSnapshot = await restaurantRef.get();
+  if (!restaurantSnapshot.exists) throw new Error(`Restaurant ${restaurantId} was not found in Firestore`);
+
+  const restaurant = restaurantSnapshot.data() || {};
+  const lastSyncAt = restaurant.posterLastSyncAt;
+  const lastBuildAt = restaurant.ingredientCatalog?.lastBuildAt;
+  const canCompareTimestamps = lastSyncAt && lastBuildAt
+    && typeof lastSyncAt.toMillis === 'function'
+    && typeof lastBuildAt.toMillis === 'function';
+
+  if (!forceBuild && canCompareTimestamps && lastBuildAt.toMillis() >= lastSyncAt.toMillis()) {
+    console.log(`[Ingredient catalog] Up to date for ${restaurantId}; skipping full product/catalog reads.`);
+    console.log(`[Ingredient catalog] Last build is at or after the last Poster sync.`);
+    return;
+  }
 
   const [productSnapshot, existingCatalogSnapshot] = await Promise.all([
     restaurantRef.collection('products').get(),

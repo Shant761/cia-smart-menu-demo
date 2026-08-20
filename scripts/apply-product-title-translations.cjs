@@ -14,7 +14,8 @@ initializeApp({ credential: cert(serviceAccount), projectId: PROJECT_ID });
 const db = getFirestore();
 db.settings({ ignoreUndefinedProperties: true });
 
-const clean = (value) => String(value || '').replace(/\s+/g, ' ').trim();
+const clean = (value) => String(value || '').normalize('NFKC').replace(/\s+/g, ' ').trim();
+const sourceKey = (value) => clean(value).toLocaleLowerCase('und').replace(/[«»“”]/g, '"').replace(/[–—−]/g, '-');
 const hash = (value) => crypto.createHash('sha256').update(clean(value), 'utf8').digest('hex');
 
 function loadPacks() {
@@ -62,7 +63,7 @@ async function main() {
   const writes = [];
   let applied = 0;
   let missing = 0;
-  let stale = 0;
+  let sourceMismatch = 0;
   let needsReview = 0;
 
   for (const [id, rule] of Object.entries(entries)) {
@@ -72,29 +73,34 @@ async function main() {
       continue;
     }
 
-    const currentHy = clean(product?.name?.hy || product?.name?.ru || product?.name?.en || product?.name);
-    const sourceHy = clean(rule.hy);
-    if (!currentHy || !sourceHy || currentHy !== sourceHy) {
-      stale += 1;
-      continue;
-    }
+    const currentName = clean(product?.posterOriginalName || product?.name?.hy || product?.name?.ru || product?.name?.en || product?.name);
+    const configuredHy = clean(rule.hy);
+    const matchedByConfiguredSource = !configuredHy || sourceKey(currentName) === sourceKey(configuredHy);
+    if (!matchedByConfiguredSource) sourceMismatch += 1;
 
     const ru = clean(rule.ru);
     const en = clean(rule.en);
-    if (!ru || !en) continue;
+    const hy = configuredHy || currentName;
+    if (!ru || !en || !hy) continue;
     if (rule.needsReview === true) needsReview += 1;
 
+    // Translation packs are keyed by Poster product ID. The configured source name is
+    // used for audit only; a small name change in Poster must never prevent a known ID
+    // from receiving its curated RU/EN/HY translation.
     writes.push({
       ref: product.ref,
       data: {
-        name: { hy: currentHy, ru, en },
-        posterOriginalName: currentHy,
+        name: { hy, ru, en },
+        posterOriginalName: currentName,
         titleTranslation: {
           version,
           sourceLanguage: 'hy',
-          sourceText: currentHy,
-          sourceHash: hash(currentHy),
+          sourceText: currentName,
+          configuredSourceText: configuredHy || null,
+          sourceHash: hash(currentName),
           method: 'curated_without_external_api',
+          matchedBy: 'poster_product_id',
+          sourceNameMatch: matchedByConfiguredSource,
           needsReview: rule.needsReview === true,
           updatedAt: FieldValue.serverTimestamp()
         },
@@ -112,7 +118,7 @@ async function main() {
       configured: Object.keys(entries).length,
       applied,
       missing,
-      stale,
+      sourceMismatch,
       needsReview,
       lastRunAt: FieldValue.serverTimestamp()
     },
@@ -122,10 +128,10 @@ async function main() {
   console.log(`[Product translations] Restaurant: ${restaurantId}`);
   console.log(`[Product translations] Packs: ${files.join(', ')}`);
   console.log(`[Product translations] Configured: ${Object.keys(entries).length}`);
-  console.log(`[Product translations] Applied: ${applied}`);
+  console.log(`[Product translations] Applied by product ID: ${applied}`);
+  console.log(`[Product translations] Source-name mismatches allowed: ${sourceMismatch}`);
   console.log(`[Product translations] Needs review: ${needsReview}`);
   console.log(`[Product translations] Missing products: ${missing}`);
-  console.log(`[Product translations] Stale source names skipped: ${stale}`);
 }
 
 main().catch((error) => {

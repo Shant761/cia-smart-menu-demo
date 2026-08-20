@@ -19,6 +19,40 @@ db.settings({ ignoreUndefinedProperties: true });
 const localized = (value) => { const text = String(value || '').trim(); return { ru: text, en: text, hy: text }; };
 const toNumber = (value, fallback = 0) => { const n = Number(value); return Number.isFinite(n) ? n : fallback; };
 const posterPhotoUrl = (path) => { if (!path) return null; const text = String(path).trim(); if (!text) return null; return /^https?:\/\//i.test(text) ? text : `https://joinposter.com${text.startsWith('/') ? '' : '/'}${text}`; };
+const normalizeIngredient = (value) => String(value || '').toLocaleLowerCase('und').normalize('NFKC').replace(/[.,;:()\[\]{}'"`]/g, ' ').replace(/\s+/g, ' ').trim();
+
+// Conservative deterministic allergen matching. IDs are the same IDs used by data/allergens.json,
+// so the UI automatically renders the existing RU/EN/HY translations for each allergen.
+const ALLERGEN_RULES = [
+  { id: 'milk', words: ['молок', 'milk', 'молоч', 'сливк', 'cream', 'butter', 'масл', 'масло сливоч', 'сыр', 'cheese', 'cheddar', 'mozzarella', 'пармезан', 'parmesan', 'йогурт', 'yogurt', 'кефир', 'cream cheese', 'կաթ', 'պանիր', 'կարագ', 'սերուցք'] },
+  { id: 'egg', words: ['яйц', 'egg', 'eggs', 'майонез', 'mayonnaise', 'meringue', 'безе', 'ձու', 'մայոնեզ'] },
+  { id: 'gluten', words: ['глютен', 'gluten', 'мук', 'flour', 'мука', 'хлеб', 'bread', 'булоч', 'bun', 'пшен', 'wheat', 'лаваш', 'lavash', 'макарон', 'pasta', 'паст', 'spaghetti', 'спагетти', 'croissant', 'круассан', 'կրուասան', 'ցորեն', 'ալյուր', 'հաց', 'մակարոն'] },
+  { id: 'peanut', words: ['арахис', 'peanut', 'գետնանուշ'] },
+  { id: 'nuts', words: ['орех', 'nut', 'almond', 'миндаль', 'walnut', 'грецк', 'hazelnut', 'фундук', 'pistachio', 'фисташ', 'cashew', 'кешью', 'pecan', 'пекан', 'բադամ', 'ընկույզ', 'պիստակ', 'քեշյու'] },
+  { id: 'soy', words: ['соя', 'soy', 'соев', 'soybean', 'соевый', 'սոյա'] },
+  { id: 'fish', words: ['рыб', 'fish', 'лосос', 'salmon', 'тунец', 'tuna', 'форел', 'trout', 'скумбр', 'mackerel', 'ձուկ', 'սաղմոն'] },
+  { id: 'crustaceans', words: ['кревет', 'shrimp', 'prawn', 'краб', 'crab', 'лобстер', 'lobster', 'рак', 'crustacean', 'ծովախեցգետին'] },
+  { id: 'molluscs', words: ['моллюск', 'mollusc', 'mussel', 'мид', 'устриц', 'oyster', 'кальмар', 'squid', 'осьминог', 'octopus', 'clam', 'ракуш', 'մոլյուսկ', 'կաղամար'] },
+  { id: 'sesame', words: ['кунжут', 'sesame', 'թահին', 'տահին', 'քունջութ'] },
+  { id: 'mustard', words: ['горчиц', 'mustard', 'մանանեխ'] },
+  { id: 'celery', words: ['сельдер', 'celery', 'նեխուր'] },
+  { id: 'sulphites', words: ['сульфит', 'sulphite', 'sulfite', 'sulfur dioxide', 'диоксид серы', 'метабисульфит', 'մետաբիսուլֆիտ'] },
+  { id: 'lupin', words: ['люпин', 'lupin', 'լյուպին'] }
+];
+
+function findAllergens(recipeIngredients) {
+  const matches = new Map();
+  for (const ingredient of recipeIngredients) {
+    const name = normalizeIngredient(ingredient?.ingredient_name || ingredient?.name);
+    if (!name) continue;
+    for (const rule of ALLERGEN_RULES) {
+      if (rule.words.some((word) => name.includes(normalizeIngredient(word)))) {
+        matches.set(rule.id, { id: rule.id, status: 'suggested', source: 'recipe_name' });
+      }
+    }
+  }
+  return [...matches.values()];
+}
 
 async function posterRequest(method, params = {}) {
   const url = new URL(`${POSTER_API_BASE}${method}`); url.searchParams.set('token', posterToken); url.searchParams.set('format', 'json');
@@ -99,15 +133,20 @@ async function sync() {
     const detail = detailByProductId.get(docId) || {}; const mergedPoster = { ...product, ...detail }; const spot = chooseSpot(mergedPoster, effectiveSpotId);
     const categoryId = String(mergedPoster?.menu_category_id ?? product?.menu_category_id ?? '0'); const hidden = String(mergedPoster?.hidden ?? product?.hidden ?? '0') === '1'; const visibleAtSpot = !spot || String(spot?.visible ?? '1') !== '0'; const active = !hidden && visibleAtSpot; if (active) activeCount += 1;
     const rawPrice = spot?.price ?? mergedPoster?.price ?? product?.price ?? 0; const price = toNumber(rawPrice) / 100; const photoPath = mergedPoster?.photo_origin || mergedPoster?.photo || product?.photo_origin || product?.photo || null;
-    const recipeIngredients = Array.isArray(detail?.ingredients) ? detail.ingredients : []; const ingredientNames = recipeIngredients.map((ingredient) => String(ingredient?.ingredient_name || '').trim()).filter(Boolean); const productionDescription = String(detail?.product_production_description || '').trim();
+    const recipeIngredients = Array.isArray(detail?.ingredients) ? detail.ingredients : [];
+    const ingredientNames = recipeIngredients.map((ingredient) => String(ingredient?.ingredient_name || '').trim()).filter(Boolean);
+    const productionDescription = String(detail?.product_production_description || '').trim();
+    const inferredAllergens = findAllergens(recipeIngredients);
     writes.push({ type: 'set', ref: restaurantRef.collection('products').doc(docId), data: {
       id: toNumber(rawId, rawId), posterProductId: toNumber(rawId, rawId), source: 'poster', active, category: categoryId,
       name: localized(mergedPoster?.product_name || product?.product_name || `Product ${docId}`), description: localized(productionDescription),
-      ingredients: ingredientNames.length ? { ru: ingredientNames, en: ingredientNames, hy: ingredientNames } : { ru: [], en: [], hy: [] }, allergens: [], emoji: '🍽️', image: posterPhotoUrl(photoPath), price,
+      ingredients: ingredientNames.length ? { ru: ingredientNames, en: ingredientNames, hy: ingredientNames } : { ru: [], en: [], hy: [] },
+      allergens: inferredAllergens, emoji: '🍽️', image: posterPhotoUrl(photoPath), price,
       sortOrder: toNumber(mergedPoster?.sort_order ?? product?.sort_order, index), posterCategoryId: categoryId, posterWorkshopId: mergedPoster?.workshop ?? product?.workshop ?? null, posterType: mergedPoster?.type ?? product?.type ?? null,
       posterSpotId: (spot?.spot_id ?? effectiveSpotId) || null, posterVisibleAtSpot: visibleAtSpot, posterPriceMinor: toNumber(rawPrice), posterPhotoPath: photoPath,
       posterRecipeIngredients: recipeIngredients.map((ingredient) => ({ ingredientId: ingredient?.ingredient_id ?? null, name: ingredient?.ingredient_name ?? '', unit: ingredient?.structure_unit ?? ingredient?.ingredient_unit ?? '', brutto: toNumber(ingredient?.structure_brutto), netto: toNumber(ingredient?.structure_netto), locked: String(ingredient?.structure_lock ?? '0') === '1' })), posterLastSyncAt: now, updatedAt: now
     }, options: { merge: true } });
+    if (inferredAllergens.length) console.log(`[Poster sync] Product ${docId}: inferred allergens=${inferredAllergens.map((item) => item.id).join(',')}`);
   });
   console.log(`[Poster sync] Prepared ${writes.length} Firestore writes without reading the full existing product catalog.`);
   await commitWrites(writes);

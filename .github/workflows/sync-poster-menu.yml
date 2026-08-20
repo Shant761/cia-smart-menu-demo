@@ -6,7 +6,7 @@ on:
       restaurant_id:
         description: Firestore restaurant slug (letters, numbers, _ or -)
         required: true
-        default: poster-demo
+        default: poster-test
         type: string
       restaurant_name:
         description: Restaurant display name used on first sync
@@ -37,7 +37,7 @@ on:
       - '.github/workflows/sync-poster-menu.yml'
 
 env:
-  CIA_RESTAURANT_ID: ${{ inputs.restaurant_id || 'poster-demo' }}
+  CIA_RESTAURANT_ID: ${{ inputs.restaurant_id || 'poster-test' }}
   CIA_RESTAURANT_NAME: ${{ inputs.restaurant_name || 'Poster Restaurant' }}
   POSTER_SPOT_ID: ${{ inputs.spot_id || '' }}
   POSTER_SYNC_RECIPES: ${{ inputs.sync_recipes == null && 'true' || inputs.sync_recipes }}
@@ -145,7 +145,7 @@ jobs:
     needs: sync
     uses: ./.github/workflows/calculate-nutrition.yml
     with:
-      restaurant_id: ${{ inputs.restaurant_id || 'poster-demo' }}
+      restaurant_id: ${{ inputs.restaurant_id || 'poster-test' }}
       lookup_limit: '100'
       force: true
     secrets: inherit

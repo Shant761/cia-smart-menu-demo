@@ -6,7 +6,7 @@ on:
       restaurant_id:
         description: Firestore restaurant slug
         required: true
-        default: poster-demo
+        default: poster-test
         type: string
       lookup_limit:
         description: Max ingredients to lookup in USDA
@@ -23,7 +23,7 @@ on:
       restaurant_id:
         description: Firestore restaurant slug
         required: false
-        default: poster-demo
+        default: poster-test
         type: string
       lookup_limit:
         description: Max ingredients to lookup in USDA
@@ -55,7 +55,7 @@ jobs:
     permissions:
       contents: read
     env:
-      CIA_RESTAURANT_ID: ${{ inputs.restaurant_id || 'poster-demo' }}
+      CIA_RESTAURANT_ID: ${{ inputs.restaurant_id || 'poster-test' }}
       NUTRITION_LIMIT: ${{ inputs.lookup_limit || '100' }}
       NUTRITION_FORCE: ${{ inputs.force == null && 'true' || inputs.force }}
     steps:

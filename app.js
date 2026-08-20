@@ -9,23 +9,6 @@ const state = {
   draftSelected: new Set()
 };
 
-// Demo nutrition data. Later this can be replaced by values calculated from
-// Poster recipes / ingredient weights without changing the UI.
-const nutritionByProduct = {
-  101: { calories: 720 },
-  102: { calories: 430 },
-  103: { calories: 260 },
-  104: { calories: 810 },
-  105: { calories: 340 },
-  106: { calories: 680 },
-  107: { calories: 610 },
-  108: { calories: 470 },
-  109: { calories: 520 },
-  110: { calories: 180 },
-  111: { calories: 90 },
-  112: { calories: 210 }
-};
-
 const i18n = {
   ru: {
     search: 'Поиск блюд', personalize: 'Настроить меню под себя', personalizeSub: 'Исключите продукты и аллергены',
@@ -73,11 +56,33 @@ const $$ = (selector) => [...document.querySelectorAll(selector)];
 const txt = (obj) => obj?.[state.lang] || obj?.ru || obj?.en || '';
 const tr = (key) => i18n[state.lang][key] || i18n.ru[key] || key;
 const allergenById = (id) => state.allergens.find((item) => item.id === id);
-const getNutrition = (product) => nutritionByProduct[product.id] || null;
-const isLightDish = (product) => {
+
+function getNutrition(product) {
+  const nutrition = product?.nutrition;
+  if (!nutrition || nutrition.status !== 'calculated') return null;
+  const calories = Number(nutrition.calories);
+  if (!Number.isFinite(calories)) return null;
+  return {
+    calories: Math.round(calories),
+    protein: Number(nutrition.per100g?.protein_g),
+    fat: Number(nutrition.per100g?.fat_g),
+    carbs: Number(nutrition.per100g?.carbs_g),
+    servingGrams: Number(nutrition.servingGrams)
+  };
+}
+
+function isLightDish(product) {
   const nutrition = getNutrition(product);
   return Boolean(nutrition && nutrition.calories <= 350);
-};
+}
+
+function nutritionMacroMarkup(nutrition) {
+  const macros = [];
+  if (Number.isFinite(nutrition.protein)) macros.push(`Б ${nutrition.protein} г`);
+  if (Number.isFinite(nutrition.fat)) macros.push(`Ж ${nutrition.fat} г`);
+  if (Number.isFinite(nutrition.carbs)) macros.push(`У ${nutrition.carbs} г`);
+  return macros.length ? `<span class="nutrition-macros">${macros.join(' · ')}</span>` : '';
+}
 
 function loadPrefs() {
   try {
@@ -103,12 +108,14 @@ function injectNutritionStyles() {
   style.textContent = `
     .nutrition-row { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-top:10px; }
     .calorie-pill { display:inline-flex; align-items:center; gap:5px; min-height:28px; padding:5px 9px; border-radius:999px; background:#f4f1e9; color:#5f594f; font-size:12px; font-weight:700; }
+    .nutrition-macros { color:#756f64; font-size:11px; font-weight:600; }
     .light-pill { display:inline-flex; align-items:center; min-height:28px; padding:5px 9px; border-radius:999px; background:#e8f5e9; color:#2e6c3b; font-size:12px; font-weight:800; }
     .category-chip.diet-chip { border-color:#b8d8bd; background:#eef8ef; color:#2e6c3b; }
     .category-chip.diet-chip.active { background:#2f6f3e; color:white; border-color:#2f6f3e; }
     .nutrition-panel { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:14px 16px; border-radius:16px; background:#f7f5ef; margin:14px 0 2px; }
     .nutrition-panel strong { display:block; font-size:24px; line-height:1; }
     .nutrition-panel span { color:#756f64; font-size:12px; }
+    .nutrition-panel .nutrition-detail { display:flex; flex-wrap:wrap; gap:6px 12px; margin-top:6px; color:#756f64; font-size:12px; }
   `;
   document.head.appendChild(style);
 }
@@ -292,7 +299,7 @@ function renderCard(product) {
           <span class="dish-price">${formatPrice(product.price)}</span>
         </div>
         <p class="dish-desc">${txt(product.description)}</p>
-        ${nutrition ? `<div class="nutrition-row"><span class="calorie-pill">🔥 ${nutrition.calories} ${tr('calories')}</span>${light ? `<span class="light-pill">🌿 ${tr('light')}</span>` : ''}</div>` : ''}
+        ${nutrition ? `<div class="nutrition-row"><span class="calorie-pill">🔥 ${nutrition.calories} ${tr('calories')}</span>${nutritionMacroMarkup(nutrition)}${light ? `<span class="light-pill">🌿 ${tr('light')}</span>` : ''}</div>` : ''}
         <div class="allergen-row">${pills}</div>
         ${statusText ? `<div class="status-line ${statusClass}">${statusText}</div>` : ''}
       </div>
@@ -337,6 +344,8 @@ function openDish(productId) {
       }).join('')
     : `<span class="status-line safe">${tr('noAllergens')}</span>`;
 
+  const detailMacros = nutrition ? nutritionMacroMarkup(nutrition) : '';
+
   $('#dishDetail').innerHTML = `
     <div class="detail-media">${product.image ? `<img src="${product.image}" alt="${txt(product.name)}">` : `<div class="dish-placeholder">${product.emoji || '🍽️'}</div>`}</div>
     <div class="detail-body">
@@ -345,7 +354,7 @@ function openDish(productId) {
         <div class="detail-price">${formatPrice(product.price)}</div>
       </div>
       <p class="detail-description">${txt(product.description)}</p>
-      ${nutrition ? `<div class="nutrition-panel"><div><span>${tr('nutrition')}</span><strong>🔥 ${nutrition.calories} ${tr('calories')}</strong><span>${tr('nutritionNote')}</span></div>${light ? `<span class="light-pill">🌿 ${tr('light')}</span>` : ''}</div>` : ''}
+      ${nutrition ? `<div class="nutrition-panel"><div><span>${tr('nutrition')}</span><strong>🔥 ${nutrition.calories} ${tr('calories')}</strong><div class="nutrition-detail">${detailMacros}</div><span>${tr('nutritionNote')}</span></div>${light ? `<span class="light-pill">🌿 ${tr('light')}</span>` : ''}</div>` : ''}
       ${conflicts.length ? `<div class="conflict-box">${tr('contains')} ${conflicts.map((item) => `${allergenById(item.id)?.emoji || ''} ${txt(allergenById(item.id)?.name)}`).join(', ')}</div>` : ''}
       <section class="detail-section">
         <h3>${tr('ingredients')}</h3>

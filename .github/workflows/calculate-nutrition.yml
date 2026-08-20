@@ -1,0 +1,58 @@
+name: Build verified nutrition
+
+on:
+  workflow_dispatch:
+    inputs:
+      restaurant_id:
+        description: Firestore restaurant slug
+        required: true
+        default: poster-test
+        type: string
+      lookup_limit:
+        description: Max ingredients to lookup in USDA
+        required: true
+        default: '100'
+        type: string
+      force:
+        description: Re-run USDA matching even when source is unchanged
+        required: true
+        default: false
+        type: boolean
+
+jobs:
+  nutrition:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate scripts
+        run: |
+          node --check scripts/lookup-nutrition-usda.cjs
+          node --check scripts/calculate-product-nutrition.cjs
+      - name: Install Firebase Admin SDK
+        run: npm install --no-save firebase-admin@14.2.0
+      - name: Verify secrets
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+          USDA_DATA_API_KEY: ${{ secrets.USDA_DATA_API_KEY }}
+        run: |
+          test -n "$FIREBASE_SERVICE_ACCOUNT" || (echo 'Missing FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU' && exit 1)
+          test -n "$USDA_DATA_API_KEY" || (echo 'Missing USDA_DATA_API_KEY' && exit 1)
+      - name: Match ingredients against USDA FoodData Central
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+          USDA_DATA_API_KEY: ${{ secrets.USDA_DATA_API_KEY }}
+          CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
+          NUTRITION_LIMIT: ${{ inputs.lookup_limit }}
+          NUTRITION_FORCE: ${{ inputs.force }}
+        run: node scripts/lookup-nutrition-usda.cjs
+      - name: Calculate product nutrition from Poster recipes
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+          CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
+          NUTRITION_FORCE: 'true'
+        run: node scripts/calculate-product-nutrition.cjs

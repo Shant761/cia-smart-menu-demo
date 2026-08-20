@@ -12,7 +12,7 @@ const requiredEnv = (name) => {
 
 const firebaseServiceAccount = JSON.parse(requiredEnv('FIREBASE_SERVICE_ACCOUNT'));
 const posterToken = requiredEnv('POSTER_ACCESS_TOKEN');
-const restaurantId = (process.env.CIA_RESTAURANT_ID || 'poster-demo').trim();
+const restaurantId = (process.env.CIA_RESTAURANT_ID || 'poster-test').trim();
 const restaurantName = (process.env.CIA_RESTAURANT_NAME || 'Poster Restaurant').trim();
 const requestedSpotId = (process.env.POSTER_SPOT_ID || '').trim();
 const syncRecipes = String(process.env.POSTER_SYNC_RECIPES || 'true').toLowerCase() !== 'false';
@@ -123,10 +123,24 @@ function deriveCategoriesFromProducts(products) {
   return [...seen.values()];
 }
 
-function chooseSpot(product) {
+function detectSpotId(products) {
+  if (requestedSpotId) return requestedSpotId;
+
+  for (const product of products) {
+    const spots = Array.isArray(product?.spots) ? product.spots : [];
+    const visible = spots.find((spot) => String(spot?.visible ?? '1') !== '0' && spot?.spot_id != null);
+    if (visible) return String(visible.spot_id);
+    const first = spots.find((spot) => spot?.spot_id != null);
+    if (first) return String(first.spot_id);
+  }
+
+  return '';
+}
+
+function chooseSpot(product, effectiveSpotId) {
   const spots = Array.isArray(product?.spots) ? product.spots : [];
-  if (requestedSpotId) {
-    const exact = spots.find((spot) => String(spot?.spot_id) === requestedSpotId);
+  if (effectiveSpotId) {
+    const exact = spots.find((spot) => String(spot?.spot_id) === effectiveSpotId);
     if (exact) return exact;
   }
   return spots.find((spot) => String(spot?.visible ?? '1') !== '0') || spots[0] || null;
@@ -195,6 +209,9 @@ async function sync() {
   const posterProducts = Array.isArray(productResult.value) ? productResult.value : [];
   if (!posterProducts.length) throw new Error('Poster menu.getProducts returned no products');
 
+  const effectiveSpotId = detectSpotId(posterProducts);
+  console.log(`[Poster sync] Using spot=${effectiveSpotId || 'none detected'}`);
+
   let posterCategories = [];
   if (categoryResult.status === 'fulfilled' && Array.isArray(categoryResult.value)) {
     posterCategories = categoryResult.value
@@ -230,7 +247,7 @@ async function sync() {
       meta: existingRestaurant.meta || localized('Poster POS • Smart Menu'),
       published: publishMenu,
       source: 'poster',
-      posterSpotId: requestedSpotId || null,
+      posterSpotId: effectiveSpotId || null,
       posterSyncRecipes: syncRecipes,
       posterLastSyncAt: now,
       updatedAt: now
@@ -283,7 +300,7 @@ async function sync() {
     const existing = existingProducts.get(docId) || {};
     const detail = detailByProductId.get(docId) || {};
     const mergedPoster = { ...product, ...detail };
-    const spot = chooseSpot(mergedPoster);
+    const spot = chooseSpot(mergedPoster, effectiveSpotId);
     const categoryId = String(mergedPoster?.menu_category_id ?? product?.menu_category_id ?? '0');
     const hidden = String(mergedPoster?.hidden ?? product?.hidden ?? '0') === '1';
     const visibleAtSpot = !spot || String(spot?.visible ?? '1') !== '0';
@@ -319,7 +336,7 @@ async function sync() {
         posterCategoryId: categoryId,
         posterWorkshopId: mergedPoster?.workshop ?? product?.workshop ?? null,
         posterType: mergedPoster?.type ?? product?.type ?? null,
-        posterSpotId: (spot?.spot_id ?? requestedSpotId) || null,
+        posterSpotId: (spot?.spot_id ?? effectiveSpotId) || null,
         posterVisibleAtSpot: visibleAtSpot,
         posterPriceMinor: toNumber(rawPrice),
         posterPhotoPath: photoPath,

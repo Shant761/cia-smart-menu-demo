@@ -8,6 +8,11 @@ on:
         required: true
         default: poster-test
         type: string
+      force:
+        description: Force rebuild even when catalog is already current
+        required: true
+        default: false
+        type: boolean
 
 jobs:
   build:
@@ -37,6 +42,7 @@ jobs:
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
           CIA_RESTAURANT_ID: ${{ inputs.restaurant_id || 'poster-test' }}
+          FORCE_CATALOG_BUILD: ${{ inputs.force || false }}
         shell: bash
         run: |
           set +e

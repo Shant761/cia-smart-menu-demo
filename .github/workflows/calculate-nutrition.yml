@@ -11,7 +11,7 @@ on:
       lookup_limit:
         description: Max ingredients to lookup in USDA
         required: true
-        default: '100'
+        default: '50'
         type: string
       force:
         description: Re-run USDA matching even when source is unchanged
@@ -28,7 +28,7 @@ on:
       lookup_limit:
         description: Max ingredients to lookup in USDA
         required: false
-        default: '100'
+        default: '50'
         type: string
       force:
         description: Re-run USDA matching even when source is unchanged
@@ -56,7 +56,7 @@ jobs:
       contents: read
     env:
       CIA_RESTAURANT_ID: ${{ inputs.restaurant_id || 'poster-test' }}
-      NUTRITION_LIMIT: ${{ inputs.lookup_limit || '100' }}
+      NUTRITION_LIMIT: ${{ inputs.lookup_limit || '50' }}
       NUTRITION_FORCE: ${{ inputs.force == null && 'true' || inputs.force }}
     steps:
       - uses: actions/checkout@v4

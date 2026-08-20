@@ -29,7 +29,7 @@ on:
         default: true
         type: boolean
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '17 */6 * * *'
   push:
     branches:
       - main
@@ -68,6 +68,7 @@ jobs:
           node --check scripts/apply-product-title-translations.cjs
           node --check scripts/enrich-products-from-ingredient-catalog.cjs
           node --check scripts/apply-admin-reviews.cjs
+          node --check scripts/calculate-product-nutrition.cjs
           node -e "JSON.parse(require('fs').readFileSync('data/ingredient-normalization-rules.json','utf8')); console.log('Rules JSON OK')"
 
       - name: Install Firebase Admin SDK
@@ -116,6 +117,7 @@ jobs:
 
       - name: Reapply curated product-title translations
         env:
+          POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_ACCESS_TOKEN }}
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
         run: node scripts/apply-product-title-translations.cjs
 
@@ -128,3 +130,12 @@ jobs:
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
         run: node scripts/apply-admin-reviews.cjs
+
+  nutrition:
+    needs: sync
+    uses: ./.github/workflows/calculate-nutrition.yml
+    with:
+      restaurant_id: ${{ inputs.restaurant_id || 'poster-demo' }}
+      lookup_limit: '100'
+      force: true
+    secrets: inherit

@@ -40,14 +40,6 @@ on:
         required: true
       USDA_DATA_API_KEY:
         required: true
-  push:
-    branches:
-      - main
-    paths:
-      - 'scripts/lookup-nutrition-usda.cjs'
-      - 'scripts/calculate-product-nutrition.cjs'
-      - 'scripts/build-ingredient-catalog.cjs'
-      - '.github/workflows/calculate-nutrition.yml'
 
 jobs:
   nutrition:

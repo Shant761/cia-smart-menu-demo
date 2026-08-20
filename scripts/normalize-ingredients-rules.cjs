@@ -162,22 +162,58 @@ function exactAllergenCandidates(ids) {
   }));
 }
 
-async function commitWrites(writes) {
-  const size = 400;
-  for (let offset = 0; offset < writes.length; offset += size) {
-    const batch = db.batch();
-    for (const write of writes.slice(offset, offset + size)) {
-      batch.set(write.ref, write.data, { merge: true });
+async function sleep(ms) {
+  await new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function isRetryableFirestoreError(error) {
+  const code = String(error?.code || '').toLowerCase();
+  const message = String(error?.message || '').toLowerCase();
+  return code.includes('resource_exhausted') || code.includes('unavailable') || code.includes('deadline_exceeded')
+    || message.includes('resource exhausted') || message.includes('unavailable') || message.includes('deadline exceeded');
+}
+
+async function withFirestoreRetry(label, operation, attempts = 5) {
+  let lastError;
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      return await operation();
+    } catch (error) {
+      lastError = error;
+      if (!isRetryableFirestoreError(error) || attempt === attempts) throw error;
+      const delay = Math.min(1000 * (2 ** (attempt - 1)), 12000);
+      console.warn(`[Rules normalizer] ${label} failed (attempt ${attempt}/${attempts}); retrying in ${delay}ms: ${error?.message || error}`);
+      await sleep(delay);
     }
-    await batch.commit();
   }
+  throw lastError;
+}
+
+async function commitWrites(writes) {
+  const size = 200;
+  for (let offset = 0; offset < writes.length; offset += size) {
+    const chunk = writes.slice(offset, offset + size);
+    await withFirestoreRetry(`Firestore batch ${offset + 1}-${offset + chunk.length}`, () => {
+      const batch = db.batch();
+      for (const write of chunk) {
+        batch.set(write.ref, write.data, { merge: true });
+      }
+      return batch.commit();
+    });
+  }
+}
+
+async function readWithRetry(label, operation) {
+  return withFirestoreRetry(label, operation);
 }
 
 async function main() {
   const restaurantRef = db.collection('restaurants').doc(restaurantId);
-  if (!(await restaurantRef.get()).exists) throw new Error(`Restaurant ${restaurantId} was not found`);
+  if (!(await readWithRetry('Restaurant lookup', () => restaurantRef.get())).exists) {
+    throw new Error(`Restaurant ${restaurantId} was not found`);
+  }
 
-  const snapshot = await restaurantRef.collection('ingredients_catalog').get();
+  const snapshot = await readWithRetry('Ingredient catalog read', () => restaurantRef.collection('ingredients_catalog').get());
   const active = snapshot.docs
     .map((doc) => ({ id: doc.id, ref: doc.ref, ...doc.data() }))
     .filter((item) => item.activeInMenu !== false)
@@ -266,7 +302,7 @@ async function main() {
 
   await commitWrites(writes);
 
-  await restaurantRef.set({
+  await withFirestoreRetry('Normalization summary write', () => restaurantRef.set({
     ruleIngredientNormalization: {
       version: rulesVersion,
       lastRunAt: FieldValue.serverTimestamp(),
@@ -276,7 +312,7 @@ async function main() {
       protected: protectedCount
     },
     updatedAt: FieldValue.serverTimestamp()
-  }, { merge: true });
+  }, { merge: true }));
 
   console.log(`[Rules normalizer] Restaurant: ${restaurantId}`);
   console.log(`[Rules normalizer] Active ingredients: ${active.length}`);

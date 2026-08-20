@@ -28,6 +28,20 @@ on:
         required: true
         default: true
         type: boolean
+  schedule:
+    - cron: '17 */6 * * *'
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/sync-poster-menu.yml'
+
+env:
+  CIA_RESTAURANT_ID: ${{ inputs.restaurant_id || 'poster-demo' }}
+  CIA_RESTAURANT_NAME: ${{ inputs.restaurant_name || 'Poster Restaurant' }}
+  POSTER_SPOT_ID: ${{ inputs.spot_id || '' }}
+  POSTER_SYNC_RECIPES: ${{ inputs.sync_recipes == null && 'true' || inputs.sync_recipes }}
+  CIA_PUBLISH_MENU: ${{ inputs.publish_menu == null && 'true' || inputs.publish_menu }}
 
 jobs:
   sync:
@@ -77,52 +91,40 @@ jobs:
         env:
           POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_ACCESS_TOKEN }}
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-          CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
-          CIA_RESTAURANT_NAME: ${{ inputs.restaurant_name }}
-          POSTER_SPOT_ID: ${{ inputs.spot_id }}
-          POSTER_SYNC_RECIPES: ${{ inputs.sync_recipes }}
-          CIA_PUBLISH_MENU: ${{ inputs.publish_menu }}
         run: node scripts/sync-poster-to-firestore.cjs
 
       - name: Reapply source-safe category translations
         env:
           POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_ACCESS_TOKEN }}
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-          CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
         run: node scripts/sync-category-translations.cjs
 
       - name: Build ingredient catalog
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-          CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
         run: node scripts/build-ingredient-catalog.cjs
 
       - name: Normalize ingredients with deterministic rules
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-          CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
         run: node scripts/normalize-ingredients-rules.cjs
 
       - name: Apply restaurant-specific ingredient overrides
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-          CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
         run: node scripts/apply-ingredient-overrides.cjs
 
       - name: Reapply curated product-title translations
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-          CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
         run: node scripts/apply-product-title-translations.cjs
 
       - name: Enrich product ingredients from normalized catalog
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-          CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
         run: node scripts/enrich-products-from-ingredient-catalog.cjs
 
       - name: Reapply restaurant admin review decisions
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-          CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
         run: node scripts/apply-admin-reviews.cjs

@@ -44,3 +44,5 @@ jobs:
         if: always()
         shell: bash
         run: rm -f "$RUNNER_TEMP/firebase-service-account.json"
+
+# Manual deployment trigger: redeploy the current ruleset.

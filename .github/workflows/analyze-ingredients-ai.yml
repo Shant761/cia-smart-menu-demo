@@ -6,7 +6,7 @@ on:
       restaurant_id:
         description: Firestore restaurant slug
         required: true
-        default: poster-test
+        default: poster-demo
         type: string
       limit:
         description: Max ingredients to analyze this run
@@ -71,11 +71,11 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-          CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
-          AI_LIMIT: ${{ inputs.limit }}
-          AI_BATCH_SIZE: ${{ inputs.batch_size }}
-          OPENAI_MODEL: ${{ inputs.model }}
-          AI_FORCE: ${{ inputs.force }}
+          CIA_RESTAURANT_ID: ${{ inputs.restaurant_id || 'poster-demo' }}
+          AI_LIMIT: ${{ inputs.limit || '25' }}
+          AI_BATCH_SIZE: ${{ inputs.batch_size || '10' }}
+          OPENAI_MODEL: ${{ inputs.model || 'gpt-5.6' }}
+          AI_FORCE: ${{ inputs.force == null && 'false' || inputs.force }}
         shell: bash
         run: |
           set +e
@@ -123,6 +123,6 @@ jobs:
               });
             }
 
-      - name: Fail after diagnostic
+      - name: Report AI failure without blocking menu/nutrition
         if: steps.ai.outcome == 'failure'
-        run: exit 1
+        run: echo "AI ingredient analysis failed; Poster sync and nutrition workflows are independent and continue normally."

@@ -28,6 +28,11 @@ on:
         required: true
         default: true
         type: boolean
+      run_derived:
+        description: Run expensive Firestore localization/catalog/enrichment passes after sync
+        required: true
+        default: false
+        type: boolean
   schedule:
     - cron: '17 */6 * * *'
   push:
@@ -87,15 +92,16 @@ jobs:
             exit 1
           fi
 
-      # Source of truth: Poster -> Firestore.
       - name: Sync Poster menu into Firestore
         env:
           POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_ACCESS_TOKEN }}
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
         run: node scripts/sync-poster-to-firestore.cjs
 
-      # Derived localization and enrichment. Failures here do not hide a successful source sync.
+      # Expensive derived passes are opt-in. Scheduled syncs only perform the source sync.
+      # This prevents repeated full-collection reads/writes from consuming the daily Firestore quota.
       - name: Reapply source-safe category translations
+        if: github.event_name == 'workflow_dispatch' && inputs.run_derived == true
         continue-on-error: true
         env:
           POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_ACCESS_TOKEN }}
@@ -103,36 +109,42 @@ jobs:
         run: node scripts/sync-category-translations.cjs
 
       - name: Reapply curated product-title translations (RU / EN / HY)
+        if: github.event_name == 'workflow_dispatch' && inputs.run_derived == true
         continue-on-error: true
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
         run: node scripts/apply-product-title-translations.cjs
 
       - name: Build ingredient catalog
+        if: github.event_name == 'workflow_dispatch' && inputs.run_derived == true
         continue-on-error: true
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
         run: node scripts/build-ingredient-catalog.cjs
 
       - name: Normalize ingredients with deterministic rules
+        if: github.event_name == 'workflow_dispatch' && inputs.run_derived == true
         continue-on-error: true
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
         run: node scripts/normalize-ingredients-rules.cjs
 
       - name: Apply restaurant-specific ingredient translations and allergen rules
+        if: github.event_name == 'workflow_dispatch' && inputs.run_derived == true
         continue-on-error: true
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
         run: node scripts/apply-ingredient-overrides.cjs
 
       - name: Enrich product ingredients from normalized catalog
+        if: github.event_name == 'workflow_dispatch' && inputs.run_derived == true
         continue-on-error: true
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
         run: node scripts/enrich-products-from-ingredient-catalog.cjs
 
       - name: Reapply restaurant admin review decisions
+        if: github.event_name == 'workflow_dispatch' && inputs.run_derived == true
         continue-on-error: true
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}

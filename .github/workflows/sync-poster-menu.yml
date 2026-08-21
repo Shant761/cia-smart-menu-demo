@@ -78,6 +78,8 @@ jobs:
         run: |
           node --check scripts/sync-poster-to-firestore.cjs
           node --check scripts/inspect-poster-recipe-shape.cjs
+          node --check scripts/resolve-poster-recipes.cjs
+          node --check scripts/recipe-resolver.cjs
           node --check scripts/apply-source-localizations.cjs
           node --check scripts/sync-category-translations.cjs
           node --check scripts/build-ingredient-catalog.cjs
@@ -125,6 +127,12 @@ jobs:
           POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_ACCESS_TOKEN }}
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
         run: node scripts/sync-poster-to-firestore.cjs
+
+      - name: Resolve nested Poster preparations and recipe issues
+        env:
+          POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_ACCESS_TOKEN }}
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+        run: node scripts/resolve-poster-recipes.cjs
 
       # Lightweight localization runs on every sync so Poster source updates cannot erase curated translations.
       # It only reads the products collection and writes changed localized fields; expensive catalog/enrichment remains opt-in.

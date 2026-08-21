@@ -1,10 +1,10 @@
 /**
- * Recipe resolver foundation.
+ * Recipe resolver for Poster recipes.
  *
- * This module intentionally does not call Poster and does not change the
- * existing sync behavior yet. It gives the sync pipeline a stable model for
- * direct ingredients and preparations before we wire in Poster-specific
- * preparation lookup.
+ * Poster recipe rows use structure_type=1 for regular ingredients and
+ * structure_type=2 for preparation/intermediate components in the real
+ * menu.getProduct response. We normalize that representation here so the
+ * recursive resolver can expand preparations.
  */
 
 const DEFAULT_MAX_DEPTH = 12;
@@ -30,23 +30,27 @@ function normalizeQuantity(value) {
 
 function normalizeComponent(raw, index = 0) {
   const source = raw || {};
+  const structureType = normalizeId(source.structure_type ?? source.structureType);
+
   const id = normalizeId(
+    source.preparation_id,
+    source.preparationId,
+    source.prep_id,
+    source.prepId,
     source.ingredient_id,
     source.ingredientId,
     source.poster_ingredient_id,
     source.posterIngredientId,
-    source.preparation_id,
-    source.preparationId,
     source.product_id,
     source.productId,
     source.id
   );
 
   const name = normalizeName(
-    source.ingredient_name,
-    source.ingredientName,
     source.preparation_name,
     source.preparationName,
+    source.ingredient_name,
+    source.ingredientName,
     source.product_name,
     source.productName,
     source.name
@@ -67,14 +71,26 @@ function normalizeComponent(raw, index = 0) {
     source.prepId
   );
 
-  const isPreparation = Boolean(preparationId) || explicitType === 'preparation' || explicitType === 'prep' || explicitType === 'semi_finished' || explicitType === 'semifinished';
+  const isPreparation = Boolean(preparationId)
+    || explicitType === 'preparation'
+    || explicitType === 'prep'
+    || explicitType === 'semi_finished'
+    || explicitType === 'semifinished'
+    || structureType === '2';
 
   return {
     id,
     name,
     type: isPreparation ? 'preparation' : 'ingredient',
-    quantity: normalizeQuantity(firstValue(source.quantity, source.qty, source.amount, source.count)),
-    unit: normalizeName(firstValue(source.unit, source.unit_name, source.measure, source.measure_unit)),
+    quantity: normalizeQuantity(firstValue(
+      source.quantity,
+      source.qty,
+      source.amount,
+      source.count,
+      source.structure_netto,
+      source.structure_brutto
+    )),
+    unit: normalizeName(firstValue(source.unit, source.unit_name, source.measure, source.measure_unit, source.structure_unit)),
     sourceIndex: index,
     raw: source
   };
@@ -92,12 +108,6 @@ function normalizeRecipe(recipe) {
   };
 }
 
-/**
- * Resolve nested preparations using a caller-provided async loader.
- *
- * loader(component) must return a Poster preparation recipe object or null.
- * The resolver protects against cycles and runaway nesting.
- */
 async function resolveRecipe(recipe, loader, options = {}) {
   if (typeof loader !== 'function') throw new TypeError('recipe resolver loader must be a function');
 

@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#f5f3ed" />
   <title>CIA Smart Menu — Admin</title>
   <link rel="stylesheet" href="admin.css" />
+  <link rel="stylesheet" href="admin-recipe-health.css" />
 </head>
 <body>
   <div class="admin-shell">
@@ -73,6 +74,8 @@
           <article class="stat-card"><span>Скрыто</span><strong id="statHidden">0</strong></article>
         </section>
 
+        <section id="recipeHealthPanel" class="recipe-health-panel hidden" aria-live="polite"></section>
+
         <div class="workspace">
           <aside class="sidebar">
             <button class="nav-btn active" data-view="products" type="button"><span>🍽️</span> Блюда</button>
@@ -137,5 +140,6 @@
 
   <script type="module" src="admin.js"></script>
   <script type="module" src="admin-name-editor.js"></script>
+  <script type="module" src="admin-recipe-health.js"></script>
 </body>
 </html>

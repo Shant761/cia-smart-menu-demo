@@ -66,6 +66,7 @@ jobs:
       - name: Validate scripts
         run: |
           node --check scripts/sync-poster-to-firestore.cjs
+          node --check scripts/apply-source-localizations.cjs
           node --check scripts/sync-category-translations.cjs
           node --check scripts/build-ingredient-catalog.cjs
           node --check scripts/normalize-ingredients-rules.cjs
@@ -98,7 +99,15 @@ jobs:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
         run: node scripts/sync-poster-to-firestore.cjs
 
-      # Expensive derived passes are opt-in. Scheduled syncs only perform the source sync.
+      # Lightweight localization runs on every sync so Poster source updates cannot erase curated translations.
+      # It only reads the products collection and writes changed localized fields; expensive catalog/enrichment remains opt-in.
+      - name: Preserve curated product and ingredient localization
+        continue-on-error: true
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+        run: node scripts/apply-source-localizations.cjs
+
+      # Expensive derived passes are opt-in. Scheduled syncs only perform the source sync + lightweight localization.
       # This prevents repeated full-collection reads/writes from consuming the daily Firestore quota.
       - name: Reapply source-safe category translations
         if: github.event_name == 'workflow_dispatch' && inputs.run_derived == true

@@ -33,6 +33,16 @@ on:
         required: true
         default: 25
         type: string
+      inspect_ingredient_entities:
+        description: Test Poster API methods for real ingredient IDs
+        required: true
+        default: false
+        type: boolean
+      ingredient_diagnostic_limit:
+        description: Number of unique ingredient IDs to test (1-50)
+        required: true
+        default: 50
+        type: string
       publish_menu:
         description: Make this restaurant readable by the public Smart Menu
         required: true
@@ -57,6 +67,7 @@ env:
   POSTER_SPOT_ID: ${{ inputs.spot_id || '' }}
   POSTER_SYNC_RECIPES: ${{ inputs.sync_recipes == null && 'true' || inputs.sync_recipes }}
   POSTER_RECIPE_INSPECT_LIMIT: ${{ inputs.recipe_inspect_limit || '25' }}
+  POSTER_INGREDIENT_DIAGNOSTIC_LIMIT: ${{ inputs.ingredient_diagnostic_limit || '50' }}
   CIA_PUBLISH_MENU: ${{ inputs.publish_menu == null && 'true' || inputs.publish_menu }}
 
 jobs:
@@ -78,6 +89,7 @@ jobs:
         run: |
           node --check scripts/sync-poster-to-firestore.cjs
           node --check scripts/inspect-poster-recipe-shape.cjs
+          node --check scripts/diagnose-poster-ingredient-entities.cjs
           node --check scripts/resolve-poster-recipes.cjs
           node --check scripts/recipe-resolver.cjs
           node --check scripts/apply-source-localizations.cjs
@@ -122,6 +134,21 @@ jobs:
           if-no-files-found: warn
           retention-days: 7
 
+      - name: Inspect Poster ingredient entity methods
+        if: github.event_name == 'workflow_dispatch' && inputs.inspect_ingredient_entities == true
+        env:
+          POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_ACCESS_TOKEN }}
+        run: node scripts/diagnose-poster-ingredient-entities.cjs
+
+      - name: Upload Poster ingredient entity diagnostic
+        if: github.event_name == 'workflow_dispatch' && inputs.inspect_ingredient_entities == true && always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: poster-ingredient-entities-${{ inputs.restaurant_id || 'poster-test' }}
+          path: poster-ingredient-entities.json
+          if-no-files-found: warn
+          retention-days: 7
+
       - name: Sync Poster menu into Firestore
         env:
           POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_ACCESS_TOKEN }}
@@ -134,16 +161,12 @@ jobs:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
         run: node scripts/resolve-poster-recipes.cjs
 
-      # Lightweight localization runs on every sync so Poster source updates cannot erase curated translations.
-      # It only reads the products collection and writes changed localized fields; expensive catalog/enrichment remains opt-in.
       - name: Preserve curated product and ingredient localization
         continue-on-error: true
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
         run: node scripts/apply-source-localizations.cjs
 
-      # Expensive derived passes are opt-in. Scheduled syncs only perform the source sync + lightweight localization.
-      # This prevents repeated full-collection reads/writes from consuming the daily Firestore quota.
       - name: Reapply source-safe category translations
         if: github.event_name == 'workflow_dispatch' && inputs.run_derived == true
         continue-on-error: true

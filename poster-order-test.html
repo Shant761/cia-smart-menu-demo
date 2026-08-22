@@ -6,13 +6,12 @@
   <meta name="theme-color" content="#f7f2e9">
   <title>CIA Smart Menu — Poster Order Test</title>
   <style>
-    *{box-sizing:border-box}body{margin:0;background:#f7f2e9;color:#20201d;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.wrap{max-width:520px;margin:auto;padding:24px 16px 40px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}.brand{font-weight:900;letter-spacing:.08em}.badge{font-size:12px;background:#e9dfcf;padding:7px 10px;border-radius:999px}.card{background:#fff;border:1px solid #e7dfd3;border-radius:24px;padding:20px;box-shadow:0 12px 35px rgba(45,35,20,.07);margin-bottom:14px}.product{display:flex;align-items:center;gap:14px}.emoji{width:68px;height:68px;border-radius:18px;background:#f4eadb;display:grid;place-items:center;font-size:38px}.name{font-size:22px;font-weight:800}.muted{color:#777;font-size:14px}.price{margin-left:auto;font-weight:800;font-size:18px}.qty{display:flex;align-items:center;justify-content:space-between;margin-top:18px}.stepper{display:flex;align-items:center;gap:16px}.stepper button{width:38px;height:38px;border:0;border-radius:12px;background:#eee6d9;font-size:22px}.qtynum{min-width:20px;text-align:center;font-weight:800}.field{margin-top:14px}.field label{display:block;font-size:13px;font-weight:700;margin-bottom:7px}.field input,.field textarea{width:100%;border:1px solid #ddd2c3;background:#fff;border-radius:13px;padding:13px;font:inherit;outline:none}.field input:focus,.field textarea:focus{border-color:#a7865a}.button{width:100%;border:0;border-radius:15px;padding:15px;margin-top:18px;background:#20201d;color:white;font-weight:800;font-size:16px}.button:disabled{opacity:.5}.warning{font-size:12px;color:#8a5d24;background:#fff4df;padding:11px;border-radius:12px;margin-top:12px}.result{white-space:pre-wrap;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;background:#191815;color:#f6f0e7;border-radius:15px;padding:14px;overflow:auto}.success{background:#e5f5e8;color:#236331;padding:13px;border-radius:13px;font-weight:700}.error{background:#fae5e5;color:#8b2929;padding:13px;border-radius:13px;font-weight:700}.small{font-size:12px;color:#777;line-height:1.5}.link{color:#6d5330}.hidden{display:none}h1{font-size:28px;line-height:1.1;margin:0 0 8px}h2{font-size:18px;margin:0 0 4px}
+    *{box-sizing:border-box}body{margin:0;background:#f7f2e9;color:#20201d;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.wrap{max-width:520px;margin:auto;padding:24px 16px 40px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}.brand{font-weight:900;letter-spacing:.08em}.badge{font-size:12px;background:#e9dfcf;padding:7px 10px;border-radius:999px}.card{background:#fff;border:1px solid #e7dfd3;border-radius:24px;padding:20px;box-shadow:0 12px 35px rgba(45,35,20,.07);margin-bottom:14px}.product{display:flex;align-items:center;gap:14px}.emoji{width:68px;height:68px;border-radius:18px;background:#f4eadb;display:grid;place-items:center;font-size:38px}.name{font-size:22px;font-weight:800}.muted{color:#777;font-size:14px}.price{margin-left:auto;font-weight:800;font-size:18px}.qty{display:flex;align-items:center;justify-content:space-between;margin-top:18px}.stepper{display:flex;align-items:center;gap:16px}.stepper button{width:38px;height:38px;border:0;border-radius:12px;background:#eee6d9;font-size:22px}.qtynum{min-width:20px;text-align:center;font-weight:800}.field{margin-top:14px}.field label{display:block;font-size:13px;font-weight:700;margin-bottom:7px}.field input,.field textarea{width:100%;border:1px solid #ddd2c3;background:#fff;border-radius:13px;padding:13px;font:inherit;outline:none}.field input:focus,.field textarea:focus{border-color:#a7865a}.button{width:100%;border:0;border-radius:15px;padding:15px;margin-top:18px;background:#20201d;color:white;font-weight:800;font-size:16px}.button:disabled{opacity:.5}.warning{font-size:12px;color:#8a5d24;background:#fff4df;padding:11px;border-radius:12px;margin-top:12px}.result{white-space:pre-wrap;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;background:#191815;color:#f6f0e7;border-radius:15px;padding:14px;overflow:auto}.success{background:#e5f5e8;color:#236331;padding:13px;border-radius:13px;font-weight:700}.error{background:#fae5e5;color:#8b2929;padding:13px;border-radius:13px;font-weight:700}.small{font-size:12px;color:#777;line-height:1.5}.hidden{display:none}h1{font-size:28px;line-height:1.1;margin:0 0 8px}h2{font-size:18px;margin:0 0 4px}
   </style>
 </head>
 <body>
 <div class="wrap">
   <div class="top"><div class="brand">CIA SMART MENU</div><div class="badge">POSTER TEST</div></div>
-
   <h1>Тест отправки заказа</h1>
   <p class="muted">Без Firebase. Тестовая Cola отправляется в Poster через защищённый backend.</p>
 
@@ -31,8 +30,7 @@
     <div class="field"><label for="spot">Стол / spot_id</label><input id="spot" type="number" min="1" value="1"></div>
     <div class="field"><label for="firstName">Имя</label><input id="firstName" value="CIA"></div>
     <div class="field"><label for="comment">Комментарий</label><textarea id="comment" rows="2">CIA Smart Menu browser test</textarea></div>
-    <div class="field"><label for="backend">Backend URL</label><input id="backend" type="url" placeholder="https://your-project.vercel.app/api/test-poster-order"></div>
-    <p class="small">Backend URL нужен потому, что GitHub Pages не может безопасно хранить Poster access token.</p>
+    <p class="small">Backend Vercel подключён автоматически. Poster access token хранится только на сервере.</p>
     <div class="warning">Нажатие кнопки ниже создаст реальный тестовый incoming order в Poster.</div>
     <button id="send" class="button">Отправить заказ в Poster</button>
   </section>
@@ -41,25 +39,18 @@
   <section id="raw" class="card hidden"><h2>Ответ Poster</h2><pre id="result" class="result"></pre></section>
 </div>
 <script>
-  let quantity = 1;
-  const $ = id => document.getElementById(id);
-  function renderQty(){ $('qty').textContent = quantity; }
+  const BACKEND_URL='https://cia-smart-menu-demo-6vh02zkal-shants-projects-f24a578b.vercel.app/api/test-poster-order';
+  let quantity=1;
+  const $=id=>document.getElementById(id);
+  function renderQty(){$('qty').textContent=quantity}
   $('minus').onclick=()=>{quantity=Math.max(1,quantity-1);renderQty()};
   $('plus').onclick=()=>{quantity=Math.min(20,quantity+1);renderQty()};
 
-  const savedBackend = localStorage.getItem('ciaPosterTestBackend');
-  if(savedBackend) $('backend').value=savedBackend;
-
   $('send').onclick=async()=>{
-    const backend=$('backend').value.trim().replace(/\/$/,'');
-    if(!backend){show('error','Укажи Backend URL Vercel.');return;}
-    localStorage.setItem('ciaPosterTestBackend',backend);
     if(!confirm('Создать реальный тестовый заказ в Poster?')) return;
-
     $('send').disabled=true;
     show('success','Отправляем заказ…');
     $('raw').classList.add('hidden');
-
     const payload={
       confirm:true,
       phone:$('phone').value.trim(),
@@ -70,23 +61,18 @@
       product_id:46,
       count:quantity
     };
-
     try{
-      const response=await fetch(backend,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+      const response=await fetch(BACKEND_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
       const data=await response.json().catch(()=>({ok:false,error:'Backend returned non-JSON response'}));
       $('result').textContent=JSON.stringify(data,null,2);
       $('raw').classList.remove('hidden');
-      if(response.ok && data.ok){
-        const id=data.poster?.response?.incoming_order_id ?? data.poster?.incoming_order_id ?? data.poster?.result?.incoming_order_id ?? '—';
+      if(response.ok&&data.ok){
+        const id=data.poster?.response?.incoming_order_id??data.poster?.incoming_order_id??data.poster?.result?.incoming_order_id??'—';
         show('success','Заказ отправлен в Poster. incoming_order_id: '+id);
-      }else{
-        show('error',data.error||'Poster не принял заказ.');
-      }
-    }catch(error){
-      show('error','Ошибка соединения: '+error.message);
-    }finally{$('send').disabled=false;}
+      }else show('error',data.error||'Poster не принял заказ.');
+    }catch(error){show('error','Ошибка соединения: '+error.message)}
+    finally{$('send').disabled=false}
   };
-
   function show(type,text){const el=$('status');el.className='card';el.innerHTML='<div class="'+type+'">'+escapeHtml(text)+'</div>';el.classList.remove('hidden')}
   function escapeHtml(value){return String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 </script>

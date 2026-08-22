@@ -44,7 +44,7 @@ const CATEGORY_TRANSLATIONS = [
   ['սուրճ', 'Кофе', 'Coffee'], ['թեյ', 'Чай', 'Tea'], ['կոկտեյլ', 'Коктейли', 'Cocktails'],
   ['գինի', 'Вино', 'Wine'], ['գարեջուր', 'Пиво', 'Beer'], ['օղի', 'Водка', 'Vodka'],
   ['ալկոհոլ', 'Алкоголь', 'Alcohol'], ['բուրգեր', 'Бургеры', 'Burgers'], ['շաուրմա', 'Шаурма', 'Shawarma'],
-  ['գարնանային', 'Весеннее меню', 'Spring menu'], ['ամառային', 'Ամառային menu', 'Summer menu'],
+  ['գարնանային', 'Весеннее меню', 'Spring menu'], ['ամառային', 'Летнее меню', 'Summer menu'],
   ['աշնանային', 'Осеннее меню', 'Autumn menu'], ['ձմեռային', 'Зимнее меню', 'Winter menu']
 ];
 
@@ -127,12 +127,7 @@ async function main() {
       const current = data.name || {};
       const hy = clean(productRule.hy) || clean(current.hy) || clean(data.posterOriginalName);
       const name = { ru: clean(productRule.ru), en: clean(productRule.en), hy };
-      const translation = {
-        version: productsPack.version,
-        method: 'curated_without_external_api',
-        matchedBy: 'poster_product_id',
-        sourceText: clean(data.posterOriginalName || current.hy || current.ru || current.en)
-      };
+      const translation = { version: productsPack.version, method: 'curated_without_external_api', matchedBy: 'poster_product_id', sourceText: clean(data.posterOriginalName || current.hy || current.ru || current.en) };
       if (JSON.stringify(name) !== JSON.stringify(current) || stableHash(translation) !== String(data.titleTranslationHash || '')) {
         next.name = name;
         next.titleTranslation = { ...translation, updatedAt: FieldValue.serverTimestamp() };
@@ -148,52 +143,27 @@ async function main() {
         const rule = ingredientRuleFor(ingredient, ingredientPack);
         if (!rule?.names) return ingredient;
         const names = rule.names;
-        const updated = {
-          ...ingredient,
-          name: clean(names.ru) || clean(ingredient.name) || clean(ingredient.ingredient_name),
-          names: {
-            ru: clean(names.ru) || clean(ingredient.name) || clean(ingredient.ingredient_name),
-            en: clean(names.en) || clean(ingredient.name) || clean(ingredient.ingredient_name),
-            hy: clean(names.hy) || clean(ingredient.name) || clean(ingredient.ingredient_name)
-          },
-          canonicalId: rule.canonicalId || ingredient.canonicalId || null
-        };
+        const updated = { ...ingredient, name: clean(names.ru) || clean(ingredient.name) || clean(ingredient.ingredient_name), names: { ru: clean(names.ru) || clean(ingredient.name) || clean(ingredient.ingredient_name), en: clean(names.en) || clean(ingredient.name) || clean(ingredient.ingredient_name), hy: clean(names.hy) || clean(ingredient.name) || clean(ingredient.ingredient_name) }, canonicalId: rule.canonicalId || ingredient.canonicalId || null };
         if (JSON.stringify(updated) !== JSON.stringify(ingredient)) changed = true;
         return updated;
       });
       if (changed) {
         next.ingredients = localizedIngredients;
-        next.ingredientLocalization = {
-          version: ingredientPack.version,
-          sourceFiles: ingredientPack.files,
-          method: 'curated_by_poster_ingredient_id_or_source_name',
-          updatedAt: FieldValue.serverTimestamp()
-        };
+        next.ingredientLocalization = { version: ingredientPack.version, sourceFiles: ingredientPack.files, method: 'curated_by_poster_ingredient_id_or_source_name', updatedAt: FieldValue.serverTimestamp() };
         next.ingredientLocalizationHash = stableHash({ version: ingredientPack.version, sourceFiles: ingredientPack.files, ingredients: localizedIngredients });
         ingredientTranslations += 1;
       }
 
-      const overrideAllergens = new Set(ingredients.flatMap((ingredient) => {
-        const rule = ingredientRuleFor(ingredient, ingredientPack);
-        return rule?.allergens || [];
-      }));
+      const overrideAllergens = new Set(ingredients.flatMap((ingredient) => { const rule = ingredientRuleFor(ingredient, ingredientPack); return rule?.allergens || []; }));
       if (overrideAllergens.size) {
         const existing = Array.isArray(data.allergens) ? data.allergens : [];
         const mergedIds = [...new Set([...existing.map((item) => typeof item === 'string' ? item : item?.id).filter(Boolean), ...overrideAllergens])];
         const allergens = mergedIds.map((id) => ({ id, status: 'suggested', source: 'restaurant_rule_override' }));
-        if (JSON.stringify(allergens) !== JSON.stringify(existing)) {
-          next.allergens = allergens;
-          allergenUpdates += 1;
-        }
+        if (JSON.stringify(allergens) !== JSON.stringify(existing)) { next.allergens = allergens; allergenUpdates += 1; }
       }
     }
 
-    if (Object.keys(next).length) {
-      next.updatedAt = FieldValue.serverTimestamp();
-      writes.push({ ref: doc.ref, data: next });
-    } else {
-      skippedUnchanged += 1;
-    }
+    if (Object.keys(next).length) { next.updatedAt = FieldValue.serverTimestamp(); writes.push({ ref: doc.ref, data: next }); } else skippedUnchanged += 1;
   }
 
   for (const doc of categorySnapshot.docs) {
@@ -201,48 +171,16 @@ async function main() {
     if (String(data.id || doc.id) === 'all') continue;
     const localizedName = localizeCategory(data.name?.hy || data.name?.ru || data.name?.en || data.posterOriginalName || '', categoryPack);
     const current = data.name || {};
-    const localizationMeta = {
-      version: categoryPack.version || 1,
-      sourceFiles: categoryPack.files,
-      method: categoryPack.files.length ? 'curated_category_pack' : 'curated_common_category_rules'
-    };
+    const localizationMeta = { version: categoryPack.version || 1, sourceFiles: categoryPack.files, method: categoryPack.files.length ? 'curated_category_pack' : 'curated_common_category_rules' };
     if (JSON.stringify(localizedName) !== JSON.stringify(current) || stableHash(localizationMeta) !== String(data.categoryLocalizationHash || '')) {
-      writes.push({
-        ref: doc.ref,
-        data: {
-          name: localizedName,
-          categoryLocalization: { ...localizationMeta, updatedAt: FieldValue.serverTimestamp() },
-          categoryLocalizationHash: stableHash(localizationMeta),
-          updatedAt: FieldValue.serverTimestamp()
-        }
-      });
+      writes.push({ ref: doc.ref, data: { name: localizedName, categoryLocalization: { ...localizationMeta, updatedAt: FieldValue.serverTimestamp() }, categoryLocalizationHash: stableHash(localizationMeta), updatedAt: FieldValue.serverTimestamp() } });
       categoryTranslations += 1;
-    } else {
-      skippedUnchanged += 1;
-    }
+    } else skippedUnchanged += 1;
   }
 
-  const summary = {
-    productVersion: productsPack.version,
-    ingredientVersion: ingredientPack.version,
-    categoryVersion: categoryPack.version || 1,
-    productPacks: productsPack.files,
-    ingredientPacks: ingredientPack.files,
-    categoryPacks: categoryPack.files,
-    productsApplied: productTranslations,
-    productsWithIngredientUpdates: ingredientTranslations,
-    categoryUpdates: categoryTranslations,
-    allergenUpdates
-  };
+  const summary = { productVersion: productsPack.version, ingredientVersion: ingredientPack.version, categoryVersion: categoryPack.version || 1, productPacks: productsPack.files, ingredientPacks: ingredientPack.files, categoryPacks: categoryPack.files, productsApplied: productTranslations, productsWithIngredientUpdates: ingredientTranslations, categoryUpdates: categoryTranslations, allergenUpdates };
   const previousSummary = restaurantSnapshot.data()?.sourceLocalization;
-  if (stableHash(summary) !== stableHash(previousSummary || {})) {
-    writes.push({
-      ref: restaurantRef,
-      data: { sourceLocalization: { ...summary, lastRunAt: FieldValue.serverTimestamp() }, updatedAt: FieldValue.serverTimestamp() }
-    });
-  } else {
-    skippedUnchanged += 1;
-  }
+  if (stableHash(summary) !== stableHash(previousSummary || {})) writes.push({ ref: restaurantRef, data: { sourceLocalization: { ...summary, lastRunAt: FieldValue.serverTimestamp() }, updatedAt: FieldValue.serverTimestamp() } }); else skippedUnchanged += 1;
 
   await commitWrites(writes);
   console.log(`[Source localization] ${restaurantId}: products=${productTranslations}, ingredient-updates=${ingredientTranslations}, category-updates=${categoryTranslations}, allergen-updates=${allergenUpdates}`);
@@ -250,7 +188,4 @@ async function main() {
   console.log(`[Source localization] Firestore writes to commit: ${writes.length}`);
 }
 
-main().catch((error) => {
-  console.error(`[Source localization] FAILED: ${error?.message || error}`);
-  process.exit(1);
-});
+main().catch((error) => { console.error(`[Source localization] FAILED: ${error?.message || error}`); process.exit(1); });

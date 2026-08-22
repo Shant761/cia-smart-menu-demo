@@ -11,6 +11,7 @@ const requestedSpotId = (process.env.POSTER_TEST_SPOT_ID || '').trim();
 const requestedProductId = (process.env.POSTER_TEST_PRODUCT_ID || '').trim();
 const count = Number(process.env.POSTER_TEST_COUNT || '1');
 const confirm = (process.env.CONFIRM_CREATE_ORDER || '').trim().toUpperCase();
+const testPhone = '+37498615005';
 
 if (!Number.isFinite(count) || count <= 0) throw new Error('POSTER_TEST_COUNT must be a positive number');
 
@@ -99,6 +100,7 @@ async function main() {
   console.log(`[Poster test] Product: ${productName}`);
   console.log(`[Poster test] Count: ${count}`);
   if (priceMinor != null) console.log(`[Poster test] Price from Poster: ${Number(priceMinor) / 100}`);
+  console.log(`[Poster test] Client phone: ${testPhone}`);
 
   if (confirm !== 'YES') {
     console.log('[Poster test] DRY RUN: no order was created. Set CONFIRM_CREATE_ORDER=YES to create exactly one test order.');
@@ -107,7 +109,7 @@ async function main() {
 
   const order = {
     spot_id: Number.isFinite(Number(spotId)) ? Number(spotId) : spotId,
-    phone: '+37400000000',
+    phone: testPhone,
     first_name: 'CIA',
     last_name: 'Smart Menu Test',
     comment: 'CIA Smart Menu API test order',

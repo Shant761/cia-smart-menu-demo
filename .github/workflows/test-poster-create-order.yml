@@ -1,0 +1,49 @@
+name: Test Poster create online order
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: Type YES to actually create one test order
+        required: true
+        default: NO
+        type: string
+      spot_id:
+        description: Optional Poster spot ID; leave empty for automatic detection
+        required: false
+        default: ''
+        type: string
+      product_id:
+        description: Optional Poster product ID; leave empty for automatic selection
+        required: false
+        default: ''
+        type: string
+      count:
+        description: Product quantity
+        required: true
+        default: '1'
+        type: string
+
+jobs:
+  test-order:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Create test order in Poster test account
+        env:
+          POSTER_TEST_ACCESS_TOKEN: ${{ secrets.POSTER_TEST_ACCESS_TOKEN }}
+          POSTER_TEST_SPOT_ID: ${{ inputs.spot_id }}
+          POSTER_TEST_PRODUCT_ID: ${{ inputs.product_id }}
+          POSTER_TEST_COUNT: ${{ inputs.count }}
+          CONFIRM_CREATE_ORDER: ${{ inputs.confirm }}
+        run: node scripts/test-poster-create-order.cjs

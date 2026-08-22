@@ -6,16 +6,20 @@
   <meta name="theme-color" content="#f7f2e9" />
   <title>CIA Smart Menu</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="auth.css" />
 </head>
 <body>
   <div class="app-shell">
     <header class="hero">
       <div class="topbar">
         <div class="brand-mark">CIA</div>
-        <div class="language-switcher" aria-label="Language">
-          <button class="lang-btn active" data-lang="ru">Рус</button>
-          <button class="lang-btn" data-lang="hy">Հայ</button>
-          <button class="lang-btn" data-lang="en">Eng</button>
+        <div style="display:flex;align-items:center;gap:8px;">
+          <button id="accountBtn" class="auth-trigger" type="button"><span>◯</span> Войти</button>
+          <div class="language-switcher" aria-label="Language">
+            <button class="lang-btn active" data-lang="ru">Рус</button>
+            <button class="lang-btn" data-lang="hy">Հայ</button>
+            <button class="lang-btn" data-lang="en">Eng</button>
+          </div>
         </div>
       </div>
 
@@ -84,17 +88,11 @@
       <span class="mode-label">Показывать</span>
       <label class="radio-row">
         <input type="radio" name="filterMode" value="safe" checked />
-        <span>
-          <strong>Только подходящие блюда</strong>
-          <small>Скрывать блюда с выбранными аллергенами</small>
-        </span>
+        <span><strong>Только подходящие блюда</strong><small>Скрывать блюда с выбранными аллергенами</small></span>
       </label>
       <label class="radio-row">
         <input type="radio" name="filterMode" value="all" />
-        <span>
-          <strong>Все блюда</strong>
-          <small>Показывать предупреждение при конфликте</small>
-        </span>
+        <span><strong>Все блюда</strong><small>Показывать предупреждение при конфликте</small></span>
       </label>
     </div>
 
@@ -110,6 +108,15 @@
     <div id="dishDetail"></div>
   </aside>
 
+  <div id="authModal" class="auth-modal hidden" aria-hidden="true">
+    <div id="authModalBackdrop" class="auth-modal-backdrop"></div>
+    <section class="auth-panel" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+      <div class="auth-panel-head"><div class="sheet-handle"></div></div>
+      <button id="authClose" class="auth-close" type="button" aria-label="Close">×</button>
+      <div id="authContent" class="auth-content"></div>
+    </section>
+  </div>
+
   <script type="module" src="firebase-client.js"></script>
   <script src="firestore-menu-bridge.js"></script>
   <script src="app.js" defer></script>
@@ -118,5 +125,6 @@
   <script src="poster-customization-guard.js" defer></script>
   <script src="waiter.js" defer></script>
   <script src="waiter-position.js" defer></script>
+  <script src="auth.js" defer></script>
 </body>
 </html>

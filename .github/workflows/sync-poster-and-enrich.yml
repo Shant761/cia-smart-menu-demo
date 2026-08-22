@@ -6,6 +6,7 @@ on:
       - '.github/workflows/sync-poster-and-enrich.yml'
       - 'scripts/enrich-ingredient-nutrition-from-usda.cjs'
       - 'scripts/calculate-product-nutrition.cjs'
+      - 'data/nutrition-ingredients.json'
   workflow_dispatch:
     inputs:
       restaurant_id:

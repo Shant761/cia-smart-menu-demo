@@ -4,6 +4,8 @@ const scripts = [
   'scripts/sync-poster-to-firestore.cjs',
   'scripts/apply-product-title-translations.cjs',
   'scripts/enrich-products-from-ingredient-catalog.cjs',
+  'scripts/apply-ingredient-nutrition.cjs',
+  'scripts/calculate-product-nutrition.cjs',
   'scripts/apply-admin-reviews.cjs'
 ];
 

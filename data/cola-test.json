@@ -1,0 +1,27 @@
+{
+  "restaurant": {
+    "name": {"ru":"CIASIFT","en":"CIASIFT","hy":"CIASIFT"},
+    "meta": {"ru":"Тест Smart Menu • CIASIFT","en":"Smart Menu test • CIASIFT","hy":"Smart Menu թեստ • CIASIFT"}
+  },
+  "categories": [
+    {"id":"all","name":{"ru":"Все","en":"All","hy":"Բոլորը"}},
+    {"id":"drinks","name":{"ru":"Напитки","en":"Drinks","hy":"Ըմպելիքներ"}}
+  ],
+  "products": [
+    {
+      "id":46,
+      "category":"drinks",
+      "emoji":"🥤",
+      "price":400,
+      "name":{"ru":"Кола","en":"Cola","hy":"Կոլա"},
+      "description":{"ru":"Холодная газированная кола","en":"Chilled sparkling cola","hy":"Սառը գազավորված կոլա"},
+      "ingredients":{"ru":["Кола","Вода","Сахар","Углекислый газ"],"en":["Cola","Water","Sugar","Carbon dioxide"],"hy":["Կոլա","Ջուր","Շաքար","Ածխաթթու գազ"]},
+      "allergens":[],
+      "active":true,
+      "smartMenuPublished":true,
+      "sortOrder":1,
+      "posterProductId":46,
+      "testSource":"Poster test account"
+    }
+  ]
+}

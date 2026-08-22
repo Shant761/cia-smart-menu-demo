@@ -40,6 +40,13 @@ function candidateNames(data) {
   ].map((x) => String(x || '').trim()).filter(Boolean))];
 }
 
+function queryVariants(query) {
+  const original = String(query || '').trim();
+  const normalized = normalize(original);
+  const punctuationSafe = original.replace(/[\\/|,;:]+/g, ' ').replace(/\s+/g, ' ').trim();
+  return [...new Set([original, punctuationSafe, normalized].filter(Boolean))];
+}
+
 function isSafeMatch(query, food) {
   const q = normalize(query);
   const d = normalize(food.description);
@@ -52,9 +59,6 @@ function isSafeMatch(query, food) {
 }
 
 async function searchUSDA(query) {
-  // USDA documents POST /foods/search with the query in JSON. Using POST avoids
-  // URL/query-string edge cases with non-Latin ingredient names and follows the
-  // official FoodData Central API examples.
   const url = new URL(USDA_API_URL);
   url.searchParams.set('api_key', USDA_API_KEY);
 
@@ -94,6 +98,7 @@ async function main() {
   let matched = 0;
   let needsReview = 0;
   let cachedNoMatch = 0;
+  let invalidQueries = 0;
 
   for (const doc of pending) {
     const data = doc.data();
@@ -109,14 +114,25 @@ async function main() {
 
     let found = null;
     let usedQuery = null;
-    for (const query of names) {
+    let lastQueryError = null;
+
+    // Try each known name and a few punctuation-safe variants. One invalid USDA
+    // query must never abort the entire restaurant enrichment run.
+    const queries = [...new Set(names.flatMap(queryVariants))];
+    for (const query of queries) {
       searched++;
-      const result = await searchUSDA(query);
-      const safe = (result.foods || []).find((food) => isSafeMatch(query, food));
-      if (safe) {
-        found = safe;
-        usedQuery = query;
-        break;
+      try {
+        const result = await searchUSDA(query);
+        const safe = (result.foods || []).find((food) => isSafeMatch(query, food));
+        if (safe) {
+          found = safe;
+          usedQuery = query;
+          break;
+        }
+      } catch (error) {
+        invalidQueries++;
+        lastQueryError = error?.message || String(error);
+        console.warn(`[USDA nutrition] Skipping invalid query ${JSON.stringify(query)}: ${lastQueryError}`);
       }
     }
 
@@ -128,8 +144,11 @@ async function main() {
           nutrition: {
             status: 'needs_review',
             source: 'USDA FoodData Central',
-            reason: 'No conservative USDA match found',
+            reason: lastQueryError
+              ? 'USDA rejected all candidate search queries'
+              : 'No conservative USDA match found',
             matchedQuery: names[0],
+            ...(lastQueryError ? { lastQueryError } : {}),
             updatedAt: FieldValue.serverTimestamp()
           },
           updatedAt: FieldValue.serverTimestamp()
@@ -205,6 +224,7 @@ async function main() {
         matched,
         needsReview,
         cachedNoMatch,
+        invalidQueries,
         lastRunAt: FieldValue.serverTimestamp()
       }
     },
@@ -214,6 +234,7 @@ async function main() {
   console.log(`[USDA nutrition] USDA searches: ${searched}`);
   console.log(`[USDA nutrition] New matches: ${matched}`);
   console.log(`[USDA nutrition] Needs review: ${needsReview}`);
+  console.log(`[USDA nutrition] Invalid/rejected queries skipped: ${invalidQueries}`);
   console.log(`[USDA nutrition] Cached no-match records skipped: ${cachedNoMatch}`);
   console.log('[USDA nutrition] Existing matched nutrition was not queried or rewritten.');
 }

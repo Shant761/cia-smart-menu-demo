@@ -5,6 +5,7 @@ const scripts = [
   'scripts/apply-product-title-translations.cjs',
   'scripts/enrich-products-from-ingredient-catalog.cjs',
   'scripts/apply-ingredient-nutrition.cjs',
+  'scripts/enrich-ingredient-nutrition-from-usda.cjs',
   'scripts/calculate-product-nutrition.cjs',
   'scripts/apply-admin-reviews.cjs'
 ];

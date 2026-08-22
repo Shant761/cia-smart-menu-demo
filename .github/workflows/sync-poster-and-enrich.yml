@@ -31,5 +31,6 @@ jobs:
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
           POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_ACCESS_TOKEN }}
+          USDA_API_KEY: ${{ secrets.USDA_API_KEY }}
           CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
         run: node scripts/run-poster-sync-and-enrichment.cjs

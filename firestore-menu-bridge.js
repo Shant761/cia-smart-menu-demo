@@ -4,7 +4,7 @@
 
   const params = new URLSearchParams(window.location.search);
   const explicitRestaurantId = params.get('restaurant');
-  const restaurantId = explicitRestaurantId || 'garden-table';
+  const restaurantId = explicitRestaurantId || 'ciasift';
   const allowDemoFallback = !explicitRestaurantId || restaurantId === 'garden-table';
 
   const waitForFirebase = (timeoutMs = 1800) => new Promise((resolve) => {

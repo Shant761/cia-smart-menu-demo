@@ -69,6 +69,34 @@
     </main>
   </div>
 
+  <div id="cartBar" class="cart-bar hidden" role="button" tabindex="0" aria-label="Open cart">
+    <div class="cart-bar-left">
+      <span class="cart-icon">🛒</span>
+      <span id="cartBarLabel">Корзина</span>
+      <b id="cartCount">0</b>
+    </div>
+    <strong id="cartTotal">0 ֏</strong>
+    <span class="cart-bar-arrow">→</span>
+  </div>
+
+  <div id="cartBackdrop" class="backdrop hidden"></div>
+  <aside id="cartSheet" class="bottom-sheet cart-sheet" aria-hidden="true">
+    <div class="sheet-handle"></div>
+    <div class="sheet-header">
+      <div>
+        <span class="eyebrow">ORDER</span>
+        <h2 id="cartTitle">Корзина</h2>
+      </div>
+      <button class="icon-btn" id="closeCartSheet" type="button" aria-label="Close">×</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-summary">
+      <span>Итого</span>
+      <strong id="cartSubtotal">0 ֏</strong>
+    </div>
+    <button id="cartOrderBtn" class="primary-btn cart-order-btn" type="button">Перейти к заказу</button>
+  </aside>
+
   <div id="sheetBackdrop" class="backdrop hidden"></div>
 
   <aside id="filterSheet" class="bottom-sheet" aria-hidden="true">
@@ -126,5 +154,6 @@
   <script src="waiter.js" defer></script>
   <script src="waiter-position.js" defer></script>
   <script src="auth.js" defer></script>
+  <script src="cart.js" defer></script>
 </body>
 </html>

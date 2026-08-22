@@ -6,12 +6,12 @@ on:
       restaurant_id:
         description: Firestore restaurant slug (letters, numbers, _ or -)
         required: true
-        default: poster-test
+        default: ciasift
         type: string
       restaurant_name:
         description: Restaurant display name used on first sync
         required: true
-        default: Poster Restaurant
+        default: CIASIFT
         type: string
       spot_id:
         description: Poster spot ID; leave blank to use the first visible spot
@@ -62,8 +62,8 @@ on:
       - '.github/workflows/sync-poster-menu.yml'
 
 env:
-  CIA_RESTAURANT_ID: ${{ inputs.restaurant_id || 'poster-test' }}
-  CIA_RESTAURANT_NAME: ${{ inputs.restaurant_name || 'Poster Restaurant' }}
+  CIA_RESTAURANT_ID: ${{ inputs.restaurant_id || 'ciasift' }}
+  CIA_RESTAURANT_NAME: ${{ inputs.restaurant_name || 'CIASIFT' }}
   POSTER_SPOT_ID: ${{ inputs.spot_id || '' }}
   POSTER_SYNC_RECIPES: ${{ inputs.sync_recipes == null && 'true' || inputs.sync_recipes }}
   POSTER_RECIPE_INSPECT_LIMIT: ${{ inputs.recipe_inspect_limit || '25' }}
@@ -129,7 +129,7 @@ jobs:
         if: github.event_name == 'workflow_dispatch' && inputs.inspect_recipe == true && always()
         uses: actions/upload-artifact@v4
         with:
-          name: poster-recipe-shape-${{ inputs.restaurant_id || 'poster-test' }}
+          name: poster-recipe-shape-${{ inputs.restaurant_id || 'ciasift' }}
           path: poster-recipe-shape.json
           if-no-files-found: warn
           retention-days: 7
@@ -144,7 +144,7 @@ jobs:
         if: github.event_name == 'workflow_dispatch' && inputs.inspect_ingredient_entities == true && always()
         uses: actions/upload-artifact@v4
         with:
-          name: poster-ingredient-entities-${{ inputs.restaurant_id || 'poster-test' }}
+          name: poster-ingredient-entities-${{ inputs.restaurant_id || 'ciasift' }}
           path: poster-ingredient-entities.json
           if-no-files-found: warn
           retention-days: 7

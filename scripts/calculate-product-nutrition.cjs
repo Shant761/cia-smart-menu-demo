@@ -14,6 +14,10 @@ function grams(ingredient) {
   if (unit === 'kg' || unit === 'кг') return value * 1000;
   return null;
 }
+function macro(nutrition, key) {
+  const value = nutrition?.per100g?.[key];
+  return value == null ? null : n(value);
+}
 
 const serviceAccount = JSON.parse(requiredEnv('FIREBASE_SERVICE_ACCOUNT'));
 const restaurantId = (process.env.CIA_RESTAURANT_ID || 'poster-test').trim();
@@ -35,7 +39,8 @@ async function main() {
     const recipe = Array.isArray(product.posterRecipeIngredients) ? product.posterRecipeIngredients : [];
     if (!recipe.length) { noRecipe++; continue; }
 
-    let totalG = 0, kcal = 0;
+    let totalG = 0;
+    const totals = { calories: 0, protein: 0, fat: 0, carbohydrates: 0 };
     const ingredientResults = [];
     let blocked = false;
 
@@ -44,12 +49,29 @@ async function main() {
       const cat = id ? byId.get(id) : [...byId.values()].find((x) => (x.sourceNames || []).includes(ingredient?.name));
       const g = grams(ingredient);
       const nut = cat?.nutrition;
-      const ok = g !== null && nut?.status === 'matched' && nut?.per100g?.calories != null;
-      ingredientResults.push({ ingredientId: ingredient?.ingredientId ?? null, name: ingredient?.name || '', grams: g, status: ok ? 'matched' : 'needs_review' });
+      const values = {
+        calories: n(nut?.per100g?.calories),
+        protein: macro(nut, 'protein'),
+        fat: macro(nut, 'fat'),
+        carbohydrates: macro(nut, 'carbohydrates')
+      };
+      const missingNutrients = Object.entries(values).filter(([, value]) => value === null).map(([key]) => key);
+      const ok = g !== null && nut?.status === 'matched' && missingNutrients.length === 0;
+      ingredientResults.push({
+        ingredientId: ingredient?.ingredientId ?? null,
+        name: ingredient?.name || '',
+        grams: g,
+        canonicalId: cat?.canonicalId || null,
+        status: ok ? 'matched' : 'needs_review',
+        missingNutrients
+      });
       if (!ok) { blocked = true; continue; }
       const factor = g / 100;
       totalG += g;
-      kcal += Number(nut.per100g.calories || 0) * factor;
+      totals.calories += values.calories * factor;
+      totals.protein += values.protein * factor;
+      totals.fat += values.fat * factor;
+      totals.carbohydrates += values.carbohydrates * factor;
     }
 
     const recipeHash = hash(JSON.stringify(recipe.map((x) => ({ ingredientId: x.ingredientId ?? null, name: x.name || '', unit: x.unit || '', netto: x.netto ?? null }))));
@@ -57,13 +79,29 @@ async function main() {
 
     const status = blocked || totalG <= 0 ? 'needs_review' : 'calculated';
     if (status === 'calculated') calculated++; else review++;
+
+    const rounded = {
+      calories: Math.round(totals.calories),
+      protein: Number(totals.protein.toFixed(1)),
+      fat: Number(totals.fat.toFixed(1)),
+      carbohydrates: Number(totals.carbohydrates.toFixed(1))
+    };
+
     const data = {
       nutrition: {
         status,
-        source: 'USDA FoodData Central + Poster recipe',
+        source: 'validated ingredient nutrition + Poster recipe',
         recipeHash,
-        calories: status === 'calculated' ? Math.round(kcal) : null,
-        per100g: status === 'calculated' ? { calories: Math.round((kcal / totalG) * 100) } : null,
+        calories: status === 'calculated' ? rounded.calories : null,
+        protein: status === 'calculated' ? rounded.protein : null,
+        fat: status === 'calculated' ? rounded.fat : null,
+        carbohydrates: status === 'calculated' ? rounded.carbohydrates : null,
+        per100g: status === 'calculated' ? {
+          calories: Math.round((totals.calories / totalG) * 100),
+          protein: Number(((totals.protein / totalG) * 100).toFixed(1)),
+          fat: Number(((totals.fat / totalG) * 100).toFixed(1)),
+          carbohydrates: Number(((totals.carbohydrates / totalG) * 100).toFixed(1))
+        } : null,
         servingGrams: status === 'calculated' ? Number(totalG.toFixed(2)) : null,
         ingredientResults,
         calculatedAt: FieldValue.serverTimestamp()
@@ -73,8 +111,8 @@ async function main() {
     await doc.ref.set(data, { merge: true });
   }
 
-  await restaurant.set({ nutritionCalculation: { lastRunAt: FieldValue.serverTimestamp(), metric: 'kcal_only', calculated, needsReview: review, noRecipe, version: 2 }, updatedAt: FieldValue.serverTimestamp() }, { merge: true });
+  await restaurant.set({ nutritionCalculation: { lastRunAt: FieldValue.serverTimestamp(), metric: 'kcal_and_macros', calculated, needsReview: review, noRecipe, version: 3 }, updatedAt: FieldValue.serverTimestamp() }, { merge: true });
   console.log(`[Product nutrition] Restaurant: ${restaurantId}`);
-  console.log(`[Product nutrition] kcal-only calculated=${calculated}, needsReview=${review}, noRecipe=${noRecipe}`);
+  console.log(`[Product nutrition] kcal + macros calculated=${calculated}, needsReview=${review}, noRecipe=${noRecipe}`);
 }
 main().catch((e) => { console.error(`[Product nutrition] FAILED: ${e.message}`); process.exit(1); });

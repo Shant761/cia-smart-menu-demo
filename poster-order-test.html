@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#f7f2e9">
   <title>CIA Smart Menu — Poster Order Test</title>
   <style>
-    *{box-sizing:border-box}body{margin:0;background:#f7f2e9;color:#20201d;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.wrap{max-width:520px;margin:auto;padding:24px 16px 40px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}.brand{font-weight:900;letter-spacing:.08em}.badge{font-size:12px;background:#e9dfcf;padding:7px 10px;border-radius:999px}.card{background:#fff;border:1px solid #e7dfd3;border-radius:24px;padding:20px;box-shadow:0 12px 35px rgba(45,35,20,.07);margin-bottom:14px}.product{display:flex;align-items:center;gap:14px}.emoji{width:68px;height:68px;border-radius:18px;background:#f4eadb;display:grid;place-items:center;font-size:38px}.name{font-size:22px;font-weight:800}.muted{color:#777;font-size:14px}.price{margin-left:auto;font-weight:800;font-size:18px}.qty{display:flex;align-items:center;justify-content:space-between;margin-top:18px}.stepper{display:flex;align-items:center;gap:16px}.stepper button{width:38px;height:38px;border:0;border-radius:12px;background:#eee6d9;font-size:22px}.qtynum{min-width:20px;text-align:center;font-weight:800}.field{margin-top:14px}.field label{display:block;font-size:13px;font-weight:700;margin-bottom:7px}.field input,.field textarea{width:100%;border:1px solid #ddd2c3;background:#fff;border-radius:13px;padding:13px;font:inherit;outline:none}.field input:focus,.field textarea:focus{border-color:#a7865a}.button{width:100%;border:0;border-radius:15px;padding:15px;margin-top:18px;background:#20201d;color:white;font-weight:800;font-size:16px}.button:disabled{opacity:.5}.warning{font-size:12px;color:#8a5d24;background:#fff4df;padding:11px;border-radius:12px;margin-top:12px}.result{white-space:pre-wrap;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;background:#191815;color:#f6f0e7;border-radius:15px;padding:14px;overflow:auto}.success{background:#e5f5e8;color:#236331;padding:13px;border-radius:13px;font-weight:700}.error{background:#fae5e5;color:#8b2929;padding:13px;border-radius:13px;font-weight:700}.small{font-size:12px;color:#777;line-height:1.5}.hidden{display:none}h1{font-size:28px;line-height:1.1;margin:0 0 8px}h2{font-size:18px;margin:0 0 4px}
+    *{box-sizing:border-box}body{margin:0;background:#f7f2e9;color:#20201d;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.wrap{max-width:520px;margin:auto;padding:24px 16px 40px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}.brand{font-weight:900;letter-spacing:.08em}.badge{font-size:12px;background:#e9dfcf;padding:7px 10px;border-radius:999px}.card{background:#fff;border:1px solid #e7dfd3;border-radius:24px;padding:20px;box-shadow:0 12px 35px rgba(45,35,20,.07);margin-bottom:14px}.product{display:flex;align-items:center;gap:14px}.emoji{width:68px;height:68px;border-radius:18px;background:#f4eadb;display:grid;place-items:center;font-size:38px}.name{font-size:22px;font-weight:800}.muted{color:#777;font-size:14px}.price{margin-left:auto;font-weight:800;font-size:18px}.qty{display:flex;align-items:center;justify-content:space-between;margin-top:18px}.stepper{display:flex;align-items:center;gap:16px}.stepper button{width:38px;height:38px;border:0;border-radius:12px;background:#eee6d9;font-size:22px}.qtynum{min-width:20px;text-align:center;font-weight:800}.field{margin-top:14px}.field label{display:block;font-size:13px;font-weight:700;margin-bottom:7px}.field input,.field textarea{width:100%;border:1px solid #ddd2c3;background:#fff;border-radius:13px;padding:13px;font:inherit;outline:none}.field input:focus,.field textarea:focus{border-color:#a7865a}.button{width:100%;border:0;border-radius:15px;padding:15px;margin-top:18px;background:#20201d;color:white;font-weight:800;font-size:16px}.button.secondary{background:#eee6d9;color:#20201d}.button:disabled{opacity:.5}.warning{font-size:12px;color:#8a5d24;background:#fff4df;padding:11px;border-radius:12px;margin-top:12px}.result{white-space:pre-wrap;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;background:#191815;color:#f6f0e7;border-radius:15px;padding:14px;overflow:auto}.success{background:#e5f5e8;color:#236331;padding:13px;border-radius:13px;font-weight:700}.error{background:#fae5e5;color:#8b2929;padding:13px;border-radius:13px;font-weight:700}.small{font-size:12px;color:#777;line-height:1.5}.hidden{display:none}h1{font-size:28px;line-height:1.1;margin:0 0 8px}h2{font-size:18px;margin:0 0 4px}.diag{font-size:13px;line-height:1.6}.diag-row{padding:8px 0;border-bottom:1px solid #eee6d9}.diag-row:last-child{border-bottom:0}.ok{color:#236331;font-weight:800}.bad{color:#8b2929;font-weight:800}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;word-break:break-all}
   </style>
 </head>
 <body>
@@ -14,6 +14,13 @@
   <div class="top"><div class="brand">CIA SMART MENU</div><div class="badge">POSTER TEST</div></div>
   <h1>Тест отправки заказа</h1>
   <p class="muted">Без Firebase. Тестовая Cola отправляется в Poster через защищённый backend.</p>
+
+  <section class="card">
+    <h2>Проверка Backend</h2>
+    <p class="small">Эта проверка не создаёт заказ. Она отдельно проверяет доступность Vercel и CORS.</p>
+    <button id="diagnose" class="button secondary">Проверить Backend</button>
+    <div id="diagnostic" class="diag" style="margin-top:14px"></div>
+  </section>
 
   <section class="card">
     <div class="product">
@@ -46,6 +53,36 @@
   $('minus').onclick=()=>{quantity=Math.max(1,quantity-1);renderQty()};
   $('plus').onclick=()=>{quantity=Math.min(20,quantity+1);renderQty()};
 
+  $('diagnose').onclick=async()=>{
+    const box=$('diagnostic');
+    $('diagnose').disabled=true;
+    box.innerHTML='<div class="small">Проверяем…</div>';
+    const rows=[];
+    rows.push('<div class="diag-row"><b>URL</b><br><span class="mono">'+escapeHtml(BACKEND_URL)+'</span></div>');
+
+    try{
+      const started=performance.now();
+      const response=await fetch(BACKEND_URL,{method:'GET',mode:'cors',cache:'no-store'});
+      const text=await response.text();
+      rows.push('<div class="diag-row"><b>GET</b>: <span class="'+(response.status===405?'ok':'bad')+'">HTTP '+response.status+'</span><br><span class="mono">'+escapeHtml(text.slice(0,500))+'</span></div>');
+    }catch(error){
+      rows.push('<div class="diag-row"><b>GET</b>: <span class="bad">FAILED</span><br>'+escapeHtml(error.name+': '+error.message)+'</div>');
+    }
+
+    try{
+      const response=await fetch(BACKEND_URL,{method:'OPTIONS',mode:'cors',cache:'no-store'});
+      const text=await response.text();
+      rows.push('<div class="diag-row"><b>OPTIONS</b>: <span class="'+(response.status>=200&&response.status<300?'ok':'bad')+'">HTTP '+response.status+'</span><br><span class="mono">'+escapeHtml(text.slice(0,500))+'</span></div>');
+    }catch(error){
+      rows.push('<div class="diag-row"><b>OPTIONS</b>: <span class="bad">FAILED</span><br>'+escapeHtml(error.name+': '+error.message)+'</div>');
+    }
+
+    rows.push('<div class="diag-row"><b>Browser Origin</b>: <span class="mono">'+escapeHtml(location.origin)+'</span></div>');
+    rows.push('<div class="diag-row"><b>Итог</b>: если GET = 405 и OPTIONS = 204, backend доступен и CORS preflight отвечает.</div>');
+    box.innerHTML=rows.join('');
+    $('diagnose').disabled=false;
+  };
+
   $('send').onclick=async()=>{
     if(!confirm('Создать реальный тестовый заказ в Poster?')) return;
     $('send').disabled=true;
@@ -62,7 +99,7 @@
       count:quantity
     };
     try{
-      const response=await fetch(BACKEND_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+      const response=await fetch(BACKEND_URL,{method:'POST',mode:'cors',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
       const data=await response.json().catch(()=>({ok:false,error:'Backend returned non-JSON response'}));
       $('result').textContent=JSON.stringify(data,null,2);
       $('raw').classList.remove('hidden');

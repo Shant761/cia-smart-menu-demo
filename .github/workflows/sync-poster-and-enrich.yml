@@ -1,6 +1,11 @@
 name: Sync Poster and apply menu enrichment
 
 on:
+  push:
+    paths:
+      - '.github/workflows/sync-poster-and-enrich.yml'
+      - 'scripts/enrich-ingredient-nutrition-from-usda.cjs'
+      - 'scripts/calculate-product-nutrition.cjs'
   workflow_dispatch:
     inputs:
       restaurant_id:
@@ -32,5 +37,5 @@ jobs:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
           POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_ACCESS_TOKEN }}
           USDA_API_KEY: ${{ secrets.USDA_API_KEY }}
-          CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
+          CIA_RESTAURANT_ID: ${{ inputs.restaurant_id || 'poster-test' }}
         run: node scripts/run-poster-sync-and-enrichment.cjs

@@ -1,3 +1,4 @@
+const { createHash } = require('node:crypto');
 const { initializeApp, cert } = require('firebase-admin/app');
 const { getFirestore, FieldValue } = require('firebase-admin/firestore');
 
@@ -84,7 +85,6 @@ function localizedNames(sourceName, catalog, trusted) {
     en: clean(translated.en || sourceName)
   };
 
-  // The original Poster text is immutable source truth in its source language.
   const sourceLanguage = catalog?.sourceLanguage;
   if (sourceLanguage === 'hy') names.hy = sourceName;
   else if (sourceLanguage === 'en') names.en = sourceName;
@@ -123,7 +123,28 @@ function buildPublicAllergens(privateRows, existingAllergens) {
   return out;
 }
 
+// Stable hash used for change detection. It intentionally ignores Firestore timestamps.
+function stable(value) {
+  if (value === undefined) return null;
+  if (value === null || typeof value !== 'object') return value;
+  if (Array.isArray(value)) return value.map(stable);
+  return Object.keys(value).sort().reduce((out, key) => {
+    if (key === 'updatedAt' || key === 'lastRunAt') return out;
+    out[key] = stable(value[key]);
+    return out;
+  }, {});
+}
+
+function hash(value) {
+  return createHash('sha256').update(JSON.stringify(stable(value))).digest('hex');
+}
+
+function sameData(existing, next) {
+  return hash(existing || {}) === hash(next || {});
+}
+
 async function commit(writes) {
+  if (!writes.length) return;
   for (let offset = 0; offset < writes.length; offset += 350) {
     const batch = db.batch();
     for (const write of writes.slice(offset, offset + 350)) batch.set(write.ref, write.data, { merge: true });
@@ -133,12 +154,16 @@ async function commit(writes) {
 
 async function main() {
   const restaurantRef = db.collection('restaurants').doc(restaurantId);
-  if (!(await restaurantRef.get()).exists) throw new Error(`Restaurant ${restaurantId} not found`);
+  const restaurantSnapshot = await restaurantRef.get();
+  if (!restaurantSnapshot.exists) throw new Error(`Restaurant ${restaurantId} not found`);
 
-  const [catalogSnapshot, productSnapshot] = await Promise.all([
+  const [catalogSnapshot, productSnapshot, analysisSnapshot] = await Promise.all([
     restaurantRef.collection('ingredients_catalog').get(),
-    restaurantRef.collection('products').get()
+    restaurantRef.collection('products').get(),
+    restaurantRef.collection('product_analysis').get()
   ]);
+
+  const existingAnalysis = new Map(analysisSnapshot.docs.map((doc) => [doc.id, doc.data()]));
 
   const byPosterIngredientId = new Map();
   for (const doc of catalogSnapshot.docs) {
@@ -154,6 +179,11 @@ async function main() {
   let sourceTruthFallbackRows = 0;
   let productsWithAllergens = 0;
   let suggestedAllergenLinks = 0;
+  let analysisCreated = 0;
+  let analysisUpdated = 0;
+  let analysisSkipped = 0;
+  let productsUpdated = 0;
+  let productsSkipped = 0;
   const allergenProductCounts = new Map();
 
   for (const doc of productSnapshot.docs) {
@@ -211,78 +241,109 @@ async function main() {
     const trustedForProduct = privateRows.filter((item) => item.mappingTrusted).length;
     const coverage = recipe.length ? trustedForProduct / recipe.length : 1;
 
-    // Private derived analysis only. posterRecipeIngredients on the product document is never modified here.
-    writes.push({
-      ref: restaurantRef.collection('product_analysis').doc(doc.id),
-      data: {
-        productId: product.posterProductId ?? product.id ?? doc.id,
-        recipeSource: 'poster_tech_card_read_only',
-        normalizedIngredients: privateRows,
+    const analysisData = {
+      productId: product.posterProductId ?? product.id ?? doc.id,
+      recipeSource: 'poster_tech_card_read_only',
+      normalizedIngredients: privateRows,
+      recipeRows: recipe.length,
+      trustedRows: trustedForProduct,
+      sourceTruthFallbackRows: recipe.length - trustedForProduct,
+      normalizationCoverage: coverage,
+      needsReview: privateRows.some((item) => !item.mappingTrusted || item.analysisStatus === 'needs_review'),
+      publicAllergenIds: publicAllergens.map((item) => item.id)
+    };
+
+    const previousAnalysis = existingAnalysis.get(doc.id);
+    if (!previousAnalysis || !sameData(previousAnalysis, analysisData)) {
+      writes.push({
+        ref: restaurantRef.collection('product_analysis').doc(doc.id),
+        data: { ...analysisData, updatedAt: FieldValue.serverTimestamp() }
+      });
+      if (previousAnalysis) analysisUpdated += 1;
+      else analysisCreated += 1;
+    } else {
+      analysisSkipped += 1;
+    }
+
+    const productData = {
+      ingredients: { hy: dedupe(display.hy), ru: dedupe(display.ru), en: dedupe(display.en) },
+      allergens: publicAllergens,
+      ingredientSource: 'poster_tech_card_read_only',
+      allergenAnalysis: {
+        source: 'poster_source_plus_validated_rules',
+        status: suggestedCount ? 'needs_restaurant_confirmation' : 'no_candidate_detected',
+        suggestedCount
+      },
+      ingredientNormalization: {
         recipeRows: recipe.length,
         trustedRows: trustedForProduct,
         sourceTruthFallbackRows: recipe.length - trustedForProduct,
-        normalizationCoverage: coverage,
-        needsReview: privateRows.some((item) => !item.mappingTrusted || item.analysisStatus === 'needs_review'),
-        publicAllergenIds: publicAllergens.map((item) => item.id),
-        updatedAt: FieldValue.serverTimestamp()
+        coverage
       }
-    });
+    };
 
-    // Public composition preserves the Poster ingredient list. Translation is used only for validated mappings.
-    // No ingredients are added, removed, or written back to Poster.
+    const comparableExistingProduct = {
+      ingredients: product.ingredients,
+      allergens: product.allergens,
+      ingredientSource: product.ingredientSource,
+      allergenAnalysis: product.allergenAnalysis ? {
+        source: product.allergenAnalysis.source,
+        status: product.allergenAnalysis.status,
+        suggestedCount: product.allergenAnalysis.suggestedCount
+      } : undefined,
+      ingredientNormalization: product.ingredientNormalization ? {
+        recipeRows: product.ingredientNormalization.recipeRows,
+        trustedRows: product.ingredientNormalization.trustedRows,
+        sourceTruthFallbackRows: product.ingredientNormalization.sourceTruthFallbackRows,
+        coverage: product.ingredientNormalization.coverage
+      } : undefined
+    };
+
+    if (!sameData(comparableExistingProduct, productData)) {
+      writes.push({
+        ref: doc.ref,
+        data: { ...productData, updatedAt: FieldValue.serverTimestamp() }
+      });
+      productsUpdated += 1;
+    } else {
+      productsSkipped += 1;
+    }
+  }
+
+  const summary = {
+    activeProducts: products,
+    recipeRows,
+    trustedRows,
+    sourceTruthFallbackRows,
+    productsWithAllergens,
+    suggestedAllergenLinks,
+    allergenProductCounts: Object.fromEntries([...allergenProductCounts.entries()].sort()),
+    sourcePolicy: 'poster_tech_card_read_only'
+  };
+  const previousSummary = restaurantSnapshot.data()?.productIngredientEnrichment;
+  if (!sameData(previousSummary, summary)) {
     writes.push({
-      ref: doc.ref,
+      ref: restaurantRef,
       data: {
-        ingredients: {
-          hy: dedupe(display.hy),
-          ru: dedupe(display.ru),
-          en: dedupe(display.en)
-        },
-        allergens: publicAllergens,
-        ingredientSource: 'poster_tech_card_read_only',
-        allergenAnalysis: {
-          source: 'poster_source_plus_validated_rules',
-          status: suggestedCount ? 'needs_restaurant_confirmation' : 'no_candidate_detected',
-          suggestedCount,
-          updatedAt: FieldValue.serverTimestamp()
-        },
-        ingredientNormalization: {
-          recipeRows: recipe.length,
-          trustedRows: trustedForProduct,
-          sourceTruthFallbackRows: recipe.length - trustedForProduct,
-          coverage,
-          updatedAt: FieldValue.serverTimestamp()
-        },
+        productIngredientEnrichment: { ...summary, lastRunAt: FieldValue.serverTimestamp() },
         updatedAt: FieldValue.serverTimestamp()
       }
     });
   }
 
-  await commit(writes);
-  await restaurantRef.set({
-    productIngredientEnrichment: {
-      activeProducts: products,
-      recipeRows,
-      trustedRows,
-      sourceTruthFallbackRows,
-      productsWithAllergens,
-      suggestedAllergenLinks,
-      allergenProductCounts: Object.fromEntries([...allergenProductCounts.entries()].sort()),
-      sourcePolicy: 'poster_tech_card_read_only',
-      lastRunAt: FieldValue.serverTimestamp()
-    },
-    updatedAt: FieldValue.serverTimestamp()
-  }, { merge: true });
-
-  console.log(`[Product enrichment] Restaurant: ${restaurantId}`);
   console.log(`[Product enrichment] Active products: ${products}`);
   console.log(`[Product enrichment] Poster recipe rows read: ${recipeRows}`);
   console.log(`[Product enrichment] Trusted mapped rows: ${trustedRows}`);
   console.log(`[Product enrichment] Raw Poster fallback rows: ${sourceTruthFallbackRows}`);
   console.log(`[Product enrichment] Products with allergen candidates: ${productsWithAllergens}/${products}`);
   console.log(`[Product enrichment] Suggested allergen links: ${suggestedAllergenLinks}`);
-  console.log(`[Product enrichment] Allergen product counts: ${JSON.stringify(Object.fromEntries([...allergenProductCounts.entries()].sort()))}`);
+  console.log(`[Product enrichment] Analysis: created=${analysisCreated}, updated=${analysisUpdated}, skipped=${analysisSkipped}`);
+  console.log(`[Product enrichment] Products: updated=${productsUpdated}, skipped=${productsSkipped}`);
+  console.log(`[Product enrichment] Firestore writes to commit: ${writes.length}`);
   console.log('[Product enrichment] Poster tech cards were READ ONLY; no recipe composition was changed.');
+
+  await commit(writes);
+  console.log('[Product enrichment] Firestore commit completed.');
 }
 
 main().catch((error) => {

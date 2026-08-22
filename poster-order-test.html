@@ -17,7 +17,7 @@
 
   <section class="card">
     <h2>Проверка Backend</h2>
-    <p class="small">Эта проверка не создаёт заказ. Она отдельно проверяет доступность Vercel и CORS.</p>
+    <p class="small">Эта проверка не создаёт заказ. Она отдельно проверяет Vercel, обычный GET и настоящий CORS preflight для POST.</p>
     <button id="diagnose" class="button secondary">Проверить Backend</button>
     <div id="diagnostic" class="diag" style="margin-top:14px"></div>
   </section>
@@ -56,12 +56,11 @@
   $('diagnose').onclick=async()=>{
     const box=$('diagnostic');
     $('diagnose').disabled=true;
-    box.innerHTML='<div class="small">Проверяем…</div>';
+    box.innerHTML='<div class="small">Проверяем backend и CORS…</div>';
     const rows=[];
     rows.push('<div class="diag-row"><b>URL</b><br><span class="mono">'+escapeHtml(BACKEND_URL)+'</span></div>');
 
     try{
-      const started=performance.now();
       const response=await fetch(BACKEND_URL,{method:'GET',mode:'cors',cache:'no-store'});
       const text=await response.text();
       rows.push('<div class="diag-row"><b>GET</b>: <span class="'+(response.status===405?'ok':'bad')+'">HTTP '+response.status+'</span><br><span class="mono">'+escapeHtml(text.slice(0,500))+'</span></div>');
@@ -70,15 +69,15 @@
     }
 
     try{
-      const response=await fetch(BACKEND_URL,{method:'OPTIONS',mode:'cors',cache:'no-store'});
+      const response=await fetch(BACKEND_URL,{method:'OPTIONS',mode:'cors',cache:'no-store',headers:{'Access-Control-Request-Method':'POST','Access-Control-Request-Headers':'content-type'}});
       const text=await response.text();
-      rows.push('<div class="diag-row"><b>OPTIONS</b>: <span class="'+(response.status>=200&&response.status<300?'ok':'bad')+'">HTTP '+response.status+'</span><br><span class="mono">'+escapeHtml(text.slice(0,500))+'</span></div>');
+      rows.push('<div class="diag-row"><b>CORS PREFLIGHT</b>: <span class="'+(response.status===204?'ok':'bad')+'">HTTP '+response.status+'</span><br><span class="mono">'+escapeHtml(text.slice(0,500))+'</span></div>');
     }catch(error){
-      rows.push('<div class="diag-row"><b>OPTIONS</b>: <span class="bad">FAILED</span><br>'+escapeHtml(error.name+': '+error.message)+'</div>');
+      rows.push('<div class="diag-row"><b>CORS PREFLIGHT</b>: <span class="bad">FAILED</span><br>'+escapeHtml(error.name+': '+error.message)+'</div>');
     }
 
     rows.push('<div class="diag-row"><b>Browser Origin</b>: <span class="mono">'+escapeHtml(location.origin)+'</span></div>');
-    rows.push('<div class="diag-row"><b>Итог</b>: если GET = 405 и OPTIONS = 204, backend доступен и CORS preflight отвечает.</div>');
+    rows.push('<div class="diag-row"><b>Что нужно</b>: GET должен быть 405, CORS PREFLIGHT — 204. Тогда backend доступен и браузер может пройти preflight.</div>');
     box.innerHTML=rows.join('');
     $('diagnose').disabled=false;
   };

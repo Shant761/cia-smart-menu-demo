@@ -56,7 +56,8 @@ async function searchUSDA(query) {
   url.searchParams.set('api_key', USDA_API_KEY);
   url.searchParams.set('query', query);
   url.searchParams.set('pageSize', '8');
-  url.searchParams.set('dataType', 'SR Legacy,Foundation');
+  // USDA currently rejects the comma-separated dataType parameter with HTTP 400.
+  // We intentionally omit it and rely on conservative name matching below.
   const response = await fetch(url);
   if (!response.ok) throw new Error(`USDA ${response.status}: ${await response.text()}`);
   return response.json();
@@ -79,11 +80,19 @@ async function main() {
   let searched = 0;
   let matched = 0;
   let needsReview = 0;
+  let cachedNoMatch = 0;
 
   for (const doc of pending) {
     const data = doc.data();
     const names = candidateNames(data);
     if (!names.length) continue;
+
+    // A no-match is cached so repeated scheduled runs do not hammer USDA.
+    if (data?.nutrition?.status === 'needs_review' && data?.nutrition?.source === 'USDA FoodData Central') {
+      cachedNoMatch++;
+      needsReview++;
+      continue;
+    }
 
     let found = null;
     let usedQuery = null;
@@ -100,6 +109,19 @@ async function main() {
 
     if (!found) {
       needsReview++;
+      writes.push({
+        ref: doc.ref,
+        data: {
+          nutrition: {
+            status: 'needs_review',
+            source: 'USDA FoodData Central',
+            reason: 'No conservative USDA match found',
+            matchedQuery: names[0],
+            updatedAt: FieldValue.serverTimestamp()
+          },
+          updatedAt: FieldValue.serverTimestamp()
+        }
+      });
       continue;
     }
 
@@ -109,6 +131,21 @@ async function main() {
     const carbohydrates = nutrient(found, '1005');
     if ([calories, protein, fat, carbohydrates].some((x) => x === null)) {
       needsReview++;
+      writes.push({
+        ref: doc.ref,
+        data: {
+          nutrition: {
+            status: 'needs_review',
+            source: 'USDA FoodData Central',
+            reason: 'USDA result is missing one or more required nutrients',
+            matchedQuery: usedQuery,
+            fdcId: found.fdcId,
+            matchedName: found.description,
+            updatedAt: FieldValue.serverTimestamp()
+          },
+          updatedAt: FieldValue.serverTimestamp()
+        }
+      });
       continue;
     }
 
@@ -154,6 +191,7 @@ async function main() {
         searched,
         matched,
         needsReview,
+        cachedNoMatch,
         lastRunAt: FieldValue.serverTimestamp()
       }
     },
@@ -163,6 +201,7 @@ async function main() {
   console.log(`[USDA nutrition] USDA searches: ${searched}`);
   console.log(`[USDA nutrition] New matches: ${matched}`);
   console.log(`[USDA nutrition] Needs review: ${needsReview}`);
+  console.log(`[USDA nutrition] Cached no-match records skipped: ${cachedNoMatch}`);
   console.log('[USDA nutrition] Existing matched nutrition was not queried or rewritten.');
 }
 

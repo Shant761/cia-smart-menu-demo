@@ -52,14 +52,27 @@ function isSafeMatch(query, food) {
 }
 
 async function searchUSDA(query) {
+  // USDA documents POST /foods/search with the query in JSON. Using POST avoids
+  // URL/query-string edge cases with non-Latin ingredient names and follows the
+  // official FoodData Central API examples.
   const url = new URL(USDA_API_URL);
   url.searchParams.set('api_key', USDA_API_KEY);
-  url.searchParams.set('query', query);
-  url.searchParams.set('pageSize', '8');
-  // USDA currently rejects the comma-separated dataType parameter with HTTP 400.
-  // We intentionally omit it and rely on conservative name matching below.
-  const response = await fetch(url);
-  if (!response.ok) throw new Error(`USDA ${response.status}: ${await response.text()}`);
+
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      query,
+      pageSize: 8,
+      pageNumber: 1
+    })
+  });
+
+  if (!response.ok) {
+    const body = await response.text();
+    throw new Error(`USDA ${response.status} for query ${JSON.stringify(query)}: ${body}`);
+  }
+
   return response.json();
 }
 

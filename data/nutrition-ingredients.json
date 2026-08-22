@@ -1,6 +1,6 @@
 {
-  "version": 2,
-  "description": "Nutrition values per 100 g/ml for validated ingredients. Only source-verified entries belong here; calculator must never invent missing values.",
+  "version": 3,
+  "description": "Nutrition values per 100 g for validated common ingredients. Only source-verified entries belong here; calculator must never invent missing values.",
   "sourcePolicy": "validated_reference_data_only",
   "ingredients": {
     "broccoli": {
@@ -11,6 +11,267 @@
       "carbohydrates": 6.64,
       "source": "USDA FoodData Central, SR Legacy, FDC 170379",
       "sourceUrl": "https://fdc.nal.usda.gov/food-details/170379/nutrients"
+    },
+    "chicken_breast_raw": {
+      "basis": "100g",
+      "calories": 120,
+      "protein": 22.5,
+      "fat": 2.62,
+      "carbohydrates": 0,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "beef_raw": {
+      "basis": "100g",
+      "calories": 217,
+      "protein": 26.1,
+      "fat": 11.8,
+      "carbohydrates": 0,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "pork_raw": {
+      "basis": "100g",
+      "calories": 242,
+      "protein": 27.3,
+      "fat": 14,
+      "carbohydrates": 0,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "potato_raw": {
+      "basis": "100g",
+      "calories": 77,
+      "protein": 2.05,
+      "fat": 0.09,
+      "carbohydrates": 17.49,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "white_rice_cooked": {
+      "basis": "100g",
+      "calories": 130,
+      "protein": 2.69,
+      "fat": 0.28,
+      "carbohydrates": 28.17,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "pasta_cooked": {
+      "basis": "100g",
+      "calories": 158,
+      "protein": 5.8,
+      "fat": 0.93,
+      "carbohydrates": 30.86,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "wheat_flour": {
+      "basis": "100g",
+      "calories": 364,
+      "protein": 10.33,
+      "fat": 0.98,
+      "carbohydrates": 76.31,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "white_bread": {
+      "basis": "100g",
+      "calories": 266,
+      "protein": 8.85,
+      "fat": 3.33,
+      "carbohydrates": 49.42,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "egg_whole_raw": {
+      "basis": "100g",
+      "calories": 143,
+      "protein": 12.56,
+      "fat": 9.51,
+      "carbohydrates": 0.72,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "whole_milk": {
+      "basis": "100g",
+      "calories": 61,
+      "protein": 3.15,
+      "fat": 3.25,
+      "carbohydrates": 4.8,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "heavy_cream": {
+      "basis": "100g",
+      "calories": 340,
+      "protein": 2.1,
+      "fat": 36.1,
+      "carbohydrates": 2.84,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "cheddar_cheese": {
+      "basis": "100g",
+      "calories": 403,
+      "protein": 24.9,
+      "fat": 33.1,
+      "carbohydrates": 1.28,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "butter": {
+      "basis": "100g",
+      "calories": 717,
+      "protein": 0.85,
+      "fat": 81.11,
+      "carbohydrates": 0.06,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "vegetable_oil": {
+      "basis": "100g",
+      "calories": 884,
+      "protein": 0,
+      "fat": 100,
+      "carbohydrates": 0,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "onion_raw": {
+      "basis": "100g",
+      "calories": 40,
+      "protein": 1.1,
+      "fat": 0.1,
+      "carbohydrates": 9.34,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "garlic_raw": {
+      "basis": "100g",
+      "calories": 149,
+      "protein": 6.36,
+      "fat": 0.5,
+      "carbohydrates": 33.06,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "tomato_raw": {
+      "basis": "100g",
+      "calories": 18,
+      "protein": 0.88,
+      "fat": 0.2,
+      "carbohydrates": 3.89,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "cucumber_raw": {
+      "basis": "100g",
+      "calories": 15,
+      "protein": 0.65,
+      "fat": 0.11,
+      "carbohydrates": 3.63,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "carrot_raw": {
+      "basis": "100g",
+      "calories": 41,
+      "protein": 0.93,
+      "fat": 0.24,
+      "carbohydrates": 9.58,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "cabbage_raw": {
+      "basis": "100g",
+      "calories": 25,
+      "protein": 1.28,
+      "fat": 0.1,
+      "carbohydrates": 5.8,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "bell_pepper_raw": {
+      "basis": "100g",
+      "calories": 31,
+      "protein": 0.99,
+      "fat": 0.3,
+      "carbohydrates": 6.03,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "mushrooms_raw": {
+      "basis": "100g",
+      "calories": 22,
+      "protein": 3.09,
+      "fat": 0.34,
+      "carbohydrates": 3.26,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "avocado_raw": {
+      "basis": "100g",
+      "calories": 160,
+      "protein": 2,
+      "fat": 14.66,
+      "carbohydrates": 8.53,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "banana_raw": {
+      "basis": "100g",
+      "calories": 89,
+      "protein": 1.09,
+      "fat": 0.33,
+      "carbohydrates": 22.84,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "apple_raw": {
+      "basis": "100g",
+      "calories": 52,
+      "protein": 0.26,
+      "fat": 0.17,
+      "carbohydrates": 13.81,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "sugar": {
+      "basis": "100g",
+      "calories": 387,
+      "protein": 0,
+      "fat": 0,
+      "carbohydrates": 100,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "mayonnaise": {
+      "basis": "100g",
+      "calories": 680,
+      "protein": 0.96,
+      "fat": 74.85,
+      "carbohydrates": 0.57,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "ketchup": {
+      "basis": "100g",
+      "calories": 112,
+      "protein": 1.74,
+      "fat": 0.2,
+      "carbohydrates": 26.57,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
+    },
+    "sour_cream": {
+      "basis": "100g",
+      "calories": 198,
+      "protein": 2.44,
+      "fat": 19.35,
+      "carbohydrates": 4.63,
+      "source": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/"
     }
   }
 }

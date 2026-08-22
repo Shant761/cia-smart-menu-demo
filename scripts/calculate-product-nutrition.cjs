@@ -18,6 +18,9 @@ function macro(nutrition, key) {
   const value = nutrition?.per100g?.[key];
   return value == null ? null : n(value);
 }
+function isQuotaError(error) {
+  return /RESOURCE_EXHAUSTED|quota exceeded|quotaexceeded|daily limit|too many requests/i.test(String(error?.message || ''));
+}
 
 const serviceAccount = JSON.parse(requiredEnv('FIREBASE_SERVICE_ACCOUNT'));
 const restaurantId = (process.env.CIA_RESTAURANT_ID || 'poster-test').trim();
@@ -26,12 +29,31 @@ initializeApp({ credential: cert(serviceAccount), projectId: PROJECT_ID });
 const db = getFirestore();
 db.settings({ ignoreUndefinedProperties: true });
 
+async function commitWrites(writes) {
+  for (let offset = 0; offset < writes.length; offset += 300) {
+    const batch = db.batch();
+    for (const write of writes.slice(offset, offset + 300)) batch.set(write.ref, write.data, { merge: true });
+    try {
+      await batch.commit();
+    } catch (error) {
+      if (isQuotaError(error)) throw new Error(`Firestore quota exceeded; stopping immediately instead of retrying. ${error.message}`);
+      throw error;
+    }
+  }
+}
+
 async function main() {
   const restaurant = db.collection('restaurants').doc(restaurantId);
-  if (!(await restaurant.get()).exists) throw new Error(`Restaurant ${restaurantId} was not found`);
-  const [products, catalog] = await Promise.all([restaurant.collection('products').get(), restaurant.collection('ingredients_catalog').get()]);
+  const restaurantSnapshot = await restaurant.get();
+  if (!restaurantSnapshot.exists) throw new Error(`Restaurant ${restaurantId} was not found`);
+
+  const [products, catalog] = await Promise.all([
+    restaurant.collection('products').get(),
+    restaurant.collection('ingredients_catalog').get()
+  ]);
   const byId = new Map(catalog.docs.map((d) => [d.id, d.data()]));
-  let calculated = 0, review = 0, noRecipe = 0;
+  let calculated = 0, review = 0, noRecipe = 0, skipped = 0;
+  const writes = [];
 
   for (const doc of products.docs) {
     const product = doc.data();
@@ -74,8 +96,28 @@ async function main() {
       totals.carbohydrates += values.carbohydrates * factor;
     }
 
-    const recipeHash = hash(JSON.stringify(recipe.map((x) => ({ ingredientId: x.ingredientId ?? null, name: x.name || '', unit: x.unit || '', netto: x.netto ?? null }))));
-    if (!force && product.nutrition?.recipeHash === recipeHash && product.nutrition?.status === 'calculated') continue;
+    // Include both the Poster recipe and the nutrition state/version of every ingredient.
+    // This means a product is recalculated when an ingredient's nutrition changes, but not otherwise.
+    const calculationInput = recipe.map((x) => {
+      const id = x?.ingredientId != null && String(x.ingredientId).trim() ? `poster_${String(x.ingredientId).trim()}` : null;
+      const cat = id ? byId.get(id) : [...byId.values()].find((item) => (item.sourceNames || []).includes(x?.name));
+      return {
+        ingredientId: x?.ingredientId ?? null,
+        name: x?.name || '',
+        unit: x?.unit || '',
+        netto: x?.netto ?? null,
+        canonicalId: cat?.canonicalId || null,
+        nutritionStatus: cat?.nutrition?.status || null,
+        nutritionDatabaseVersion: cat?.nutrition?.databaseVersion || null,
+        nutritionPer100g: cat?.nutrition?.per100g || null
+      };
+    });
+    const calculationHash = hash(JSON.stringify(calculationInput));
+
+    if (!force && product.nutrition?.calculationHash === calculationHash) {
+      skipped++;
+      continue;
+    }
 
     const status = blocked || totalG <= 0 ? 'needs_review' : 'calculated';
     if (status === 'calculated') calculated++; else review++;
@@ -91,7 +133,8 @@ async function main() {
       nutrition: {
         status,
         source: 'validated ingredient nutrition + Poster recipe',
-        recipeHash,
+        recipeHash: hash(JSON.stringify(recipe.map((x) => ({ ingredientId: x.ingredientId ?? null, name: x.name || '', unit: x.unit || '', netto: x.netto ?? null })))),
+        calculationHash,
         calories: status === 'calculated' ? rounded.calories : null,
         protein: status === 'calculated' ? rounded.protein : null,
         fat: status === 'calculated' ? rounded.fat : null,
@@ -108,11 +151,35 @@ async function main() {
       },
       updatedAt: FieldValue.serverTimestamp()
     };
-    await doc.ref.set(data, { merge: true });
+    writes.push({ ref: doc.ref, data });
   }
 
-  await restaurant.set({ nutritionCalculation: { lastRunAt: FieldValue.serverTimestamp(), metric: 'kcal_and_macros', calculated, needsReview: review, noRecipe, version: 3 }, updatedAt: FieldValue.serverTimestamp() }, { merge: true });
+  await commitWrites(writes);
+
+  const previousSummary = restaurantSnapshot.data()?.nutritionCalculation || {};
+  const summary = {
+    metric: 'kcal_and_macros',
+    calculated,
+    needsReview: review,
+    noRecipe,
+    version: 4
+  };
+  const summaryChanged = previousSummary.metric !== summary.metric
+    || previousSummary.calculated !== summary.calculated
+    || previousSummary.needsReview !== summary.needsReview
+    || previousSummary.noRecipe !== summary.noRecipe
+    || previousSummary.version !== summary.version;
+
+  if (summaryChanged) {
+    await restaurant.set({
+      nutritionCalculation: { ...summary, lastRunAt: FieldValue.serverTimestamp() },
+      updatedAt: FieldValue.serverTimestamp()
+    }, { merge: true });
+  }
+
   console.log(`[Product nutrition] Restaurant: ${restaurantId}`);
   console.log(`[Product nutrition] kcal + macros calculated=${calculated}, needsReview=${review}, noRecipe=${noRecipe}`);
+  console.log(`[Product nutrition] Skipped unchanged=${skipped}`);
+  console.log(`[Product nutrition] Firestore writes to commit=${writes.length}${summaryChanged ? ' + summary' : ''}`);
 }
 main().catch((e) => { console.error(`[Product nutrition] FAILED: ${e.message}`); process.exit(1); });

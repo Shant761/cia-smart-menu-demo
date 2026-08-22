@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "description": "Nutrition values per 100 g/ml for validated ingredients. Empty for ingredients not yet verified; calculator must never invent missing values.",
+  "sourcePolicy": "validated_reference_data_only",
+  "ingredients": {}
+}

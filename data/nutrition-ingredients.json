@@ -1,6 +1,16 @@
 {
-  "version": 1,
-  "description": "Nutrition values per 100 g/ml for validated ingredients. Empty for ingredients not yet verified; calculator must never invent missing values.",
+  "version": 2,
+  "description": "Nutrition values per 100 g/ml for validated ingredients. Only source-verified entries belong here; calculator must never invent missing values.",
   "sourcePolicy": "validated_reference_data_only",
-  "ingredients": {}
+  "ingredients": {
+    "broccoli": {
+      "basis": "100g",
+      "calories": 34,
+      "protein": 2.82,
+      "fat": 0.37,
+      "carbohydrates": 6.64,
+      "source": "USDA FoodData Central, SR Legacy, FDC 170379",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170379/nutrients"
+    }
+  }
 }

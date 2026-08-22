@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 const { initializeApp, cert } = require('firebase-admin/app');
-const { getFirestore, FieldValue } = require('firebase-admin/firestore');
+const { getFirestore } = require('firebase-admin/firestore');
 
 const POSTER_API_BASE = 'https://joinposter.com/api/';
 const PROJECT_ID = 'cia-smart-menu';
@@ -17,9 +17,13 @@ const requiredEnv = (name) => {
 const serviceAccount = JSON.parse(requiredEnv('FIREBASE_SERVICE_ACCOUNT'));
 const posterToken = requiredEnv('POSTER_ACCESS_TOKEN');
 const restaurantId = (process.env.CIA_RESTAURANT_ID || 'poster-test').trim();
-const clean = (value) => String(value || '').normalize('NFKC').replace(/\s+/g, ' ').trim();
-const hash = (value) => crypto.createHash('sha256').update(clean(value), 'utf8').digest('hex');
+const clean = (value) => String(value ?? '').normalize('NFKC').replace(/\s+/g, ' ').trim();
+const hash = (value) => crypto.createHash('sha256').update(JSON.stringify(value), 'utf8').digest('hex');
 const localized = (value) => ({ hy: clean(value), ru: clean(value), en: clean(value) });
+
+function isQuotaError(error) {
+  return /RESOURCE_EXHAUSTED|quota exceeded|quotaexceeded|daily limit|too many requests/i.test(String(error?.message || ''));
+}
 
 initializeApp({ credential: cert(serviceAccount), projectId: PROJECT_ID });
 const db = getFirestore();
@@ -32,11 +36,7 @@ function loadPack() {
   if (config.restaurantId && config.restaurantId !== restaurantId) {
     throw new Error(`Category translation pack restaurantId=${config.restaurantId} does not match ${restaurantId}`);
   }
-  return {
-    file: path.basename(file),
-    version: Number(config.version || 1),
-    categories: config.categories || {}
-  };
+  return { file: path.basename(file), version: Number(config.version || 1), categories: config.categories || {} };
 }
 
 async function posterRequest(method, params = {}) {
@@ -46,11 +46,7 @@ async function posterRequest(method, params = {}) {
   for (const [key, value] of Object.entries(params)) {
     if (value !== undefined && value !== null && value !== '') url.searchParams.set(key, String(value));
   }
-
-  const response = await fetch(url, {
-    headers: { Accept: 'application/json', 'User-Agent': 'CIA-Smart-Menu/1.0' },
-    signal: AbortSignal.timeout(30000)
-  });
+  const response = await fetch(url, { headers: { Accept: 'application/json', 'User-Agent': 'CIA-Smart-Menu/1.0' }, signal: AbortSignal.timeout(30000) });
   if (!response.ok) throw new Error(`Poster ${method} returned HTTP ${response.status}`);
   const payload = await response.json();
   if (payload?.error) {
@@ -61,20 +57,33 @@ async function posterRequest(method, params = {}) {
   return payload?.response;
 }
 
-function categoryId(raw) {
-  return clean(raw?.menu_category_id ?? raw?.category_id ?? raw?.id ?? raw?.categoryId);
-}
-
-function categoryName(raw) {
-  return clean(raw?.category_name ?? raw?.menu_category_name ?? raw?.name ?? raw?.categoryName);
-}
-
 async function commitWrites(writes) {
   for (let offset = 0; offset < writes.length; offset += 400) {
     const batch = db.batch();
     for (const write of writes.slice(offset, offset + 400)) batch.set(write.ref, write.data, { merge: true });
-    await batch.commit();
+    try {
+      await batch.commit();
+    } catch (error) {
+      if (isQuotaError(error)) throw new Error(`Firestore quota exceeded; stopping immediately instead of retrying. ${error.message}`);
+      throw error;
+    }
   }
+}
+
+function sameCategoryFields(current, desired) {
+  return hash({
+    name: current?.name || null,
+    posterOriginalName: current?.posterOriginalName || null,
+    categoryTranslation: current?.categoryTranslation ? {
+      version: current.categoryTranslation.version,
+      sourceText: current.categoryTranslation.sourceText,
+      sourceHash: current.categoryTranslation.sourceHash,
+      status: current.categoryTranslation.status,
+      method: current.categoryTranslation.method,
+      needsReview: current.categoryTranslation.needsReview,
+      expectedSourceText: current.categoryTranslation.expectedSourceText ?? null
+    } : null
+  }) === hash(desired);
 }
 
 async function main() {
@@ -87,8 +96,8 @@ async function main() {
   const posterCategoriesRaw = await posterRequest('menu.getCategories');
   const posterCategories = new Map();
   for (const raw of Array.isArray(posterCategoriesRaw) ? posterCategoriesRaw : []) {
-    const id = categoryId(raw);
-    const source = categoryName(raw);
+    const id = clean(raw?.menu_category_id ?? raw?.category_id ?? raw?.id ?? raw?.categoryId);
+    const source = clean(raw?.category_name ?? raw?.menu_category_name ?? raw?.name ?? raw?.categoryName);
     if (id && source) posterCategories.set(id, source);
   }
 
@@ -103,106 +112,98 @@ async function main() {
   let missingFirestore = 0;
   let missingPoster = 0;
   let needsReview = 0;
+  let skipped = 0;
+
+  const queueIfChanged = (category, desired) => {
+    if (sameCategoryFields(category, desired)) {
+      skipped += 1;
+      return;
+    }
+    writes.push({ ref: category.ref, data: desired });
+  };
 
   for (const [id, rule] of Object.entries(pack.categories)) {
     const category = byId.get(String(id));
-    if (!category) {
-      missingFirestore += 1;
-      continue;
-    }
+    if (!category) { missingFirestore += 1; continue; }
 
     const source = id === 'all' ? clean(rule.source || 'Բոլորը') : clean(posterCategories.get(String(id)));
-    if (!source) {
-      missingPoster += 1;
-      continue;
-    }
+    if (!source) { missingPoster += 1; continue; }
 
     const expected = clean(rule.source);
     const sourceMatches = Boolean(expected && source === expected);
-    const displayName = sourceMatches
-      ? { hy: clean(rule.hy), ru: clean(rule.ru), en: clean(rule.en) }
-      : localized(source);
+    const displayName = sourceMatches ? { hy: clean(rule.hy), ru: clean(rule.ru), en: clean(rule.en) } : localized(source);
 
-    if (sourceMatches && (!displayName.hy || !displayName.ru || !displayName.en)) {
-      throw new Error(`Category ${id} has incomplete translations`);
-    }
+    if (sourceMatches && (!displayName.hy || !displayName.ru || !displayName.en)) throw new Error(`Category ${id} has incomplete translations`);
 
     if (sourceMatches) {
       applied += 1;
       if (rule.needsReview === true) needsReview += 1;
-    } else {
-      stale += 1;
-    }
+    } else stale += 1;
 
-    writes.push({
-      ref: category.ref,
-      data: {
-        name: displayName,
-        posterOriginalName: source,
-        categoryTranslation: {
-          version: pack.version,
-          sourceText: source,
-          sourceHash: hash(source),
-          status: sourceMatches ? 'curated' : 'stale_source',
-          method: sourceMatches ? 'curated_without_external_api' : 'poster_source_fallback',
-          needsReview: sourceMatches && rule.needsReview === true,
-          expectedSourceText: expected || null,
-          updatedAt: FieldValue.serverTimestamp()
-        },
-        updatedAt: FieldValue.serverTimestamp()
+    const desired = {
+      name: displayName,
+      posterOriginalName: source,
+      categoryTranslation: {
+        version: pack.version,
+        sourceText: source,
+        sourceHash: hash(source),
+        status: sourceMatches ? 'curated' : 'stale_source',
+        method: sourceMatches ? 'curated_without_external_api' : 'poster_source_fallback',
+        needsReview: sourceMatches && rule.needsReview === true,
+        expectedSourceText: expected || null
       }
-    });
+    };
+    queueIfChanged(category, desired);
   }
 
-  // Any Poster category without a translation rule must still stay truthful: publish the raw Poster name in all three slots.
   for (const [id, source] of posterCategories.entries()) {
     if (pack.categories[id] || !byId.has(id)) continue;
     const category = byId.get(id);
-    writes.push({
-      ref: category.ref,
-      data: {
-        name: localized(source),
-        posterOriginalName: source,
-        categoryTranslation: {
-          version: pack.version,
-          sourceText: source,
-          sourceHash: hash(source),
-          status: 'missing_translation',
-          method: 'poster_source_fallback',
-          needsReview: true,
-          updatedAt: FieldValue.serverTimestamp()
-        },
-        updatedAt: FieldValue.serverTimestamp()
+    queueIfChanged(category, {
+      name: localized(source),
+      posterOriginalName: source,
+      categoryTranslation: {
+        version: pack.version,
+        sourceText: source,
+        sourceHash: hash(source),
+        status: 'missing_translation',
+        method: 'poster_source_fallback',
+        needsReview: true,
+        expectedSourceText: null
       }
     });
   }
 
   await commitWrites(writes);
-  await restaurantRef.set({
-    categoryTranslations: {
-      version: pack.version,
-      pack: pack.file,
-      configured: Object.keys(pack.categories).length,
-      posterCategories: posterCategories.size,
-      applied,
-      stale,
-      missingFirestore,
-      missingPoster,
-      needsReview,
-      lastRunAt: FieldValue.serverTimestamp()
-    },
-    updatedAt: FieldValue.serverTimestamp()
-  }, { merge: true });
+
+  const summary = {
+    version: pack.version,
+    pack: pack.file,
+    configured: Object.keys(pack.categories).length,
+    posterCategories: posterCategories.size,
+    applied,
+    stale,
+    missingFirestore,
+    missingPoster,
+    needsReview,
+    skipped
+  };
+
+  const restaurant = (await restaurantRef.get()).data() || {};
+  const currentSummary = restaurant.categoryTranslations || {};
+  const summaryChanged = hash(currentSummary) !== hash(summary);
+  if (summaryChanged) await restaurantRef.set({ categoryTranslations: { ...summary, lastRunAt: new Date() } }, { merge: true });
 
   console.log(`[Category translations] Restaurant: ${restaurantId}`);
   console.log(`[Category translations] Pack: ${pack.file}`);
   console.log(`[Category translations] Poster categories: ${posterCategories.size}`);
-  console.log(`[Category translations] Configured: ${Object.keys(pack.categories).length}`);
   console.log(`[Category translations] Applied exact-source translations: ${applied}`);
   console.log(`[Category translations] Stale source fallbacks: ${stale}`);
   console.log(`[Category translations] Needs review: ${needsReview}`);
   console.log(`[Category translations] Missing Firestore categories: ${missingFirestore}`);
   console.log(`[Category translations] Missing Poster categories: ${missingPoster}`);
+  console.log(`[Category translations] Skipped unchanged: ${skipped}`);
+  console.log(`[Category translations] Firestore writes to commit: ${writes.length + (summaryChanged ? 1 : 0)}`);
   console.log('[Category translations] Poster category names were READ ONLY; no Poster data was modified.');
 }
 

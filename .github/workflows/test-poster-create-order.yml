@@ -1,6 +1,10 @@
 name: Test Poster create online order
 
 on:
+  push:
+    paths:
+      - '.github/workflows/test-poster-create-order.yml'
+      - 'scripts/test-poster-create-order.cjs'
   workflow_dispatch:
     inputs:
       confirm:
@@ -42,8 +46,8 @@ jobs:
       - name: Create test order in Poster test account
         env:
           POSTER_TEST_ACCESS_TOKEN: ${{ secrets.POSTER_TEST_ACCESS_TOKEN }}
-          POSTER_TEST_SPOT_ID: ${{ inputs.spot_id }}
-          POSTER_TEST_PRODUCT_ID: ${{ inputs.product_id }}
-          POSTER_TEST_COUNT: ${{ inputs.count }}
-          CONFIRM_CREATE_ORDER: ${{ inputs.confirm }}
+          POSTER_TEST_SPOT_ID: ${{ inputs.spot_id || '' }}
+          POSTER_TEST_PRODUCT_ID: ${{ inputs.product_id || '' }}
+          POSTER_TEST_COUNT: ${{ inputs.count || '1' }}
+          CONFIRM_CREATE_ORDER: ${{ inputs.confirm || 'NO' }}
         run: node scripts/test-poster-create-order.cjs

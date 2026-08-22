@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CIASIFT — Cola Test</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="auth.css">
+  <style>
+    .cola-test{max-width:720px;margin:0 auto;padding:28px 18px 48px}.cola-card{background:#fff;border-radius:24px;padding:24px;box-shadow:0 10px 35px rgba(0,0,0,.08)}
+    .cola-icon{font-size:72px;text-align:center;margin:8px 0 18px}.cola-name{font-size:30px;font-weight:800;margin:0}.cola-meta{color:#777;margin:8px 0 18px}.cola-price{font-size:22px;font-weight:800;margin:18px 0}.ingredients{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 22px}.ingredient{padding:8px 12px;border-radius:999px;background:#f2f0ea;font-size:13px}.status{padding:12px 14px;border-radius:14px;background:#edf7ee;color:#276a35;font-weight:700}.note{margin-top:20px;color:#777;font-size:13px;line-height:1.5}
+  </style>
+</head>
+<body>
+  <main class="cola-test">
+    <div class="cola-card">
+      <div class="cola-icon">🥤</div>
+      <h1 class="cola-name" id="name">Кола</h1>
+      <div class="cola-meta" id="meta">CIASIFT • Smart Menu test</div>
+      <div class="cola-price" id="price">400 ֏</div>
+      <h3>Состав</h3>
+      <div class="ingredients" id="ingredients"></div>
+      <div class="status">✓ Подходит вашему фильтру</div>
+      <div class="note">Статические тестовые данные. Firestore и Poster API здесь не используются. Product ID: 46.</div>
+    </div>
+  </main>
+  <script>
+    fetch('data/cola-test.json')
+      .then(r => r.json())
+      .then(data => {
+        const product = data.products[0];
+        document.getElementById('name').textContent = product.name.ru;
+        document.getElementById('meta').textContent = data.restaurant.meta.ru;
+        document.getElementById('price').textContent = `${product.price} ֏`;
+        document.getElementById('ingredients').innerHTML = product.ingredients.ru.map(x => `<span class="ingredient">${x}</span>`).join('');
+      });
+  </script>
+</body>
+</html>

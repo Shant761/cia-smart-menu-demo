@@ -2,58 +2,29 @@ import '../firebase-client.js';
 
 const params = new URLSearchParams(location.search);
 const restaurantId = params.get('restaurant') || 'ciasift';
-const state = { menu: { categories: [], products: [] }, category: 'all', query: '' };
+const API_BASE = 'https://cia-smart-menu-demo.vercel.app';
+const state = { menu: { categories: [], products: [] }, category: 'all', query: '', cart: new Map() };
 const $ = (s) => document.querySelector(s);
 const text = (v) => typeof v === 'string' ? v : v?.ru || v?.en || v?.hy || Object.values(v || {})[0] || '';
 const id = (v) => typeof v === 'object' ? String(v?.id ?? v?.categoryId ?? '') : String(v ?? '');
-
-function price(p) {
-  const raw = Number(p?.price);
-  if (!Number.isFinite(raw)) return '—';
-  const value = raw >= 100000 ? raw / 100 : raw;
-  return `${Math.round(value).toLocaleString('ru-RU')} ֏`;
-}
+function priceValue(p) { const raw = Number(p?.price); if (!Number.isFinite(raw)) return 0; return raw >= 100000 ? raw / 100 : raw; }
+function price(p) { return `${Math.round(priceValue(p)).toLocaleString('ru-RU')} ֏`; }
 function categoryOf(p) { return id(p?.categoryId ?? p?.category ?? p?.menuCategoryId); }
-function visible() {
-  return state.menu.products.filter((p) => {
-    if (state.category !== 'all' && categoryOf(p) !== state.category) return false;
-    return !state.query || text(p.name).toLowerCase().includes(state.query);
-  });
-}
-function renderCategories() {
-  const el = $('#categories');
-  el.innerHTML = [{ id: 'all', name: 'Все' }, ...state.menu.categories].map((c) =>
-    `<button class="category ${String(c.id) === state.category ? 'active' : ''}" data-id="${c.id}">${text(c.name)}</button>`).join('');
-  el.querySelectorAll('button').forEach((b) => b.onclick = () => { state.category = b.dataset.id; render(); });
-}
-function render() {
-  const list = visible();
-  $('#count').textContent = `${list.length} блюд`;
-  $('#products').innerHTML = list.map((p) => {
-    const image = p.photo || p.image || p.imageUrl || p.photo_url || '';
-    return `<article class="card" data-id="${p.id}"><div class="photo">${image ? `<img src="${image}" alt="${text(p.name)}" loading="lazy">` : 'Нет фото'}</div><div class="info"><h2>${text(p.name) || 'Без названия'}</h2><div class="price">${price(p)}</div></div></article>`;
-  }).join('') || '<p>Блюда не найдены.</p>';
-  renderCategories();
-}
-async function waitForFirebase() {
-  if (window.ciaFirebase?.ready) return;
-  await new Promise((resolve, reject) => {
-    const timer = setTimeout(() => reject(new Error('Firebase initialization timeout')), 10000);
-    window.addEventListener('cia:firebase-ready', () => { clearTimeout(timer); resolve(); }, { once: true });
-  });
-}
-async function load() {
-  try {
-    await waitForFirebase();
-    state.menu = await window.ciaFirebase.loadPublicMenu(restaurantId);
-    $('#restaurantName').textContent = text(state.menu.restaurant?.name) || restaurantId;
-    render();
-  } catch (e) {
-    console.error(e);
-    $('#error').hidden = false;
-    $('#error').textContent = `Не удалось загрузить меню: ${e.message}`;
-    $('#restaurantName').textContent = restaurantId;
-  }
-}
-$('#search').oninput = (e) => { state.query = e.target.value.trim().toLowerCase(); render(); };
+function visible() { return state.menu.products.filter(p => (state.category === 'all' || categoryOf(p) === state.category) && (!state.query || text(p.name).toLowerCase().includes(state.query))); }
+function addToCart(product) { const key = String(product.id); const item = state.cart.get(key); state.cart.set(key, { product, count: (item?.count || 0) + 1 }); renderCart(); }
+function changeCart(idValue, delta) { const item = state.cart.get(String(idValue)); if (!item) return; item.count += delta; if (item.count <= 0) state.cart.delete(String(idValue)); renderCart(); }
+function cartItems() { return [...state.cart.values()]; }
+function cartTotal() { return cartItems().reduce((sum, x) => sum + priceValue(x.product) * x.count, 0); }
+function cartCount() { return cartItems().reduce((sum, x) => sum + x.count, 0); }
+function renderCategories() { const el = $('#categories'); el.innerHTML = [{ id: 'all', name: 'Все' }, ...state.menu.categories].map(c => `<button class="category ${String(c.id) === state.category ? 'active' : ''}" data-id="${c.id}">${text(c.name)}</button>`).join(''); el.querySelectorAll('button').forEach(b => b.onclick = () => { state.category = b.dataset.id; render(); }); }
+function render() { const list = visible(); $('#count').textContent = `${list.length} блюд`; $('#products').innerHTML = list.map(p => { const image = p.photo || p.image || p.imageUrl || p.photo_url || ''; return `<article class="card" data-id="${p.id}"><div class="photo">${image ? `<img src="${image}" alt="${text(p.name)}" loading="lazy">` : 'Нет фото'}</div><div class="info"><h2>${text(p.name) || 'Без названия'}</h2><div class="price">${price(p)}</div></div></article>`; }).join('') || '<p>Блюда не найдены.</p>'; elBindCards(); renderCategories(); renderCart(); }
+function elBindCards() { document.querySelectorAll('.card').forEach(card => card.onclick = () => { const product = state.menu.products.find(p => String(p.id) === card.dataset.id); if (product) addToCart(product); }); }
+function renderCart() { const count = cartCount(); $('#cartButton').hidden = count === 0; $('#cartCount').textContent = count; $('#cartTotal').textContent = `${Math.round(cartTotal()).toLocaleString('ru-RU')} ֏`; const list = $('#cartItems'); list.innerHTML = cartItems().map(({ product, count }) => `<div class="cart-item"><div><strong>${text(product.name)}</strong><div>${price(product)} × ${count}</div></div><div class="qty"><button data-cart-id="${product.id}" data-delta="-1">−</button><span>${count}</span><button data-cart-id="${product.id}" data-delta="1">+</button></div></div>`).join('') || '<p>Корзина пуста</p>'; list.querySelectorAll('[data-cart-id]').forEach(b => b.onclick = () => changeCart(b.dataset.cartId, Number(b.dataset.delta))); }
+function openCart() { $('#cartModal').hidden = false; renderCart(); }
+function closeCart() { $('#cartModal').hidden = true; }
+async function submitOrder() { const phone = $('#orderPhone').value.trim(); const name = $('#orderName').value.trim() || 'CIA Smart Menu'; const comment = $('#orderComment').value.trim(); const items = cartItems(); if (!items.length) return; const button = $('#submitOrder'); button.disabled = true; button.textContent = 'Отправка…'; try { const response = await fetch(`${API_BASE}/api/create-order`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ confirm: true, spot_id: 1, phone, first_name: name, comment, products: items.map(({ product, count }) => ({ product_id: Number(product.id), count })) }) }); const data = await response.json(); if (!response.ok || !data.ok) throw new Error(data.error || 'Не удалось отправить заказ'); state.cart.clear(); closeCart(); $('#success').hidden = false; $('#success').textContent = 'Заказ отправлен в Poster.'; renderCart(); } catch (e) { $('#orderError').hidden = false; $('#orderError').textContent = e.message; } finally { button.disabled = false; button.textContent = 'Отправить заказ'; } }
+async function waitForFirebase() { if (window.ciaFirebase?.ready) return; await new Promise((resolve, reject) => { const timer = setTimeout(() => reject(new Error('Firebase initialization timeout')), 10000); window.addEventListener('cia:firebase-ready', () => { clearTimeout(timer); resolve(); }, { once: true }); }); }
+async function load() { try { await waitForFirebase(); state.menu = await window.ciaFirebase.loadPublicMenu(restaurantId); $('#restaurantName').textContent = text(state.menu.restaurant?.name) || restaurantId; render(); } catch (e) { console.error(e); $('#error').hidden = false; $('#error').textContent = `Не удалось загрузить меню: ${e.message}`; $('#restaurantName').textContent = restaurantId; } }
+$('#search').oninput = e => { state.query = e.target.value.trim().toLowerCase(); render(); };
+$('#cartButton').onclick = openCart; $('#closeCart').onclick = closeCart; $('#submitOrder').onclick = submitOrder;
 load();

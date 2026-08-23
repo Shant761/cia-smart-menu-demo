@@ -1,0 +1,36 @@
+name: Diagnose Poster products
+
+on:
+  workflow_dispatch:
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    env:
+      POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_TEST_ACCESS_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch Poster products once
+        run: |
+          node <<'NODE'
+          const token = process.env.POSTER_ACCESS_TOKEN;
+          if (!token) throw new Error('POSTER_TEST_ACCESS_TOKEN is missing');
+          const url = new URL('https://joinposter.com/api/menu.getProducts');
+          url.searchParams.set('token', token);
+          url.searchParams.set('format', 'json');
+          const res = await fetch(url, { headers: { Accept: 'application/json', 'User-Agent': 'CIA-Smart-Menu-Diagnostics/1.0' } });
+          if (!res.ok) throw new Error(`Poster HTTP ${res.status}`);
+          const payload = await res.json();
+          if (payload?.error) throw new Error(JSON.stringify(payload.error));
+          const products = Array.isArray(payload?.response) ? payload.response : [];
+          console.log(`Poster products: ${products.length}`);
+          for (const p of products) {
+            const spots = Array.isArray(p?.spots) ? p.spots : [];
+            console.log(JSON.stringify({
+              product_id: p?.product_id ?? p?.id ?? null,
+              name: p?.product_name ?? p?.name ?? null,
+              menu_category_id: p?.menu_category_id ?? p?.category_id ?? null,
+              spots: spots.map(s => ({ spot_id: s?.spot_id ?? null, visible: s?.visible ?? null }))
+            }));
+          }
+          NODE

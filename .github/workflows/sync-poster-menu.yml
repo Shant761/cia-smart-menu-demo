@@ -4,78 +4,44 @@ on:
   workflow_dispatch:
     inputs:
       restaurant_id:
-        description: Firestore restaurant slug (letters, numbers, _ or -)
+        description: Firestore restaurant slug
         required: true
         default: ciasift
         type: string
       restaurant_name:
-        description: Restaurant display name used on first sync
+        description: Restaurant display name
         required: true
         default: CIASIFT
         type: string
       spot_id:
-        description: Poster spot ID; leave blank to use the first visible spot
+        description: Poster spot ID
         required: false
-        default: ''
+        default: '1'
         type: string
       sync_recipes:
-        description: Load menu.getProduct for ingredient/tech-card data
-        required: true
-        default: true
-        type: boolean
-      inspect_recipe:
-        description: Inspect real menu.getProduct recipe structure and upload a diagnostic artifact
+        description: Load menu.getProduct recipe data
         required: true
         default: false
         type: boolean
-      recipe_inspect_limit:
-        description: Number of Poster products to inspect (1-50)
-        required: true
-        default: 25
-        type: string
-      inspect_ingredient_entities:
-        description: Test Poster API methods for real ingredient IDs
-        required: true
-        default: false
-        type: boolean
-      ingredient_diagnostic_limit:
-        description: Number of unique ingredient IDs to test (1-50)
-        required: true
-        default: 50
-        type: string
       publish_menu:
-        description: Make this restaurant readable by the public Smart Menu
+        description: Make menu publicly readable
         required: true
         default: true
         type: boolean
-      run_derived:
-        description: Run expensive Firestore localization/catalog/enrichment passes after sync
-        required: true
-        default: false
-        type: boolean
-  schedule:
-    - cron: '17 */6 * * *'
-  push:
-    branches:
-      - main
-    paths:
-      - '.github/workflows/sync-poster-menu.yml'
-
-env:
-  CIA_RESTAURANT_ID: ${{ inputs.restaurant_id || 'ciasift' }}
-  CIA_RESTAURANT_NAME: ${{ inputs.restaurant_name || 'CIASIFT' }}
-  POSTER_SPOT_ID: ${{ inputs.spot_id || '' }}
-  POSTER_SYNC_RECIPES: ${{ inputs.sync_recipes == null && 'true' || inputs.sync_recipes }}
-  POSTER_RECIPE_INSPECT_LIMIT: ${{ inputs.recipe_inspect_limit || '25' }}
-  POSTER_INGREDIENT_DIAGNOSTIC_LIMIT: ${{ inputs.ingredient_diagnostic_limit || '50' }}
-  CIA_PUBLISH_MENU: ${{ inputs.publish_menu == null && 'true' || inputs.publish_menu }}
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-
+    env:
+      CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
+      CIA_RESTAURANT_NAME: ${{ inputs.restaurant_name }}
+      POSTER_SPOT_ID: ${{ inputs.spot_id }}
+      POSTER_SYNC_RECIPES: ${{ inputs.sync_recipes }}
+      CIA_PUBLISH_MENU: ${{ inputs.publish_menu }}
+      POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_TEST_ACCESS_TOKEN }}
+      FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -85,33 +51,16 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Validate scripts
-        run: |
-          node --check scripts/sync-poster-to-firestore.cjs
-          node --check scripts/inspect-poster-recipe-shape.cjs
-          node --check scripts/diagnose-poster-ingredient-entities.cjs
-          node --check scripts/resolve-poster-recipes.cjs
-          node --check scripts/recipe-resolver.cjs
-          node --check scripts/apply-source-localizations.cjs
-          node --check scripts/sync-category-translations.cjs
-          node --check scripts/build-ingredient-catalog.cjs
-          node --check scripts/normalize-ingredients-rules.cjs
-          node --check scripts/apply-ingredient-overrides.cjs
-          node --check scripts/apply-product-title-translations.cjs
-          node --check scripts/enrich-products-from-ingredient-catalog.cjs
-          node --check scripts/apply-admin-reviews.cjs
-          node -e "JSON.parse(require('fs').readFileSync('data/ingredient-normalization-rules.json','utf8')); console.log('Rules JSON OK')"
+      - name: Validate sync script
+        run: node --check scripts/sync-poster-to-firestore.cjs
 
       - name: Install Firebase Admin SDK
         run: npm install --no-save firebase-admin@14.2.0
 
       - name: Verify required secrets
-        env:
-          POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_ACCESS_TOKEN }}
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
         run: |
           if [ -z "$POSTER_ACCESS_TOKEN" ]; then
-            echo "Missing GitHub Actions secret: POSTER_ACCESS_TOKEN"
+            echo "Missing GitHub Actions secret: POSTER_TEST_ACCESS_TOKEN"
             exit 1
           fi
           if [ -z "$FIREBASE_SERVICE_ACCOUNT" ]; then
@@ -119,100 +68,5 @@ jobs:
             exit 1
           fi
 
-      - name: Inspect real Poster recipe structure
-        if: github.event_name == 'workflow_dispatch' && inputs.inspect_recipe == true
-        env:
-          POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_ACCESS_TOKEN }}
-        run: node scripts/inspect-poster-recipe-shape.cjs
-
-      - name: Upload Poster recipe diagnostic
-        if: github.event_name == 'workflow_dispatch' && inputs.inspect_recipe == true && always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: poster-recipe-shape-${{ inputs.restaurant_id || 'ciasift' }}
-          path: poster-recipe-shape.json
-          if-no-files-found: warn
-          retention-days: 7
-
-      - name: Inspect Poster ingredient entity methods
-        if: github.event_name == 'workflow_dispatch' && inputs.inspect_ingredient_entities == true
-        env:
-          POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_ACCESS_TOKEN }}
-        run: node scripts/diagnose-poster-ingredient-entities.cjs
-
-      - name: Upload Poster ingredient entity diagnostic
-        if: github.event_name == 'workflow_dispatch' && inputs.inspect_ingredient_entities == true && always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: poster-ingredient-entities-${{ inputs.restaurant_id || 'ciasift' }}
-          path: poster-ingredient-entities.json
-          if-no-files-found: warn
-          retention-days: 7
-
       - name: Sync Poster menu into Firestore
-        env:
-          POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_ACCESS_TOKEN }}
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
         run: node scripts/sync-poster-to-firestore.cjs
-
-      - name: Resolve nested Poster preparations and recipe issues
-        env:
-          POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_ACCESS_TOKEN }}
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-        run: node scripts/resolve-poster-recipes.cjs
-
-      - name: Preserve curated product and ingredient localization
-        continue-on-error: true
-        env:
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-        run: node scripts/apply-source-localizations.cjs
-
-      - name: Reapply source-safe category translations
-        if: github.event_name == 'workflow_dispatch' && inputs.run_derived == true
-        continue-on-error: true
-        env:
-          POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_ACCESS_TOKEN }}
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-        run: node scripts/sync-category-translations.cjs
-
-      - name: Reapply curated product-title translations (RU / EN / HY)
-        if: github.event_name == 'workflow_dispatch' && inputs.run_derived == true
-        continue-on-error: true
-        env:
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-        run: node scripts/apply-product-title-translations.cjs
-
-      - name: Build ingredient catalog
-        if: github.event_name == 'workflow_dispatch' && inputs.run_derived == true
-        continue-on-error: true
-        env:
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-        run: node scripts/build-ingredient-catalog.cjs
-
-      - name: Normalize ingredients with deterministic rules
-        if: github.event_name == 'workflow_dispatch' && inputs.run_derived == true
-        continue-on-error: true
-        env:
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-        run: node scripts/normalize-ingredients-rules.cjs
-
-      - name: Apply restaurant-specific ingredient translations and allergen rules
-        if: github.event_name == 'workflow_dispatch' && inputs.run_derived == true
-        continue-on-error: true
-        env:
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-        run: node scripts/apply-ingredient-overrides.cjs
-
-      - name: Enrich product ingredients from normalized catalog
-        if: github.event_name == 'workflow_dispatch' && inputs.run_derived == true
-        continue-on-error: true
-        env:
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-        run: node scripts/enrich-products-from-ingredient-catalog.cjs
-
-      - name: Reapply restaurant admin review decisions
-        if: github.event_name == 'workflow_dispatch' && inputs.run_derived == true
-        continue-on-error: true
-        env:
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-        run: node scripts/apply-admin-reviews.cjs

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CIA Smart Menu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="app">
+    <header class="header">
+      <div>
+        <p class="eyebrow">CIA SMART MENU</p>
+        <h1 id="restaurantName">Загрузка…</h1>
+      </div>
+      <button id="waiterButton" hidden>Онлайн-официант</button>
+    </header>
+    <div class="toolbar"><input id="search" placeholder="Поиск блюд"></div>
+    <nav id="categories" class="categories"></nav>
+    <p id="count" class="count"></p>
+    <section id="products" class="products"></section>
+    <p id="error" class="error" hidden></p>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

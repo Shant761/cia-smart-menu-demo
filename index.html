@@ -22,26 +22,15 @@
           </div>
         </div>
       </div>
-
       <div class="restaurant-copy">
         <span class="eyebrow">SMART QR MENU</span>
         <h1 id="restaurantName">Garden Table</h1>
         <p id="restaurantMeta">Европейская кухня • Ереван</p>
       </div>
-
-      <label class="search-box">
-        <span>⌕</span>
-        <input id="searchInput" type="search" placeholder="Поиск блюд" autocomplete="off" />
-      </label>
-
-      <button id="personalizeBtn" class="personalize-card" type="button">
-        <div><strong id="personalizeTitle">Настроить меню под себя</strong><span id="personalizeSubtitle">Исключите продукты и аллергены</span></div>
-        <span class="arrow">→</span>
-      </button>
-
+      <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Поиск блюд" autocomplete="off" /></label>
+      <button id="personalizeBtn" class="personalize-card" type="button"><div><strong id="personalizeTitle">Настроить меню под себя</strong><span id="personalizeSubtitle">Исключите продукты и аллергены</span></div><span class="arrow">→</span></button>
       <div id="activeFilterBar" class="active-filter-bar hidden"><span id="activeFilterText"></span><button id="editFiltersBtn" type="button">Изменить</button></div>
     </header>
-
     <main>
       <nav id="categoryNav" class="category-nav" aria-label="Menu categories"></nav>
       <section class="menu-heading"><div><span class="eyebrow" id="menuEyebrow">МЕНЮ</span><h2 id="menuTitle">Все блюда</h2></div><span id="resultCount" class="result-count">0 блюд</span></section>
@@ -50,9 +39,6 @@
     </main>
   </div>
 
-  <div id="cartBar" class="cart-bar hidden" role="button" tabindex="0" aria-label="Open cart"><div class="cart-bar-left"><span class="cart-icon">🛒</span><span id="cartBarLabel">Корзина</span><b id="cartCount">0</b></div><strong id="cartTotal">0 ֏</strong><span class="cart-bar-arrow">→</span></div>
-  <div id="cartBackdrop" class="backdrop hidden"></div>
-  <aside id="cartSheet" class="bottom-sheet cart-sheet" aria-hidden="true"><div class="sheet-handle"></div><div class="sheet-header"><div><span class="eyebrow">ORDER</span><h2 id="cartTitle">Корзина</h2></div><button class="icon-btn" id="closeCartSheet" type="button" aria-label="Close">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-summary"><span>Итого</span><strong id="cartSubtotal">0 ֏</strong></div><button id="cartOrderBtn" class="primary-btn cart-order-btn" type="button">Перейти к заказу</button></aside>
   <div id="sheetBackdrop" class="backdrop hidden"></div>
   <aside id="filterSheet" class="bottom-sheet" aria-hidden="true"><div class="sheet-handle"></div><div class="sheet-header"><div><span class="eyebrow">ПЕРСОНАЛИЗАЦИЯ</span><h2>Что вы хотите исключить?</h2></div><button class="icon-btn" id="closeFilterSheet" type="button" aria-label="Close">×</button></div><p class="sheet-intro">Отметьте продукты, которые не должны встречаться в блюдах.</p><div id="allergenOptions" class="allergen-options"></div><div class="mode-block"><span class="mode-label">Показывать</span><label class="radio-row"><input type="radio" name="filterMode" value="safe" checked /><span><strong>Только подходящие блюда</strong><small>Скрывать блюда с выбранными аллергенами</small></span></label><label class="radio-row"><input type="radio" name="filterMode" value="all" /><span><strong>Все блюда</strong><small>Показывать предупреждение при конфликте</small></span></label></div><div class="sheet-footer"><button id="clearFiltersBtn" class="ghost-btn" type="button">Сбросить</button><button id="applyFiltersBtn" class="primary-btn" type="button">Применить</button></div></aside>
   <aside id="dishSheet" class="bottom-sheet dish-sheet" aria-hidden="true"><div class="sheet-handle"></div><button class="icon-btn dish-close" id="closeDishSheet" type="button" aria-label="Close">×</button><div id="dishDetail"></div></aside>
@@ -66,9 +52,8 @@
   <script src="customization.js?v=20260823fix3" defer></script>
   <script src="poster-customization-guard.js?v=20260823fix3" defer></script>
   <script src="waiter.js?v=20260823fix3" defer></script>
-  <script src="waiter-poster-bridge.js?v=20260823fix5" defer></script>
+  <script src="waiter-poster-bridge.js?v=20260823fix6" defer></script>
   <script src="waiter-position.js?v=20260823fix3" defer></script>
   <script src="auth.js?v=20260823fix3" defer></script>
-  <script src="cart.js?v=20260823fix3" defer></script>
 </body>
 </html>

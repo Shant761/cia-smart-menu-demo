@@ -1,15 +1,27 @@
 (() => {
-  const originalFetch = window.fetch.bind(window);
+  const originalFetch = window.fetch.bind(window.fetch);
+  const isDemo = new URLSearchParams(window.location.search).get('demo') === '1';
 
   window.fetch = async (...args) => {
     const requestUrl = typeof args[0] === 'string' ? args[0] : args[0]?.url || '';
-    const response = await originalFetch(...args);
 
-    if (!requestUrl.includes('data/products.json')) return response;
+    if (!requestUrl.includes('data/products.json')) {
+      return originalFetch(...args);
+    }
 
     try {
-      const menu = await response.clone().json();
+      // In explicit demo mode, bypass Firestore completely. This is important
+      // while the Firestore quota is exhausted: the CIASIFT demo must still
+      // load the local menu and test the real Poster order endpoint.
+      const menuResponse = isDemo
+        ? await originalFetch('data/products.json')
+        : await originalFetch(...args);
+
+      if (!menuResponse.ok) throw new Error(`menu status ${menuResponse.status}`);
+
+      const menu = await menuResponse.json();
       const colaResponse = await originalFetch('data/cola-test.json');
+
       if (colaResponse.ok) {
         const colaData = await colaResponse.json();
         const cola = colaData?.products?.[0];
@@ -19,12 +31,12 @@
       }
 
       return new Response(JSON.stringify(menu), {
-        status: response.status,
-        statusText: response.statusText,
-        headers: { 'Content-Type': 'application/json' }
+        status: 200,
+        headers: { 'Content-Type': 'application/json; charset=utf-8' }
       });
-    } catch (_) {
-      return response;
+    } catch (error) {
+      console.warn('[CIA Smart Menu] Demo menu load failed:', error);
+      return originalFetch(...args);
     }
   };
 })();

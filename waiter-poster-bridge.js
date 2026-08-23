@@ -210,11 +210,4 @@
   } else {
     install();
   }
-
-  // waiter.js can re-render the footer after language changes. Re-install safely.
-  const observer = new MutationObserver(() => {
-    if (!document.querySelector('#waiterPhone')) injectPhoneField();
-    refreshCopy();
-  });
-  observer.observe(document.body, { childList: true, subtree: true });
 })();

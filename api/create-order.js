@@ -59,6 +59,16 @@ export default async function handler(req, res) {
       return res.status(502).json({ ok: false, error: 'Poster API returned an HTTP error.', posterStatus: posterResponse.status, poster: posterData });
     }
 
+    // Poster can return an application-level error inside a successful HTTP response.
+    if (posterData?.error || posterData?.error_code || posterData?.error_message) {
+      return res.status(502).json({
+        ok: false,
+        error: 'Poster rejected the order.',
+        posterStatus: posterResponse.status,
+        poster: posterData
+      });
+    }
+
     return res.status(200).json({ ok: true, posterStatus: posterResponse.status, poster: posterData });
   } catch (error) {
     console.error('Poster order failed:', error);

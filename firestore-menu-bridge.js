@@ -5,7 +5,8 @@
   const params = new URLSearchParams(window.location.search);
   const explicitRestaurantId = params.get('restaurant');
   const restaurantId = explicitRestaurantId || 'ciasift';
-  const allowDemoFallback = !explicitRestaurantId || restaurantId === 'garden-table';
+  const demoMode = params.get('demo') === '1';
+  const allowDemoFallback = !explicitRestaurantId || restaurantId === 'garden-table' || (restaurantId === 'ciasift' && demoMode);
 
   const waitForFirebase = (timeoutMs = 1800) => new Promise((resolve) => {
     if (window.ciaFirebase?.loadPublicMenu) {
@@ -58,8 +59,7 @@
       if (!allowDemoFallback) return firestoreErrorResponse('firestore_unavailable');
     }
 
-    // The static Garden Table JSON is a demo-only fallback. A real restaurant
-    // must never silently show demo products if Firestore is unavailable.
+    // Static fallback is enabled only for the explicit demo mode.
     if (allowDemoFallback) return nativeFetch(input, init);
     return firestoreErrorResponse('restaurant_menu_unavailable');
   };

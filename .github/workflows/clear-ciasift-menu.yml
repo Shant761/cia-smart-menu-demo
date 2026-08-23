@@ -6,14 +6,22 @@ on:
 jobs:
   clear:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     env:
-      FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
+      FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
-      - name: Install dependencies
-        run: npm ci
+          node-version: '22'
+      - name: Install Firebase Admin SDK
+        run: npm install --no-save firebase-admin@14.2.0
+      - name: Verify Firebase secret
+        run: |
+          if [ -z "$FIREBASE_SERVICE_ACCOUNT" ]; then
+            echo "Missing GitHub Actions secret: FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU"
+            exit 1
+          fi
       - name: Clear only CIASIFT menu
         run: node scripts/clear-restaurant-menu.cjs ciasift

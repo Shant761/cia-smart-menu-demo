@@ -1,0 +1,38 @@
+name: CIA Nutrition - Build Review Queue
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'data/nutrition-database.json'
+      - 'scripts/build-nutrition-review-list.cjs'
+
+permissions:
+  contents: write
+
+jobs:
+  build-review-queue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build review queue
+        run: node scripts/build-nutrition-review-list.cjs
+
+      - name: Commit review queue
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/cia-nutrition-review.json
+          if git diff --cached --quiet; then
+            echo "No review queue changes."
+          else
+            git commit -m "chore: update CIA nutrition review queue"
+            git push
+          fi

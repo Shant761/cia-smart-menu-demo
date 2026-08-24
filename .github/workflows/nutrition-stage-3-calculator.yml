@@ -1,0 +1,50 @@
+name: CIA Nutrition — Stage 3 Calculator
+
+on:
+  workflow_dispatch:
+    inputs:
+      restaurant_id:
+        description: 'CIA restaurant id'
+        required: true
+        default: 'poster-test'
+      force:
+        description: 'Recalculate products even if calculation hash is unchanged'
+        required: true
+        default: 'true'
+        type: boolean
+
+jobs:
+  calculate:
+    name: Calculate calories and macros
+    runs-on: ubuntu-latest
+    env:
+      CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
+      NUTRITION_FORCE: ${{ inputs.force }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate calculator
+        run: |
+          node --check scripts/calculate-product-nutrition.cjs
+
+      - name: Install Firebase Admin SDK
+        run: npm install --no-save firebase-admin@14.2.0
+
+      - name: Verify Firebase secret
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+        run: test -n "$FIREBASE_SERVICE_ACCOUNT" || (echo 'Missing FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU' && exit 1)
+
+      - name: Calculate product nutrition
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+        run: node scripts/calculate-product-nutrition.cjs
+
+      - name: Stage 3 complete
+        run: echo "CIA Nutrition Stage 3 calculator finished for $CIA_RESTAURANT_ID"

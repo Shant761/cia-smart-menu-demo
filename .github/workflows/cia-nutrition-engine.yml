@@ -38,9 +38,10 @@ jobs:
           node --check scripts/build-ingredient-catalog.cjs
           node --check scripts/lookup-nutrition-local.cjs
           node --check scripts/calculate-product-nutrition.cjs
+          node --check scripts/merge-manual-into-nutrition-database.cjs
           node -e "const db=require('./data/nutrition-database.json'); if(!Array.isArray(db.entries)) throw new Error('Invalid nutrition database')"
 
-      - name: Install Firebase Admin SDK
+      - name: Install Firebase Admin SDK package
         run: npm install --no-save firebase-admin@14.2.0
 
       - name: Verify Firebase secret
@@ -48,6 +49,9 @@ jobs:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
         run: |
           test -n "$FIREBASE_SERVICE_ACCOUNT" || (echo 'Missing FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU' && exit 1)
+
+      - name: Merge verified CIA manual nutrition into engine database
+        run: node scripts/merge-manual-into-nutrition-database.cjs
 
       - name: Build CIA ingredient catalog from Poster recipes
         env:

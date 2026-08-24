@@ -17,6 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
+      FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -26,18 +27,18 @@ jobs:
         with:
           node-version: 22
 
-      - name: Verify review queue
-        run: |
-          test -f data/nutrition-review-queue.json || {
-            echo 'Missing data/nutrition-review-queue.json. Run Stage 2 first.'
-            exit 1
-          }
+      - name: Install Firebase Admin dependency
+        run: npm install --no-save firebase-admin
+
+      - name: Export nutrition review queue from Firestore
+        run: node scripts/export-nutrition-review-queue.cjs
 
       - name: Build CIA nutrition database seed
         run: node scripts/build-cia-nutrition-seed.cjs
 
       - name: Verify generated database
         run: |
+          test -f data/nutrition-review-queue.json
           test -f data/nutrition-database.json
           node -e "const d=require('./data/nutrition-database.json'); if(!Array.isArray(d.entries)) process.exit(1); console.log('Nutrition entries:', d.entries.length);"
 
@@ -49,7 +50,7 @@ jobs:
           if git diff --cached --quiet; then
             echo 'Nutrition database is already up to date.'
           else
-            git commit -m "Seed CIA nutrition database from review queue"
+            git commit -m "Seed CIA nutrition database from Firestore review queue"
             git push
           fi
 

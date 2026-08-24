@@ -1,0 +1,38 @@
+name: CIA Nutrition - Manual Top 20 Template
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'data/cia-nutrition-priority-top20.json'
+      - 'scripts/build-cia-manual-top20-template.cjs'
+
+permissions:
+  contents: write
+
+jobs:
+  build-template:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build manual template
+        run: node scripts/build-cia-manual-top20-template.cjs
+
+      - name: Commit template
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/cia-nutrition-manual-top20.json
+          if git diff --cached --quiet; then
+            echo "No manual template changes."
+          else
+            git commit -m "chore: update CIA manual nutrition top 20 template"
+            git push
+          fi

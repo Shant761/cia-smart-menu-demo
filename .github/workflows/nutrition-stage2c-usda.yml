@@ -1,0 +1,61 @@
+name: CIA Nutrition — Stage 2C USDA Enrichment
+
+on:
+  workflow_dispatch:
+    inputs:
+      restaurant_id:
+        description: 'CIA restaurant ID'
+        required: true
+        default: 'poster-test'
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  enrich-usda:
+    runs-on: ubuntu-latest
+    env:
+      CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
+      USDA_API_KEY: ${{ secrets.USDA_API_KEY }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Verify nutrition database
+        run: |
+          test -f data/nutrition-database.json || {
+            echo 'Missing data/nutrition-database.json. Run Stage 2B first.'
+            exit 1
+          }
+          test -n "$USDA_API_KEY" || {
+            echo 'Missing USDA_API_KEY GitHub secret.'
+            exit 1
+          }
+
+      - name: Enrich verified matches from USDA
+        run: node scripts/enrich-nutrition-usda.cjs
+
+      - name: Validate nutrition database
+        run: |
+          node -e "const d=require('./data/nutrition-database.json'); if(!Array.isArray(d.entries)) process.exit(1); const v=d.entries.filter(e=>e.verified).length; const r=d.entries.filter(e=>e.status==='needs_review').length; console.log('verified:',v,'needs_review:',r,'total:',d.entries.length);"
+
+      - name: Commit enriched nutrition database
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/nutrition-database.json
+          if git diff --cached --quiet; then
+            echo 'No nutrition changes to commit.'
+          else
+            git commit -m "Enrich CIA nutrition database from USDA"
+            git push
+          fi
+
+      - name: Stage 2C complete
+        run: echo 'CIA Nutrition Stage 2C USDA enrichment complete.'

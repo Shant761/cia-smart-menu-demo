@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
-      FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+      FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -30,17 +30,28 @@ jobs:
       - name: Install Firebase Admin dependency
         run: npm install --no-save firebase-admin
 
+      - name: Verify Firebase secret
+        run: |
+          test -n "$FIREBASE_SERVICE_ACCOUNT" || {
+            echo 'Missing FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU GitHub secret.'
+            exit 1
+          }
+
       - name: Export nutrition review queue from Firestore
         run: node scripts/export-nutrition-review-queue.cjs
+
+      - name: Verify exported review queue
+        run: |
+          test -f data/nutrition-review-queue.json
+          node -e "const d=require('./data/nutrition-review-queue.json'); if(!Array.isArray(d.entries) || d.entries.length===0) process.exit(1); console.log('Review entries:', d.entries.length);"
 
       - name: Build CIA nutrition database seed
         run: node scripts/build-cia-nutrition-seed.cjs
 
       - name: Verify generated database
         run: |
-          test -f data/nutrition-review-queue.json
           test -f data/nutrition-database.json
-          node -e "const d=require('./data/nutrition-database.json'); if(!Array.isArray(d.entries)) process.exit(1); console.log('Nutrition entries:', d.entries.length);"
+          node -e "const d=require('./data/nutrition-database.json'); if(!Array.isArray(d.entries) || d.entries.length===0) process.exit(1); console.log('Nutrition entries:', d.entries.length);"
 
       - name: Commit nutrition database
         run: |

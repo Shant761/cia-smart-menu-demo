@@ -1,0 +1,50 @@
+name: CIA Nutrition — Stage 2 Review Queue
+
+on:
+  workflow_dispatch:
+    inputs:
+      restaurant_id:
+        description: Restaurant ID
+        required: true
+        default: poster-test
+      rebuild_catalog:
+        description: Rebuild ingredient catalog first
+        required: true
+        default: true
+        type: boolean
+
+jobs:
+  build-review-queue:
+    name: Build nutrition review queue
+    runs-on: ubuntu-latest
+    env:
+      CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
+      FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+      FORCE_CATALOG_BUILD: ${{ inputs.rebuild_catalog }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate scripts
+        run: |
+          node --check scripts/build-ingredient-catalog.cjs
+          node --check scripts/build-nutrition-review-queue.cjs
+
+      - name: Install Firebase Admin
+        run: npm install --no-save firebase-admin@14.2.0
+
+      - name: Validate Firebase secret
+        run: test -n "$FIREBASE_SERVICE_ACCOUNT" || (echo 'Missing FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU' && exit 1)
+
+      - name: Rebuild ingredient catalog
+        if: ${{ inputs.rebuild_catalog }}
+        run: node scripts/build-ingredient-catalog.cjs
+
+      - name: Build normalized nutrition review queue
+        run: node scripts/build-nutrition-review-queue.cjs

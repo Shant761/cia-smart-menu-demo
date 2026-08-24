@@ -2,10 +2,15 @@ name: CIA Nutrition - Priority Top 20
 
 on:
   workflow_dispatch:
+    inputs:
+      restaurant_id:
+        description: Firestore restaurant slug
+        required: true
+        default: poster-test
+        type: string
   push:
     paths:
-      - 'data/cia-nutrition-review.json'
-      - 'scripts/build-nutrition-priority-top20.cjs'
+      - 'scripts/build-poster-nutrition-priority-top20.cjs'
 
 permissions:
   contents: write
@@ -20,10 +25,16 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
-      - name: Build Top 20
-        run: node scripts/build-nutrition-priority-top20.cjs
+      - name: Install Firebase Admin SDK
+        run: npm install --no-save firebase-admin@14.2.0
+
+      - name: Build Top 20 from Poster recipe usage
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+          CIA_RESTAURANT_ID: ${{ inputs.restaurant_id || 'poster-test' }}
+        run: node scripts/build-poster-nutrition-priority-top20.cjs
 
       - name: Commit Top 20
         run: |

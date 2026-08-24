@@ -8,7 +8,9 @@
       "priority": 1,
       "id": "poster_340",
       "name": "Соль морская",
-      "aliases": ["Соль морская"],
+      "aliases": [
+        "Соль морская"
+      ],
       "usedInProductCount": 29,
       "occurrences": 29,
       "kcalPer100g": 0,
@@ -24,7 +26,9 @@
       "priority": 2,
       "id": "poster_337",
       "name": "Перец черный /молотый/",
-      "aliases": ["Перец черный /молотый/"],
+      "aliases": [
+        "Перец черный /молотый/"
+      ],
       "usedInProductCount": 23,
       "occurrences": 23,
       "kcalPer100g": 251,
@@ -40,7 +44,10 @@
       "priority": 3,
       "id": "poster_645",
       "name": "лимон/лайм",
-      "aliases": ["лимон/лайм", "пюре из абрикоса"],
+      "aliases": [
+        "лимон/лайм",
+        "пюре из абрикоса"
+      ],
       "usedInProductCount": 22,
       "occurrences": 23,
       "kcalPer100g": null,
@@ -56,7 +63,9 @@
       "priority": 4,
       "id": "poster_395",
       "name": "растительное масло",
-      "aliases": ["растительное масло"],
+      "aliases": [
+        "растительное масло"
+      ],
       "usedInProductCount": 21,
       "occurrences": 21,
       "kcalPer100g": null,
@@ -72,7 +81,9 @@
       "priority": 5,
       "id": "poster_377",
       "name": "Клубника",
-      "aliases": ["Клубника"],
+      "aliases": [
+        "Клубника"
+      ],
       "usedInProductCount": 18,
       "occurrences": 18,
       "kcalPer100g": 32,
@@ -88,71 +99,81 @@
       "priority": 6,
       "id": "poster_256",
       "name": "кофе эспрессо",
-      "aliases": ["кофе эспрессо"],
+      "aliases": [
+        "кофе эспрессо"
+      ],
       "usedInProductCount": 18,
       "occurrences": 18,
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "sourceReference": null,
-      "verified": false,
-      "status": "needs_review"
+      "kcalPer100g": 9,
+      "proteinPer100g": 0.12,
+      "fatPer100g": 0.18,
+      "carbsPer100g": 1.67,
+      "source": "USDA FoodData Central",
+      "sourceReference": "FDC 171891; coffee, brewed, espresso, restaurant-prepared",
+      "verified": true,
+      "status": "verified"
     },
     {
       "priority": 7,
       "id": "poster_442",
       "name": "мята свежая",
-      "aliases": ["мята свежая"],
+      "aliases": [
+        "мята свежая"
+      ],
       "usedInProductCount": 17,
       "occurrences": 17,
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "sourceReference": null,
-      "verified": false,
-      "status": "needs_review"
+      "kcalPer100g": 44,
+      "proteinPer100g": 3.29,
+      "fatPer100g": 0.73,
+      "carbsPer100g": 8.41,
+      "source": "USDA FoodData Central",
+      "sourceReference": "FDC 173475; spearmint, fresh",
+      "verified": true,
+      "status": "verified"
     },
     {
       "priority": 8,
       "id": "poster_353",
       "name": "Яйца",
-      "aliases": ["Яйца"],
+      "aliases": [
+        "Яйца"
+      ],
       "usedInProductCount": 17,
       "occurrences": 17,
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "sourceReference": null,
-      "verified": false,
-      "status": "needs_review"
+      "kcalPer100g": 143,
+      "proteinPer100g": 12.56,
+      "fatPer100g": 9.51,
+      "carbsPer100g": 0.72,
+      "source": "USDA FoodData Central",
+      "sourceReference": "FDC 171287; egg, whole, raw, fresh",
+      "verified": true,
+      "status": "verified"
     },
     {
       "priority": 9,
       "id": "poster_436",
       "name": "Лимон",
-      "aliases": ["Лимон"],
+      "aliases": [
+        "Лимон"
+      ],
       "usedInProductCount": 16,
       "occurrences": 16,
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "sourceReference": null,
-      "verified": false,
-      "status": "needs_review"
+      "kcalPer100g": 29,
+      "proteinPer100g": 1.1,
+      "fatPer100g": 0.3,
+      "carbsPer100g": 9.32,
+      "source": "USDA FoodData Central",
+      "sourceReference": "FDC 167746; lemons, raw, without peel",
+      "verified": true,
+      "status": "verified"
     },
     {
       "priority": 10,
       "id": "poster_534",
       "name": "мороженое",
-      "aliases": ["мороженое"],
+      "aliases": [
+        "мороженое"
+      ],
       "usedInProductCount": 15,
       "occurrences": 15,
       "kcalPer100g": null,
@@ -168,7 +189,9 @@
       "priority": 11,
       "id": "poster_289",
       "name": "сироп Monin",
-      "aliases": ["сироп Monin"],
+      "aliases": [
+        "сироп Monin"
+      ],
       "usedInProductCount": 15,
       "occurrences": 15,
       "kcalPer100g": null,
@@ -184,7 +207,9 @@
       "priority": 12,
       "id": "poster_274",
       "name": "салатный лист",
-      "aliases": ["салатный лист"],
+      "aliases": [
+        "салатный лист"
+      ],
       "usedInProductCount": 14,
       "occurrences": 14,
       "kcalPer100g": null,
@@ -200,7 +225,9 @@
       "priority": 13,
       "id": "poster_278",
       "name": "свежая зелень",
-      "aliases": ["свежая зелень"],
+      "aliases": [
+        "свежая зелень"
+      ],
       "usedInProductCount": 14,
       "occurrences": 14,
       "kcalPer100g": null,
@@ -216,7 +243,10 @@
       "priority": 14,
       "id": "poster_493",
       "name": "баклажан запеченный",
-      "aliases": ["баклажан запеченный", "микрогрин"],
+      "aliases": [
+        "баклажан запеченный",
+        "микрогрин"
+      ],
       "usedInProductCount": 12,
       "occurrences": 12,
       "kcalPer100g": null,
@@ -232,7 +262,9 @@
       "priority": 15,
       "id": "poster_335",
       "name": "Перец красный /молотый/",
-      "aliases": ["Перец красный /молотый/"],
+      "aliases": [
+        "Перец красный /молотый/"
+      ],
       "usedInProductCount": 12,
       "occurrences": 12,
       "kcalPer100g": null,
@@ -248,7 +280,9 @@
       "priority": 16,
       "id": "poster_418",
       "name": "сахар тросниковый",
-      "aliases": ["сахар тросниковый"],
+      "aliases": [
+        "сахар тросниковый"
+      ],
       "usedInProductCount": 12,
       "occurrences": 12,
       "kcalPer100g": null,
@@ -264,7 +298,9 @@
       "priority": 17,
       "id": "poster_396",
       "name": "сливочное масло",
-      "aliases": ["сливочное масло"],
+      "aliases": [
+        "сливочное масло"
+      ],
       "usedInProductCount": 12,
       "occurrences": 12,
       "kcalPer100g": null,
@@ -280,7 +316,9 @@
       "priority": 18,
       "id": "poster_287",
       "name": "молоко /Parmalat/",
-      "aliases": ["молоко /Parmalat/"],
+      "aliases": [
+        "молоко /Parmalat/"
+      ],
       "usedInProductCount": 11,
       "occurrences": 11,
       "kcalPer100g": null,
@@ -296,7 +334,9 @@
       "priority": 19,
       "id": "poster_633",
       "name": "огурцы чищенные",
-      "aliases": ["огурцы чищенные"],
+      "aliases": [
+        "огурцы чищенные"
+      ],
       "usedInProductCount": 11,
       "occurrences": 11,
       "kcalPer100g": null,
@@ -312,7 +352,9 @@
       "priority": 20,
       "id": "poster_339",
       "name": "Соль",
-      "aliases": ["Соль"],
+      "aliases": [
+        "Соль"
+      ],
       "usedInProductCount": 11,
       "occurrences": 11,
       "kcalPer100g": null,

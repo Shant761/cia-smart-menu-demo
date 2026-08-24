@@ -1,0 +1,79 @@
+name: CIA Nutrition Engine — poster-test
+
+on:
+  workflow_dispatch:
+    inputs:
+      restaurant_id:
+        description: Firestore restaurant slug
+        required: true
+        default: poster-test
+        type: string
+      lookup_limit:
+        description: Maximum number of ingredients to match against USDA
+        required: true
+        default: '50'
+        type: string
+      force:
+        description: Rebuild and re-run nutrition matching even when source is unchanged
+        required: true
+        default: true
+        type: boolean
+
+jobs:
+  nutrition:
+    name: Calculate calories and macros
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    env:
+      CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
+      NUTRITION_LIMIT: ${{ inputs.lookup_limit }}
+      NUTRITION_FORCE: ${{ inputs.force }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate nutrition scripts
+        run: |
+          node --check scripts/build-ingredient-catalog.cjs
+          node --check scripts/lookup-nutrition-usda.cjs
+          node --check scripts/calculate-product-nutrition.cjs
+
+      - name: Install Firebase Admin SDK
+        run: npm install --no-save firebase-admin@14.2.0
+
+      - name: Verify required secrets
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+          USDA_DATA_API_KEY: ${{ secrets.USDA_DATA_API_KEY }}
+        run: |
+          test -n "$FIREBASE_SERVICE_ACCOUNT" || (echo 'Missing FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU' && exit 1)
+          test -n "$USDA_DATA_API_KEY" || (echo 'Missing USDA_DATA_API_KEY' && exit 1)
+
+      - name: Build CIA ingredient catalog from Poster recipes
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+          FORCE_CATALOG_BUILD: ${{ inputs.force }}
+        run: node scripts/build-ingredient-catalog.cjs
+
+      - name: Match ingredients against USDA FoodData Central
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+          USDA_DATA_API_KEY: ${{ secrets.USDA_DATA_API_KEY }}
+        run: node scripts/lookup-nutrition-usda.cjs
+
+      - name: Calculate product calories and macros
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+        run: node scripts/calculate-product-nutrition.cjs
+
+      - name: Nutrition pipeline complete
+        run: |
+          echo "CIA Nutrition Engine completed for restaurant: $CIA_RESTAURANT_ID"
+          echo "Result: ingredient nutrition + product calories/macros written to Firestore"

@@ -13,7 +13,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_b45a53c5004c62f9c58f4a6d",
@@ -25,7 +25,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_0144a8350571132404572ef9",
@@ -37,7 +37,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_1b7e69a897a2c7d62c498e3c",
@@ -49,7 +49,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_40008bf4d783f83a5f76401b",
@@ -61,7 +61,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_a59ad4cfb5d41249bbc249ad",
@@ -75,7 +75,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 175098,
+        "description": "Alcoholic beverage, liqueur, coffee with cream, 34 proof",
+        "matchScore": 0.5
+      }
     },
     {
       "id": "nutrition_d3612c4367de920ced7325ec",
@@ -87,7 +92,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 169134,
+        "description": "Pomegranates, raw",
+        "matchScore": 0.5
+      }
     },
     {
       "id": "nutrition_ae8bcc8aa214d8c7dda48302",
@@ -99,7 +109,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 174841,
+        "description": "Alcoholic beverage, wine, table, white, Pinot Gris (Grigio)",
+        "matchScore": 0.6666666666666666
+      }
     },
     {
       "id": "nutrition_cbd05e19364c2f417a28f3f9",
@@ -111,7 +126,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_19aa70c21e9716dd7beb575b",
@@ -123,7 +138,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_2159433528245352a3663c54",
@@ -135,7 +150,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_91797c8ced23c3f45f2c7044",
@@ -147,7 +162,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 174621,
+        "description": "Cereals ready-to-eat, QUAKER, HONEY GRAHAM OH!S",
+        "matchScore": 0.5
+      }
     },
     {
       "id": "nutrition_16ed2907f796c09cbf0d3cbc",
@@ -159,7 +179,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_e5b757e786a4d3da4e15153a",
@@ -171,19 +191,24 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_db4b593cedf2b826cdea6a75",
       "name": "Beluga",
       "aliases": [],
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "verified": false,
-      "status": "needs_nutrition"
+      "kcalPer100g": 3766,
+      "proteinPer100g": 0,
+      "fatPer100g": 100,
+      "carbsPer100g": 0,
+      "source": "USDA FoodData Central FDC 168981",
+      "verified": true,
+      "status": "verified",
+      "usda": {
+        "fdcId": 168981,
+        "description": "Oil, beluga, whale (Alaska Native)",
+        "matchScore": 1
+      }
     },
     {
       "id": "nutrition_161096c0d381fb5cea377436",
@@ -195,7 +220,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_963849a089e7d11c3c03e8e6",
@@ -207,7 +232,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_6a1128d06853379140e1da59",
@@ -219,7 +244,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_6163405c7a834f68df51634b",
@@ -231,7 +256,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_2cda9fe92ea13bf9326050e1",
@@ -243,7 +268,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_888c8c5bdb51ea897649cd92",
@@ -255,7 +280,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 172041,
+        "description": "PIZZA HUT 12\" Cheese Pizza, Pan Crust",
+        "matchScore": 0.25
+      }
     },
     {
       "id": "nutrition_c73d43eaaa71cc3a4c233a71",
@@ -267,7 +297,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_526e4b017af2bf7caf048b4c",
@@ -279,7 +309,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_8ec3e99ade3055c2b616ee75",
@@ -291,7 +321,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_68ce540430d77a753deeb7c8",
@@ -303,7 +333,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_9e09fc070c2d1d6013002ebf",
@@ -315,7 +345,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_43bd9bb20906eac49c1698e1",
@@ -327,7 +357,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_ee8e3476bda28ce9711748e2",
@@ -339,7 +369,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 171907,
+        "description": "Beverages, Malt liquor beverage",
+        "matchScore": 0.5
+      }
     },
     {
       "id": "nutrition_d1c65798be553168c4794d21",
@@ -351,7 +386,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 174493,
+        "description": "Turkey, ground, 85% lean, 15% fat, raw",
+        "matchScore": 0.5
+      }
     },
     {
       "id": "nutrition_2377bbf0d36e1cbc27368605",
@@ -363,7 +403,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 173572,
+        "description": "Fat, goose",
+        "matchScore": 0.5
+      }
     },
     {
       "id": "nutrition_9cbd9c401d87ffde590fbd72",
@@ -375,7 +420,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 174842,
+        "description": "Beverages, carbonated, club soda",
+        "matchScore": 0.25
+      }
     },
     {
       "id": "nutrition_f8e7c7ef8da745ea4240748b",
@@ -387,7 +437,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 174842,
+        "description": "Beverages, carbonated, club soda",
+        "matchScore": 0.25
+      }
     },
     {
       "id": "nutrition_22c93882c086fed6927bcad2",
@@ -399,7 +454,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 172201,
+        "description": "Cheese, mexican, queso anejo",
+        "matchScore": 0.25
+      }
     },
     {
       "id": "nutrition_c2d25f6091e0a1c53441bcde",
@@ -411,7 +471,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 174621,
+        "description": "Cereals ready-to-eat, QUAKER, HONEY GRAHAM OH!S",
+        "matchScore": 0.5
+      }
     },
     {
       "id": "nutrition_c2b041e581eb2de2175b867c",
@@ -423,7 +488,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_563dcdef4d66c7de6e2e40cb",
@@ -435,7 +500,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_deeb59a87bb849ed1a783415",
@@ -447,7 +512,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 2647438,
+        "description": "Cheese, monterey jack, solid",
+        "matchScore": 0.6666666666666666
+      }
     },
     {
       "id": "nutrition_8c7e8fe10bc3246f64c58689",
@@ -459,7 +529,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 174621,
+        "description": "Cereals ready-to-eat, QUAKER, HONEY GRAHAM OH!S",
+        "matchScore": 0.5
+      }
     },
     {
       "id": "nutrition_54fcd41e44bfa25653a207ba",
@@ -471,7 +546,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_90e6b8626e8ff4c0ce06d7d2",
@@ -483,7 +558,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_80c6ec77712e926132c183e1",
@@ -495,7 +570,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_afa06d194fbcc82f37c70bca",
@@ -507,7 +582,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_69467e8b82e90d5513cf9f19",
@@ -519,7 +594,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 173190,
+        "description": "Alcoholic beverage, wine, table, red",
+        "matchScore": 0.5
+      }
     },
     {
       "id": "nutrition_5a12ac62a8cde35e88132468",
@@ -531,7 +611,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 174837,
+        "description": "Alcoholic beverage, wine, table, white",
+        "matchScore": 0.5
+      }
     },
     {
       "id": "nutrition_71f2599882be914ab84a87b3",
@@ -543,7 +628,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 173190,
+        "description": "Alcoholic beverage, wine, table, red",
+        "matchScore": 0.3333333333333333
+      }
     },
     {
       "id": "nutrition_1578c0b5d1aa4a39dd2b160d",
@@ -555,7 +645,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 174837,
+        "description": "Alcoholic beverage, wine, table, white",
+        "matchScore": 0.3333333333333333
+      }
     },
     {
       "id": "nutrition_bf2e4bbb4d378d65a48ea8e0",
@@ -567,7 +662,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 173190,
+        "description": "Alcoholic beverage, wine, table, red",
+        "matchScore": 0.5
+      }
     },
     {
       "id": "nutrition_f15e9791a1c0aa96755443d4",
@@ -579,7 +679,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 174837,
+        "description": "Alcoholic beverage, wine, table, white",
+        "matchScore": 0.5
+      }
     },
     {
       "id": "nutrition_eecc8d5531ac4974b1d8889b",
@@ -591,7 +696,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 173190,
+        "description": "Alcoholic beverage, wine, table, red",
+        "matchScore": 0.3333333333333333
+      }
     },
     {
       "id": "nutrition_04588013b9d082eedfbd8c6f",
@@ -603,7 +713,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_5f16c3e2f49a617db5d9b49a",
@@ -615,7 +725,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_c0d542fcef483aaede5ec4c8",
@@ -627,7 +737,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_8127c9e33abd41dbbc43845f",
@@ -639,7 +749,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_583aee59c105a948926aec8d",
@@ -651,7 +761,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_000c285457fc971f862a79b7",
@@ -663,7 +773,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_1554547d264de07623d1c9c9",
@@ -675,7 +785,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_1cb68d8ad5cb893b33786bb2",
@@ -687,7 +797,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_7d7114bdec466a26de12e940",
@@ -699,7 +809,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 172226,
+        "description": "Ice cream sandwich",
+        "matchScore": 0.5
+      }
     },
     {
       "id": "nutrition_d66a95c8d2448e12016c4dd1",
@@ -711,7 +826,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 172224,
+        "description": "Cheese, white, queso blanco",
+        "matchScore": 0.5
+      }
     },
     {
       "id": "nutrition_e60ed0d10eb00958dd32925d",
@@ -723,7 +843,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_1ac3578a4f8867183f3e96a7",
@@ -735,7 +855,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_ac583ac33239818c0070fe3b",
@@ -747,7 +867,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 167639,
+        "description": "Fish, salmon, coho (silver), raw (Alaska Native)",
+        "matchScore": 0.5
+      }
     },
     {
       "id": "nutrition_803c873f194375f8ed23db3d",
@@ -759,7 +884,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 174837,
+        "description": "Alcoholic beverage, wine, table, white",
+        "matchScore": 0.3333333333333333
+      }
     },
     {
       "id": "nutrition_5bf97901d4488ffb06f58601",
@@ -771,7 +901,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_db041e4c61cffeab7b28a7f0",
@@ -783,7 +913,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_05f1a6d33eb63fbd6a8c6fe2",
@@ -795,7 +925,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_49786e1fe05f7e747d00cc8f",
@@ -807,7 +937,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_0d36b3ba08d45859200bfff7",
@@ -819,7 +949,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_555e4d502a58872bcbd85fb0",
@@ -831,7 +961,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 173190,
+        "description": "Alcoholic beverage, wine, table, red",
+        "matchScore": 0.5
+      }
     },
     {
       "id": "nutrition_578306dba3d384ab1cd310d6",
@@ -843,7 +978,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_6e6fcef80fc3d102dcd2e7d7",
@@ -855,7 +990,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 174837,
+        "description": "Alcoholic beverage, wine, table, white",
+        "matchScore": 0.5
+      }
     },
     {
       "id": "nutrition_5b5565c5dc0fb863eb031ce8",
@@ -867,7 +1007,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 1750351,
+        "description": "Oil, olive, extra light",
+        "matchScore": 0.3333333333333333
+      }
     },
     {
       "id": "nutrition_2ec9769332fbd364a68b9334",
@@ -879,7 +1024,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 1750351,
+        "description": "Oil, olive, extra light",
+        "matchScore": 0.25
+      }
     },
     {
       "id": "nutrition_16acb1caa75fd79975fe7970",
@@ -891,7 +1041,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 173190,
+        "description": "Alcoholic beverage, wine, table, red",
+        "matchScore": 0.5
+      }
     },
     {
       "id": "nutrition_31910ed2421350c7f21be895",
@@ -903,7 +1058,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 174837,
+        "description": "Alcoholic beverage, wine, table, white",
+        "matchScore": 0.5
+      }
     },
     {
       "id": "nutrition_d78aa9e012e960a599cfecae",
@@ -915,7 +1075,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 172041,
+        "description": "PIZZA HUT 12\" Cheese Pizza, Pan Crust",
+        "matchScore": 0.25
+      }
     },
     {
       "id": "nutrition_b0f90c8a570f19790b0061dc",
@@ -927,7 +1092,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 172041,
+        "description": "PIZZA HUT 12\" Cheese Pizza, Pan Crust",
+        "matchScore": 0.25
+      }
     },
     {
       "id": "nutrition_bd02462c93c79cf15e6a235d",
@@ -939,7 +1109,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 174837,
+        "description": "Alcoholic beverage, wine, table, white",
+        "matchScore": 0.5
+      }
     },
     {
       "id": "nutrition_3b42329f7f9ca1f5d6251a2f",
@@ -951,7 +1126,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_d9fed9aa7ef3c50b84ef872f",
@@ -963,7 +1138,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_d4cef5cdd7e10c2620006bcb",
@@ -975,7 +1150,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_6c348c2a5a92088d067d7e84",
@@ -987,7 +1162,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 168171,
+        "description": "Rose-apples, raw",
+        "matchScore": 0.25
+      }
     },
     {
       "id": "nutrition_603768b3c01d803e54c19a07",
@@ -999,7 +1179,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_0e3b7046784a5bdbf3489a6d",
@@ -1011,7 +1191,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_16e8f69048f3fd9e11e7c58d",
@@ -1023,7 +1203,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 173190,
+        "description": "Alcoholic beverage, wine, table, red",
+        "matchScore": 0.3333333333333333
+      }
     },
     {
       "id": "nutrition_f3f1c8507518408e3e26de34",
@@ -1035,7 +1220,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_8928d67f653df59cdde1941a",
@@ -1049,7 +1234,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_54545d04a06992f34bada7e6",
@@ -1061,7 +1246,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_64a65de480e497c873a262ee",
@@ -1073,7 +1258,13 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "api_error",
+      "usdaError": {
+        "stage": "search",
+        "status": 400,
+        "message": "USDA search failed: 400",
+        "response": "{\"error\":\"Bad Request\",\"message\":\"Invalid request. Please try again.\"}"
+      }
     },
     {
       "id": "nutrition_c4e069be0b5b5f5329e7fc58",
@@ -1085,7 +1276,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_b8b8474cb00f6e865691a3e2",
@@ -1097,7 +1288,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_1976031f91d46d775c480b75",
@@ -1109,7 +1300,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_d0e7ff0aead03aeffd0f07a1",
@@ -1121,7 +1312,13 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "api_error",
+      "usdaError": {
+        "stage": "search",
+        "status": 400,
+        "message": "USDA search failed: 400",
+        "response": "{\"error\":\"Bad Request\",\"message\":\"Invalid request. Please try again.\"}"
+      }
     },
     {
       "id": "nutrition_90f660487ae6557b8bd1c4a3",
@@ -1135,7 +1332,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_ec37d47ebbd7acdcc5583cf5",
@@ -1149,7 +1346,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_ba7e1f8329ce0ecf67d868cf",
@@ -1161,7 +1358,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_30c86fef90f3b1e71a76b3bd",
@@ -1173,7 +1370,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_6182fbc92d4f5cb7676861b6",
@@ -1185,7 +1382,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_161749ece2d32b546f682e50",
@@ -1197,7 +1394,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_d05c0d667fc0033193b7d8a6",
@@ -1209,7 +1406,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_a9db9a74691733613b70cddf",
@@ -1221,7 +1418,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_7dd92375014772983d7ee46c",
@@ -1233,7 +1430,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_07af01510dcf73eeac834a82",
@@ -1245,7 +1442,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_9b672ad9d954f357a8d4d44e",
@@ -1257,7 +1454,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_9553d86380cad74cf06b06be",
@@ -1269,7 +1466,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_f642d39dfa41ddc70e10a9b1",
@@ -1281,7 +1478,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_d4dcca0e1d43471fddbf402c",
@@ -1293,7 +1490,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_9479a17fde7133d78f9bf140",
@@ -1305,7 +1502,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_9db7a753d4380c351d22c0ae",
@@ -1317,7 +1514,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_09b840c3f502ede72e056d4f",
@@ -1329,7 +1526,13 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "api_error",
+      "usdaError": {
+        "stage": "search",
+        "status": 400,
+        "message": "USDA search failed: 400",
+        "response": "{\"error\":\"Bad Request\",\"message\":\"Invalid request. Please try again.\"}"
+      }
     },
     {
       "id": "nutrition_433b4328b697ab22edfa4501",
@@ -1341,7 +1544,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_aa3340579415348aed0e97a2",
@@ -1355,7 +1558,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 173477,
+        "description": "Clif Z bar",
+        "matchScore": 0.5
+      }
     },
     {
       "id": "nutrition_3b139c9afe1b5554a6af0365",
@@ -1367,7 +1575,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_d57d732ea4b29d07069e15b4",
@@ -1379,7 +1587,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_dea03271518cfe23e29f2abe",
@@ -1393,7 +1601,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_440a3c3046a389c07a586421",
@@ -1407,7 +1615,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 173477,
+        "description": "Clif Z bar",
+        "matchScore": 0
+      }
     },
     {
       "id": "nutrition_ce741c8a1f63c5d0c4e0a014",
@@ -1419,7 +1632,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_0da5d0abb433810314163c78",
@@ -1431,7 +1644,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_4f1f7a9f5e1fafc4ac6b5128",
@@ -1445,7 +1658,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 173338,
+        "description": "Turkey, stuffing, mashed potatoes w/gravy, assorted vegetables, frozen, microwaved",
+        "matchScore": 0.3333333333333333
+      }
     },
     {
       "id": "nutrition_8b05d5007ce45b43f6c1c0c9",
@@ -1459,7 +1677,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_0611a1b7ac680b4aabc00424",
@@ -1471,7 +1689,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_21f08aa0f8fd2191363ce57c",
@@ -1483,7 +1701,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_6f2c2d785c47fc054da6adef",
@@ -1495,7 +1713,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_280a8daf899b73c6b32857f4",
@@ -1507,7 +1725,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_b0a40bba99139c268da80024",
@@ -1519,7 +1737,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_4239587f2f2022ad9dc5087c",
@@ -1531,7 +1749,13 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "api_error",
+      "usdaError": {
+        "stage": "search",
+        "status": 400,
+        "message": "USDA search failed: 400",
+        "response": "{\"error\":\"Bad Request\",\"message\":\"Invalid request. Please try again.\"}"
+      }
     },
     {
       "id": "nutrition_17b6f5de940487897a185fe9",
@@ -1543,7 +1767,13 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "api_error",
+      "usdaError": {
+        "stage": "search",
+        "status": 400,
+        "message": "USDA search failed: 400",
+        "response": "{\"error\":\"Bad Request\",\"message\":\"Invalid request. Please try again.\"}"
+      }
     },
     {
       "id": "nutrition_ae0fa4e105e7005f44abeccf",
@@ -1555,7 +1785,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_2895cff1cab5b8426392bb45",
@@ -1569,7 +1799,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_1df341f1351c7d8ae1010a40",
@@ -1581,7 +1811,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_92b41ff717388d24a98e59e4",
@@ -1593,7 +1823,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_71259ce3419310dcf7065cea",
@@ -1607,7 +1837,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_27036a21d4c2d0d6c8e29253",
@@ -1619,7 +1849,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_de7414c33ee94f106e05fb41",
@@ -1631,7 +1861,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_5e3d8980c5685bfdb4e0489e",
@@ -1643,7 +1873,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_fc0911ae320ee3ec85955a65",
@@ -1655,7 +1885,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_392c22afe8c22a1036a52a2f",
@@ -1669,7 +1899,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_b42a0b9fd6a00c0c6d804030",
@@ -1681,7 +1911,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_2e0261111a0059520d1a8280",
@@ -1693,7 +1923,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_c761202dc11de52d8f9c6913",
@@ -1705,7 +1935,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_1cceffc374acd8befe752035",
@@ -1717,7 +1947,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_14fbd7b6b682b170dd745e84",
@@ -1729,7 +1959,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_9ee8627f707db3afc497b1c0",
@@ -1743,7 +1973,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_b24d790310251e25765dbcd1",
@@ -1755,7 +1985,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_c353595c648b5f88db091f22",
@@ -1767,7 +1997,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_a2fd18451a4f1a0c14e30b72",
@@ -1781,7 +2011,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_8e3ac061e32cd872e50f89b9",
@@ -1793,7 +2023,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_110722fc7d4032547c59cbc4",
@@ -1805,7 +2035,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_e1e0adb22e171874470121e7",
@@ -1819,7 +2049,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_945e5528d5fe6e614632f3a6",
@@ -1833,7 +2063,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 173477,
+        "description": "Clif Z bar",
+        "matchScore": 0
+      }
     },
     {
       "id": "nutrition_7a6ec1507a2405b1f75d005d",
@@ -1845,7 +2080,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_bd55b4cf48684ae97f337333",
@@ -1857,7 +2092,13 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "api_error",
+      "usdaError": {
+        "stage": "search",
+        "status": 400,
+        "message": "USDA search failed: 400",
+        "response": "{\"error\":\"Bad Request\",\"message\":\"Invalid request. Please try again.\"}"
+      }
     },
     {
       "id": "nutrition_0e15b250ffe4d062e3482942",
@@ -1871,7 +2112,13 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "api_error",
+      "usdaError": {
+        "stage": "search",
+        "status": 400,
+        "message": "USDA search failed: 400",
+        "response": "{\"error\":\"Bad Request\",\"message\":\"Invalid request. Please try again.\"}"
+      }
     },
     {
       "id": "nutrition_8f3375e1b5832f176202ce54",
@@ -1883,7 +2130,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_bd63e65423e03be913068762",
@@ -1895,7 +2142,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_cf9ecdd52caba3bc5d7a0009",
@@ -1907,7 +2154,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_288c91ca608f96013b181826",
@@ -1921,7 +2168,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_331fd0e0e202f8916e84f86f",
@@ -1933,7 +2180,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_664dba752f96b6e29c19cb47",
@@ -1945,7 +2192,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_14c6fc4f7dea59fcc7deffb0",
@@ -1957,7 +2204,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_cb30d709f908558565ce8044",
@@ -1969,7 +2216,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_5c3ff0d7ba7422f162d374eb",
@@ -1981,7 +2228,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_6362b9a2160b35801bb59b90",
@@ -1993,7 +2240,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_eb3fa17bc91832126af1ef99",
@@ -2005,7 +2252,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_f308130e61e6daf462b7ca99",
@@ -2017,7 +2264,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_43ef5103c6e33533df9e6673",
@@ -2029,7 +2276,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_cfe70b4ae68fc863c56634be",
@@ -2041,7 +2288,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_553ed40bac1dfe59b1d3377f",
@@ -2053,7 +2300,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_e839f9e5f64c687eb33d6db5",
@@ -2065,7 +2312,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_45e63f8d8ba0e3f0b64781a2",
@@ -2077,7 +2324,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_4dd0eb4b13ac95eac2d97cde",
@@ -2089,7 +2336,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_1fda5e8f3ed09cd40cd2176a",
@@ -2101,7 +2348,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_f892d46604e2d2323a646e8b",
@@ -2113,7 +2360,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_4b21d88f6e98a42be78ce342",
@@ -2125,7 +2372,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_68cd236e4ce689b721955605",
@@ -2139,7 +2386,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_32a67e6dc789a3b8fe74fb95",
@@ -2151,7 +2398,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_3caca706865b194319fd947b",
@@ -2163,7 +2410,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_07485de87e589064626e0863",
@@ -2175,7 +2422,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_efcf41118675968316e44101",
@@ -2187,7 +2434,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_3412f9942e8fb38e8401c7fa",
@@ -2199,7 +2446,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_0b98359a0e8dfa70e88d92fb",
@@ -2211,7 +2458,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_e3e9cef0b83016c9a5ab85cc",
@@ -2223,7 +2470,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_2d949d26e68c954d9e8da903",
@@ -2235,7 +2482,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_cd5dde2436a166dae2ca4cb0",
@@ -2247,7 +2494,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_e71f36ab01c24872b60abf89",
@@ -2259,7 +2506,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_63ccde18d5541dd0a4bee68e",
@@ -2271,7 +2518,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_022214fb804790b076054fbe",
@@ -2283,7 +2530,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_17d4eeeec05e425e3b05adbf",
@@ -2295,7 +2542,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_94f0eeca1e9d99b0bf04ddcb",
@@ -2307,7 +2554,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_b25e20a6e651e18662fe1634",
@@ -2319,7 +2566,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_11a19c2a8f158884c800b733",
@@ -2331,7 +2578,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_51993edbf80e7cc6b3f7b271",
@@ -2343,7 +2590,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_38458b63168ac18bf60fb0ae",
@@ -2355,7 +2602,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_856a21807e17e1729f710a8f",
@@ -2367,7 +2614,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_bae2629e4ec7d221b435ad6b",
@@ -2379,7 +2626,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_f7fc80979fe84626f5c60ffe",
@@ -2391,7 +2638,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_7c3b74c0d1ddabad31fca401",
@@ -2403,7 +2650,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_4bc4f2cdee586bef98deee4d",
@@ -2417,7 +2664,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_1186ec52e41497186c31a6b8",
@@ -2429,7 +2676,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_5ed0cb5c60dc24dce078d3c8",
@@ -2443,7 +2690,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_1f03bafffef346f103cbe6f2",
@@ -2457,7 +2704,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_fb39b856913ea6afd8a86eae",
@@ -2469,7 +2716,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_7bb9e91a144d2836d08bc041",
@@ -2481,7 +2728,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_bba618ae84efaea7c89de520",
@@ -2493,7 +2740,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_6e052d4dc5824871bcc763c4",
@@ -2505,7 +2752,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_734c95909c7102ddeb221601",
@@ -2517,7 +2764,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_b7e4344bb927d21965766183",
@@ -2529,7 +2776,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_c90425048be6c45a8eb3c500",
@@ -2541,7 +2788,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_e2162431045c69e8776b7c8b",
@@ -2553,7 +2800,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_6a689e1953dfc93f79baed2e",
@@ -2567,7 +2814,13 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "api_error",
+      "usdaError": {
+        "stage": "search",
+        "status": 400,
+        "message": "USDA search failed: 400",
+        "response": "{\"error\":\"Bad Request\",\"message\":\"Invalid request. Please try again.\"}"
+      }
     },
     {
       "id": "nutrition_a96c8860dfb43caef7312310",
@@ -2579,7 +2832,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_e76d756d5f167cd4714f7ec3",
@@ -2591,7 +2844,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_5a61319c5d869f6ab67c41c7",
@@ -2603,7 +2856,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_44731879aed2c37bc8f9d4b4",
@@ -2615,7 +2868,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_f49d3ee4e597f8d965fbf728",
@@ -2627,7 +2880,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_21119e805b780010182cacb3",
@@ -2639,7 +2892,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_6e0f01fac943e0343c79abc2",
@@ -2651,7 +2904,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_da81d61b7165ad6295cd81f5",
@@ -2665,7 +2918,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_553ca4c12387d5b172713892",
@@ -2679,7 +2932,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_5dfeaee2f9b72dd807dafd85",
@@ -2691,7 +2944,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_35a69031f6fe7233f0890a34",
@@ -2703,7 +2956,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_182c24f7f6625a29a4c9b8d3",
@@ -2715,7 +2968,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_aea053d4185572aa5af45a55",
@@ -2727,7 +2980,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_96b31f47190e8ad8350c2ee7",
@@ -2739,7 +2992,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_88bd3e9b007d7895b5755507",
@@ -2751,7 +3004,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_1700534efe5cc43d1c136920",
@@ -2765,7 +3018,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_7e2600d7d9f27e9e097ba9ee",
@@ -2777,7 +3030,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_d79acad3386e3c27e8c45dcc",
@@ -2789,7 +3042,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_103956509ce041dfdf0ef28f",
@@ -2801,7 +3054,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_83532324386c53c6f6315d20",
@@ -2813,7 +3066,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_3952448d98a58473522e29ae",
@@ -2825,7 +3078,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_4471a62c83b1a8944625a53b",
@@ -2837,7 +3090,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_128f1decaabe4a45a02baaa1",
@@ -2849,7 +3102,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_16db66ec00ea191db10bdc51",
@@ -2861,7 +3114,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_0eb11cd55ffc37cc54463e68",
@@ -2873,7 +3126,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 174655,
+        "description": "Cereals, CREAM OF WHEAT, 2 1/2 minute cook time, dry",
+        "matchScore": 0.3333333333333333
+      }
     },
     {
       "id": "nutrition_7e85d7069c97b7aba31e6592",
@@ -2885,7 +3143,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_d4f269c1f087054ae94d0a2f",
@@ -2897,7 +3155,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_ecbb1c68c19cf5b04d81b40b",
@@ -2909,7 +3167,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_00790b32703073f25d95f7bc",
@@ -2921,7 +3179,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_0060acbfe6d8f1fcebdc36ff",
@@ -2933,7 +3191,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_69f91741a4c2027f00bdde61",
@@ -2945,7 +3203,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_20df7d00ef62b1eff651d26c",
@@ -2957,7 +3215,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_c15345fc38c64a2f4fdea92b",
@@ -2969,7 +3227,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_1ef43ec41d874f9d5ce579b5",
@@ -2981,7 +3239,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_2df9836d2a4ebe34e6021e22",
@@ -2995,7 +3253,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_251cac94017d61f1cb2828ea",
@@ -3007,7 +3265,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_8f8341b4ec2c26d3622b7b55",
@@ -3019,7 +3277,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_9f5aff656efd8171211e45d4",
@@ -3031,7 +3289,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_7d873ad573e2697f2b74a44e",
@@ -3043,7 +3301,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_bdcb203f1de80636e5fdfd70",
@@ -3055,7 +3313,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_1b5406b25485a7d72dea3bd0",
@@ -3067,7 +3325,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_13e970a758ab706e91bd9e28",
@@ -3079,7 +3337,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_0784da8a9d300f9e97ec38ef",
@@ -3091,7 +3349,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_151ab18aadbd028c31f36e2f",
@@ -3103,7 +3361,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_337431be27ae4cdbe91a3d47",
@@ -3115,7 +3373,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_e907dfcd069e79516f88882c",
@@ -3127,7 +3385,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_211dd838d82268ff4e0a6c5c",
@@ -3139,7 +3397,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_a4c6febba146beaaf3b9dd79",
@@ -3151,7 +3409,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_e6c2f5100e5ddc8551a354d3",
@@ -3163,7 +3421,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_ba3f85106d79d6b9b22d7785",
@@ -3175,7 +3433,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_c6252b5cd8740028f03b0df4",
@@ -3187,7 +3445,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_f1399d1426774bb541ff016a",
@@ -3199,7 +3457,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_2c1a0cf54fc3eb1a5d2fc9ef",
@@ -3211,7 +3469,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_3feced8147f8df467411f2fc",
@@ -3223,7 +3481,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_69257ef7753b1a0efe850d2d",
@@ -3235,7 +3493,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_0a781b7d8e091234bd0765c2",
@@ -3249,7 +3507,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_5e922d29cd95627b75a1dcab",
@@ -3261,7 +3519,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_9c3ce4e16af04bf9b391d646",
@@ -3273,7 +3531,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_81719cc0833765a20f31b46e",
@@ -3285,7 +3543,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_c6f052a340f1e9b322f223cb",
@@ -3297,7 +3555,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_82b950ef94bc50b5d91e016c",
@@ -3309,7 +3567,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_04a86c8257638a888571124b",
@@ -3321,7 +3579,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_dd3f7ef6a0c2b52e91e0aa90",
@@ -3333,7 +3591,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_cfb9dd0fddb224b602d81614",
@@ -3347,7 +3605,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_251abc1778b5f8992d9066c0",
@@ -3359,7 +3617,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_64c832d107310190b11b96b2",
@@ -3371,7 +3629,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_1938963dbc6825a17da7e6a1",
@@ -3383,7 +3641,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_c2f7bf93e81560c70aeb5606",
@@ -3395,7 +3653,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_528d342b596abccc9919084e",
@@ -3407,7 +3665,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_215b779f705d85fa013a7c4d",
@@ -3419,7 +3677,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_054204b37f73b90072c7a6c8",
@@ -3431,7 +3689,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_91ab086130506d343a1288b4",
@@ -3443,7 +3701,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_125bd34218685ed1d0bfe053",
@@ -3455,7 +3713,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_9a7986de1b05acfdf35d0ec2",
@@ -3467,7 +3725,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_9712d8ae0c8dd5086145fbc4",
@@ -3479,7 +3737,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_17c4be79122c68d8696761ec",
@@ -3491,7 +3749,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_bd15ced9305f910cda922591",
@@ -3503,7 +3761,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_699dbd3e6c477c1e64b7dbbf",
@@ -3515,7 +3773,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_b8268bf1c159c0a9ec3a0bd6",
@@ -3527,7 +3785,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_69af9c1672fe68ed4174ff82",
@@ -3539,7 +3797,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_c9c67d69f3dba2f05c0ec3f1",
@@ -3551,7 +3809,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_4c851ed4c2ae316368653549",
@@ -3563,7 +3821,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_1e4520e349b8c752c48a8096",
@@ -3575,7 +3833,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_77170ee20dc5ee5d3d85e5bd",
@@ -3587,7 +3845,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_eb7e15422a062c1e1c4e7998",
@@ -3599,7 +3857,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_50ecd6c5ec197b4238d98cac",
@@ -3611,7 +3869,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_13854a309bd71f56177f203e",
@@ -3623,7 +3881,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_c65c58034b51e42ad44b972c",
@@ -3635,7 +3893,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_c533e962221ca94b9aa6dfb9",
@@ -3647,7 +3905,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_842c8f7dc19deabe720188ca",
@@ -3659,7 +3917,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_aac18b4320710d4940db4e24",
@@ -3671,7 +3929,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_9129de53db0ba71c5f4f3ac5",
@@ -3683,7 +3941,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_af343402c69d940154a6075a",
@@ -3695,7 +3953,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_1d79593646c44b1009230219",
@@ -3707,7 +3965,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_db34bea88a41f123064e0984",
@@ -3719,7 +3977,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_24efbf06719bcddf9c7d1068",
@@ -3731,7 +3989,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_45f79cb16c473ac0a6d46400",
@@ -3743,7 +4001,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_9e6f3b48b2b9dc33198aea05",
@@ -3755,7 +4013,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_542c783ec97179f597331c89",
@@ -3767,7 +4025,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_1503494edf0a15be6cc920c5",
@@ -3779,7 +4037,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_a0978dbda5cf699e1dcdf8e1",
@@ -3791,7 +4049,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_3849f3ac5fabdda0326f4713",
@@ -3803,7 +4061,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_690b20740199074b56a991a9",
@@ -3815,7 +4073,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_6568cbd1b759bdd7e6e02b10",
@@ -3827,7 +4085,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_47335d405c9ace5983323ced",
@@ -3839,7 +4097,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_a37c195d33475d3b39ee5025",
@@ -3851,7 +4109,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_f66cbd0bdc5303b575f9e781",
@@ -3863,7 +4121,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_8a3884f6017a4061af513135",
@@ -3875,7 +4133,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_8ec129d6f49e453ee07411a9",
@@ -3887,7 +4145,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_f895a702e8ae8b70f6108d09",
@@ -3899,7 +4157,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_f4f617cd8c2e4b7f74cc43a0",
@@ -3911,7 +4169,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_a64931804dc4ddba8d0f8f8d",
@@ -3923,7 +4181,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_273fb60ca134ab64b6a4aeff",
@@ -3935,7 +4193,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_d0e1c8ded44533e717888cfd",
@@ -3947,7 +4205,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_25fd009a6d189ae7a35cc3bf",
@@ -3959,7 +4217,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_803eee8c7d38c8166f0cfed9",
@@ -3971,7 +4229,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_61ee45f853d1b440500d30ae",
@@ -3983,7 +4241,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_eadad1da1be9bfffb42c65cf",
@@ -3995,7 +4253,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_e1f262bd0a832d49bb1d97f7",
@@ -4007,7 +4265,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_79a2005adde48466a77146d1",
@@ -4019,7 +4277,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_df3962e6d00b9d59217ed12e",
@@ -4031,7 +4289,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_cf91cdfa8f7b63b3f3544ed6",
@@ -4043,7 +4301,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_ce54463ed6662f281950e743",
@@ -4055,7 +4313,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_ec3f6bd1fddbf46eb4781626",
@@ -4067,7 +4325,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_e8fed67db1319e3ca4024bcc",
@@ -4079,7 +4337,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_90595b36087e57dff58d90c6",
@@ -4091,7 +4349,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_7d6b87e63fe86af3b12e6118",
@@ -4103,7 +4361,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_828d27be69f57b4caa106e37",
@@ -4115,7 +4373,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_60951213a949166e079ec482",
@@ -4127,7 +4385,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_f3185a48573f5c87b22d1464",
@@ -4139,7 +4397,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_597d77eb13d32d7879c491cf",
@@ -4151,7 +4409,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_ab646207248436f800da9248",
@@ -4163,7 +4421,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_b91626a52dbb2f02267b2b02",
@@ -4175,7 +4433,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_bb600ee6b57517097512609b",
@@ -4187,7 +4445,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_3332622dbd305ce44f326474",
@@ -4199,7 +4457,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_e303f0633b7848ea5c30aa8b",
@@ -4211,7 +4469,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_23447a45abd7c4baccc1f960",
@@ -4223,7 +4481,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_5b67906812f9ce35661e1b0d",
@@ -4235,7 +4493,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_a65757b8b32d00e2e836928f",
@@ -4247,7 +4505,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_8d5a665586825d4fc51bd6c8",
@@ -4259,7 +4517,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_edbf6a8dc6954bc4ceb15fb2",
@@ -4271,7 +4529,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_99142700c903fe3e4965ab3c",
@@ -4283,7 +4541,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_64bf36720a10030da3e75de1",
@@ -4295,7 +4553,13 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "api_error",
+      "usdaError": {
+        "stage": "search",
+        "status": 400,
+        "message": "USDA search failed: 400",
+        "response": "{\"error\":\"Bad Request\",\"message\":\"Invalid request. Please try again.\"}"
+      }
     },
     {
       "id": "nutrition_44c20396cff39013cb9c8967",
@@ -4307,7 +4571,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_ba7450a18c0ed5c06bf6fba7",
@@ -4319,7 +4583,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_634260b25ae281f7c1adb035",
@@ -4331,7 +4595,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_6b3810d0693f34e2e61ac9c2",
@@ -4343,7 +4607,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_ffc4a97cedb5dcb40950ee2f",
@@ -4355,7 +4619,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_11307122a6ca09ede9ec62ed",
@@ -4367,7 +4631,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_785b5096a96ee74c306f8b61",
@@ -4379,7 +4643,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_132e81669b4be01a7e0e7b73",
@@ -4391,7 +4655,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_5d6ab167cc481aef3493d6e2",
@@ -4403,7 +4667,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_bb2996955802eacb692fb499",
@@ -4415,7 +4679,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_112218601b9133cd2a9d5be7",
@@ -4427,7 +4691,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_a8995f8df2600e8089784413",
@@ -4439,7 +4703,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_82c1e0919dada6d932cc1f98",
@@ -4451,7 +4715,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_ac1a37c58a798796840f16db",
@@ -4463,7 +4727,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_f9c36f30fcb253106d9688c6",
@@ -4475,7 +4739,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_f74cff3504f610bd3e1e8fde",
@@ -4487,7 +4751,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_4047388bd2d0945f5ec4dc9b",
@@ -4499,7 +4763,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_a6e04a1b1eeaf5fc7fe85cd3",
@@ -4511,7 +4775,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_1fa5f1e3b44fb3a1854be4d3",
@@ -4523,7 +4787,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_554fbc5a3213e5532626ca16",
@@ -4535,7 +4799,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_34eeaf52429b2ee3dd148684",
@@ -4547,7 +4811,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_eed9a61d4b046ebd4847e4c8",
@@ -4559,7 +4823,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_b03cc3ab84580990098715d6",
@@ -4571,7 +4835,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_7c45a05d7304a5468fc9c7e8",
@@ -4583,7 +4847,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_9973b470fe02b5dc591fad90",
@@ -4595,7 +4859,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_208d0fc63c9153893e9671a7",
@@ -4607,7 +4871,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_827aa5482d0797d1042bef73",
@@ -4619,7 +4883,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_8f1c66e4d14e9666df007618",
@@ -4633,7 +4897,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_13621c6133004db1f68a2ccd",
@@ -4645,7 +4909,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_a10974546d961adbac870c68",
@@ -4657,7 +4921,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_09fda745db6ce4f31db0fd3a",
@@ -4669,7 +4933,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_f49e42c6a041ddeb287f1977",
@@ -4683,7 +4947,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_c5d4fc3ac02426c65ef2da86",
@@ -4695,7 +4959,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_55813b8004b74e5e4af72071",
@@ -4707,7 +4971,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_45e72fe993ba83bbd9e446b2",
@@ -4719,7 +4983,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_b2f03440a9c679713117e2ea",
@@ -4731,7 +4995,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_80ec6ff28b5394121f5f4ee1",
@@ -4743,7 +5007,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_57373552c3e0253d2ce34058",
@@ -4755,7 +5019,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_028ae37e1974c49548797e0d",
@@ -4767,7 +5031,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_ebc1f2c9fefc7a5a1dc8e1de",
@@ -4779,7 +5043,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_fddf3d8bcc0ac6fda85787c2",
@@ -4791,7 +5055,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_9bcf7be79b39e4f254a74416",
@@ -4803,7 +5067,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_c04f1c6bcf5500154981813b",
@@ -4815,7 +5079,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_e2d2d404297830a607512142",
@@ -4827,7 +5091,12 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 173477,
+        "description": "Clif Z bar",
+        "matchScore": 0.3333333333333333
+      }
     },
     {
       "id": "nutrition_9aaf50fa0eecae0cc8f59251",
@@ -4841,7 +5110,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_3300e71b450b65a65164ea93",
@@ -4853,7 +5122,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_847940e9f75431145596ae7b",
@@ -4865,7 +5134,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_cdefb8e5b3aa29e1591fd15e",
@@ -4877,7 +5146,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_469a970ce2905a03ce83434d",
@@ -4889,7 +5158,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_0a59629643afbf92c0ff1b57",
@@ -4901,7 +5170,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_504f7537ae666263d1a8738c",
@@ -4913,7 +5182,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_83b2f0c59a44376a00d961f1",
@@ -4925,7 +5194,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_8ade7f624dcd254fe0d93f42",
@@ -4937,7 +5206,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_db5f573b100db3b4ae2e3ac5",
@@ -4949,7 +5218,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_fc1a4ed19924a75c0dc924c0",
@@ -4961,7 +5230,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_965245994d4d62088a1128a9",
@@ -4973,7 +5242,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_cac7b171f9d1b7a2c70b7c6c",
@@ -4985,7 +5254,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_a0e57e78b69dd2e94b44c417",
@@ -4997,7 +5266,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_1a9172d41e076d0d2ad06e2f",
@@ -5009,7 +5278,13 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "api_error",
+      "usdaError": {
+        "stage": "search",
+        "status": 400,
+        "message": "USDA search failed: 400",
+        "response": "{\"error\":\"Bad Request\",\"message\":\"Invalid request. Please try again.\"}"
+      }
     },
     {
       "id": "nutrition_ff02cff902920da2c4021e73",
@@ -5021,7 +5296,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_16a6657bd13bb1d7f5ad483c",
@@ -5033,7 +5308,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_88efbe03077a9045bbaf639c",
@@ -5045,7 +5320,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_a5c81c54ae604499e7f952f5",
@@ -5057,7 +5332,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_06b54a9e9a946423e6ea9d80",
@@ -5069,7 +5344,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_e4527e9b7e0dacd8773e172b",
@@ -5081,7 +5356,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_6d1116c29269ad45677f68f2",
@@ -5093,7 +5368,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_44ad40735a026cecebb8cef0",
@@ -5105,7 +5380,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_b05b1912afc7ab3a3d29c54d",
@@ -5117,7 +5392,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_93896c65b6d59ec3d0b2ad9c",
@@ -5129,7 +5404,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_1c4ab4239538af4802bf425d",
@@ -5141,7 +5416,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_d2fd6b5ce054f0622a9865e3",
@@ -5153,7 +5428,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_78917e0712e70798798d5d68",
@@ -5165,7 +5440,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_1a1d3d598fbcae1e12a415b0",
@@ -5177,7 +5452,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_5d0f900c5e2d37f555f4f7d8",
@@ -5189,7 +5464,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_32c00b1d024e5851885edb0f",
@@ -5201,7 +5476,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_6a0ef68a74a7725e29c14bd7",
@@ -5213,7 +5488,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_2a2e972da7c5a34b1dd00145",
@@ -5225,7 +5500,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_068c977fa3dd538552910cfc",
@@ -5237,7 +5512,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_a3baab2bf65010c6554a7ecb",
@@ -5249,7 +5524,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_0f62d2ca445a934451884768",
@@ -5261,7 +5536,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_e03e4c5839361e866040111f",
@@ -5273,7 +5548,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_fa48d847923839ccccbdf96b",
@@ -5285,7 +5560,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_a8fbcf188376bf67aa8be2eb",
@@ -5297,7 +5572,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     },
     {
       "id": "nutrition_a579cd828bde5f8ca3f71be4",
@@ -5309,7 +5584,7 @@
       "carbsPer100g": null,
       "source": null,
       "verified": false,
-      "status": "needs_nutrition"
+      "status": "not_found"
     }
   ]
 }

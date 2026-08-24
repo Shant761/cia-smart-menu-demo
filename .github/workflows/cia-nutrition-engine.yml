@@ -8,11 +8,6 @@ on:
         required: true
         default: poster-test
         type: string
-      lookup_limit:
-        description: Maximum number of ingredients to process
-        required: true
-        default: '500'
-        type: string
       force:
         description: Recalculate nutrition even when source is unchanged
         required: true
@@ -27,7 +22,6 @@ jobs:
       contents: read
     env:
       CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
-      NUTRITION_LIMIT: ${{ inputs.lookup_limit }}
       NUTRITION_FORCE: ${{ inputs.force }}
 
     steps:
@@ -39,11 +33,12 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Validate nutrition scripts
+      - name: Validate nutrition scripts and database
         run: |
           node --check scripts/build-ingredient-catalog.cjs
-          node --check scripts/lookup-nutrition-usda.cjs
+          node --check scripts/lookup-nutrition-local.cjs
           node --check scripts/calculate-product-nutrition.cjs
+          node -e "const db=require('./data/nutrition-database.json'); if(!Array.isArray(db.entries)) throw new Error('Invalid nutrition database')"
 
       - name: Install Firebase Admin SDK
         run: npm install --no-save firebase-admin@14.2.0
@@ -63,7 +58,7 @@ jobs:
       - name: Match ingredients against CIA-owned nutrition database
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-        run: node scripts/lookup-nutrition-usda.cjs
+        run: node scripts/lookup-nutrition-local.cjs
 
       - name: Calculate product calories and macros
         env:

@@ -1,0 +1,271 @@
+{
+  "version": "1.0.0",
+  "restaurantId": "poster-test",
+  "generatedFrom": "cia-nutrition-review.json",
+  "ranking": "usedInProductCount * 1000 + occurrences",
+  "total": 20,
+  "entries": [
+    {
+      "priority": 1,
+      "id": "nutrition_189110e868599c231b431fcd",
+      "name": "Absent Xenta",
+      "aliases": [],
+      "usedInProductCount": 0,
+      "occurrences": 0,
+      "status": "not_found",
+      "source": null,
+      "usda": null,
+      "nutrition": null
+    },
+    {
+      "priority": 2,
+      "id": "nutrition_b45a53c5004c62f9c58f4a6d",
+      "name": "Absolut",
+      "aliases": [],
+      "usedInProductCount": 0,
+      "occurrences": 0,
+      "status": "not_found",
+      "source": null,
+      "usda": null,
+      "nutrition": null
+    },
+    {
+      "priority": 3,
+      "id": "nutrition_0144a8350571132404572ef9",
+      "name": "Absolut Elyx",
+      "aliases": [],
+      "usedInProductCount": 0,
+      "occurrences": 0,
+      "status": "not_found",
+      "source": null,
+      "usda": null,
+      "nutrition": null
+    },
+    {
+      "priority": 4,
+      "id": "nutrition_1b7e69a897a2c7d62c498e3c",
+      "name": "Akhtamar",
+      "aliases": [],
+      "usedInProductCount": 0,
+      "occurrences": 0,
+      "status": "not_found",
+      "source": null,
+      "usda": null,
+      "nutrition": null
+    },
+    {
+      "priority": 5,
+      "id": "nutrition_40008bf4d783f83a5f76401b",
+      "name": "Aperol",
+      "aliases": [],
+      "usedInProductCount": 0,
+      "occurrences": 0,
+      "status": "not_found",
+      "source": null,
+      "usda": null,
+      "nutrition": null
+    },
+    {
+      "priority": 6,
+      "id": "nutrition_a59ad4cfb5d41249bbc249ad",
+      "name": "Ararat 3*",
+      "aliases": [
+        "нагеттсы"
+      ],
+      "usedInProductCount": 0,
+      "occurrences": 0,
+      "status": "needs_review",
+      "source": null,
+      "usda": {
+        "fdcId": 175098,
+        "description": "Alcoholic beverage, liqueur, coffee with cream, 34 proof",
+        "matchScore": 0.5
+      },
+      "nutrition": null
+    },
+    {
+      "priority": 7,
+      "id": "nutrition_d3612c4367de920ced7325ec",
+      "name": "Ariats Pomegranate",
+      "aliases": [],
+      "usedInProductCount": 0,
+      "occurrences": 0,
+      "status": "needs_review",
+      "source": null,
+      "usda": {
+        "fdcId": 169134,
+        "description": "Pomegranates, raw",
+        "matchScore": 0.5
+      },
+      "nutrition": null
+    },
+    {
+      "priority": 8,
+      "id": "nutrition_ae8bcc8aa214d8c7dda48302",
+      "name": "Attems Pinot Grigio",
+      "aliases": [],
+      "usedInProductCount": 0,
+      "occurrences": 0,
+      "status": "needs_review",
+      "source": null,
+      "usda": {
+        "fdcId": 174841,
+        "description": "Alcoholic beverage, wine, table, white, Pinot Gris (Grigio)",
+        "matchScore": 0.6666666666666666
+      },
+      "nutrition": null
+    },
+    {
+      "priority": 9,
+      "id": "nutrition_cbd05e19364c2f417a28f3f9",
+      "name": "Bacardi Carta Blanca",
+      "aliases": [],
+      "usedInProductCount": 0,
+      "occurrences": 0,
+      "status": "not_found",
+      "source": null,
+      "usda": null,
+      "nutrition": null
+    },
+    {
+      "priority": 10,
+      "id": "nutrition_19aa70c21e9716dd7beb575b",
+      "name": "Bacardi Carta Negra",
+      "aliases": [],
+      "usedInProductCount": 0,
+      "occurrences": 0,
+      "status": "not_found",
+      "source": null,
+      "usda": null,
+      "nutrition": null
+    },
+    {
+      "priority": 11,
+      "id": "nutrition_2159433528245352a3663c54",
+      "name": "Baileys",
+      "aliases": [],
+      "usedInProductCount": 0,
+      "occurrences": 0,
+      "status": "not_found",
+      "source": null,
+      "usda": null,
+      "nutrition": null
+    },
+    {
+      "priority": 12,
+      "id": "nutrition_91797c8ced23c3f45f2c7044",
+      "name": "Ballantine՝s",
+      "aliases": [],
+      "usedInProductCount": 0,
+      "occurrences": 0,
+      "status": "needs_review",
+      "source": null,
+      "usda": {
+        "fdcId": 174621,
+        "description": "Cereals ready-to-eat, QUAKER, HONEY GRAHAM OH!S",
+        "matchScore": 0.5
+      },
+      "nutrition": null
+    },
+    {
+      "priority": 13,
+      "id": "nutrition_16ed2907f796c09cbf0d3cbc",
+      "name": "Becherovka",
+      "aliases": [],
+      "usedInProductCount": 0,
+      "occurrences": 0,
+      "status": "not_found",
+      "source": null,
+      "usda": null,
+      "nutrition": null
+    },
+    {
+      "priority": 14,
+      "id": "nutrition_e5b757e786a4d3da4e15153a",
+      "name": "Beefeter",
+      "aliases": [],
+      "usedInProductCount": 0,
+      "occurrences": 0,
+      "status": "not_found",
+      "source": null,
+      "usda": null,
+      "nutrition": null
+    },
+    {
+      "priority": 15,
+      "id": "nutrition_161096c0d381fb5cea377436",
+      "name": "Bombay Sapphire",
+      "aliases": [],
+      "usedInProductCount": 0,
+      "occurrences": 0,
+      "status": "not_found",
+      "source": null,
+      "usda": null,
+      "nutrition": null
+    },
+    {
+      "priority": 16,
+      "id": "nutrition_963849a089e7d11c3c03e8e6",
+      "name": "Cachaca",
+      "aliases": [],
+      "usedInProductCount": 0,
+      "occurrences": 0,
+      "status": "not_found",
+      "source": null,
+      "usda": null,
+      "nutrition": null
+    },
+    {
+      "priority": 17,
+      "id": "nutrition_6a1128d06853379140e1da59",
+      "name": "Calvados",
+      "aliases": [],
+      "usedInProductCount": 0,
+      "occurrences": 0,
+      "status": "not_found",
+      "source": null,
+      "usda": null,
+      "nutrition": null
+    },
+    {
+      "priority": 18,
+      "id": "nutrition_6163405c7a834f68df51634b",
+      "name": "Campari",
+      "aliases": [],
+      "usedInProductCount": 0,
+      "occurrences": 0,
+      "status": "not_found",
+      "source": null,
+      "usda": null,
+      "nutrition": null
+    },
+    {
+      "priority": 19,
+      "id": "nutrition_2cda9fe92ea13bf9326050e1",
+      "name": "Chistie Rosi",
+      "aliases": [],
+      "usedInProductCount": 0,
+      "occurrences": 0,
+      "status": "not_found",
+      "source": null,
+      "usda": null,
+      "nutrition": null
+    },
+    {
+      "priority": 20,
+      "id": "nutrition_888c8c5bdb51ea897649cd92",
+      "name": "Chivas Regal 12 YO",
+      "aliases": [],
+      "usedInProductCount": 0,
+      "occurrences": 0,
+      "status": "needs_review",
+      "source": null,
+      "usda": {
+        "fdcId": 172041,
+        "description": "PIZZA HUT 12\" Cheese Pizza, Pan Crust",
+        "matchScore": 0.25
+      },
+      "nutrition": null
+    }
+  ]
+}

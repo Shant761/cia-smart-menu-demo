@@ -9,12 +9,12 @@ on:
         default: poster-test
         type: string
       lookup_limit:
-        description: Maximum number of ingredients to match against USDA
+        description: Maximum number of ingredients to process
         required: true
-        default: '50'
+        default: '500'
         type: string
       force:
-        description: Rebuild and re-run nutrition matching even when source is unchanged
+        description: Recalculate nutrition even when source is unchanged
         required: true
         default: true
         type: boolean
@@ -48,13 +48,11 @@ jobs:
       - name: Install Firebase Admin SDK
         run: npm install --no-save firebase-admin@14.2.0
 
-      - name: Verify required secrets
+      - name: Verify Firebase secret
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-          USDA_DATA_API_KEY: ${{ secrets.USDA_DATA_API_KEY }}
         run: |
           test -n "$FIREBASE_SERVICE_ACCOUNT" || (echo 'Missing FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU' && exit 1)
-          test -n "$USDA_DATA_API_KEY" || (echo 'Missing USDA_DATA_API_KEY' && exit 1)
 
       - name: Build CIA ingredient catalog from Poster recipes
         env:
@@ -62,10 +60,9 @@ jobs:
           FORCE_CATALOG_BUILD: ${{ inputs.force }}
         run: node scripts/build-ingredient-catalog.cjs
 
-      - name: Match ingredients against USDA FoodData Central
+      - name: Match ingredients against CIA-owned nutrition database
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-          USDA_DATA_API_KEY: ${{ secrets.USDA_DATA_API_KEY }}
         run: node scripts/lookup-nutrition-usda.cjs
 
       - name: Calculate product calories and macros
@@ -76,4 +73,4 @@ jobs:
       - name: Nutrition pipeline complete
         run: |
           echo "CIA Nutrition Engine completed for restaurant: $CIA_RESTAURANT_ID"
-          echo "Result: ingredient nutrition + product calories/macros written to Firestore"
+          echo "Result: CIA ingredient nutrition + product calories/macros written to Firestore"

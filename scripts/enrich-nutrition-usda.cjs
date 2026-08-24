@@ -18,8 +18,49 @@ const nutrientMap = {
   'Carbohydrate, by difference': 'carbsPer100g'
 };
 
+const substitutions = [
+  [/\/шт\.?/gi, ''], [/\/кг/gi, ''], [/\/г/gi, ''], [/\/л/gi, ''],
+  [/\/чищен(?:ный|ная|ное|ые)?/gi, ''], [/\/тесто/gi, ' dough'],
+  [/\/начинка/gi, ' filling'], [/\/измельчен(?:ный|ная|ное|ые)?/gi, ''],
+  [/\/нарезан(?:ный|ная|ное|ые)?/gi, ''], [/\s+/g, ' ']
+];
+
+const translations = new Map([
+  ['ананас', 'pineapple'], ['броколли', 'broccoli'], ['брокколи', 'broccoli'],
+  ['лимон', 'lemon'], ['лайм', 'lime'], ['петрушка', 'parsley'], ['тархун', 'tarragon'],
+  ['арбуз', 'watermelon'], ['дыня', 'melon'], ['яблоко', 'apple'], ['банан', 'banana'],
+  ['апельсин', 'orange'], ['мандарин', 'mandarin orange'], ['груша', 'pear'],
+  ['клубника', 'strawberry'], ['малина', 'raspberry'], ['черника', 'blueberry'],
+  ['виноград', 'grape'], ['персик', 'peach'], ['абрикос', 'apricot'],
+  ['морковь', 'carrot'], ['картофель', 'potato'], ['помидор', 'tomato'],
+  ['огурец', 'cucumber'], ['лук', 'onion'], ['чеснок', 'garlic'], ['капуста', 'cabbage'],
+  ['свекла', 'beet'], ['шпинат', 'spinach'], ['салат', 'lettuce'],
+  ['курица', 'chicken'], ['куриное филе', 'chicken breast'], ['говядина', 'beef'],
+  ['свинина', 'pork'], ['баранина', 'lamb'], ['рыба', 'fish'], ['лосось', 'salmon'],
+  ['тунец', 'tuna'], ['креветка', 'shrimp'], ['яйцо', 'egg'], ['молоко', 'milk'],
+  ['сливки', 'cream'], ['масло сливочное', 'butter'], ['масло растительное', 'vegetable oil'],
+  ['сыр', 'cheese'], ['мука', 'flour'], ['рис', 'rice'], ['гречка', 'buckwheat'],
+  ['макароны', 'pasta'], ['сахар', 'sugar'], ['мед', 'honey'], ['соль', 'salt'],
+  ['орех', 'nut'], ['миндаль', 'almond'], ['грецкий орех', 'walnut'],
+  ['арахис', 'peanut'], ['шоколад', 'chocolate'], ['какао', 'cocoa']
+]);
+
 function normalize(s) {
-  return String(s || '').toLowerCase().replace(/[^a-z0-9а-яё]+/gi, ' ').trim();
+  let value = String(s || '').toLowerCase();
+  for (const [re, replacement] of substitutions) value = value.replace(re, replacement);
+  return value.replace(/[^a-z0-9а-яё]+/gi, ' ').replace(/\s+/g, ' ').trim();
+}
+
+function translatedVariants(value) {
+  const clean = normalize(value);
+  const variants = new Set([clean]);
+  for (const [ru, en] of translations) {
+    if (clean.includes(ru)) variants.add(clean.replaceAll(ru, en));
+  }
+  const words = clean.split(' ');
+  const translatedWords = words.map(w => translations.get(w) || w);
+  variants.add(translatedWords.join(' '));
+  return [...variants].filter(Boolean);
 }
 
 function score(query, desc) {
@@ -38,13 +79,10 @@ async function searchFood(query) {
     headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
     body: JSON.stringify({ query: String(query).trim(), pageSize: 10, dataType: ['Foundation', 'SR Legacy'] })
   });
-
   if (!res.ok) {
     const body = await res.text();
     const error = new Error(`USDA search failed: ${res.status}`);
-    error.status = res.status;
-    error.response = body.slice(0, 500);
-    throw error;
+    error.status = res.status; error.response = body.slice(0, 500); throw error;
   }
   return res.json();
 }
@@ -54,9 +92,7 @@ async function getFood(fdcId) {
   if (!res.ok) {
     const body = await res.text();
     const error = new Error(`USDA food fetch failed: ${res.status}`);
-    error.status = res.status;
-    error.response = body.slice(0, 500);
-    throw error;
+    error.status = res.status; error.response = body.slice(0, 500); throw error;
   }
   return res.json();
 }
@@ -74,51 +110,43 @@ function extract(food) {
 }
 
 (async () => {
-  let matched = 0;
-  let review = 0;
-  let notFound = 0;
-  let apiErrors = 0;
+  let matched = 0, review = 0, notFound = 0, apiErrors = 0;
 
   for (const entry of entries) {
     if (entry.verified) continue;
+    const queries = [...new Set([
+      entry.name,
+      ...(entry.aliases || []),
+      ...translatedVariants(entry.name),
+      ...translatedVariants((entry.aliases || [])[0] || '')
+    ])].filter(Boolean).slice(0, 8);
 
-    const candidates = [entry.name, ...(entry.aliases || [])].filter(Boolean);
     let best = null;
-    let searchFailed = false;
+    let hadApiError = false;
 
-    for (const query of candidates.slice(0, 3)) {
+    for (const query of queries) {
       try {
         const result = await searchFood(query);
         for (const food of result.foods || []) {
-          const s = score(entry.name, food.description);
-          if (!best || s > best.score) best = { food, score: s };
+          const s = Math.max(score(entry.name, food.description), score(query, food.description));
+          if (!best || s > best.score) best = { food, score: s, query };
         }
       } catch (error) {
-        searchFailed = true;
+        hadApiError = true;
         apiErrors++;
         entry.status = 'api_error';
-        entry.usdaError = {
-          stage: 'search',
-          status: error.status || null,
-          message: error.message,
-          response: error.response || null
-        };
-        console.log(`[USDA] API error for "${entry.name}": ${error.message}`);
+        entry.usdaError = { stage: 'search', status: error.status || null, message: error.message, response: error.response || null };
+        console.log(`[USDA] API error for "${entry.name}" using "${query}": ${error.message}`);
         break;
       }
     }
 
-    if (searchFailed) continue;
-
-    if (!best) {
-      entry.status = 'not_found';
-      notFound++;
-      continue;
-    }
+    if (hadApiError) continue;
+    if (!best) { entry.status = 'not_found'; notFound++; continue; }
 
     if (best.score < 0.8) {
       entry.status = 'needs_review';
-      entry.usda = { fdcId: best.food.fdcId, description: best.food.description, matchScore: best.score };
+      entry.usda = { fdcId: best.food.fdcId, description: best.food.description, matchScore: best.score, query: best.query };
       review++;
       continue;
     }
@@ -127,30 +155,20 @@ function extract(food) {
       const food = await getFood(best.food.fdcId);
       const values = extract(food);
       const complete = ['kcalPer100g', 'proteinPer100g', 'fatPer100g', 'carbsPer100g'].every(k => Number.isFinite(values[k]));
-
       if (!complete) {
         entry.status = 'needs_review';
-        entry.usda = { fdcId: food.fdcId, description: food.description, matchScore: best.score };
+        entry.usda = { fdcId: food.fdcId, description: food.description, matchScore: best.score, query: best.query };
         review++;
         continue;
       }
-
       Object.assign(entry, values);
       entry.source = `USDA FoodData Central FDC ${food.fdcId}`;
-      entry.usda = { fdcId: food.fdcId, description: food.description, matchScore: best.score };
-      entry.verified = true;
-      entry.status = 'verified';
-      delete entry.usdaError;
-      matched++;
+      entry.usda = { fdcId: food.fdcId, description: food.description, matchScore: best.score, query: best.query };
+      entry.verified = true; entry.status = 'verified'; delete entry.usdaError; matched++;
     } catch (error) {
       apiErrors++;
       entry.status = 'api_error';
-      entry.usdaError = {
-        stage: 'food',
-        status: error.status || null,
-        message: error.message,
-        response: error.response || null
-      };
+      entry.usdaError = { stage: 'food', status: error.status || null, message: error.message, response: error.response || null };
       console.log(`[USDA] API error fetching "${entry.name}": ${error.message}`);
     }
   }

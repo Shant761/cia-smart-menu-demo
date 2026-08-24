@@ -1,0 +1,49 @@
+name: CIA Nutrition — Stage 2 Review Queue
+
+on:
+  workflow_dispatch:
+    inputs:
+      restaurant_id:
+        description: Restaurant id
+        required: true
+        default: poster-test
+      rebuild_catalog:
+        description: Rebuild ingredient catalog from existing Poster data first
+        required: true
+        default: true
+        type: boolean
+
+jobs:
+  build-review-queue:
+    runs-on: ubuntu-latest
+    env:
+      CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
+      FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+      FORCE_CATALOG_BUILD: ${{ inputs.rebuild_catalog }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Firebase Admin SDK
+        run: npm install --no-save firebase-admin@14.2.0
+
+      - name: Verify Firebase secret
+        run: test -n "$FIREBASE_SERVICE_ACCOUNT" || (echo 'Missing FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU' && exit 1)
+
+      - name: Refresh CIA ingredient catalog from Firestore
+        run: node scripts/build-ingredient-catalog.cjs
+
+      - name: Build nutrition review queue
+        run: node scripts/build-nutrition-review-queue.cjs
+
+      - name: Stage 2 complete
+        run: |
+          echo "CIA Nutrition Stage 2 complete."
+          echo "Poster data is now represented as a CIA nutrition review queue."
+          echo "No nutrition values were invented or fetched from an external API."

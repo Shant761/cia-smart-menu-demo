@@ -1,0 +1,7 @@
+{
+  "version": "1.0.0",
+  "restaurantId": "poster-test",
+  "description": "Manual nutrition records for the current Poster priority ingredients. Values must be confirmed before being marked verified.",
+  "calculationBasis": "values per 100g",
+  "entries": []
+}

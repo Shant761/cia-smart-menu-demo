@@ -1,0 +1,44 @@
+name: CIA Nutrition - Merge & Recalculate
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'data/cia-nutrition-manual-top20.json'
+      - 'data/nutrition-database.json'
+      - 'scripts/merge-and-recalculate-cia-nutrition.cjs'
+
+permissions:
+  contents: write
+
+jobs:
+  merge-and-recalculate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Merge verified CIA nutrition
+        run: node scripts/merge-and-recalculate-cia-nutrition.cjs
+
+      - name: Commit merged database
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/cia-nutrition-database.json
+          if git diff --cached --quiet; then
+            echo "No merged database changes."
+          else
+            git commit -m "chore: merge verified CIA nutrition"
+            git push
+          fi
+
+      - name: Summary
+        run: |
+          echo "CIA nutrition merge completed."
+          echo "The merged database is ready for the Poster recipe calculator."

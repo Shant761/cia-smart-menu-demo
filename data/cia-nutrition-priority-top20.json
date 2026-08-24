@@ -1,271 +1,2050 @@
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
   "restaurantId": "poster-test",
-  "generatedFrom": "cia-nutrition-review.json",
-  "ranking": "usedInProductCount * 1000 + occurrences",
+  "generatedFrom": "Firestore restaurants/{restaurantId}/ingredients_catalog",
+  "ranking": "usedInProductCount DESC, occurrences DESC, name ASC",
   "total": 20,
   "entries": [
     {
       "priority": 1,
-      "id": "nutrition_189110e868599c231b431fcd",
-      "name": "Absent Xenta",
-      "aliases": [],
-      "usedInProductCount": 0,
-      "occurrences": 0,
-      "status": "not_found",
-      "source": null,
-      "usda": null,
-      "nutrition": null
+      "id": "poster_340",
+      "posterIngredientId": "340",
+      "name": "Соль морская",
+      "aliases": [
+        "Соль морская"
+      ],
+      "usedInProductCount": 29,
+      "occurrences": 29,
+      "totalNetto": 111,
+      "totalBrutto": 111,
+      "units": [
+        "g"
+      ],
+      "analysisStatus": "rule_analyzed",
+      "sampleProducts": [
+        {
+          "productId": "11",
+          "productName": "Ձվածեղ նռով պիտա հացի մեջ",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "12",
+          "productName": "Սկրեմբլ ղավուրմայով եւ ստրաչատելլայով",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "138",
+          "productName": "Ստերլետ խորոված",
+          "netto": 10,
+          "brutto": 10,
+          "unit": "g"
+        },
+        {
+          "productId": "139",
+          "productName": "Խոզի չալաղաջ խորոված",
+          "netto": 5,
+          "brutto": 5,
+          "unit": "g"
+        },
+        {
+          "productId": "140",
+          "productName": "Խոզի փափկամսի խորոված",
+          "netto": 3,
+          "brutto": 3,
+          "unit": "g"
+        },
+        {
+          "productId": "141",
+          "productName": "Շիշ թաուկ",
+          "netto": 5,
+          "brutto": 5,
+          "unit": "g"
+        },
+        {
+          "productId": "143",
+          "productName": "Բանջարեղեն խորոված",
+          "netto": 5,
+          "brutto": 5,
+          "unit": "g"
+        },
+        {
+          "productId": "151",
+          "productName": "Քինուա ծովախեձգետնով աղցան",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "154",
+          "productName": "Գրիլ հավի կրծքամիս",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "162",
+          "productName": "Տապակած քուֆթա բանջարեղենով",
+          "netto": 3,
+          "brutto": 3,
+          "unit": "g"
+        },
+        {
+          "productId": "163",
+          "productName": "Ղավուրմա սմբուկի խյուսով",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "164",
+          "productName": "Հորթի փափկամիս գրիլի վրա",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        }
+      ]
     },
     {
       "priority": 2,
-      "id": "nutrition_b45a53c5004c62f9c58f4a6d",
-      "name": "Absolut",
-      "aliases": [],
-      "usedInProductCount": 0,
-      "occurrences": 0,
-      "status": "not_found",
-      "source": null,
-      "usda": null,
-      "nutrition": null
+      "id": "poster_337",
+      "posterIngredientId": "337",
+      "name": "Перец черный /молотый/",
+      "aliases": [
+        "Перец черный /молотый/"
+      ],
+      "usedInProductCount": 23,
+      "occurrences": 23,
+      "totalNetto": 51,
+      "totalBrutto": 51,
+      "units": [
+        "g"
+      ],
+      "analysisStatus": "rule_analyzed",
+      "sampleProducts": [
+        {
+          "productId": "11",
+          "productName": "Ձվածեղ նռով պիտա հացի մեջ",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "12",
+          "productName": "Սկրեմբլ ղավուրմայով եւ ստրաչատելլայով",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "138",
+          "productName": "Ստերլետ խորոված",
+          "netto": 10,
+          "brutto": 10,
+          "unit": "g"
+        },
+        {
+          "productId": "139",
+          "productName": "Խոզի չալաղաջ խորոված",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "140",
+          "productName": "Խոզի փափկամսի խորոված",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "143",
+          "productName": "Բանջարեղեն խորոված",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "154",
+          "productName": "Գրիլ հավի կրծքամիս",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "156",
+          "productName": "Ժենգյալով հաց",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "162",
+          "productName": "Տապակած քուֆթա բանջարեղենով",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "163",
+          "productName": "Ղավուրմա սմբուկի խյուսով",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "164",
+          "productName": "Հորթի փափկամիս գրիլի վրա",
+          "netto": 1,
+          "brutto": 1,
+          "unit": "g"
+        },
+        {
+          "productId": "166",
+          "productName": "Չկմերուլի",
+          "netto": 3,
+          "brutto": 3,
+          "unit": "g"
+        }
+      ]
     },
     {
       "priority": 3,
-      "id": "nutrition_0144a8350571132404572ef9",
-      "name": "Absolut Elyx",
-      "aliases": [],
-      "usedInProductCount": 0,
-      "occurrences": 0,
-      "status": "not_found",
-      "source": null,
-      "usda": null,
-      "nutrition": null
+      "id": "poster_645",
+      "posterIngredientId": "645",
+      "name": "лимон/лайм",
+      "aliases": [
+        "лимон/лайм",
+        "пюре из абрикоса"
+      ],
+      "usedInProductCount": 22,
+      "occurrences": 23,
+      "totalNetto": 560,
+      "totalBrutto": 560,
+      "units": [
+        "g"
+      ],
+      "analysisStatus": "rule_analyzed",
+      "sampleProducts": [
+        {
+          "productId": "145",
+          "productName": "լիմոնադ նռան գույն",
+          "netto": 15,
+          "brutto": 15,
+          "unit": "g"
+        },
+        {
+          "productId": "161",
+          "productName": "լիմոնադ Մանգո+ մարակույա",
+          "netto": 15,
+          "brutto": 15,
+          "unit": "g"
+        },
+        {
+          "productId": "201",
+          "productName": "Լիմոնադ Մանդարին ռոզմարին",
+          "netto": 15,
+          "brutto": 15,
+          "unit": "g"
+        },
+        {
+          "productId": "336",
+          "productName": "լիմոնադ Տրոպիկական",
+          "netto": 25,
+          "brutto": 25,
+          "unit": "g"
+        },
+        {
+          "productId": "337",
+          "productName": "լիմոնադ Թարխուն+տանձ",
+          "netto": 25,
+          "brutto": 25,
+          "unit": "g"
+        },
+        {
+          "productId": "341",
+          "productName": "լիմոնադ Ցիտրուսային",
+          "netto": 25,
+          "brutto": 25,
+          "unit": "g"
+        },
+        {
+          "productId": "412",
+          "productName": "Կոկտել Bloody Mery",
+          "netto": 25,
+          "brutto": 25,
+          "unit": "g"
+        },
+        {
+          "productId": "413",
+          "productName": "Կոկտել Brandy sour",
+          "netto": 15,
+          "brutto": 15,
+          "unit": "g"
+        },
+        {
+          "productId": "414",
+          "productName": "Կոկտեյլ Adioz",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        },
+        {
+          "productId": "418",
+          "productName": "Կոկտեյլ Betty",
+          "netto": 15,
+          "brutto": 15,
+          "unit": "g"
+        },
+        {
+          "productId": "422",
+          "productName": "Կոկտեյլ Cosmopolitan",
+          "netto": 25,
+          "brutto": 25,
+          "unit": "g"
+        },
+        {
+          "productId": "423",
+          "productName": "Կոկտեյլ Daiquiri",
+          "netto": 25,
+          "brutto": 25,
+          "unit": "g"
+        }
+      ]
     },
     {
       "priority": 4,
-      "id": "nutrition_1b7e69a897a2c7d62c498e3c",
-      "name": "Akhtamar",
-      "aliases": [],
-      "usedInProductCount": 0,
-      "occurrences": 0,
-      "status": "not_found",
-      "source": null,
-      "usda": null,
-      "nutrition": null
+      "id": "poster_395",
+      "posterIngredientId": "395",
+      "name": "растительное масло",
+      "aliases": [
+        "растительное масло"
+      ],
+      "usedInProductCount": 21,
+      "occurrences": 21,
+      "totalNetto": 810,
+      "totalBrutto": 810,
+      "units": [
+        "ml"
+      ],
+      "analysisStatus": "rule_analyzed",
+      "sampleProducts": [
+        {
+          "productId": "10",
+          "productName": "Անգլիական նախաճաշ",
+          "netto": 30,
+          "brutto": 30,
+          "unit": "ml"
+        },
+        {
+          "productId": "11",
+          "productName": "Ձվածեղ նռով պիտա հացի մեջ",
+          "netto": 30,
+          "brutto": 30,
+          "unit": "ml"
+        },
+        {
+          "productId": "12",
+          "productName": "Սկրեմբլ ղավուրմայով եւ ստրաչատելլայով",
+          "netto": 50,
+          "brutto": 50,
+          "unit": "ml"
+        },
+        {
+          "productId": "138",
+          "productName": "Ստերլետ խորոված",
+          "netto": 50,
+          "brutto": 50,
+          "unit": "ml"
+        },
+        {
+          "productId": "143",
+          "productName": "Բանջարեղեն խորոված",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "ml"
+        },
+        {
+          "productId": "15",
+          "productName": "Սիռնիկներ",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "ml"
+        },
+        {
+          "productId": "156",
+          "productName": "Ժենգյալով հաց",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "ml"
+        },
+        {
+          "productId": "162",
+          "productName": "Տապակած քուֆթա բանջարեղենով",
+          "netto": 40,
+          "brutto": 40,
+          "unit": "ml"
+        },
+        {
+          "productId": "164",
+          "productName": "Հորթի փափկամիս գրիլի վրա",
+          "netto": 50,
+          "brutto": 50,
+          "unit": "ml"
+        },
+        {
+          "productId": "169",
+          "productName": "Տապակած ճուտ կարտոֆիլով",
+          "netto": 100,
+          "brutto": 100,
+          "unit": "ml"
+        },
+        {
+          "productId": "170",
+          "productName": "Գառնի յարախ",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "ml"
+        },
+        {
+          "productId": "176",
+          "productName": "Ֆատտեհ լիբանանյան",
+          "netto": 150,
+          "brutto": 150,
+          "unit": "ml"
+        }
+      ]
     },
     {
       "priority": 5,
-      "id": "nutrition_40008bf4d783f83a5f76401b",
-      "name": "Aperol",
-      "aliases": [],
-      "usedInProductCount": 0,
-      "occurrences": 0,
-      "status": "not_found",
-      "source": null,
-      "usda": null,
-      "nutrition": null
+      "id": "poster_377",
+      "posterIngredientId": "377",
+      "name": "Клубника",
+      "aliases": [
+        "Клубника"
+      ],
+      "usedInProductCount": 18,
+      "occurrences": 18,
+      "totalNetto": 1520,
+      "totalBrutto": 1520,
+      "units": [
+        "g"
+      ],
+      "analysisStatus": "rule_analyzed",
+      "sampleProducts": [
+        {
+          "productId": "186",
+          "productName": "Չիզքեյք",
+          "netto": 30,
+          "brutto": 30,
+          "unit": "g"
+        },
+        {
+          "productId": "187",
+          "productName": "Տարտ հատապտղային",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        },
+        {
+          "productId": "193",
+          "productName": "Սեթ մինի խմորեղենների եւ շոկոլադների",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        },
+        {
+          "productId": "194",
+          "productName": "Սեզոնային մրգեր",
+          "netto": 200,
+          "brutto": 200,
+          "unit": "g"
+        },
+        {
+          "productId": "333",
+          "productName": "Ելակի ֆրեշ",
+          "netto": 300,
+          "brutto": 300,
+          "unit": "g"
+        },
+        {
+          "productId": "425",
+          "productName": "Կոկտեյլ Fruit Daiquiri",
+          "netto": 50,
+          "brutto": 50,
+          "unit": "g"
+        },
+        {
+          "productId": "426",
+          "productName": "Կոկտեյլ Fruit Margarita",
+          "netto": 50,
+          "brutto": 50,
+          "unit": "g"
+        },
+        {
+          "productId": "428",
+          "productName": "Կոկտեյլ Fruit Mojito",
+          "netto": 50,
+          "brutto": 50,
+          "unit": "g"
+        },
+        {
+          "productId": "429",
+          "productName": "Կոկտեյլ Fruit Mojito/ոչ ալկոհոլային",
+          "netto": 50,
+          "brutto": 50,
+          "unit": "g"
+        },
+        {
+          "productId": "435",
+          "productName": "Պաղպաղակ հատապտուղներով",
+          "netto": 40,
+          "brutto": 40,
+          "unit": "g"
+        },
+        {
+          "productId": "452",
+          "productName": "Աֆոգատո ելակով",
+          "netto": 50,
+          "brutto": 50,
+          "unit": "g"
+        },
+        {
+          "productId": "468",
+          "productName": "Միլք շեյք ելակով",
+          "netto": 150,
+          "brutto": 150,
+          "unit": "g"
+        }
+      ]
     },
     {
       "priority": 6,
-      "id": "nutrition_a59ad4cfb5d41249bbc249ad",
-      "name": "Ararat 3*",
+      "id": "poster_256",
+      "posterIngredientId": "256",
+      "name": "кофе эспрессо",
       "aliases": [
-        "нагеттсы"
+        "кофе эспрессо"
       ],
-      "usedInProductCount": 0,
-      "occurrences": 0,
-      "status": "needs_review",
-      "source": null,
-      "usda": {
-        "fdcId": 175098,
-        "description": "Alcoholic beverage, liqueur, coffee with cream, 34 proof",
-        "matchScore": 0.5
-      },
-      "nutrition": null
+      "usedInProductCount": 18,
+      "occurrences": 18,
+      "totalNetto": 209,
+      "totalBrutto": 209,
+      "units": [
+        "g"
+      ],
+      "analysisStatus": "rule_analyzed",
+      "sampleProducts": [
+        {
+          "productId": "131",
+          "productName": "ֆլեթ վայթ",
+          "netto": 24,
+          "brutto": 24,
+          "unit": "g"
+        },
+        {
+          "productId": "191",
+          "productName": "Տիրամիսու",
+          "netto": 10,
+          "brutto": 10,
+          "unit": "g"
+        },
+        {
+          "productId": "197",
+          "productName": "Գլասե",
+          "netto": 12,
+          "brutto": 12,
+          "unit": "g"
+        },
+        {
+          "productId": "198",
+          "productName": "էսպրեսո Մակիատո",
+          "netto": 10,
+          "brutto": 10,
+          "unit": "g"
+        },
+        {
+          "productId": "23",
+          "productName": "Կապուչինո",
+          "netto": 10,
+          "brutto": 10,
+          "unit": "g"
+        },
+        {
+          "productId": "257",
+          "productName": "Էսպրեսո",
+          "netto": 10,
+          "brutto": 10,
+          "unit": "g"
+        },
+        {
+          "productId": "280",
+          "productName": "Լատե նուշի կաթով",
+          "netto": 10,
+          "brutto": 10,
+          "unit": "g"
+        },
+        {
+          "productId": "452",
+          "productName": "Աֆոգատո ելակով",
+          "netto": 12,
+          "brutto": 12,
+          "unit": "g"
+        },
+        {
+          "productId": "453",
+          "productName": "Բամբլ Մայիս",
+          "netto": 12,
+          "brutto": 12,
+          "unit": "g"
+        },
+        {
+          "productId": "454",
+          "productName": "Իռլանդական սուրճ",
+          "netto": 12,
+          "brutto": 12,
+          "unit": "g"
+        },
+        {
+          "productId": "470",
+          "productName": "Լունգո",
+          "netto": 10,
+          "brutto": 10,
+          "unit": "g"
+        },
+        {
+          "productId": "471",
+          "productName": "Կապուչինո կոկոսի կաթով",
+          "netto": 10,
+          "brutto": 10,
+          "unit": "g"
+        }
+      ]
     },
     {
       "priority": 7,
-      "id": "nutrition_d3612c4367de920ced7325ec",
-      "name": "Ariats Pomegranate",
-      "aliases": [],
-      "usedInProductCount": 0,
-      "occurrences": 0,
-      "status": "needs_review",
-      "source": null,
-      "usda": {
-        "fdcId": 169134,
-        "description": "Pomegranates, raw",
-        "matchScore": 0.5
-      },
-      "nutrition": null
+      "id": "poster_442",
+      "posterIngredientId": "442",
+      "name": "мята свежая",
+      "aliases": [
+        "мята свежая"
+      ],
+      "usedInProductCount": 17,
+      "occurrences": 17,
+      "totalNetto": 110,
+      "totalBrutto": 110,
+      "units": [
+        "g"
+      ],
+      "analysisStatus": "rule_analyzed",
+      "sampleProducts": [
+        {
+          "productId": "117",
+          "productName": "Մարոկյան անանուխ",
+          "netto": 15,
+          "brutto": 15,
+          "unit": "g"
+        },
+        {
+          "productId": "145",
+          "productName": "լիմոնադ նռան գույն",
+          "netto": 10,
+          "brutto": 10,
+          "unit": "g"
+        },
+        {
+          "productId": "186",
+          "productName": "Չիզքեյք",
+          "netto": 5,
+          "brutto": 5,
+          "unit": "g"
+        },
+        {
+          "productId": "187",
+          "productName": "Տարտ հատապտղային",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "341",
+          "productName": "լիմոնադ Ցիտրուսային",
+          "netto": 5,
+          "brutto": 5,
+          "unit": "g"
+        },
+        {
+          "productId": "428",
+          "productName": "Կոկտեյլ Fruit Mojito",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "429",
+          "productName": "Կոկտեյլ Fruit Mojito/ոչ ալկոհոլային",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "431",
+          "productName": "Կոկտեյլ Mojito",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "432",
+          "productName": "Կոկտեյլ Mojito /ոչ ալկոհոլային/",
+          "netto": 5,
+          "brutto": 5,
+          "unit": "g"
+        },
+        {
+          "productId": "435",
+          "productName": "Պաղպաղակ հատապտուղներով",
+          "netto": 5,
+          "brutto": 5,
+          "unit": "g"
+        },
+        {
+          "productId": "437",
+          "productName": "Կիտրոնի սորբեթ",
+          "netto": 4,
+          "brutto": 4,
+          "unit": "g"
+        },
+        {
+          "productId": "488",
+          "productName": "Ծիրանի թեյ",
+          "netto": 5,
+          "brutto": 5,
+          "unit": "g"
+        }
+      ]
     },
     {
       "priority": 8,
-      "id": "nutrition_ae8bcc8aa214d8c7dda48302",
-      "name": "Attems Pinot Grigio",
-      "aliases": [],
-      "usedInProductCount": 0,
-      "occurrences": 0,
-      "status": "needs_review",
-      "source": null,
-      "usda": {
-        "fdcId": 174841,
-        "description": "Alcoholic beverage, wine, table, white, Pinot Gris (Grigio)",
-        "matchScore": 0.6666666666666666
-      },
-      "nutrition": null
+      "id": "poster_353",
+      "posterIngredientId": "353",
+      "name": "Яйца",
+      "aliases": [
+        "Яйца"
+      ],
+      "usedInProductCount": 17,
+      "occurrences": 17,
+      "totalNetto": 2460,
+      "totalBrutto": 41,
+      "units": [
+        "p"
+      ],
+      "analysisStatus": "rule_analyzed",
+      "sampleProducts": [
+        {
+          "productId": "10",
+          "productName": "Անգլիական նախաճաշ",
+          "netto": 120,
+          "brutto": 2,
+          "unit": "p"
+        },
+        {
+          "productId": "11",
+          "productName": "Ձվածեղ նռով պիտա հացի մեջ",
+          "netto": 120,
+          "brutto": 2,
+          "unit": "p"
+        },
+        {
+          "productId": "12",
+          "productName": "Սկրեմբլ ղավուրմայով եւ ստրաչատելլայով",
+          "netto": 120,
+          "brutto": 2,
+          "unit": "p"
+        },
+        {
+          "productId": "13",
+          "productName": "Ձու բենեդիկտ սաղմոնով",
+          "netto": 180,
+          "brutto": 3,
+          "unit": "p"
+        },
+        {
+          "productId": "14",
+          "productName": "Ձու բենեդիկտ բեկոնով",
+          "netto": 180,
+          "brutto": 3,
+          "unit": "p"
+        },
+        {
+          "productId": "153",
+          "productName": "Մեգրելական խաչապուրի",
+          "netto": 120,
+          "brutto": 2,
+          "unit": "p"
+        },
+        {
+          "productId": "324",
+          "productName": "Ձու",
+          "netto": 60,
+          "brutto": 1,
+          "unit": "p"
+        },
+        {
+          "productId": "413",
+          "productName": "Կոկտել Brandy sour",
+          "netto": 60,
+          "brutto": 1,
+          "unit": "p"
+        },
+        {
+          "productId": "482",
+          "productName": "Ձվածեղ լոլիկով",
+          "netto": 120,
+          "brutto": 2,
+          "unit": "p"
+        },
+        {
+          "productId": "715",
+          "productName": "Ձվածեղ բաստուրմայով",
+          "netto": 120,
+          "brutto": 2,
+          "unit": "p"
+        },
+        {
+          "productId": "782",
+          "productName": "Բուլկի",
+          "netto": 360,
+          "brutto": 6,
+          "unit": "p"
+        },
+        {
+          "productId": "8",
+          "productName": "Նախաճաշ Զոքանչից",
+          "netto": 120,
+          "brutto": 2,
+          "unit": "p"
+        }
+      ]
     },
     {
       "priority": 9,
-      "id": "nutrition_cbd05e19364c2f417a28f3f9",
-      "name": "Bacardi Carta Blanca",
-      "aliases": [],
-      "usedInProductCount": 0,
-      "occurrences": 0,
-      "status": "not_found",
-      "source": null,
-      "usda": null,
-      "nutrition": null
+      "id": "poster_436",
+      "posterIngredientId": "436",
+      "name": "Лимон",
+      "aliases": [
+        "Лимон"
+      ],
+      "usedInProductCount": 16,
+      "occurrences": 16,
+      "totalNetto": 1300,
+      "totalBrutto": 11,
+      "units": [
+        "p"
+      ],
+      "analysisStatus": "rule_analyzed",
+      "sampleProducts": [
+        {
+          "productId": "117",
+          "productName": "Մարոկյան անանուխ",
+          "netto": 0,
+          "brutto": 0,
+          "unit": "p"
+        },
+        {
+          "productId": "138",
+          "productName": "Ստերլետ խորոված",
+          "netto": 0,
+          "brutto": 0,
+          "unit": "p"
+        },
+        {
+          "productId": "14",
+          "productName": "Ձու բենեդիկտ բեկոնով",
+          "netto": 100,
+          "brutto": 0,
+          "unit": "p"
+        },
+        {
+          "productId": "290",
+          "productName": "Կիտրոն մեղր կոճապղպեղ",
+          "netto": 0,
+          "brutto": 0,
+          "unit": "p"
+        },
+        {
+          "productId": "332",
+          "productName": "Քամած կիտրոն",
+          "netto": 0,
+          "brutto": 2,
+          "unit": "p"
+        },
+        {
+          "productId": "334",
+          "productName": "Գլինտվեյն",
+          "netto": 0,
+          "brutto": 0,
+          "unit": "p"
+        },
+        {
+          "productId": "335",
+          "productName": "Սանգրիա /դասական/",
+          "netto": 0,
+          "brutto": 0,
+          "unit": "p"
+        },
+        {
+          "productId": "341",
+          "productName": "լիմոնադ Ցիտրուսային",
+          "netto": 150,
+          "brutto": 1,
+          "unit": "p"
+        },
+        {
+          "productId": "413",
+          "productName": "Կոկտել Brandy sour",
+          "netto": 200,
+          "brutto": 1,
+          "unit": "p"
+        },
+        {
+          "productId": "437",
+          "productName": "Կիտրոնի սորբեթ",
+          "netto": 200,
+          "brutto": 1,
+          "unit": "p"
+        },
+        {
+          "productId": "440",
+          "productName": "կիտրոն",
+          "netto": 200,
+          "brutto": 1,
+          "unit": "p"
+        },
+        {
+          "productId": "50",
+          "productName": "Ձաձիկի Ավոկադոյով",
+          "netto": 200,
+          "brutto": 1,
+          "unit": "p"
+        }
+      ]
     },
     {
       "priority": 10,
-      "id": "nutrition_19aa70c21e9716dd7beb575b",
-      "name": "Bacardi Carta Negra",
-      "aliases": [],
-      "usedInProductCount": 0,
-      "occurrences": 0,
-      "status": "not_found",
-      "source": null,
-      "usda": null,
-      "nutrition": null
+      "id": "poster_534",
+      "posterIngredientId": "534",
+      "name": "мороженое",
+      "aliases": [
+        "мороженое"
+      ],
+      "usedInProductCount": 15,
+      "occurrences": 15,
+      "totalNetto": 1610,
+      "totalBrutto": 1610,
+      "units": [
+        "g"
+      ],
+      "analysisStatus": "needs_review",
+      "sampleProducts": [
+        {
+          "productId": "120",
+          "productName": "Դուբայի դեսերտ",
+          "netto": 50,
+          "brutto": 50,
+          "unit": "g"
+        },
+        {
+          "productId": "133",
+          "productName": "Բրաունի ընկույզով",
+          "netto": 50,
+          "brutto": 50,
+          "unit": "g"
+        },
+        {
+          "productId": "188",
+          "productName": "Ֆոնդան",
+          "netto": 50,
+          "brutto": 50,
+          "unit": "g"
+        },
+        {
+          "productId": "195",
+          "productName": "Պաղպաղակ",
+          "netto": 150,
+          "brutto": 150,
+          "unit": "g"
+        },
+        {
+          "productId": "197",
+          "productName": "Գլասե",
+          "netto": 100,
+          "brutto": 100,
+          "unit": "g"
+        },
+        {
+          "productId": "24",
+          "productName": "Տաք թխվածք հապալասով",
+          "netto": 50,
+          "brutto": 50,
+          "unit": "g"
+        },
+        {
+          "productId": "435",
+          "productName": "Պաղպաղակ հատապտուղներով",
+          "netto": 150,
+          "brutto": 150,
+          "unit": "g"
+        },
+        {
+          "productId": "452",
+          "productName": "Աֆոգատո ելակով",
+          "netto": 130,
+          "brutto": 130,
+          "unit": "g"
+        },
+        {
+          "productId": "465",
+          "productName": "Միլկ շեյք /շոկոլադե/",
+          "netto": 150,
+          "brutto": 150,
+          "unit": "g"
+        },
+        {
+          "productId": "466",
+          "productName": "Միլք շեյք /վանիլային/",
+          "netto": 150,
+          "brutto": 150,
+          "unit": "g"
+        },
+        {
+          "productId": "467",
+          "productName": "Միլք շեյք բանանով",
+          "netto": 150,
+          "brutto": 150,
+          "unit": "g"
+        },
+        {
+          "productId": "468",
+          "productName": "Միլք շեյք ելակով",
+          "netto": 150,
+          "brutto": 150,
+          "unit": "g"
+        }
+      ]
     },
     {
       "priority": 11,
-      "id": "nutrition_2159433528245352a3663c54",
-      "name": "Baileys",
-      "aliases": [],
-      "usedInProductCount": 0,
-      "occurrences": 0,
-      "status": "not_found",
-      "source": null,
-      "usda": null,
-      "nutrition": null
+      "id": "poster_289",
+      "posterIngredientId": "289",
+      "name": "сироп Monin",
+      "aliases": [
+        "сироп Monin"
+      ],
+      "usedInProductCount": 15,
+      "occurrences": 15,
+      "totalNetto": 323,
+      "totalBrutto": 323,
+      "units": [
+        "g"
+      ],
+      "analysisStatus": "needs_review",
+      "sampleProducts": [
+        {
+          "productId": "333",
+          "productName": "Ելակի ֆրեշ",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        },
+        {
+          "productId": "336",
+          "productName": "լիմոնադ Տրոպիկական",
+          "netto": 10,
+          "brutto": 10,
+          "unit": "g"
+        },
+        {
+          "productId": "425",
+          "productName": "Կոկտեյլ Fruit Daiquiri",
+          "netto": 25,
+          "brutto": 25,
+          "unit": "g"
+        },
+        {
+          "productId": "428",
+          "productName": "Կոկտեյլ Fruit Mojito",
+          "netto": 25,
+          "brutto": 25,
+          "unit": "g"
+        },
+        {
+          "productId": "429",
+          "productName": "Կոկտեյլ Fruit Mojito/ոչ ալկոհոլային",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        },
+        {
+          "productId": "431",
+          "productName": "Կոկտեյլ Mojito",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        },
+        {
+          "productId": "432",
+          "productName": "Կոկտեյլ Mojito /ոչ ալկոհոլային/",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        },
+        {
+          "productId": "442",
+          "productName": "Օշարակ մոնին",
+          "netto": 50,
+          "brutto": 50,
+          "unit": "g"
+        },
+        {
+          "productId": "453",
+          "productName": "Բամբլ Մայիս",
+          "netto": 3,
+          "brutto": 3,
+          "unit": "g"
+        },
+        {
+          "productId": "466",
+          "productName": "Միլք շեյք /վանիլային/",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        },
+        {
+          "productId": "469",
+          "productName": "Միլքշեյք",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        },
+        {
+          "productId": "662",
+          "productName": "Կոկտել Tequila Sunrise",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        }
+      ]
     },
     {
       "priority": 12,
-      "id": "nutrition_91797c8ced23c3f45f2c7044",
-      "name": "Ballantine՝s",
-      "aliases": [],
-      "usedInProductCount": 0,
-      "occurrences": 0,
-      "status": "needs_review",
-      "source": null,
-      "usda": {
-        "fdcId": 174621,
-        "description": "Cereals ready-to-eat, QUAKER, HONEY GRAHAM OH!S",
-        "matchScore": 0.5
-      },
-      "nutrition": null
+      "id": "poster_274",
+      "posterIngredientId": "274",
+      "name": "салатный лист",
+      "aliases": [
+        "салатный лист"
+      ],
+      "usedInProductCount": 14,
+      "occurrences": 14,
+      "totalNetto": 660,
+      "totalBrutto": 660,
+      "units": [
+        "g"
+      ],
+      "analysisStatus": "rule_analyzed",
+      "sampleProducts": [
+        {
+          "productId": "138",
+          "productName": "Ստերլետ խորոված",
+          "netto": 50,
+          "brutto": 50,
+          "unit": "g"
+        },
+        {
+          "productId": "139",
+          "productName": "Խոզի չալաղաջ խորոված",
+          "netto": 30,
+          "brutto": 30,
+          "unit": "g"
+        },
+        {
+          "productId": "140",
+          "productName": "Խոզի փափկամսի խորոված",
+          "netto": 50,
+          "brutto": 50,
+          "unit": "g"
+        },
+        {
+          "productId": "141",
+          "productName": "Շիշ թաուկ",
+          "netto": 50,
+          "brutto": 50,
+          "unit": "g"
+        },
+        {
+          "productId": "171",
+          "productName": "Թխած կողիկներ ռիբս",
+          "netto": 50,
+          "brutto": 50,
+          "unit": "g"
+        },
+        {
+          "productId": "228",
+          "productName": "Կարտոֆիլ եւ սունկ մանղալի վրա",
+          "netto": 50,
+          "brutto": 50,
+          "unit": "g"
+        },
+        {
+          "productId": "310",
+          "productName": "Պանիր ոչխարի",
+          "netto": 5,
+          "brutto": 5,
+          "unit": "g"
+        },
+        {
+          "productId": "461",
+          "productName": "Սենդվիչներ խոզապուխտով,կարտոֆիլ ֆրիով",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        },
+        {
+          "productId": "575",
+          "productName": "Սեւանի իշխան",
+          "netto": 50,
+          "brutto": 50,
+          "unit": "g"
+        },
+        {
+          "productId": "66",
+          "productName": "Հորթի փափկամսի խորոված",
+          "netto": 50,
+          "brutto": 50,
+          "unit": "g"
+        },
+        {
+          "productId": "689",
+          "productName": "Խոզի կողիկներ",
+          "netto": 50,
+          "brutto": 50,
+          "unit": "g"
+        },
+        {
+          "productId": "78",
+          "productName": "Կանաչ թարմ աղցան էդամամեով",
+          "netto": 70,
+          "brutto": 70,
+          "unit": "g"
+        }
+      ]
     },
     {
       "priority": 13,
-      "id": "nutrition_16ed2907f796c09cbf0d3cbc",
-      "name": "Becherovka",
-      "aliases": [],
-      "usedInProductCount": 0,
-      "occurrences": 0,
-      "status": "not_found",
-      "source": null,
-      "usda": null,
-      "nutrition": null
+      "id": "poster_278",
+      "posterIngredientId": "278",
+      "name": "свежая зелень",
+      "aliases": [
+        "свежая зелень"
+      ],
+      "usedInProductCount": 14,
+      "occurrences": 14,
+      "totalNetto": 453,
+      "totalBrutto": 453,
+      "units": [
+        "g"
+      ],
+      "analysisStatus": "needs_review",
+      "sampleProducts": [
+        {
+          "productId": "11",
+          "productName": "Ձվածեղ նռով պիտա հացի մեջ",
+          "netto": 10,
+          "brutto": 10,
+          "unit": "g"
+        },
+        {
+          "productId": "127",
+          "productName": "Բորշ",
+          "netto": 5,
+          "brutto": 5,
+          "unit": "g"
+        },
+        {
+          "productId": "14",
+          "productName": "Ձու բենեդիկտ բեկոնով",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        },
+        {
+          "productId": "143",
+          "productName": "Բանջարեղեն խորոված",
+          "netto": 5,
+          "brutto": 5,
+          "unit": "g"
+        },
+        {
+          "productId": "165",
+          "productName": "Չաքափուլի թաջինի մեջ",
+          "netto": 150,
+          "brutto": 150,
+          "unit": "g"
+        },
+        {
+          "productId": "166",
+          "productName": "Չկմերուլի",
+          "netto": 10,
+          "brutto": 10,
+          "unit": "g"
+        },
+        {
+          "productId": "173",
+          "productName": "Նոր կարտոֆիլ",
+          "netto": 15,
+          "brutto": 15,
+          "unit": "g"
+        },
+        {
+          "productId": "177",
+          "productName": "Սիգ ֆիլե լոլիկով",
+          "netto": 30,
+          "brutto": 30,
+          "unit": "g"
+        },
+        {
+          "productId": "640",
+          "productName": "Աղցան Ամառային",
+          "netto": 5,
+          "brutto": 5,
+          "unit": "g"
+        },
+        {
+          "productId": "641",
+          "productName": "Թարմ կանաչի",
+          "netto": 150,
+          "brutto": 150,
+          "unit": "g"
+        },
+        {
+          "productId": "69",
+          "productName": "Տնական բուրատտա",
+          "netto": 10,
+          "brutto": 10,
+          "unit": "g"
+        },
+        {
+          "productId": "812",
+          "productName": "Ակռոշկա",
+          "netto": 10,
+          "brutto": 10,
+          "unit": "g"
+        }
+      ]
     },
     {
       "priority": 14,
-      "id": "nutrition_e5b757e786a4d3da4e15153a",
-      "name": "Beefeter",
-      "aliases": [],
-      "usedInProductCount": 0,
-      "occurrences": 0,
-      "status": "not_found",
-      "source": null,
-      "usda": null,
-      "nutrition": null
+      "id": "poster_493",
+      "posterIngredientId": "493",
+      "name": "баклажан запеченный",
+      "aliases": [
+        "баклажан запеченный",
+        "микрогрин"
+      ],
+      "usedInProductCount": 12,
+      "occurrences": 12,
+      "totalNetto": 275,
+      "totalBrutto": 275,
+      "units": [
+        "g"
+      ],
+      "analysisStatus": "rule_analyzed",
+      "sampleProducts": [
+        {
+          "productId": "12",
+          "productName": "Սկրեմբլ ղավուրմայով եւ ստրաչատելլայով",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "163",
+          "productName": "Ղավուրմա սմբուկի խյուսով",
+          "netto": 250,
+          "brutto": 250,
+          "unit": "g"
+        },
+        {
+          "productId": "168",
+          "productName": "Հավի կրծքամիս սնկով",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "170",
+          "productName": "Գառնի յարախ",
+          "netto": 3,
+          "brutto": 3,
+          "unit": "g"
+        },
+        {
+          "productId": "32",
+          "productName": "Արիշտա ստրաչատելայով եւ ղավուրմայով",
+          "netto": 3,
+          "brutto": 3,
+          "unit": "g"
+        },
+        {
+          "productId": "50",
+          "productName": "Ձաձիկի Ավոկադոյով",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "65",
+          "productName": "Պաշտետ \"Հավի լյարդի\"",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "74",
+          "productName": "Մութաբալ",
+          "netto": 3,
+          "brutto": 3,
+          "unit": "g"
+        },
+        {
+          "productId": "811",
+          "productName": "Ձաձիկի ավոկադոյով /կոմպլիմենտ/",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "83",
+          "productName": "Քաղցրահամ սմբուկով աղցան",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "85",
+          "productName": "Հավի ռուլետ ընկույզով",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "87",
+          "productName": "Բուժենինա բաստուրմա սուջուխ",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        }
+      ]
     },
     {
       "priority": 15,
-      "id": "nutrition_161096c0d381fb5cea377436",
-      "name": "Bombay Sapphire",
-      "aliases": [],
-      "usedInProductCount": 0,
-      "occurrences": 0,
-      "status": "not_found",
-      "source": null,
-      "usda": null,
-      "nutrition": null
+      "id": "poster_335",
+      "posterIngredientId": "335",
+      "name": "Перец красный /молотый/",
+      "aliases": [
+        "Перец красный /молотый/"
+      ],
+      "usedInProductCount": 12,
+      "occurrences": 12,
+      "totalNetto": 27,
+      "totalBrutto": 27,
+      "units": [
+        "g"
+      ],
+      "analysisStatus": "rule_analyzed",
+      "sampleProducts": [
+        {
+          "productId": "139",
+          "productName": "Խոզի չալաղաջ խորոված",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "140",
+          "productName": "Խոզի փափկամսի խորոված",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "141",
+          "productName": "Շիշ թաուկ",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "143",
+          "productName": "Բանջարեղեն խորոված",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "154",
+          "productName": "Գրիլ հավի կրծքամիս",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "165",
+          "productName": "Չաքափուլի թաջինի մեջ",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "228",
+          "productName": "Կարտոֆիլ եւ սունկ մանղալի վրա",
+          "netto": 5,
+          "brutto": 5,
+          "unit": "g"
+        },
+        {
+          "productId": "575",
+          "productName": "Սեւանի իշխան",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "66",
+          "productName": "Հորթի փափկամսի խորոված",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "69",
+          "productName": "Տնական բուրատտա",
+          "netto": 3,
+          "brutto": 3,
+          "unit": "g"
+        },
+        {
+          "productId": "74",
+          "productName": "Մութաբալ",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "83",
+          "productName": "Քաղցրահամ սմբուկով աղցան",
+          "netto": 1,
+          "brutto": 1,
+          "unit": "g"
+        }
+      ]
     },
     {
       "priority": 16,
-      "id": "nutrition_963849a089e7d11c3c03e8e6",
-      "name": "Cachaca",
-      "aliases": [],
-      "usedInProductCount": 0,
-      "occurrences": 0,
-      "status": "not_found",
-      "source": null,
-      "usda": null,
-      "nutrition": null
+      "id": "poster_418",
+      "posterIngredientId": "418",
+      "name": "сахар тросниковый",
+      "aliases": [
+        "сахар тросниковый"
+      ],
+      "usedInProductCount": 12,
+      "occurrences": 12,
+      "totalNetto": 225,
+      "totalBrutto": 225,
+      "units": [
+        "g"
+      ],
+      "analysisStatus": "rule_analyzed",
+      "sampleProducts": [
+        {
+          "productId": "117",
+          "productName": "Մարոկյան անանուխ",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        },
+        {
+          "productId": "145",
+          "productName": "լիմոնադ նռան գույն",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        },
+        {
+          "productId": "186",
+          "productName": "Չիզքեյք",
+          "netto": 10,
+          "brutto": 10,
+          "unit": "g"
+        },
+        {
+          "productId": "187",
+          "productName": "Տարտ հատապտղային",
+          "netto": 10,
+          "brutto": 10,
+          "unit": "g"
+        },
+        {
+          "productId": "285",
+          "productName": "Կոճապղպեղ հաղարջ բազիլիկ",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        },
+        {
+          "productId": "335",
+          "productName": "Սանգրիա /դասական/",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        },
+        {
+          "productId": "36",
+          "productName": "Լոռամիրգ բալ նարինջ",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        },
+        {
+          "productId": "413",
+          "productName": "Կոկտել Brandy sour",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        },
+        {
+          "productId": "421",
+          "productName": "Կոկտեյլ Caipirinha",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        },
+        {
+          "productId": "423",
+          "productName": "Կոկտեյլ Daiquiri",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        },
+        {
+          "productId": "424",
+          "productName": "Կոկտեյլ Frozen Daiquiri",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        },
+        {
+          "productId": "488",
+          "productName": "Ծիրանի թեյ",
+          "netto": 25,
+          "brutto": 25,
+          "unit": "g"
+        }
+      ]
     },
     {
       "priority": 17,
-      "id": "nutrition_6a1128d06853379140e1da59",
-      "name": "Calvados",
-      "aliases": [],
-      "usedInProductCount": 0,
-      "occurrences": 0,
-      "status": "not_found",
-      "source": null,
-      "usda": null,
-      "nutrition": null
+      "id": "poster_396",
+      "posterIngredientId": "396",
+      "name": "сливочное масло",
+      "aliases": [
+        "сливочное масло"
+      ],
+      "usedInProductCount": 12,
+      "occurrences": 12,
+      "totalNetto": 290,
+      "totalBrutto": 290,
+      "units": [
+        "g"
+      ],
+      "analysisStatus": "rule_analyzed",
+      "sampleProducts": [
+        {
+          "productId": "136",
+          "productName": "Դդմով կրեմ-ապուր",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        },
+        {
+          "productId": "143",
+          "productName": "Բանջարեղեն խորոված",
+          "netto": 50,
+          "brutto": 50,
+          "unit": "g"
+        },
+        {
+          "productId": "153",
+          "productName": "Մեգրելական խաչապուրի",
+          "netto": 25,
+          "brutto": 25,
+          "unit": "g"
+        },
+        {
+          "productId": "163",
+          "productName": "Ղավուրմա սմբուկի խյուսով",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        },
+        {
+          "productId": "170",
+          "productName": "Գառնի յարախ",
+          "netto": 15,
+          "brutto": 15,
+          "unit": "g"
+        },
+        {
+          "productId": "320",
+          "productName": "Կարմիր ձկնկիթ",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        },
+        {
+          "productId": "323",
+          "productName": "Կարագ",
+          "netto": 50,
+          "brutto": 50,
+          "unit": "g"
+        },
+        {
+          "productId": "482",
+          "productName": "Ձվածեղ լոլիկով",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        },
+        {
+          "productId": "681",
+          "productName": "Բրինձ",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        },
+        {
+          "productId": "8",
+          "productName": "Նախաճաշ Զոքանչից",
+          "netto": 20,
+          "brutto": 20,
+          "unit": "g"
+        },
+        {
+          "productId": "804",
+          "productName": "Վայրի սպանախ",
+          "netto": 15,
+          "brutto": 15,
+          "unit": "g"
+        },
+        {
+          "productId": "9",
+          "productName": "Արեւելյան սկուտեղ",
+          "netto": 15,
+          "brutto": 15,
+          "unit": "g"
+        }
+      ]
     },
     {
       "priority": 18,
-      "id": "nutrition_6163405c7a834f68df51634b",
-      "name": "Campari",
-      "aliases": [],
-      "usedInProductCount": 0,
-      "occurrences": 0,
-      "status": "not_found",
-      "source": null,
-      "usda": null,
-      "nutrition": null
+      "id": "poster_287",
+      "posterIngredientId": "287",
+      "name": "молоко /Parmalat/",
+      "aliases": [
+        "молоко /Parmalat/"
+      ],
+      "usedInProductCount": 11,
+      "occurrences": 11,
+      "totalNetto": 1790,
+      "totalBrutto": 1790,
+      "units": [
+        "ml"
+      ],
+      "analysisStatus": "rule_analyzed",
+      "sampleProducts": [
+        {
+          "productId": "131",
+          "productName": "ֆլեթ վայթ",
+          "netto": 200,
+          "brutto": 200,
+          "unit": "ml"
+        },
+        {
+          "productId": "197",
+          "productName": "Գլասե",
+          "netto": 150,
+          "brutto": 150,
+          "unit": "ml"
+        },
+        {
+          "productId": "23",
+          "productName": "Կապուչինո",
+          "netto": 170,
+          "brutto": 170,
+          "unit": "ml"
+        },
+        {
+          "productId": "455",
+          "productName": "Տնական կակաո",
+          "netto": 250,
+          "brutto": 250,
+          "unit": "ml"
+        },
+        {
+          "productId": "465",
+          "productName": "Միլկ շեյք /շոկոլադե/",
+          "netto": 150,
+          "brutto": 150,
+          "unit": "ml"
+        },
+        {
+          "productId": "466",
+          "productName": "Միլք շեյք /վանիլային/",
+          "netto": 150,
+          "brutto": 150,
+          "unit": "ml"
+        },
+        {
+          "productId": "467",
+          "productName": "Միլք շեյք բանանով",
+          "netto": 150,
+          "brutto": 150,
+          "unit": "ml"
+        },
+        {
+          "productId": "468",
+          "productName": "Միլք շեյք ելակով",
+          "netto": 150,
+          "brutto": 150,
+          "unit": "ml"
+        },
+        {
+          "productId": "469",
+          "productName": "Միլքշեյք",
+          "netto": 100,
+          "brutto": 100,
+          "unit": "ml"
+        },
+        {
+          "productId": "48",
+          "productName": "Տաք Կաթ",
+          "netto": 150,
+          "brutto": 150,
+          "unit": "ml"
+        },
+        {
+          "productId": "70",
+          "productName": "Լատե",
+          "netto": 170,
+          "brutto": 170,
+          "unit": "ml"
+        }
+      ]
     },
     {
       "priority": 19,
-      "id": "nutrition_2cda9fe92ea13bf9326050e1",
-      "name": "Chistie Rosi",
-      "aliases": [],
-      "usedInProductCount": 0,
-      "occurrences": 0,
-      "status": "not_found",
-      "source": null,
-      "usda": null,
-      "nutrition": null
+      "id": "poster_633",
+      "posterIngredientId": "633",
+      "name": "огурцы чищенные",
+      "aliases": [
+        "огурцы чищенные"
+      ],
+      "usedInProductCount": 11,
+      "occurrences": 11,
+      "totalNetto": 1540,
+      "totalBrutto": 1540,
+      "units": [
+        "g"
+      ],
+      "analysisStatus": "rule_analyzed",
+      "sampleProducts": [
+        {
+          "productId": "151",
+          "productName": "Քինուա ծովախեձգետնով աղցան",
+          "netto": 80,
+          "brutto": 80,
+          "unit": "g"
+        },
+        {
+          "productId": "291",
+          "productName": "Վրացական աղցան",
+          "netto": 200,
+          "brutto": 200,
+          "unit": "g"
+        },
+        {
+          "productId": "457",
+          "productName": "Բանջարեղենի ձողիկներ",
+          "netto": 150,
+          "brutto": 150,
+          "unit": "g"
+        },
+        {
+          "productId": "461",
+          "productName": "Սենդվիչներ խոզապուխտով,կարտոֆիլ ֆրիով",
+          "netto": 30,
+          "brutto": 30,
+          "unit": "g"
+        },
+        {
+          "productId": "478",
+          "productName": "Վարունգ",
+          "netto": 300,
+          "brutto": 300,
+          "unit": "g"
+        },
+        {
+          "productId": "50",
+          "productName": "Ձաձիկի Ավոկադոյով",
+          "netto": 150,
+          "brutto": 150,
+          "unit": "g"
+        },
+        {
+          "productId": "638",
+          "productName": "Բանջարեղենի զամբյուղ",
+          "netto": 150,
+          "brutto": 150,
+          "unit": "g"
+        },
+        {
+          "productId": "640",
+          "productName": "Աղցան Ամառային",
+          "netto": 150,
+          "brutto": 150,
+          "unit": "g"
+        },
+        {
+          "productId": "75",
+          "productName": "Բանջարեղենային աղցան ֆետա պանրով",
+          "netto": 100,
+          "brutto": 100,
+          "unit": "g"
+        },
+        {
+          "productId": "811",
+          "productName": "Ձաձիկի ավոկադոյով /կոմպլիմենտ/",
+          "netto": 150,
+          "brutto": 150,
+          "unit": "g"
+        },
+        {
+          "productId": "82",
+          "productName": "Տավարի մսով աղցան",
+          "netto": 80,
+          "brutto": 80,
+          "unit": "g"
+        }
+      ]
     },
     {
       "priority": 20,
-      "id": "nutrition_888c8c5bdb51ea897649cd92",
-      "name": "Chivas Regal 12 YO",
-      "aliases": [],
-      "usedInProductCount": 0,
-      "occurrences": 0,
-      "status": "needs_review",
-      "source": null,
-      "usda": {
-        "fdcId": 172041,
-        "description": "PIZZA HUT 12\" Cheese Pizza, Pan Crust",
-        "matchScore": 0.25
-      },
-      "nutrition": null
+      "id": "poster_339",
+      "posterIngredientId": "339",
+      "name": "Соль",
+      "aliases": [
+        "Соль"
+      ],
+      "usedInProductCount": 11,
+      "occurrences": 11,
+      "totalNetto": 31,
+      "totalBrutto": 31,
+      "units": [
+        "g"
+      ],
+      "analysisStatus": "rule_analyzed",
+      "sampleProducts": [
+        {
+          "productId": "147",
+          "productName": "Խինկալի",
+          "netto": 3,
+          "brutto": 3,
+          "unit": "g"
+        },
+        {
+          "productId": "153",
+          "productName": "Մեգրելական խաչապուրի",
+          "netto": 3,
+          "brutto": 3,
+          "unit": "g"
+        },
+        {
+          "productId": "156",
+          "productName": "Ժենգյալով հաց",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "77",
+          "productName": "Քինոայով եւ ավոկադոյով աղցան",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "8",
+          "productName": "Նախաճաշ Զոքանչից",
+          "netto": 4,
+          "brutto": 4,
+          "unit": "g"
+        },
+        {
+          "productId": "804",
+          "productName": "Վայրի սպանախ",
+          "netto": 1,
+          "brutto": 1,
+          "unit": "g"
+        },
+        {
+          "productId": "812",
+          "productName": "Ակռոշկա",
+          "netto": 5,
+          "brutto": 5,
+          "unit": "g"
+        },
+        {
+          "productId": "817",
+          "productName": "Տակո",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "819",
+          "productName": "Շաուրմա քյուֆթայով",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "820",
+          "productName": "Ձվածեղ",
+          "netto": 2,
+          "brutto": 2,
+          "unit": "g"
+        },
+        {
+          "productId": "98",
+          "productName": "Խինկալի XXL",
+          "netto": 5,
+          "brutto": 5,
+          "unit": "g"
+        }
+      ]
     }
   ]
 }

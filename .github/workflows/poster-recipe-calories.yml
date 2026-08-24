@@ -1,0 +1,58 @@
+name: CIA Nutrition — Poster Recipe Calculator
+
+on:
+  workflow_dispatch:
+    inputs:
+      restaurant_id:
+        description: Firestore restaurant slug
+        required: true
+        default: poster-test
+        type: string
+      force:
+        description: Recalculate products even when recipe/nutrition is unchanged
+        required: true
+        default: true
+        type: boolean
+
+jobs:
+  calculate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    env:
+      CIA_RESTAURANT_ID: ${{ inputs.restaurant_id || 'poster-test' }}
+      NUTRITION_FORCE: ${{ inputs.force }}
+      FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate calculator
+        run: node --check scripts/calculate-product-nutrition.cjs
+
+      - name: Install Firebase Admin SDK
+        run: npm install --no-save firebase-admin@14.2.0
+
+      - name: Verify Firebase secret
+        run: |
+          test -n "$FIREBASE_SERVICE_ACCOUNT" || {
+            echo 'Missing FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU'
+            exit 1
+          }
+          node -e "JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT); console.log('Firebase service account JSON: OK')"
+
+      - name: Build ingredient catalog from Poster recipes
+        run: node scripts/build-ingredient-catalog.cjs
+
+      - name: Calculate calories and macros from Poster recipes
+        run: node scripts/calculate-product-nutrition.cjs
+
+      - name: Summary
+        if: always()
+        run: |
+          echo 'CIA Nutrition calculation finished.'
+          echo "Restaurant: $CIA_RESTAURANT_ID"
+          echo "Force: $NUTRITION_FORCE"

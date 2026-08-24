@@ -1,7 +1,370 @@
 {
   "version": "1.0.0",
   "restaurantId": "poster-test",
-  "description": "Manual nutrition records for the current Poster priority ingredients. Values must be confirmed before being marked verified.",
-  "calculationBasis": "values per 100g",
-  "entries": []
+  "description": "CIA manual nutrition records. Fill only confirmed values. Values are per 100g.",
+  "calculationBasis": "per 100g",
+  "entries": [
+    {
+      "priority": 1,
+      "id": "poster_340",
+      "name": "Соль морская",
+      "aliases": [
+        "Соль морская"
+      ],
+      "usedInProductCount": 29,
+      "occurrences": 29,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": null,
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 2,
+      "id": "poster_337",
+      "name": "Перец черный /молотый/",
+      "aliases": [
+        "Перец черный /молотый/"
+      ],
+      "usedInProductCount": 23,
+      "occurrences": 23,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": null,
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 3,
+      "id": "poster_645",
+      "name": "лимон/лайм",
+      "aliases": [
+        "лимон/лайм",
+        "пюре из абрикоса"
+      ],
+      "usedInProductCount": 22,
+      "occurrences": 23,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": null,
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 4,
+      "id": "poster_395",
+      "name": "растительное масло",
+      "aliases": [
+        "растительное масло"
+      ],
+      "usedInProductCount": 21,
+      "occurrences": 21,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": null,
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 5,
+      "id": "poster_377",
+      "name": "Клубника",
+      "aliases": [
+        "Клубника"
+      ],
+      "usedInProductCount": 18,
+      "occurrences": 18,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": null,
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 6,
+      "id": "poster_256",
+      "name": "кофе эспрессо",
+      "aliases": [
+        "кофе эспрессо"
+      ],
+      "usedInProductCount": 18,
+      "occurrences": 18,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": null,
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 7,
+      "id": "poster_442",
+      "name": "мята свежая",
+      "aliases": [
+        "мята свежая"
+      ],
+      "usedInProductCount": 17,
+      "occurrences": 17,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": null,
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 8,
+      "id": "poster_353",
+      "name": "Яйца",
+      "aliases": [
+        "Яйца"
+      ],
+      "usedInProductCount": 17,
+      "occurrences": 17,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": null,
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 9,
+      "id": "poster_436",
+      "name": "Лимон",
+      "aliases": [
+        "Лимон"
+      ],
+      "usedInProductCount": 16,
+      "occurrences": 16,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": null,
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 10,
+      "id": "poster_534",
+      "name": "мороженое",
+      "aliases": [
+        "мороженое"
+      ],
+      "usedInProductCount": 15,
+      "occurrences": 15,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": null,
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 11,
+      "id": "poster_289",
+      "name": "сироп Monin",
+      "aliases": [
+        "сироп Monin"
+      ],
+      "usedInProductCount": 15,
+      "occurrences": 15,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": null,
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 12,
+      "id": "poster_274",
+      "name": "салатный лист",
+      "aliases": [
+        "салатный лист"
+      ],
+      "usedInProductCount": 14,
+      "occurrences": 14,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": null,
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 13,
+      "id": "poster_278",
+      "name": "свежая зелень",
+      "aliases": [
+        "свежая зелень"
+      ],
+      "usedInProductCount": 14,
+      "occurrences": 14,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": null,
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 14,
+      "id": "poster_493",
+      "name": "баклажан запеченный",
+      "aliases": [
+        "баклажан запеченный",
+        "микрогрин"
+      ],
+      "usedInProductCount": 12,
+      "occurrences": 12,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": null,
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 15,
+      "id": "poster_335",
+      "name": "Перец красный /молотый/",
+      "aliases": [
+        "Перец красный /молотый/"
+      ],
+      "usedInProductCount": 12,
+      "occurrences": 12,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": null,
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 16,
+      "id": "poster_418",
+      "name": "сахар тросниковый",
+      "aliases": [
+        "сахар тросниковый"
+      ],
+      "usedInProductCount": 12,
+      "occurrences": 12,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": null,
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 17,
+      "id": "poster_396",
+      "name": "сливочное масло",
+      "aliases": [
+        "сливочное масло"
+      ],
+      "usedInProductCount": 12,
+      "occurrences": 12,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": null,
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 18,
+      "id": "poster_287",
+      "name": "молоко /Parmalat/",
+      "aliases": [
+        "молоко /Parmalat/"
+      ],
+      "usedInProductCount": 11,
+      "occurrences": 11,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": null,
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 19,
+      "id": "poster_633",
+      "name": "огурцы чищенные",
+      "aliases": [
+        "огурцы чищенные"
+      ],
+      "usedInProductCount": 11,
+      "occurrences": 11,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": null,
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 20,
+      "id": "poster_339",
+      "name": "Соль",
+      "aliases": [
+        "Соль"
+      ],
+      "usedInProductCount": 11,
+      "occurrences": 11,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": null,
+      "verified": false,
+      "status": "needs_review"
+    }
+  ]
 }

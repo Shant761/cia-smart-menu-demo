@@ -19,7 +19,7 @@ jobs:
     name: Calculate calories and macros
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
     env:
       CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
       NUTRITION_FORCE: ${{ inputs.force }}
@@ -35,6 +35,7 @@ jobs:
 
       - name: Validate nutrition scripts and database
         run: |
+          node --check scripts/verify-top20-6-10.cjs
           node --check scripts/build-ingredient-catalog.cjs
           node --check scripts/lookup-nutrition-local.cjs
           node --check scripts/calculate-product-nutrition.cjs
@@ -49,6 +50,9 @@ jobs:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
         run: |
           test -n "$FIREBASE_SERVICE_ACCOUNT" || (echo 'Missing FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU' && exit 1)
+
+      - name: Apply verified CIA Top 20 nutrition
+        run: node scripts/verify-top20-6-10.cjs
 
       - name: Merge verified CIA manual nutrition into engine database
         run: node scripts/merge-manual-into-nutrition-database.cjs
@@ -68,6 +72,18 @@ jobs:
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
         run: node scripts/calculate-product-nutrition.cjs
+
+      - name: Commit updated manual nutrition database
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/cia-nutrition-manual-top20.json
+          if git diff --cached --quiet; then
+            echo "No nutrition database changes."
+          else
+            git commit -m "chore: verify CIA nutrition top 20 entries"
+            git push
+          fi
 
       - name: Nutrition pipeline complete
         run: |

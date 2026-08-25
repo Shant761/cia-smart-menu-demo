@@ -38,7 +38,7 @@ on:
     secrets:
       FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU:
         required: true
-      USDA_DATA_API_KEY:
+      USDA_API_KEY:
         required: true
 
 jobs:
@@ -65,10 +65,10 @@ jobs:
       - name: Verify secrets
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-          USDA_DATA_API_KEY: ${{ secrets.USDA_DATA_API_KEY }}
+          USDA_API_KEY: ${{ secrets.USDA_API_KEY }}
         run: |
           test -n "$FIREBASE_SERVICE_ACCOUNT" || (echo 'Missing FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU' && exit 1)
-          test -n "$USDA_DATA_API_KEY" || (echo 'Missing USDA_DATA_API_KEY' && exit 1)
+          test -n "$USDA_API_KEY" || (echo 'Missing USDA_API_KEY' && exit 1)
       - name: Rebuild ingredient catalog from Poster recipes
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
@@ -76,7 +76,7 @@ jobs:
       - name: Match ingredients against USDA FoodData Central
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-          USDA_DATA_API_KEY: ${{ secrets.USDA_DATA_API_KEY }}
+          USDA_API_KEY: ${{ secrets.USDA_API_KEY }}
         run: node scripts/lookup-nutrition-usda.cjs
       - name: Calculate product nutrition from Poster recipes
         env:

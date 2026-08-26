@@ -5,6 +5,24 @@ const file = path.join(__dirname, '..', 'data', 'cia-nutrition-manual-top20.json
 const data = JSON.parse(fs.readFileSync(file, 'utf8'));
 
 const verified = {
+  poster_645: {
+    kcalPer100g: 29,
+    proteinPer100g: 1.1,
+    fatPer100g: 0.3,
+    carbsPer100g: 9.32,
+    aliases: ['лимон/лайм', 'лимон', 'лайм'],
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 167746; lemons, raw, without peel; used as conservative lemon/lime base'
+  },
+  poster_395: {
+    kcalPer100g: 884,
+    proteinPer100g: 0,
+    fatPer100g: 100,
+    carbsPer100g: 0,
+    aliases: ['растительное масло', 'vegetable oil'],
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 172370; vegetable oil, refined'
+  },
   poster_256: {
     kcalPer100g: 9,
     proteinPer100g: 0.12,

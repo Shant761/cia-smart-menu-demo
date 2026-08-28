@@ -265,108 +265,120 @@
       "id": "poster_335",
       "name": "Перец красный /молотый/",
       "aliases": [
-        "Перец красный /молотый/"
+        "Перец красный /молотый/",
+        "красный молотый перец",
+        "paprika",
+        "red pepper powder"
       ],
       "usedInProductCount": 12,
       "occurrences": 12,
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "sourceReference": null,
-      "verified": false,
-      "status": "needs_review"
+      "kcalPer100g": 282,
+      "proteinPer100g": 14.14,
+      "fatPer100g": 12.89,
+      "carbsPer100g": 53.99,
+      "source": "USDA FoodData Central",
+      "sourceReference": "paprika / red pepper spice, ground; generic verified base for Poster red ground pepper",
+      "verified": true,
+      "status": "verified"
     },
     {
       "priority": 16,
       "id": "poster_418",
       "name": "сахар тросниковый",
       "aliases": [
-        "сахар тросниковый"
+        "сахар тросниковый",
+        "brown sugar",
+        "cane sugar"
       ],
       "usedInProductCount": 12,
       "occurrences": 12,
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "sourceReference": null,
-      "verified": false,
-      "status": "needs_review"
+      "kcalPer100g": 380,
+      "proteinPer100g": 0.12,
+      "fatPer100g": 0,
+      "carbsPer100g": 98.09,
+      "source": "USDA FoodData Central",
+      "sourceReference": "sugars, brown; used as verified base for cane/brown sugar",
+      "verified": true,
+      "status": "verified"
     },
     {
       "priority": 17,
       "id": "poster_396",
       "name": "сливочное масло",
       "aliases": [
-        "сливочное масло"
+        "сливочное масло",
+        "butter"
       ],
       "usedInProductCount": 12,
       "occurrences": 12,
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "sourceReference": null,
-      "verified": false,
-      "status": "needs_review"
+      "kcalPer100g": 717,
+      "proteinPer100g": 0.85,
+      "fatPer100g": 81.11,
+      "carbsPer100g": 0.06,
+      "source": "USDA FoodData Central",
+      "sourceReference": "butter, with salt; generic butter base",
+      "verified": true,
+      "status": "verified"
     },
     {
       "priority": 18,
       "id": "poster_287",
       "name": "молоко /Parmalat/",
       "aliases": [
-        "молоко /Parmalat/"
+        "молоко /Parmalat/",
+        "молоко",
+        "whole milk"
       ],
       "usedInProductCount": 11,
       "occurrences": 11,
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "sourceReference": null,
-      "verified": false,
-      "status": "needs_review"
+      "kcalPer100g": 61,
+      "proteinPer100g": 3.15,
+      "fatPer100g": 3.27,
+      "carbsPer100g": 4.78,
+      "source": "USDA FoodData Central",
+      "sourceReference": "milk, whole, 3.25% milkfat; used as base for Parmalat milk",
+      "verified": true,
+      "status": "verified"
     },
     {
       "priority": 19,
       "id": "poster_633",
       "name": "огурцы чищенные",
       "aliases": [
-        "огурцы чищенные"
+        "огурцы чищенные",
+        "огурец очищенный",
+        "cucumber peeled"
       ],
       "usedInProductCount": 11,
       "occurrences": 11,
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "sourceReference": null,
-      "verified": false,
-      "status": "needs_review"
+      "kcalPer100g": 12,
+      "proteinPer100g": 0.59,
+      "fatPer100g": 0.16,
+      "carbsPer100g": 2.16,
+      "source": "USDA FoodData Central",
+      "sourceReference": "cucumber, peeled, raw",
+      "verified": true,
+      "status": "verified"
     },
     {
       "priority": 20,
       "id": "poster_339",
       "name": "Соль",
       "aliases": [
-        "Соль"
+        "Соль",
+        "соль",
+        "salt"
       ],
       "usedInProductCount": 11,
       "occurrences": 11,
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "sourceReference": null,
-      "verified": false,
-      "status": "needs_review"
+      "kcalPer100g": 0,
+      "proteinPer100g": 0,
+      "fatPer100g": 0,
+      "carbsPer100g": 0,
+      "source": "USDA FoodData Central",
+      "sourceReference": "salt / sodium chloride; nutrition macros treated as 0",
+      "verified": true,
+      "status": "verified"
     }
   ]
 }

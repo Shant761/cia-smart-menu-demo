@@ -21,6 +21,7 @@ function grams(ingredient) {
   if (unit === 'kg' || unit === 'кг') return value * 1000;
   if (unit === 'ml' || unit === 'мл') return value * mlDensity(ingredient);
   if (unit === 'l' || unit === 'л') return value * 1000 * mlDensity(ingredient);
+  if (unit === 'p' || unit === 'pc' || unit === 'pcs' || unit === 'шт') return value;
   return null;
 }
 function macro(nutrition, key) {

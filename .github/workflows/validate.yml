@@ -30,6 +30,7 @@ jobs:
           node --check scripts/apply-ingredient-overrides.cjs
           node --check scripts/enrich-products-from-ingredient-catalog.cjs
           node --check scripts/sync-poster-to-firestore.cjs
+          node --check scripts/export-public-menu-snapshot.cjs
 
       - name: Validate JSON data
         run: |

@@ -11,6 +11,7 @@ on:
   push:
     paths:
       - 'scripts/build-poster-nutrition-priority-top20.cjs'
+      - '.github/workflows/nutrition-priority-top20.yml'
 
 permissions:
   contents: write

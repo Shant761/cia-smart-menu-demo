@@ -14,7 +14,8 @@ const serviceAccount = JSON.parse(requiredEnv('FIREBASE_SERVICE_ACCOUNT'));
 initializeApp({ credential: cert(serviceAccount), projectId: 'cia-smart-menu' });
 const db = getFirestore();
 
-const outPath = path.join(__dirname, '..', 'data', 'cia-nutrition-priority-top20.json');
+const limit = Number(process.env.CIA_PRIORITY_LIMIT || 50);
+const outPath = path.join(__dirname, '..', 'data', `cia-nutrition-priority-top${limit}.json`);
 
 async function main() {
   const restaurantRef = db.collection('restaurants').doc(restaurantId);
@@ -41,14 +42,15 @@ async function main() {
       b.occurrences - a.occurrences ||
       a.name.localeCompare(b.name)
     )
-    .slice(0, 20)
+    .slice(0, limit)
     .map((entry, index) => ({ priority: index + 1, ...entry }));
 
   const output = {
-    version: '2.0.0',
+    version: '3.0.0',
     restaurantId,
     generatedFrom: 'Firestore restaurants/{restaurantId}/ingredients_catalog',
     ranking: 'usedInProductCount DESC, occurrences DESC, name ASC',
+    limit,
     total: entries.length,
     entries
   };

@@ -64,9 +64,9 @@ function getNutrition(product) {
   if (!Number.isFinite(calories)) return null;
   return {
     calories: Math.round(calories),
-    protein: Number(nutrition.per100g?.protein_g),
-    fat: Number(nutrition.per100g?.fat_g),
-    carbs: Number(nutrition.per100g?.carbs_g),
+    protein: Number(nutrition.per100g?.protein),
+    fat: Number(nutrition.per100g?.fat),
+    carbs: Number(nutrition.per100g?.carbohydrates),
     servingGrams: Number(nutrition.servingGrams)
   };
 }
@@ -130,6 +130,7 @@ async function init() {
     ]);
     if (!menuResponse.ok || !allergenResponse.ok) throw new Error('Failed to load menu data');
     state.menu = await menuResponse.json();
+    window.dispatchEvent(new CustomEvent('cia:menu-loaded', { detail: { menu: state.menu } }));
     state.allergens = await allergenResponse.json();
     bindEvents();
     renderAll();

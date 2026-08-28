@@ -197,18 +197,21 @@
       "id": "nutrition_db4b593cedf2b826cdea6a75",
       "name": "Beluga",
       "aliases": [],
-      "kcalPer100g": 3766,
-      "proteinPer100g": 0,
-      "fatPer100g": 100,
-      "carbsPer100g": 0,
-      "source": "USDA FoodData Central FDC 168981",
-      "verified": true,
-      "status": "verified",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "verified": false,
+      "status": "needs_review",
       "usda": {
         "fdcId": 168981,
         "description": "Oil, beluga, whale (Alaska Native)",
-        "matchScore": 1
-      }
+        "matchScore": 1,
+        "rejected": true,
+        "rejectionReason": "False positive: restaurant ingredient is a beverage brand, not whale oil."
+      },
+      "sourceReference": "Rejected false match: Beluga vodka must not match beluga whale oil."
     },
     {
       "id": "nutrition_161096c0d381fb5cea377436",

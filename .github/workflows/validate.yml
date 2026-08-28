@@ -23,6 +23,7 @@ jobs:
           node --check admin.js
           node --check customization.js
           node --check firestore-menu-bridge.js
+          node --check nutrition-ui-bridge.js
           node --check poster-customization-guard.js
           node --check scripts/apply-admin-reviews.cjs
           node --check scripts/grant-restaurant-admin.cjs

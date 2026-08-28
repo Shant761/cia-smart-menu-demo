@@ -27,6 +27,22 @@
     window.setTimeout(() => finish(window.ciaFirebase || null), timeoutMs);
   });
 
+  const loadSnapshot = async () => {
+    if (demoMode || restaurantId === 'garden-table') return null;
+
+    const response = await nativeFetch(`data/public-menus/${encodeURIComponent(restaurantId)}.json`, {
+      cache: 'no-cache'
+    });
+
+    if (!response.ok) return null;
+
+    const menu = await response.json();
+    if (!menu?.products?.length) return null;
+
+    console.info('[CIA Smart Menu] Menu loaded from public snapshot:', restaurantId);
+    return menu;
+  };
+
   const firestoreErrorResponse = (message) => new Response(JSON.stringify({
     restaurant: { name: { ru: 'Меню временно недоступно', en: 'Menu temporarily unavailable', hy: 'Մենյուն ժամանակավորապես անհասանելի է' }, meta: {} },
     categories: [],
@@ -43,11 +59,19 @@
     if (!isMenuRequest) return nativeFetch(input, init);
 
     try {
+      const snapshotMenu = await loadSnapshot();
+      if (snapshotMenu) {
+        return new Response(JSON.stringify(snapshotMenu), {
+          status: 200,
+          headers: { 'Content-Type': 'application/json; charset=utf-8' }
+        });
+      }
+
       const firebase = await waitForFirebase();
       if (firebase?.loadPublicMenu) {
         const menu = await firebase.loadPublicMenu(restaurantId);
         if (menu?.products?.length) {
-          console.info('[CIA Smart Menu] Menu loaded from Firestore:', restaurantId);
+          console.info('[CIA Smart Menu] Menu loaded from Firestore fallback:', restaurantId);
           return new Response(JSON.stringify(menu), {
             status: 200,
             headers: { 'Content-Type': 'application/json; charset=utf-8' }
@@ -55,8 +79,8 @@
         }
       }
     } catch (error) {
-      console.warn('[CIA Smart Menu] Firestore menu load failed.', error);
-      if (!allowDemoFallback) return firestoreErrorResponse('firestore_unavailable');
+      console.warn('[CIA Smart Menu] Public menu load failed.', error);
+      if (!allowDemoFallback) return firestoreErrorResponse('public_menu_unavailable');
     }
 
     // Static fallback is enabled only for the explicit demo mode.

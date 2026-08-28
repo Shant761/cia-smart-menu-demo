@@ -1,7 +1,7 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "restaurantId": "poster-test",
-  "description": "CIA manual nutrition records. Values are per 100g. Only confirmed records are marked verified. Extended through priority top 50.",
+  "description": "CIA manual nutrition records. Values are per 100g. Only confirmed records are marked verified. Extended through priority top 50 with generic verified bases where appropriate.",
   "calculationBasis": "per 100g",
   "entries": [
     {
@@ -174,18 +174,20 @@
       "id": "poster_534",
       "name": "мороженое",
       "aliases": [
-        "мороженое"
+        "мороженое",
+        "ice cream",
+        "vanilla ice cream"
       ],
       "usedInProductCount": 15,
       "occurrences": 15,
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "sourceReference": null,
-      "verified": false,
-      "status": "needs_review"
+      "kcalPer100g": 207,
+      "proteinPer100g": 3.5,
+      "fatPer100g": 11,
+      "carbsPer100g": 23.6,
+      "source": "USDA FoodData Central",
+      "sourceReference": "ice creams, vanilla; generic base for restaurant ice cream",
+      "verified": true,
+      "status": "verified"
     },
     {
       "priority": 11,
@@ -618,18 +620,20 @@
       "id": "poster_293",
       "name": "Кола",
       "aliases": [
-        "Кола"
+        "Кола",
+        "cola",
+        "regular cola"
       ],
       "usedInProductCount": 7,
       "occurrences": 7,
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "sourceReference": null,
-      "verified": false,
-      "status": "needs_review"
+      "kcalPer100g": 41,
+      "proteinPer100g": 0,
+      "fatPer100g": 0,
+      "carbsPer100g": 10.58,
+      "source": "USDA FoodData Central",
+      "sourceReference": "carbonated beverage, cola, regular",
+      "verified": true,
+      "status": "verified"
     },
     {
       "priority": 34,

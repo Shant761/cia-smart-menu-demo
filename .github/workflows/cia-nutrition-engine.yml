@@ -1,6 +1,15 @@
 name: CIA Nutrition Engine — poster-test
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'data/cia-nutrition-manual-top20.json'
+      - 'scripts/calculate-product-nutrition.cjs'
+      - 'scripts/lookup-nutrition-local.cjs'
+      - 'scripts/build-ingredient-catalog.cjs'
+      - '.github/workflows/cia-nutrition-engine.yml'
   workflow_dispatch:
     inputs:
       restaurant_id:
@@ -21,8 +30,8 @@ jobs:
     permissions:
       contents: write
     env:
-      CIA_RESTAURANT_ID: ${{ inputs.restaurant_id }}
-      NUTRITION_FORCE: ${{ inputs.force }}
+      CIA_RESTAURANT_ID: ${{ inputs.restaurant_id || 'poster-test' }}
+      NUTRITION_FORCE: ${{ inputs.force || true }}
 
     steps:
       - name: Checkout repository
@@ -60,7 +69,7 @@ jobs:
       - name: Build CIA ingredient catalog from Poster recipes
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-          FORCE_CATALOG_BUILD: ${{ inputs.force }}
+          FORCE_CATALOG_BUILD: ${{ inputs.force || true }}
         run: node scripts/build-ingredient-catalog.cjs
 
       - name: Match ingredients against CIA-owned nutrition database

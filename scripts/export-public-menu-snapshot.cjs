@@ -65,6 +65,57 @@ function applyProductNameOverrides(product) {
 
   return product;
 }
+function compactNutrition(nutrition) {
+  if (!nutrition || typeof nutrition !== 'object') return null;
+  return {
+    status: nutrition.status || null,
+    calories: nutrition.calories ?? null,
+    protein: nutrition.protein ?? null,
+    fat: nutrition.fat ?? null,
+    carbohydrates: nutrition.carbohydrates ?? null,
+    servingGrams: nutrition.servingGrams ?? null,
+    per100g: nutrition.per100g || null,
+    source: nutrition.source || null
+  };
+}
+function compactAllergens(allergens) {
+  if (!Array.isArray(allergens)) return [];
+  return allergens
+    .map((item) => {
+      if (typeof item === 'string') return clean(item);
+      if (!item || typeof item !== 'object') return null;
+      return {
+        id: item.id || null,
+        status: item.status || null,
+        source: item.source || null
+      };
+    })
+    .filter(Boolean);
+}
+function compactCategory(category) {
+  return {
+    id: String(category.id),
+    name: category.name || {},
+    order: category.order ?? 999
+  };
+}
+function compactProduct(product) {
+  const posterProductId = product.posterProductId ?? product.id ?? null;
+  return {
+    id: Number(product.id ?? posterProductId),
+    posterProductId,
+    name: product.name || {},
+    description: product.description || {},
+    price: product.price ?? null,
+    category: String(product.category ?? product.posterCategoryId ?? ''),
+    image: product.image || product.posterPhotoPath || null,
+    emoji: product.emoji || '🍽️',
+    ingredients: product.ingredients || {},
+    allergens: compactAllergens(product.allergens),
+    nutrition: compactNutrition(product.nutrition),
+    sortOrder: product.sortOrder ?? 9999
+  };
+}
 
 async function exportPublicMenu(restaurantId) {
   const restaurantRef = db.collection('restaurants').doc(restaurantId);
@@ -93,16 +144,16 @@ async function exportPublicMenu(restaurantId) {
     .sort((a, b) => (a.sortOrder ?? 9999) - (b.sortOrder ?? 9999));
 
   return {
-    version: 1,
+    version: 2,
     source: 'firestore_public_menu_snapshot',
     restaurantId,
     exportedAt: new Date().toISOString(),
     restaurant: {
-      name: restaurant.name,
-      meta: restaurant.meta
+      name: restaurant.name || {},
+      meta: restaurant.meta || {}
     },
-    categories,
-    products
+    categories: categories.map(compactCategory),
+    products: products.map(compactProduct)
   };
 }
 

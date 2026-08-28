@@ -21,6 +21,7 @@ const db = getFirestore(app);
 
 const clean = (value) => String(value ?? '').replace(/\s+/g, ' ').trim();
 const LANGS = ['hy', 'ru', 'en'];
+const publicMenuCache = new Map();
 
 function ingredientOverrideKey(row, index) {
   const id = row?.ingredientId ?? row?.posterIngredientId;
@@ -75,7 +76,7 @@ function applyProductNameOverrides(product) {
   return product;
 }
 
-async function loadPublicMenu(restaurantId = 'garden-table') {
+async function fetchPublicMenu(restaurantId) {
   const restaurantSnapshot = await getDoc(doc(db, 'restaurants', restaurantId));
   if (!restaurantSnapshot.exists()) {
     throw new Error(`Restaurant ${restaurantId} was not found in Firestore`);
@@ -112,6 +113,13 @@ async function loadPublicMenu(restaurantId = 'garden-table') {
     categories,
     products
   };
+}
+
+async function loadPublicMenu(restaurantId = 'garden-table') {
+  if (!publicMenuCache.has(restaurantId)) {
+    publicMenuCache.set(restaurantId, fetchPublicMenu(restaurantId));
+  }
+  return publicMenuCache.get(restaurantId);
 }
 
 window.ciaFirebase = {

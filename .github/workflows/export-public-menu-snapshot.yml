@@ -1,0 +1,56 @@
+name: Export Public Menu Snapshot
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/export-public-menu-snapshot.cjs'
+      - '.github/workflows/export-public-menu-snapshot.yml'
+  workflow_dispatch:
+    inputs:
+      restaurant_id:
+        description: Firestore restaurant slug
+        required: true
+        default: poster-test
+        type: string
+
+jobs:
+  export-snapshot:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      CIA_RESTAURANT_ID: ${{ inputs.restaurant_id || 'poster-test' }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate exporter syntax
+        run: node --check scripts/export-public-menu-snapshot.cjs
+
+      - name: Install Firebase Admin SDK
+        run: npm install --no-save firebase-admin@14.2.0
+
+      - name: Export public menu snapshot
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+        run: node scripts/export-public-menu-snapshot.cjs
+
+      - name: Commit public menu snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/public-menus/
+          if git diff --cached --quiet; then
+            echo "No public menu snapshot changes."
+          else
+            git commit -m "chore: update public menu snapshot"
+            git push
+          fi

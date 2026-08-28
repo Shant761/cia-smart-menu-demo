@@ -1,7 +1,7 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "restaurantId": "poster-test",
-  "description": "CIA manual nutrition records. Values are per 100g. Only confirmed records are marked verified.",
+  "description": "CIA manual nutrition records. Values are per 100g. Only confirmed records are marked verified. Extended through priority top 50.",
   "calculationBasis": "per 100g",
   "entries": [
     {
@@ -377,6 +377,582 @@
       "carbsPer100g": 0,
       "source": "USDA FoodData Central",
       "sourceReference": "salt / sodium chloride; nutrition macros treated as 0",
+      "verified": true,
+      "status": "verified"
+    },
+    {
+      "priority": 21,
+      "id": "poster_362",
+      "name": "Апельсин",
+      "aliases": [
+        "Апельсин",
+        "orange"
+      ],
+      "usedInProductCount": 10,
+      "occurrences": 10,
+      "kcalPer100g": 47,
+      "proteinPer100g": 0.94,
+      "fatPer100g": 0.12,
+      "carbsPer100g": 11.75,
+      "source": "USDA FoodData Central",
+      "sourceReference": "oranges, raw, all commercial varieties",
+      "verified": true,
+      "status": "verified"
+    },
+    {
+      "priority": 22,
+      "id": "poster_291",
+      "name": "Газированная вода (бар)",
+      "aliases": [
+        "Газированная вода (бар)",
+        "газированная вода",
+        "carbonated water",
+        "club soda"
+      ],
+      "usedInProductCount": 10,
+      "occurrences": 10,
+      "kcalPer100g": 0,
+      "proteinPer100g": 0,
+      "fatPer100g": 0,
+      "carbsPer100g": 0,
+      "source": "USDA FoodData Central",
+      "sourceReference": "carbonated water / club soda; unsweetened macros treated as 0",
+      "verified": true,
+      "status": "verified"
+    },
+    {
+      "priority": 23,
+      "id": "poster_563",
+      "name": "фисташка",
+      "aliases": [
+        "фисташка",
+        "pistachios"
+      ],
+      "usedInProductCount": 10,
+      "occurrences": 10,
+      "kcalPer100g": 560,
+      "proteinPer100g": 20.16,
+      "fatPer100g": 45.32,
+      "carbsPer100g": 27.17,
+      "source": "USDA FoodData Central",
+      "sourceReference": "nuts, pistachio nuts, raw",
+      "verified": true,
+      "status": "verified"
+    },
+    {
+      "priority": 24,
+      "id": "poster_55",
+      "name": "Шоколад Арколад",
+      "aliases": [
+        "Шоколад Арколад"
+      ],
+      "usedInProductCount": 10,
+      "occurrences": 10,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": "Brand-specific chocolate; need package or supplier card before publishing.",
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 25,
+      "id": "poster_115",
+      "name": "Havana Club 3 Anos",
+      "aliases": [
+        "Havana Club 3 Anos",
+        "rum",
+        "white rum"
+      ],
+      "usedInProductCount": 9,
+      "occurrences": 9,
+      "kcalPer100g": 231,
+      "proteinPer100g": 0,
+      "fatPer100g": 0,
+      "carbsPer100g": 0,
+      "source": "USDA FoodData Central",
+      "sourceReference": "alcoholic beverage, distilled, rum, 80 proof; generic base for Havana Club 3 Anos",
+      "verified": true,
+      "status": "verified"
+    },
+    {
+      "priority": 26,
+      "id": "poster_591",
+      "name": "болгарский очищеный",
+      "aliases": [
+        "болгарский очищеный",
+        "болгарский перец",
+        "sweet pepper",
+        "red bell pepper"
+      ],
+      "usedInProductCount": 9,
+      "occurrences": 9,
+      "kcalPer100g": 31,
+      "proteinPer100g": 0.99,
+      "fatPer100g": 0.3,
+      "carbsPer100g": 6.03,
+      "source": "USDA FoodData Central",
+      "sourceReference": "peppers, sweet, red, raw; used as generic cleaned bell pepper base",
+      "verified": true,
+      "status": "verified"
+    },
+    {
+      "priority": 27,
+      "id": "poster_477",
+      "name": "голубика",
+      "aliases": [
+        "голубика",
+        "blueberries"
+      ],
+      "usedInProductCount": 9,
+      "occurrences": 9,
+      "kcalPer100g": 57,
+      "proteinPer100g": 0.74,
+      "fatPer100g": 0.33,
+      "carbsPer100g": 14.49,
+      "source": "USDA FoodData Central",
+      "sourceReference": "blueberries, raw",
+      "verified": true,
+      "status": "verified"
+    },
+    {
+      "priority": 28,
+      "id": "poster_251",
+      "name": "натуральный сок",
+      "aliases": [
+        "натуральный сок"
+      ],
+      "usedInProductCount": 9,
+      "occurrences": 9,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": "Natural juice is ambiguous by fruit/type.",
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 29,
+      "id": "poster_632",
+      "name": "помидоры чищенные",
+      "aliases": [
+        "помидоры чищенные",
+        "помидоры",
+        "tomatoes peeled",
+        "tomatoes raw"
+      ],
+      "usedInProductCount": 9,
+      "occurrences": 9,
+      "kcalPer100g": 18,
+      "proteinPer100g": 0.88,
+      "fatPer100g": 0.2,
+      "carbsPer100g": 3.89,
+      "source": "USDA FoodData Central",
+      "sourceReference": "tomatoes, red, ripe, raw; used as base for peeled tomatoes",
+      "verified": true,
+      "status": "verified"
+    },
+    {
+      "priority": 30,
+      "id": "poster_516",
+      "name": "вишня",
+      "aliases": [
+        "вишня",
+        "cherries"
+      ],
+      "usedInProductCount": 8,
+      "occurrences": 8,
+      "kcalPer100g": 63,
+      "proteinPer100g": 1.06,
+      "fatPer100g": 0.2,
+      "carbsPer100g": 16.01,
+      "source": "USDA FoodData Central",
+      "sourceReference": "cherries, sweet, raw; generic cherry base",
+      "verified": true,
+      "status": "verified"
+    },
+    {
+      "priority": 31,
+      "id": "poster_611",
+      "name": "соус сацебели",
+      "aliases": [
+        "соус сацебели"
+      ],
+      "usedInProductCount": 8,
+      "occurrences": 8,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": "Prepared satsebeli sauce varies by recipe/brand.",
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 32,
+      "id": "poster_521",
+      "name": "Водка для коктелйей",
+      "aliases": [
+        "Водка для коктелйей",
+        "водка",
+        "vodka"
+      ],
+      "usedInProductCount": 7,
+      "occurrences": 7,
+      "kcalPer100g": 231,
+      "proteinPer100g": 0,
+      "fatPer100g": 0,
+      "carbsPer100g": 0,
+      "source": "USDA FoodData Central",
+      "sourceReference": "alcoholic beverage, distilled, vodka, 80 proof; generic cocktail vodka base",
+      "verified": true,
+      "status": "verified"
+    },
+    {
+      "priority": 33,
+      "id": "poster_293",
+      "name": "Кола",
+      "aliases": [
+        "Кола"
+      ],
+      "usedInProductCount": 7,
+      "occurrences": 7,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": null,
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 34,
+      "id": "poster_44",
+      "name": "Мед",
+      "aliases": [
+        "Мед",
+        "мед",
+        "honey"
+      ],
+      "usedInProductCount": 7,
+      "occurrences": 7,
+      "kcalPer100g": 304,
+      "proteinPer100g": 0.3,
+      "fatPer100g": 0,
+      "carbsPer100g": 82.4,
+      "source": "USDA FoodData Central",
+      "sourceReference": "honey",
+      "verified": true,
+      "status": "verified"
+    },
+    {
+      "priority": 35,
+      "id": "poster_288",
+      "name": "пюре Monin",
+      "aliases": [
+        "пюре Monin"
+      ],
+      "usedInProductCount": 7,
+      "occurrences": 7,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": "Monin puree varies by flavor.",
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 36,
+      "id": "poster_52",
+      "name": "Сахар",
+      "aliases": [
+        "Сахар",
+        "сахар",
+        "sugar"
+      ],
+      "usedInProductCount": 7,
+      "occurrences": 7,
+      "kcalPer100g": 387,
+      "proteinPer100g": 0,
+      "fatPer100g": 0,
+      "carbsPer100g": 99.98,
+      "source": "USDA FoodData Central",
+      "sourceReference": "sugars, granulated",
+      "verified": true,
+      "status": "verified"
+    },
+    {
+      "priority": 37,
+      "id": "poster_270",
+      "name": "Сметана",
+      "aliases": [
+        "Сметана",
+        "сметана",
+        "sour cream"
+      ],
+      "usedInProductCount": 7,
+      "occurrences": 7,
+      "kcalPer100g": 198,
+      "proteinPer100g": 2.44,
+      "fatPer100g": 19.35,
+      "carbsPer100g": 4.63,
+      "source": "USDA FoodData Central",
+      "sourceReference": "sour cream, cultured",
+      "verified": true,
+      "status": "verified"
+    },
+    {
+      "priority": 38,
+      "id": "poster_166",
+      "name": "Сулугуни",
+      "aliases": [
+        "Сулугуни"
+      ],
+      "usedInProductCount": 7,
+      "occurrences": 7,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": "Suluguni needs a reliable product/source card before publishing.",
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 39,
+      "id": "poster_246",
+      "name": "Cointreau",
+      "aliases": [
+        "Cointreau"
+      ],
+      "usedInProductCount": 6,
+      "occurrences": 6,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": "Cointreau is brand-specific liqueur; need confirmed nutrition/alcohol/sugar basis.",
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 40,
+      "id": "poster_102",
+      "name": "Prosecco",
+      "aliases": [
+        "Prosecco"
+      ],
+      "usedInProductCount": 6,
+      "occurrences": 6,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": "Prosecco varies by sugar level/brand.",
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 41,
+      "id": "poster_513",
+      "name": "авокадо чищенный",
+      "aliases": [
+        "авокадо чищенный",
+        "авокадо",
+        "avocado"
+      ],
+      "usedInProductCount": 6,
+      "occurrences": 6,
+      "kcalPer100g": 160,
+      "proteinPer100g": 2,
+      "fatPer100g": 14.66,
+      "carbsPer100g": 8.53,
+      "source": "USDA FoodData Central",
+      "sourceReference": "avocados, raw, all commercial varieties",
+      "verified": true,
+      "status": "verified"
+    },
+    {
+      "priority": 42,
+      "id": "poster_535",
+      "name": "взбитые сливки",
+      "aliases": [
+        "взбитые сливки",
+        "whipped cream"
+      ],
+      "usedInProductCount": 6,
+      "occurrences": 6,
+      "kcalPer100g": 257,
+      "proteinPer100g": 3.2,
+      "fatPer100g": 22.22,
+      "carbsPer100g": 12.49,
+      "source": "USDA FoodData Central",
+      "sourceReference": "cream, whipped, cream topping, pressurized",
+      "verified": true,
+      "status": "verified"
+    },
+    {
+      "priority": 43,
+      "id": "poster_282",
+      "name": "грибы",
+      "aliases": [
+        "грибы",
+        "mushrooms"
+      ],
+      "usedInProductCount": 6,
+      "occurrences": 6,
+      "kcalPer100g": 22,
+      "proteinPer100g": 3.09,
+      "fatPer100g": 0.34,
+      "carbsPer100g": 3.26,
+      "source": "USDA FoodData Central",
+      "sourceReference": "mushrooms, white, raw",
+      "verified": true,
+      "status": "verified"
+    },
+    {
+      "priority": 44,
+      "id": "poster_157",
+      "name": "Лоры",
+      "aliases": [
+        "Лоры"
+      ],
+      "usedInProductCount": 6,
+      "occurrences": 6,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": "Lori cheese needs a reliable product/source card before publishing.",
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 45,
+      "id": "poster_598",
+      "name": "матнакаш",
+      "aliases": [
+        "матнакаш",
+        "сырники"
+      ],
+      "usedInProductCount": 6,
+      "occurrences": 6,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": "Matnakash recipe/weight varies by bakery.",
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 46,
+      "id": "poster_173",
+      "name": "Мацони",
+      "aliases": [
+        "Мацони",
+        "мацони",
+        "matsoni",
+        "plain whole milk yogurt"
+      ],
+      "usedInProductCount": 6,
+      "occurrences": 6,
+      "kcalPer100g": 61,
+      "proteinPer100g": 3.47,
+      "fatPer100g": 3.25,
+      "carbsPer100g": 4.66,
+      "source": "USDA FoodData Central",
+      "sourceReference": "yogurt, plain, whole milk; generic fermented dairy base for matsoni",
+      "verified": true,
+      "status": "verified"
+    },
+    {
+      "priority": 47,
+      "id": "poster_443",
+      "name": "оливковое масло",
+      "aliases": [
+        "оливковое масло",
+        "olive oil"
+      ],
+      "usedInProductCount": 6,
+      "occurrences": 6,
+      "kcalPer100g": 884,
+      "proteinPer100g": 0,
+      "fatPer100g": 100,
+      "carbsPer100g": 0,
+      "source": "USDA FoodData Central",
+      "sourceReference": "oil, olive, salad or cooking",
+      "verified": true,
+      "status": "verified"
+    },
+    {
+      "priority": 48,
+      "id": "poster_408",
+      "name": "орехи грецкие",
+      "aliases": [
+        "орехи грецкие",
+        "грецкие орехи",
+        "walnuts"
+      ],
+      "usedInProductCount": 6,
+      "occurrences": 6,
+      "kcalPer100g": 654,
+      "proteinPer100g": 15.23,
+      "fatPer100g": 65.21,
+      "carbsPer100g": 13.71,
+      "source": "USDA FoodData Central",
+      "sourceReference": "nuts, walnuts, English",
+      "verified": true,
+      "status": "verified"
+    },
+    {
+      "priority": 49,
+      "id": "poster_597",
+      "name": "пита",
+      "aliases": [
+        "пита"
+      ],
+      "usedInProductCount": 6,
+      "occurrences": 6,
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "fatPer100g": null,
+      "carbsPer100g": null,
+      "source": null,
+      "sourceReference": "Pita has unit p with zero netto in Poster; need grams per piece before calculation.",
+      "verified": false,
+      "status": "needs_review"
+    },
+    {
+      "priority": 50,
+      "id": "poster_559",
+      "name": "руккола чищенная",
+      "aliases": [
+        "руккола чищенная",
+        "руккола",
+        "arugula"
+      ],
+      "usedInProductCount": 6,
+      "occurrences": 6,
+      "kcalPer100g": 25,
+      "proteinPer100g": 2.58,
+      "fatPer100g": 0.66,
+      "carbsPer100g": 3.65,
+      "source": "USDA FoodData Central",
+      "sourceReference": "arugula, raw",
       "verified": true,
       "status": "verified"
     }

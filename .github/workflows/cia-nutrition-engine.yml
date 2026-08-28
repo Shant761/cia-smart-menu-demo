@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'data/cia-nutrition-manual-top20.json'
+      - 'data/nutrition-database.json'
       - 'scripts/calculate-product-nutrition.cjs'
       - 'scripts/lookup-nutrition-local.cjs'
       - 'scripts/build-ingredient-catalog.cjs'

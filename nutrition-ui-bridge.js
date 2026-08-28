@@ -5,39 +5,44 @@
   // Garden Table remains the visual demo. Real restaurants use Firestore nutrition.
   if (!restaurantId || restaurantId === 'garden-table') return;
 
-  const load = async () => {
+  const applyNutrition = (menu) => {
     try {
-      const firebase = window.ciaFirebase;
-      if (!firebase?.loadPublicMenu) return;
-
-      const menu = await firebase.loadPublicMenu(restaurantId);
       const products = Array.isArray(menu?.products) ? menu.products : [];
+      if (!products.length) return false;
 
-      // Clear demo values for products belonging to this real restaurant.
-      products.forEach((product) => {
-        delete nutritionByProduct[product.id];
-      });
+      if (typeof nutritionByProduct !== 'undefined') {
+        products.forEach((product) => {
+          delete nutritionByProduct[product.id];
+        });
 
-      let calculated = 0;
-      products.forEach((product) => {
-        if (product?.nutrition?.status !== 'calculated') return;
-        const calories = Number(product.nutrition.calories);
-        if (!Number.isFinite(calories)) return;
-        nutritionByProduct[product.id] = {
-          calories,
-          per100g: product.nutrition.per100g ?? null,
-          servingGrams: product.nutrition.servingGrams ?? null,
-          source: product.nutrition.source || 'Poster recipe + USDA'
-        };
-        calculated += 1;
-      });
+        let calculated = 0;
+        products.forEach((product) => {
+          if (product?.nutrition?.status !== 'calculated') return;
+          const calories = Number(product.nutrition.calories);
+          if (!Number.isFinite(calories)) return;
+          nutritionByProduct[product.id] = {
+            calories,
+            per100g: product.nutrition.per100g ?? null,
+            servingGrams: product.nutrition.servingGrams ?? null,
+            source: product.nutrition.source || 'Poster recipe + USDA'
+          };
+          calculated += 1;
+        });
 
-      console.info(`[CIA Smart Menu] Verified nutrition loaded: ${calculated} dishes for ${restaurantId}`);
+        console.info(`[CIA Smart Menu] Verified nutrition loaded: ${calculated} dishes for ${restaurantId}`);
+      }
+
       if (typeof renderAll === 'function' && state?.menu) renderAll();
+      return true;
     } catch (error) {
-      console.warn('[CIA Smart Menu] Nutrition load failed.', error);
+      console.warn('[CIA Smart Menu] Nutrition apply failed.', error);
+      return false;
     }
   };
 
-  load();
+  if (state?.menu && applyNutrition(state.menu)) return;
+
+  window.addEventListener('cia:menu-loaded', (event) => {
+    applyNutrition(event.detail?.menu || state?.menu);
+  }, { once: true });
 })();

@@ -11,7 +11,7 @@ on:
     inputs:
       restaurant_id:
         description: Firestore restaurant slug
-        required: true
+        required: false
         default: poster-test
         type: string
 

@@ -6,12 +6,21 @@ const PROJECT_ID = 'cia-smart-menu';
 function requiredEnv(name) { const v = process.env[name]?.trim(); if (!v) throw new Error(`${name} is required`); return v; }
 function n(v) { const x = Number(String(v ?? '').replace(',', '.')); return Number.isFinite(x) ? x : null; }
 function hash(v) { return crypto.createHash('sha256').update(v).digest('hex'); }
+function mlDensity(ingredient) {
+  const name = String(ingredient?.name || '').toLowerCase();
+  if (/масло|oil/.test(name)) return 0.92;
+  if (/молоко|milk/.test(name)) return 1.03;
+  if (/сироп|syrup/.test(name)) return 1.32;
+  return 1;
+}
 function grams(ingredient) {
   const value = n(ingredient?.netto);
   if (value === null || value < 0) return null;
   const unit = String(ingredient?.unit || '').trim().toLowerCase();
   if (unit === 'g' || unit === 'гр' || unit === 'г') return value;
   if (unit === 'kg' || unit === 'кг') return value * 1000;
+  if (unit === 'ml' || unit === 'мл') return value * mlDensity(ingredient);
+  if (unit === 'l' || unit === 'л') return value * 1000 * mlDensity(ingredient);
   return null;
 }
 function macro(nutrition, key) {

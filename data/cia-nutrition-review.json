@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "restaurantId": "poster-test",
-  "total": 436,
+  "total": 427,
   "instructions": "Fill only confirmed values. Do not invent nutrition data. Values are per 100g.",
   "fields": [
     "kcalPer100g",
@@ -207,6 +207,25 @@
       "usedInProductCount": 0,
       "status": "not_found",
       "usda": null,
+      "usdaError": null,
+      "nutrition": null,
+      "source": null,
+      "priority": 0
+    },
+    {
+      "id": "nutrition_db4b593cedf2b826cdea6a75",
+      "name": "Beluga",
+      "aliases": [],
+      "occurrences": 0,
+      "usedInProductCount": 0,
+      "status": "needs_review",
+      "usda": {
+        "fdcId": 168981,
+        "description": "Oil, beluga, whale (Alaska Native)",
+        "matchScore": 1,
+        "rejected": true,
+        "rejectionReason": "False positive: restaurant ingredient is a beverage brand, not whale oil."
+      },
       "usdaError": null,
       "nutrition": null,
       "source": null,
@@ -5328,19 +5347,6 @@
       "priority": 0
     },
     {
-      "id": "nutrition_80ec6ff28b5394121f5f4ee1",
-      "name": "Томатная паста",
-      "aliases": [],
-      "occurrences": 0,
-      "usedInProductCount": 0,
-      "status": "not_found",
-      "usda": null,
-      "usdaError": null,
-      "nutrition": null,
-      "source": null,
-      "priority": 0
-    },
-    {
       "id": "nutrition_57373552c3e0253d2ce34058",
       "name": "тоник",
       "aliases": [],
@@ -5356,19 +5362,6 @@
     {
       "id": "nutrition_028ae37e1974c49548797e0d",
       "name": "топинг Monin",
-      "aliases": [],
-      "occurrences": 0,
-      "usedInProductCount": 0,
-      "status": "not_found",
-      "usda": null,
-      "usdaError": null,
-      "nutrition": null,
-      "source": null,
-      "priority": 0
-    },
-    {
-      "id": "nutrition_ebc1f2c9fefc7a5a1dc8e1de",
-      "name": "топленное масло",
       "aliases": [],
       "occurrences": 0,
       "usedInProductCount": 0,
@@ -5729,60 +5722,8 @@
       "priority": 0
     },
     {
-      "id": "nutrition_44ad40735a026cecebb8cef0",
-      "name": "черешня",
-      "aliases": [],
-      "occurrences": 0,
-      "usedInProductCount": 0,
-      "status": "not_found",
-      "usda": null,
-      "usdaError": null,
-      "nutrition": null,
-      "source": null,
-      "priority": 0
-    },
-    {
-      "id": "nutrition_b05b1912afc7ab3a3d29c54d",
-      "name": "чернослив",
-      "aliases": [],
-      "occurrences": 0,
-      "usedInProductCount": 0,
-      "status": "not_found",
-      "usda": null,
-      "usdaError": null,
-      "nutrition": null,
-      "source": null,
-      "priority": 0
-    },
-    {
       "id": "nutrition_93896c65b6d59ec3d0b2ad9c",
       "name": "черный с фундуком",
-      "aliases": [],
-      "occurrences": 0,
-      "usedInProductCount": 0,
-      "status": "not_found",
-      "usda": null,
-      "usdaError": null,
-      "nutrition": null,
-      "source": null,
-      "priority": 0
-    },
-    {
-      "id": "nutrition_1c4ab4239538af4802bf425d",
-      "name": "чеснок",
-      "aliases": [],
-      "occurrences": 0,
-      "usedInProductCount": 0,
-      "status": "not_found",
-      "usda": null,
-      "usdaError": null,
-      "nutrition": null,
-      "source": null,
-      "priority": 0
-    },
-    {
-      "id": "nutrition_d2fd6b5ce054f0622a9865e3",
-      "name": "чеснок порошок",
       "aliases": [],
       "occurrences": 0,
       "usedInProductCount": 0,
@@ -5859,60 +5800,8 @@
       "priority": 0
     },
     {
-      "id": "nutrition_2a2e972da7c5a34b1dd00145",
-      "name": "шпинат",
-      "aliases": [],
-      "occurrences": 0,
-      "usedInProductCount": 0,
-      "status": "not_found",
-      "usda": null,
-      "usdaError": null,
-      "nutrition": null,
-      "source": null,
-      "priority": 0
-    },
-    {
-      "id": "nutrition_068c977fa3dd538552910cfc",
-      "name": "шпинат /бланш/",
-      "aliases": [],
-      "occurrences": 0,
-      "usedInProductCount": 0,
-      "status": "not_found",
-      "usda": null,
-      "usdaError": null,
-      "nutrition": null,
-      "source": null,
-      "priority": 0
-    },
-    {
       "id": "nutrition_a3baab2bf65010c6554a7ecb",
       "name": "эклеры/тесто/",
-      "aliases": [],
-      "occurrences": 0,
-      "usedInProductCount": 0,
-      "status": "not_found",
-      "usda": null,
-      "usdaError": null,
-      "nutrition": null,
-      "source": null,
-      "priority": 0
-    },
-    {
-      "id": "nutrition_0f62d2ca445a934451884768",
-      "name": "Яблоки",
-      "aliases": [],
-      "occurrences": 0,
-      "usedInProductCount": 0,
-      "status": "not_found",
-      "usda": null,
-      "usdaError": null,
-      "nutrition": null,
-      "source": null,
-      "priority": 0
-    },
-    {
-      "id": "nutrition_e03e4c5839361e866040111f",
-      "name": "яблоки зеленые",
       "aliases": [],
       "occurrences": 0,
       "usedInProductCount": 0,

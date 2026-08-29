@@ -22,19 +22,28 @@ const verified = {
     carbsPer100g: 11,
     source: 'USDA FoodData Central',
     sourceReference: 'FDC 2710087; okra, pickled'
-  },
-  poster_471: {
-    kcalPer100g: 381,
-    proteinPer100g: 0.26,
-    fatPer100g: 0.05,
-    carbsPer100g: 91.27,
-    source: 'USDA FoodData Central',
-    sourceReference: 'FDC 169698; cornstarch'
   }
 };
 
+// `крахмал` does not state corn vs potato vs another starch.
+// Remove the earlier cornstarch assumption and keep it in review.
+const resetToReview = new Set(['poster_471']);
+
 let changed = 0;
 for (const entry of data.entries || []) {
+  if (resetToReview.has(String(entry.id))) {
+    delete entry.kcalPer100g;
+    delete entry.proteinPer100g;
+    delete entry.fatPer100g;
+    delete entry.carbsPer100g;
+    delete entry.source;
+    delete entry.sourceReference;
+    entry.verified = false;
+    entry.status = 'needs_review';
+    changed += 1;
+    continue;
+  }
+
   const value = verified[String(entry.id)];
   if (!value) continue;
   Object.assign(entry, value, { verified: true, status: 'verified' });
@@ -42,4 +51,4 @@ for (const entry of data.entries || []) {
 }
 
 fs.writeFileSync(file, JSON.stringify(data, null, 2) + '\n');
-console.log(`[CIA Nutrition] clean generic batch 04 verified entries updated: ${changed}`);
+console.log(`[CIA Nutrition] clean generic batch 04 entries updated: ${changed}`);

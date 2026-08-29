@@ -36,9 +36,10 @@ jobs:
       - name: Sync poster-test and enrich menu
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-          # The script expects POSTER_ACCESS_TOKEN internally, but the GitHub secret
-          # for the poster-test account is deliberately named POSTER_TOKEN.
-          POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_TOKEN }}
+          # poster-test only. POSTER_TOKEN is the canonical target name;
+          # POSTER_ACCESS_TOKEN remains a legacy fallback until that secret is renamed/added.
+          # CIASIFT always uses POSTER_TEST_ACCESS_TOKEN in its own workflows.
+          POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_TOKEN || secrets.POSTER_ACCESS_TOKEN }}
           USDA_API_KEY: ${{ secrets.USDA_API_KEY }}
           CIA_RESTAURANT_ID: ${{ inputs.restaurant_id || 'poster-test' }}
         run: node scripts/run-poster-sync-and-enrichment.cjs

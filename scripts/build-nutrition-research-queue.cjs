@@ -54,8 +54,8 @@ function hasPossibleAliasCollision(entry) {
 
 const NON_FOOD = /(уголь|табак|муштук|мундштук|coal|charcoal|tobacco|hookah)/i;
 const PREPARED = /(соус|крем|начинка|тесто|печенье|борщ|брауни|буженина|рулет|пюре|желато|морожен|салат|суп|джем|варень|глазур|маринованн.*овощ|каурма|дзадзики|ким\s*чи|сорбе|сосиск|тост|котлет|наггет|паштет|медовик|муравейник|безе|торт|чизкейк|фондан|харчо|харриса|спас|суджух|паста из перца)/i;
-const BRAND = /(monin|parmalat|ponti|caravella|fever.?tree|arcolad|gurme|red\s*bull|nutella|нутелла|perrier|перриер|havana club|absolut|aperol|baileys|bombay|campari|grey goose|jameson|karas|koor|onegin|st\.?germain|takar|bacardi|ballantine|becherovka|beluga|chivas|corona|dargett|don julio|glenfiddich|hendrick|hennessy|jack daniel|jagermeister|malibu|mo[eë]t|patron|roku|sambuka|glenlivet|macallan|zonin|zorah|olmega|olmeca|beefeter|beefeater|cointreau|kahlua|martini)/i;
-const ALCOHOL = /(водка|вино|ром\b|джин\b|виски|текил|ликер|liqueur|brandy|бренди|коньяк|prosecco|absent|absinthe|cachaca|calvados|sambuka|whisky|whiskey|gin\b|rum\b|vodka|wine|beer|пиво)/i;
+const BRAND = /(monin|parmalat|ponti|caravella|fever.?tree|arcolad|gurme|red\s*bull|ред\s*булл|nutella|нутелла|perrier|перриер|havana club|absolut|aperol|baileys|bombay|campari|grey goose|jameson|karas|koor|onegin|st\.?germain|takar|bacardi|ballantine|becherovka|beluga|chivas|corona|dargett|don julio|glenfiddich|hendrick|hennessy|jack daniel|jagermeister|malibu|mo[eë]t|patron|roku|sambuka|glenlivet|macallan|zonin|zorah|olmega|olmeca|beefeter|beefeater|cointreau|kahlua|martini)/i;
+const ALCOHOL = /(водка|вино\b|ром\b|джин\b|виски|текил|ликер|liqueur|brandy|бренди|коньяк|prosecco|absent|absinthe|cachaca|calvados|sambuka|whisky|whiskey|gin\b|rum\b|vodka|wine\b|beer\b|пиво\b|хреновух)/i;
 
 function classify(entry, manualEntry) {
   const text = [entry.name, ...(entry.aliases || [])].join(' | ');

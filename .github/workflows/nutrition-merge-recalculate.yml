@@ -35,6 +35,7 @@ jobs:
             echo "No merged database changes."
           else
             git commit -m "chore: merge verified CIA nutrition"
+            git pull --rebase origin main
             git push
           fi
 

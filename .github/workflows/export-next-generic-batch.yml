@@ -1,0 +1,41 @@
+name: Export next generic nutrition candidates
+
+on:
+  push:
+    paths:
+      - '.github/workflows/export-next-generic-batch.yml'
+      - 'scripts/export-next-generic-batch.cjs'
+      - 'data/cia-nutrition-research-queue.json'
+  workflow_dispatch:
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Export candidates
+        run: node scripts/export-next-generic-batch.cjs
+
+      - name: Commit candidate list
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/cia-nutrition-next-generic.json
+          if git diff --cached --quiet; then
+            echo 'No candidate changes.'
+            exit 0
+          fi
+          git commit -m 'chore: update next generic nutrition candidates'
+          git pull --rebase origin main
+          git push origin HEAD:main

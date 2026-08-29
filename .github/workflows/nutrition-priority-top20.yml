@@ -1,4 +1,4 @@
-name: CIA Nutrition - Priority Top 200
+name: CIA Nutrition - Priority Top 300
 
 on:
   workflow_dispatch:
@@ -31,21 +31,21 @@ jobs:
       - name: Install Firebase Admin SDK
         run: npm install --no-save firebase-admin@14.2.0
 
-      - name: Build Top 200 from Poster recipe usage
+      - name: Build Top 300 from Poster recipe usage
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
           CIA_RESTAURANT_ID: ${{ inputs.restaurant_id || 'poster-test' }}
-          CIA_PRIORITY_LIMIT: 200
+          CIA_PRIORITY_LIMIT: 300
         run: node scripts/build-poster-nutrition-priority-top20.cjs
 
-      - name: Commit Top 200
+      - name: Commit Top 300
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/cia-nutrition-priority-top200.json
+          git add data/cia-nutrition-priority-top300.json
           if git diff --cached --quiet; then
             echo "No priority list changes."
           else
-            git commit -m "chore: update CIA nutrition priority top 200"
+            git commit -m "chore: update CIA nutrition priority top 300"
             git push
           fi

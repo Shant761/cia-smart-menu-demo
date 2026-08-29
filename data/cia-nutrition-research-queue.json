@@ -4,13 +4,13 @@
   "source": "cia-nutrition-priority-top500.json",
   "total": 437,
   "counts": {
-    "verified": 167,
+    "verified": 170,
     "source_collision": 34,
     "prepared_or_recipe": 80,
     "generic_ingredient": 83,
     "alcohol": 54,
     "non_food": 2,
-    "branded_product": 17
+    "branded_product": 14
   },
   "policy": {
     "generic_ingredient": "USDA first; CIQUAL secondary; accept only close food matches.",
@@ -7964,18 +7964,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
-      "verified": false,
-      "kind": "branded_product",
-      "action": "internet_lookup_brand_first",
-      "preferredSources": [
-        "Manufacturer nutrition label",
-        "Open Food Facts",
-        "USDA Global Branded Foods"
-      ],
-      "searchQueries": [
-        "Нутелла nutrition 100g",
-        "Нутелла calories nutrition label"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 352,
@@ -8016,18 +8009,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "branded_product",
-      "action": "internet_lookup_brand_first",
-      "preferredSources": [
-        "Manufacturer nutrition label",
-        "Open Food Facts",
-        "USDA Global Branded Foods"
-      ],
-      "searchQueries": [
-        "Перриер nutrition 100g",
-        "Перриер calories nutrition label"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 354,
@@ -8444,18 +8430,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "branded_product",
-      "action": "internet_lookup_brand_first",
-      "preferredSources": [
-        "Manufacturer nutrition label",
-        "Open Food Facts",
-        "USDA Global Branded Foods"
-      ],
-      "searchQueries": [
-        "Ред Булл nutrition 100g",
-        "Ред Булл calories nutrition label"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 371,

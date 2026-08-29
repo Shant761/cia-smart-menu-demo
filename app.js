@@ -80,7 +80,7 @@ function getNutrition(product) {
 
 function isLightDish(product) {
   const nutrition = getNutrition(product);
-  return Boolean(nutrition && nutrition.calories <= 350);
+  return Boolean(nutrition && nutrition.status === 'calculated' && nutrition.calories <= 350);
 }
 
 function nutritionMacroMarkup(nutrition) {

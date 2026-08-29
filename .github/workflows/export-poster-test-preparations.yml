@@ -1,0 +1,53 @@
+name: Export poster-test preparations
+
+on:
+  push:
+    paths:
+      - '.github/workflows/export-poster-test-preparations.yml'
+      - 'scripts/export-poster-test-preparations.cjs'
+  workflow_dispatch:
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      # poster-test account only. CIASIFT uses POSTER_TEST_ACCESS_TOKEN elsewhere.
+      POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate exporter
+        run: node --check scripts/export-poster-test-preparations.cjs
+
+      - name: Verify poster-test token
+        run: |
+          test -n "$POSTER_ACCESS_TOKEN" || {
+            echo 'Missing GitHub Actions secret: POSTER_TOKEN (poster-test account)'
+            exit 1
+          }
+
+      - name: Export preparations directly from Poster
+        run: node scripts/export-poster-test-preparations.cjs
+
+      - name: Commit preparation snapshot
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/poster-test-preparations.json
+          if git diff --cached --quiet; then
+            echo 'No preparation changes.'
+            exit 0
+          fi
+          git commit -m 'chore: update poster-test preparations'
+          git pull --rebase origin main
+          git push origin HEAD:main

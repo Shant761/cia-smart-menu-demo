@@ -4,10 +4,10 @@
   "source": "cia-nutrition-priority-top500.json",
   "total": 437,
   "counts": {
-    "verified": 171,
+    "verified": 172,
     "source_collision": 34,
     "prepared_or_recipe": 80,
-    "generic_ingredient": 82,
+    "generic_ingredient": 81,
     "alcohol": 67,
     "non_food": 2,
     "branded_product": 1
@@ -2606,18 +2606,11 @@
       ],
       "usedInProductCount": 3,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "сало USDA FoodData Central",
-        "сало calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 130,

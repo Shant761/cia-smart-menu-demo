@@ -1,7 +1,13 @@
-name: CIA Nutrition - Manual Top 20 Template
+name: CIA Nutrition - Manual Template
 
 on:
   workflow_dispatch:
+    inputs:
+      priority_limit:
+        description: Existing priority file limit to use
+        required: true
+        default: 50
+        type: number
   push:
     paths:
       - 'data/cia-nutrition-priority-top20.json'
@@ -13,6 +19,8 @@ permissions:
 jobs:
   build-template:
     runs-on: ubuntu-latest
+    env:
+      CIA_PRIORITY_LIMIT: ${{ inputs.priority_limit || 50 }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -20,7 +28,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Build manual template
         run: node scripts/build-cia-manual-top20-template.cjs
@@ -33,6 +41,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No manual template changes."
           else
-            git commit -m "chore: update CIA manual nutrition top 20 template"
+            git commit -m "chore: update CIA manual nutrition template"
+            git pull --rebase origin main
             git push
           fi

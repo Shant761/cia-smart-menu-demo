@@ -4,10 +4,10 @@
   "source": "cia-nutrition-priority-top500.json",
   "total": 437,
   "counts": {
-    "verified": 170,
+    "verified": 171,
     "source_collision": 34,
     "prepared_or_recipe": 80,
-    "generic_ingredient": 83,
+    "generic_ingredient": 82,
     "alcohol": 67,
     "non_food": 2,
     "branded_product": 1
@@ -2041,18 +2041,11 @@
       ],
       "usedInProductCount": 3,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "Говядина /մեջքամիս/ USDA FoodData Central",
-        "Говядина /մեջքամիս/ calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 104,

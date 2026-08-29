@@ -6,7 +6,10 @@ on:
       - main
     paths:
       - 'data/cia-nutrition-manual-top20.json'
+      - 'data/cia-nutrition-priority-top100.json'
       - 'data/nutrition-database.json'
+      - 'scripts/build-cia-manual-top20-template.cjs'
+      - 'scripts/build-poster-nutrition-priority-top20.cjs'
       - 'scripts/calculate-product-nutrition.cjs'
       - 'scripts/lookup-nutrition-local.cjs'
       - 'scripts/build-ingredient-catalog.cjs'
@@ -33,6 +36,7 @@ jobs:
     env:
       CIA_RESTAURANT_ID: ${{ inputs.restaurant_id || 'poster-test' }}
       NUTRITION_FORCE: ${{ inputs.force || true }}
+      CIA_PRIORITY_LIMIT: 100
 
     steps:
       - name: Checkout repository
@@ -46,6 +50,8 @@ jobs:
       - name: Validate nutrition scripts and database
         run: |
           node --check scripts/verify-top20-6-10.cjs
+          node --check scripts/build-poster-nutrition-priority-top20.cjs
+          node --check scripts/build-cia-manual-top20-template.cjs
           node --check scripts/build-ingredient-catalog.cjs
           node --check scripts/lookup-nutrition-local.cjs
           node --check scripts/calculate-product-nutrition.cjs
@@ -61,7 +67,15 @@ jobs:
         run: |
           test -n "$FIREBASE_SERVICE_ACCOUNT" || (echo 'Missing FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU' && exit 1)
 
-      - name: Apply verified CIA Top 20 nutrition
+      - name: Build CIA nutrition priority top 100
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+        run: node scripts/build-poster-nutrition-priority-top20.cjs
+
+      - name: Extend CIA manual nutrition to top 100
+        run: node scripts/build-cia-manual-top20-template.cjs
+
+      - name: Apply verified CIA manual nutrition
         run: node scripts/verify-top20-6-10.cjs
 
       - name: Merge verified CIA manual nutrition into engine database
@@ -87,11 +101,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/cia-nutrition-manual-top20.json
+          git add data/cia-nutrition-manual-top20.json data/cia-nutrition-priority-top100.json
           if git diff --cached --quiet; then
             echo "No nutrition database changes."
           else
-            git commit -m "chore: verify CIA nutrition top 20 entries"
+            git commit -m "chore: extend CIA nutrition priority top 100"
+            git pull --rebase origin main
             git push
           fi
 

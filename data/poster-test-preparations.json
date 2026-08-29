@@ -1,8 +1,57 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "restaurantId": "poster-test",
-  "source": "Poster menu.getProducts + menu.getProduct",
-  "exportedAt": "2026-08-29T14:17:58.617Z",
-  "count": 0,
-  "preparations": []
+  "source": "Poster storage.getPacks + storage.getPack",
+  "exportedAt": "2026-08-29T14:19:05.487Z",
+  "count": 3,
+  "preparations": [
+    {
+      "packId": "1",
+      "name": "",
+      "out": 0,
+      "unit": "p",
+      "productionDescription": "",
+      "sourceFields": [
+        "count",
+        "name",
+        "pack_id",
+        "type",
+        "unit"
+      ],
+      "ingredients": [],
+      "detailLoaded": true
+    },
+    {
+      "packId": "3",
+      "name": "",
+      "out": 0,
+      "unit": "kg",
+      "productionDescription": "",
+      "sourceFields": [
+        "count",
+        "name",
+        "pack_id",
+        "type",
+        "unit"
+      ],
+      "ingredients": [],
+      "detailLoaded": true
+    },
+    {
+      "packId": "2",
+      "name": "",
+      "out": 0,
+      "unit": "l",
+      "productionDescription": "",
+      "sourceFields": [
+        "count",
+        "name",
+        "pack_id",
+        "type",
+        "unit"
+      ],
+      "ingredients": [],
+      "detailLoaded": true
+    }
+  ]
 }

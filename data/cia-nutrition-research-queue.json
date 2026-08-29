@@ -6,11 +6,11 @@
   "counts": {
     "verified": 136,
     "source_collision": 34,
-    "prepared_or_recipe": 73,
-    "generic_ingredient": 123,
+    "prepared_or_recipe": 81,
+    "generic_ingredient": 113,
     "alcohol": 55,
     "non_food": 2,
-    "branded_product": 14
+    "branded_product": 16
   },
   "policy": {
     "generic_ingredient": "USDA first; CIQUAL secondary; accept only close food matches.",
@@ -7017,16 +7017,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "киевскмй торт USDA FoodData Central",
-        "киевскмй торт calories kcal 100g"
+        "киевскмй торт nutrition kcal 100g",
+        "киевскмй торт калорийность 100 г"
       ]
     },
     {
@@ -8112,16 +8112,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "branded_product",
+      "action": "internet_lookup_brand_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Manufacturer nutrition label",
+        "Open Food Facts",
+        "USDA Global Branded Foods"
       ],
       "searchQueries": [
-        "Нутелла USDA FoodData Central",
-        "Нутелла calories kcal 100g"
+        "Нутелла nutrition 100g",
+        "Нутелла calories nutrition label"
       ]
     },
     {
@@ -8138,16 +8138,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "паста из перца USDA FoodData Central",
-        "паста из перца calories kcal 100g"
+        "паста из перца nutrition kcal 100g",
+        "паста из перца калорийность 100 г"
       ]
     },
     {
@@ -8164,16 +8164,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "branded_product",
+      "action": "internet_lookup_brand_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Manufacturer nutrition label",
+        "Open Food Facts",
+        "USDA Global Branded Foods"
       ],
       "searchQueries": [
-        "Перриер USDA FoodData Central",
-        "Перриер calories kcal 100g"
+        "Перриер nutrition 100g",
+        "Перриер calories nutrition label"
       ]
     },
     {
@@ -9384,16 +9384,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "спас USDA FoodData Central",
-        "спас calories kcal 100g"
+        "спас nutrition kcal 100g",
+        "спас калорийность 100 г"
       ]
     },
     {
@@ -9436,16 +9436,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "Суджух USDA FoodData Central",
-        "Суджух calories kcal 100g"
+        "Суджух nutrition kcal 100g",
+        "Суджух калорийность 100 г"
       ]
     },
     {
@@ -9845,16 +9845,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "фондан USDA FoodData Central",
-        "фондан calories kcal 100g"
+        "фондан nutrition kcal 100g",
+        "фондан калорийность 100 г"
       ]
     },
     {
@@ -9916,16 +9916,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "source_mismatch",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "харриса USDA FoodData Central",
-        "харриса calories kcal 100g"
+        "харриса nutrition kcal 100g",
+        "харриса калорийность 100 г"
       ]
     },
     {
@@ -9942,16 +9942,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "харчо USDA FoodData Central",
-        "харчо calories kcal 100g"
+        "харчо nutrition kcal 100g",
+        "харчо калорийность 100 г"
       ]
     },
     {
@@ -10084,16 +10084,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "чизкейк USDA FoodData Central",
-        "чизкейк calories kcal 100g"
+        "чизкейк nutrition kcal 100g",
+        "чизкейк калорийность 100 г"
       ]
     },
     {

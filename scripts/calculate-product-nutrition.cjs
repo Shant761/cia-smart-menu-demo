@@ -72,6 +72,9 @@ async function main() {
     if (!recipe.length) { noRecipe++; continue; }
 
     let totalG = 0;
+    let recipeG = 0;
+    let matchedIngredients = 0;
+    let reviewIngredients = 0;
     const totals = { calories: 0, protein: 0, fat: 0, carbohydrates: 0 };
     const ingredientResults = [];
     let blocked = false;
@@ -80,6 +83,7 @@ async function main() {
       const id = ingredient?.ingredientId != null && String(ingredient.ingredientId).trim() ? `poster_${String(ingredient.ingredientId).trim()}` : null;
       const cat = id ? byId.get(id) : [...byId.values()].find((x) => (x.sourceNames || []).includes(ingredient?.name));
       const g = grams(ingredient);
+      if (g !== null) recipeG += g;
       const nut = cat?.nutrition;
       const values = {
         calories: n(nut?.per100g?.calories),
@@ -97,7 +101,12 @@ async function main() {
         status: ok ? 'matched' : 'needs_review',
         missingNutrients
       });
-      if (!ok) { blocked = true; continue; }
+      if (!ok) {
+        reviewIngredients += 1;
+        blocked = true;
+        continue;
+      }
+      matchedIngredients += 1;
       const factor = g / 100;
       totalG += g;
       totals.calories += values.calories * factor;
@@ -138,6 +147,24 @@ async function main() {
       fat: Number(totals.fat.toFixed(1)),
       carbohydrates: Number(totals.carbohydrates.toFixed(1))
     };
+    const partial = totalG > 0 ? {
+      calories: rounded.calories,
+      protein: rounded.protein,
+      fat: rounded.fat,
+      carbohydrates: rounded.carbohydrates,
+      per100g: {
+        calories: Math.round((totals.calories / totalG) * 100),
+        protein: Number(((totals.protein / totalG) * 100).toFixed(1)),
+        fat: Number(((totals.fat / totalG) * 100).toFixed(1)),
+        carbohydrates: Number(((totals.carbohydrates / totalG) * 100).toFixed(1))
+      },
+      knownGrams: Number(totalG.toFixed(2)),
+      recipeGrams: recipeG > 0 ? Number(recipeG.toFixed(2)) : null,
+      matchedIngredients,
+      reviewIngredients,
+      totalIngredients: recipe.length,
+      coverage: recipe.length ? Number((matchedIngredients / recipe.length).toFixed(2)) : 0
+    } : null;
 
     const data = {
       nutrition: {
@@ -149,6 +176,7 @@ async function main() {
         protein: status === 'calculated' ? rounded.protein : null,
         fat: status === 'calculated' ? rounded.fat : null,
         carbohydrates: status === 'calculated' ? rounded.carbohydrates : null,
+        partial: status === 'calculated' ? null : partial,
         per100g: status === 'calculated' ? {
           calories: Math.round((totals.calories / totalG) * 100),
           protein: Number(((totals.protein / totalG) * 100).toFixed(1)),

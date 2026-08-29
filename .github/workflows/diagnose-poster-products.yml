@@ -1,4 +1,4 @@
-name: Diagnose Poster products
+name: Diagnose CIASIFT Poster products
 
 on:
   workflow_dispatch:
@@ -7,14 +7,15 @@ jobs:
   diagnose:
     runs-on: ubuntu-latest
     env:
+      # CIASIFT account only. poster-test uses POSTER_TOKEN in its own workflows.
       POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_TEST_ACCESS_TOKEN }}
     steps:
       - uses: actions/checkout@v4
-      - name: Fetch Poster products once
+      - name: Fetch CIASIFT Poster products once
         run: |
           node <<'NODE'
           const token = process.env.POSTER_ACCESS_TOKEN;
-          if (!token) throw new Error('POSTER_TEST_ACCESS_TOKEN is missing');
+          if (!token) throw new Error('POSTER_TEST_ACCESS_TOKEN (CIASIFT) is missing');
           const url = new URL('https://joinposter.com/api/menu.getProducts');
           url.searchParams.set('token', token);
           url.searchParams.set('format', 'json');
@@ -23,7 +24,7 @@ jobs:
           const payload = await res.json();
           if (payload?.error) throw new Error(JSON.stringify(payload.error));
           const products = Array.isArray(payload?.response) ? payload.response : [];
-          console.log(`Poster products: ${products.length}`);
+          console.log(`CIASIFT Poster products: ${products.length}`);
           for (const p of products) {
             const spots = Array.isArray(p?.spots) ? p.spots : [];
             console.log(JSON.stringify({

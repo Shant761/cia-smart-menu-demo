@@ -5,7 +5,7 @@ const file = path.join(__dirname, '..', 'data', 'cia-nutrition-manual-top20.json
 const data = JSON.parse(fs.readFileSync(file, 'utf8'));
 
 // Verified generic ingredients from priority 301-400.
-// Values are per 100g and intentionally use close USDA FoodData Central matches.
+// Values are per 100g and intentionally use close USDA FoodData Central / CIQUAL matches.
 const verified = {
   poster_179: {
     kcalPer100g: 264,
@@ -118,6 +118,38 @@ const verified = {
     carbsPer100g: 54.4,
     source: 'USDA FoodData Central',
     sourceReference: 'USDA FoodData Central; milk, canned, condensed, sweetened'
+  },
+  poster_159: {
+    kcalPer100g: 369,
+    proteinPer100g: 6.0,
+    fatPer100g: 37.0,
+    carbsPer100g: 3.1,
+    source: 'ANSES CIQUAL 2025',
+    sourceReference: 'CIQUAL code 19584; mascarpone'
+  },
+  poster_266: {
+    kcalPer100g: 81,
+    proteinPer100g: 1.0,
+    fatPer100g: 6.9,
+    carbsPer100g: 5.6,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 169095; olives, ripe, canned, jumbo-super colossal; close base for black ripe olives'
+  },
+  poster_330: {
+    kcalPer100g: 285,
+    proteinPer100g: 19.93,
+    fatPer100g: 6.03,
+    carbsPer100g: 52.04,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 172239; spearmint, dried'
+  },
+  poster_406: {
+    kcalPer100g: 53,
+    proteinPer100g: 8.14,
+    fatPer100g: 0.57,
+    carbsPer100g: 4.93,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 174277; soy sauce made from soy and wheat (shoyu)'
   }
 };
 

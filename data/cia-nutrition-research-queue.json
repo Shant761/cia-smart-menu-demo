@@ -4,10 +4,10 @@
   "source": "cia-nutrition-priority-top500.json",
   "total": 437,
   "counts": {
-    "verified": 157,
+    "verified": 160,
     "source_collision": 34,
     "prepared_or_recipe": 80,
-    "generic_ingredient": 93,
+    "generic_ingredient": 90,
     "alcohol": 54,
     "non_food": 2,
     "branded_product": 17
@@ -2180,18 +2180,11 @@
       ],
       "usedInProductCount": 3,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "картофель очищенный USDA FoodData Central",
-        "картофель очищенный calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 110,
@@ -3580,18 +3573,11 @@
       ],
       "usedInProductCount": 2,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "Виноградные листья USDA FoodData Central",
-        "Виноградные листья calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 170,
@@ -4091,18 +4077,11 @@
       ],
       "usedInProductCount": 2,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "Моцарелла USDA FoodData Central",
-        "Моцарелла calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 192,

@@ -5003,14 +5003,23 @@
     {
       "id": "nutrition_80ec6ff28b5394121f5f4ee1",
       "name": "Томатная паста",
-      "aliases": [],
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "verified": false,
-      "status": "not_found"
+      "aliases": [
+        "Томатная паста",
+        "томатная паста",
+        "tomato paste"
+      ],
+      "kcalPer100g": 82,
+      "proteinPer100g": 4.32,
+      "fatPer100g": 0.47,
+      "carbsPer100g": 18.91,
+      "source": "USDA FoodData Central",
+      "verified": true,
+      "status": "verified",
+      "calories": 82,
+      "protein": 4.32,
+      "fat": 0.47,
+      "carbohydrates": 18.91,
+      "sourceReference": "tomato products, canned, paste, without salt added"
     },
     {
       "id": "nutrition_57373552c3e0253d2ce34058",
@@ -5039,14 +5048,24 @@
     {
       "id": "nutrition_ebc1f2c9fefc7a5a1dc8e1de",
       "name": "топленное масло",
-      "aliases": [],
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "verified": false,
-      "status": "not_found"
+      "aliases": [
+        "топленное масло",
+        "топленое масло",
+        "ghee",
+        "clarified butter"
+      ],
+      "kcalPer100g": 876,
+      "proteinPer100g": 0.28,
+      "fatPer100g": 99.48,
+      "carbsPer100g": 0,
+      "source": "USDA FoodData Central",
+      "verified": true,
+      "status": "verified",
+      "calories": 876,
+      "protein": 0.28,
+      "fat": 99.48,
+      "carbohydrates": 0,
+      "sourceReference": "butter oil, anhydrous / ghee; generic clarified butter base"
     },
     {
       "id": "nutrition_fddf3d8bcc0ac6fda85787c2",
@@ -5376,26 +5395,44 @@
     {
       "id": "nutrition_44ad40735a026cecebb8cef0",
       "name": "черешня",
-      "aliases": [],
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "verified": false,
-      "status": "not_found"
+      "aliases": [
+        "черешня",
+        "sweet cherries",
+        "cherries raw"
+      ],
+      "kcalPer100g": 63,
+      "proteinPer100g": 1.06,
+      "fatPer100g": 0.2,
+      "carbsPer100g": 16.01,
+      "source": "USDA FoodData Central",
+      "verified": true,
+      "status": "verified",
+      "calories": 63,
+      "protein": 1.06,
+      "fat": 0.2,
+      "carbohydrates": 16.01,
+      "sourceReference": "cherries, sweet, raw"
     },
     {
       "id": "nutrition_b05b1912afc7ab3a3d29c54d",
       "name": "чернослив",
-      "aliases": [],
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "verified": false,
-      "status": "not_found"
+      "aliases": [
+        "чернослив",
+        "prunes",
+        "dried plums"
+      ],
+      "kcalPer100g": 240,
+      "proteinPer100g": 2.18,
+      "fatPer100g": 0.38,
+      "carbsPer100g": 63.88,
+      "source": "USDA FoodData Central",
+      "verified": true,
+      "status": "verified",
+      "calories": 240,
+      "protein": 2.18,
+      "fat": 0.38,
+      "carbohydrates": 63.88,
+      "sourceReference": "plums, dried (prunes), uncooked"
     },
     {
       "id": "nutrition_93896c65b6d59ec3d0b2ad9c",
@@ -5412,26 +5449,43 @@
     {
       "id": "nutrition_1c4ab4239538af4802bf425d",
       "name": "чеснок",
-      "aliases": [],
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "verified": false,
-      "status": "not_found"
+      "aliases": [
+        "чеснок",
+        "garlic",
+        "garlic raw"
+      ],
+      "kcalPer100g": 149,
+      "proteinPer100g": 6.36,
+      "fatPer100g": 0.5,
+      "carbsPer100g": 33.06,
+      "source": "USDA FoodData Central",
+      "verified": true,
+      "status": "verified",
+      "calories": 149,
+      "protein": 6.36,
+      "fat": 0.5,
+      "carbohydrates": 33.06,
+      "sourceReference": "garlic, raw"
     },
     {
       "id": "nutrition_d2fd6b5ce054f0622a9865e3",
       "name": "чеснок порошок",
-      "aliases": [],
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "verified": false,
-      "status": "not_found"
+      "aliases": [
+        "чеснок порошок",
+        "garlic powder"
+      ],
+      "kcalPer100g": 331,
+      "proteinPer100g": 16.55,
+      "fatPer100g": 0.73,
+      "carbsPer100g": 72.73,
+      "source": "USDA FoodData Central",
+      "verified": true,
+      "status": "verified",
+      "calories": 331,
+      "protein": 16.55,
+      "fat": 0.73,
+      "carbohydrates": 72.73,
+      "sourceReference": "spices, garlic powder"
     },
     {
       "id": "nutrition_78917e0712e70798798d5d68",
@@ -5496,26 +5550,44 @@
     {
       "id": "nutrition_2a2e972da7c5a34b1dd00145",
       "name": "шпинат",
-      "aliases": [],
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "verified": false,
-      "status": "not_found"
+      "aliases": [
+        "шпинат",
+        "spinach",
+        "spinach raw"
+      ],
+      "kcalPer100g": 23,
+      "proteinPer100g": 2.86,
+      "fatPer100g": 0.39,
+      "carbsPer100g": 3.63,
+      "source": "USDA FoodData Central",
+      "verified": true,
+      "status": "verified",
+      "calories": 23,
+      "protein": 2.86,
+      "fat": 0.39,
+      "carbohydrates": 3.63,
+      "sourceReference": "spinach, raw"
     },
     {
       "id": "nutrition_068c977fa3dd538552910cfc",
       "name": "шпинат /бланш/",
-      "aliases": [],
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "verified": false,
-      "status": "not_found"
+      "aliases": [
+        "шпинат /бланш/",
+        "бланшированный шпинат",
+        "spinach cooked boiled"
+      ],
+      "kcalPer100g": 23,
+      "proteinPer100g": 2.97,
+      "fatPer100g": 0.26,
+      "carbsPer100g": 3.75,
+      "source": "USDA FoodData Central",
+      "verified": true,
+      "status": "verified",
+      "calories": 23,
+      "protein": 2.97,
+      "fat": 0.26,
+      "carbohydrates": 3.75,
+      "sourceReference": "spinach, cooked, boiled, drained"
     },
     {
       "id": "nutrition_a3baab2bf65010c6554a7ecb",
@@ -5532,26 +5604,45 @@
     {
       "id": "nutrition_0f62d2ca445a934451884768",
       "name": "Яблоки",
-      "aliases": [],
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "verified": false,
-      "status": "not_found"
+      "aliases": [
+        "Яблоки",
+        "яблоки",
+        "apple",
+        "apples raw"
+      ],
+      "kcalPer100g": 52,
+      "proteinPer100g": 0.26,
+      "fatPer100g": 0.17,
+      "carbsPer100g": 13.81,
+      "source": "USDA FoodData Central",
+      "verified": true,
+      "status": "verified",
+      "calories": 52,
+      "protein": 0.26,
+      "fat": 0.17,
+      "carbohydrates": 13.81,
+      "sourceReference": "apples, raw, with skin"
     },
     {
       "id": "nutrition_e03e4c5839361e866040111f",
       "name": "яблоки зеленые",
-      "aliases": [],
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "verified": false,
-      "status": "not_found"
+      "aliases": [
+        "яблоки зеленые",
+        "green apples",
+        "granny smith apple"
+      ],
+      "kcalPer100g": 52,
+      "proteinPer100g": 0.26,
+      "fatPer100g": 0.17,
+      "carbsPer100g": 13.81,
+      "source": "USDA FoodData Central",
+      "verified": true,
+      "status": "verified",
+      "calories": 52,
+      "protein": 0.26,
+      "fat": 0.17,
+      "carbohydrates": 13.81,
+      "sourceReference": "apples, raw, with skin; generic base for green apples"
     },
     {
       "id": "nutrition_fa48d847923839ccccbdf96b",

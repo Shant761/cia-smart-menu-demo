@@ -25,6 +25,7 @@ on:
       - 'scripts/verify-branded-batch-01.cjs'
       - 'scripts/verify-meat-batch-01.cjs'
       - 'scripts/verify-meat-batch-02.cjs'
+      - 'scripts/verify-meat-batch-03.cjs'
       - '.github/workflows/cia-nutrition-engine.yml'
   workflow_dispatch:
     inputs:
@@ -78,6 +79,7 @@ jobs:
           node --check scripts/verify-branded-batch-01.cjs
           node --check scripts/verify-meat-batch-01.cjs
           node --check scripts/verify-meat-batch-02.cjs
+          node --check scripts/verify-meat-batch-03.cjs
           node --check scripts/build-poster-nutrition-priority-top20.cjs
           node --check scripts/build-cia-manual-top20-template.cjs
           node --check scripts/build-nutrition-research-queue.cjs
@@ -142,6 +144,9 @@ jobs:
 
       - name: Apply verified clean meat batch 02
         run: node scripts/verify-meat-batch-02.cjs
+
+      - name: Apply verified clean meat batch 03
+        run: node scripts/verify-meat-batch-03.cjs
 
       - name: Build CIA nutrition internet research queue
         run: node scripts/build-nutrition-research-queue.cjs

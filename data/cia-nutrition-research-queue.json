@@ -8,9 +8,9 @@
     "source_collision": 34,
     "prepared_or_recipe": 80,
     "generic_ingredient": 101,
-    "alcohol": 55,
+    "alcohol": 54,
     "non_food": 2,
-    "branded_product": 16
+    "branded_product": 17
   },
   "policy": {
     "generic_ingredient": "USDA first; CIQUAL secondary; accept only close food matches.",
@@ -2673,16 +2673,16 @@
       "usedInProductCount": 3,
       "analysisStatus": "rule_analyzed",
       "verified": false,
-      "kind": "alcohol",
-      "action": "internet_lookup_label_or_abv",
+      "kind": "generic_ingredient",
+      "action": "internet_lookup_generic",
       "preferredSources": [
-        "Manufacturer",
-        "Open Food Facts",
-        "official product specification"
+        "USDA FoodData Central",
+        "CIQUAL",
+        "Open Food Facts as secondary reference"
       ],
       "searchQueries": [
-        "Свиное каре /չալաղաջ/ calories 100 ml nutrition",
-        "Свиное каре /չալաղաջ/ ABV calories"
+        "Свиное каре /չալաղաջ/ USDA FoodData Central",
+        "Свиное каре /չալաղաջ/ calories kcal 100g"
       ]
     },
     {
@@ -3609,16 +3609,16 @@
       "usedInProductCount": 2,
       "analysisStatus": "rule_analyzed",
       "verified": false,
-      "kind": "alcohol",
-      "action": "internet_lookup_label_or_abv",
+      "kind": "generic_ingredient",
+      "action": "internet_lookup_generic",
       "preferredSources": [
-        "Manufacturer",
-        "Open Food Facts",
-        "official product specification"
+        "USDA FoodData Central",
+        "CIQUAL",
+        "Open Food Facts as secondary reference"
       ],
       "searchQueries": [
-        "Виноградные листья calories 100 ml nutrition",
-        "Виноградные листья ABV calories"
+        "Виноградные листья USDA FoodData Central",
+        "Виноградные листья calories kcal 100g"
       ]
     },
     {
@@ -8550,16 +8550,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "branded_product",
+      "action": "internet_lookup_brand_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Manufacturer nutrition label",
+        "Open Food Facts",
+        "USDA Global Branded Foods"
       ],
       "searchQueries": [
-        "Ред Булл USDA FoodData Central",
-        "Ред Булл calories kcal 100g"
+        "Ред Булл nutrition 100g",
+        "Ред Булл calories nutrition label"
       ]
     },
     {
@@ -9884,16 +9884,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Manufacturer",
+        "Open Food Facts",
+        "official product specification"
       ],
       "searchQueries": [
-        "хреновуха USDA FoodData Central",
-        "хреновуха calories kcal 100g"
+        "хреновуха calories 100 ml nutrition",
+        "хреновуха ABV calories"
       ]
     },
     {

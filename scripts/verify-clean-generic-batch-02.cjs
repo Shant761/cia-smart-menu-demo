@@ -48,12 +48,12 @@ const verified = {
     sourceReference: 'FDC 175167; fish, salmon, Atlantic, farmed, raw; cleaned fillet uses same edible-portion profile'
   },
   poster_338: {
-    kcalPer100g: 141,
-    proteinPer100g: 12.4,
-    fatPer100g: 6.4,
-    carbsPer100g: 11,
+    kcalPer100g: 121,
+    proteinPer100g: 11.9,
+    fatPer100g: 5.2,
+    carbsPer100g: 8.91,
     source: 'USDA FoodData Central',
-    sourceReference: 'FDC 169283; soybeans, green, cooked, boiled, drained, without salt; Poster sample product identifies edamame'
+    sourceReference: 'FDC 168411; edamame, frozen, prepared; Poster sample product identifies edamame'
   },
   poster_608: {
     kcalPer100g: 185,

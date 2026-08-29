@@ -1,10 +1,10 @@
-name: Sync Poster menu to Firestore
+name: Sync CIASIFT Poster menu to Firestore
 
 on:
   workflow_dispatch:
     inputs:
       restaurant_id:
-        description: Firestore restaurant slug
+        description: Firestore restaurant slug for CIASIFT
         required: true
         default: ciasift
         type: string
@@ -14,7 +14,7 @@ on:
         default: CIASIFT
         type: string
       spot_id:
-        description: Poster spot ID
+        description: CIASIFT Poster spot ID
         required: false
         default: '1'
         type: string
@@ -40,6 +40,7 @@ jobs:
       POSTER_SPOT_ID: ${{ inputs.spot_id }}
       POSTER_SYNC_RECIPES: ${{ inputs.sync_recipes }}
       CIA_PUBLISH_MENU: ${{ inputs.publish_menu }}
+      # CIASIFT only. poster-test uses POSTER_TOKEN in its own workflows.
       POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_TEST_ACCESS_TOKEN }}
       FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
     steps:
@@ -60,7 +61,7 @@ jobs:
       - name: Verify required secrets
         run: |
           if [ -z "$POSTER_ACCESS_TOKEN" ]; then
-            echo "Missing GitHub Actions secret: POSTER_TEST_ACCESS_TOKEN"
+            echo "Missing GitHub Actions secret: POSTER_TEST_ACCESS_TOKEN (CIASIFT)"
             exit 1
           fi
           if [ -z "$FIREBASE_SERVICE_ACCOUNT" ]; then
@@ -68,5 +69,5 @@ jobs:
             exit 1
           fi
 
-      - name: Sync Poster menu into Firestore
+      - name: Sync CIASIFT Poster menu into Firestore
         run: node scripts/sync-poster-to-firestore.cjs

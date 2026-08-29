@@ -21,7 +21,7 @@ const i18n = {
     contains: 'По текущей техкарте содержит выбранные вами аллергены:', safety: 'При тяжёлой аллергии уточните у персонала возможность перекрёстного контакта на кухне.',
     suggested: 'требует подтверждения', emptyTitle: 'Ничего не найдено', emptyText: 'Измените поиск или выбранные ограничения.',
     activePrefix: 'Ваш фильтр:', calories: 'ккал', dietSalads: 'Диетические салаты', light: 'Лёгкое', nutrition: 'Пищевая ценность',
-    nutritionNote: 'Калорийность указана на одну порцию.'
+    nutritionNote: 'Калорийность указана на одну порцию.', partialNutrition: 'Частично рассчитано', partialNutritionNote: 'Показан минимум по известной части состава.'
   },
   en: {
     search: 'Search dishes', personalize: 'Personalize your menu', personalizeSub: 'Exclude ingredients and allergens',
@@ -34,7 +34,7 @@ const i18n = {
     contains: 'According to the current recipe this dish contains:', safety: 'For severe allergies, please ask staff about possible cross-contact in the kitchen.',
     suggested: 'needs confirmation', emptyTitle: 'Nothing found', emptyText: 'Change your search or selected exclusions.',
     activePrefix: 'Your filter:', calories: 'kcal', dietSalads: 'Light salads', light: 'Light', nutrition: 'Nutrition',
-    nutritionNote: 'Calories are shown per serving.'
+    nutritionNote: 'Calories are shown per serving.', partialNutrition: 'Partially calculated', partialNutritionNote: 'Shows the minimum from known recipe ingredients.'
   },
   hy: {
     search: 'Որոնել ուտեստներ', personalize: 'Կարգավորել մենյուն ձեզ համար', personalizeSub: 'Բացառեք բաղադրիչներն ու ալերգենները',
@@ -47,7 +47,7 @@ const i18n = {
     contains: 'Ըստ ընթացիկ տեխնոլոգիական քարտի պարունակում է՝', safety: 'Ծանր ալերգիայի դեպքում ճշտեք անձնակազմից խոհանոցում հնարավոր խաչաձև շփման մասին։',
     suggested: 'պետք է հաստատվի', emptyTitle: 'Ոչինչ չի գտնվել', emptyText: 'Փոխեք որոնումը կամ ընտրված սահմանափակումները։',
     activePrefix: 'Ձեր ֆիլտրը՝', calories: 'կկալ', dietSalads: 'Դիետիկ աղցաններ', light: 'Թեթև', nutrition: 'Սննդային արժեք',
-    nutritionNote: 'Կալորիականությունը նշված է մեկ չափաբաժնի համար։'
+    nutritionNote: 'Կալորիականությունը նշված է մեկ չափաբաժնի համար։', partialNutrition: 'Մասամբ հաշվարկված է', partialNutritionNote: 'Ցույց է տրված հայտնի բաղադրության նվազագույնը։'
   }
 };
 
@@ -59,15 +59,22 @@ const allergenById = (id) => state.allergens.find((item) => item.id === id);
 
 function getNutrition(product) {
   const nutrition = product?.nutrition;
-  if (!nutrition || nutrition.status !== 'calculated') return null;
-  const calories = Number(nutrition.calories);
+  if (!nutrition) return null;
+  const isCalculated = nutrition.status === 'calculated';
+  const source = isCalculated ? nutrition : nutrition.partial;
+  if (!source) return null;
+  const calories = Number(source.calories);
   if (!Number.isFinite(calories)) return null;
   return {
+    status: isCalculated ? 'calculated' : 'partial',
     calories: Math.round(calories),
-    protein: Number(nutrition.per100g?.protein),
-    fat: Number(nutrition.per100g?.fat),
-    carbs: Number(nutrition.per100g?.carbohydrates),
-    servingGrams: Number(nutrition.servingGrams)
+    protein: Number(source.per100g?.protein),
+    fat: Number(source.per100g?.fat),
+    carbs: Number(source.per100g?.carbohydrates),
+    servingGrams: Number(isCalculated ? nutrition.servingGrams : source.knownGrams),
+    coverage: Number(source.coverage),
+    matchedIngredients: Number(source.matchedIngredients),
+    totalIngredients: Number(source.totalIngredients)
   };
 }
 
@@ -82,6 +89,19 @@ function nutritionMacroMarkup(nutrition) {
   if (Number.isFinite(nutrition.fat)) macros.push(`Ж ${nutrition.fat} г`);
   if (Number.isFinite(nutrition.carbs)) macros.push(`У ${nutrition.carbs} г`);
   return macros.length ? `<span class="nutrition-macros">${macros.join(' · ')}</span>` : '';
+}
+
+function nutritionCalorieText(nutrition) {
+  const prefix = nutrition.status === 'partial' ? '≥ ' : '';
+  return `${prefix}${nutrition.calories} ${tr('calories')}`;
+}
+
+function nutritionStatusMarkup(nutrition) {
+  if (nutrition.status !== 'partial') return '';
+  const coverage = Number.isFinite(nutrition.coverage) && nutrition.coverage > 0
+    ? ` · ${Math.round(nutrition.coverage * 100)}%`
+    : '';
+  return `<span class="partial-pill">${tr('partialNutrition')}${coverage}</span>`;
 }
 
 function loadPrefs() {
@@ -110,6 +130,7 @@ function injectNutritionStyles() {
     .calorie-pill { display:inline-flex; align-items:center; gap:5px; min-height:28px; padding:5px 9px; border-radius:999px; background:#f4f1e9; color:#5f594f; font-size:12px; font-weight:700; }
     .nutrition-macros { color:#756f64; font-size:11px; font-weight:600; }
     .light-pill { display:inline-flex; align-items:center; min-height:28px; padding:5px 9px; border-radius:999px; background:#e8f5e9; color:#2e6c3b; font-size:12px; font-weight:800; }
+    .partial-pill { display:inline-flex; align-items:center; min-height:28px; padding:5px 9px; border-radius:999px; background:#fff4d8; color:#805b12; font-size:12px; font-weight:800; }
     .category-chip.diet-chip { border-color:#b8d8bd; background:#eef8ef; color:#2e6c3b; }
     .category-chip.diet-chip.active { background:#2f6f3e; color:white; border-color:#2f6f3e; }
     .nutrition-panel { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:14px 16px; border-radius:16px; background:#f7f5ef; margin:14px 0 2px; }
@@ -300,7 +321,7 @@ function renderCard(product) {
           <span class="dish-price">${formatPrice(product.price)}</span>
         </div>
         <p class="dish-desc">${txt(product.description)}</p>
-        ${nutrition ? `<div class="nutrition-row"><span class="calorie-pill">🔥 ${nutrition.calories} ${tr('calories')}</span>${nutritionMacroMarkup(nutrition)}${light ? `<span class="light-pill">🌿 ${tr('light')}</span>` : ''}</div>` : ''}
+        ${nutrition ? `<div class="nutrition-row"><span class="calorie-pill">🔥 ${nutritionCalorieText(nutrition)}</span>${nutritionMacroMarkup(nutrition)}${nutritionStatusMarkup(nutrition)}${light ? `<span class="light-pill">🌿 ${tr('light')}</span>` : ''}</div>` : ''}
         <div class="allergen-row">${pills}</div>
         ${statusText ? `<div class="status-line ${statusClass}">${statusText}</div>` : ''}
       </div>
@@ -355,7 +376,7 @@ function openDish(productId) {
         <div class="detail-price">${formatPrice(product.price)}</div>
       </div>
       <p class="detail-description">${txt(product.description)}</p>
-      ${nutrition ? `<div class="nutrition-panel"><div><span>${tr('nutrition')}</span><strong>🔥 ${nutrition.calories} ${tr('calories')}</strong><div class="nutrition-detail">${detailMacros}</div><span>${tr('nutritionNote')}</span></div>${light ? `<span class="light-pill">🌿 ${tr('light')}</span>` : ''}</div>` : ''}
+      ${nutrition ? `<div class="nutrition-panel"><div><span>${nutrition.status === 'partial' ? tr('partialNutrition') : tr('nutrition')}</span><strong>🔥 ${nutritionCalorieText(nutrition)}</strong><div class="nutrition-detail">${detailMacros}${nutritionStatusMarkup(nutrition)}</div><span>${nutrition.status === 'partial' ? tr('partialNutritionNote') : tr('nutritionNote')}</span></div>${light ? `<span class="light-pill">🌿 ${tr('light')}</span>` : ''}</div>` : ''}
       ${conflicts.length ? `<div class="conflict-box">${tr('contains')} ${conflicts.map((item) => `${allergenById(item.id)?.emoji || ''} ${txt(allergenById(item.id)?.name)}`).join(', ')}</div>` : ''}
       <section class="detail-section">
         <h3>${tr('ingredients')}</h3>

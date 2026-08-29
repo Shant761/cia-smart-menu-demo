@@ -1,0 +1,245 @@
+{
+  "version": "1.0.0",
+  "source": "data/cia-nutrition-research-queue.json",
+  "count": 14,
+  "candidates": [
+    {
+      "priority": 237,
+      "id": "poster_121",
+      "posterIngredientId": "121",
+      "name": "Corona",
+      "aliases": [
+        "Corona"
+      ],
+      "units": [
+        "p"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Corona nutrition 100g",
+        "Corona calories nutrition label"
+      ]
+    },
+    {
+      "priority": 238,
+      "id": "poster_120",
+      "posterIngredientId": "120",
+      "name": "Dargett",
+      "aliases": [
+        "Dargett"
+      ],
+      "units": [
+        "p"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Dargett nutrition 100g",
+        "Dargett calories nutrition label"
+      ]
+    },
+    {
+      "priority": 239,
+      "id": "poster_111",
+      "posterIngredientId": "111",
+      "name": "Don Julio 1942",
+      "aliases": [
+        "Don Julio 1942"
+      ],
+      "units": [
+        "p"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Don Julio 1942 nutrition 100g",
+        "Don Julio 1942 calories nutrition label"
+      ]
+    },
+    {
+      "priority": 252,
+      "id": "poster_136",
+      "posterIngredientId": "136",
+      "name": "Karas Rezerve /red/",
+      "aliases": [
+        "Karas Rezerve /red/"
+      ],
+      "units": [
+        "p"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Karas Rezerve /red/ nutrition 100g",
+        "Karas Rezerve /red/ calories nutrition label"
+      ]
+    },
+    {
+      "priority": 254,
+      "id": "poster_139",
+      "posterIngredientId": "139",
+      "name": "Koor Rezerve /red/",
+      "aliases": [
+        "Koor Rezerve /red/"
+      ],
+      "units": [
+        "p"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Koor Rezerve /red/ nutrition 100g",
+        "Koor Rezerve /red/ calories nutrition label"
+      ]
+    },
+    {
+      "priority": 257,
+      "id": "poster_104",
+      "posterIngredientId": "104",
+      "name": "Moët and Chandon Imperial Brut",
+      "aliases": [
+        "Moët and Chandon Imperial Brut"
+      ],
+      "units": [
+        "p"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Moët and Chandon Imperial Brut nutrition 100g",
+        "Moët and Chandon Imperial Brut calories nutrition label"
+      ]
+    },
+    {
+      "priority": 258,
+      "id": "poster_103",
+      "posterIngredientId": "103",
+      "name": "Moët and Chandon Imperial Brut Rosé",
+      "aliases": [
+        "Moët and Chandon Imperial Brut Rosé"
+      ],
+      "units": [
+        "p"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Moët and Chandon Imperial Brut Rosé nutrition 100g",
+        "Moët and Chandon Imperial Brut Rosé calories nutrition label"
+      ]
+    },
+    {
+      "priority": 269,
+      "id": "poster_101",
+      "posterIngredientId": "101",
+      "name": "Takar Extra Brut",
+      "aliases": [
+        "Takar Extra Brut"
+      ],
+      "units": [
+        "p"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Takar Extra Brut nutrition 100g",
+        "Takar Extra Brut calories nutrition label"
+      ]
+    },
+    {
+      "priority": 270,
+      "id": "poster_100",
+      "posterIngredientId": "100",
+      "name": "Takar Rosé Extra Brut",
+      "aliases": [
+        "Takar Rosé Extra Brut"
+      ],
+      "units": [
+        "p"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Takar Rosé Extra Brut nutrition 100g",
+        "Takar Rosé Extra Brut calories nutrition label"
+      ]
+    },
+    {
+      "priority": 277,
+      "id": "poster_99",
+      "posterIngredientId": "99",
+      "name": "Zonin Asti DOCG",
+      "aliases": [
+        "Zonin Asti DOCG"
+      ],
+      "units": [
+        "p"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Zonin Asti DOCG nutrition 100g",
+        "Zonin Asti DOCG calories nutrition label"
+      ]
+    },
+    {
+      "priority": 280,
+      "id": "poster_150",
+      "posterIngredientId": "150",
+      "name": "Zorah Karasi",
+      "aliases": [
+        "Zorah Karasi"
+      ],
+      "units": [
+        "p"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Zorah Karasi nutrition 100g",
+        "Zorah Karasi calories nutrition label"
+      ]
+    },
+    {
+      "priority": 281,
+      "id": "poster_151",
+      "posterIngredientId": "151",
+      "name": "Zorah Voski",
+      "aliases": [
+        "Zorah Voski"
+      ],
+      "units": [
+        "p"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Zorah Voski nutrition 100g",
+        "Zorah Voski calories nutrition label"
+      ]
+    },
+    {
+      "priority": 282,
+      "id": "poster_152",
+      "posterIngredientId": "152",
+      "name": "Zorah Yeraz /red/",
+      "aliases": [
+        "Zorah Yeraz /red/"
+      ],
+      "units": [
+        "p"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Zorah Yeraz /red/ nutrition 100g",
+        "Zorah Yeraz /red/ calories nutrition label"
+      ]
+    },
+    {
+      "priority": 413,
+      "id": "poster_290",
+      "posterIngredientId": "290",
+      "name": "топинг Monin",
+      "aliases": [
+        "топинг Monin"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "топинг Monin nutrition 100g",
+        "топинг Monin calories nutrition label"
+      ]
+    }
+  ]
+}

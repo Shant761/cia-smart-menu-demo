@@ -4,10 +4,10 @@
   "source": "cia-nutrition-priority-top500.json",
   "total": 437,
   "counts": {
-    "verified": 151,
+    "verified": 154,
     "source_collision": 34,
     "prepared_or_recipe": 80,
-    "generic_ingredient": 99,
+    "generic_ingredient": 96,
     "alcohol": 54,
     "non_food": 2,
     "branded_product": 17
@@ -2646,18 +2646,11 @@
       ],
       "usedInProductCount": 3,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "свинина /մատ/ USDA FoodData Central",
-        "свинина /մատ/ calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 131,
@@ -4519,18 +4512,11 @@
       ],
       "usedInProductCount": 2,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "свинина /փափուկ/ USDA FoodData Central",
-        "свинина /փափուկ/ calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 209,
@@ -6718,18 +6704,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "говяжье суки очищенная USDA FoodData Central",
-        "говяжье суки очищенная calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 296,

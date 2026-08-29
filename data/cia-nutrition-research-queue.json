@@ -8,9 +8,9 @@
     "source_collision": 34,
     "prepared_or_recipe": 80,
     "generic_ingredient": 83,
-    "alcohol": 54,
+    "alcohol": 67,
     "non_food": 2,
-    "branded_product": 14
+    "branded_product": 1
   },
   "policy": {
     "generic_ingredient": "USDA first; CIQUAL secondary; accept only close food matches.",
@@ -5148,16 +5148,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "branded_product",
-      "action": "internet_lookup_brand_first",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "Manufacturer nutrition label",
+        "Manufacturer",
         "Open Food Facts",
-        "USDA Global Branded Foods"
+        "official product specification"
       ],
       "searchQueries": [
-        "Corona nutrition 100g",
-        "Corona calories nutrition label"
+        "Corona calories 100 ml nutrition",
+        "Corona ABV calories"
       ]
     },
     {
@@ -5174,16 +5174,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "branded_product",
-      "action": "internet_lookup_brand_first",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "Manufacturer nutrition label",
+        "Manufacturer",
         "Open Food Facts",
-        "USDA Global Branded Foods"
+        "official product specification"
       ],
       "searchQueries": [
-        "Dargett nutrition 100g",
-        "Dargett calories nutrition label"
+        "Dargett calories 100 ml nutrition",
+        "Dargett ABV calories"
       ]
     },
     {
@@ -5200,16 +5200,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
       "verified": false,
-      "kind": "branded_product",
-      "action": "internet_lookup_brand_first",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "Manufacturer nutrition label",
+        "Manufacturer",
         "Open Food Facts",
-        "USDA Global Branded Foods"
+        "official product specification"
       ],
       "searchQueries": [
-        "Don Julio 1942 nutrition 100g",
-        "Don Julio 1942 calories nutrition label"
+        "Don Julio 1942 calories 100 ml nutrition",
+        "Don Julio 1942 ABV calories"
       ]
     },
     {
@@ -5538,16 +5538,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "branded_product",
-      "action": "internet_lookup_brand_first",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "Manufacturer nutrition label",
+        "Manufacturer",
         "Open Food Facts",
-        "USDA Global Branded Foods"
+        "official product specification"
       ],
       "searchQueries": [
-        "Karas Rezerve /red/ nutrition 100g",
-        "Karas Rezerve /red/ calories nutrition label"
+        "Karas Rezerve /red/ calories 100 ml nutrition",
+        "Karas Rezerve /red/ ABV calories"
       ]
     },
     {
@@ -5590,16 +5590,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "branded_product",
-      "action": "internet_lookup_brand_first",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "Manufacturer nutrition label",
+        "Manufacturer",
         "Open Food Facts",
-        "USDA Global Branded Foods"
+        "official product specification"
       ],
       "searchQueries": [
-        "Koor Rezerve /red/ nutrition 100g",
-        "Koor Rezerve /red/ calories nutrition label"
+        "Koor Rezerve /red/ calories 100 ml nutrition",
+        "Koor Rezerve /red/ ABV calories"
       ]
     },
     {
@@ -5668,16 +5668,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "branded_product",
-      "action": "internet_lookup_brand_first",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "Manufacturer nutrition label",
+        "Manufacturer",
         "Open Food Facts",
-        "USDA Global Branded Foods"
+        "official product specification"
       ],
       "searchQueries": [
-        "Moët and Chandon Imperial Brut nutrition 100g",
-        "Moët and Chandon Imperial Brut calories nutrition label"
+        "Moët and Chandon Imperial Brut calories 100 ml nutrition",
+        "Moët and Chandon Imperial Brut ABV calories"
       ]
     },
     {
@@ -5694,16 +5694,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "branded_product",
-      "action": "internet_lookup_brand_first",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "Manufacturer nutrition label",
+        "Manufacturer",
         "Open Food Facts",
-        "USDA Global Branded Foods"
+        "official product specification"
       ],
       "searchQueries": [
-        "Moët and Chandon Imperial Brut Rosé nutrition 100g",
-        "Moët and Chandon Imperial Brut Rosé calories nutrition label"
+        "Moët and Chandon Imperial Brut Rosé calories 100 ml nutrition",
+        "Moët and Chandon Imperial Brut Rosé ABV calories"
       ]
     },
     {
@@ -5980,16 +5980,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "branded_product",
-      "action": "internet_lookup_brand_first",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "Manufacturer nutrition label",
+        "Manufacturer",
         "Open Food Facts",
-        "USDA Global Branded Foods"
+        "official product specification"
       ],
       "searchQueries": [
-        "Takar Extra Brut nutrition 100g",
-        "Takar Extra Brut calories nutrition label"
+        "Takar Extra Brut calories 100 ml nutrition",
+        "Takar Extra Brut ABV calories"
       ]
     },
     {
@@ -6006,16 +6006,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "branded_product",
-      "action": "internet_lookup_brand_first",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "Manufacturer nutrition label",
+        "Manufacturer",
         "Open Food Facts",
-        "USDA Global Branded Foods"
+        "official product specification"
       ],
       "searchQueries": [
-        "Takar Rosé Extra Brut nutrition 100g",
-        "Takar Rosé Extra Brut calories nutrition label"
+        "Takar Rosé Extra Brut calories 100 ml nutrition",
+        "Takar Rosé Extra Brut ABV calories"
       ]
     },
     {
@@ -6188,16 +6188,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "branded_product",
-      "action": "internet_lookup_brand_first",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "Manufacturer nutrition label",
+        "Manufacturer",
         "Open Food Facts",
-        "USDA Global Branded Foods"
+        "official product specification"
       ],
       "searchQueries": [
-        "Zonin Asti DOCG nutrition 100g",
-        "Zonin Asti DOCG calories nutrition label"
+        "Zonin Asti DOCG calories 100 ml nutrition",
+        "Zonin Asti DOCG ABV calories"
       ]
     },
     {
@@ -6266,16 +6266,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "branded_product",
-      "action": "internet_lookup_brand_first",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "Manufacturer nutrition label",
+        "Manufacturer",
         "Open Food Facts",
-        "USDA Global Branded Foods"
+        "official product specification"
       ],
       "searchQueries": [
-        "Zorah Karasi nutrition 100g",
-        "Zorah Karasi calories nutrition label"
+        "Zorah Karasi calories 100 ml nutrition",
+        "Zorah Karasi ABV calories"
       ]
     },
     {
@@ -6292,16 +6292,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "branded_product",
-      "action": "internet_lookup_brand_first",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "Manufacturer nutrition label",
+        "Manufacturer",
         "Open Food Facts",
-        "USDA Global Branded Foods"
+        "official product specification"
       ],
       "searchQueries": [
-        "Zorah Voski nutrition 100g",
-        "Zorah Voski calories nutrition label"
+        "Zorah Voski calories 100 ml nutrition",
+        "Zorah Voski ABV calories"
       ]
     },
     {
@@ -6318,16 +6318,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "branded_product",
-      "action": "internet_lookup_brand_first",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "Manufacturer nutrition label",
+        "Manufacturer",
         "Open Food Facts",
-        "USDA Global Branded Foods"
+        "official product specification"
       ],
       "searchQueries": [
-        "Zorah Yeraz /red/ nutrition 100g",
-        "Zorah Yeraz /red/ calories nutrition label"
+        "Zorah Yeraz /red/ calories 100 ml nutrition",
+        "Zorah Yeraz /red/ ABV calories"
       ]
     },
     {

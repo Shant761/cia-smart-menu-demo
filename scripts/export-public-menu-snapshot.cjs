@@ -75,6 +75,7 @@ function compactNutrition(nutrition) {
     carbohydrates: nutrition.carbohydrates ?? null,
     servingGrams: nutrition.servingGrams ?? null,
     per100g: nutrition.per100g || null,
+    partial: nutrition.partial || null,
     source: nutrition.source || null
   };
 }

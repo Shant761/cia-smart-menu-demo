@@ -4,10 +4,10 @@
   "source": "cia-nutrition-priority-top500.json",
   "total": 437,
   "counts": {
-    "verified": 136,
+    "verified": 140,
     "source_collision": 34,
-    "prepared_or_recipe": 81,
-    "generic_ingredient": 113,
+    "prepared_or_recipe": 80,
+    "generic_ingredient": 110,
     "alcohol": 55,
     "non_food": 2,
     "branded_product": 16
@@ -7624,18 +7624,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "Маскарпоне USDA FoodData Central",
-        "Маскарпоне calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 333,
@@ -7650,18 +7643,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "маслины/черные/ USDA FoodData Central",
-        "маслины/черные/ calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 334,
@@ -7929,18 +7915,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "Мята/сухая/ USDA FoodData Central",
-        "Мята/сухая/ calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 345,
@@ -8941,18 +8920,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "prepared_or_recipe",
-      "action": "calculate_from_poster_recipe_first",
-      "preferredSources": [
-        "Poster tech card",
-        "USDA FoodData Central as ingredient reference",
-        "CIQUAL as secondary reference"
-      ],
-      "searchQueries": [
-        "соевый соус nutrition kcal 100g",
-        "соевый соус калорийность 100 г"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 385,

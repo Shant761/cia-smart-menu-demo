@@ -1,0 +1,39 @@
+name: CIA Nutrition - Export branded candidates
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/export-next-branded-candidates.cjs'
+      - '.github/workflows/export-next-branded-candidates.yml'
+  workflow_dispatch:
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate exporter
+        run: node --check scripts/export-next-branded-candidates.cjs
+      - name: Export branded candidates
+        run: node scripts/export-next-branded-candidates.cjs
+      - name: Commit candidate list
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/cia-nutrition-next-branded.json
+          if git diff --cached --quiet; then
+            echo "No branded candidate changes."
+          else
+            git commit -m "chore: update branded nutrition candidates"
+            git pull --rebase --autostash origin main
+            git push
+          fi

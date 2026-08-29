@@ -72,6 +72,16 @@ Poster is the source of truth for operational menu data. The sync should update 
 
 The frontend still contains static JSON data so the UI can be developed without Poster credentials or Firebase. This makes it possible to work on the customer experience independently from the integration.
 
+## Restaurant data quality
+
+Accurate nutrition, allergen and translation analysis depends on the quality of the source data in Poster. Restaurants should use clear ingredient names, correct units and quantities, and complete tech cards for house-made preparations, sauces, fillings and other semi-finished products.
+
+See the restaurant-facing guide:
+
+`docs/RESTAURANT_DATA_QUALITY_GUIDE.md`
+
+Key rule: the more specific and correct the ingredient data in Poster, the more accurate CIA Smart Menu can be. When data is incomplete, the system should show a partial/minimum result instead of inventing an exact value.
+
 ## Next milestone
 
 Do not add more AI features yet. First prove this complete path with one real/test Poster restaurant:

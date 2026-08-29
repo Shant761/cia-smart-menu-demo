@@ -115,6 +115,46 @@ const verified = {
     carbsPer100g: 21.55,
     source: 'USDA FoodData Central',
     sourceReference: 'FDC 170567; nuts, almonds'
+  },
+  poster_331: {
+    kcalPer100g: 265,
+    proteinPer100g: 9,
+    fatPer100g: 4.28,
+    carbsPer100g: 68.92,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 171328; spices, oregano, dried'
+  },
+  poster_162: {
+    kcalPer100g: 392,
+    proteinPer100g: 35.75,
+    fatPer100g: 25.83,
+    carbsPer100g: 3.22,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 170848; cheese, parmesan, hard'
+  },
+  poster_610: {
+    kcalPer100g: 16,
+    proteinPer100g: 0.68,
+    fatPer100g: 0.1,
+    carbsPer100g: 3.4,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 169276; radishes, raw'
+  },
+  poster_253: {
+    kcalPer100g: 14,
+    proteinPer100g: 0.69,
+    fatPer100g: 0.17,
+    carbsPer100g: 2.97,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 169988; celery, raw'
+  },
+  poster_300: {
+    kcalPer100g: 54,
+    proteinPer100g: 0.15,
+    fatPer100g: 0.29,
+    carbsPer100g: 13.13,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 167787; pomegranate juice, bottled'
   }
 };
 

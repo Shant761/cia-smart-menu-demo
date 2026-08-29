@@ -13,8 +13,10 @@ jobs:
     permissions:
       contents: write
     env:
-      # poster-test account only. CIASIFT uses POSTER_TEST_ACCESS_TOKEN elsewhere.
-      POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_TOKEN }}
+      # poster-test only. Prefer the canonical POSTER_TOKEN secret.
+      # POSTER_ACCESS_TOKEN is a temporary legacy fallback until POSTER_TOKEN is added/renamed.
+      # CIASIFT uses POSTER_TEST_ACCESS_TOKEN and is never used here.
+      POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_TOKEN || secrets.POSTER_ACCESS_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -32,7 +34,7 @@ jobs:
       - name: Verify poster-test token
         run: |
           test -n "$POSTER_ACCESS_TOKEN" || {
-            echo 'Missing GitHub Actions secret: POSTER_TOKEN (poster-test account)'
+            echo 'Missing poster-test secret: add POSTER_TOKEN (or keep legacy POSTER_ACCESS_TOKEN temporarily)'
             exit 1
           }
 

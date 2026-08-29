@@ -5,12 +5,11 @@ on:
     branches:
       - main
     paths:
-      - 'data/cia-nutrition-manual-top20.json'
       - 'data/cia-nutrition-priority-top500.json'
-      - 'data/nutrition-database.json'
       - 'scripts/build-cia-manual-top20-template.cjs'
       - 'scripts/build-poster-nutrition-priority-top20.cjs'
       - 'scripts/build-nutrition-research-queue.cjs'
+      - 'scripts/merge-manual-into-nutrition-database.cjs'
       - 'scripts/calculate-product-nutrition.cjs'
       - 'scripts/lookup-nutrition-local.cjs'
       - 'scripts/build-ingredient-catalog.cjs'
@@ -25,6 +24,11 @@ on:
         required: true
         default: poster-test
         type: string
+      sync_firestore:
+        description: Sync verified nutrition and product calculations to Firestore
+        required: true
+        default: false
+        type: boolean
       force:
         description: Recalculate nutrition even when result is unchanged
         required: true
@@ -33,7 +37,7 @@ on:
 
 jobs:
   nutrition:
-    name: Calculate calories and macros
+    name: Build nutrition database
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -66,15 +70,18 @@ jobs:
           node -e "const db=require('./data/nutrition-database.json'); if(!Array.isArray(db.entries)) throw new Error('Invalid nutrition database')"
 
       - name: Install Firebase Admin SDK package
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.sync_firestore }}
         run: npm install --no-save firebase-admin@14.2.0
 
       - name: Verify Firebase secret
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.sync_firestore }}
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
         run: |
           test -n "$FIREBASE_SERVICE_ACCOUNT" || (echo 'Missing FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU' && exit 1)
 
-      - name: Build CIA nutrition priority full catalog
+      - name: Refresh CIA nutrition priority full catalog from Firestore
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.sync_firestore }}
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
         run: node scripts/build-poster-nutrition-priority-top20.cjs
@@ -97,37 +104,44 @@ jobs:
       - name: Merge verified CIA manual nutrition into engine database
         run: node scripts/merge-manual-into-nutrition-database.cjs
 
-      - name: Build CIA ingredient catalog from Poster recipes
-        env:
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-          FORCE_CATALOG_BUILD: false
-        run: node scripts/build-ingredient-catalog.cjs
-
-      - name: Match ingredients against CIA-owned nutrition database
-        env:
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-        run: node scripts/lookup-nutrition-local.cjs
-
-      - name: Calculate product calories and macros
-        env:
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-        run: node scripts/calculate-product-nutrition.cjs
-
-      - name: Commit updated manual nutrition database
+      - name: Commit local nutrition database
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git restore package.json package-lock.json || true
           git add data/cia-nutrition-manual-top20.json data/cia-nutrition-priority-top500.json data/cia-nutrition-research-queue.json data/nutrition-database.json
           if git diff --cached --quiet; then
-            echo "No nutrition database changes."
+            echo "No local nutrition database changes."
           else
-            git commit -m "chore: extend CIA nutrition to full catalog"
+            git commit -m "chore: update CIA nutrition database"
             git pull --rebase --autostash origin main
             git push
           fi
 
+      - name: Build CIA ingredient catalog from Poster recipes
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.sync_firestore }}
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+          FORCE_CATALOG_BUILD: false
+        run: node scripts/build-ingredient-catalog.cjs
+
+      - name: Match ingredients against CIA-owned nutrition database
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.sync_firestore }}
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+        run: node scripts/lookup-nutrition-local.cjs
+
+      - name: Calculate product calories and macros
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.sync_firestore }}
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
+        run: node scripts/calculate-product-nutrition.cjs
+
       - name: Nutrition pipeline complete
         run: |
-          echo "CIA Nutrition Engine completed for restaurant: $CIA_RESTAURANT_ID"
-          echo "Result: CIA ingredient nutrition + product calories/macros written to Firestore"
+          echo "CIA local nutrition database completed for restaurant: $CIA_RESTAURANT_ID"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.sync_firestore }}" = "true" ]; then
+            echo "Firestore sync requested and completed."
+          else
+            echo "Firestore sync skipped; no quota consumed by nutrition Firestore steps."
+          fi

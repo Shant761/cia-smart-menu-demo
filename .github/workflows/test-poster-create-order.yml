@@ -1,4 +1,4 @@
-name: Test Poster create online order
+name: Test CIASIFT Poster create online order
 
 on:
   push:
@@ -8,17 +8,17 @@ on:
   workflow_dispatch:
     inputs:
       confirm:
-        description: Type YES to actually create one test order
+        description: Type YES to actually create one test order in CIASIFT
         required: true
         default: NO
         type: string
       spot_id:
-        description: Optional Poster spot ID; leave empty for automatic detection
+        description: Optional CIASIFT Poster spot ID; leave empty for automatic detection
         required: false
         default: ''
         type: string
       product_id:
-        description: Optional Poster product ID; leave empty for automatic selection
+        description: Optional CIASIFT Poster product ID; leave empty for automatic selection
         required: false
         default: ''
         type: string
@@ -43,7 +43,7 @@ jobs:
         with:
           node-version: 22
 
-      - name: Create test order in Poster test account
+      - name: Create test order in CIASIFT Poster account
         env:
           POSTER_TEST_ACCESS_TOKEN: ${{ secrets.POSTER_TEST_ACCESS_TOKEN }}
           POSTER_TEST_SPOT_ID: ${{ inputs.spot_id || '' }}

@@ -1310,19 +1310,24 @@
       "id": "nutrition_64a65de480e497c873a262ee",
       "name": "Ананас /шт",
       "aliases": [],
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "verified": false,
-      "status": "api_error",
+      "kcalPer100g": 50,
+      "proteinPer100g": 0.54,
+      "fatPer100g": 0.12,
+      "carbsPer100g": 13.12,
+      "source": "USDA FoodData Central",
+      "verified": true,
+      "status": "verified",
       "usdaError": {
         "stage": "search",
         "status": 400,
         "message": "USDA search failed: 400",
         "response": "{\"error\":\"Bad Request\",\"message\":\"Invalid request. Please try again.\"}"
-      }
+      },
+      "calories": 50,
+      "protein": 0.54,
+      "fat": 0.12,
+      "carbohydrates": 13.12,
+      "sourceReference": "FDC 169124; pineapple, raw, all varieties"
     },
     {
       "id": "nutrition_c4e069be0b5b5f5329e7fc58",
@@ -6357,7 +6362,7 @@
       "protein": 2.97,
       "fat": 0.26,
       "carbohydrates": 3.75,
-      "sourceReference": "spinach, cooked, boiled, drained"
+      "sourceReference": "FDC 168463; spinach, cooked, boiled, drained, without salt; close match for blanched spinach"
     },
     {
       "id": "nutrition_a3baab2bf65010c6554a7ecb",

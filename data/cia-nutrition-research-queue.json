@@ -4,10 +4,10 @@
   "source": "cia-nutrition-priority-top500.json",
   "total": 437,
   "counts": {
-    "verified": 147,
+    "verified": 149,
     "source_collision": 34,
     "prepared_or_recipe": 80,
-    "generic_ingredient": 103,
+    "generic_ingredient": 101,
     "alcohol": 55,
     "non_food": 2,
     "branded_product": 16
@@ -3435,18 +3435,11 @@
       ],
       "usedInProductCount": 2,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "Ананас /шт USDA FoodData Central",
-        "Ананас /шт calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 162,
@@ -10103,18 +10096,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "шпинат /бланш/ USDA FoodData Central",
-        "шпинат /бланш/ calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 434,

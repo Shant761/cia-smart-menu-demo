@@ -235,6 +235,104 @@ const verified = {
     carbsPer100g: 3.84,
     source: 'USDA FoodData Central',
     sourceReference: 'FDC 169096; olives, pickled, canned or bottled, green'
+  },
+
+  // Priority 201-300: verified clean entries only.
+  poster_280: {
+    kcalPer100g: 131,
+    proteinPer100g: 3.31,
+    fatPer100g: 5.86,
+    carbsPer100g: 20.7,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 173473; rosemary, fresh'
+  },
+  poster_163: {
+    kcalPer100g: 369,
+    proteinPer100g: 21.54,
+    fatPer100g: 30.64,
+    carbsPer100g: 2,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 171250; cheese, roquefort'
+  },
+  poster_82: {
+    kcalPer100g: 82,
+    proteinPer100g: 4.32,
+    fatPer100g: 0.47,
+    carbsPer100g: 18.91,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 170459; tomato products, canned, paste, without salt added'
+  },
+  poster_524: {
+    kcalPer100g: 572,
+    proteinPer100g: 21.05,
+    fatPer100g: 45.82,
+    carbsPer100g: 28.28,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 170185; pistachio nuts, dry roasted; salt changes sodium, not tracked macros'
+  },
+  poster_414: {
+    kcalPer100g: 240,
+    proteinPer100g: 2.18,
+    fatPer100g: 0.38,
+    carbsPer100g: 63.88,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 168162; plums, dried (prunes), uncooked'
+  },
+  poster_286: {
+    kcalPer100g: 149,
+    proteinPer100g: 6.36,
+    fatPer100g: 0.5,
+    carbsPer100g: 33.06,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 169230; garlic, raw'
+  },
+  poster_312: {
+    kcalPer100g: 52,
+    proteinPer100g: 0.26,
+    fatPer100g: 0.17,
+    carbsPer100g: 13.81,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 171688; apples, raw, with skin; conservative base for green apples'
+  },
+  poster_357: {
+    kcalPer100g: 48,
+    proteinPer100g: 1.4,
+    fatPer100g: 0.39,
+    carbsPer100g: 11.12,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 171697; apricots, raw'
+  },
+  poster_263: {
+    kcalPer100g: 69,
+    proteinPer100g: 0.72,
+    fatPer100g: 0.16,
+    carbsPer100g: 18.1,
+    source: 'USDA FoodData Central',
+    sourceReference: 'USDA SR Legacy; grapes, red or green, raw'
+  },
+  poster_428: {
+    kcalPer100g: 0,
+    proteinPer100g: 0,
+    fatPer100g: 0,
+    carbsPer100g: 0,
+    source: 'USDA FoodData Central',
+    sourceReference: 'water, plain; zero kcal/macros'
+  },
+  poster_367: {
+    kcalPer100g: 83,
+    proteinPer100g: 1.67,
+    fatPer100g: 1.17,
+    carbsPer100g: 18.7,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 169134; pomegranates, raw'
+  },
+  poster_319: {
+    kcalPer100g: 263,
+    proteinPer100g: 6.09,
+    fatPer100g: 8.69,
+    carbsPer100g: 72.1,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 171315; spices, allspice, ground'
   }
 };
 

@@ -9,6 +9,7 @@ on:
       - 'scripts/verify-meat-batch-01.cjs'
       - 'scripts/verify-meat-batch-02.cjs'
       - 'scripts/verify-meat-batch-03.cjs'
+      - 'scripts/verify-meat-batch-04.cjs'
       - 'data/cia-nutrition-manual-top20.json'
       - 'data/cia-nutrition-research-queue.json'
       - '.github/workflows/recalculate-poster-test-meat-snapshot.yml'

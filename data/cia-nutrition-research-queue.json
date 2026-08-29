@@ -4,10 +4,10 @@
   "source": "cia-nutrition-priority-top500.json",
   "total": 437,
   "counts": {
-    "verified": 154,
+    "verified": 157,
     "source_collision": 34,
     "prepared_or_recipe": 80,
-    "generic_ingredient": 96,
+    "generic_ingredient": 93,
     "alcohol": 54,
     "non_food": 2,
     "branded_product": 17
@@ -2665,18 +2665,11 @@
       ],
       "usedInProductCount": 3,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "Свиное каре /չալաղաջ/ USDA FoodData Central",
-        "Свиное каре /չալաղաջ/ calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 132,
@@ -3504,18 +3497,11 @@
       ],
       "usedInProductCount": 2,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "Баранина /մատ/ USDA FoodData Central",
-        "Баранина /մատ/ calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 166,
@@ -3530,18 +3516,11 @@
       ],
       "usedInProductCount": 2,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "Баранина /չալաղաջ/ USDA FoodData Central",
-        "Баранина /չալաղաջ/ calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 167,

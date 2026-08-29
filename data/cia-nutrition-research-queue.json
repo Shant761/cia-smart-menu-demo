@@ -4,8 +4,8 @@
   "source": "cia-nutrition-priority-top500.json",
   "total": 437,
   "counts": {
-    "verified": 133,
-    "source_collision": 18,
+    "verified": 117,
+    "source_collision": 34,
     "prepared_or_recipe": 73,
     "generic_ingredient": 142,
     "alcohol": 55,
@@ -74,9 +74,11 @@
       "usedInProductCount": 22,
       "analysisStatus": "rule_analyzed",
       "verified": true,
-      "kind": "verified",
-      "action": "done",
-      "preferredSources": [],
+      "kind": "source_collision",
+      "action": "manual_review_before_search",
+      "preferredSources": [
+        "Poster recipe/source names"
+      ],
       "searchQueries": []
     },
     {
@@ -284,9 +286,11 @@
       "usedInProductCount": 12,
       "analysisStatus": "rule_analyzed",
       "verified": true,
-      "kind": "verified",
-      "action": "done",
-      "preferredSources": [],
+      "kind": "source_collision",
+      "action": "manual_review_before_search",
+      "preferredSources": [
+        "Poster recipe/source names"
+      ],
       "searchQueries": []
     },
     {
@@ -532,9 +536,11 @@
       "usedInProductCount": 9,
       "analysisStatus": "rule_analyzed",
       "verified": true,
-      "kind": "verified",
-      "action": "done",
-      "preferredSources": [],
+      "kind": "source_collision",
+      "action": "manual_review_before_search",
+      "preferredSources": [
+        "Poster recipe/source names"
+      ],
       "searchQueries": []
     },
     {
@@ -724,9 +730,11 @@
       "usedInProductCount": 7,
       "analysisStatus": "pending_review",
       "verified": true,
-      "kind": "verified",
-      "action": "done",
-      "preferredSources": [],
+      "kind": "source_collision",
+      "action": "manual_review_before_search",
+      "preferredSources": [
+        "Poster recipe/source names"
+      ],
       "searchQueries": []
     },
     {
@@ -858,9 +866,11 @@
       "usedInProductCount": 6,
       "analysisStatus": "pending_review",
       "verified": true,
-      "kind": "verified",
-      "action": "done",
-      "preferredSources": [],
+      "kind": "source_collision",
+      "action": "manual_review_before_search",
+      "preferredSources": [
+        "Poster recipe/source names"
+      ],
       "searchQueries": []
     },
     {
@@ -878,9 +888,11 @@
       "usedInProductCount": 6,
       "analysisStatus": "rule_analyzed",
       "verified": true,
-      "kind": "verified",
-      "action": "done",
-      "preferredSources": [],
+      "kind": "source_collision",
+      "action": "manual_review_before_search",
+      "preferredSources": [
+        "Poster recipe/source names"
+      ],
       "searchQueries": []
     },
     {
@@ -936,9 +948,11 @@
       "usedInProductCount": 6,
       "analysisStatus": "rule_analyzed",
       "verified": true,
-      "kind": "verified",
-      "action": "done",
-      "preferredSources": [],
+      "kind": "source_collision",
+      "action": "manual_review_before_search",
+      "preferredSources": [
+        "Poster recipe/source names"
+      ],
       "searchQueries": []
     },
     {
@@ -1033,9 +1047,11 @@
       "usedInProductCount": 5,
       "analysisStatus": "rule_analyzed",
       "verified": true,
-      "kind": "verified",
-      "action": "done",
-      "preferredSources": [],
+      "kind": "source_collision",
+      "action": "manual_review_before_search",
+      "preferredSources": [
+        "Poster recipe/source names"
+      ],
       "searchQueries": []
     },
     {
@@ -1091,9 +1107,11 @@
       "usedInProductCount": 5,
       "analysisStatus": "rule_analyzed",
       "verified": true,
-      "kind": "verified",
-      "action": "done",
-      "preferredSources": [],
+      "kind": "source_collision",
+      "action": "manual_review_before_search",
+      "preferredSources": [
+        "Poster recipe/source names"
+      ],
       "searchQueries": []
     },
     {
@@ -1437,9 +1455,11 @@
       "usedInProductCount": 4,
       "analysisStatus": "rule_analyzed",
       "verified": true,
-      "kind": "verified",
-      "action": "done",
-      "preferredSources": [],
+      "kind": "source_collision",
+      "action": "manual_review_before_search",
+      "preferredSources": [
+        "Poster recipe/source names"
+      ],
       "searchQueries": []
     },
     {
@@ -1457,9 +1477,11 @@
       "usedInProductCount": 4,
       "analysisStatus": "rule_analyzed",
       "verified": true,
-      "kind": "verified",
-      "action": "done",
-      "preferredSources": [],
+      "kind": "source_collision",
+      "action": "manual_review_before_search",
+      "preferredSources": [
+        "Poster recipe/source names"
+      ],
       "searchQueries": []
     },
     {
@@ -1477,9 +1499,11 @@
       "usedInProductCount": 4,
       "analysisStatus": "rule_analyzed",
       "verified": true,
-      "kind": "verified",
-      "action": "done",
-      "preferredSources": [],
+      "kind": "source_collision",
+      "action": "manual_review_before_search",
+      "preferredSources": [
+        "Poster recipe/source names"
+      ],
       "searchQueries": []
     },
     {
@@ -1497,9 +1521,11 @@
       "usedInProductCount": 4,
       "analysisStatus": "rule_analyzed",
       "verified": true,
-      "kind": "verified",
-      "action": "done",
-      "preferredSources": [],
+      "kind": "source_collision",
+      "action": "manual_review_before_search",
+      "preferredSources": [
+        "Poster recipe/source names"
+      ],
       "searchQueries": []
     },
     {
@@ -1631,9 +1657,11 @@
       "usedInProductCount": 4,
       "analysisStatus": "rule_analyzed",
       "verified": true,
-      "kind": "verified",
-      "action": "done",
-      "preferredSources": [],
+      "kind": "source_collision",
+      "action": "manual_review_before_search",
+      "preferredSources": [
+        "Poster recipe/source names"
+      ],
       "searchQueries": []
     },
     {
@@ -1785,9 +1813,11 @@
       "usedInProductCount": 3,
       "analysisStatus": "rule_analyzed",
       "verified": true,
-      "kind": "verified",
-      "action": "done",
-      "preferredSources": [],
+      "kind": "source_collision",
+      "action": "manual_review_before_search",
+      "preferredSources": [
+        "Poster recipe/source names"
+      ],
       "searchQueries": []
     },
     {
@@ -1942,9 +1972,11 @@
       "usedInProductCount": 3,
       "analysisStatus": "needs_review",
       "verified": true,
-      "kind": "verified",
-      "action": "done",
-      "preferredSources": [],
+      "kind": "source_collision",
+      "action": "manual_review_before_search",
+      "preferredSources": [
+        "Poster recipe/source names"
+      ],
       "searchQueries": []
     },
     {

@@ -16,6 +16,7 @@ on:
       - 'scripts/verify-top20-6-10.cjs'
       - 'scripts/verify-priority-301-400.cjs'
       - 'scripts/verify-priority-401-437.cjs'
+      - 'scripts/verify-clean-generic-batch-02.cjs'
       - '.github/workflows/cia-nutrition-engine.yml'
   workflow_dispatch:
     inputs:
@@ -60,6 +61,7 @@ jobs:
           node --check scripts/verify-top20-6-10.cjs
           node --check scripts/verify-priority-301-400.cjs
           node --check scripts/verify-priority-401-437.cjs
+          node --check scripts/verify-clean-generic-batch-02.cjs
           node --check scripts/build-poster-nutrition-priority-top20.cjs
           node --check scripts/build-cia-manual-top20-template.cjs
           node --check scripts/build-nutrition-research-queue.cjs
@@ -97,6 +99,9 @@ jobs:
 
       - name: Apply verified nutrition priority 401-437
         run: node scripts/verify-priority-401-437.cjs
+
+      - name: Apply verified clean generic batch 02
+        run: node scripts/verify-clean-generic-batch-02.cjs
 
       - name: Build CIA nutrition internet research queue
         run: node scripts/build-nutrition-research-queue.cjs

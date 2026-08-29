@@ -34,7 +34,7 @@ jobs:
 
       - name: Validate exporter syntax
         run: |
-          echo "Snapshot export trigger marker: internet nutrition 1788001656679
+          echo "Snapshot export trigger marker: internet nutrition fixed 1788001721571"
           node --check scripts/export-public-menu-snapshot.cjs
 
       - name: Install Firebase Admin SDK

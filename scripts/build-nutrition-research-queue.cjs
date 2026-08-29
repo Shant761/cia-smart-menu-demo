@@ -54,7 +54,8 @@ function hasPossibleAliasCollision(entry) {
 
 const NON_FOOD = /(уголь|табак|муштук|мундштук|coal|charcoal|tobacco|hookah)/i;
 const PREPARED = /(соус|крем|начинка|тесто|печенье|борщ|брауни|буженина|рулет|пюре|желато|морожен|салат|суп|джем|варень|глазур|маринованн.*овощ|каурма|дзадзики|ким\s*чи|сорбе|сосиск|тост|котлет|наггет|паштет|медовик|муравейник|безе|торт|чизкейк|фондан|харчо|харриса|спас|суджух|паста из перца)/i;
-const BRAND = /(monin|parmalat|ponti|caravella|fever.?tree|arcolad|gurme|red\s*bull|ред\s*булл|nutella|нутелла|perrier|перриер|havana club|absolut|aperol|baileys|bombay|campari|grey goose|jameson|karas|koor|onegin|st\.?germain|takar|bacardi|ballantine|becherovka|beluga|chivas|corona|dargett|don julio|glenfiddich|hendrick|hennessy|jack daniel|jagermeister|malibu|mo[eë]t|patron|roku|sambuka|glenlivet|macallan|zonin|zorah|olmega|olmeca|beefeter|beefeater|cointreau|kahlua|martini)/i;
+const BRAND = /(monin|parmalat|ponti|caravella|fever.?tree|arcolad|gurme|red\s*bull|ред\s*булл|nutella|нутелла|perrier|перриер)/i;
+const ALCOHOL_BRAND = /(havana club|absolut|aperol|baileys|bombay|campari|grey goose|jameson|karas|koor|onegin|st\.?germain|takar|bacardi|ballantine|becherovka|beluga|chivas|corona|dargett|don julio|glenfiddich|hendrick|hennessy|jack daniel|jagermeister|malibu|mo[eë]t|patron|roku|sambuka|glenlivet|macallan|zonin|zorah|olmega|olmeca|beefeter|beefeater|cointreau|kahlua|martini)/i;
 const ALCOHOL = /(водка|вино\b|ром\b|джин\b|виски|текил|ликер|liqueur|brandy|бренди|коньяк|prosecco|absent|absinthe|cachaca|calvados|sambuka|whisky|whiskey|gin\b|rum\b|vodka|wine\b|beer\b|пиво\b|хреновух)/i;
 
 function classify(entry, manualEntry) {
@@ -64,7 +65,9 @@ function classify(entry, manualEntry) {
   if (hasPossibleAliasCollision(entry)) return 'source_collision';
   if (manualEntry?.verified === true) return 'verified';
   if (NON_FOOD.test(text)) return 'non_food';
-  if (ALCOHOL.test(text) || (BRAND.test(text) && (entry.units || []).includes('ml'))) return 'alcohol';
+  // Alcohol brands must be classified as alcohol regardless of whether Poster
+  // stores the recipe unit as ml, g or p (whole bottle/piece).
+  if (ALCOHOL.test(text) || ALCOHOL_BRAND.test(text)) return 'alcohol';
   if (PREPARED.test(text)) return 'prepared_or_recipe';
   if (BRAND.test(text)) return 'branded_product';
   return 'generic_ingredient';

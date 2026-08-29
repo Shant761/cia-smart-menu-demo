@@ -1,0 +1,858 @@
+{
+  "version": "1.0.0",
+  "source": "data/cia-nutrition-research-queue.json",
+  "remainingGenericCount": 96,
+  "count": 50,
+  "candidates": [
+    {
+      "priority": 103,
+      "id": "poster_197",
+      "posterIngredientId": "197",
+      "name": "Говядина /մեջքամիս/",
+      "aliases": [
+        "Говядина /մեջքամիս/"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 3,
+      "searchQueries": [
+        "Говядина /մեջքամիս/ USDA FoodData Central",
+        "Говядина /մեջքամիս/ calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 107,
+      "id": "poster_68",
+      "posterIngredientId": "68",
+      "name": "Каламата",
+      "aliases": [
+        "Каламата"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 3,
+      "searchQueries": [
+        "Каламата USDA FoodData Central",
+        "Каламата calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 109,
+      "id": "poster_512",
+      "posterIngredientId": "512",
+      "name": "картофель очищенный",
+      "aliases": [
+        "картофель очищенный"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 3,
+      "searchQueries": [
+        "картофель очищенный USDA FoodData Central",
+        "картофель очищенный calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 119,
+      "id": "poster_269",
+      "posterIngredientId": "269",
+      "name": "Миндальное молоко",
+      "aliases": [
+        "Миндальное молоко"
+      ],
+      "units": [
+        "ml"
+      ],
+      "usedInProductCount": 3,
+      "searchQueries": [
+        "Миндальное молоко USDA FoodData Central",
+        "Миндальное молоко calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 120,
+      "id": "poster_752",
+      "posterIngredientId": "752",
+      "name": "молочный с орехами",
+      "aliases": [
+        "молочный с орехами"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 3,
+      "searchQueries": [
+        "молочный с орехами USDA FoodData Central",
+        "молочный с орехами calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 124,
+      "id": "poster_419",
+      "posterIngredientId": "419",
+      "name": "Нашараб",
+      "aliases": [
+        "Нашараб"
+      ],
+      "units": [
+        "ml"
+      ],
+      "usedInProductCount": 3,
+      "searchQueries": [
+        "Нашараб USDA FoodData Central",
+        "Нашараб calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 129,
+      "id": "poster_500",
+      "posterIngredientId": "500",
+      "name": "сало",
+      "aliases": [
+        "сало"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 3,
+      "searchQueries": [
+        "сало USDA FoodData Central",
+        "сало calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 131,
+      "id": "poster_202",
+      "posterIngredientId": "202",
+      "name": "Свиное каре /չալաղաջ/",
+      "aliases": [
+        "Свиное каре /չալաղաջ/"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 3,
+      "searchQueries": [
+        "Свиное каре /չալաղաջ/ USDA FoodData Central",
+        "Свиное каре /չալաղաջ/ calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 137,
+      "id": "poster_503",
+      "posterIngredientId": "503",
+      "name": "тыква запеченная Z",
+      "aliases": [
+        "тыква запеченная Z"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 3,
+      "searchQueries": [
+        "тыква запеченная Z USDA FoodData Central",
+        "тыква запеченная Z calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 139,
+      "id": "poster_347",
+      "posterIngredientId": "347",
+      "name": "Хмели/сунели",
+      "aliases": [
+        "Хмели/сунели"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 3,
+      "searchQueries": [
+        "Хмели/сунели USDA FoodData Central",
+        "Хмели/сунели calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 140,
+      "id": "poster_169",
+      "posterIngredientId": "169",
+      "name": "Чанах",
+      "aliases": [
+        "Чанах"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 3,
+      "searchQueries": [
+        "Чанах USDA FoodData Central",
+        "Чанах calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 141,
+      "id": "poster_751",
+      "posterIngredientId": "751",
+      "name": "черный с фундуком",
+      "aliases": [
+        "черный с фундуком"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 3,
+      "searchQueries": [
+        "черный с фундуком USDA FoodData Central",
+        "черный с фундуком calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 145,
+      "id": "poster_126",
+      "posterIngredientId": "126",
+      "name": "Ariats Pomegranate",
+      "aliases": [
+        "Ariats Pomegranate"
+      ],
+      "units": [
+        "ml"
+      ],
+      "usedInProductCount": 2,
+      "searchQueries": [
+        "Ariats Pomegranate USDA FoodData Central",
+        "Ariats Pomegranate calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 149,
+      "id": "poster_211",
+      "posterIngredientId": "211",
+      "name": "Chistie Rosi",
+      "aliases": [
+        "Chistie Rosi"
+      ],
+      "units": [
+        "ml"
+      ],
+      "usedInProductCount": 2,
+      "searchQueries": [
+        "Chistie Rosi USDA FoodData Central",
+        "Chistie Rosi calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 165,
+      "id": "poster_206",
+      "posterIngredientId": "206",
+      "name": "Баранина /մատ/",
+      "aliases": [
+        "Баранина /մատ/"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 2,
+      "searchQueries": [
+        "Баранина /մատ/ USDA FoodData Central",
+        "Баранина /մատ/ calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 166,
+      "id": "poster_205",
+      "posterIngredientId": "205",
+      "name": "Баранина /չալաղաջ/",
+      "aliases": [
+        "Баранина /չալաղաջ/"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 2,
+      "searchQueries": [
+        "Баранина /չալաղաջ/ USDA FoodData Central",
+        "Баранина /չալաղաջ/ calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 169,
+      "id": "poster_65",
+      "posterIngredientId": "65",
+      "name": "Виноградные листья",
+      "aliases": [
+        "Виноградные листья"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 2,
+      "searchQueries": [
+        "Виноградные листья USDA FoodData Central",
+        "Виноградные листья calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 170,
+      "id": "poster_66",
+      "posterIngredientId": "66",
+      "name": "Вяленные маслины",
+      "aliases": [
+        "Вяленные маслины"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 2,
+      "searchQueries": [
+        "Вяленные маслины USDA FoodData Central",
+        "Вяленные маслины calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 180,
+      "id": "poster_172",
+      "posterIngredientId": "172",
+      "name": "Кокосовое молоко",
+      "aliases": [
+        "Кокосовое молоко"
+      ],
+      "units": [
+        "ml"
+      ],
+      "usedInProductCount": 2,
+      "searchQueries": [
+        "Кокосовое молоко USDA FoodData Central",
+        "Кокосовое молоко calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 181,
+      "id": "poster_471",
+      "posterIngredientId": "471",
+      "name": "крахмал",
+      "aliases": [
+        "крахмал"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 2,
+      "searchQueries": [
+        "крахмал USDA FoodData Central",
+        "крахмал calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 185,
+      "id": "poster_158",
+      "posterIngredientId": "158",
+      "name": "Лоры с зеленью",
+      "aliases": [
+        "Лоры с зеленью"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 2,
+      "searchQueries": [
+        "Лоры с зеленью USDA FoodData Central",
+        "Лоры с зеленью calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 188,
+      "id": "poster_75",
+      "posterIngredientId": "75",
+      "name": "Маринованный кизил",
+      "aliases": [
+        "Маринованный кизил"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 2,
+      "searchQueries": [
+        "Маринованный кизил USDA FoodData Central",
+        "Маринованный кизил calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 191,
+      "id": "poster_160",
+      "posterIngredientId": "160",
+      "name": "Моцарелла",
+      "aliases": [
+        "Моцарелла"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 2,
+      "searchQueries": [
+        "Моцарелла USDA FoodData Central",
+        "Моцарелла calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 193,
+      "id": "poster_650",
+      "posterIngredientId": "650",
+      "name": "настойка фруктового чая",
+      "aliases": [
+        "настойка фруктового чая"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 2,
+      "searchQueries": [
+        "настойка фруктового чая USDA FoodData Central",
+        "настойка фруктового чая calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 194,
+      "id": "poster_296",
+      "posterIngredientId": "296",
+      "name": "Натуральные соки /0,25/",
+      "aliases": [
+        "Натуральные соки /0,25/"
+      ],
+      "units": [
+        "p"
+      ],
+      "usedInProductCount": 2,
+      "searchQueries": [
+        "Натуральные соки /0,25/ USDA FoodData Central",
+        "Натуральные соки /0,25/ calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 195,
+      "id": "poster_161",
+      "posterIngredientId": "161",
+      "name": "Овечий сыр",
+      "aliases": [
+        "Овечий сыр"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 2,
+      "searchQueries": [
+        "Овечий сыр USDA FoodData Central",
+        "Овечий сыр calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 198,
+      "id": "poster_334",
+      "posterIngredientId": "334",
+      "name": "Перец букет (горошек)",
+      "aliases": [
+        "Перец букет (горошек)"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 2,
+      "searchQueries": [
+        "Перец букет (горошек) USDA FoodData Central",
+        "Перец букет (горошек) calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 203,
+      "id": "poster_58",
+      "posterIngredientId": "58",
+      "name": "помидоры запеченные",
+      "aliases": [
+        "помидоры запеченные"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 2,
+      "searchQueries": [
+        "помидоры запеченные USDA FoodData Central",
+        "помидоры запеченные calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 207,
+      "id": "poster_201",
+      "posterIngredientId": "201",
+      "name": "Свинина",
+      "aliases": [
+        "Свинина"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 2,
+      "searchQueries": [
+        "Свинина USDA FoodData Central",
+        "Свинина calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 214,
+      "id": "poster_165",
+      "posterIngredientId": "165",
+      "name": "Страчателла",
+      "aliases": [
+        "Страчателла"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 2,
+      "searchQueries": [
+        "Страчателла USDA FoodData Central",
+        "Страчателла calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 216,
+      "id": "poster_488",
+      "posterIngredientId": "488",
+      "name": "табаско",
+      "aliases": [
+        "табаско"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 2,
+      "searchQueries": [
+        "табаско USDA FoodData Central",
+        "табаско calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 219,
+      "id": "poster_301",
+      "posterIngredientId": "301",
+      "name": "тоник",
+      "aliases": [
+        "тоник"
+      ],
+      "units": [
+        "p"
+      ],
+      "usedInProductCount": 2,
+      "searchQueries": [
+        "тоник USDA FoodData Central",
+        "тоник calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 221,
+      "id": "poster_306",
+      "posterIngredientId": "306",
+      "name": "Цыпленок",
+      "aliases": [
+        "Цыпленок"
+      ],
+      "units": [
+        "p"
+      ],
+      "usedInProductCount": 2,
+      "searchQueries": [
+        "Цыпленок USDA FoodData Central",
+        "Цыпленок calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 226,
+      "id": "poster_225",
+      "posterIngredientId": "225",
+      "name": "Akhtamar",
+      "aliases": [
+        "Akhtamar"
+      ],
+      "units": [
+        "ml"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Akhtamar USDA FoodData Central",
+        "Akhtamar calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 227,
+      "id": "poster_130",
+      "posterIngredientId": "130",
+      "name": "Attems Pinot Grigio",
+      "aliases": [
+        "Attems Pinot Grigio"
+      ],
+      "units": [
+        "p"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Attems Pinot Grigio USDA FoodData Central",
+        "Attems Pinot Grigio calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 240,
+      "id": "poster_226",
+      "posterIngredientId": "226",
+      "name": "Dvin",
+      "aliases": [
+        "Dvin"
+      ],
+      "units": [
+        "ml"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Dvin USDA FoodData Central",
+        "Dvin calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 241,
+      "id": "poster_578",
+      "posterIngredientId": "578",
+      "name": "fruit liquor",
+      "aliases": [
+        "fruit liquor"
+      ],
+      "units": [
+        "ml"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "fruit liquor USDA FoodData Central",
+        "fruit liquor calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 251,
+      "id": "poster_224",
+      "posterIngredientId": "224",
+      "name": "Jin Beam",
+      "aliases": [
+        "Jin Beam"
+      ],
+      "units": [
+        "ml"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Jin Beam USDA FoodData Central",
+        "Jin Beam calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 253,
+      "id": "poster_105",
+      "posterIngredientId": "105",
+      "name": "Keush Brut /white/",
+      "aliases": [
+        "Keush Brut /white/"
+      ],
+      "units": [
+        "p"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Keush Brut /white/ USDA FoodData Central",
+        "Keush Brut /white/ calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 255,
+      "id": "poster_119",
+      "posterIngredientId": "119",
+      "name": "Krombacher 0.33",
+      "aliases": [
+        "Krombacher 0.33"
+      ],
+      "units": [
+        "p"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Krombacher 0.33 USDA FoodData Central",
+        "Krombacher 0.33 calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 259,
+      "id": "poster_240",
+      "posterIngredientId": "240",
+      "name": "Monkey",
+      "aliases": [
+        "Monkey"
+      ],
+      "units": [
+        "ml"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Monkey USDA FoodData Central",
+        "Monkey calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 260,
+      "id": "poster_227",
+      "posterIngredientId": "227",
+      "name": "Nairi",
+      "aliases": [
+        "Nairi"
+      ],
+      "units": [
+        "ml"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Nairi USDA FoodData Central",
+        "Nairi calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 261,
+      "id": "poster_228",
+      "posterIngredientId": "228",
+      "name": "Ohanyan",
+      "aliases": [
+        "Ohanyan"
+      ],
+      "units": [
+        "ml"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Ohanyan USDA FoodData Central",
+        "Ohanyan calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 262,
+      "id": "poster_213",
+      "posterIngredientId": "213",
+      "name": "Ohanyan Ice",
+      "aliases": [
+        "Ohanyan Ice"
+      ],
+      "units": [
+        "ml"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Ohanyan Ice USDA FoodData Central",
+        "Ohanyan Ice calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 265,
+      "id": "poster_140",
+      "posterIngredientId": "140",
+      "name": "Piccini Memoro /white/",
+      "aliases": [
+        "Piccini Memoro /white/"
+      ],
+      "units": [
+        "p"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Piccini Memoro /white/ USDA FoodData Central",
+        "Piccini Memoro /white/ calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 268,
+      "id": "poster_241",
+      "posterIngredientId": "241",
+      "name": "Stin",
+      "aliases": [
+        "Stin"
+      ],
+      "units": [
+        "ml"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Stin USDA FoodData Central",
+        "Stin calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 271,
+      "id": "poster_144",
+      "posterIngredientId": "144",
+      "name": "Tariri /red/",
+      "aliases": [
+        "Tariri /red/"
+      ],
+      "units": [
+        "p"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Tariri /red/ USDA FoodData Central",
+        "Tariri /red/ calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 272,
+      "id": "poster_145",
+      "posterIngredientId": "145",
+      "name": "Tariri /white/",
+      "aliases": [
+        "Tariri /white/"
+      ],
+      "units": [
+        "p"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Tariri /white/ USDA FoodData Central",
+        "Tariri /white/ calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 275,
+      "id": "poster_146",
+      "posterIngredientId": "146",
+      "name": "Tus /white/",
+      "aliases": [
+        "Tus /white/"
+      ],
+      "units": [
+        "p"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Tus /white/ USDA FoodData Central",
+        "Tus /white/ calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 276,
+      "id": "poster_229",
+      "posterIngredientId": "229",
+      "name": "Vaspurakan",
+      "aliases": [
+        "Vaspurakan"
+      ],
+      "units": [
+        "ml"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Vaspurakan USDA FoodData Central",
+        "Vaspurakan calories kcal 100g"
+      ]
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "version": 2,
   "source": "firestore_public_menu_snapshot",
   "restaurantId": "poster-test",
-  "exportedAt": "2026-08-28T19:32:53.933Z",
+  "exportedAt": "2026-08-29T10:24:38.506Z",
   "restaurant": {
     "name": {
       "hy": "Poster Restaurant",
@@ -627,13 +627,18 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 0,
+        "protein": 0,
+        "fat": 0,
+        "carbohydrates": 0,
+        "servingGrams": 5,
+        "per100g": {
+          "carbohydrates": 0,
+          "protein": 0.2,
+          "fat": 0,
+          "calories": 1
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -2493,13 +2498,18 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 215,
+        "protein": 38.7,
+        "fat": 4.8,
+        "carbohydrates": 2.4,
+        "servingGrams": 176,
+        "per100g": {
+          "carbohydrates": 1.3,
+          "protein": 22,
+          "fat": 2.7,
+          "calories": 122
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -3099,13 +3109,18 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 28,
+        "protein": 3.6,
+        "fat": 0.3,
+        "carbohydrates": 4.5,
+        "servingGrams": 120,
+        "per100g": {
+          "carbohydrates": 3.8,
+          "protein": 3,
+          "fat": 0.3,
+          "calories": 23
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -4075,13 +4090,18 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 85,
+        "protein": 7,
+        "fat": 0.9,
+        "carbohydrates": 16.6,
+        "servingGrams": 250,
+        "per100g": {
+          "carbohydrates": 6.6,
+          "protein": 2.8,
+          "fat": 0.4,
+          "calories": 34
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -4423,13 +4443,18 @@
         }
       ],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 311,
+        "protein": 5.3,
+        "fat": 16.5,
+        "carbohydrates": 35.4,
+        "servingGrams": 150,
+        "per100g": {
+          "carbohydrates": 23.6,
+          "protein": 3.5,
+          "fat": 11,
+          "calories": 207
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -4476,13 +4501,18 @@
         }
       ],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 302,
+        "protein": 8.4,
+        "fat": 16.1,
+        "carbohydrates": 31.2,
+        "servingGrams": 266.5,
+        "per100g": {
+          "carbohydrates": 11.7,
+          "protein": 3.1,
+          "fat": 6,
+          "calories": 113
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -5049,13 +5079,18 @@
         }
       ],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 105,
+        "protein": 0.2,
+        "fat": 0,
+        "carbohydrates": 3.9,
+        "servingGrams": 150,
+        "per100g": {
+          "carbohydrates": 2.6,
+          "protein": 0.1,
+          "fat": 0,
+          "calories": 70
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -5545,13 +5580,18 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 457,
+        "protein": 14.6,
+        "fat": 15.5,
+        "carbohydrates": 71.8,
+        "servingGrams": 623.8,
+        "per100g": {
+          "carbohydrates": 11.5,
+          "protein": 2.3,
+          "fat": 2.5,
+          "calories": 73
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -6066,13 +6106,18 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 0,
+        "protein": 0,
+        "fat": 0,
+        "carbohydrates": 0,
+        "servingGrams": 5,
+        "per100g": {
+          "carbohydrates": 0.3,
+          "protein": 0,
+          "fat": 0,
+          "calories": 1
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -6570,13 +6615,18 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 0,
+        "protein": 0,
+        "fat": 0,
+        "carbohydrates": 0,
+        "servingGrams": 5,
+        "per100g": {
+          "carbohydrates": 0.3,
+          "protein": 0,
+          "fat": 0,
+          "calories": 1
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -7632,13 +7682,18 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 0,
+        "protein": 0,
+        "fat": 0,
+        "carbohydrates": 0,
+        "servingGrams": 5,
+        "per100g": {
+          "carbohydrates": 0,
+          "protein": 0.2,
+          "fat": 0,
+          "calories": 1
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -7673,13 +7728,18 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 0,
+        "protein": 0,
+        "fat": 0,
+        "carbohydrates": 0,
+        "servingGrams": 5,
+        "per100g": {
+          "carbohydrates": 0,
+          "protein": 0.2,
+          "fat": 0,
+          "calories": 1
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -7761,13 +7821,18 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 176,
+        "protein": 0.7,
+        "fat": 0.2,
+        "carbohydrates": 46.5,
+        "servingGrams": 80,
+        "per100g": {
+          "carbohydrates": 58.2,
+          "protein": 0.9,
+          "fat": 0.3,
+          "calories": 220
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -7866,13 +7931,18 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 67,
+        "protein": 1,
+        "fat": 0.1,
+        "carbohydrates": 15.5,
+        "servingGrams": 60,
+        "per100g": {
+          "carbohydrates": 25.8,
+          "protein": 1.7,
+          "fat": 0.2,
+          "calories": 112
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -7960,13 +8030,18 @@
         }
       ],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 40,
+        "protein": 2.6,
+        "fat": 2.4,
+        "carbohydrates": 3.5,
+        "servingGrams": 60,
+        "per100g": {
+          "carbohydrates": 5.8,
+          "protein": 4.4,
+          "fat": 4,
+          "calories": 66
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -8422,13 +8497,18 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 240,
+        "protein": 28,
+        "fat": 14,
+        "carbohydrates": 0.5,
+        "servingGrams": 100,
+        "per100g": {
+          "carbohydrates": 0.5,
+          "protein": 28,
+          "fat": 14,
+          "calories": 240
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -8469,13 +8549,18 @@
         }
       ],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 320,
+        "protein": 21,
+        "fat": 25,
+        "carbohydrates": 0.5,
+        "servingGrams": 100,
+        "per100g": {
+          "carbohydrates": 0.5,
+          "protein": 21,
+          "fat": 25,
+          "calories": 320
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -8904,13 +8989,18 @@
         }
       ],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 286,
+        "protein": 20.5,
+        "fat": 22,
+        "carbohydrates": 0.4,
+        "servingGrams": 100,
+        "per100g": {
+          "carbohydrates": 0.4,
+          "protein": 20.5,
+          "fat": 22,
+          "calories": 286
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -8951,13 +9041,18 @@
         }
       ],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 396,
+        "protein": 21.3,
+        "fat": 31.9,
+        "carbohydrates": 6.1,
+        "servingGrams": 150,
+        "per100g": {
+          "carbohydrates": 4.1,
+          "protein": 14.2,
+          "fat": 21.3,
+          "calories": 264
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -9121,13 +9216,18 @@
         }
       ],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 255,
+        "protein": 60.3,
+        "fat": 1.5,
+        "carbohydrates": 0,
+        "servingGrams": 300,
+        "per100g": {
+          "carbohydrates": 0,
+          "protein": 20.1,
+          "fat": 0.5,
+          "calories": 85
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -12228,13 +12328,18 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 116,
+        "protein": 0,
+        "fat": 0,
+        "carbohydrates": 0,
+        "servingGrams": 50,
+        "per100g": {
+          "carbohydrates": 0,
+          "protein": 0,
+          "fat": 0,
+          "calories": 231
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -12649,13 +12754,18 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 154,
+        "protein": 0,
+        "fat": 0,
+        "carbohydrates": 13.5,
+        "servingGrams": 50,
+        "per100g": {
+          "carbohydrates": 27,
+          "protein": 0,
+          "fat": 0,
+          "calories": 308
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -13049,13 +13159,18 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 191,
+        "protein": 0.2,
+        "fat": 0.1,
+        "carbohydrates": 1.9,
+        "servingGrams": 100,
+        "per100g": {
+          "carbohydrates": 1.9,
+          "protein": 0.2,
+          "fat": 0.1,
+          "calories": 191
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -13564,13 +13679,18 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 223,
+        "protein": 0.6,
+        "fat": 0.2,
+        "carbohydrates": 14.9,
+        "servingGrams": 152,
+        "per100g": {
+          "carbohydrates": 9.8,
+          "protein": 0.4,
+          "fat": 0.1,
+          "calories": 147
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -13614,13 +13734,18 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 207,
+        "protein": 0.3,
+        "fat": 0.1,
+        "carbohydrates": 11.1,
+        "servingGrams": 102,
+        "per100g": {
+          "carbohydrates": 10.9,
+          "protein": 0.3,
+          "fat": 0.1,
+          "calories": 203
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -13770,13 +13895,18 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 10,
+        "protein": 0.2,
+        "fat": 0.3,
+        "carbohydrates": 2.9,
+        "servingGrams": 9,
+        "per100g": {
+          "carbohydrates": 32.6,
+          "protein": 2.2,
+          "fat": 3.2,
+          "calories": 116
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -13829,13 +13959,18 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 254,
+        "protein": 0.3,
+        "fat": 0.1,
+        "carbohydrates": 7.7,
+        "servingGrams": 125,
+        "per100g": {
+          "carbohydrates": 6.2,
+          "protein": 0.2,
+          "fat": 0.1,
+          "calories": 203
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -14041,13 +14176,18 @@
         }
       ],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 348,
+        "protein": 6,
+        "fat": 16.8,
+        "carbohydrates": 44.7,
+        "servingGrams": 235,
+        "per100g": {
+          "carbohydrates": 19,
+          "protein": 2.5,
+          "fat": 7.1,
+          "calories": 148
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -14587,13 +14727,18 @@
         }
       ],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 398,
+        "protein": 8.9,
+        "fat": 23.5,
+        "carbohydrates": 40.2,
+        "servingGrams": 212,
+        "per100g": {
+          "carbohydrates": 18.9,
+          "protein": 4.2,
+          "fat": 11.1,
+          "calories": 188
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -15304,13 +15449,18 @@
         }
       ],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 504,
+        "protein": 11.8,
+        "fat": 26.4,
+        "carbohydrates": 56.8,
+        "servingGrams": 474.5,
+        "per100g": {
+          "carbohydrates": 12,
+          "protein": 2.5,
+          "fat": 5.6,
+          "calories": 106
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -15658,13 +15808,18 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 90,
+        "protein": 4.4,
+        "fat": 1,
+        "carbohydrates": 19.4,
+        "servingGrams": 500,
+        "per100g": {
+          "carbohydrates": 3.9,
+          "protein": 0.9,
+          "fat": 0.2,
+          "calories": 18
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -16418,13 +16573,18 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 2,
+        "protein": 0.1,
+        "fat": 0,
+        "carbohydrates": 0.4,
+        "servingGrams": 13,
+        "per100g": {
+          "carbohydrates": 3,
+          "protein": 0.9,
+          "fat": 0.3,
+          "calories": 18
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -17082,13 +17242,18 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 0,
+        "protein": 0,
+        "fat": 0,
+        "carbohydrates": 0,
+        "servingGrams": 5,
+        "per100g": {
+          "carbohydrates": 0,
+          "protein": 0.2,
+          "fat": 0,
+          "calories": 1
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -17793,13 +17958,18 @@
         }
       ],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 23,
+        "protein": 2.1,
+        "fat": 0.5,
+        "carbohydrates": 3.7,
+        "servingGrams": 100,
+        "per100g": {
+          "carbohydrates": 3.7,
+          "protein": 2.1,
+          "fat": 0.5,
+          "calories": 23
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -18588,13 +18758,18 @@
         }
       ],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 292,
+        "protein": 29.1,
+        "fat": 18.4,
+        "carbohydrates": 1.1,
+        "servingGrams": 170,
+        "per100g": {
+          "carbohydrates": 0.7,
+          "protein": 17.1,
+          "fat": 10.8,
+          "calories": 172
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -20041,13 +20216,18 @@
         }
       ],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 305,
+        "protein": 18.2,
+        "fat": 24,
+        "carbohydrates": 5.1,
+        "servingGrams": 237,
+        "per100g": {
+          "carbohydrates": 2.2,
+          "protein": 7.7,
+          "fat": 10.1,
+          "calories": 129
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -20335,13 +20515,18 @@
         }
       ],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 270,
+        "protein": 4.6,
+        "fat": 14.3,
+        "carbohydrates": 30.9,
+        "servingGrams": 142,
+        "per100g": {
+          "carbohydrates": 21.7,
+          "protein": 3.2,
+          "fat": 10.1,
+          "calories": 190
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -20624,13 +20809,18 @@
         }
       ],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 551,
+        "protein": 17.3,
+        "fat": 48.8,
+        "carbohydrates": 10.8,
+        "servingGrams": 209.6,
+        "per100g": {
+          "carbohydrates": 5.2,
+          "protein": 8.3,
+          "fat": 23.3,
+          "calories": 263
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999

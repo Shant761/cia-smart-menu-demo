@@ -1,0 +1,51 @@
+name: Apply Poster structure-type fix
+
+on:
+  push:
+    paths:
+      - '.github/workflows/apply-structure-type-fix.yml'
+      - 'scripts/apply-structure-type-fix.cjs'
+  workflow_dispatch:
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Apply structure-type patch
+        run: node scripts/apply-structure-type-fix.cjs
+
+      - name: Validate patched scripts
+        run: |
+          node --check scripts/sync-poster-to-firestore.cjs
+          node --check scripts/build-ingredient-catalog.cjs
+          node --check scripts/calculate-product-nutrition.cjs
+          node --check scripts/lookup-nutrition-local.cjs
+
+      - name: Commit patched scripts
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add \
+            scripts/sync-poster-to-firestore.cjs \
+            scripts/build-ingredient-catalog.cjs \
+            scripts/calculate-product-nutrition.cjs \
+            scripts/lookup-nutrition-local.cjs
+          if git diff --cached --quiet; then
+            echo 'Structure-type fix already applied.'
+            exit 0
+          fi
+          git commit -m 'fix: separate Poster preparations from ingredients'
+          git pull --rebase origin main
+          git push origin HEAD:main

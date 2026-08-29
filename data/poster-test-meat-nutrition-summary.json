@@ -1,0 +1,3047 @@
+{
+  "version": "2.0.0",
+  "restaurantId": "poster-test",
+  "generatedAt": "2026-08-29T15:23:54.208Z",
+  "publicProductCount": 422,
+  "candidateCount": 64,
+  "correctedImpossibleCount": 0,
+  "fullyCalculatedCount": 4,
+  "partialCount": 39,
+  "reviewWithoutKnownCount": 11,
+  "products": [
+    {
+      "productId": "10",
+      "name": {
+        "hy": "Անգլիական նախաճաշ",
+        "ru": "Английский завтрак",
+        "en": "English Breakfast"
+      },
+      "category": "14",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 107,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 8,
+      "resolvedRows": 2,
+      "totalGrams": 280,
+      "knownGrams": 100,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_353",
+          "structureType": 1,
+          "name": "Яйца",
+          "unit": "p",
+          "amount": 120,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_prep_632",
+          "structureType": 2,
+          "name": "помидоры чищенные",
+          "unit": "g",
+          "amount": 100,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_84",
+          "structureType": 1,
+          "name": "Фасоль в томате",
+          "unit": "g",
+          "amount": 80,
+          "reason": "nutrition_needs_review"
+        },
+        {
+          "key": "poster_532",
+          "structureType": 1,
+          "name": "тосты",
+          "unit": "p",
+          "amount": 0,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_395",
+          "structureType": 1,
+          "name": "растительное масло",
+          "unit": "ml",
+          "amount": 30,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_191",
+          "structureType": 1,
+          "name": "Сосиски с беконом",
+          "unit": "p",
+          "amount": 0,
+          "reason": "unsupported_unit"
+        }
+      ]
+    },
+    {
+      "productId": "119",
+      "name": {
+        "hy": "Դեղձ թխվածքաբլիթ",
+        "ru": "Печенье «Персик»",
+        "en": "Peach-Shaped Cookie"
+      },
+      "category": "16",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 135,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 4,
+      "resolvedRows": 2,
+      "totalGrams": 200,
+      "knownGrams": 30,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_708",
+          "structureType": 2,
+          "name": "песочный персик",
+          "unit": "g",
+          "amount": 140,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_736",
+          "structureType": 2,
+          "name": "начинка для орешков",
+          "unit": "g",
+          "amount": 30,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "12",
+      "name": {
+        "hy": "Սկրեմբլ ղավուրմայով եւ ստրաչատելլայով",
+        "ru": "Скрэмбл с кавурмой и страчателлой",
+        "en": "Scrambled Eggs with Kavurma and Stracciatella"
+      },
+      "category": "14",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 5,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 8,
+      "resolvedRows": 2,
+      "totalGrams": 136,
+      "knownGrams": 4,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_165",
+          "structureType": 1,
+          "name": "Страчателла",
+          "unit": "g",
+          "amount": 70,
+          "reason": "nutrition_needs_review"
+        },
+        {
+          "key": "poster_353",
+          "structureType": 1,
+          "name": "Яйца",
+          "unit": "p",
+          "amount": 120,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_395",
+          "structureType": 1,
+          "name": "растительное масло",
+          "unit": "ml",
+          "amount": 50,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_prep_602",
+          "structureType": 2,
+          "name": "каурма",
+          "unit": "g",
+          "amount": 50,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_493",
+          "structureType": 1,
+          "name": "микрогрин",
+          "unit": "g",
+          "amount": 2,
+          "reason": "nutrition_verified"
+        },
+        {
+          "key": "poster_492",
+          "structureType": 1,
+          "name": "семена тыквы",
+          "unit": "g",
+          "amount": 10,
+          "reason": "nutrition_verified"
+        }
+      ]
+    },
+    {
+      "productId": "124",
+      "name": {
+        "hy": "Մսային միքս",
+        "ru": "Мясной микс",
+        "en": "Meat Mix"
+      },
+      "category": "7",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 4487,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 11,
+      "resolvedRows": 8,
+      "totalGrams": 2510,
+      "knownGrams": 2410,
+      "meatOnlyCalories": 4451,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_264",
+          "structureType": 1,
+          "name": "острый перец",
+          "unit": "p",
+          "amount": 0,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_prep_611",
+          "structureType": 2,
+          "name": "соус сацебели",
+          "unit": "g",
+          "amount": 50,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_626",
+          "structureType": 2,
+          "name": "соус пепер",
+          "unit": "g",
+          "amount": 50,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "127",
+      "name": {
+        "hy": "Բորշ",
+        "ru": "Բորշ",
+        "en": "Բորշ"
+      },
+      "category": "6",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 162,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 9,
+      "resolvedRows": 5,
+      "totalGrams": 625,
+      "knownGrams": 165,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_593",
+          "structureType": 2,
+          "name": "борщ",
+          "unit": "g",
+          "amount": 300,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_529",
+          "structureType": 2,
+          "name": "говядина отварная",
+          "unit": "g",
+          "amount": 50,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_500",
+          "structureType": 1,
+          "name": "сало",
+          "unit": "g",
+          "amount": 30,
+          "reason": "nutrition_needs_review"
+        },
+        {
+          "key": "poster_501",
+          "structureType": 1,
+          "name": "хлеб бородинский",
+          "unit": "g",
+          "amount": 80,
+          "reason": "nutrition_verified"
+        }
+      ]
+    },
+    {
+      "productId": "136",
+      "name": {
+        "hy": "Դդմով կրեմ-ապուր",
+        "ru": "Тыквенный крем-суп",
+        "en": "Pumpkin Cream Soup"
+      },
+      "category": "6",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 143,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 5,
+      "resolvedRows": 1,
+      "totalGrams": 500,
+      "knownGrams": 20,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_560",
+          "structureType": 2,
+          "name": "суп из тыквы",
+          "unit": "g",
+          "amount": 240,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_492",
+          "structureType": 1,
+          "name": "семена тыквы",
+          "unit": "g",
+          "amount": 5,
+          "reason": "nutrition_verified"
+        },
+        {
+          "key": "poster_504",
+          "structureType": 1,
+          "name": "том ям",
+          "unit": "g",
+          "amount": 10,
+          "reason": "nutrition_needs_review"
+        },
+        {
+          "key": "poster_prep_503",
+          "structureType": 2,
+          "name": "тыква запеченная Z",
+          "unit": "g",
+          "amount": 225,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "139",
+      "name": {
+        "hy": "Խոզի չալաղաջ խորոված",
+        "ru": "Свиной чалагач на гриле",
+        "en": "Grilled Pork Chalagach"
+      },
+      "category": "7",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 800,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 8,
+      "resolvedRows": 6,
+      "totalGrams": 641,
+      "knownGrams": 539,
+      "meatOnlyCalories": 765,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_345",
+          "structureType": 1,
+          "name": "Тимьян /ուրց/",
+          "unit": "g",
+          "amount": 2,
+          "reason": "nutrition_needs_review"
+        },
+        {
+          "key": "poster_prep_611",
+          "structureType": 2,
+          "name": "соус сацебели",
+          "unit": "g",
+          "amount": 100,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "14",
+      "name": {
+        "hy": "Ձու բենեդիկտ բեկոնով",
+        "ru": "Яйца Бенедикт с беконом",
+        "en": "Eggs Benedict with Bacon"
+      },
+      "category": "14",
+      "oldStatus": "calculated",
+      "oldCalories": 580,
+      "newStatus": "needs_review",
+      "newCalories": 122,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 6,
+      "resolvedRows": 2,
+      "totalGrams": 180,
+      "knownGrams": 80,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_353",
+          "structureType": 1,
+          "name": "Яйца",
+          "unit": "p",
+          "amount": 180,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_431",
+          "structureType": 1,
+          "name": "уксус Ponti",
+          "unit": "ml",
+          "amount": 60,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_436",
+          "structureType": 1,
+          "name": "Лимон",
+          "unit": "p",
+          "amount": 100,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_prep_513",
+          "structureType": 2,
+          "name": "авокадо чищенный",
+          "unit": "g",
+          "amount": 100,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "140",
+      "name": {
+        "hy": "Խոզի փափկամսի խորոված",
+        "ru": "Шашлык из свиной вырезки",
+        "en": "Grilled Pork Tenderloin"
+      },
+      "category": "7",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "calculated",
+      "newCalories": 306,
+      "displayedAsMinimum": false,
+      "totalRecipeRows": 6,
+      "resolvedRows": 6,
+      "totalGrams": 307,
+      "knownGrams": 307,
+      "meatOnlyCalories": 268,
+      "impossibleOld": false,
+      "unresolved": []
+    },
+    {
+      "productId": "141",
+      "name": {
+        "hy": "Շիշ թաուկ",
+        "ru": "Шиш-таук",
+        "en": "Shish Tawook"
+      },
+      "category": "7",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 630,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 8,
+      "resolvedRows": 7,
+      "totalGrams": 361,
+      "knownGrams": 359,
+      "meatOnlyCalories": 240,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_497",
+          "structureType": 2,
+          "name": "чеснок очищенный",
+          "unit": "g",
+          "amount": 2,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "147",
+      "name": {
+        "hy": "Խինկալի",
+        "ru": "Хинкали",
+        "en": "Khinkali"
+      },
+      "category": "38",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 0,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 3,
+      "resolvedRows": 1,
+      "totalGrams": 93,
+      "knownGrams": 3,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_550",
+          "structureType": 2,
+          "name": "тесто для хинкали",
+          "unit": "g",
+          "amount": 45,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_543",
+          "structureType": 2,
+          "name": "фарш для хинкали",
+          "unit": "g",
+          "amount": 45,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "154",
+      "name": {
+        "hy": "Գրիլ հավի կրծքամիս",
+        "ru": "Куриная грудка на гриле",
+        "en": "Grilled Chicken Breast"
+      },
+      "category": "10",
+      "oldStatus": "calculated",
+      "oldCalories": 215,
+      "newStatus": "calculated",
+      "newCalories": 215,
+      "displayedAsMinimum": false,
+      "totalRecipeRows": 4,
+      "resolvedRows": 4,
+      "totalGrams": 176,
+      "knownGrams": 176,
+      "meatOnlyCalories": 204,
+      "impossibleOld": false,
+      "unresolved": []
+    },
+    {
+      "productId": "162",
+      "name": {
+        "hy": "Տապակած քուֆթա բանջարեղենով",
+        "ru": "Жареная кюфта с овощами",
+        "en": "Fried Kufta with Vegetables"
+      },
+      "category": "10",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 37,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 12,
+      "resolvedRows": 5,
+      "totalGrams": 745,
+      "knownGrams": 175,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_548",
+          "structureType": 2,
+          "name": "кюфта",
+          "unit": "g",
+          "amount": 300,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_591",
+          "structureType": 2,
+          "name": "болгарский очищеный",
+          "unit": "g",
+          "amount": 50,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_491",
+          "structureType": 2,
+          "name": "броколли/чищенный",
+          "unit": "g",
+          "amount": 50,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_512",
+          "structureType": 2,
+          "name": "картофель очищенный",
+          "unit": "g",
+          "amount": 70,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_395",
+          "structureType": 1,
+          "name": "растительное масло",
+          "unit": "ml",
+          "amount": 40,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_prep_611",
+          "structureType": 2,
+          "name": "соус сацебели",
+          "unit": "g",
+          "amount": 50,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_612",
+          "structureType": 2,
+          "name": "соус тархуновый",
+          "unit": "g",
+          "amount": 50,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "163",
+      "name": {
+        "hy": "Ղավուրմա սմբուկի խյուսով",
+        "ru": "Кавурма с пюре из баклажана",
+        "en": "Kavurma with Eggplant Purée"
+      },
+      "category": "10",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 336,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 10,
+      "resolvedRows": 5,
+      "totalGrams": 438,
+      "knownGrams": 84,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_493",
+          "structureType": 2,
+          "name": "баклажан запеченный",
+          "unit": "g",
+          "amount": 250,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_602",
+          "structureType": 2,
+          "name": "каурма",
+          "unit": "g",
+          "amount": 100,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_175",
+          "structureType": 1,
+          "name": "Сливки /M Gurme/",
+          "unit": "ml",
+          "amount": 150,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_prep_497",
+          "structureType": 2,
+          "name": "чеснок очищенный",
+          "unit": "g",
+          "amount": 2,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_347",
+          "structureType": 1,
+          "name": "Хмели/сунели",
+          "unit": "g",
+          "amount": 2,
+          "reason": "nutrition_needs_review"
+        }
+      ]
+    },
+    {
+      "productId": "164",
+      "name": {
+        "hy": "Հորթի փափկամիս գրիլի վրա",
+        "ru": "Телячья вырезка на гриле",
+        "en": "Grilled Veal Tenderloin"
+      },
+      "category": "10",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 3,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 7,
+      "resolvedRows": 2,
+      "totalGrams": 345,
+      "knownGrams": 3,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_515",
+          "structureType": 2,
+          "name": "говяжье суки очищенная",
+          "unit": "g",
+          "amount": 300,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_334",
+          "structureType": 1,
+          "name": "Перец букет (горошек)",
+          "unit": "g",
+          "amount": 2,
+          "reason": "nutrition_needs_review"
+        },
+        {
+          "key": "poster_75",
+          "structureType": 1,
+          "name": "Маринованный кизил",
+          "unit": "g",
+          "amount": 25,
+          "reason": "nutrition_needs_review"
+        },
+        {
+          "key": "poster_395",
+          "structureType": 1,
+          "name": "растительное масло",
+          "unit": "ml",
+          "amount": 50,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_prep_559",
+          "structureType": 2,
+          "name": "руккола чищенная",
+          "unit": "g",
+          "amount": 15,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "165",
+      "name": {
+        "hy": "Չաքափուլի թաջինի մեջ",
+        "ru": "Чакапули в таджине",
+        "en": "Chakapuli in a Tagine"
+      },
+      "category": "10",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 72,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 6,
+      "resolvedRows": 3,
+      "totalGrams": 345,
+      "knownGrams": 172,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_529",
+          "structureType": 2,
+          "name": "говядина отварная",
+          "unit": "g",
+          "amount": 170,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_431",
+          "structureType": 1,
+          "name": "уксус Ponti",
+          "unit": "ml",
+          "amount": 15,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_347",
+          "structureType": 1,
+          "name": "Хмели/сунели",
+          "unit": "g",
+          "amount": 3,
+          "reason": "nutrition_needs_review"
+        }
+      ]
+    },
+    {
+      "productId": "166",
+      "name": {
+        "hy": "Չկմերուլի",
+        "ru": "Чкмерули",
+        "en": "Chkmeruli"
+      },
+      "category": "10",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 11,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 8,
+      "resolvedRows": 3,
+      "totalGrams": 81,
+      "knownGrams": 16,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_306",
+          "structureType": 1,
+          "name": "Цыпленок",
+          "unit": "p",
+          "amount": 0,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_347",
+          "structureType": 1,
+          "name": "Хмели/сунели",
+          "unit": "g",
+          "amount": 3,
+          "reason": "nutrition_needs_review"
+        },
+        {
+          "key": "poster_prep_497",
+          "structureType": 2,
+          "name": "чеснок очищенный",
+          "unit": "g",
+          "amount": 2,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_175",
+          "structureType": 1,
+          "name": "Сливки /M Gurme/",
+          "unit": "ml",
+          "amount": 250,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_598",
+          "structureType": 1,
+          "name": "матнакаш",
+          "unit": "g",
+          "amount": 60,
+          "reason": "nutrition_verified"
+        }
+      ]
+    },
+    {
+      "productId": "168",
+      "name": {
+        "hy": "Հավի կրծքամիս սնկով",
+        "ru": "Куриная грудка с грибами",
+        "en": "Chicken Breast with Mushrooms"
+      },
+      "category": "10",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": null,
+      "displayedAsMinimum": false,
+      "totalRecipeRows": 2,
+      "resolvedRows": 0,
+      "totalGrams": 322,
+      "knownGrams": 0,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_525",
+          "structureType": 2,
+          "name": "курица с грибами",
+          "unit": "g",
+          "amount": 320,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_493",
+          "structureType": 1,
+          "name": "микрогрин",
+          "unit": "g",
+          "amount": 2,
+          "reason": "nutrition_verified"
+        }
+      ]
+    },
+    {
+      "productId": "169",
+      "name": {
+        "hy": "Տապակած ճուտ կարտոֆիլով",
+        "ru": "Жареный цыплёнок с картофелем",
+        "en": "Fried Chicken with Potatoes"
+      },
+      "category": "10",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 249,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 4,
+      "resolvedRows": 2,
+      "totalGrams": 330,
+      "knownGrams": 330,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_306",
+          "structureType": 1,
+          "name": "Цыпленок",
+          "unit": "p",
+          "amount": 0,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_395",
+          "structureType": 1,
+          "name": "растительное масло",
+          "unit": "ml",
+          "amount": 100,
+          "reason": "unsupported_unit"
+        }
+      ]
+    },
+    {
+      "productId": "170",
+      "name": {
+        "hy": "Գառնի յարախ",
+        "ru": "Гарни-ярах",
+        "en": "Garni Yarakh"
+      },
+      "category": "10",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 516,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 9,
+      "resolvedRows": 5,
+      "totalGrams": 850,
+      "knownGrams": 497,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_632",
+          "structureType": 2,
+          "name": "помидоры чищенные",
+          "unit": "g",
+          "amount": 250,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_395",
+          "structureType": 1,
+          "name": "растительное масло",
+          "unit": "ml",
+          "amount": 20,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_493",
+          "structureType": 1,
+          "name": "микрогрин",
+          "unit": "g",
+          "amount": 3,
+          "reason": "nutrition_verified"
+        },
+        {
+          "key": "poster_prep_594",
+          "structureType": 2,
+          "name": "фарш для ярах",
+          "unit": "g",
+          "amount": 100,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "171",
+      "name": {
+        "hy": "Թխած կողիկներ ռիբս",
+        "ru": "Запечённые рёбрышки",
+        "en": "Baked Ribs"
+      },
+      "category": "10",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 15,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 5,
+      "resolvedRows": 3,
+      "totalGrams": 108,
+      "knownGrams": 58,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_525",
+          "structureType": 1,
+          "name": "Рибс",
+          "unit": "p",
+          "amount": 0,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_prep_665",
+          "structureType": 2,
+          "name": "соус для рибсов",
+          "unit": "g",
+          "amount": 50,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "172",
+      "name": {
+        "hy": "Թփով տոլմա տավարի մսով",
+        "ru": "Долма в виноградных листьях с говядиной",
+        "en": "Beef Dolma in Grape Leaves"
+      },
+      "category": "10",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 235,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 3,
+      "resolvedRows": 2,
+      "totalGrams": 480,
+      "knownGrams": 280,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_588",
+          "structureType": 2,
+          "name": "фарш мясной для долмы",
+          "unit": "g",
+          "amount": 200,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "175",
+      "name": {
+        "hy": "Հարիսա հավի մսով",
+        "ru": "Ариса с курицей",
+        "en": "Harissa with Chicken"
+      },
+      "category": "10",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": null,
+      "displayedAsMinimum": false,
+      "totalRecipeRows": 3,
+      "resolvedRows": 0,
+      "totalGrams": 600,
+      "knownGrams": 0,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_554",
+          "structureType": 2,
+          "name": "топленное масло",
+          "unit": "g",
+          "amount": 80,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_73",
+          "structureType": 1,
+          "name": "Маринованные овощи",
+          "unit": "g",
+          "amount": 150,
+          "reason": "nutrition_needs_review"
+        },
+        {
+          "key": "poster_prep_582",
+          "structureType": 2,
+          "name": "харриса",
+          "unit": "g",
+          "amount": 370,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "177",
+      "name": {
+        "hy": "Սիգ ֆիլե լոլիկով",
+        "ru": "Филе сига с томатами",
+        "en": "Whitefish Fillet with Tomatoes"
+      },
+      "category": "11",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 11,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 5,
+      "resolvedRows": 1,
+      "totalGrams": 260,
+      "knownGrams": 30,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_58",
+          "structureType": 2,
+          "name": "помидоры запеченные",
+          "unit": "g",
+          "amount": 200,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_533",
+          "structureType": 1,
+          "name": "маслины без косточек",
+          "unit": "g",
+          "amount": 30,
+          "reason": "nutrition_verified"
+        },
+        {
+          "key": "poster_395",
+          "structureType": 1,
+          "name": "растительное масло",
+          "unit": "ml",
+          "amount": 50,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_183",
+          "structureType": 1,
+          "name": "Сига",
+          "unit": "p",
+          "amount": 0,
+          "reason": "unsupported_unit"
+        }
+      ]
+    },
+    {
+      "productId": "189",
+      "name": {
+        "hy": "Ընկույզ թխվածքաբլիթ",
+        "ru": "Печенье с грецким орехом",
+        "en": "Walnut Cookie"
+      },
+      "category": "16",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 185,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 4,
+      "resolvedRows": 2,
+      "totalGrams": 150,
+      "knownGrams": 30,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_735",
+          "structureType": 2,
+          "name": "орешки/тесто/",
+          "unit": "g",
+          "amount": 75,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_736",
+          "structureType": 2,
+          "name": "начинка для орешков",
+          "unit": "g",
+          "amount": 45,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "191",
+      "name": {
+        "hy": "Տիրամիսու",
+        "ru": "Тирамису",
+        "en": "Tiramisu"
+      },
+      "category": "16",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 474,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 7,
+      "resolvedRows": 3,
+      "totalGrams": 300,
+      "knownGrams": 140,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_49",
+          "structureType": 1,
+          "name": "Печенье савоярди",
+          "unit": "g",
+          "amount": 30,
+          "reason": "nutrition_needs_review"
+        },
+        {
+          "key": "poster_441",
+          "structureType": 1,
+          "name": "коньяк для кухни",
+          "unit": "ml",
+          "amount": 5,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_prep_728",
+          "structureType": 2,
+          "name": "заварной крем",
+          "unit": "g",
+          "amount": 125,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_56",
+          "structureType": 1,
+          "name": "Шоколадная плитка",
+          "unit": "g",
+          "amount": 5,
+          "reason": "nutrition_needs_review"
+        }
+      ]
+    },
+    {
+      "productId": "193",
+      "name": {
+        "hy": "Սեթ մինի խմորեղենների եւ շոկոլադների",
+        "ru": "Сет мини-десертов и шоколада",
+        "en": "Mini Pastry and Chocolate Set"
+      },
+      "category": "16",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 450,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 17,
+      "resolvedRows": 5,
+      "totalGrams": 794,
+      "knownGrams": 115,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_742",
+          "structureType": 2,
+          "name": "начинка для конфет",
+          "unit": "g",
+          "amount": 50,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_735",
+          "structureType": 2,
+          "name": "орешки/тесто/",
+          "unit": "g",
+          "amount": 75,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_736",
+          "structureType": 2,
+          "name": "начинка для орешков",
+          "unit": "g",
+          "amount": 45,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_739",
+          "structureType": 2,
+          "name": "печенье шоколадная",
+          "unit": "g",
+          "amount": 35,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_705",
+          "structureType": 2,
+          "name": "печенье со стружками",
+          "unit": "g",
+          "amount": 35,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_714",
+          "structureType": 2,
+          "name": "печенье с сухофруктами",
+          "unit": "g",
+          "amount": 35,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_731",
+          "structureType": 2,
+          "name": "безе",
+          "unit": "g",
+          "amount": 50,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_753",
+          "structureType": 2,
+          "name": "белый с малиной",
+          "unit": "g",
+          "amount": 40,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_751",
+          "structureType": 2,
+          "name": "черный с фундуком",
+          "unit": "g",
+          "amount": 57,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_752",
+          "structureType": 2,
+          "name": "молочный с орехами",
+          "unit": "g",
+          "amount": 62,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_748",
+          "structureType": 2,
+          "name": "муравейник",
+          "unit": "g",
+          "amount": 115,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_749",
+          "structureType": 2,
+          "name": "медовые шарики",
+          "unit": "g",
+          "amount": 80,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "31",
+      "name": {
+        "hy": "Բանջարեղենային գրիլ",
+        "ru": "Овощи на гриле",
+        "en": "Grilled Vegetables"
+      },
+      "category": "12",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 20,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 8,
+      "resolvedRows": 3,
+      "totalGrams": 332,
+      "knownGrams": 102,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_491",
+          "structureType": 2,
+          "name": "броколли/чищенный",
+          "unit": "g",
+          "amount": 30,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_503",
+          "structureType": 2,
+          "name": "тыква запеченная Z",
+          "unit": "g",
+          "amount": 100,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_591",
+          "structureType": 2,
+          "name": "болгарский очищеный",
+          "unit": "g",
+          "amount": 50,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_395",
+          "structureType": 1,
+          "name": "растительное масло",
+          "unit": "ml",
+          "amount": 20,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_prep_58",
+          "structureType": 2,
+          "name": "помидоры запеченные",
+          "unit": "g",
+          "amount": 50,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "317",
+      "name": {
+        "hy": "Պրոշուտտո",
+        "ru": "Прошутто",
+        "en": "Prosciutto"
+      },
+      "category": "46",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": null,
+      "displayedAsMinimum": false,
+      "totalRecipeRows": 1,
+      "resolvedRows": 0,
+      "totalGrams": 80,
+      "knownGrams": 0,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_529",
+          "structureType": 1,
+          "name": "прошуто",
+          "unit": "g",
+          "amount": 80,
+          "reason": "nutrition_needs_review"
+        }
+      ]
+    },
+    {
+      "productId": "32",
+      "name": {
+        "hy": "Արիշտա ստրաչատելայով եւ ղավուրմայով",
+        "ru": "Аришта со страчателлой и кавурмой",
+        "en": "Arishta with Stracciatella and Kavurma"
+      },
+      "category": "10",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 0,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 6,
+      "resolvedRows": 1,
+      "totalGrams": 290,
+      "knownGrams": 2,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_554",
+          "structureType": 2,
+          "name": "топленное масло",
+          "unit": "g",
+          "amount": 20,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_602",
+          "structureType": 2,
+          "name": "каурма",
+          "unit": "g",
+          "amount": 100,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_165",
+          "structureType": 1,
+          "name": "Страчателла",
+          "unit": "g",
+          "amount": 30,
+          "reason": "nutrition_needs_review"
+        },
+        {
+          "key": "poster_493",
+          "structureType": 1,
+          "name": "микрогрин",
+          "unit": "g",
+          "amount": 3,
+          "reason": "nutrition_verified"
+        },
+        {
+          "key": "poster_prep_601",
+          "structureType": 2,
+          "name": "аришта/тальятелле",
+          "unit": "g",
+          "amount": 135,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "396",
+      "name": {
+        "hy": "Ջին Beefeter",
+        "ru": "Джин Beefeater",
+        "en": "Beefeater Gin"
+      },
+      "category": "28",
+      "oldStatus": "calculated",
+      "oldCalories": 116,
+      "newStatus": "needs_review",
+      "newCalories": null,
+      "displayedAsMinimum": false,
+      "totalRecipeRows": 1,
+      "resolvedRows": 0,
+      "totalGrams": 0,
+      "knownGrams": 0,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_237",
+          "structureType": 1,
+          "name": "Beefeter",
+          "unit": "ml",
+          "amount": 50,
+          "reason": "unsupported_unit"
+        }
+      ]
+    },
+    {
+      "productId": "414",
+      "name": {
+        "hy": "Կոկտեյլ Adioz",
+        "ru": "Коктейль Adios",
+        "en": "Adios Cocktail"
+      },
+      "category": "34",
+      "oldStatus": "calculated",
+      "oldCalories": 191,
+      "newStatus": "needs_review",
+      "newCalories": null,
+      "displayedAsMinimum": false,
+      "totalRecipeRows": 6,
+      "resolvedRows": 0,
+      "totalGrams": 20,
+      "knownGrams": 0,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_237",
+          "structureType": 1,
+          "name": "Beefeter",
+          "unit": "ml",
+          "amount": 20,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_115",
+          "structureType": 1,
+          "name": "Havana Club 3 Anos",
+          "unit": "ml",
+          "amount": 20,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_110",
+          "structureType": 1,
+          "name": "Olmeca Blanco",
+          "unit": "ml",
+          "amount": 20,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_521",
+          "structureType": 1,
+          "name": "Водка для коктелйей",
+          "unit": "ml",
+          "amount": 20,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_prep_645",
+          "structureType": 2,
+          "name": "лимон/лайм",
+          "unit": "g",
+          "amount": 20,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_293",
+          "structureType": 1,
+          "name": "Кола",
+          "unit": "p",
+          "amount": 0,
+          "reason": "unsupported_unit"
+        }
+      ]
+    },
+    {
+      "productId": "430",
+      "name": {
+        "hy": "Կոկտեյլ Long Islan Ice Tea",
+        "ru": "Коктейль Long Island Iced Tea",
+        "en": "Long Island Iced Tea Cocktail"
+      },
+      "category": "34",
+      "oldStatus": "calculated",
+      "oldCalories": 254,
+      "newStatus": "needs_review",
+      "newCalories": null,
+      "displayedAsMinimum": false,
+      "totalRecipeRows": 7,
+      "resolvedRows": 0,
+      "totalGrams": 25,
+      "knownGrams": 0,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_115",
+          "structureType": 1,
+          "name": "Havana Club 3 Anos",
+          "unit": "ml",
+          "amount": 20,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_237",
+          "structureType": 1,
+          "name": "Beefeter",
+          "unit": "ml",
+          "amount": 20,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_110",
+          "structureType": 1,
+          "name": "Olmeca Blanco",
+          "unit": "ml",
+          "amount": 20,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_246",
+          "structureType": 1,
+          "name": "Cointreau",
+          "unit": "ml",
+          "amount": 20,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_521",
+          "structureType": 1,
+          "name": "Водка для коктелйей",
+          "unit": "ml",
+          "amount": 20,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_293",
+          "structureType": 1,
+          "name": "Кола",
+          "unit": "p",
+          "amount": 0,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_prep_645",
+          "structureType": 2,
+          "name": "лимон/лайм",
+          "unit": "g",
+          "amount": 25,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "460",
+      "name": {
+        "hy": "Հավի նագեթս կարտոֆիլ ֆրիով",
+        "ru": "Куриные наггетсы с картофелем фри",
+        "en": "Chicken Nuggets with French Fries"
+      },
+      "category": "20",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 512,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 3,
+      "resolvedRows": 2,
+      "totalGrams": 440,
+      "knownGrams": 220,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_547",
+          "structureType": 2,
+          "name": "нагеттсы",
+          "unit": "g",
+          "amount": 220,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "461",
+      "name": {
+        "hy": "Սենդվիչներ խոզապուխտով,կարտոֆիլ ֆրիով",
+        "ru": "Сэндвичи с ветчиной и картофелем фри",
+        "en": "Ham Sandwiches with French Fries"
+      },
+      "category": "20",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 725,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 8,
+      "resolvedRows": 6,
+      "totalGrams": 400,
+      "knownGrams": 370,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_532",
+          "structureType": 1,
+          "name": "тосты",
+          "unit": "p",
+          "amount": 0,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_prep_633",
+          "structureType": 2,
+          "name": "огурцы чищенные",
+          "unit": "g",
+          "amount": 30,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "483",
+      "name": {
+        "hy": "Թխվածքաբլիթ",
+        "ru": "Печенье",
+        "en": "Cookie"
+      },
+      "category": "16",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": null,
+      "displayedAsMinimum": false,
+      "totalRecipeRows": 3,
+      "resolvedRows": 0,
+      "totalGrams": 105,
+      "knownGrams": 0,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_705",
+          "structureType": 2,
+          "name": "печенье со стружками",
+          "unit": "g",
+          "amount": 35,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_714",
+          "structureType": 2,
+          "name": "печенье с сухофруктами",
+          "unit": "g",
+          "amount": 35,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_739",
+          "structureType": 2,
+          "name": "печенье шоколадная",
+          "unit": "g",
+          "amount": 35,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "537",
+      "name": {
+        "hy": "ղավուրմա",
+        "ru": "Кавурма",
+        "en": "Kavurma"
+      },
+      "category": "46",
+      "oldStatus": "calculated",
+      "oldCalories": 496,
+      "newStatus": "needs_review",
+      "newCalories": null,
+      "displayedAsMinimum": false,
+      "totalRecipeRows": 1,
+      "resolvedRows": 0,
+      "totalGrams": 200,
+      "knownGrams": 0,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_602",
+          "structureType": 2,
+          "name": "каурма",
+          "unit": "g",
+          "amount": 200,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "56",
+      "name": {
+        "hy": "Խարչո",
+        "ru": "Харчо",
+        "en": "Kharcho"
+      },
+      "category": "6",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": null,
+      "displayedAsMinimum": false,
+      "totalRecipeRows": 2,
+      "resolvedRows": 0,
+      "totalGrams": 400,
+      "knownGrams": 0,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_564",
+          "structureType": 2,
+          "name": "харчо",
+          "unit": "g",
+          "amount": 350,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_529",
+          "structureType": 2,
+          "name": "говядина отварная",
+          "unit": "g",
+          "amount": 50,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "64",
+      "name": {
+        "hy": "Լիբանանյան տոլմա",
+        "ru": "Ливанская долма",
+        "en": "Lebanese Dolma"
+      },
+      "category": "4",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 14,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 3,
+      "resolvedRows": 1,
+      "totalGrams": 235,
+      "knownGrams": 15,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_597",
+          "structureType": 2,
+          "name": "фарш рисовый",
+          "unit": "g",
+          "amount": 220,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_436",
+          "structureType": 1,
+          "name": "Лимон",
+          "unit": "p",
+          "amount": 100,
+          "reason": "unsupported_unit"
+        }
+      ]
+    },
+    {
+      "productId": "65",
+      "name": {
+        "hy": "Պաշտետ \"Հավի լյարդի\"",
+        "ru": "Паштет из куриной печени",
+        "en": "Chicken Liver Pâté"
+      },
+      "category": "4",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": null,
+      "displayedAsMinimum": false,
+      "totalRecipeRows": 5,
+      "resolvedRows": 0,
+      "totalGrams": 130,
+      "knownGrams": 0,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_530",
+          "structureType": 2,
+          "name": "куринный паштет",
+          "unit": "g",
+          "amount": 100,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_618",
+          "structureType": 2,
+          "name": "соус брусничный",
+          "unit": "g",
+          "amount": 25,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_492",
+          "structureType": 1,
+          "name": "семена тыквы",
+          "unit": "g",
+          "amount": 3,
+          "reason": "nutrition_verified"
+        },
+        {
+          "key": "poster_493",
+          "structureType": 1,
+          "name": "микрогрин",
+          "unit": "g",
+          "amount": 2,
+          "reason": "nutrition_verified"
+        },
+        {
+          "key": "poster_443",
+          "structureType": 1,
+          "name": "оливковое масло",
+          "unit": "ml",
+          "amount": 10,
+          "reason": "unsupported_unit"
+        }
+      ]
+    },
+    {
+      "productId": "66",
+      "name": {
+        "hy": "Հորթի փափկամսի խորոված",
+        "ru": "Шашлык из телячьей вырезки",
+        "en": "Grilled Veal Tenderloin"
+      },
+      "category": "7",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 516,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 7,
+      "resolvedRows": 6,
+      "totalGrams": 459,
+      "knownGrams": 359,
+      "meatOnlyCalories": 478,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_611",
+          "structureType": 2,
+          "name": "соус сацебели",
+          "unit": "g",
+          "amount": 100,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "661",
+      "name": {
+        "hy": "Կոկտել Negroni",
+        "ru": "Коктейль Negroni",
+        "en": "Negroni Cocktail"
+      },
+      "category": "34",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 14,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 4,
+      "resolvedRows": 1,
+      "totalGrams": 30,
+      "knownGrams": 30,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_237",
+          "structureType": 1,
+          "name": "Beefeter",
+          "unit": "ml",
+          "amount": 30,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_231",
+          "structureType": 1,
+          "name": "Campari",
+          "unit": "ml",
+          "amount": 30,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_233",
+          "structureType": 1,
+          "name": "Martini",
+          "unit": "ml",
+          "amount": 30,
+          "reason": "unsupported_unit"
+        }
+      ]
+    },
+    {
+      "productId": "689",
+      "name": {
+        "hy": "Խոզի կողիկներ",
+        "ru": "Свиные рёбрышки",
+        "en": "Pork Ribs"
+      },
+      "category": "10",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "calculated",
+      "newCalories": 562,
+      "displayedAsMinimum": false,
+      "totalRecipeRows": 2,
+      "resolvedRows": 2,
+      "totalGrams": 250,
+      "knownGrams": 250,
+      "meatOnlyCalories": 554,
+      "impossibleOld": false,
+      "unresolved": []
+    },
+    {
+      "productId": "718",
+      "name": {
+        "hy": "Մսային միքս 2",
+        "ru": "Мясной микс 2",
+        "en": "Meat Mix 2"
+      },
+      "category": "10",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 3876,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 10,
+      "resolvedRows": 7,
+      "totalGrams": 2500,
+      "knownGrams": 2400,
+      "meatOnlyCalories": 3840,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_264",
+          "structureType": 1,
+          "name": "острый перец",
+          "unit": "p",
+          "amount": 0,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_prep_611",
+          "structureType": 2,
+          "name": "соус сацебели",
+          "unit": "g",
+          "amount": 50,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_626",
+          "structureType": 2,
+          "name": "соус пепер",
+          "unit": "g",
+          "amount": 50,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "755",
+      "name": {
+        "hy": ": Գառի կողիկներ և չալաղաջ",
+        "ru": "Бараниее рёбрышки и корейка",
+        "en": "Lamb ribs and rack of lamb"
+      },
+      "category": "7",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "calculated",
+      "newCalories": 1087,
+      "displayedAsMinimum": false,
+      "totalRecipeRows": 2,
+      "resolvedRows": 2,
+      "totalGrams": 350,
+      "knownGrams": 350,
+      "meatOnlyCalories": 1087,
+      "impossibleOld": false,
+      "unresolved": []
+    },
+    {
+      "productId": "79",
+      "name": {
+        "hy": "Հավով աղցան",
+        "ru": "Салат с курицей",
+        "en": "Chicken Salad"
+      },
+      "category": "4",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 380,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 5,
+      "resolvedRows": 3,
+      "totalGrams": 400,
+      "knownGrams": 300,
+      "meatOnlyCalories": 210,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_619",
+          "structureType": 2,
+          "name": "соус для цезаря",
+          "unit": "g",
+          "amount": 100,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_597",
+          "structureType": 1,
+          "name": "пита",
+          "unit": "p",
+          "amount": 0,
+          "reason": "unsupported_unit"
+        }
+      ]
+    },
+    {
+      "productId": "80",
+      "name": {
+        "hy": "Բազուկի եւ դդմի աղցան",
+        "ru": "Салат со свёклой и тыквой",
+        "en": "Beetroot and Pumpkin Salad"
+      },
+      "category": "4",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 211,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 6,
+      "resolvedRows": 1,
+      "totalGrams": 400,
+      "knownGrams": 80,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_492",
+          "structureType": 1,
+          "name": "семена тыквы",
+          "unit": "g",
+          "amount": 5,
+          "reason": "nutrition_verified"
+        },
+        {
+          "key": "poster_495",
+          "structureType": 1,
+          "name": "семена подсолнуха",
+          "unit": "g",
+          "amount": 5,
+          "reason": "nutrition_needs_review"
+        },
+        {
+          "key": "poster_prep_558",
+          "structureType": 2,
+          "name": "соус Азия",
+          "unit": "g",
+          "amount": 30,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_557",
+          "structureType": 2,
+          "name": "свекольный салат",
+          "unit": "g",
+          "amount": 240,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_503",
+          "structureType": 2,
+          "name": "тыква запеченная Z",
+          "unit": "g",
+          "amount": 40,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "819",
+      "name": {
+        "hy": "Շաուրմա քյուֆթայով",
+        "ru": "Шаурма с кюфтой",
+        "en": "Shawarma with Kufta"
+      },
+      "category": "10",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 18,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 12,
+      "resolvedRows": 5,
+      "totalGrams": 348,
+      "knownGrams": 88,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_548",
+          "structureType": 2,
+          "name": "кюфта",
+          "unit": "g",
+          "amount": 150,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_591",
+          "structureType": 2,
+          "name": "болгарский очищеный",
+          "unit": "g",
+          "amount": 25,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_512",
+          "structureType": 2,
+          "name": "картофель очищенный",
+          "unit": "g",
+          "amount": 35,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_395",
+          "structureType": 1,
+          "name": "растительное масло",
+          "unit": "ml",
+          "amount": 20,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_prep_611",
+          "structureType": 2,
+          "name": "соус сацебели",
+          "unit": "g",
+          "amount": 25,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_612",
+          "structureType": 2,
+          "name": "соус тархуновый",
+          "unit": "g",
+          "amount": 25,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_480",
+          "structureType": 1,
+          "name": "лаваш",
+          "unit": "p",
+          "amount": 0,
+          "reason": "unsupported_unit"
+        }
+      ]
+    },
+    {
+      "productId": "82",
+      "name": {
+        "hy": "Տավարի մսով աղցան",
+        "ru": "Салат с говядиной",
+        "en": "Beef Salad"
+      },
+      "category": "4",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 27,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 11,
+      "resolvedRows": 2,
+      "totalGrams": 435,
+      "knownGrams": 55,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_559",
+          "structureType": 2,
+          "name": "руккола чищенная",
+          "unit": "g",
+          "amount": 10,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_471",
+          "structureType": 1,
+          "name": "крахмал",
+          "unit": "g",
+          "amount": 10,
+          "reason": "nutrition_needs_review"
+        },
+        {
+          "key": "poster_prep_616",
+          "structureType": 2,
+          "name": "соус гренадин",
+          "unit": "g",
+          "amount": 60,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_610",
+          "structureType": 2,
+          "name": "редиска чищенная",
+          "unit": "g",
+          "amount": 20,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_516",
+          "structureType": 2,
+          "name": "гранат очищенный",
+          "unit": "g",
+          "amount": 10,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_632",
+          "structureType": 2,
+          "name": "помидоры чищенные",
+          "unit": "g",
+          "amount": 70,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_634",
+          "structureType": 2,
+          "name": "маринованная гов вырезка",
+          "unit": "g",
+          "amount": 80,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_633",
+          "structureType": 2,
+          "name": "огурцы чищенные",
+          "unit": "g",
+          "amount": 80,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_605",
+          "structureType": 2,
+          "name": "баклажан чищенный",
+          "unit": "g",
+          "amount": 40,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "84",
+      "name": {
+        "hy": "Սմբուկ հավի մսով",
+        "ru": "Баклажан с курицей",
+        "en": "Eggplant with Chicken"
+      },
+      "category": "4",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 204,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 6,
+      "resolvedRows": 2,
+      "totalGrams": 330,
+      "knownGrams": 40,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_605",
+          "structureType": 2,
+          "name": "баклажан чищенный",
+          "unit": "g",
+          "amount": 150,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_419",
+          "structureType": 1,
+          "name": "Нашараб",
+          "unit": "ml",
+          "amount": 20,
+          "reason": "unsupported_unit"
+        },
+        {
+          "key": "poster_prep_516",
+          "structureType": 2,
+          "name": "гранат очищенный",
+          "unit": "g",
+          "amount": 20,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_510",
+          "structureType": 2,
+          "name": "фарш для баклажана",
+          "unit": "g",
+          "amount": 120,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "85",
+      "name": {
+        "hy": "Հավի ռուլետ ընկույզով",
+        "ru": "Куриный рулет с грецким орехом",
+        "en": "Chicken Roulade with Walnuts"
+      },
+      "category": "4",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 30,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 3,
+      "resolvedRows": 1,
+      "totalGrams": 202,
+      "knownGrams": 50,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_522",
+          "structureType": 2,
+          "name": "куриный рулет",
+          "unit": "g",
+          "amount": 150,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_493",
+          "structureType": 1,
+          "name": "микрогрин",
+          "unit": "g",
+          "amount": 2,
+          "reason": "nutrition_verified"
+        }
+      ]
+    },
+    {
+      "productId": "86",
+      "name": {
+        "hy": "Ղավուրմա եւ տնական սալ",
+        "ru": "Кавурма и домашнее сало",
+        "en": "Kavurma and House-Made Cured Pork Fat"
+      },
+      "category": "4",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 45,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 7,
+      "resolvedRows": 4,
+      "totalGrams": 410,
+      "knownGrams": 130,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_602",
+          "structureType": 2,
+          "name": "каурма",
+          "unit": "g",
+          "amount": 100,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_500",
+          "structureType": 1,
+          "name": "сало",
+          "unit": "g",
+          "amount": 100,
+          "reason": "nutrition_needs_review"
+        },
+        {
+          "key": "poster_501",
+          "structureType": 1,
+          "name": "хлеб бородинский",
+          "unit": "g",
+          "amount": 80,
+          "reason": "nutrition_verified"
+        }
+      ]
+    },
+    {
+      "productId": "88",
+      "name": {
+        "hy": "Համեմված հավի սիրտիկներ",
+        "ru": "Пряные куриные сердечки",
+        "en": "Spiced Chicken Hearts"
+      },
+      "category": "4",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": null,
+      "displayedAsMinimum": false,
+      "totalRecipeRows": 2,
+      "resolvedRows": 0,
+      "totalGrams": 110,
+      "knownGrams": 0,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_608",
+          "structureType": 2,
+          "name": "сердечки отварные",
+          "unit": "g",
+          "amount": 80,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_535",
+          "structureType": 2,
+          "name": "соус для сердечек",
+          "unit": "g",
+          "amount": 30,
+          "reason": "nutrition_missing"
+        }
+      ]
+    },
+    {
+      "productId": "98",
+      "name": {
+        "hy": "Խինկալի XXL",
+        "ru": "Хинкали XXL",
+        "en": "Khinkali XXL"
+      },
+      "category": "38",
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "newStatus": "needs_review",
+      "newCalories": 0,
+      "displayedAsMinimum": true,
+      "totalRecipeRows": 3,
+      "resolvedRows": 1,
+      "totalGrams": 1105,
+      "knownGrams": 5,
+      "meatOnlyCalories": 0,
+      "impossibleOld": false,
+      "unresolved": [
+        {
+          "key": "poster_prep_543",
+          "structureType": 2,
+          "name": "фарш для хинкали",
+          "unit": "g",
+          "amount": 450,
+          "reason": "nutrition_missing"
+        },
+        {
+          "key": "poster_prep_550",
+          "structureType": 2,
+          "name": "тесто для хинкали",
+          "unit": "g",
+          "amount": 650,
+          "reason": "nutrition_missing"
+        }
+      ]
+    }
+  ],
+  "unresolvedMeatIngredients": [
+    {
+      "key": "poster_prep_493",
+      "ingredientId": "493",
+      "structureType": 2,
+      "name": "баклажан запеченный",
+      "unit": "g",
+      "amount": 250,
+      "reason": "nutrition_missing",
+      "usedIn": [
+        {
+          "productId": "163",
+          "name": "Кавурма с пюре из баклажана"
+        }
+      ]
+    },
+    {
+      "key": "poster_prep_529",
+      "ingredientId": "529",
+      "structureType": 2,
+      "name": "говядина отварная",
+      "unit": "g",
+      "amount": 50,
+      "reason": "nutrition_missing",
+      "usedIn": [
+        {
+          "productId": "127",
+          "name": "Բորշ"
+        },
+        {
+          "productId": "165",
+          "name": "Чакапули в таджине"
+        },
+        {
+          "productId": "56",
+          "name": "Харчо"
+        }
+      ]
+    },
+    {
+      "key": "poster_prep_515",
+      "ingredientId": "515",
+      "structureType": 2,
+      "name": "говяжье суки очищенная",
+      "unit": "g",
+      "amount": 300,
+      "reason": "nutrition_missing",
+      "usedIn": [
+        {
+          "productId": "164",
+          "name": "Телячья вырезка на гриле"
+        }
+      ]
+    },
+    {
+      "key": "poster_prep_530",
+      "ingredientId": "530",
+      "structureType": 2,
+      "name": "куринный паштет",
+      "unit": "g",
+      "amount": 100,
+      "reason": "nutrition_missing",
+      "usedIn": [
+        {
+          "productId": "65",
+          "name": "Паштет из куриной печени"
+        }
+      ]
+    },
+    {
+      "key": "poster_prep_522",
+      "ingredientId": "522",
+      "structureType": 2,
+      "name": "куриный рулет",
+      "unit": "g",
+      "amount": 150,
+      "reason": "nutrition_missing",
+      "usedIn": [
+        {
+          "productId": "85",
+          "name": "Куриный рулет с грецким орехом"
+        }
+      ]
+    },
+    {
+      "key": "poster_prep_525",
+      "ingredientId": "525",
+      "structureType": 2,
+      "name": "курица с грибами",
+      "unit": "g",
+      "amount": 320,
+      "reason": "nutrition_missing",
+      "usedIn": [
+        {
+          "productId": "168",
+          "name": "Куриная грудка с грибами"
+        }
+      ]
+    },
+    {
+      "key": "poster_prep_548",
+      "ingredientId": "548",
+      "structureType": 2,
+      "name": "кюфта",
+      "unit": "g",
+      "amount": 300,
+      "reason": "nutrition_missing",
+      "usedIn": [
+        {
+          "productId": "162",
+          "name": "Жареная кюфта с овощами"
+        },
+        {
+          "productId": "819",
+          "name": "Шаурма с кюфтой"
+        }
+      ]
+    },
+    {
+      "key": "poster_prep_714",
+      "ingredientId": "714",
+      "structureType": 2,
+      "name": "печенье с сухофруктами",
+      "unit": "g",
+      "amount": 35,
+      "reason": "nutrition_missing",
+      "usedIn": [
+        {
+          "productId": "193",
+          "name": "Сет мини-десертов и шоколада"
+        },
+        {
+          "productId": "483",
+          "name": "Печенье"
+        }
+      ]
+    },
+    {
+      "key": "poster_49",
+      "ingredientId": "49",
+      "structureType": 1,
+      "name": "Печенье савоярди",
+      "unit": "g",
+      "amount": 30,
+      "reason": "nutrition_needs_review",
+      "usedIn": [
+        {
+          "productId": "191",
+          "name": "Тирамису"
+        }
+      ]
+    },
+    {
+      "key": "poster_prep_705",
+      "ingredientId": "705",
+      "structureType": 2,
+      "name": "печенье со стружками",
+      "unit": "g",
+      "amount": 35,
+      "reason": "nutrition_missing",
+      "usedIn": [
+        {
+          "productId": "193",
+          "name": "Сет мини-десертов и шоколада"
+        },
+        {
+          "productId": "483",
+          "name": "Печенье"
+        }
+      ]
+    },
+    {
+      "key": "poster_prep_739",
+      "ingredientId": "739",
+      "structureType": 2,
+      "name": "печенье шоколадная",
+      "unit": "g",
+      "amount": 35,
+      "reason": "nutrition_missing",
+      "usedIn": [
+        {
+          "productId": "193",
+          "name": "Сет мини-десертов и шоколада"
+        },
+        {
+          "productId": "483",
+          "name": "Печенье"
+        }
+      ]
+    },
+    {
+      "key": "poster_prep_58",
+      "ingredientId": "58",
+      "structureType": 2,
+      "name": "помидоры запеченные",
+      "unit": "g",
+      "amount": 200,
+      "reason": "nutrition_missing",
+      "usedIn": [
+        {
+          "productId": "177",
+          "name": "Филе сига с томатами"
+        },
+        {
+          "productId": "31",
+          "name": "Овощи на гриле"
+        }
+      ]
+    },
+    {
+      "key": "poster_529",
+      "ingredientId": "529",
+      "structureType": 1,
+      "name": "прошуто",
+      "unit": "g",
+      "amount": 80,
+      "reason": "nutrition_needs_review",
+      "usedIn": [
+        {
+          "productId": "317",
+          "name": "Прошутто"
+        }
+      ]
+    },
+    {
+      "key": "poster_prep_608",
+      "ingredientId": "608",
+      "structureType": 2,
+      "name": "сердечки отварные",
+      "unit": "g",
+      "amount": 80,
+      "reason": "nutrition_missing",
+      "usedIn": [
+        {
+          "productId": "88",
+          "name": "Пряные куриные сердечки"
+        }
+      ]
+    },
+    {
+      "key": "poster_191",
+      "ingredientId": "191",
+      "structureType": 1,
+      "name": "Сосиски с беконом",
+      "unit": "p",
+      "amount": 0,
+      "reason": "unsupported_unit",
+      "usedIn": [
+        {
+          "productId": "10",
+          "name": "Английский завтрак"
+        }
+      ]
+    },
+    {
+      "key": "poster_prep_535",
+      "ingredientId": "535",
+      "structureType": 2,
+      "name": "соус для сердечек",
+      "unit": "g",
+      "amount": 30,
+      "reason": "nutrition_missing",
+      "usedIn": [
+        {
+          "productId": "88",
+          "name": "Пряные куриные сердечки"
+        }
+      ]
+    },
+    {
+      "key": "poster_prep_503",
+      "ingredientId": "503",
+      "structureType": 2,
+      "name": "тыква запеченная Z",
+      "unit": "g",
+      "amount": 225,
+      "reason": "nutrition_missing",
+      "usedIn": [
+        {
+          "productId": "136",
+          "name": "Тыквенный крем-суп"
+        },
+        {
+          "productId": "31",
+          "name": "Овощи на гриле"
+        },
+        {
+          "productId": "80",
+          "name": "Салат со свёклой и тыквой"
+        }
+      ]
+    },
+    {
+      "key": "poster_prep_510",
+      "ingredientId": "510",
+      "structureType": 2,
+      "name": "фарш для баклажана",
+      "unit": "g",
+      "amount": 120,
+      "reason": "nutrition_missing",
+      "usedIn": [
+        {
+          "productId": "84",
+          "name": "Баклажан с курицей"
+        }
+      ]
+    },
+    {
+      "key": "poster_prep_543",
+      "ingredientId": "543",
+      "structureType": 2,
+      "name": "фарш для хинкали",
+      "unit": "g",
+      "amount": 45,
+      "reason": "nutrition_missing",
+      "usedIn": [
+        {
+          "productId": "147",
+          "name": "Хинкали"
+        },
+        {
+          "productId": "98",
+          "name": "Хинкали XXL"
+        }
+      ]
+    },
+    {
+      "key": "poster_prep_594",
+      "ingredientId": "594",
+      "structureType": 2,
+      "name": "фарш для ярах",
+      "unit": "g",
+      "amount": 100,
+      "reason": "nutrition_missing",
+      "usedIn": [
+        {
+          "productId": "170",
+          "name": "Гарни-ярах"
+        }
+      ]
+    },
+    {
+      "key": "poster_prep_588",
+      "ingredientId": "588",
+      "structureType": 2,
+      "name": "фарш мясной для долмы",
+      "unit": "g",
+      "amount": 200,
+      "reason": "nutrition_missing",
+      "usedIn": [
+        {
+          "productId": "172",
+          "name": "Долма в виноградных листьях с говядиной"
+        }
+      ]
+    },
+    {
+      "key": "poster_prep_597",
+      "ingredientId": "597",
+      "structureType": 2,
+      "name": "фарш рисовый",
+      "unit": "g",
+      "amount": 220,
+      "reason": "nutrition_missing",
+      "usedIn": [
+        {
+          "productId": "64",
+          "name": "Ливанская долма"
+        }
+      ]
+    },
+    {
+      "key": "poster_306",
+      "ingredientId": "306",
+      "structureType": 1,
+      "name": "Цыпленок",
+      "unit": "p",
+      "amount": 0,
+      "reason": "unsupported_unit",
+      "usedIn": [
+        {
+          "productId": "166",
+          "name": "Чкмерули"
+        },
+        {
+          "productId": "169",
+          "name": "Жареный цыплёнок с картофелем"
+        }
+      ]
+    },
+    {
+      "key": "poster_237",
+      "ingredientId": "237",
+      "structureType": 1,
+      "name": "Beefeter",
+      "unit": "ml",
+      "amount": 50,
+      "reason": "unsupported_unit",
+      "usedIn": [
+        {
+          "productId": "396",
+          "name": "Джин Beefeater"
+        },
+        {
+          "productId": "414",
+          "name": "Коктейль Adios"
+        },
+        {
+          "productId": "430",
+          "name": "Коктейль Long Island Iced Tea"
+        },
+        {
+          "productId": "661",
+          "name": "Коктейль Negroni"
+        }
+      ]
+    }
+  ]
+}

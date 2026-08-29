@@ -29,13 +29,25 @@ async function posterRequest(method, params = {}) {
     if (value !== undefined && value !== null && value !== '') url.searchParams.set(key, String(value));
   }
   const res = await fetch(url, {
-    headers: { Accept: 'application/json', 'User-Agent': 'CIA-Smart-Menu-Raw-Preparation-Probe/1.0' },
+    headers: { Accept: 'application/json', 'User-Agent': 'CIA-Smart-Menu-Preparation-Name-Probe/1.0' },
     signal: AbortSignal.timeout(30000)
   });
   if (!res.ok) throw new Error(`Poster ${method} HTTP ${res.status}`);
   const payload = await res.json();
   if (payload?.error) throw new Error(`Poster ${method}: ${JSON.stringify(payload.error)}`);
   return payload?.response;
+}
+
+function compactProduct(product) {
+  return {
+    productId: String(product?.product_id ?? product?.id ?? ''),
+    name: String(product?.product_name ?? product?.name ?? '').trim(),
+    type: product?.type ?? null,
+    categoryId: product?.menu_category_id ?? null,
+    hidden: product?.hidden ?? null,
+    out: product?.out ?? null,
+    unit: product?.unit ?? null
+  };
 }
 
 (async () => {
@@ -48,33 +60,49 @@ async function posterRequest(method, params = {}) {
     return names.some((name) => targetSet.has(name));
   });
 
-  const productIds = [...new Set(targetEntries.flatMap((entry) => (entry?.sampleProducts || []).map((p) => String(p?.productId || '')).filter(Boolean)))];
-  const products = [];
+  const menuResponse = await posterRequest('menu.getProducts');
+  const menuProducts = Array.isArray(menuResponse) ? menuResponse : [];
+  const exactProductMatches = menuProducts.filter((product) => targetSet.has(normalize(product?.product_name ?? product?.name))).map(compactProduct);
 
-  for (const productId of productIds) {
-    const detail = await posterRequest('menu.getProduct', { product_id: productId });
-    if (!detail) continue;
-    const rows = Array.isArray(detail?.ingredients) ? detail.ingredients : [];
-    const preparationRows = rows.filter((row) => Number(row?.structure_type) === 2);
-    const targetRows = rows.filter((row) => targetSet.has(normalize(row?.ingredient_name)));
-    if (!preparationRows.length && !targetRows.length) continue;
-    products.push({
-      productId: String(detail?.product_id ?? productId),
-      productName: String(detail?.product_name ?? '').trim(),
-      productType: detail?.type ?? null,
-      out: detail?.out ?? null,
-      unit: detail?.unit ?? null,
-      preparationRows,
-      targetRows,
-      ingredientFieldNames: [...new Set(rows.flatMap((row) => Object.keys(row || {})))].sort()
+  const productDetails = [];
+  for (const match of exactProductMatches) {
+    if (!match.productId) continue;
+    const detail = await posterRequest('menu.getProduct', { product_id: match.productId });
+    productDetails.push({
+      ...compactProduct(detail || match),
+      ingredients: Array.isArray(detail?.ingredients) ? detail.ingredients : [],
+      ingredientFieldNames: [...new Set((detail?.ingredients || []).flatMap((row) => Object.keys(row || {})))].sort()
     });
   }
 
+  const sampleProductIds = [...new Set(targetEntries.flatMap((entry) => (entry?.sampleProducts || []).map((p) => String(p?.productId || '')).filter(Boolean)))];
+  const usageRows = [];
+  for (const productId of sampleProductIds) {
+    const detail = await posterRequest('menu.getProduct', { product_id: productId });
+    if (!detail) continue;
+    const rows = Array.isArray(detail?.ingredients) ? detail.ingredients : [];
+    for (const row of rows) {
+      if (Number(row?.structure_type) !== 2) continue;
+      if (!targetSet.has(normalize(row?.ingredient_name))) continue;
+      usageRows.push({
+        usedInProductId: String(detail?.product_id ?? productId),
+        usedInProductName: String(detail?.product_name ?? '').trim(),
+        row
+      });
+    }
+  }
+
   const payload = {
-    version: '3.0.0',
+    version: '4.0.0',
     restaurantId: 'poster-test',
-    source: 'Poster raw menu.getProduct rows selected from local full catalog samples',
+    source: 'Poster menu.getProducts exact-name matching + raw menu.getProduct preparation rows',
     exportedAt: new Date().toISOString(),
+    menuProductCount: menuProducts.length,
+    targetCount: targetEntries.length,
+    exactProductMatchCount: exactProductMatches.length,
+    exactProductMatches,
+    productDetails,
+    preparationUsageRows: usageRows,
     targets: targetEntries.map((entry) => ({
       priority: entry.priority,
       catalogId: entry.id,
@@ -82,13 +110,10 @@ async function posterRequest(method, params = {}) {
       name: entry.name,
       aliases: entry.aliases || [],
       sampleProducts: entry.sampleProducts || []
-    })),
-    inspectedProductCount: productIds.length,
-    productsWithPreparationRows: products.length,
-    products
+    }))
   };
 
   fs.mkdirSync(path.dirname(OUTPUT), { recursive: true });
   fs.writeFileSync(OUTPUT, `${JSON.stringify(payload, null, 2)}\n`, 'utf8');
-  console.log(`[Poster prep raw probe] targets=${targetEntries.length}; products=${productIds.length}; withPrepRows=${products.length}`);
+  console.log(`[Poster preparation names] menuProducts=${menuProducts.length}; targets=${targetEntries.length}; exactMatches=${exactProductMatches.length}; usageRows=${usageRows.length}`);
 })();

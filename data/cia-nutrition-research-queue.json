@@ -4,10 +4,10 @@
   "source": "cia-nutrition-priority-top500.json",
   "total": 437,
   "counts": {
-    "verified": 117,
+    "verified": 126,
     "source_collision": 34,
     "prepared_or_recipe": 73,
-    "generic_ingredient": 142,
+    "generic_ingredient": 133,
     "alcohol": 55,
     "non_food": 2,
     "branded_product": 14
@@ -6933,18 +6933,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "Икра красная USDA FoodData Central",
-        "Икра красная calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 304,
@@ -6959,18 +6952,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "Имбирь USDA FoodData Central",
-        "Имбирь calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 305,
@@ -6985,18 +6971,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "Каперсы USDA FoodData Central",
-        "Каперсы calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 306,
@@ -7089,18 +7068,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "Киноа USDA FoodData Central",
-        "Киноа calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 310,
@@ -7167,18 +7139,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "Консервированная кукуруза USDA FoodData Central",
-        "Консервированная кукуруза calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 313,
@@ -7193,18 +7158,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "Консервированный ананас USDA FoodData Central",
-        "Консервированный ананас calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 314,
@@ -7583,18 +7541,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "лук красный USDA FoodData Central",
-        "лук красный calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 329,
@@ -7609,18 +7560,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "малина USDA FoodData Central",
-        "малина calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 330,
@@ -7635,18 +7579,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "Мандарин USDA FoodData Central",
-        "Мандарин calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 331,

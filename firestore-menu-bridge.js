@@ -27,6 +27,40 @@
     window.setTimeout(() => finish(window.ciaFirebase || null), timeoutMs);
   });
 
+  const applyCategoryTranslations = async (menu) => {
+    if (!menu?.categories?.length || demoMode || restaurantId === 'garden-table') return menu;
+
+    try {
+      const response = await nativeFetch(`data/${encodeURIComponent(restaurantId)}-category-translations.json`, {
+        cache: 'no-cache'
+      });
+      if (!response.ok) return menu;
+
+      const pack = await response.json();
+      if (pack?.restaurantId && pack.restaurantId !== restaurantId) return menu;
+      const translations = pack?.categories;
+      if (!translations || typeof translations !== 'object') return menu;
+
+      menu.categories = menu.categories.map((category) => {
+        const rule = translations[String(category?.id)];
+        if (!rule) return category;
+        const name = {
+          hy: String(rule.hy || '').trim(),
+          ru: String(rule.ru || '').trim(),
+          en: String(rule.en || '').trim()
+        };
+        if (!name.hy || !name.ru || !name.en) return category;
+        return { ...category, name };
+      });
+
+      console.info('[CIA Smart Menu] Category translations applied:', restaurantId);
+    } catch (error) {
+      console.warn('[CIA Smart Menu] Category translation pack unavailable.', error);
+    }
+
+    return menu;
+  };
+
   const loadSnapshot = async () => {
     if (demoMode || restaurantId === 'garden-table') return null;
 
@@ -40,7 +74,7 @@
     if (!menu?.products?.length) return null;
 
     console.info('[CIA Smart Menu] Menu loaded from public snapshot:', restaurantId);
-    return menu;
+    return applyCategoryTranslations(menu);
   };
 
   const firestoreErrorResponse = (message) => new Response(JSON.stringify({
@@ -72,7 +106,8 @@
         const menu = await firebase.loadPublicMenu(restaurantId);
         if (menu?.products?.length) {
           console.info('[CIA Smart Menu] Menu loaded from Firestore fallback:', restaurantId);
-          return new Response(JSON.stringify(menu), {
+          const translatedMenu = await applyCategoryTranslations(menu);
+          return new Response(JSON.stringify(translatedMenu), {
             status: 200,
             headers: { 'Content-Type': 'application/json; charset=utf-8' }
           });

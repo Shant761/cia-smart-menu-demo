@@ -1,57 +1,67 @@
 {
-  "version": "1.1.0",
+  "version": "2.0.0",
   "restaurantId": "poster-test",
-  "source": "Poster storage.getPacks + storage.getPack",
-  "exportedAt": "2026-08-29T14:19:05.487Z",
-  "count": 3,
-  "preparations": [
+  "source": "Poster menu.getIngredients + direct menu.getProduct probes",
+  "exportedAt": "2026-08-29T14:20:51.312Z",
+  "ingredientCount": 509,
+  "ingredientTypeCounts": {
+    "1": 509
+  },
+  "probes": [
     {
-      "packId": "1",
-      "name": "",
-      "out": 0,
-      "unit": "p",
-      "productionDescription": "",
-      "sourceFields": [
-        "count",
-        "name",
-        "pack_id",
-        "type",
-        "unit"
-      ],
-      "ingredients": [],
-      "detailLoaded": true
+      "requestedId": "588",
+      "expectedName": "фарш мясной для долмы",
+      "ingredientRecord": null,
+      "productRecord": null,
+      "productError": null
     },
     {
-      "packId": "3",
-      "name": "",
-      "out": 0,
-      "unit": "kg",
-      "productionDescription": "",
-      "sourceFields": [
-        "count",
-        "name",
-        "pack_id",
-        "type",
-        "unit"
-      ],
-      "ingredients": [],
-      "detailLoaded": true
+      "requestedId": "594",
+      "expectedName": "фарш для ярах",
+      "ingredientRecord": {
+        "ingredientId": "594",
+        "name": "L. Jadot Petit Chablis",
+        "ingredientsType": "1",
+        "unit": "p"
+      },
+      "productRecord": null,
+      "productError": null
     },
     {
-      "packId": "2",
-      "name": "",
-      "out": 0,
-      "unit": "l",
-      "productionDescription": "",
-      "sourceFields": [
-        "count",
-        "name",
-        "pack_id",
-        "type",
-        "unit"
-      ],
-      "ingredients": [],
-      "detailLoaded": true
+      "requestedId": "530",
+      "expectedName": "куринный паштет",
+      "ingredientRecord": {
+        "ingredientId": "530",
+        "name": "соус пелати",
+        "ingredientsType": "1",
+        "unit": "kg"
+      },
+      "productRecord": null,
+      "productError": null
+    },
+    {
+      "requestedId": "543",
+      "expectedName": "фарш для хинкали",
+      "ingredientRecord": {
+        "ingredientId": "543",
+        "name": "гранатовая водка",
+        "ingredientsType": "1",
+        "unit": "l"
+      },
+      "productRecord": null,
+      "productError": null
+    },
+    {
+      "requestedId": "510",
+      "expectedName": "фарш для баклажана",
+      "ingredientRecord": {
+        "ingredientId": "510",
+        "name": "клюква",
+        "ingredientsType": "1",
+        "unit": "kg"
+      },
+      "productRecord": null,
+      "productError": null
     }
   ]
 }

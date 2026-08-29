@@ -10,6 +10,7 @@ on:
       - 'data/nutrition-database.json'
       - 'scripts/build-cia-manual-top20-template.cjs'
       - 'scripts/build-poster-nutrition-priority-top20.cjs'
+      - 'scripts/build-nutrition-research-queue.cjs'
       - 'scripts/calculate-product-nutrition.cjs'
       - 'scripts/lookup-nutrition-local.cjs'
       - 'scripts/build-ingredient-catalog.cjs'
@@ -53,6 +54,7 @@ jobs:
           node --check scripts/verify-top20-6-10.cjs
           node --check scripts/build-poster-nutrition-priority-top20.cjs
           node --check scripts/build-cia-manual-top20-template.cjs
+          node --check scripts/build-nutrition-research-queue.cjs
           node --check scripts/build-ingredient-catalog.cjs
           node --check scripts/lookup-nutrition-local.cjs
           node --check scripts/calculate-product-nutrition.cjs
@@ -79,6 +81,9 @@ jobs:
       - name: Apply verified CIA manual nutrition
         run: node scripts/verify-top20-6-10.cjs
 
+      - name: Build CIA nutrition internet research queue
+        run: node scripts/build-nutrition-research-queue.cjs
+
       - name: Merge verified CIA manual nutrition into engine database
         run: node scripts/merge-manual-into-nutrition-database.cjs
 
@@ -103,7 +108,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git restore package.json package-lock.json || true
-          git add data/cia-nutrition-manual-top20.json data/cia-nutrition-priority-top500.json data/nutrition-database.json
+          git add data/cia-nutrition-manual-top20.json data/cia-nutrition-priority-top500.json data/cia-nutrition-research-queue.json data/nutrition-database.json
           if git diff --cached --quiet; then
             echo "No nutrition database changes."
           else

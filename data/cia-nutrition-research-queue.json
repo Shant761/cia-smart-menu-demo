@@ -4,10 +4,10 @@
   "source": "cia-nutrition-priority-top500.json",
   "total": 437,
   "counts": {
-    "verified": 126,
+    "verified": 136,
     "source_collision": 34,
     "prepared_or_recipe": 73,
-    "generic_ingredient": 133,
+    "generic_ingredient": 123,
     "alcohol": 55,
     "non_food": 2,
     "branded_product": 14
@@ -7910,18 +7910,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "морковь USDA FoodData Central",
-        "морковь calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 344,
@@ -8300,18 +8293,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "Пири-пири /острые перчики/ USDA FoodData Central",
-        "Пири-пири /острые перчики/ calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 359,
@@ -8352,18 +8338,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "Помидоры /Pelati/ USDA FoodData Central",
-        "Помидоры /Pelati/ calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 361,
@@ -8638,18 +8617,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "редиска USDA FoodData Central",
-        "редиска calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 372,
@@ -8742,18 +8714,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "Сгущенное молоко USDA FoodData Central",
-        "Сгущенное молоко calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 376,
@@ -9931,18 +9896,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "Халапеньо USDA FoodData Central",
-        "Халапеньо calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 422,
@@ -10087,18 +10045,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "черешня USDA FoodData Central",
-        "черешня calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 428,
@@ -10113,18 +10064,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "чеснок порошок USDA FoodData Central",
-        "чеснок порошок calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 429,
@@ -10217,18 +10161,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "шпинат USDA FoodData Central",
-        "шпинат calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 433,
@@ -10295,18 +10232,11 @@
       ],
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
-      "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
-      "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
-      ],
-      "searchQueries": [
-        "Яблоки USDA FoodData Central",
-        "Яблоки calories kcal 100g"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 436,

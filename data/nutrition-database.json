@@ -3666,13 +3666,18 @@
       "id": "nutrition_1ef43ec41d874f9d5ce579b5",
       "name": "морковь",
       "aliases": [],
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "verified": false,
-      "status": "not_found"
+      "kcalPer100g": 41,
+      "proteinPer100g": 0.93,
+      "fatPer100g": 0.24,
+      "carbsPer100g": 9.58,
+      "source": "USDA FoodData Central",
+      "verified": true,
+      "status": "verified",
+      "calories": 41,
+      "protein": 0.93,
+      "fat": 0.24,
+      "carbohydrates": 9.58,
+      "sourceReference": "USDA SR Legacy / FoodData Central; carrots, raw"
     },
     {
       "id": "nutrition_2df9836d2a4ebe34e6021e22",
@@ -4321,13 +4326,18 @@
       "id": "nutrition_c9c67d69f3dba2f05c0ec3f1",
       "name": "Пири-пири /острые перчики/",
       "aliases": [],
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "verified": false,
-      "status": "not_found"
+      "kcalPer100g": 40,
+      "proteinPer100g": 1.87,
+      "fatPer100g": 0.44,
+      "carbsPer100g": 8.81,
+      "source": "USDA FoodData Central",
+      "verified": true,
+      "status": "verified",
+      "calories": 40,
+      "protein": 1.87,
+      "fat": 0.44,
+      "carbohydrates": 8.81,
+      "sourceReference": "USDA SR Legacy / FoodData Central; peppers, hot chili, red, raw; close base for piri-piri peppers"
     },
     {
       "id": "nutrition_4c851ed4c2ae316368653549",
@@ -4379,13 +4389,18 @@
       "id": "nutrition_eb7e15422a062c1e1c4e7998",
       "name": "Помидоры /Pelati/",
       "aliases": [],
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "verified": false,
-      "status": "not_found"
+      "kcalPer100g": 16,
+      "proteinPer100g": 0.79,
+      "fatPer100g": 0.25,
+      "carbsPer100g": 3.47,
+      "source": "USDA FoodData Central",
+      "verified": true,
+      "status": "verified",
+      "calories": 16,
+      "protein": 0.79,
+      "fat": 0.25,
+      "carbohydrates": 3.47,
+      "sourceReference": "USDA FoodData Central; tomatoes, red, ripe, canned, packed in tomato juice; close base for Pelati"
     },
     {
       "id": "nutrition_50ecd6c5ec197b4238d98cac",
@@ -4615,13 +4630,18 @@
       "id": "nutrition_690b20740199074b56a991a9",
       "name": "редиска",
       "aliases": [],
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "verified": false,
-      "status": "not_found"
+      "kcalPer100g": 16,
+      "proteinPer100g": 0.68,
+      "fatPer100g": 0.1,
+      "carbsPer100g": 3.4,
+      "source": "USDA FoodData Central",
+      "verified": true,
+      "status": "verified",
+      "calories": 16,
+      "protein": 0.68,
+      "fat": 0.1,
+      "carbohydrates": 3.4,
+      "sourceReference": "FDC 169276; radishes, raw"
     },
     {
       "id": "nutrition_6568cbd1b759bdd7e6e02b10",
@@ -4876,13 +4896,18 @@
       "id": "nutrition_df3962e6d00b9d59217ed12e",
       "name": "Сгущенное молоко",
       "aliases": [],
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "verified": false,
-      "status": "not_found"
+      "kcalPer100g": 321,
+      "proteinPer100g": 7.91,
+      "fatPer100g": 8.7,
+      "carbsPer100g": 54.4,
+      "source": "USDA FoodData Central",
+      "verified": true,
+      "status": "verified",
+      "calories": 321,
+      "protein": 7.91,
+      "fat": 8.7,
+      "carbohydrates": 54.4,
+      "sourceReference": "USDA FoodData Central; milk, canned, condensed, sweetened"
     },
     {
       "id": "nutrition_cf91cdfa8f7b63b3f3544ed6",
@@ -5923,13 +5948,18 @@
       "id": "nutrition_965245994d4d62088a1128a9",
       "name": "Халапеньо",
       "aliases": [],
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "fatPer100g": null,
-      "carbsPer100g": null,
-      "source": null,
-      "verified": false,
-      "status": "not_found"
+      "kcalPer100g": 29,
+      "proteinPer100g": 0.91,
+      "fatPer100g": 0.37,
+      "carbsPer100g": 6.5,
+      "source": "USDA FoodData Central",
+      "verified": true,
+      "status": "verified",
+      "calories": 29,
+      "protein": 0.91,
+      "fat": 0.37,
+      "carbohydrates": 6.5,
+      "sourceReference": "USDA FoodData Central; peppers, jalapeno, raw"
     },
     {
       "id": "nutrition_cac7b171f9d1b7a2c70b7c6c",
@@ -6086,7 +6116,7 @@
       "protein": 1.06,
       "fat": 0.2,
       "carbohydrates": 16.01,
-      "sourceReference": "cherries, sweet, raw"
+      "sourceReference": "USDA FoodData Central; cherries, sweet, raw"
     },
     {
       "id": "nutrition_b05b1912afc7ab3a3d29c54d",
@@ -6160,7 +6190,7 @@
       "protein": 16.55,
       "fat": 0.73,
       "carbohydrates": 72.73,
-      "sourceReference": "spices, garlic powder"
+      "sourceReference": "USDA FoodData Central; spices, garlic powder"
     },
     {
       "id": "nutrition_78917e0712e70798798d5d68",
@@ -6251,7 +6281,7 @@
       "protein": 2.86,
       "fat": 0.39,
       "carbohydrates": 3.63,
-      "sourceReference": "spinach, raw"
+      "sourceReference": "USDA FoodData Central; spinach, raw"
     },
     {
       "id": "nutrition_068c977fa3dd538552910cfc",
@@ -6306,7 +6336,7 @@
       "protein": 0.26,
       "fat": 0.17,
       "carbohydrates": 13.81,
-      "sourceReference": "apples, raw, with skin"
+      "sourceReference": "USDA FoodData Central; apples, raw, with skin"
     },
     {
       "id": "nutrition_e03e4c5839361e866040111f",

@@ -47,10 +47,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git restore package.json package-lock.json || true
           git add data/public-menus/
           if git diff --cached --quiet; then
             echo "No public menu snapshot changes."
           else
             git commit -m "chore: update public menu snapshot"
+            git pull --rebase --autostash origin main
             git push
           fi

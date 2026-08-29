@@ -78,6 +78,46 @@ const verified = {
     carbsPer100g: 13.34,
     source: 'USDA FoodData Central',
     sourceReference: 'FDC 169105; tangerines (mandarin oranges), raw'
+  },
+  poster_398: {
+    kcalPer100g: 41,
+    proteinPer100g: 0.93,
+    fatPer100g: 0.24,
+    carbsPer100g: 9.58,
+    source: 'USDA FoodData Central',
+    sourceReference: 'USDA SR Legacy / FoodData Central; carrots, raw'
+  },
+  poster_78: {
+    kcalPer100g: 40,
+    proteinPer100g: 1.87,
+    fatPer100g: 0.44,
+    carbsPer100g: 8.81,
+    source: 'USDA FoodData Central',
+    sourceReference: 'USDA SR Legacy / FoodData Central; peppers, hot chili, red, raw; close base for piri-piri peppers'
+  },
+  poster_79: {
+    kcalPer100g: 16,
+    proteinPer100g: 0.79,
+    fatPer100g: 0.25,
+    carbsPer100g: 3.47,
+    source: 'USDA FoodData Central',
+    sourceReference: 'USDA FoodData Central; tomatoes, red, ripe, canned, packed in tomato juice; close base for Pelati'
+  },
+  poster_279: {
+    kcalPer100g: 16,
+    proteinPer100g: 0.68,
+    fatPer100g: 0.1,
+    carbsPer100g: 3.4,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 169276; radishes, raw'
+  },
+  poster_478: {
+    kcalPer100g: 321,
+    proteinPer100g: 7.91,
+    fatPer100g: 8.7,
+    carbsPer100g: 54.4,
+    source: 'USDA FoodData Central',
+    sourceReference: 'USDA FoodData Central; milk, canned, condensed, sweetened'
   }
 };
 

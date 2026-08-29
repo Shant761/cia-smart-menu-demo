@@ -1,0 +1,3041 @@
+{
+  "version": "1.0.0",
+  "restaurantId": "poster-test",
+  "generatedAt": "2026-08-29T15:17:42.879Z",
+  "categoryId": "10",
+  "categoryName": {
+    "hy": "Միս",
+    "ru": "Мясо",
+    "en": "Meat"
+  },
+  "productCount": 16,
+  "products": [
+    {
+      "productId": "154",
+      "name": {
+        "hy": "Գրիլ հավի կրծքամիս",
+        "ru": "Куриная грудка на гриле",
+        "en": "Grilled Chicken Breast"
+      },
+      "oldNutrition": {
+        "status": "calculated",
+        "calories": 215,
+        "protein": 38.7,
+        "fat": 4.8,
+        "carbohydrates": 2.4,
+        "servingGrams": 176,
+        "per100g": {
+          "carbohydrates": 1.3,
+          "protein": 22,
+          "fat": 2.7,
+          "calories": 122
+        },
+        "partial": null,
+        "source": "validated ingredient nutrition + Poster recipe"
+      },
+      "posterRecipeGrams": 176,
+      "knownGrams": 176,
+      "coverage": 1,
+      "recalculatedKnown": {
+        "calories": 215,
+        "protein": 38.7,
+        "fat": 4.8,
+        "carbohydrates": 2.4
+      },
+      "meatOnlyCalories": 204,
+      "impossibleOldTotal": false,
+      "oldStatus": "calculated",
+      "oldCalories": 215,
+      "missingMeat": [],
+      "ingredients": [
+        {
+          "key": "poster_302",
+          "ingredientId": "302",
+          "structureType": 1,
+          "name": "Куриная грудка ",
+          "unit": "g",
+          "brutto": 170,
+          "netto": 170,
+          "grams": 170,
+          "nutrition": {
+            "id": "poster_302",
+            "name": "Куриная грудка",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 120,
+            "proteinPer100g": 22.5,
+            "fatPer100g": 2.62,
+            "carbsPer100g": 0,
+            "source": "USDA FoodData Central",
+            "sourceReference": "chicken breast, raw, meat only; per 100g"
+          },
+          "calculatedKcal": 204
+        },
+        {
+          "key": "poster_340",
+          "ingredientId": "340",
+          "structureType": 1,
+          "name": "Соль морская ",
+          "unit": "g",
+          "brutto": 2,
+          "netto": 2,
+          "grams": 2,
+          "nutrition": {
+            "id": "poster_340",
+            "name": "Соль морская",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 0,
+            "proteinPer100g": 0,
+            "fatPer100g": 0,
+            "carbsPer100g": 0,
+            "source": "USDA FoodData Central",
+            "sourceReference": "salt / sodium chloride; nutrition macros treated as 0"
+          },
+          "calculatedKcal": 0
+        },
+        {
+          "key": "poster_335",
+          "ingredientId": "335",
+          "structureType": 1,
+          "name": "Перец красный /молотый/ ",
+          "unit": "g",
+          "brutto": 2,
+          "netto": 2,
+          "grams": 2,
+          "nutrition": {
+            "id": "poster_335",
+            "name": "Перец красный /молотый/",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 282,
+            "proteinPer100g": 14.14,
+            "fatPer100g": 12.89,
+            "carbsPer100g": 53.99,
+            "source": "USDA FoodData Central",
+            "sourceReference": "paprika / red pepper spice, ground; generic verified base for Poster red ground pepper"
+          },
+          "calculatedKcal": 5.6
+        },
+        {
+          "key": "poster_337",
+          "ingredientId": "337",
+          "structureType": 1,
+          "name": "Перец черный /молотый/ ",
+          "unit": "g",
+          "brutto": 2,
+          "netto": 2,
+          "grams": 2,
+          "nutrition": {
+            "id": "poster_337",
+            "name": "Перец черный /молотый/",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 251,
+            "proteinPer100g": 10.39,
+            "fatPer100g": 3.26,
+            "carbsPer100g": 63.95,
+            "source": "USDA FoodData Central",
+            "sourceReference": "FDC 170931"
+          },
+          "calculatedKcal": 5
+        }
+      ]
+    },
+    {
+      "productId": "162",
+      "name": {
+        "hy": "Տապակած քուֆթա բանջարեղենով",
+        "ru": "Жареная кюфта с овощами",
+        "en": "Fried Kufta with Vegetables"
+      },
+      "oldNutrition": {
+        "status": "needs_review",
+        "calories": null,
+        "protein": null,
+        "fat": null,
+        "carbohydrates": null,
+        "servingGrams": null,
+        "per100g": null,
+        "partial": {
+          "totalIngredients": 12,
+          "recipeGrams": 781.8,
+          "carbohydrates": 213.4,
+          "coverage": 0.75,
+          "per100g": {
+            "carbohydrates": 33.8,
+            "protein": 0.9,
+            "fat": 6.1,
+            "calories": 191
+          },
+          "protein": 5.4,
+          "fat": 38.6,
+          "calories": 1205,
+          "matchedIngredients": 9,
+          "reviewIngredients": 3,
+          "knownGrams": 631.8
+        },
+        "source": "validated ingredient nutrition + Poster recipe"
+      },
+      "posterRecipeGrams": 745,
+      "knownGrams": 175,
+      "coverage": 0.235,
+      "recalculatedKnown": {
+        "calories": 37,
+        "protein": 3,
+        "fat": 0.5,
+        "carbohydrates": 7.2
+      },
+      "meatOnlyCalories": 0,
+      "impossibleOldTotal": false,
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "missingMeat": [],
+      "ingredients": [
+        {
+          "key": "poster_prep_548",
+          "ingredientId": "548",
+          "structureType": 2,
+          "name": "кюфта",
+          "unit": "g",
+          "brutto": 300,
+          "netto": 300,
+          "grams": 300,
+          "nutrition": null,
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_271",
+          "ingredientId": "271",
+          "structureType": 1,
+          "name": "помидоры",
+          "unit": "g",
+          "brutto": 80,
+          "netto": 80,
+          "grams": 80,
+          "nutrition": {
+            "id": "poster_271",
+            "name": "помидоры",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 18,
+            "proteinPer100g": 0.88,
+            "fatPer100g": 0.2,
+            "carbsPer100g": 3.89,
+            "source": "USDA FoodData Central",
+            "sourceReference": "tomatoes, red, ripe, raw; used as base for peeled tomatoes"
+          },
+          "calculatedKcal": 14.4
+        },
+        {
+          "key": "poster_prep_591",
+          "ingredientId": "591",
+          "structureType": 2,
+          "name": "болгарский очищеный",
+          "unit": "g",
+          "brutto": 50,
+          "netto": 50,
+          "grams": 50,
+          "nutrition": null,
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_prep_491",
+          "ingredientId": "491",
+          "structureType": 2,
+          "name": "броколли/чищенный",
+          "unit": "g",
+          "brutto": 50,
+          "netto": 50,
+          "grams": 50,
+          "nutrition": null,
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_prep_512",
+          "ingredientId": "512",
+          "structureType": 2,
+          "name": "картофель очищенный",
+          "unit": "g",
+          "brutto": 70,
+          "netto": 70,
+          "grams": 70,
+          "nutrition": null,
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_340",
+          "ingredientId": "340",
+          "structureType": 1,
+          "name": "Соль морская ",
+          "unit": "g",
+          "brutto": 3,
+          "netto": 3,
+          "grams": 3,
+          "nutrition": {
+            "id": "poster_340",
+            "name": "Соль морская",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 0,
+            "proteinPer100g": 0,
+            "fatPer100g": 0,
+            "carbsPer100g": 0,
+            "source": "USDA FoodData Central",
+            "sourceReference": "salt / sodium chloride; nutrition macros treated as 0"
+          },
+          "calculatedKcal": 0
+        },
+        {
+          "key": "poster_337",
+          "ingredientId": "337",
+          "structureType": 1,
+          "name": "Перец черный /молотый/ ",
+          "unit": "g",
+          "brutto": 2,
+          "netto": 2,
+          "grams": 2,
+          "nutrition": {
+            "id": "poster_337",
+            "name": "Перец черный /молотый/",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 251,
+            "proteinPer100g": 10.39,
+            "fatPer100g": 3.26,
+            "carbsPer100g": 63.95,
+            "source": "USDA FoodData Central",
+            "sourceReference": "FDC 170931"
+          },
+          "calculatedKcal": 5
+        },
+        {
+          "key": "poster_253",
+          "ingredientId": "253",
+          "structureType": 1,
+          "name": "Сельдерей ",
+          "unit": "g",
+          "brutto": 30,
+          "netto": 30,
+          "grams": 30,
+          "nutrition": {
+            "id": "poster_253",
+            "name": "Сельдерей",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 14,
+            "proteinPer100g": 0.69,
+            "fatPer100g": 0.17,
+            "carbsPer100g": 2.97,
+            "source": "USDA FoodData Central",
+            "sourceReference": "FDC 169988; celery, raw"
+          },
+          "calculatedKcal": 4.2
+        },
+        {
+          "key": "poster_395",
+          "ingredientId": "395",
+          "structureType": 1,
+          "name": "растительное масло",
+          "unit": "ml",
+          "brutto": 40,
+          "netto": 40,
+          "grams": null,
+          "nutrition": {
+            "id": "poster_395",
+            "name": "растительное масло",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 884,
+            "proteinPer100g": 0,
+            "fatPer100g": 100,
+            "carbsPer100g": 0,
+            "source": "USDA FoodData Central",
+            "sourceReference": "FDC 172370; vegetable oil, refined"
+          },
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_282",
+          "ingredientId": "282",
+          "structureType": 1,
+          "name": "грибы",
+          "unit": "g",
+          "brutto": 60,
+          "netto": 60,
+          "grams": 60,
+          "nutrition": {
+            "id": "poster_282",
+            "name": "грибы",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 22,
+            "proteinPer100g": 3.09,
+            "fatPer100g": 0.34,
+            "carbsPer100g": 3.26,
+            "source": "USDA FoodData Central",
+            "sourceReference": "mushrooms, white, raw"
+          },
+          "calculatedKcal": 13.2
+        },
+        {
+          "key": "poster_prep_611",
+          "ingredientId": "611",
+          "structureType": 2,
+          "name": "соус сацебели",
+          "unit": "g",
+          "brutto": 50,
+          "netto": 50,
+          "grams": 50,
+          "nutrition": null,
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_prep_612",
+          "ingredientId": "612",
+          "structureType": 2,
+          "name": "соус тархуновый",
+          "unit": "g",
+          "brutto": 50,
+          "netto": 50,
+          "grams": 50,
+          "nutrition": null,
+          "calculatedKcal": null
+        }
+      ]
+    },
+    {
+      "productId": "163",
+      "name": {
+        "hy": "Ղավուրմա սմբուկի խյուսով",
+        "ru": "Кавурма с пюре из баклажана",
+        "en": "Kavurma with Eggplant Purée"
+      },
+      "oldNutrition": {
+        "status": "needs_review",
+        "calories": null,
+        "protein": null,
+        "fat": null,
+        "carbohydrates": null,
+        "servingGrams": null,
+        "per100g": null,
+        "partial": {
+          "totalIngredients": 10,
+          "recipeGrams": 588,
+          "carbohydrates": 21.6,
+          "coverage": 0.9,
+          "per100g": {
+            "carbohydrates": 3.7,
+            "protein": 6.9,
+            "fat": 16.9,
+            "calories": 201
+          },
+          "protein": 40.4,
+          "fat": 99.3,
+          "calories": 1175,
+          "matchedIngredients": 9,
+          "reviewIngredients": 1,
+          "knownGrams": 586
+        },
+        "source": "validated ingredient nutrition + Poster recipe"
+      },
+      "posterRecipeGrams": 438,
+      "knownGrams": 84,
+      "coverage": 0.192,
+      "recalculatedKnown": {
+        "calories": 336,
+        "protein": 13.1,
+        "fat": 31.3,
+        "carbohydrates": 1.4
+      },
+      "meatOnlyCalories": 0,
+      "impossibleOldTotal": false,
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "missingMeat": [
+        {
+          "key": "poster_prep_493",
+          "ingredientId": "493",
+          "structureType": 2,
+          "name": "баклажан запеченный",
+          "grams": 250,
+          "reason": "nutrition_missing"
+        }
+      ],
+      "ingredients": [
+        {
+          "key": "poster_prep_493",
+          "ingredientId": "493",
+          "structureType": 2,
+          "name": "баклажан запеченный",
+          "unit": "g",
+          "brutto": 250,
+          "netto": 250,
+          "grams": 250,
+          "nutrition": null,
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_prep_602",
+          "ingredientId": "602",
+          "structureType": 2,
+          "name": "каурма",
+          "unit": "g",
+          "brutto": 100,
+          "netto": 100,
+          "grams": 100,
+          "nutrition": null,
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_396",
+          "ingredientId": "396",
+          "structureType": 1,
+          "name": "сливочное масло",
+          "unit": "g",
+          "brutto": 20,
+          "netto": 20,
+          "grams": 20,
+          "nutrition": {
+            "id": "poster_396",
+            "name": "сливочное масло",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 717,
+            "proteinPer100g": 0.85,
+            "fatPer100g": 81.11,
+            "carbsPer100g": 0.06,
+            "source": "USDA FoodData Central",
+            "sourceReference": "butter, with salt; generic butter base"
+          },
+          "calculatedKcal": 143.4
+        },
+        {
+          "key": "poster_175",
+          "ingredientId": "175",
+          "structureType": 1,
+          "name": "Сливки /M Gurme/ ",
+          "unit": "ml",
+          "brutto": 150,
+          "netto": 150,
+          "grams": null,
+          "nutrition": {
+            "id": "poster_175",
+            "name": "Сливки /M Gurme/",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 340,
+            "proteinPer100g": 2.8,
+            "fatPer100g": 36.1,
+            "carbsPer100g": 2.8,
+            "source": "USDA FoodData Central",
+            "sourceReference": "cream, heavy whipping; M Gurme cream treated as heavy cream base; per 100g"
+          },
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_166",
+          "ingredientId": "166",
+          "structureType": 1,
+          "name": "Сулугуни",
+          "unit": "g",
+          "brutto": 30,
+          "netto": 30,
+          "grams": 30,
+          "nutrition": {
+            "id": "poster_166",
+            "name": "Сулугуни",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 286,
+            "proteinPer100g": 20.5,
+            "fatPer100g": 22,
+            "carbsPer100g": 0.4,
+            "source": "CIA manual reference",
+            "sourceReference": "suluguni cheese, common label average; per 100g"
+          },
+          "calculatedKcal": 85.8
+        },
+        {
+          "key": "poster_157",
+          "ingredientId": "157",
+          "structureType": 1,
+          "name": "Лоры",
+          "unit": "g",
+          "brutto": 30,
+          "netto": 30,
+          "grams": 30,
+          "nutrition": {
+            "id": "poster_157",
+            "name": "Лоры",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 340,
+            "proteinPer100g": 22,
+            "fatPer100g": 28,
+            "carbsPer100g": 0,
+            "source": "Web nutrition references",
+            "sourceReference": "Lori brined cheese references per 100g: FatSecret 327kcal/P20/F27.5/C0; TablicaKalorijnosti Marianna 340kcal/P22/F28/C0; MySevan Ekokat 356kcal/P26/F28/C0; using 340kcal/P22/F28/C0."
+          },
+          "calculatedKcal": 102
+        },
+        {
+          "key": "poster_prep_497",
+          "ingredientId": "497",
+          "structureType": 2,
+          "name": "чеснок очищенный",
+          "unit": "g",
+          "brutto": 2,
+          "netto": 2,
+          "grams": 2,
+          "nutrition": null,
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_347",
+          "ingredientId": "347",
+          "structureType": 1,
+          "name": "Хмели/сунели  ",
+          "unit": "g",
+          "brutto": 2,
+          "netto": 2,
+          "grams": 2,
+          "nutrition": {
+            "id": "poster_347",
+            "name": "Хмели/сунели",
+            "status": "needs_review",
+            "verified": false,
+            "kcalPer100g": 0,
+            "proteinPer100g": 0,
+            "fatPer100g": 0,
+            "carbsPer100g": 0,
+            "source": null,
+            "sourceReference": null
+          },
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_340",
+          "ingredientId": "340",
+          "structureType": 1,
+          "name": "Соль морская ",
+          "unit": "g",
+          "brutto": 2,
+          "netto": 2,
+          "grams": 2,
+          "nutrition": {
+            "id": "poster_340",
+            "name": "Соль морская",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 0,
+            "proteinPer100g": 0,
+            "fatPer100g": 0,
+            "carbsPer100g": 0,
+            "source": "USDA FoodData Central",
+            "sourceReference": "salt / sodium chloride; nutrition macros treated as 0"
+          },
+          "calculatedKcal": 0
+        },
+        {
+          "key": "poster_337",
+          "ingredientId": "337",
+          "structureType": 1,
+          "name": "Перец черный /молотый/ ",
+          "unit": "g",
+          "brutto": 2,
+          "netto": 2,
+          "grams": 2,
+          "nutrition": {
+            "id": "poster_337",
+            "name": "Перец черный /молотый/",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 251,
+            "proteinPer100g": 10.39,
+            "fatPer100g": 3.26,
+            "carbsPer100g": 63.95,
+            "source": "USDA FoodData Central",
+            "sourceReference": "FDC 170931"
+          },
+          "calculatedKcal": 5
+        }
+      ]
+    },
+    {
+      "productId": "164",
+      "name": {
+        "hy": "Հորթի փափկամիս գրիլի վրա",
+        "ru": "Телячья вырезка на гриле",
+        "en": "Grilled Veal Tenderloin"
+      },
+      "oldNutrition": {
+        "status": "needs_review",
+        "calories": null,
+        "protein": null,
+        "fat": null,
+        "carbohydrates": null,
+        "servingGrams": null,
+        "per100g": null,
+        "partial": {
+          "carbohydrates": 1.2,
+          "coverage": 0.57,
+          "per100g": {
+            "carbohydrates": 1.9,
+            "protein": 0.8,
+            "fat": 72.1,
+            "calories": 645
+          },
+          "protein": 0.5,
+          "fat": 46.1,
+          "totalIngredients": 7,
+          "recipeGrams": 391,
+          "calories": 413,
+          "matchedIngredients": 4,
+          "reviewIngredients": 3,
+          "knownGrams": 64
+        },
+        "source": "validated ingredient nutrition + Poster recipe"
+      },
+      "posterRecipeGrams": 345,
+      "knownGrams": 3,
+      "coverage": 0.009,
+      "recalculatedKnown": {
+        "calories": 3,
+        "protein": 0.1,
+        "fat": 0,
+        "carbohydrates": 0.6
+      },
+      "meatOnlyCalories": 0,
+      "impossibleOldTotal": false,
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "missingMeat": [
+        {
+          "key": "poster_prep_515",
+          "ingredientId": "515",
+          "structureType": 2,
+          "name": "говяжье суки очищенная",
+          "grams": 300,
+          "reason": "nutrition_missing"
+        }
+      ],
+      "ingredients": [
+        {
+          "key": "poster_prep_515",
+          "ingredientId": "515",
+          "structureType": 2,
+          "name": "говяжье суки очищенная",
+          "unit": "g",
+          "brutto": 300,
+          "netto": 300,
+          "grams": 300,
+          "nutrition": null,
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_334",
+          "ingredientId": "334",
+          "structureType": 1,
+          "name": "Перец букет (горошек) ",
+          "unit": "g",
+          "brutto": 2,
+          "netto": 2,
+          "grams": 2,
+          "nutrition": {
+            "id": "poster_334",
+            "name": "Перец букет (горошек)",
+            "status": "needs_review",
+            "verified": false,
+            "kcalPer100g": 0,
+            "proteinPer100g": 0,
+            "fatPer100g": 0,
+            "carbsPer100g": 0,
+            "source": null,
+            "sourceReference": null
+          },
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_337",
+          "ingredientId": "337",
+          "structureType": 1,
+          "name": "Перец черный /молотый/ ",
+          "unit": "g",
+          "brutto": 1,
+          "netto": 1,
+          "grams": 1,
+          "nutrition": {
+            "id": "poster_337",
+            "name": "Перец черный /молотый/",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 251,
+            "proteinPer100g": 10.39,
+            "fatPer100g": 3.26,
+            "carbsPer100g": 63.95,
+            "source": "USDA FoodData Central",
+            "sourceReference": "FDC 170931"
+          },
+          "calculatedKcal": 2.5
+        },
+        {
+          "key": "poster_75",
+          "ingredientId": "75",
+          "structureType": 1,
+          "name": "Маринованный кизил ",
+          "unit": "g",
+          "brutto": 25,
+          "netto": 25,
+          "grams": 25,
+          "nutrition": {
+            "id": "poster_75",
+            "name": "Маринованный кизил",
+            "status": "needs_review",
+            "verified": false,
+            "kcalPer100g": 0,
+            "proteinPer100g": 0,
+            "fatPer100g": 0,
+            "carbsPer100g": 0,
+            "source": null,
+            "sourceReference": null
+          },
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_340",
+          "ingredientId": "340",
+          "structureType": 1,
+          "name": "Соль морская ",
+          "unit": "g",
+          "brutto": 2,
+          "netto": 2,
+          "grams": 2,
+          "nutrition": {
+            "id": "poster_340",
+            "name": "Соль морская",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 0,
+            "proteinPer100g": 0,
+            "fatPer100g": 0,
+            "carbsPer100g": 0,
+            "source": "USDA FoodData Central",
+            "sourceReference": "salt / sodium chloride; nutrition macros treated as 0"
+          },
+          "calculatedKcal": 0
+        },
+        {
+          "key": "poster_395",
+          "ingredientId": "395",
+          "structureType": 1,
+          "name": "растительное масло",
+          "unit": "ml",
+          "brutto": 50,
+          "netto": 50,
+          "grams": null,
+          "nutrition": {
+            "id": "poster_395",
+            "name": "растительное масло",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 884,
+            "proteinPer100g": 0,
+            "fatPer100g": 100,
+            "carbsPer100g": 0,
+            "source": "USDA FoodData Central",
+            "sourceReference": "FDC 172370; vegetable oil, refined"
+          },
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_prep_559",
+          "ingredientId": "559",
+          "structureType": 2,
+          "name": "руккола чищенная",
+          "unit": "g",
+          "brutto": 15,
+          "netto": 15,
+          "grams": 15,
+          "nutrition": null,
+          "calculatedKcal": null
+        }
+      ]
+    },
+    {
+      "productId": "165",
+      "name": {
+        "hy": "Չաքափուլի թաջինի մեջ",
+        "ru": "Чакапули в таджине",
+        "en": "Chakapuli in a Tagine"
+      },
+      "oldNutrition": {
+        "status": "needs_review",
+        "calories": null,
+        "protein": null,
+        "fat": null,
+        "carbohydrates": null,
+        "servingGrams": null,
+        "per100g": null,
+        "partial": {
+          "totalIngredients": 6,
+          "recipeGrams": 360,
+          "carbohydrates": 13.3,
+          "coverage": 0.67,
+          "per100g": {
+            "carbohydrates": 7.1,
+            "protein": 2.6,
+            "fat": 0.8,
+            "calories": 40
+          },
+          "protein": 4.9,
+          "fat": 1.5,
+          "calories": 74,
+          "matchedIngredients": 4,
+          "reviewIngredients": 2,
+          "knownGrams": 187
+        },
+        "source": "validated ingredient nutrition + Poster recipe"
+      },
+      "posterRecipeGrams": 345,
+      "knownGrams": 172,
+      "coverage": 0.499,
+      "recalculatedKnown": {
+        "calories": 72,
+        "protein": 4.9,
+        "fat": 1.5,
+        "carbohydrates": 13.3
+      },
+      "meatOnlyCalories": 0,
+      "impossibleOldTotal": false,
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "missingMeat": [
+        {
+          "key": "poster_prep_529",
+          "ingredientId": "529",
+          "structureType": 2,
+          "name": "говядина отварная",
+          "grams": 170,
+          "reason": "nutrition_missing"
+        }
+      ],
+      "ingredients": [
+        {
+          "key": "poster_prep_529",
+          "ingredientId": "529",
+          "structureType": 2,
+          "name": "говядина отварная",
+          "unit": "g",
+          "brutto": 170,
+          "netto": 170,
+          "grams": 170,
+          "nutrition": null,
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_335",
+          "ingredientId": "335",
+          "structureType": 1,
+          "name": "Перец красный /молотый/ ",
+          "unit": "g",
+          "brutto": 2,
+          "netto": 2,
+          "grams": 2,
+          "nutrition": {
+            "id": "poster_335",
+            "name": "Перец красный /молотый/",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 282,
+            "proteinPer100g": 14.14,
+            "fatPer100g": 12.89,
+            "carbsPer100g": 53.99,
+            "source": "USDA FoodData Central",
+            "sourceReference": "paprika / red pepper spice, ground; generic verified base for Poster red ground pepper"
+          },
+          "calculatedKcal": 5.6
+        },
+        {
+          "key": "poster_278",
+          "ingredientId": "278",
+          "structureType": 1,
+          "name": "свежая зелень",
+          "unit": "g",
+          "brutto": 150,
+          "netto": 150,
+          "grams": 150,
+          "nutrition": {
+            "id": "poster_278",
+            "name": "свежая зелень",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 36,
+            "proteinPer100g": 3,
+            "fatPer100g": 0.8,
+            "carbsPer100g": 6.3,
+            "source": "USDA FoodData Central",
+            "sourceReference": "fresh parsley/cilantro herb average used for generic fresh greens; per 100g"
+          },
+          "calculatedKcal": 54
+        },
+        {
+          "key": "poster_431",
+          "ingredientId": "431",
+          "structureType": 1,
+          "name": "уксус Ponti",
+          "unit": "ml",
+          "brutto": 15,
+          "netto": 15,
+          "grams": null,
+          "nutrition": {
+            "id": "poster_431",
+            "name": "уксус Ponti",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 18,
+            "proteinPer100g": 0,
+            "fatPer100g": 0,
+            "carbsPer100g": 0.04,
+            "source": "USDA FoodData Central",
+            "sourceReference": "vinegar, cider; Ponti vinegar treated as generic vinegar; per 100g"
+          },
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_446",
+          "ingredientId": "446",
+          "structureType": 1,
+          "name": "тхемали",
+          "unit": "g",
+          "brutto": 20,
+          "netto": 20,
+          "grams": 20,
+          "nutrition": {
+            "id": "poster_446",
+            "name": "тхемали",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 60,
+            "proteinPer100g": 0.8,
+            "fatPer100g": 0.2,
+            "carbsPer100g": 14,
+            "source": "CIA manual reference",
+            "sourceReference": "tkemali plum sauce common recipe average; per 100g"
+          },
+          "calculatedKcal": 12
+        },
+        {
+          "key": "poster_347",
+          "ingredientId": "347",
+          "structureType": 1,
+          "name": "Хмели/сунели  ",
+          "unit": "g",
+          "brutto": 3,
+          "netto": 3,
+          "grams": 3,
+          "nutrition": {
+            "id": "poster_347",
+            "name": "Хмели/сунели",
+            "status": "needs_review",
+            "verified": false,
+            "kcalPer100g": 0,
+            "proteinPer100g": 0,
+            "fatPer100g": 0,
+            "carbsPer100g": 0,
+            "source": null,
+            "sourceReference": null
+          },
+          "calculatedKcal": null
+        }
+      ]
+    },
+    {
+      "productId": "166",
+      "name": {
+        "hy": "Չկմերուլի",
+        "ru": "Чкмерули",
+        "en": "Chkmeruli"
+      },
+      "oldNutrition": {
+        "status": "needs_review",
+        "calories": null,
+        "protein": null,
+        "fat": null,
+        "carbohydrates": null,
+        "servingGrams": null,
+        "per100g": null,
+        "partial": {
+          "totalIngredients": 8,
+          "recipeGrams": 331,
+          "carbohydrates": 40.4,
+          "coverage": 0.75,
+          "per100g": {
+            "carbohydrates": 12.3,
+            "protein": 3.9,
+            "fat": 28.4,
+            "calories": 314
+          },
+          "protein": 12.7,
+          "fat": 93.3,
+          "calories": 1031,
+          "matchedIngredients": 6,
+          "reviewIngredients": 2,
+          "knownGrams": 328
+        },
+        "source": "validated ingredient nutrition + Poster recipe"
+      },
+      "posterRecipeGrams": 81,
+      "knownGrams": 76,
+      "coverage": 0.938,
+      "recalculatedKnown": {
+        "calories": 167,
+        "protein": 5.4,
+        "fat": 1.7,
+        "carbohydrates": 33.1
+      },
+      "meatOnlyCalories": 0,
+      "impossibleOldTotal": false,
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "missingMeat": [],
+      "ingredients": [
+        {
+          "key": "poster_306",
+          "ingredientId": "306",
+          "structureType": 1,
+          "name": "Цыпленок ",
+          "unit": "p",
+          "brutto": 1,
+          "netto": 0,
+          "grams": null,
+          "nutrition": {
+            "id": "poster_306",
+            "name": "Цыпленок",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 215,
+            "proteinPer100g": 18.6,
+            "fatPer100g": 15.06,
+            "carbsPer100g": 0,
+            "source": "USDA FoodData Central",
+            "sourceReference": "FDC 171447; chicken, broilers or fryers, meat and skin, raw; generic whole-chicken edible meat-and-skin base"
+          },
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_340",
+          "ingredientId": "340",
+          "structureType": 1,
+          "name": "Соль морская ",
+          "unit": "g",
+          "brutto": 3,
+          "netto": 3,
+          "grams": 3,
+          "nutrition": {
+            "id": "poster_340",
+            "name": "Соль морская",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 0,
+            "proteinPer100g": 0,
+            "fatPer100g": 0,
+            "carbsPer100g": 0,
+            "source": "USDA FoodData Central",
+            "sourceReference": "salt / sodium chloride; nutrition macros treated as 0"
+          },
+          "calculatedKcal": 0
+        },
+        {
+          "key": "poster_337",
+          "ingredientId": "337",
+          "structureType": 1,
+          "name": "Перец черный /молотый/ ",
+          "unit": "g",
+          "brutto": 3,
+          "netto": 3,
+          "grams": 3,
+          "nutrition": {
+            "id": "poster_337",
+            "name": "Перец черный /молотый/",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 251,
+            "proteinPer100g": 10.39,
+            "fatPer100g": 3.26,
+            "carbsPer100g": 63.95,
+            "source": "USDA FoodData Central",
+            "sourceReference": "FDC 170931"
+          },
+          "calculatedKcal": 7.5
+        },
+        {
+          "key": "poster_347",
+          "ingredientId": "347",
+          "structureType": 1,
+          "name": "Хмели/сунели  ",
+          "unit": "g",
+          "brutto": 3,
+          "netto": 3,
+          "grams": 3,
+          "nutrition": {
+            "id": "poster_347",
+            "name": "Хмели/сунели",
+            "status": "needs_review",
+            "verified": false,
+            "kcalPer100g": 0,
+            "proteinPer100g": 0,
+            "fatPer100g": 0,
+            "carbsPer100g": 0,
+            "source": null,
+            "sourceReference": null
+          },
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_prep_497",
+          "ingredientId": "497",
+          "structureType": 2,
+          "name": "чеснок очищенный",
+          "unit": "g",
+          "brutto": 2,
+          "netto": 2,
+          "grams": 2,
+          "nutrition": null,
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_278",
+          "ingredientId": "278",
+          "structureType": 1,
+          "name": "свежая зелень",
+          "unit": "g",
+          "brutto": 10,
+          "netto": 10,
+          "grams": 10,
+          "nutrition": {
+            "id": "poster_278",
+            "name": "свежая зелень",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 36,
+            "proteinPer100g": 3,
+            "fatPer100g": 0.8,
+            "carbsPer100g": 6.3,
+            "source": "USDA FoodData Central",
+            "sourceReference": "fresh parsley/cilantro herb average used for generic fresh greens; per 100g"
+          },
+          "calculatedKcal": 3.6
+        },
+        {
+          "key": "poster_175",
+          "ingredientId": "175",
+          "structureType": 1,
+          "name": "Сливки /M Gurme/ ",
+          "unit": "ml",
+          "brutto": 250,
+          "netto": 250,
+          "grams": null,
+          "nutrition": {
+            "id": "poster_175",
+            "name": "Сливки /M Gurme/",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 340,
+            "proteinPer100g": 2.8,
+            "fatPer100g": 36.1,
+            "carbsPer100g": 2.8,
+            "source": "USDA FoodData Central",
+            "sourceReference": "cream, heavy whipping; M Gurme cream treated as heavy cream base; per 100g"
+          },
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_598",
+          "ingredientId": "598",
+          "structureType": 1,
+          "name": "матнакаш",
+          "unit": "g",
+          "brutto": 60,
+          "netto": 60,
+          "grams": 60,
+          "nutrition": {
+            "id": "poster_598",
+            "name": "матнакаш",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 260,
+            "proteinPer100g": 8,
+            "fatPer100g": 2.5,
+            "carbsPer100g": 51,
+            "source": "CIA manual reference",
+            "sourceReference": "matnakash Armenian wheat bread common label average; per 100g"
+          },
+          "calculatedKcal": 156
+        }
+      ]
+    },
+    {
+      "productId": "168",
+      "name": {
+        "hy": "Հավի կրծքամիս սնկով",
+        "ru": "Куриная грудка с грибами",
+        "en": "Chicken Breast with Mushrooms"
+      },
+      "oldNutrition": {
+        "status": "needs_review",
+        "calories": null,
+        "protein": null,
+        "fat": null,
+        "carbohydrates": null,
+        "servingGrams": null,
+        "per100g": null,
+        "partial": {
+          "carbohydrates": 0.1,
+          "coverage": 0.5,
+          "per100g": {
+            "carbohydrates": 6.3,
+            "protein": 1.1,
+            "fat": 0.2,
+            "calories": 27
+          },
+          "protein": 0,
+          "fat": 0,
+          "totalIngredients": 2,
+          "recipeGrams": 322,
+          "calories": 1,
+          "matchedIngredients": 1,
+          "reviewIngredients": 1,
+          "knownGrams": 2
+        },
+        "source": "validated ingredient nutrition + Poster recipe"
+      },
+      "posterRecipeGrams": 322,
+      "knownGrams": 2,
+      "coverage": 0.006,
+      "recalculatedKnown": {
+        "calories": 1,
+        "protein": 0,
+        "fat": 0,
+        "carbohydrates": 0.1
+      },
+      "meatOnlyCalories": 0,
+      "impossibleOldTotal": false,
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "missingMeat": [
+        {
+          "key": "poster_prep_525",
+          "ingredientId": "525",
+          "structureType": 2,
+          "name": "курица с грибами",
+          "grams": 320,
+          "reason": "nutrition_missing"
+        }
+      ],
+      "ingredients": [
+        {
+          "key": "poster_prep_525",
+          "ingredientId": "525",
+          "structureType": 2,
+          "name": "курица с грибами",
+          "unit": "g",
+          "brutto": 320,
+          "netto": 320,
+          "grams": 320,
+          "nutrition": null,
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_493",
+          "ingredientId": "493",
+          "structureType": 1,
+          "name": "микрогрин",
+          "unit": "g",
+          "brutto": 2,
+          "netto": 2,
+          "grams": 2,
+          "nutrition": {
+            "id": "poster_493",
+            "name": "баклажан запеченный",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 27,
+            "proteinPer100g": 1.1,
+            "fatPer100g": 0.2,
+            "carbsPer100g": 6.3,
+            "source": "USDA FoodData Central",
+            "sourceReference": "eggplant, cooked as ingredient"
+          },
+          "calculatedKcal": 0.5
+        }
+      ]
+    },
+    {
+      "productId": "169",
+      "name": {
+        "hy": "Տապակած ճուտ կարտոֆիլով",
+        "ru": "Жареный цыплёнок с картофелем",
+        "en": "Fried Chicken with Potatoes"
+      },
+      "oldNutrition": {
+        "status": "needs_review",
+        "calories": null,
+        "protein": null,
+        "fat": null,
+        "carbohydrates": null,
+        "servingGrams": null,
+        "per100g": null,
+        "partial": {
+          "fat": 92.3,
+          "totalIngredients": 4,
+          "recipeGrams": 422,
+          "carbohydrates": 56.6,
+          "coverage": 0.75,
+          "per100g": {
+            "carbohydrates": 13.4,
+            "protein": 1.5,
+            "fat": 21.9,
+            "calories": 252
+          },
+          "protein": 6.3,
+          "calories": 1062,
+          "matchedIngredients": 3,
+          "reviewIngredients": 1,
+          "knownGrams": 422
+        },
+        "source": "validated ingredient nutrition + Poster recipe"
+      },
+      "posterRecipeGrams": 330,
+      "knownGrams": 330,
+      "coverage": 1,
+      "recalculatedKnown": {
+        "calories": 249,
+        "protein": 6.3,
+        "fat": 0.3,
+        "carbohydrates": 56.6
+      },
+      "meatOnlyCalories": 0,
+      "impossibleOldTotal": false,
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "missingMeat": [],
+      "ingredients": [
+        {
+          "key": "poster_306",
+          "ingredientId": "306",
+          "structureType": 1,
+          "name": "Цыпленок ",
+          "unit": "p",
+          "brutto": 1,
+          "netto": 0,
+          "grams": null,
+          "nutrition": {
+            "id": "poster_306",
+            "name": "Цыпленок",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 215,
+            "proteinPer100g": 18.6,
+            "fatPer100g": 15.06,
+            "carbsPer100g": 0,
+            "source": "USDA FoodData Central",
+            "sourceReference": "FDC 171447; chicken, broilers or fryers, meat and skin, raw; generic whole-chicken edible meat-and-skin base"
+          },
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_395",
+          "ingredientId": "395",
+          "structureType": 1,
+          "name": "растительное масло",
+          "unit": "ml",
+          "brutto": 100,
+          "netto": 100,
+          "grams": null,
+          "nutrition": {
+            "id": "poster_395",
+            "name": "растительное масло",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 884,
+            "proteinPer100g": 0,
+            "fatPer100g": 100,
+            "carbsPer100g": 0,
+            "source": "USDA FoodData Central",
+            "sourceReference": "FDC 172370; vegetable oil, refined"
+          },
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_262",
+          "ingredientId": "262",
+          "structureType": 1,
+          "name": "картофель",
+          "unit": "g",
+          "brutto": 300,
+          "netto": 300,
+          "grams": 300,
+          "nutrition": {
+            "id": "poster_262",
+            "name": "картофель",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 77,
+            "proteinPer100g": 2.02,
+            "fatPer100g": 0.09,
+            "carbsPer100g": 17.47,
+            "source": "USDA FoodData Central",
+            "sourceReference": "potatoes, raw, flesh and skin; per 100g"
+          },
+          "calculatedKcal": 231
+        },
+        {
+          "key": "poster_446",
+          "ingredientId": "446",
+          "structureType": 1,
+          "name": "тхемали",
+          "unit": "g",
+          "brutto": 30,
+          "netto": 30,
+          "grams": 30,
+          "nutrition": {
+            "id": "poster_446",
+            "name": "тхемали",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 60,
+            "proteinPer100g": 0.8,
+            "fatPer100g": 0.2,
+            "carbsPer100g": 14,
+            "source": "CIA manual reference",
+            "sourceReference": "tkemali plum sauce common recipe average; per 100g"
+          },
+          "calculatedKcal": 18
+        }
+      ]
+    },
+    {
+      "productId": "170",
+      "name": {
+        "hy": "Գառնի յարախ",
+        "ru": "Гарни-ярах",
+        "en": "Garni Yarakh"
+      },
+      "oldNutrition": {
+        "status": "needs_review",
+        "calories": null,
+        "protein": null,
+        "fat": null,
+        "carbohydrates": null,
+        "servingGrams": null,
+        "per100g": null,
+        "partial": {
+          "carbohydrates": 10.1,
+          "totalIngredients": 9,
+          "recipeGrams": 868.4,
+          "coverage": 0.78,
+          "per100g": {
+            "carbohydrates": 2.6,
+            "protein": 6.1,
+            "fat": 14.4,
+            "calories": 162
+          },
+          "protein": 23.6,
+          "fat": 56.1,
+          "calories": 629,
+          "matchedIngredients": 7,
+          "reviewIngredients": 2,
+          "knownGrams": 388.4
+        },
+        "source": "validated ingredient nutrition + Poster recipe"
+      },
+      "posterRecipeGrams": 850,
+      "knownGrams": 500,
+      "coverage": 0.588,
+      "recalculatedKnown": {
+        "calories": 516,
+        "protein": 25.1,
+        "fat": 37.9,
+        "carbohydrates": 22.7
+      },
+      "meatOnlyCalories": 0,
+      "impossibleOldTotal": false,
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "missingMeat": [
+        {
+          "key": "poster_prep_594",
+          "ingredientId": "594",
+          "structureType": 2,
+          "name": "фарш для ярах",
+          "grams": 100,
+          "reason": "nutrition_missing"
+        }
+      ],
+      "ingredients": [
+        {
+          "key": "poster_259",
+          "ingredientId": "259",
+          "structureType": 1,
+          "name": "баклажаны",
+          "unit": "g",
+          "brutto": 380,
+          "netto": 380,
+          "grams": 380,
+          "nutrition": {
+            "id": "poster_259",
+            "name": "баклажаны",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 25,
+            "proteinPer100g": 0.98,
+            "fatPer100g": 0.18,
+            "carbsPer100g": 5.88,
+            "source": "USDA FoodData Central",
+            "sourceReference": "FDC 169228; eggplant, raw"
+          },
+          "calculatedKcal": 95
+        },
+        {
+          "key": "poster_166",
+          "ingredientId": "166",
+          "structureType": 1,
+          "name": "Сулугуни",
+          "unit": "g",
+          "brutto": 50,
+          "netto": 50,
+          "grams": 50,
+          "nutrition": {
+            "id": "poster_166",
+            "name": "Сулугуни",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 286,
+            "proteinPer100g": 20.5,
+            "fatPer100g": 22,
+            "carbsPer100g": 0.4,
+            "source": "CIA manual reference",
+            "sourceReference": "suluguni cheese, common label average; per 100g"
+          },
+          "calculatedKcal": 143
+        },
+        {
+          "key": "poster_prep_632",
+          "ingredientId": "632",
+          "structureType": 2,
+          "name": "помидоры чищенные",
+          "unit": "g",
+          "brutto": 250,
+          "netto": 250,
+          "grams": 250,
+          "nutrition": null,
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_396",
+          "ingredientId": "396",
+          "structureType": 1,
+          "name": "сливочное масло",
+          "unit": "g",
+          "brutto": 15,
+          "netto": 15,
+          "grams": 15,
+          "nutrition": {
+            "id": "poster_396",
+            "name": "сливочное масло",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 717,
+            "proteinPer100g": 0.85,
+            "fatPer100g": 81.11,
+            "carbsPer100g": 0.06,
+            "source": "USDA FoodData Central",
+            "sourceReference": "butter, with salt; generic butter base"
+          },
+          "calculatedKcal": 107.6
+        },
+        {
+          "key": "poster_340",
+          "ingredientId": "340",
+          "structureType": 1,
+          "name": "Соль морская ",
+          "unit": "g",
+          "brutto": 2,
+          "netto": 2,
+          "grams": 2,
+          "nutrition": {
+            "id": "poster_340",
+            "name": "Соль морская",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 0,
+            "proteinPer100g": 0,
+            "fatPer100g": 0,
+            "carbsPer100g": 0,
+            "source": "USDA FoodData Central",
+            "sourceReference": "salt / sodium chloride; nutrition macros treated as 0"
+          },
+          "calculatedKcal": 0
+        },
+        {
+          "key": "poster_395",
+          "ingredientId": "395",
+          "structureType": 1,
+          "name": "растительное масло",
+          "unit": "ml",
+          "brutto": 20,
+          "netto": 20,
+          "grams": null,
+          "nutrition": {
+            "id": "poster_395",
+            "name": "растительное масло",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 884,
+            "proteinPer100g": 0,
+            "fatPer100g": 100,
+            "carbsPer100g": 0,
+            "source": "USDA FoodData Central",
+            "sourceReference": "FDC 172370; vegetable oil, refined"
+          },
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_493",
+          "ingredientId": "493",
+          "structureType": 1,
+          "name": "микрогрин",
+          "unit": "g",
+          "brutto": 3,
+          "netto": 3,
+          "grams": 3,
+          "nutrition": {
+            "id": "poster_493",
+            "name": "баклажан запеченный",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 27,
+            "proteinPer100g": 1.1,
+            "fatPer100g": 0.2,
+            "carbsPer100g": 6.3,
+            "source": "USDA FoodData Central",
+            "sourceReference": "eggplant, cooked as ingredient"
+          },
+          "calculatedKcal": 0.8
+        },
+        {
+          "key": "poster_prep_594",
+          "ingredientId": "594",
+          "structureType": 2,
+          "name": "фарш для ярах",
+          "unit": "g",
+          "brutto": 100,
+          "netto": 100,
+          "grams": 100,
+          "nutrition": null,
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_157",
+          "ingredientId": "157",
+          "structureType": 1,
+          "name": "Лоры",
+          "unit": "g",
+          "brutto": 50,
+          "netto": 50,
+          "grams": 50,
+          "nutrition": {
+            "id": "poster_157",
+            "name": "Лоры",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 340,
+            "proteinPer100g": 22,
+            "fatPer100g": 28,
+            "carbsPer100g": 0,
+            "source": "Web nutrition references",
+            "sourceReference": "Lori brined cheese references per 100g: FatSecret 327kcal/P20/F27.5/C0; TablicaKalorijnosti Marianna 340kcal/P22/F28/C0; MySevan Ekokat 356kcal/P26/F28/C0; using 340kcal/P22/F28/C0."
+          },
+          "calculatedKcal": 170
+        }
+      ]
+    },
+    {
+      "productId": "171",
+      "name": {
+        "hy": "Թխած կողիկներ ռիբս",
+        "ru": "Запечённые рёбрышки",
+        "en": "Baked Ribs"
+      },
+      "oldNutrition": {
+        "status": "needs_review",
+        "calories": null,
+        "protein": null,
+        "fat": null,
+        "carbohydrates": null,
+        "servingGrams": null,
+        "per100g": null,
+        "partial": {
+          "carbohydrates": 3.4,
+          "coverage": 0.6,
+          "per100g": {
+            "carbohydrates": 5.8,
+            "protein": 1.7,
+            "fat": 0.3,
+            "calories": 26
+          },
+          "protein": 1,
+          "fat": 0.2,
+          "totalIngredients": 5,
+          "recipeGrams": 108,
+          "calories": 15,
+          "matchedIngredients": 3,
+          "reviewIngredients": 2,
+          "knownGrams": 58
+        },
+        "source": "validated ingredient nutrition + Poster recipe"
+      },
+      "posterRecipeGrams": 108,
+      "knownGrams": 58,
+      "coverage": 0.537,
+      "recalculatedKnown": {
+        "calories": 15,
+        "protein": 1,
+        "fat": 0.2,
+        "carbohydrates": 3.4
+      },
+      "meatOnlyCalories": 0,
+      "impossibleOldTotal": false,
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "missingMeat": [],
+      "ingredients": [
+        {
+          "key": "poster_525",
+          "ingredientId": "525",
+          "structureType": 1,
+          "name": "Рибс",
+          "unit": "p",
+          "brutto": 1,
+          "netto": 0,
+          "grams": null,
+          "nutrition": {
+            "id": "poster_525",
+            "name": "курица с грибами",
+            "status": "needs_review",
+            "verified": false,
+            "kcalPer100g": 0,
+            "proteinPer100g": 0,
+            "fatPer100g": 0,
+            "carbsPer100g": 0,
+            "source": null,
+            "sourceReference": null
+          },
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_340",
+          "ingredientId": "340",
+          "structureType": 1,
+          "name": "Соль морская ",
+          "unit": "g",
+          "brutto": 5,
+          "netto": 5,
+          "grams": 5,
+          "nutrition": {
+            "id": "poster_340",
+            "name": "Соль морская",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 0,
+            "proteinPer100g": 0,
+            "fatPer100g": 0,
+            "carbsPer100g": 0,
+            "source": "USDA FoodData Central",
+            "sourceReference": "salt / sodium chloride; nutrition macros treated as 0"
+          },
+          "calculatedKcal": 0
+        },
+        {
+          "key": "poster_337",
+          "ingredientId": "337",
+          "structureType": 1,
+          "name": "Перец черный /молотый/ ",
+          "unit": "g",
+          "brutto": 3,
+          "netto": 3,
+          "grams": 3,
+          "nutrition": {
+            "id": "poster_337",
+            "name": "Перец черный /молотый/",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 251,
+            "proteinPer100g": 10.39,
+            "fatPer100g": 3.26,
+            "carbsPer100g": 63.95,
+            "source": "USDA FoodData Central",
+            "sourceReference": "FDC 170931"
+          },
+          "calculatedKcal": 7.5
+        },
+        {
+          "key": "poster_274",
+          "ingredientId": "274",
+          "structureType": 1,
+          "name": "салатный лист",
+          "unit": "g",
+          "brutto": 50,
+          "netto": 50,
+          "grams": 50,
+          "nutrition": {
+            "id": "poster_274",
+            "name": "салатный лист",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 15,
+            "proteinPer100g": 1.36,
+            "fatPer100g": 0.15,
+            "carbsPer100g": 2.87,
+            "source": "USDA FoodData Central",
+            "sourceReference": "green leaf lettuce, raw"
+          },
+          "calculatedKcal": 7.5
+        },
+        {
+          "key": "poster_prep_665",
+          "ingredientId": "665",
+          "structureType": 2,
+          "name": "соус для рибсов",
+          "unit": "g",
+          "brutto": 50,
+          "netto": 50,
+          "grams": 50,
+          "nutrition": null,
+          "calculatedKcal": null
+        }
+      ]
+    },
+    {
+      "productId": "172",
+      "name": {
+        "hy": "Թփով տոլմա տավարի մսով",
+        "ru": "Долма в виноградных листьях с говядиной",
+        "en": "Beef Dolma in Grape Leaves"
+      },
+      "oldNutrition": {
+        "status": "needs_review",
+        "calories": null,
+        "protein": null,
+        "fat": null,
+        "carbohydrates": null,
+        "servingGrams": null,
+        "per100g": null,
+        "partial": {
+          "carbohydrates": 3.7,
+          "coverage": 0.33,
+          "per100g": {
+            "carbohydrates": 4.7,
+            "protein": 3.5,
+            "fat": 3.3,
+            "calories": 61
+          },
+          "protein": 2.8,
+          "fat": 2.6,
+          "totalIngredients": 3,
+          "recipeGrams": 480,
+          "calories": 49,
+          "matchedIngredients": 1,
+          "reviewIngredients": 2,
+          "knownGrams": 80
+        },
+        "source": "validated ingredient nutrition + Poster recipe"
+      },
+      "posterRecipeGrams": 480,
+      "knownGrams": 280,
+      "coverage": 0.583,
+      "recalculatedKnown": {
+        "calories": 235,
+        "protein": 14,
+        "fat": 6.8,
+        "carbohydrates": 38.3
+      },
+      "meatOnlyCalories": 0,
+      "impossibleOldTotal": false,
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "missingMeat": [
+        {
+          "key": "poster_prep_588",
+          "ingredientId": "588",
+          "structureType": 2,
+          "name": "фарш мясной для долмы",
+          "grams": 200,
+          "reason": "nutrition_missing"
+        }
+      ],
+      "ingredients": [
+        {
+          "key": "poster_173",
+          "ingredientId": "173",
+          "structureType": 1,
+          "name": "Мацони ",
+          "unit": "g",
+          "brutto": 80,
+          "netto": 80,
+          "grams": 80,
+          "nutrition": {
+            "id": "poster_173",
+            "name": "Мацони",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 61,
+            "proteinPer100g": 3.47,
+            "fatPer100g": 3.25,
+            "carbsPer100g": 4.66,
+            "source": "USDA FoodData Central",
+            "sourceReference": "yogurt, plain, whole milk; generic fermented dairy base for matsoni"
+          },
+          "calculatedKcal": 48.8
+        },
+        {
+          "key": "poster_65",
+          "ingredientId": "65",
+          "structureType": 1,
+          "name": "Виноградные листья ",
+          "unit": "g",
+          "brutto": 200,
+          "netto": 200,
+          "grams": 200,
+          "nutrition": {
+            "id": "poster_65",
+            "name": "Виноградные листья",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 93,
+            "proteinPer100g": 5.6,
+            "fatPer100g": 2.12,
+            "carbsPer100g": 17.31,
+            "source": "USDA FoodData Central",
+            "sourceReference": "FDC 168575; grape leaves, raw"
+          },
+          "calculatedKcal": 186
+        },
+        {
+          "key": "poster_prep_588",
+          "ingredientId": "588",
+          "structureType": 2,
+          "name": "фарш мясной для долмы",
+          "unit": "g",
+          "brutto": 200,
+          "netto": 200,
+          "grams": 200,
+          "nutrition": null,
+          "calculatedKcal": null
+        }
+      ]
+    },
+    {
+      "productId": "175",
+      "name": {
+        "hy": "Հարիսա հավի մսով",
+        "ru": "Ариса с курицей",
+        "en": "Harissa with Chicken"
+      },
+      "oldNutrition": {
+        "status": "needs_review",
+        "calories": null,
+        "protein": null,
+        "fat": null,
+        "carbohydrates": null,
+        "servingGrams": null,
+        "per100g": null,
+        "partial": {
+          "carbohydrates": 0,
+          "coverage": 0.33,
+          "per100g": {
+            "carbohydrates": 0,
+            "protein": 0.3,
+            "fat": 99.5,
+            "calories": 876
+          },
+          "protein": 0.2,
+          "fat": 79.6,
+          "totalIngredients": 3,
+          "recipeGrams": 600,
+          "calories": 701,
+          "matchedIngredients": 1,
+          "reviewIngredients": 2,
+          "knownGrams": 80
+        },
+        "source": "validated ingredient nutrition + Poster recipe"
+      },
+      "posterRecipeGrams": 600,
+      "knownGrams": 0,
+      "coverage": 0,
+      "recalculatedKnown": {
+        "calories": 0,
+        "protein": 0,
+        "fat": 0,
+        "carbohydrates": 0
+      },
+      "meatOnlyCalories": 0,
+      "impossibleOldTotal": false,
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "missingMeat": [],
+      "ingredients": [
+        {
+          "key": "poster_prep_554",
+          "ingredientId": "554",
+          "structureType": 2,
+          "name": "топленное масло ",
+          "unit": "g",
+          "brutto": 80,
+          "netto": 80,
+          "grams": 80,
+          "nutrition": null,
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_73",
+          "ingredientId": "73",
+          "structureType": 1,
+          "name": "Маринованные овощи ",
+          "unit": "g",
+          "brutto": 150,
+          "netto": 150,
+          "grams": 150,
+          "nutrition": {
+            "id": "poster_73",
+            "name": "Маринованные овощи",
+            "status": "needs_review",
+            "verified": false,
+            "kcalPer100g": 0,
+            "proteinPer100g": 0,
+            "fatPer100g": 0,
+            "carbsPer100g": 0,
+            "source": null,
+            "sourceReference": null
+          },
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_prep_582",
+          "ingredientId": "582",
+          "structureType": 2,
+          "name": "харриса",
+          "unit": "g",
+          "brutto": 370,
+          "netto": 370,
+          "grams": 370,
+          "nutrition": null,
+          "calculatedKcal": null
+        }
+      ]
+    },
+    {
+      "productId": "32",
+      "name": {
+        "hy": "Արիշտա ստրաչատելայով եւ ղավուրմայով",
+        "ru": "Аришта со страчателлой и кавурмой",
+        "en": "Arishta with Stracciatella and Kavurma"
+      },
+      "oldNutrition": {
+        "status": "needs_review",
+        "calories": null,
+        "protein": null,
+        "fat": null,
+        "carbohydrates": null,
+        "servingGrams": null,
+        "per100g": null,
+        "partial": {
+          "carbohydrates": 0.2,
+          "totalIngredients": 6,
+          "recipeGrams": 290,
+          "coverage": 0.67,
+          "per100g": {
+            "carbohydrates": 0.2,
+            "protein": 16.1,
+            "fat": 25.5,
+            "calories": 339
+          },
+          "protein": 20.1,
+          "fat": 31.9,
+          "calories": 424,
+          "matchedIngredients": 4,
+          "reviewIngredients": 2,
+          "knownGrams": 125
+        },
+        "source": "validated ingredient nutrition + Poster recipe"
+      },
+      "posterRecipeGrams": 290,
+      "knownGrams": 5,
+      "coverage": 0.017,
+      "recalculatedKnown": {
+        "calories": 1,
+        "protein": 0,
+        "fat": 0,
+        "carbohydrates": 0.2
+      },
+      "meatOnlyCalories": 0,
+      "impossibleOldTotal": false,
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "missingMeat": [],
+      "ingredients": [
+        {
+          "key": "poster_340",
+          "ingredientId": "340",
+          "structureType": 1,
+          "name": "Соль морская ",
+          "unit": "g",
+          "brutto": 2,
+          "netto": 2,
+          "grams": 2,
+          "nutrition": {
+            "id": "poster_340",
+            "name": "Соль морская",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 0,
+            "proteinPer100g": 0,
+            "fatPer100g": 0,
+            "carbsPer100g": 0,
+            "source": "USDA FoodData Central",
+            "sourceReference": "salt / sodium chloride; nutrition macros treated as 0"
+          },
+          "calculatedKcal": 0
+        },
+        {
+          "key": "poster_prep_554",
+          "ingredientId": "554",
+          "structureType": 2,
+          "name": "топленное масло ",
+          "unit": "g",
+          "brutto": 20,
+          "netto": 20,
+          "grams": 20,
+          "nutrition": null,
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_prep_602",
+          "ingredientId": "602",
+          "structureType": 2,
+          "name": "каурма",
+          "unit": "g",
+          "brutto": 100,
+          "netto": 100,
+          "grams": 100,
+          "nutrition": null,
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_165",
+          "ingredientId": "165",
+          "structureType": 1,
+          "name": "Страчателла",
+          "unit": "g",
+          "brutto": 30,
+          "netto": 30,
+          "grams": 30,
+          "nutrition": {
+            "id": "poster_165",
+            "name": "Страчателла",
+            "status": "needs_review",
+            "verified": false,
+            "kcalPer100g": 0,
+            "proteinPer100g": 0,
+            "fatPer100g": 0,
+            "carbsPer100g": 0,
+            "source": null,
+            "sourceReference": null
+          },
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_493",
+          "ingredientId": "493",
+          "structureType": 1,
+          "name": "микрогрин",
+          "unit": "g",
+          "brutto": 3,
+          "netto": 3,
+          "grams": 3,
+          "nutrition": {
+            "id": "poster_493",
+            "name": "баклажан запеченный",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 27,
+            "proteinPer100g": 1.1,
+            "fatPer100g": 0.2,
+            "carbsPer100g": 6.3,
+            "source": "USDA FoodData Central",
+            "sourceReference": "eggplant, cooked as ingredient"
+          },
+          "calculatedKcal": 0.8
+        },
+        {
+          "key": "poster_prep_601",
+          "ingredientId": "601",
+          "structureType": 2,
+          "name": "аришта/тальятелле",
+          "unit": "g",
+          "brutto": 135,
+          "netto": 135,
+          "grams": 135,
+          "nutrition": null,
+          "calculatedKcal": null
+        }
+      ]
+    },
+    {
+      "productId": "689",
+      "name": {
+        "hy": "Խոզի կողիկներ",
+        "ru": "Свиные рёбрышки",
+        "en": "Pork Ribs"
+      },
+      "oldNutrition": {
+        "status": "needs_review",
+        "calories": null,
+        "protein": null,
+        "fat": null,
+        "carbohydrates": null,
+        "servingGrams": null,
+        "per100g": null,
+        "partial": {
+          "carbohydrates": 1.4,
+          "coverage": 0.5,
+          "per100g": {
+            "carbohydrates": 2.9,
+            "protein": 1.4,
+            "fat": 0.1,
+            "calories": 15
+          },
+          "protein": 0.7,
+          "fat": 0.1,
+          "totalIngredients": 2,
+          "recipeGrams": 250,
+          "calories": 8,
+          "matchedIngredients": 1,
+          "reviewIngredients": 1,
+          "knownGrams": 50
+        },
+        "source": "validated ingredient nutrition + Poster recipe"
+      },
+      "posterRecipeGrams": 250,
+      "knownGrams": 250,
+      "coverage": 1,
+      "recalculatedKnown": {
+        "calories": 562,
+        "protein": 31.6,
+        "fat": 46.9,
+        "carbohydrates": 1.4
+      },
+      "meatOnlyCalories": 554,
+      "impossibleOldTotal": true,
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "missingMeat": [],
+      "ingredients": [
+        {
+          "key": "poster_203",
+          "ingredientId": "203",
+          "structureType": 1,
+          "name": "свинина /մատ/ ",
+          "unit": "g",
+          "brutto": 200,
+          "netto": 200,
+          "grams": 200,
+          "nutrition": {
+            "id": "poster_203",
+            "name": "свинина /մատ/",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 277,
+            "proteinPer100g": 15.47,
+            "fatPer100g": 23.4,
+            "carbsPer100g": 0,
+            "source": "USDA FoodData Central",
+            "sourceReference": "FDC 167853; pork, fresh, spareribs, separable lean and fat, raw; Armenian Խոզի մատ/մատեր = pork ribs"
+          },
+          "calculatedKcal": 554
+        },
+        {
+          "key": "poster_274",
+          "ingredientId": "274",
+          "structureType": 1,
+          "name": "салатный лист",
+          "unit": "g",
+          "brutto": 50,
+          "netto": 50,
+          "grams": 50,
+          "nutrition": {
+            "id": "poster_274",
+            "name": "салатный лист",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 15,
+            "proteinPer100g": 1.36,
+            "fatPer100g": 0.15,
+            "carbsPer100g": 2.87,
+            "source": "USDA FoodData Central",
+            "sourceReference": "green leaf lettuce, raw"
+          },
+          "calculatedKcal": 7.5
+        }
+      ]
+    },
+    {
+      "productId": "718",
+      "name": {
+        "hy": "Մսային միքս 2",
+        "ru": "Мясной микс 2",
+        "en": "Meat Mix 2"
+      },
+      "oldNutrition": {
+        "status": "needs_review",
+        "calories": null,
+        "protein": null,
+        "fat": null,
+        "carbohydrates": null,
+        "servingGrams": null,
+        "per100g": null,
+        "partial": {
+          "totalIngredients": 10,
+          "recipeGrams": 2500,
+          "carbohydrates": 13.5,
+          "coverage": 0.4,
+          "per100g": {
+            "fat": 1.8,
+            "carbohydrates": 2.1,
+            "protein": 14.2,
+            "calories": 85
+          },
+          "protein": 92.5,
+          "fat": 11.9,
+          "calories": 551,
+          "matchedIngredients": 4,
+          "reviewIngredients": 6,
+          "knownGrams": 650
+        },
+        "source": "validated ingredient nutrition + Poster recipe"
+      },
+      "posterRecipeGrams": 2500,
+      "knownGrams": 1750,
+      "coverage": 0.7,
+      "recalculatedKnown": {
+        "calories": 2634,
+        "protein": 318.6,
+        "fat": 138.3,
+        "carbohydrates": 7.8
+      },
+      "meatOnlyCalories": 1833,
+      "impossibleOldTotal": true,
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "missingMeat": [
+        {
+          "key": "poster_197",
+          "ingredientId": "197",
+          "structureType": 1,
+          "name": "Говядина /մեջքամիս/ ",
+          "grams": 650,
+          "reason": "nutrition_needs_review"
+        }
+      ],
+      "ingredients": [
+        {
+          "key": "poster_202",
+          "ingredientId": "202",
+          "structureType": 1,
+          "name": "Свиное каре /չալաղաջ/ ",
+          "unit": "g",
+          "brutto": 450,
+          "netto": 450,
+          "grams": 450,
+          "nutrition": {
+            "id": "poster_202",
+            "name": "Свиное каре /չալաղաջ/",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 170,
+            "proteinPer100g": 20.71,
+            "fatPer100g": 9.03,
+            "carbsPer100g": 0,
+            "source": "USDA FoodData Central",
+            "sourceReference": "FDC 168238; pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, raw; Armenian խոզի չալաղաջ = pork loin/chop"
+          },
+          "calculatedKcal": 765
+        },
+        {
+          "key": "poster_203",
+          "ingredientId": "203",
+          "structureType": 1,
+          "name": "свинина /մատ/ ",
+          "unit": "g",
+          "brutto": 200,
+          "netto": 200,
+          "grams": 200,
+          "nutrition": {
+            "id": "poster_203",
+            "name": "свинина /մատ/",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 277,
+            "proteinPer100g": 15.47,
+            "fatPer100g": 23.4,
+            "carbsPer100g": 0,
+            "source": "USDA FoodData Central",
+            "sourceReference": "FDC 167853; pork, fresh, spareribs, separable lean and fat, raw; Armenian Խոզի մատ/մատեր = pork ribs"
+          },
+          "calculatedKcal": 554
+        },
+        {
+          "key": "poster_197",
+          "ingredientId": "197",
+          "structureType": 1,
+          "name": "Говядина /մեջքամիս/ ",
+          "unit": "g",
+          "brutto": 650,
+          "netto": 650,
+          "grams": 650,
+          "nutrition": {
+            "id": "poster_197",
+            "name": "Говядина /մեջքամիս/",
+            "status": "needs_review",
+            "verified": false,
+            "kcalPer100g": 0,
+            "proteinPer100g": 0,
+            "fatPer100g": 0,
+            "carbsPer100g": 0,
+            "source": null,
+            "sourceReference": null
+          },
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_302",
+          "ingredientId": "302",
+          "structureType": 1,
+          "name": "Куриная грудка ",
+          "unit": "g",
+          "brutto": 400,
+          "netto": 400,
+          "grams": 400,
+          "nutrition": {
+            "id": "poster_302",
+            "name": "Куриная грудка",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 120,
+            "proteinPer100g": 22.5,
+            "fatPer100g": 2.62,
+            "carbsPer100g": 0,
+            "source": "USDA FoodData Central",
+            "sourceReference": "chicken breast, raw, meat only; per 100g"
+          },
+          "calculatedKcal": 480
+        },
+        {
+          "key": "poster_264",
+          "ingredientId": "264",
+          "structureType": 1,
+          "name": "острый перец",
+          "unit": "p",
+          "brutto": 1,
+          "netto": 0,
+          "grams": null,
+          "nutrition": {
+            "id": "poster_264",
+            "name": "острый перец",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 40,
+            "proteinPer100g": 1.87,
+            "fatPer100g": 0.44,
+            "carbsPer100g": 8.81,
+            "source": "USDA FoodData Central",
+            "sourceReference": "hot chili peppers, raw; per 100g"
+          },
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_260",
+          "ingredientId": "260",
+          "structureType": 1,
+          "name": "помидоры черри ",
+          "unit": "g",
+          "brutto": 200,
+          "netto": 200,
+          "grams": 200,
+          "nutrition": {
+            "id": "poster_260",
+            "name": "помидоры черри",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 18,
+            "proteinPer100g": 0.88,
+            "fatPer100g": 0.2,
+            "carbsPer100g": 3.89,
+            "source": "USDA FoodData Central",
+            "sourceReference": "tomatoes, red, ripe, raw; cherry tomatoes treated as same base; per 100g"
+          },
+          "calculatedKcal": 36
+        },
+        {
+          "key": "poster_prep_611",
+          "ingredientId": "611",
+          "structureType": 2,
+          "name": "соус сацебели",
+          "unit": "g",
+          "brutto": 50,
+          "netto": 50,
+          "grams": 50,
+          "nutrition": null,
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_prep_626",
+          "ingredientId": "626",
+          "structureType": 2,
+          "name": "соус пепер",
+          "unit": "g",
+          "brutto": 50,
+          "netto": 50,
+          "grams": 50,
+          "nutrition": null,
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_204",
+          "ingredientId": "204",
+          "structureType": 1,
+          "name": "свинина /փափուկ/",
+          "unit": "g",
+          "brutto": 200,
+          "netto": 200,
+          "grams": 200,
+          "nutrition": {
+            "id": "poster_204",
+            "name": "свинина /փափուկ/",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 134,
+            "proteinPer100g": 21.2,
+            "fatPer100g": 4.86,
+            "carbsPer100g": 0,
+            "source": "USDA FoodData Central",
+            "sourceReference": "FDC 168220; pork, fresh, composite of trimmed retail cuts (leg, loin, shoulder), separable lean only, raw; used as conservative generic base for Armenian խոզի փափուկ / pork flesh"
+          },
+          "calculatedKcal": 268
+        },
+        {
+          "key": "poster_201",
+          "ingredientId": "201",
+          "structureType": 1,
+          "name": "Свинина ",
+          "unit": "g",
+          "brutto": 300,
+          "netto": 300,
+          "grams": 300,
+          "nutrition": {
+            "id": "poster_201",
+            "name": "Свинина",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 177,
+            "proteinPer100g": 20.1,
+            "fatPer100g": 10.1,
+            "carbsPer100g": 0,
+            "source": "USDA FoodData Central",
+            "sourceReference": "FDC 168316; pork, fresh, composite of trimmed retail cuts (loin and shoulder blade), separable lean and fat, raw; generic raw pork base when cut is unspecified"
+          },
+          "calculatedKcal": 531
+        }
+      ]
+    },
+    {
+      "productId": "819",
+      "name": {
+        "hy": "Շաուրմա քյուֆթայով",
+        "ru": "Шаурма с кюфтой",
+        "en": "Shawarma with Kufta"
+      },
+      "oldNutrition": {
+        "status": "needs_review",
+        "calories": null,
+        "protein": null,
+        "fat": null,
+        "carbohydrates": null,
+        "servingGrams": null,
+        "per100g": null,
+        "partial": {
+          "totalIngredients": 12,
+          "recipeGrams": 366.4,
+          "carbohydrates": 105.1,
+          "coverage": 0.75,
+          "per100g": {
+            "carbohydrates": 36.1,
+            "protein": 0.7,
+            "fat": 6.6,
+            "calories": 204
+          },
+          "protein": 2,
+          "fat": 19.2,
+          "calories": 594,
+          "matchedIngredients": 9,
+          "reviewIngredients": 3,
+          "knownGrams": 291.4
+        },
+        "source": "validated ingredient nutrition + Poster recipe"
+      },
+      "posterRecipeGrams": 348,
+      "knownGrams": 88,
+      "coverage": 0.253,
+      "recalculatedKnown": {
+        "calories": 18,
+        "protein": 1.5,
+        "fat": 0.2,
+        "carbohydrates": 3.6
+      },
+      "meatOnlyCalories": 0,
+      "impossibleOldTotal": false,
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
+      "missingMeat": [],
+      "ingredients": [
+        {
+          "key": "poster_prep_548",
+          "ingredientId": "548",
+          "structureType": 2,
+          "name": "кюфта",
+          "unit": "g",
+          "brutto": 150,
+          "netto": 150,
+          "grams": 150,
+          "nutrition": null,
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_271",
+          "ingredientId": "271",
+          "structureType": 1,
+          "name": "помидоры",
+          "unit": "g",
+          "brutto": 40,
+          "netto": 40,
+          "grams": 40,
+          "nutrition": {
+            "id": "poster_271",
+            "name": "помидоры",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 18,
+            "proteinPer100g": 0.88,
+            "fatPer100g": 0.2,
+            "carbsPer100g": 3.89,
+            "source": "USDA FoodData Central",
+            "sourceReference": "tomatoes, red, ripe, raw; used as base for peeled tomatoes"
+          },
+          "calculatedKcal": 7.2
+        },
+        {
+          "key": "poster_prep_591",
+          "ingredientId": "591",
+          "structureType": 2,
+          "name": "болгарский очищеный",
+          "unit": "g",
+          "brutto": 25,
+          "netto": 25,
+          "grams": 25,
+          "nutrition": null,
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_prep_512",
+          "ingredientId": "512",
+          "structureType": 2,
+          "name": "картофель очищенный",
+          "unit": "g",
+          "brutto": 35,
+          "netto": 35,
+          "grams": 35,
+          "nutrition": null,
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_339",
+          "ingredientId": "339",
+          "structureType": 1,
+          "name": "Соль ",
+          "unit": "g",
+          "brutto": 2,
+          "netto": 2,
+          "grams": 2,
+          "nutrition": {
+            "id": "poster_339",
+            "name": "Соль",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 0,
+            "proteinPer100g": 0,
+            "fatPer100g": 0,
+            "carbsPer100g": 0,
+            "source": "USDA FoodData Central",
+            "sourceReference": "salt / sodium chloride; nutrition macros treated as 0"
+          },
+          "calculatedKcal": 0
+        },
+        {
+          "key": "poster_337",
+          "ingredientId": "337",
+          "structureType": 1,
+          "name": "Перец черный /молотый/ ",
+          "unit": "g",
+          "brutto": 1,
+          "netto": 1,
+          "grams": 1,
+          "nutrition": {
+            "id": "poster_337",
+            "name": "Перец черный /молотый/",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 251,
+            "proteinPer100g": 10.39,
+            "fatPer100g": 3.26,
+            "carbsPer100g": 63.95,
+            "source": "USDA FoodData Central",
+            "sourceReference": "FDC 170931"
+          },
+          "calculatedKcal": 2.5
+        },
+        {
+          "key": "poster_253",
+          "ingredientId": "253",
+          "structureType": 1,
+          "name": "Сельдерей ",
+          "unit": "g",
+          "brutto": 15,
+          "netto": 15,
+          "grams": 15,
+          "nutrition": {
+            "id": "poster_253",
+            "name": "Сельдерей",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 14,
+            "proteinPer100g": 0.69,
+            "fatPer100g": 0.17,
+            "carbsPer100g": 2.97,
+            "source": "USDA FoodData Central",
+            "sourceReference": "FDC 169988; celery, raw"
+          },
+          "calculatedKcal": 2.1
+        },
+        {
+          "key": "poster_395",
+          "ingredientId": "395",
+          "structureType": 1,
+          "name": "растительное масло",
+          "unit": "ml",
+          "brutto": 20,
+          "netto": 20,
+          "grams": null,
+          "nutrition": {
+            "id": "poster_395",
+            "name": "растительное масло",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 884,
+            "proteinPer100g": 0,
+            "fatPer100g": 100,
+            "carbsPer100g": 0,
+            "source": "USDA FoodData Central",
+            "sourceReference": "FDC 172370; vegetable oil, refined"
+          },
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_282",
+          "ingredientId": "282",
+          "structureType": 1,
+          "name": "грибы",
+          "unit": "g",
+          "brutto": 30,
+          "netto": 30,
+          "grams": 30,
+          "nutrition": {
+            "id": "poster_282",
+            "name": "грибы",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 22,
+            "proteinPer100g": 3.09,
+            "fatPer100g": 0.34,
+            "carbsPer100g": 3.26,
+            "source": "USDA FoodData Central",
+            "sourceReference": "mushrooms, white, raw"
+          },
+          "calculatedKcal": 6.6
+        },
+        {
+          "key": "poster_prep_611",
+          "ingredientId": "611",
+          "structureType": 2,
+          "name": "соус сацебели",
+          "unit": "g",
+          "brutto": 25,
+          "netto": 25,
+          "grams": 25,
+          "nutrition": null,
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_prep_612",
+          "ingredientId": "612",
+          "structureType": 2,
+          "name": "соус тархуновый",
+          "unit": "g",
+          "brutto": 25,
+          "netto": 25,
+          "grams": 25,
+          "nutrition": null,
+          "calculatedKcal": null
+        },
+        {
+          "key": "poster_480",
+          "ingredientId": "480",
+          "structureType": 1,
+          "name": "лаваш",
+          "unit": "p",
+          "brutto": 1,
+          "netto": 0,
+          "grams": null,
+          "nutrition": {
+            "id": "poster_480",
+            "name": "лаваш",
+            "status": "verified",
+            "verified": true,
+            "kcalPer100g": 277,
+            "proteinPer100g": 9.1,
+            "fatPer100g": 1.2,
+            "carbsPer100g": 56,
+            "source": "CIA manual reference",
+            "sourceReference": "lavash wheat flatbread common label average; per 100g"
+          },
+          "calculatedKcal": null
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "productsAudited": 16,
+    "impossibleOldTotals": 2,
+    "productsWithMissingMeat": 7,
+    "uniqueMissingMeatIngredients": [
+      {
+        "key": "poster_prep_493",
+        "ingredientId": "493",
+        "structureType": 2,
+        "name": "баклажан запеченный",
+        "grams": 250,
+        "reason": "nutrition_missing",
+        "usedInProducts": [
+          {
+            "productId": "163",
+            "name": "Кавурма с пюре из баклажана"
+          }
+        ]
+      },
+      {
+        "key": "poster_prep_515",
+        "ingredientId": "515",
+        "structureType": 2,
+        "name": "говяжье суки очищенная",
+        "grams": 300,
+        "reason": "nutrition_missing",
+        "usedInProducts": [
+          {
+            "productId": "164",
+            "name": "Телячья вырезка на гриле"
+          }
+        ]
+      },
+      {
+        "key": "poster_prep_529",
+        "ingredientId": "529",
+        "structureType": 2,
+        "name": "говядина отварная",
+        "grams": 170,
+        "reason": "nutrition_missing",
+        "usedInProducts": [
+          {
+            "productId": "165",
+            "name": "Чакапули в таджине"
+          }
+        ]
+      },
+      {
+        "key": "poster_prep_525",
+        "ingredientId": "525",
+        "structureType": 2,
+        "name": "курица с грибами",
+        "grams": 320,
+        "reason": "nutrition_missing",
+        "usedInProducts": [
+          {
+            "productId": "168",
+            "name": "Куриная грудка с грибами"
+          }
+        ]
+      },
+      {
+        "key": "poster_prep_594",
+        "ingredientId": "594",
+        "structureType": 2,
+        "name": "фарш для ярах",
+        "grams": 100,
+        "reason": "nutrition_missing",
+        "usedInProducts": [
+          {
+            "productId": "170",
+            "name": "Гарни-ярах"
+          }
+        ]
+      },
+      {
+        "key": "poster_prep_588",
+        "ingredientId": "588",
+        "structureType": 2,
+        "name": "фарш мясной для долмы",
+        "grams": 200,
+        "reason": "nutrition_missing",
+        "usedInProducts": [
+          {
+            "productId": "172",
+            "name": "Долма в виноградных листьях с говядиной"
+          }
+        ]
+      },
+      {
+        "key": "poster_197",
+        "ingredientId": "197",
+        "structureType": 1,
+        "name": "Говядина /մեջքամիս/ ",
+        "grams": 650,
+        "reason": "nutrition_needs_review",
+        "usedInProducts": [
+          {
+            "productId": "718",
+            "name": "Мясной микс 2"
+          }
+        ]
+      }
+    ]
+  }
+}

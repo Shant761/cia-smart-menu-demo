@@ -2,7 +2,7 @@
   "version": 2,
   "source": "firestore_public_menu_snapshot + local_live_poster_meat_nutrition",
   "restaurantId": "poster-test",
-  "exportedAt": "2026-08-29T15:24:04.553Z",
+  "exportedAt": "2026-08-29T15:38:06.863Z",
   "restaurant": {
     "name": {
       "hy": "Poster Restaurant",
@@ -1575,19 +1575,19 @@
         "partial": {
           "totalIngredients": 9,
           "recipeGrams": 625,
-          "calories": 162,
-          "protein": 5.6,
-          "fat": 7.4,
+          "calories": 405,
+          "protein": 6.5,
+          "fat": 34.1,
           "carbohydrates": 21.2,
-          "matchedIngredients": 5,
-          "reviewIngredients": 4,
-          "knownGrams": 165,
-          "coverage": 0.264,
+          "matchedIngredients": 6,
+          "reviewIngredients": 3,
+          "knownGrams": 195,
+          "coverage": 0.312,
           "per100g": {
-            "calories": 98,
-            "protein": 3.4,
-            "fat": 4.5,
-            "carbohydrates": 12.8
+            "calories": 208,
+            "protein": 3.3,
+            "fat": 17.5,
+            "carbohydrates": 10.9
           }
         },
         "source": "CIA verified nutrition + live Poster recipe"
@@ -24294,19 +24294,19 @@
         "partial": {
           "totalIngredients": 7,
           "recipeGrams": 410,
-          "calories": 45,
-          "protein": 2.6,
-          "fat": 1.6,
+          "calories": 857,
+          "protein": 5.6,
+          "fat": 90.3,
           "carbohydrates": 6.8,
-          "matchedIngredients": 4,
-          "reviewIngredients": 3,
-          "knownGrams": 130,
-          "coverage": 0.31710000000000005,
+          "matchedIngredients": 5,
+          "reviewIngredients": 2,
+          "knownGrams": 230,
+          "coverage": 0.561,
           "per100g": {
-            "calories": 35,
-            "protein": 2,
-            "fat": 1.2,
-            "carbohydrates": 5.2
+            "calories": 373,
+            "protein": 2.4,
+            "fat": 39.3,
+            "carbohydrates": 3
           }
         },
         "source": "CIA verified nutrition + live Poster recipe"

@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
   "restaurantId": "poster-test",
-  "generatedAt": "2026-08-29T15:23:54.208Z",
+  "generatedAt": "2026-08-29T15:37:52.244Z",
   "publicProductCount": 422,
   "candidateCount": 64,
   "correctedImpossibleCount": 0,
@@ -244,12 +244,12 @@
       "oldStatus": "needs_review",
       "oldCalories": 0,
       "newStatus": "needs_review",
-      "newCalories": 162,
+      "newCalories": 405,
       "displayedAsMinimum": true,
       "totalRecipeRows": 9,
-      "resolvedRows": 5,
+      "resolvedRows": 6,
       "totalGrams": 625,
-      "knownGrams": 165,
+      "knownGrams": 195,
       "meatOnlyCalories": 0,
       "impossibleOld": false,
       "unresolved": [
@@ -268,14 +268,6 @@
           "unit": "g",
           "amount": 50,
           "reason": "nutrition_missing"
-        },
-        {
-          "key": "poster_500",
-          "structureType": 1,
-          "name": "сало",
-          "unit": "g",
-          "amount": 30,
-          "reason": "nutrition_needs_review"
         },
         {
           "key": "poster_501",
@@ -387,8 +379,8 @@
         "en": "Eggs Benedict with Bacon"
       },
       "category": "14",
-      "oldStatus": "calculated",
-      "oldCalories": 580,
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
       "newStatus": "needs_review",
       "newCalories": 122,
       "displayedAsMinimum": true,
@@ -441,8 +433,8 @@
         "en": "Grilled Pork Tenderloin"
       },
       "category": "7",
-      "oldStatus": "needs_review",
-      "oldCalories": 0,
+      "oldStatus": "calculated",
+      "oldCalories": 306,
       "newStatus": "calculated",
       "newCalories": 306,
       "displayedAsMinimum": false,
@@ -1523,8 +1515,8 @@
         "en": "Beefeater Gin"
       },
       "category": "28",
-      "oldStatus": "calculated",
-      "oldCalories": 116,
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
       "newStatus": "needs_review",
       "newCalories": null,
       "displayedAsMinimum": false,
@@ -1553,8 +1545,8 @@
         "en": "Adios Cocktail"
       },
       "category": "34",
-      "oldStatus": "calculated",
-      "oldCalories": 191,
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
       "newStatus": "needs_review",
       "newCalories": null,
       "displayedAsMinimum": false,
@@ -1623,8 +1615,8 @@
         "en": "Long Island Iced Tea Cocktail"
       },
       "category": "34",
-      "oldStatus": "calculated",
-      "oldCalories": 254,
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
       "newStatus": "needs_review",
       "newCalories": null,
       "displayedAsMinimum": false,
@@ -1815,8 +1807,8 @@
         "en": "Kavurma"
       },
       "category": "46",
-      "oldStatus": "calculated",
-      "oldCalories": 496,
+      "oldStatus": "needs_review",
+      "oldCalories": 0,
       "newStatus": "needs_review",
       "newCalories": null,
       "displayedAsMinimum": false,
@@ -2059,8 +2051,8 @@
         "en": "Pork Ribs"
       },
       "category": "10",
-      "oldStatus": "needs_review",
-      "oldCalories": 0,
+      "oldStatus": "calculated",
+      "oldCalories": 562,
       "newStatus": "calculated",
       "newCalories": 562,
       "displayedAsMinimum": false,
@@ -2126,8 +2118,8 @@
         "en": "Lamb ribs and rack of lamb"
       },
       "category": "7",
-      "oldStatus": "needs_review",
-      "oldCalories": 0,
+      "oldStatus": "calculated",
+      "oldCalories": 1087,
       "newStatus": "calculated",
       "newCalories": 1087,
       "displayedAsMinimum": false,
@@ -2514,12 +2506,12 @@
       "oldStatus": "needs_review",
       "oldCalories": 0,
       "newStatus": "needs_review",
-      "newCalories": 45,
+      "newCalories": 857,
       "displayedAsMinimum": true,
       "totalRecipeRows": 7,
-      "resolvedRows": 4,
+      "resolvedRows": 5,
       "totalGrams": 410,
-      "knownGrams": 130,
+      "knownGrams": 230,
       "meatOnlyCalories": 0,
       "impossibleOld": false,
       "unresolved": [
@@ -2530,14 +2522,6 @@
           "unit": "g",
           "amount": 100,
           "reason": "nutrition_missing"
-        },
-        {
-          "key": "poster_500",
-          "structureType": 1,
-          "name": "сало",
-          "unit": "g",
-          "amount": 100,
-          "reason": "nutrition_needs_review"
         },
         {
           "key": "poster_501",

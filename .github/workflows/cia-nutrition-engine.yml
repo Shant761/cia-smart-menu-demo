@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - 'data/cia-nutrition-manual-top20.json'
-      - 'data/cia-nutrition-priority-top300.json'
+      - 'data/cia-nutrition-priority-top500.json'
       - 'data/nutrition-database.json'
       - 'scripts/build-cia-manual-top20-template.cjs'
       - 'scripts/build-poster-nutrition-priority-top20.cjs'
@@ -37,7 +37,7 @@ jobs:
     env:
       CIA_RESTAURANT_ID: ${{ inputs.restaurant_id || 'poster-test' }}
       NUTRITION_FORCE: ${{ github.event_name == 'workflow_dispatch' && inputs.force || false }}
-      CIA_PRIORITY_LIMIT: 300
+      CIA_PRIORITY_LIMIT: 500
 
     steps:
       - name: Checkout repository
@@ -68,12 +68,12 @@ jobs:
         run: |
           test -n "$FIREBASE_SERVICE_ACCOUNT" || (echo 'Missing FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU' && exit 1)
 
-      - name: Build CIA nutrition priority top 300
+      - name: Build CIA nutrition priority full catalog
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
         run: node scripts/build-poster-nutrition-priority-top20.cjs
 
-      - name: Extend CIA manual nutrition to top 300
+      - name: Extend CIA manual nutrition to full catalog
         run: node scripts/build-cia-manual-top20-template.cjs
 
       - name: Apply verified CIA manual nutrition
@@ -103,11 +103,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git restore package.json package-lock.json || true
-          git add data/cia-nutrition-manual-top20.json data/cia-nutrition-priority-top300.json data/nutrition-database.json
+          git add data/cia-nutrition-manual-top20.json data/cia-nutrition-priority-top500.json data/nutrition-database.json
           if git diff --cached --quiet; then
             echo "No nutrition database changes."
           else
-            git commit -m "chore: extend CIA nutrition priority top 300"
+            git commit -m "chore: extend CIA nutrition to full catalog"
             git pull --rebase --autostash origin main
             git push
           fi

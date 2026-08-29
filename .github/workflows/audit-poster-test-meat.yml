@@ -1,0 +1,55 @@
+name: Audit Poster Test Meat Nutrition
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/audit-meat-menu.cjs'
+      - '.github/workflows/audit-poster-test-meat.yml'
+      - 'data/cia-nutrition-manual-top20.json'
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      CIA_RESTAURANT_ID: poster-test
+      POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_TOKEN || secrets.POSTER_ACCESS_TOKEN }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate audit script
+        run: node --check scripts/audit-meat-menu.cjs
+
+      - name: Verify poster-test token
+        run: |
+          test -n "$POSTER_ACCESS_TOKEN" || {
+            echo 'Missing POSTER_TOKEN / POSTER_ACCESS_TOKEN for poster-test'
+            exit 1
+          }
+
+      - name: Audit meat category from Poster recipes
+        run: node scripts/audit-meat-menu.cjs
+
+      - name: Commit audit report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/poster-test-meat-audit.json
+          if git diff --cached --quiet; then
+            echo "No meat audit changes."
+          else
+            git commit -m "chore: update poster-test meat nutrition audit"
+            git pull --rebase --autostash origin main
+            git push
+          fi

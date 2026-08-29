@@ -33,7 +33,9 @@ jobs:
           node-version: '22'
 
       - name: Validate exporter syntax
-        run: node --check scripts/export-public-menu-snapshot.cjs
+        run: |
+          echo "Snapshot export trigger marker: partial nutrition"
+          node --check scripts/export-public-menu-snapshot.cjs
 
       - name: Install Firebase Admin SDK
         run: npm install --no-save firebase-admin@14.2.0

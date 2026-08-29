@@ -155,6 +155,86 @@ const verified = {
     carbsPer100g: 13.13,
     source: 'USDA FoodData Central',
     sourceReference: 'FDC 167787; pomegranate juice, bottled'
+  },
+  poster_640: {
+    kcalPer100g: 30,
+    proteinPer100g: 0.61,
+    fatPer100g: 0.15,
+    carbsPer100g: 7.55,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 167765; watermelon, raw'
+  },
+  poster_259: {
+    kcalPer100g: 25,
+    proteinPer100g: 0.98,
+    fatPer100g: 0.18,
+    carbsPer100g: 5.88,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 169228; eggplant, raw'
+  },
+  poster_364: {
+    kcalPer100g: 89,
+    proteinPer100g: 1.09,
+    fatPer100g: 0.33,
+    carbsPer100g: 22.84,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 173944; bananas, raw'
+  },
+  poster_154: {
+    kcalPer100g: 334,
+    proteinPer100g: 20.75,
+    fatPer100g: 27.68,
+    carbsPer100g: 0.45,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 172177; cheese, brie'
+  },
+  poster_370: {
+    kcalPer100g: 57,
+    proteinPer100g: 0.36,
+    fatPer100g: 0.14,
+    carbsPer100g: 15.23,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 169118; pears, raw'
+  },
+  poster_517: {
+    kcalPer100g: 36,
+    proteinPer100g: 2.97,
+    fatPer100g: 0.79,
+    carbsPer100g: 6.33,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 170416; parsley, fresh'
+  },
+  poster_261: {
+    kcalPer100g: 17,
+    proteinPer100g: 1.21,
+    fatPer100g: 0.32,
+    carbsPer100g: 3.11,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 169291; squash, summer, zucchini, includes skin, raw'
+  },
+  poster_37: {
+    kcalPer100g: 228,
+    proteinPer100g: 19.6,
+    fatPer100g: 13.7,
+    carbsPer100g: 57.9,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 169593; cocoa, dry powder, unsweetened'
+  },
+  poster_413: {
+    kcalPer100g: 241,
+    proteinPer100g: 3.39,
+    fatPer100g: 0.51,
+    carbsPer100g: 62.64,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 173941; apricots, dried, sulfured, uncooked'
+  },
+  poster_77: {
+    kcalPer100g: 145,
+    proteinPer100g: 1.03,
+    fatPer100g: 15.32,
+    carbsPer100g: 3.84,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 169096; olives, pickled, canned or bottled, green'
   }
 };
 

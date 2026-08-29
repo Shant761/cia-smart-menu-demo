@@ -1,0 +1,59 @@
+name: Recalculate Poster Test Meat Snapshot
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/recalculate-meat-snapshot.cjs'
+      - 'scripts/verify-meat-batch-01.cjs'
+      - 'scripts/verify-meat-batch-02.cjs'
+      - 'scripts/verify-meat-batch-03.cjs'
+      - 'data/cia-nutrition-manual-top20.json'
+      - 'data/cia-nutrition-research-queue.json'
+      - '.github/workflows/recalculate-poster-test-meat-snapshot.yml'
+  workflow_dispatch:
+
+jobs:
+  recalculate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      CIA_RESTAURANT_ID: poster-test
+      POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_TOKEN || secrets.POSTER_ACCESS_TOKEN }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate meat recalculator
+        run: node --check scripts/recalculate-meat-snapshot.cjs
+
+      - name: Verify poster-test token
+        run: |
+          test -n "$POSTER_ACCESS_TOKEN" || {
+            echo 'Missing POSTER_TOKEN / POSTER_ACCESS_TOKEN for poster-test'
+            exit 1
+          }
+
+      - name: Recalculate meat dishes from live Poster recipes
+        run: node scripts/recalculate-meat-snapshot.cjs
+
+      - name: Commit corrected meat snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/public-menus/poster-test.json data/poster-test-meat-nutrition-summary.json
+          if git diff --cached --quiet; then
+            echo "No meat snapshot changes."
+          else
+            git commit -m "chore: recalculate poster-test meat nutrition"
+            git pull --rebase --autostash origin main
+            git push
+          fi

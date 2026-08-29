@@ -2,7 +2,7 @@
   "version": 2,
   "source": "firestore_public_menu_snapshot",
   "restaurantId": "poster-test",
-  "exportedAt": "2026-08-29T10:57:01.964Z",
+  "exportedAt": "2026-08-29T11:08:57.987Z",
   "restaurant": {
     "name": {
       "hy": "Poster Restaurant",
@@ -1265,21 +1265,21 @@
         "per100g": null,
         "partial": {
           "carbohydrates": 3.3,
-          "coverage": 0.75,
-          "per100g": {
-            "carbohydrates": 1.8,
-            "protein": 10.1,
-            "fat": 34.3,
-            "calories": 351
-          },
-          "protein": 18.3,
-          "fat": 62.4,
           "totalIngredients": 8,
           "recipeGrams": 302,
-          "calories": 640,
-          "matchedIngredients": 6,
-          "reviewIngredients": 2,
-          "knownGrams": 182
+          "coverage": 0.88,
+          "per100g": {
+            "carbohydrates": 1.4,
+            "protein": 12.2,
+            "fat": 29.5,
+            "calories": 329
+          },
+          "protein": 28.3,
+          "fat": 68.4,
+          "calories": 764,
+          "matchedIngredients": 7,
+          "reviewIngredients": 1,
+          "knownGrams": 232
         },
         "source": "validated ingredient nutrition + Poster recipe"
       },
@@ -2958,21 +2958,21 @@
         "per100g": null,
         "partial": {
           "carbohydrates": 3.9,
-          "coverage": 0.63,
-          "per100g": {
-            "carbohydrates": 1,
-            "protein": 14.1,
-            "fat": 21.4,
-            "calories": 255
-          },
-          "protein": 53.4,
-          "fat": 81,
           "totalIngredients": 8,
           "recipeGrams": 1188,
-          "calories": 965,
-          "matchedIngredients": 5,
-          "reviewIngredients": 3,
-          "knownGrams": 378
+          "coverage": 0.75,
+          "per100g": {
+            "carbohydrates": 0.6,
+            "protein": 17.1,
+            "fat": 23.9,
+            "calories": 287
+          },
+          "protein": 104,
+          "fat": 145.4,
+          "calories": 1747,
+          "matchedIngredients": 6,
+          "reviewIngredients": 2,
+          "knownGrams": 608
         },
         "source": "validated ingredient nutrition + Poster recipe"
       },
@@ -3356,19 +3356,19 @@
           "totalIngredients": 10,
           "recipeGrams": 588,
           "carbohydrates": 21.6,
-          "coverage": 0.7,
+          "coverage": 0.9,
           "per100g": {
-            "carbohydrates": 4.7,
-            "protein": 3,
-            "fat": 17.3,
-            "calories": 181
+            "carbohydrates": 3.7,
+            "protein": 6.9,
+            "fat": 16.9,
+            "calories": 201
           },
-          "protein": 13.8,
-          "fat": 78.9,
-          "calories": 825,
-          "matchedIngredients": 7,
-          "reviewIngredients": 3,
-          "knownGrams": 456
+          "protein": 40.4,
+          "fat": 99.3,
+          "calories": 1175,
+          "matchedIngredients": 9,
+          "reviewIngredients": 1,
+          "knownGrams": 586
         },
         "source": "validated ingredient nutrition + Poster recipe"
       },
@@ -3867,21 +3867,21 @@
         "per100g": null,
         "partial": {
           "carbohydrates": 10.1,
-          "coverage": 0.67,
-          "per100g": {
-            "carbohydrates": 3,
-            "protein": 3.7,
-            "fat": 12.4,
-            "calories": 136
-          },
-          "protein": 12.6,
-          "fat": 42.1,
           "totalIngredients": 9,
           "recipeGrams": 868.4,
-          "calories": 459,
-          "matchedIngredients": 6,
-          "reviewIngredients": 3,
-          "knownGrams": 338.4
+          "coverage": 0.78,
+          "per100g": {
+            "carbohydrates": 2.6,
+            "protein": 6.1,
+            "fat": 14.4,
+            "calories": 162
+          },
+          "protein": 23.6,
+          "fat": 56.1,
+          "calories": 629,
+          "matchedIngredients": 7,
+          "reviewIngredients": 2,
+          "knownGrams": 388.4
         },
         "source": "validated ingredient nutrition + Poster recipe"
       },
@@ -5284,20 +5284,20 @@
         "partial": {
           "totalIngredients": 17,
           "recipeGrams": 794,
-          "carbohydrates": 81.3,
-          "coverage": 0.35,
+          "carbohydrates": 155,
+          "coverage": 0.47,
           "per100g": {
-            "carbohydrates": 49.3,
-            "protein": 5.9,
-            "fat": 19.3,
-            "calories": 382
+            "carbohydrates": 48.4,
+            "protein": 6.2,
+            "fat": 20.9,
+            "calories": 399
           },
-          "protein": 9.7,
-          "fat": 31.8,
-          "calories": 631,
-          "matchedIngredients": 6,
-          "reviewIngredients": 11,
-          "knownGrams": 165
+          "protein": 19.8,
+          "fat": 66.9,
+          "calories": 1278,
+          "matchedIngredients": 8,
+          "reviewIngredients": 9,
+          "knownGrams": 320
         },
         "source": "validated ingredient nutrition + Poster recipe"
       },
@@ -6012,22 +6012,22 @@
         "servingGrams": null,
         "per100g": null,
         "partial": {
-          "carbohydrates": 18.4,
-          "coverage": 0.33,
-          "per100g": {
-            "carbohydrates": 61.2,
-            "protein": 4.9,
-            "fat": 31.3,
-            "calories": 546
-          },
-          "protein": 1.5,
-          "fat": 9.4,
           "totalIngredients": 3,
           "recipeGrams": 420,
-          "calories": 164,
-          "matchedIngredients": 1,
-          "reviewIngredients": 2,
-          "knownGrams": 30
+          "carbohydrates": 120.2,
+          "coverage": 0.67,
+          "per100g": {
+            "carbohydrates": 46.3,
+            "protein": 6.3,
+            "fat": 21.4,
+            "calories": 399
+          },
+          "protein": 16.4,
+          "fat": 55.6,
+          "calories": 1038,
+          "matchedIngredients": 2,
+          "reviewIngredients": 1,
+          "knownGrams": 260
         },
         "source": "validated ingredient nutrition + Poster recipe"
       },
@@ -8787,22 +8787,22 @@
         "servingGrams": null,
         "per100g": null,
         "partial": {
-          "coverage": 0.6,
-          "protein": 0.7,
-          "fat": 0.2,
           "totalIngredients": 5,
           "recipeGrams": 125,
-          "matchedIngredients": 3,
-          "reviewIngredients": 2,
-          "knownGrams": 45,
-          "carbohydrates": 21.8,
+          "carbohydrates": 25.3,
+          "coverage": 0.8,
           "per100g": {
-            "protein": 1.5,
-            "fat": 0.4,
-            "carbohydrates": 48.4,
-            "calories": 194
+            "carbohydrates": 26.7,
+            "protein": 2.6,
+            "fat": 3.9,
+            "calories": 148
           },
-          "calories": 87
+          "protein": 2.5,
+          "fat": 3.7,
+          "calories": 141,
+          "matchedIngredients": 4,
+          "reviewIngredients": 1,
+          "knownGrams": 95
         },
         "source": "validated ingredient nutrition + Poster recipe"
       },
@@ -9894,13 +9894,18 @@
         }
       ],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 680,
+        "protein": 44,
+        "fat": 56,
+        "carbohydrates": 0,
+        "servingGrams": 200,
+        "per100g": {
+          "carbohydrates": 0,
+          "protein": 22,
+          "fat": 28,
+          "calories": 340
+        },
         "partial": null,
         "source": "validated ingredient nutrition + Poster recipe"
       },
@@ -10553,21 +10558,21 @@
         "per100g": null,
         "partial": {
           "carbohydrates": 0.2,
-          "coverage": 0.5,
-          "per100g": {
-            "carbohydrates": 0.8,
-            "protein": 0.4,
-            "fat": 79.6,
-            "calories": 704
-          },
-          "protein": 0.1,
-          "fat": 19.9,
           "totalIngredients": 6,
           "recipeGrams": 290,
-          "calories": 176,
-          "matchedIngredients": 3,
-          "reviewIngredients": 3,
-          "knownGrams": 25
+          "coverage": 0.67,
+          "per100g": {
+            "carbohydrates": 0.2,
+            "protein": 16.1,
+            "fat": 25.5,
+            "calories": 339
+          },
+          "protein": 20.1,
+          "fat": 31.9,
+          "calories": 424,
+          "matchedIngredients": 4,
+          "reviewIngredients": 2,
+          "knownGrams": 125
         },
         "source": "validated ingredient nutrition + Poster recipe"
       },
@@ -18375,7 +18380,24 @@
         "carbohydrates": null,
         "servingGrams": null,
         "per100g": null,
-        "partial": null,
+        "partial": {
+          "carbohydrates": 45.6,
+          "coverage": 0.33,
+          "per100g": {
+            "carbohydrates": 57,
+            "protein": 6.5,
+            "fat": 30,
+            "calories": 524
+          },
+          "protein": 5.2,
+          "fat": 24,
+          "totalIngredients": 3,
+          "recipeGrams": 312,
+          "calories": 419,
+          "matchedIngredients": 1,
+          "reviewIngredients": 2,
+          "knownGrams": 80
+        },
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999
@@ -18513,22 +18535,22 @@
         "servingGrams": null,
         "per100g": null,
         "partial": {
-          "carbohydrates": 22,
-          "per100g": {
-            "carbohydrates": 6.3,
-            "protein": 0.9,
-            "fat": 0.2,
-            "calories": 22
-          },
-          "protein": 3.1,
-          "fat": 0.8,
           "totalIngredients": 6,
           "recipeGrams": 567,
-          "calories": 77,
-          "knownGrams": 352,
-          "coverage": 0.67,
-          "matchedIngredients": 4,
-          "reviewIngredients": 2
+          "carbohydrates": 36.2,
+          "coverage": 0.83,
+          "per100g": {
+            "carbohydrates": 6.6,
+            "protein": 1.9,
+            "fat": 2.7,
+            "calories": 53
+          },
+          "protein": 10.3,
+          "fat": 15,
+          "calories": 291,
+          "matchedIngredients": 5,
+          "reviewIngredients": 1,
+          "knownGrams": 552
         },
         "source": "validated ingredient nutrition + Poster recipe"
       },
@@ -18795,13 +18817,18 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 496,
+        "protein": 40,
+        "fat": 24,
+        "carbohydrates": 0,
+        "servingGrams": 200,
+        "per100g": {
+          "carbohydrates": 0,
+          "protein": 20,
+          "fat": 12,
+          "calories": 248
+        },
         "partial": null,
         "source": "validated ingredient nutrition + Poster recipe"
       },
@@ -19632,22 +19659,22 @@
         "servingGrams": null,
         "per100g": null,
         "partial": {
-          "fat": 21.6,
           "totalIngredients": 9,
           "recipeGrams": 370,
           "carbohydrates": 35.6,
-          "coverage": 0.44,
+          "coverage": 0.56,
           "per100g": {
-            "carbohydrates": 29.7,
-            "protein": 12.1,
-            "fat": 18,
-            "calories": 327
+            "carbohydrates": 19.8,
+            "protein": 15.4,
+            "fat": 21.3,
+            "calories": 331
           },
-          "protein": 14.5,
-          "calories": 393,
-          "matchedIngredients": 4,
-          "reviewIngredients": 5,
-          "knownGrams": 120
+          "protein": 27.7,
+          "fat": 38.4,
+          "calories": 597,
+          "matchedIngredients": 5,
+          "reviewIngredients": 4,
+          "knownGrams": 180
         },
         "source": "validated ingredient nutrition + Poster recipe"
       },
@@ -21871,22 +21898,22 @@
         "servingGrams": null,
         "per100g": null,
         "partial": {
-          "carbohydrates": 6.1,
-          "coverage": 0.17,
-          "per100g": {
-            "carbohydrates": 61.2,
-            "protein": 4.9,
-            "fat": 31.3,
-            "calories": 546
-          },
-          "protein": 0.5,
-          "fat": 3.1,
           "totalIngredients": 6,
           "recipeGrams": 310,
-          "calories": 55,
-          "matchedIngredients": 1,
-          "reviewIngredients": 5,
-          "knownGrams": 10
+          "carbohydrates": 64.4,
+          "coverage": 0.5,
+          "per100g": {
+            "carbohydrates": 49.5,
+            "protein": 6.4,
+            "fat": 24,
+            "calories": 437
+          },
+          "protein": 8.3,
+          "fat": 31.2,
+          "calories": 568,
+          "matchedIngredients": 3,
+          "reviewIngredients": 3,
+          "knownGrams": 130
         },
         "source": "validated ingredient nutrition + Poster recipe"
       },
@@ -22264,13 +22291,18 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 114,
+        "protein": 1.9,
+        "fat": 6,
+        "carbohydrates": 13.3,
+        "servingGrams": 30,
+        "per100g": {
+          "carbohydrates": 44.3,
+          "protein": 6.5,
+          "fat": 20.1,
+          "calories": 380
+        },
         "partial": null,
         "source": "validated ingredient nutrition + Poster recipe"
       },
@@ -24341,19 +24373,19 @@
           "totalIngredients": 7,
           "recipeGrams": 410,
           "carbohydrates": 6.6,
-          "coverage": 0.43,
+          "coverage": 0.57,
           "per100g": {
-            "calories": 35,
-            "carbohydrates": 4.7,
-            "protein": 2.8,
-            "fat": 1.3
+            "carbohydrates": 2.7,
+            "protein": 10,
+            "fat": 5.8,
+            "calories": 124
           },
-          "protein": 3.9,
-          "fat": 1.9,
-          "calories": 49,
-          "matchedIngredients": 3,
-          "reviewIngredients": 4,
-          "knownGrams": 140
+          "protein": 23.9,
+          "fat": 13.9,
+          "calories": 297,
+          "matchedIngredients": 4,
+          "reviewIngredients": 3,
+          "knownGrams": 240
         },
         "source": "validated ingredient nutrition + Poster recipe"
       },
@@ -24694,19 +24726,19 @@
           "totalIngredients": 11,
           "recipeGrams": 400,
           "carbohydrates": 43.3,
-          "coverage": 0.36,
+          "coverage": 0.45,
           "per100g": {
-            "carbohydrates": 36.1,
-            "protein": 10,
-            "fat": 19.3,
-            "calories": 348
+            "carbohydrates": 27,
+            "protein": 13,
+            "fat": 21.5,
+            "calories": 346
           },
-          "protein": 12,
-          "fat": 23.2,
-          "calories": 418,
-          "matchedIngredients": 4,
-          "reviewIngredients": 7,
-          "knownGrams": 120
+          "protein": 20.8,
+          "fat": 34.4,
+          "calories": 554,
+          "matchedIngredients": 5,
+          "reviewIngredients": 6,
+          "knownGrams": 160
         },
         "source": "validated ingredient nutrition + Poster recipe"
       },
@@ -24814,31 +24846,19 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
-        "partial": {
-          "protein": 0.8,
-          "fat": 0.3,
-          "totalIngredients": 7,
-          "recipeGrams": 270,
-          "carbohydrates": 40.3,
-          "coverage": 0.86,
-          "per100g": {
-            "fat": 0.1,
-            "carbohydrates": 16.4,
-            "protein": 0.3,
-            "calories": 65
-          },
-          "calories": 160,
-          "matchedIngredients": 6,
-          "reviewIngredients": 1,
-          "knownGrams": 245
+        "status": "calculated",
+        "calories": 186,
+        "protein": 1.7,
+        "fat": 2,
+        "carbohydrates": 42.1,
+        "servingGrams": 270,
+        "per100g": {
+          "carbohydrates": 15.6,
+          "protein": 0.6,
+          "fat": 0.8,
+          "calories": 69
         },
+        "partial": null,
         "source": "validated ingredient nutrition + Poster recipe"
       },
       "sortOrder": 999

@@ -3342,14 +3342,8 @@
       ],
       "usedInProductCount": 2,
       "occurrences": 2,
-      "kcalPer100g": 381,
-      "proteinPer100g": 0.26,
-      "fatPer100g": 0.05,
-      "carbsPer100g": 91.27,
-      "source": "USDA FoodData Central",
-      "sourceReference": "FDC 169698; cornstarch",
-      "verified": true,
-      "status": "verified"
+      "verified": false,
+      "status": "needs_review"
     },
     {
       "priority": 182,

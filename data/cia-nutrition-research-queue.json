@@ -4,10 +4,10 @@
   "source": "cia-nutrition-priority-top500.json",
   "total": 437,
   "counts": {
-    "verified": 152,
+    "verified": 151,
     "source_collision": 34,
     "prepared_or_recipe": 80,
-    "generic_ingredient": 98,
+    "generic_ingredient": 99,
     "alcohol": 54,
     "non_food": 2,
     "branded_product": 17
@@ -3880,11 +3880,18 @@
       ],
       "usedInProductCount": 2,
       "analysisStatus": "needs_review",
-      "verified": true,
-      "kind": "verified",
-      "action": "done",
-      "preferredSources": [],
-      "searchQueries": []
+      "verified": false,
+      "kind": "generic_ingredient",
+      "action": "internet_lookup_generic",
+      "preferredSources": [
+        "USDA FoodData Central",
+        "CIQUAL",
+        "Open Food Facts as secondary reference"
+      ],
+      "searchQueries": [
+        "крахмал USDA FoodData Central",
+        "крахмал calories kcal 100g"
+      ]
     },
     {
       "priority": 182,

@@ -4,6 +4,9 @@ const path = require('path');
 const file = path.join(__dirname, '..', 'data', 'cia-nutrition-manual-top20.json');
 const data = JSON.parse(fs.readFileSync(file, 'utf8'));
 
+// CIA-owned verified nutrition overrides. Values are per 100g.
+// Keep this list conservative: only add entries when the Poster ingredient is
+// unambiguous and the nutrition reference is a close match.
 const verified = {
   poster_645: {
     kcalPer100g: 29,
@@ -54,6 +57,64 @@ const verified = {
     carbsPer100g: 9.32,
     source: 'USDA FoodData Central',
     sourceReference: 'FDC 167746; lemons, raw, without peel'
+  },
+
+  // Priority 101-200: verified clean entries only.
+  poster_368: {
+    kcalPer100g: 42,
+    proteinPer100g: 0.77,
+    fatPer100g: 0.14,
+    carbsPer100g: 10.66,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 174673; grapefruit, raw, pink and red, all areas'
+  },
+  poster_321: {
+    kcalPer100g: 311,
+    proteinPer100g: 10.76,
+    fatPer100g: 6.7,
+    carbsPer100g: 68.47,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 170919; spices, cardamom'
+  },
+  poster_283: {
+    kcalPer100g: 289,
+    proteinPer100g: 3.49,
+    fatPer100g: 14.04,
+    carbsPer100g: 37.2,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 169836; restaurant, family style, french fries'
+  },
+  poster_272: {
+    kcalPer100g: 40,
+    proteinPer100g: 1.1,
+    fatPer100g: 0.1,
+    carbsPer100g: 9.34,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 170000; onions, raw'
+  },
+  poster_390: {
+    kcalPer100g: 680,
+    proteinPer100g: 0.96,
+    fatPer100g: 74.85,
+    carbsPer100g: 0.57,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 171009; salad dressing, mayonnaise, regular'
+  },
+  poster_74: {
+    kcalPer100g: 12,
+    proteinPer100g: 0.5,
+    fatPer100g: 0.3,
+    carbsPer100g: 2.41,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 168558; pickles, cucumber, dill or kosher dill'
+  },
+  poster_498: {
+    kcalPer100g: 579,
+    proteinPer100g: 21.15,
+    fatPer100g: 49.93,
+    carbsPer100g: 21.55,
+    source: 'USDA FoodData Central',
+    sourceReference: 'FDC 170567; nuts, almonds'
   }
 };
 
@@ -67,4 +128,4 @@ for (const entry of data.entries || []) {
 
 fs.writeFileSync(file, JSON.stringify(data, null, 2) + '\n');
 console.log(`[CIA Nutrition] verified baseline entries updated: ${changed}`);
-console.log('[CIA Nutrition] baseline verified overrides applied where matching entries exist.');
+console.log('[CIA Nutrition] conservative verified overrides applied where matching entries exist.');

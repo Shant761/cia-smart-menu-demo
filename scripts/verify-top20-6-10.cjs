@@ -66,5 +66,5 @@ for (const entry of data.entries || []) {
 }
 
 fs.writeFileSync(file, JSON.stringify(data, null, 2) + '\n');
-console.log(`[CIA Nutrition] verified Top 20 entries updated: ${changed}`);
-console.log('[CIA Nutrition] poster_534 (мороженое) remains needs_review because the Poster ingredient does not specify the ice-cream type.');
+console.log(`[CIA Nutrition] verified baseline entries updated: ${changed}`);
+console.log('[CIA Nutrition] baseline verified overrides applied where matching entries exist.');

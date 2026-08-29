@@ -1,0 +1,45 @@
+name: Apply Category Translations To Snapshots
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'data/*-category-translations.json'
+      - 'data/public-menus/*.json'
+      - 'scripts/apply-category-translations-to-snapshots.cjs'
+      - '.github/workflows/apply-category-translations-to-snapshots.yml'
+  workflow_dispatch:
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Apply translations to public snapshots
+        run: |
+          node --check scripts/apply-category-translations-to-snapshots.cjs
+          node scripts/apply-category-translations-to-snapshots.cjs
+
+      - name: Commit translated snapshots
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/public-menus/
+          if git diff --cached --quiet; then
+            echo "No category snapshot translation changes."
+          else
+            git commit -m "chore: apply category translations to public snapshots"
+            git pull --rebase --autostash origin main
+            git push
+          fi

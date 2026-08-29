@@ -205,7 +205,7 @@ async function sync() {
       allergens: inferredAllergens, emoji: '🍽️', image: posterPhotoUrl(photoPath), price,
       sortOrder: toNumber(mergedPoster?.sort_order ?? product?.sort_order, index), posterCategoryId: categoryId, posterWorkshopId: mergedPoster?.workshop ?? product?.workshop ?? null, posterType: mergedPoster?.type ?? product?.type ?? null,
       posterSpotId: (spot?.spot_id ?? effectiveSpotId) || null, posterVisibleAtSpot: visibleAtSpot, posterPriceMinor: toNumber(rawPrice), posterPhotoPath: photoPath,
-      posterRecipeIngredients: recipeIngredients.map((ingredient) => ({ ingredientId: ingredient?.ingredient_id ?? null, name: ingredient?.ingredient_name ?? '', unit: ingredient?.structure_unit ?? ingredient?.ingredient_unit ?? '', brutto: toNumber(ingredient?.structure_brutto), netto: toNumber(ingredient?.structure_netto), locked: String(ingredient?.structure_lock ?? '0') === '1' }))
+      posterRecipeIngredients: recipeIngredients.map((ingredient) => ({ ingredientId: ingredient?.ingredient_id ?? null, structureType: toNumber(ingredient?.structure_type, 1), name: ingredient?.ingredient_name ?? '', unit: ingredient?.structure_unit ?? ingredient?.ingredient_unit ?? '', brutto: toNumber(ingredient?.structure_brutto), netto: toNumber(ingredient?.structure_netto), locked: String(ingredient?.structure_lock ?? '0') === '1' }))
     };
     const existing = existingProducts.get(docId);
     if (!existing || !sameOwnedFields(existing, data)) {

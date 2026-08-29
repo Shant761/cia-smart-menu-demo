@@ -6,6 +6,11 @@ const PROJECT_ID = 'cia-smart-menu';
 function requiredEnv(name) { const v = process.env[name]?.trim(); if (!v) throw new Error(`${name} is required`); return v; }
 function n(v) { const x = Number(String(v ?? '').replace(',', '.')); return Number.isFinite(x) ? x : null; }
 function hash(v) { return crypto.createHash('sha256').update(v).digest('hex'); }
+function catalogDocId(ingredient) {
+  if (ingredient?.ingredientId == null || !String(ingredient.ingredientId).trim()) return null;
+  const prefix = Number(ingredient?.structureType ?? 1) === 2 ? 'poster_prep_' : 'poster_';
+  return `${prefix}${String(ingredient.ingredientId).trim()}`;
+}
 function mlDensity(ingredient) {
   const name = String(ingredient?.name || '').toLowerCase();
   if (/масло|oil/.test(name)) return 0.92;
@@ -80,7 +85,7 @@ async function main() {
     let blocked = false;
 
     for (const ingredient of recipe) {
-      const id = ingredient?.ingredientId != null && String(ingredient.ingredientId).trim() ? `poster_${String(ingredient.ingredientId).trim()}` : null;
+      const id = catalogDocId(ingredient);
       const cat = id ? byId.get(id) : [...byId.values()].find((x) => (x.sourceNames || []).includes(ingredient?.name));
       const g = grams(ingredient);
       if (g !== null) recipeG += g;
@@ -95,6 +100,7 @@ async function main() {
       const ok = g !== null && nut?.status === 'matched' && missingNutrients.length === 0;
       ingredientResults.push({
         ingredientId: ingredient?.ingredientId ?? null,
+        structureType: Number(ingredient?.structureType ?? 1),
         name: ingredient?.name || '',
         grams: g,
         canonicalId: cat?.canonicalId || null,
@@ -118,10 +124,11 @@ async function main() {
     // Include both the Poster recipe and the nutrition state/version of every ingredient.
     // This means a product is recalculated when an ingredient's nutrition changes, but not otherwise.
     const calculationInput = recipe.map((x) => {
-      const id = x?.ingredientId != null && String(x.ingredientId).trim() ? `poster_${String(x.ingredientId).trim()}` : null;
+      const id = catalogDocId(x);
       const cat = id ? byId.get(id) : [...byId.values()].find((item) => (item.sourceNames || []).includes(x?.name));
       return {
         ingredientId: x?.ingredientId ?? null,
+        structureType: Number(x?.structureType ?? 1),
         name: x?.name || '',
         unit: x?.unit || '',
         netto: x?.netto ?? null,
@@ -170,7 +177,7 @@ async function main() {
       nutrition: {
         status,
         source: 'validated ingredient nutrition + Poster recipe',
-        recipeHash: hash(JSON.stringify(recipe.map((x) => ({ ingredientId: x.ingredientId ?? null, name: x.name || '', unit: x.unit || '', netto: x.netto ?? null })))),
+        recipeHash: hash(JSON.stringify(recipe.map((x) => ({ ingredientId: x.ingredientId ?? null, structureType: Number(x.structureType ?? 1), name: x.name || '', unit: x.unit || '', netto: x.netto ?? null })))),
         calculationHash,
         calories: status === 'calculated' ? rounded.calories : null,
         protein: status === 'calculated' ? rounded.protein : null,

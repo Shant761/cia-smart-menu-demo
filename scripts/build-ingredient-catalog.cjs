@@ -31,8 +31,11 @@ function firstLocalizedText(value) {
   return normalizeText(value.hy || value.ru || value.en || Object.values(value).find(Boolean) || '');
 }
 function hash(value) { return crypto.createHash('sha256').update(value).digest('hex'); }
-function ingredientDocId(ingredientId, name) {
-  if (ingredientId !== null && ingredientId !== undefined && String(ingredientId).trim()) return `poster_${String(ingredientId).trim()}`;
+function ingredientDocId(ingredientId, name, structureType = 1) {
+  if (ingredientId !== null && ingredientId !== undefined && String(ingredientId).trim()) {
+    const prefix = Number(structureType) === 2 ? 'poster_prep_' : 'poster_';
+    return `${prefix}${String(ingredientId).trim()}`;
+  }
   return `name_${hash(normalizeText(name).toLowerCase()).slice(0, 20)}`;
 }
 function numberOrZero(value) {
@@ -90,13 +93,14 @@ async function buildCatalog() {
       if (!name) continue;
       recipeRows += 1;
       const posterIngredientId = ingredient?.ingredientId ?? null;
-      const docId = ingredientDocId(posterIngredientId, name);
+      const posterStructureType = Number(ingredient?.structureType ?? 1);
+      const docId = ingredientDocId(posterIngredientId, name, posterStructureType);
       const unit = normalizeText(ingredient?.unit);
       const netto = numberOrZero(ingredient?.netto);
       const brutto = numberOrZero(ingredient?.brutto);
 
       if (!catalog.has(docId)) {
-        catalog.set(docId, { docId, posterIngredientId, names: new Set(), units: new Set(), occurrences: 0, totalNetto: 0, totalBrutto: 0, productIds: new Set(), samples: [] });
+        catalog.set(docId, { docId, posterIngredientId, posterStructureType, names: new Set(), units: new Set(), occurrences: 0, totalNetto: 0, totalBrutto: 0, productIds: new Set(), samples: [] });
       }
       const entry = catalog.get(docId);
       entry.names.add(name);
@@ -119,7 +123,7 @@ async function buildCatalog() {
     const names = [...entry.names].sort((a, b) => a.localeCompare(b));
     const units = [...entry.units].sort((a, b) => a.localeCompare(b));
     const primaryName = names[0] || '';
-    const sourceHash = hash(JSON.stringify({ posterIngredientId: entry.posterIngredientId, names, units }));
+    const sourceHash = hash(JSON.stringify({ posterIngredientId: entry.posterIngredientId, posterStructureType: entry.posterStructureType, names, units }));
     const existing = existingCatalog.get(entry.docId) || {};
     const sourceChanged = existing.sourceHash && existing.sourceHash !== sourceHash;
     let analysisStatus = existing.analysisStatus || 'pending_review';
@@ -143,6 +147,7 @@ async function buildCatalog() {
         source: 'poster_recipe',
         activeInMenu: true,
         posterIngredientId: entry.posterIngredientId,
+        posterStructureType: entry.posterStructureType,
         primaryName,
         sourceNames: names,
         units,
@@ -171,7 +176,7 @@ async function buildCatalog() {
     type: 'set',
     ref: restaurantRef,
     data: {
-      ingredientCatalog: { uniqueIngredients: catalog.size, activePosterProducts, recipeRows, pendingReview, needsReview, unchanged, lastBuildAt: now, version: 2 },
+      ingredientCatalog: { uniqueIngredients: catalog.size, activePosterProducts, recipeRows, pendingReview, needsReview, unchanged, lastBuildAt: now, version: 3 },
       updatedAt: now
     },
     options: { merge: true }

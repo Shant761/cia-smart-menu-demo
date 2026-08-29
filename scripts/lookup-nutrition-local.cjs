@@ -98,18 +98,28 @@ async function main() {
 
     const names = [item.primaryName, ...(item.sourceNames || [])].filter(Boolean);
     const collision = hasSourceNameCollision(names);
+    const isPreparation = Number(item.posterStructureType ?? 1) === 2 || doc.id.startsWith('poster_prep_');
     const ranked = entries.map((entry) => ({ entry, score: score(entry, names) })).sort((a, b) => b.score - a.score);
     const top = ranked[0];
     const second = ranked[1];
-    const verified = !collision && top && top.entry.verified === true && top.score >= 70 && (!second || top.score > second.score);
+    const verified = !isPreparation && !collision && top && top.entry.verified === true && top.score >= 70 && (!second || top.score > second.score);
 
     if (collision) collisions += 1;
-    if (!top) missing += 1;
+    if (isPreparation) review += 1;
+    else if (!top) missing += 1;
     else if (verified) matched += 1;
     else review += 1;
 
     let nutrition;
-    if (top) {
+    if (isPreparation) {
+      nutrition = {
+        status: 'review',
+        source: 'Poster preparation recipe required',
+        databaseVersion: database.version,
+        sourceHash: item.sourceHash,
+        reviewReason: 'poster_preparation_requires_recipe'
+      };
+    } else if (top) {
       nutrition = {
         status: verified ? 'matched' : 'review',
         source: 'CIA-owned nutrition database',

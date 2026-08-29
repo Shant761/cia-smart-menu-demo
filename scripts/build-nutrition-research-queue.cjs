@@ -59,8 +59,10 @@ const ALCOHOL = /(водка|вино|ром\b|джин\b|виски|текил|
 
 function classify(entry, manualEntry) {
   const text = [entry.name, ...(entry.aliases || [])].join(' | ');
-  if (manualEntry?.verified === true) return 'verified';
+  // Source-name collisions always win over a previously verified value.
+  // A Poster ID that points to multiple unrelated foods must never auto-pass.
   if (hasPossibleAliasCollision(entry)) return 'source_collision';
+  if (manualEntry?.verified === true) return 'verified';
   if (NON_FOOD.test(text)) return 'non_food';
   if (ALCOHOL.test(text) || (BRAND.test(text) && (entry.units || []).includes('ml'))) return 'alcohol';
   if (PREPARED.test(text)) return 'prepared_or_recipe';

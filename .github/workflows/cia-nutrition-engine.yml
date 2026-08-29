@@ -6,13 +6,14 @@ on:
       - main
     paths:
       - 'data/cia-nutrition-manual-top20.json'
-      - 'data/cia-nutrition-priority-top100.json'
+      - 'data/cia-nutrition-priority-top200.json'
       - 'data/nutrition-database.json'
       - 'scripts/build-cia-manual-top20-template.cjs'
       - 'scripts/build-poster-nutrition-priority-top20.cjs'
       - 'scripts/calculate-product-nutrition.cjs'
       - 'scripts/lookup-nutrition-local.cjs'
       - 'scripts/build-ingredient-catalog.cjs'
+      - 'scripts/verify-top20-6-10.cjs'
       - '.github/workflows/cia-nutrition-engine.yml'
   workflow_dispatch:
     inputs:
@@ -22,9 +23,9 @@ on:
         default: poster-test
         type: string
       force:
-        description: Recalculate nutrition even when source is unchanged
+        description: Recalculate nutrition even when result is unchanged
         required: true
-        default: true
+        default: false
         type: boolean
 
 jobs:
@@ -35,8 +36,8 @@ jobs:
       contents: write
     env:
       CIA_RESTAURANT_ID: ${{ inputs.restaurant_id || 'poster-test' }}
-      NUTRITION_FORCE: ${{ inputs.force || true }}
-      CIA_PRIORITY_LIMIT: 100
+      NUTRITION_FORCE: ${{ github.event_name == 'workflow_dispatch' && inputs.force || false }}
+      CIA_PRIORITY_LIMIT: 200
 
     steps:
       - name: Checkout repository
@@ -67,12 +68,12 @@ jobs:
         run: |
           test -n "$FIREBASE_SERVICE_ACCOUNT" || (echo 'Missing FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU' && exit 1)
 
-      - name: Build CIA nutrition priority top 100
+      - name: Build CIA nutrition priority top 200
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
         run: node scripts/build-poster-nutrition-priority-top20.cjs
 
-      - name: Extend CIA manual nutrition to top 100
+      - name: Extend CIA manual nutrition to top 200
         run: node scripts/build-cia-manual-top20-template.cjs
 
       - name: Apply verified CIA manual nutrition
@@ -84,7 +85,7 @@ jobs:
       - name: Build CIA ingredient catalog from Poster recipes
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIA_SMART_MENU }}
-          FORCE_CATALOG_BUILD: ${{ inputs.force || true }}
+          FORCE_CATALOG_BUILD: false
         run: node scripts/build-ingredient-catalog.cjs
 
       - name: Match ingredients against CIA-owned nutrition database
@@ -102,11 +103,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git restore package.json package-lock.json || true
-          git add data/cia-nutrition-manual-top20.json data/cia-nutrition-priority-top100.json data/nutrition-database.json
+          git add data/cia-nutrition-manual-top20.json data/cia-nutrition-priority-top200.json data/nutrition-database.json
           if git diff --cached --quiet; then
             echo "No nutrition database changes."
           else
-            git commit -m "chore: extend CIA nutrition priority top 100"
+            git commit -m "chore: extend CIA nutrition priority top 200"
             git pull --rebase --autostash origin main
             git push
           fi

@@ -1,8 +1,8 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "restaurantId": "poster-test",
   "source": "Poster menu.getPrepacks + cia-nutrition-manual-top20 verified entries",
-  "generatedAt": "2026-08-30T09:30:46.445Z",
+  "generatedAt": "2026-08-30T09:37:13.579Z",
   "prepackCount": 219,
   "calculatedCount": 195,
   "needsReviewCount": 24,

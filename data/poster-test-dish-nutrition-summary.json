@@ -1,7 +1,7 @@
 {
-  "version": "1.4.0",
+  "version": "1.5.0",
   "restaurantId": "poster-test",
-  "generatedAt": "2026-08-30T11:49:05.281Z",
+  "generatedAt": "2026-08-30T11:57:08.613Z",
   "publicProductCount": 422,
   "fetchedProductCount": 422,
   "fetchErrorCount": 0,
@@ -9,9 +9,10 @@
   "productsWithPrepackRows": 150,
   "resolvedPrepackRows": 278,
   "unresolvedPrepackRows": 5,
-  "fullyCalculatedCount": 334,
-  "partialCount": 38,
-  "reviewWithoutKnownCount": 35,
+  "excludedNonFoodRows": 5,
+  "fullyCalculatedCount": 337,
+  "partialCount": 36,
+  "reviewWithoutKnownCount": 34,
   "suspiciousProductCount": 0,
   "products": [
     {
@@ -26,6 +27,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 8,
       "resolvedRows": 6,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -67,6 +69,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "532",
@@ -102,6 +105,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 5,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -143,6 +147,7 @@
           "rawBrutto": 5
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -157,6 +162,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -174,6 +180,7 @@
           "rawBrutto": 5
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -188,6 +195,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 7,
       "resolvedRows": 6,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -229,6 +237,7 @@
           "rawBrutto": 100
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "597",
@@ -254,6 +263,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 5,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 4,
       "resolvedPrepackRows": 4,
       "suspicious": false,
@@ -295,6 +305,7 @@
           "rawBrutto": 40
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -309,6 +320,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 4,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -350,6 +362,7 @@
           "rawBrutto": 20
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -364,6 +377,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 10,
       "resolvedRows": 9,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -405,6 +419,7 @@
           "rawBrutto": 15
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "436",
@@ -430,6 +445,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -471,6 +487,7 @@
           "rawBrutto": 20
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -485,6 +502,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 4,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -526,6 +544,7 @@
           "rawBrutto": 20
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -540,6 +559,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 8,
       "resolvedRows": 8,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -581,6 +601,7 @@
           "rawBrutto": 2
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -595,6 +616,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 4,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -636,6 +658,7 @@
           "rawBrutto": 80
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -650,6 +673,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 11,
       "resolvedRows": 10,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -691,6 +715,7 @@
           "rawBrutto": 200
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "264",
@@ -716,10 +741,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "657",
@@ -746,6 +773,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 9,
       "resolvedRows": 9,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -787,6 +815,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -801,6 +830,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 7,
       "resolvedRows": 7,
+      "excludedRows": 0,
       "prepackRows": 4,
       "resolvedPrepackRows": 4,
       "suspicious": false,
@@ -842,6 +872,7 @@
           "rawBrutto": 30
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -856,6 +887,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -885,6 +917,7 @@
           "rawBrutto": 24
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -899,6 +932,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -940,6 +974,7 @@
           "rawBrutto": 25
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -954,6 +989,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -971,6 +1007,7 @@
           "rawBrutto": 200
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -985,6 +1022,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 5,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -1026,6 +1064,7 @@
           "rawBrutto": 240
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -1040,6 +1079,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 8,
       "resolvedRows": 7,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -1081,6 +1121,7 @@
           "rawBrutto": 10
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "436",
@@ -1106,6 +1147,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 8,
       "resolvedRows": 8,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -1147,6 +1189,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -1161,6 +1204,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 6,
       "resolvedRows": 6,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -1202,6 +1246,7 @@
           "rawBrutto": 0
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -1216,6 +1261,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 6,
       "resolvedRows": 6,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -1257,6 +1303,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -1271,6 +1318,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 8,
       "resolvedRows": 8,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -1312,6 +1360,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -1326,6 +1375,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 10,
       "resolvedRows": 9,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -1367,6 +1417,7 @@
           "rawBrutto": 400
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "264",
@@ -1392,6 +1443,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 6,
       "resolvedRows": 6,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -1433,6 +1485,7 @@
           "rawBrutto": 20
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -1447,6 +1500,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -1464,6 +1518,7 @@
           "rawBrutto": 300
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -1478,6 +1533,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -1519,6 +1575,7 @@
           "rawBrutto": 3
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -1533,6 +1590,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -1562,6 +1620,7 @@
           "rawBrutto": 120
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -1576,6 +1635,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 4,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -1617,6 +1677,7 @@
           "rawBrutto": 170
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -1631,6 +1692,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 8,
       "resolvedRows": 8,
+      "excludedRows": 0,
       "prepackRows": 4,
       "resolvedPrepackRows": 4,
       "suspicious": false,
@@ -1672,6 +1734,7 @@
           "rawBrutto": 100
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -1686,6 +1749,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 8,
       "resolvedRows": 8,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -1727,6 +1791,7 @@
           "rawBrutto": 180
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -1741,6 +1806,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 4,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -1782,6 +1848,7 @@
           "rawBrutto": 2
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -1796,6 +1863,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 5,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -1837,6 +1905,7 @@
           "rawBrutto": 2
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -1846,11 +1915,12 @@
         "ru": "Лимонад манго-маракуйя",
         "en": "Mango & Passion Fruit Lemonade"
       },
-      "status": "needs_review",
+      "status": "calculated",
       "displayedCalories": 129,
-      "displayedAsMinimum": true,
+      "displayedAsMinimum": false,
       "recipeRows": 4,
-      "resolvedRows": 3,
+      "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -1880,30 +1950,20 @@
           "rawBrutto": 15
         },
         {
-          "id": "291",
+          "id": "296",
           "type": "ingredient",
-          "name": "Газированная вода (бар)",
-          "grams": 125,
+          "name": "Натуральные соки /0,25/",
+          "grams": 250,
           "kcalPer100g": 0,
           "calories": 0,
           "structureUnit": "p",
           "ingredientUnit": "p",
-          "rawNetto": 125,
-          "rawBrutto": 1
+          "rawNetto": 0,
+          "rawBrutto": 0
         }
       ],
-      "unresolved": [
-        {
-          "id": "296",
-          "type": "ingredient",
-          "name": "Натуральные соки /0,25/",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 0,
-          "reason": "unknown_weight_or_unit"
-        }
-      ]
+      "excluded": [],
+      "unresolved": []
     },
     {
       "productId": "162",
@@ -1917,6 +1977,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 12,
       "resolvedRows": 12,
+      "excludedRows": 0,
       "prepackRows": 6,
       "resolvedPrepackRows": 6,
       "suspicious": false,
@@ -1958,6 +2019,7 @@
           "rawBrutto": 70
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -1972,6 +2034,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 10,
       "resolvedRows": 10,
+      "excludedRows": 0,
       "prepackRows": 3,
       "resolvedPrepackRows": 3,
       "suspicious": false,
@@ -2013,6 +2076,7 @@
           "rawBrutto": 20
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -2027,6 +2091,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 7,
       "resolvedRows": 7,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -2068,6 +2133,7 @@
           "rawBrutto": 1
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -2082,6 +2148,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 6,
       "resolvedRows": 6,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -2123,6 +2190,7 @@
           "rawBrutto": 20
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -2137,6 +2205,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 8,
       "resolvedRows": 7,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -2178,6 +2247,7 @@
           "rawBrutto": 10
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "306",
@@ -2203,6 +2273,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -2232,6 +2303,7 @@
           "rawBrutto": 2
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -2246,6 +2318,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 4,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -2287,6 +2360,7 @@
           "rawBrutto": 30
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "306",
@@ -2312,6 +2386,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -2329,6 +2404,7 @@
           "rawBrutto": 120
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -2343,6 +2419,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 9,
       "resolvedRows": 9,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -2384,6 +2461,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -2398,6 +2476,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 5,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -2439,6 +2518,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "525",
@@ -2464,6 +2544,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -2505,6 +2586,7 @@
           "rawBrutto": 80
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -2519,6 +2601,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -2560,6 +2643,7 @@
           "rawBrutto": 15
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -2574,6 +2658,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -2615,6 +2700,7 @@
           "rawBrutto": 150
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -2629,6 +2715,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 8,
       "resolvedRows": 8,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -2670,6 +2757,7 @@
           "rawBrutto": 200
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -2684,6 +2772,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 5,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -2725,6 +2814,7 @@
           "rawBrutto": 30
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "183",
@@ -2750,6 +2840,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 5,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -2791,6 +2882,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -2805,6 +2897,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -2822,6 +2915,7 @@
           "rawBrutto": 130
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -2836,6 +2930,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -2877,6 +2972,7 @@
           "rawBrutto": 25
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -2891,6 +2987,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -2920,6 +3017,7 @@
           "rawBrutto": 10
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -2934,6 +3032,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 8,
       "resolvedRows": 8,
+      "excludedRows": 0,
       "prepackRows": 3,
       "resolvedPrepackRows": 3,
       "suspicious": false,
@@ -2975,6 +3074,7 @@
           "rawBrutto": 100
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -2989,6 +3089,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 6,
       "resolvedRows": 6,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -3030,6 +3131,7 @@
           "rawBrutto": 10
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -3044,6 +3146,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 4,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -3085,6 +3188,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -3099,6 +3203,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 4,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -3140,6 +3245,7 @@
           "rawBrutto": 45
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -3154,6 +3260,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -3171,6 +3278,7 @@
           "rawBrutto": 250
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -3185,6 +3293,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -3214,6 +3323,7 @@
           "rawBrutto": 75
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -3228,6 +3338,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 7,
       "resolvedRows": 6,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -3269,6 +3380,7 @@
           "rawBrutto": 5
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "49",
@@ -3295,6 +3407,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 17,
       "resolvedRows": 17,
+      "excludedRows": 0,
       "prepackRows": 12,
       "resolvedPrepackRows": 12,
       "suspicious": false,
@@ -3336,6 +3449,7 @@
           "rawBrutto": 80
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -3350,6 +3464,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 6,
       "resolvedRows": 6,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -3391,6 +3506,7 @@
           "rawBrutto": 200
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -3405,6 +3521,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -3422,6 +3539,7 @@
           "rawBrutto": 150
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -3436,6 +3554,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -3477,6 +3596,7 @@
           "rawBrutto": 12
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -3491,6 +3611,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -3508,6 +3629,7 @@
           "rawBrutto": 10
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -3522,6 +3644,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -3539,6 +3662,7 @@
           "rawBrutto": 100
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -3553,10 +3677,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "480",
@@ -3582,6 +3708,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 5,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -3623,6 +3750,7 @@
           "rawBrutto": 15
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -3637,10 +3765,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "98",
@@ -3666,10 +3796,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "97",
@@ -3695,10 +3827,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "99",
@@ -3724,10 +3858,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "100",
@@ -3753,10 +3889,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "101",
@@ -3782,6 +3920,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -3823,6 +3962,7 @@
           "rawBrutto": 30
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -3837,6 +3977,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -3854,6 +3995,7 @@
           "rawBrutto": 150
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -3868,10 +4010,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "103",
@@ -3897,10 +4041,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "104",
@@ -3926,6 +4072,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -3943,6 +4090,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -3957,6 +4105,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -3974,6 +4123,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -3988,10 +4138,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "111",
@@ -4017,6 +4169,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -4034,6 +4187,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -4048,6 +4202,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -4065,6 +4220,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -4079,6 +4235,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -4096,6 +4253,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -4110,6 +4268,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -4127,6 +4286,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -4141,6 +4301,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 5,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -4182,6 +4343,7 @@
           "rawBrutto": 2
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -4196,6 +4358,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 6,
       "resolvedRows": 6,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -4237,6 +4400,7 @@
           "rawBrutto": 200
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -4251,6 +4415,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -4268,6 +4433,7 @@
           "rawBrutto": 300
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -4282,6 +4448,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -4311,6 +4478,7 @@
           "rawBrutto": 10
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -4320,27 +4488,31 @@
         "ru": "Пиво Krombacher",
         "en": "Krombacher Beer"
       },
-      "status": "needs_review",
-      "displayedCalories": null,
+      "status": "calculated",
+      "displayedCalories": 0,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 0,
+      "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
-      "topResolvedContributions": [],
-      "unresolved": [
+      "topResolvedContributions": [
         {
           "id": "119",
           "type": "ingredient",
           "name": "Krombacher 0.33",
+          "grams": 330,
+          "kcalPer100g": 0,
+          "calories": 0,
           "structureUnit": "p",
           "ingredientUnit": "p",
           "rawNetto": 0,
-          "rawBrutto": 1,
-          "reason": "unknown_weight_or_unit"
+          "rawBrutto": 1
         }
-      ]
+      ],
+      "excluded": [],
+      "unresolved": []
     },
     {
       "productId": "232",
@@ -4354,10 +4526,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "120",
@@ -4383,10 +4557,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "121",
@@ -4412,6 +4588,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -4429,6 +4606,7 @@
           "rawBrutto": 750
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -4443,6 +4621,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 4,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -4484,6 +4663,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -4498,10 +4678,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "130",
@@ -4527,6 +4709,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -4544,6 +4727,7 @@
           "rawBrutto": 750
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -4558,6 +4742,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -4575,6 +4760,7 @@
           "rawBrutto": 150
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -4589,6 +4775,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -4606,6 +4793,7 @@
           "rawBrutto": 5
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -4620,6 +4808,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -4637,6 +4826,7 @@
           "rawBrutto": 750
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -4651,6 +4841,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -4668,6 +4859,7 @@
           "rawBrutto": 150
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -4682,10 +4874,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "136",
@@ -4711,6 +4905,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -4728,6 +4923,7 @@
           "rawBrutto": 750
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -4742,6 +4938,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -4759,6 +4956,7 @@
           "rawBrutto": 150
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -4773,6 +4971,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -4790,6 +4989,7 @@
           "rawBrutto": 750
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -4804,6 +5004,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -4821,6 +5022,7 @@
           "rawBrutto": 150
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -4835,6 +5037,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -4852,6 +5055,7 @@
           "rawBrutto": 10
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -4866,10 +5070,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "139",
@@ -4895,6 +5101,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -4912,6 +5119,7 @@
           "rawBrutto": 150
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -4926,6 +5134,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -4943,6 +5152,7 @@
           "rawBrutto": 5
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -4957,10 +5167,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "140",
@@ -4986,6 +5198,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -5003,6 +5216,7 @@
           "rawBrutto": 750
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -5017,6 +5231,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -5034,6 +5249,7 @@
           "rawBrutto": 150
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -5048,6 +5264,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -5065,6 +5282,7 @@
           "rawBrutto": 750
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -5079,6 +5297,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -5096,6 +5315,7 @@
           "rawBrutto": 150
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -5110,6 +5330,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -5127,6 +5348,7 @@
           "rawBrutto": 750
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -5141,6 +5363,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -5158,6 +5381,7 @@
           "rawBrutto": 150
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -5172,10 +5396,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "144",
@@ -5201,6 +5427,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 5,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 3,
       "resolvedPrepackRows": 3,
       "suspicious": false,
@@ -5242,6 +5469,7 @@
           "rawBrutto": 30
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -5256,10 +5484,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "145",
@@ -5285,10 +5515,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "146",
@@ -5314,10 +5546,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "150",
@@ -5343,10 +5577,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "151",
@@ -5372,10 +5608,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "152",
@@ -5396,11 +5634,12 @@
         "ru": "Классический коктейль",
         "en": "Classic Cocktail"
       },
-      "status": "needs_review",
+      "status": "calculated",
       "displayedCalories": 0,
-      "displayedAsMinimum": true,
+      "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 1,
+      "excludedRows": 2,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -5418,28 +5657,21 @@
           "rawBrutto": 5
         }
       ],
-      "unresolved": [
+      "excluded": [
         {
           "id": "537",
           "type": "ingredient",
           "name": "муштук",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 6,
-          "reason": "unknown_weight_or_unit"
+          "reason": "non_food"
         },
         {
           "id": "538",
           "type": "ingredient",
           "name": "уголь",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 6,
-          "reason": "unknown_weight_or_unit"
+          "reason": "non_food"
         }
-      ]
+      ],
+      "unresolved": []
     },
     {
       "productId": "280",
@@ -5453,6 +5685,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -5482,6 +5715,7 @@
           "rawBrutto": 170
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -5496,6 +5730,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -5513,6 +5748,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -5527,6 +5763,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -5544,6 +5781,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -5558,6 +5796,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -5575,6 +5814,7 @@
           "rawBrutto": 80
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -5589,6 +5829,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -5630,6 +5871,7 @@
           "rawBrutto": 2
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -5644,6 +5886,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 5,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -5685,6 +5928,7 @@
           "rawBrutto": 10
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -5699,6 +5943,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -5716,6 +5961,7 @@
           "rawBrutto": 5
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -5730,6 +5976,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -5747,6 +5994,7 @@
           "rawBrutto": 5
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -5761,6 +6009,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -5778,6 +6027,7 @@
           "rawBrutto": 2
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -5792,6 +6042,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 3,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -5821,6 +6072,7 @@
           "rawBrutto": 30
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "436",
@@ -5846,6 +6098,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 5,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 3,
       "resolvedPrepackRows": 3,
       "suspicious": false,
@@ -5887,6 +6140,7 @@
           "rawBrutto": 40
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -5901,6 +6155,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -5918,6 +6173,7 @@
           "rawBrutto": 60
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -5932,6 +6188,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -5949,6 +6206,7 @@
           "rawBrutto": 60
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -5963,6 +6221,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -5980,6 +6239,7 @@
           "rawBrutto": 60
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -5994,6 +6254,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -6011,6 +6272,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6025,6 +6287,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -6042,6 +6305,7 @@
           "rawBrutto": 80
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6056,6 +6320,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -6073,6 +6338,7 @@
           "rawBrutto": 80
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6087,6 +6353,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -6104,6 +6371,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6118,6 +6386,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -6135,6 +6404,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6149,6 +6419,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -6166,6 +6437,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6180,6 +6452,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -6197,6 +6470,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6211,6 +6485,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -6228,6 +6503,7 @@
           "rawBrutto": 10
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6242,6 +6518,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -6259,6 +6536,7 @@
           "rawBrutto": 80
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6273,6 +6551,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -6290,6 +6569,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6304,6 +6584,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -6321,6 +6602,7 @@
           "rawBrutto": 100
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6335,6 +6617,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -6352,6 +6635,7 @@
           "rawBrutto": 100
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6366,6 +6650,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -6383,6 +6668,7 @@
           "rawBrutto": 120
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6397,6 +6683,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -6414,6 +6701,7 @@
           "rawBrutto": 125
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6428,6 +6716,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -6445,6 +6734,7 @@
           "rawBrutto": 200
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6459,6 +6749,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 8,
       "resolvedRows": 8,
+      "excludedRows": 0,
       "prepackRows": 4,
       "resolvedPrepackRows": 4,
       "suspicious": false,
@@ -6500,6 +6791,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6514,6 +6806,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -6543,6 +6836,7 @@
           "rawBrutto": 100
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6557,6 +6851,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -6574,6 +6869,7 @@
           "rawBrutto": 200
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6588,6 +6884,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -6605,6 +6902,7 @@
           "rawBrutto": 150
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6619,6 +6917,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -6636,6 +6935,7 @@
           "rawBrutto": 100
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6650,6 +6950,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -6667,6 +6968,7 @@
           "rawBrutto": 100
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6681,6 +6983,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -6698,6 +7001,7 @@
           "rawBrutto": 150
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6712,6 +7016,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -6729,6 +7034,7 @@
           "rawBrutto": 100
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6743,6 +7049,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -6760,6 +7067,7 @@
           "rawBrutto": 80
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6774,6 +7082,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -6791,6 +7100,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6805,6 +7115,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -6822,6 +7133,7 @@
           "rawBrutto": 300
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6836,6 +7148,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 6,
       "resolvedRows": 6,
+      "excludedRows": 0,
       "prepackRows": 3,
       "resolvedPrepackRows": 3,
       "suspicious": false,
@@ -6877,6 +7190,7 @@
           "rawBrutto": 2
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6891,6 +7205,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -6920,6 +7235,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6934,6 +7250,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -6951,6 +7268,7 @@
           "rawBrutto": 180
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6965,6 +7283,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -6982,6 +7301,7 @@
           "rawBrutto": 60
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -6996,6 +7316,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -7013,6 +7334,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -7027,6 +7349,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -7044,6 +7367,7 @@
           "rawBrutto": 1
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -7058,6 +7382,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -7075,6 +7400,7 @@
           "rawBrutto": 130
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -7089,6 +7415,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -7106,6 +7433,7 @@
           "rawBrutto": 60
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -7120,6 +7448,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -7149,6 +7478,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -7163,6 +7493,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -7192,6 +7523,7 @@
           "rawBrutto": 1
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -7206,6 +7538,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -7223,6 +7556,7 @@
           "rawBrutto": 500
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -7237,6 +7571,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -7266,6 +7601,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -7280,6 +7616,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -7309,6 +7646,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -7323,10 +7661,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "436",
@@ -7352,6 +7692,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -7393,6 +7734,7 @@
           "rawBrutto": 120
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -7407,6 +7749,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 9,
       "resolvedRows": 8,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -7448,6 +7791,7 @@
           "rawBrutto": 3
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "436",
@@ -7473,6 +7817,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 11,
       "resolvedRows": 9,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -7514,6 +7859,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "436",
@@ -7549,6 +7895,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 7,
       "resolvedRows": 7,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -7590,6 +7937,7 @@
           "rawBrutto": 10
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -7604,6 +7952,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 5,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -7645,6 +7994,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "291",
@@ -7670,6 +8020,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 9,
       "resolvedRows": 8,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -7711,6 +8062,7 @@
           "rawBrutto": 30
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "647",
@@ -7737,6 +8089,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 4,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -7778,6 +8131,7 @@
           "rawBrutto": 130
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -7792,10 +8146,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "294",
@@ -7821,10 +8177,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "654",
@@ -7851,6 +8209,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -7868,6 +8227,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -7882,6 +8242,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -7899,6 +8260,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -7913,6 +8275,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -7930,6 +8293,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -7944,6 +8308,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -7961,6 +8326,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -7975,6 +8341,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -7992,6 +8359,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8006,6 +8374,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8023,6 +8392,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8037,6 +8407,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8054,6 +8425,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8068,6 +8440,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8085,6 +8458,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8099,6 +8473,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8116,6 +8491,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8130,6 +8506,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 5,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -8171,6 +8548,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8185,6 +8563,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8202,6 +8581,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8216,6 +8596,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8233,6 +8614,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8247,6 +8629,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8264,6 +8647,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8278,6 +8662,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8295,6 +8680,7 @@
           "rawBrutto": 500
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8309,6 +8695,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8326,6 +8713,7 @@
           "rawBrutto": 500
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8340,6 +8728,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8357,6 +8746,7 @@
           "rawBrutto": 500
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8371,6 +8761,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8388,6 +8779,7 @@
           "rawBrutto": 500
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8402,6 +8794,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8419,6 +8812,7 @@
           "rawBrutto": 500
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8433,6 +8827,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8450,6 +8845,7 @@
           "rawBrutto": 500
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8464,6 +8860,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8481,6 +8878,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8495,6 +8893,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8512,6 +8911,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8526,6 +8926,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8543,6 +8944,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8557,6 +8959,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8574,6 +8977,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8588,6 +8992,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8605,6 +9010,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8619,6 +9025,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8636,6 +9043,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8650,6 +9058,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8667,6 +9076,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8681,6 +9091,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8698,6 +9109,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8712,6 +9124,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8729,6 +9142,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8743,6 +9157,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8760,6 +9175,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8774,6 +9190,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8791,6 +9208,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8805,6 +9223,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -8822,6 +9241,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8836,6 +9256,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8853,6 +9274,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8867,6 +9289,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8884,6 +9307,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8898,6 +9322,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8915,6 +9340,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8929,6 +9355,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8946,6 +9373,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8960,6 +9388,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -8977,6 +9406,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -8991,6 +9421,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -9008,6 +9439,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9022,6 +9454,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -9039,6 +9472,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9053,6 +9487,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -9070,6 +9505,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9084,6 +9520,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -9101,6 +9538,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9115,6 +9553,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -9132,6 +9571,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9146,6 +9586,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -9163,6 +9604,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9177,6 +9619,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -9194,6 +9637,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9208,6 +9652,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -9225,6 +9670,7 @@
           "rawBrutto": 150
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9239,6 +9685,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -9256,6 +9703,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9270,6 +9718,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -9287,6 +9736,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9301,6 +9751,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -9318,6 +9769,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9332,6 +9784,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -9349,6 +9802,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9363,6 +9817,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -9380,6 +9835,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9394,6 +9850,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -9411,6 +9868,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9425,6 +9883,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -9442,6 +9901,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9456,6 +9916,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -9473,6 +9934,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9487,6 +9949,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -9504,6 +9967,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9518,6 +9982,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -9535,6 +10000,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9549,6 +10015,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -9566,6 +10033,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9580,6 +10048,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -9597,6 +10066,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9611,6 +10081,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -9628,6 +10099,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9642,6 +10114,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -9659,6 +10132,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9673,6 +10147,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -9690,6 +10165,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9704,6 +10180,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -9745,6 +10222,7 @@
           "rawBrutto": 30
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9759,6 +10237,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 7,
       "resolvedRows": 7,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -9800,6 +10279,7 @@
           "rawBrutto": 25
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9814,6 +10294,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 6,
       "resolvedRows": 6,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -9855,6 +10336,7 @@
           "rawBrutto": 1
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9869,6 +10351,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 6,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -9910,6 +10393,7 @@
           "rawBrutto": 20
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "293",
@@ -9935,6 +10419,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 7,
       "resolvedRows": 7,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -9976,6 +10461,7 @@
           "rawBrutto": 200
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -9990,6 +10476,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -10031,6 +10518,7 @@
           "rawBrutto": 20
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -10045,6 +10533,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 5,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -10086,6 +10575,7 @@
           "rawBrutto": 35
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -10100,6 +10590,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -10141,6 +10632,7 @@
           "rawBrutto": 60
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -10155,6 +10647,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 5,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -10196,6 +10689,7 @@
           "rawBrutto": 70
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -10210,6 +10704,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -10251,6 +10746,7 @@
           "rawBrutto": 25
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -10265,6 +10761,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -10306,6 +10803,7 @@
           "rawBrutto": 25
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -10320,6 +10818,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 4,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -10361,6 +10860,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -10375,6 +10875,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 5,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -10416,6 +10917,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -10430,6 +10932,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 4,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -10471,6 +10974,7 @@
           "rawBrutto": 2
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -10485,6 +10989,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 6,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -10526,6 +11031,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "293",
@@ -10551,6 +11057,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 5,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -10592,6 +11099,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "293",
@@ -10617,6 +11125,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -10658,6 +11167,7 @@
           "rawBrutto": 5
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -10672,6 +11182,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 7,
       "resolvedRows": 6,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -10713,6 +11224,7 @@
           "rawBrutto": 20
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "293",
@@ -10738,6 +11250,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 5,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -10779,6 +11292,7 @@
           "rawBrutto": 1
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "293",
@@ -10804,6 +11318,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 4,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -10845,6 +11360,7 @@
           "rawBrutto": 5
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "293",
@@ -10870,6 +11386,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -10911,6 +11428,7 @@
           "rawBrutto": 35
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -10925,6 +11443,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 4,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -10966,6 +11485,7 @@
           "rawBrutto": 40
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -10980,6 +11500,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -11021,6 +11542,7 @@
           "rawBrutto": 200
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -11035,6 +11557,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -11052,6 +11575,7 @@
           "rawBrutto": 100
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -11066,6 +11590,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -11083,6 +11608,7 @@
           "rawBrutto": 1
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -11097,6 +11623,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -11114,6 +11641,7 @@
           "rawBrutto": 60
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -11128,6 +11656,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -11145,6 +11674,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -11159,6 +11689,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -11176,6 +11707,7 @@
           "rawBrutto": 150
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -11190,10 +11722,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "297",
@@ -11219,10 +11753,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "298",
@@ -11248,10 +11784,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "301",
@@ -11277,6 +11815,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -11294,6 +11833,7 @@
           "rawBrutto": 1000
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -11308,6 +11848,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 4,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -11349,6 +11890,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -11363,6 +11905,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -11404,6 +11947,7 @@
           "rawBrutto": 12
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -11418,6 +11962,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -11459,6 +12004,7 @@
           "rawBrutto": 30
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -11473,6 +12019,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -11502,6 +12049,7 @@
           "rawBrutto": 25
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -11516,6 +12064,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -11533,6 +12082,7 @@
           "rawBrutto": 5
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -11547,6 +12097,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 4,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 3,
       "resolvedPrepackRows": 3,
       "suspicious": false,
@@ -11588,6 +12139,7 @@
           "rawBrutto": 150
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -11602,6 +12154,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -11631,6 +12184,7 @@
           "rawBrutto": 70
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -11645,6 +12199,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -11674,6 +12229,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -11688,6 +12244,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -11729,6 +12286,7 @@
           "rawBrutto": 70
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -11743,6 +12301,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 8,
       "resolvedRows": 7,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -11784,6 +12343,7 @@
           "rawBrutto": 70
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "532",
@@ -11809,6 +12369,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -11826,6 +12387,7 @@
           "rawBrutto": 1
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -11840,6 +12402,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -11881,6 +12444,7 @@
           "rawBrutto": 10
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -11895,6 +12459,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 4,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -11936,6 +12501,7 @@
           "rawBrutto": 20
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -11950,6 +12516,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 4,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -11991,6 +12558,7 @@
           "rawBrutto": 150
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -12005,6 +12573,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 4,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -12046,6 +12615,7 @@
           "rawBrutto": 150
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -12060,6 +12630,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 7,
       "resolvedRows": 7,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -12101,6 +12672,7 @@
           "rawBrutto": 100
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -12115,6 +12687,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -12132,6 +12705,7 @@
           "rawBrutto": 10
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -12146,6 +12720,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -12175,6 +12750,7 @@
           "rawBrutto": 170
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -12189,6 +12765,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -12218,6 +12795,7 @@
           "rawBrutto": 170
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -12232,6 +12810,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -12249,6 +12828,7 @@
           "rawBrutto": 400
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -12263,10 +12843,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "264",
@@ -12292,6 +12874,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -12309,6 +12892,7 @@
           "rawBrutto": 500
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -12323,6 +12907,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -12352,6 +12937,7 @@
           "rawBrutto": 60
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -12366,6 +12952,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -12383,6 +12970,7 @@
           "rawBrutto": 40
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -12397,6 +12985,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -12414,6 +13003,7 @@
           "rawBrutto": 300
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -12428,6 +13018,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -12445,6 +13036,7 @@
           "rawBrutto": 150
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -12459,6 +13051,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -12500,6 +13093,7 @@
           "rawBrutto": 30
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -12514,6 +13108,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -12543,6 +13138,7 @@
           "rawBrutto": 40
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -12557,6 +13153,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 5,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -12598,6 +13195,7 @@
           "rawBrutto": 250
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -12612,6 +13210,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 3,
       "resolvedPrepackRows": 3,
       "suspicious": false,
@@ -12653,6 +13252,7 @@
           "rawBrutto": 35
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -12667,6 +13267,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 3,
       "resolvedPrepackRows": 3,
       "suspicious": false,
@@ -12708,6 +13309,7 @@
           "rawBrutto": 80
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -12722,6 +13324,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 6,
       "resolvedRows": 6,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -12763,6 +13366,7 @@
           "rawBrutto": 5
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -12777,6 +13381,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 6,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -12818,6 +13423,7 @@
           "rawBrutto": 200
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "597",
@@ -12843,6 +13449,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 5,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -12884,6 +13491,7 @@
           "rawBrutto": 30
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -12898,42 +13506,32 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 0,
+      "excludedRows": 3,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
-      "unresolved": [
+      "excluded": [
         {
           "id": "539",
           "type": "ingredient",
           "name": "табак Nur",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1,
-          "reason": "unknown_weight_or_unit"
+          "reason": "non_food"
         },
         {
           "id": "538",
           "type": "ingredient",
           "name": "уголь",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 6,
-          "reason": "unknown_weight_or_unit"
+          "reason": "non_food"
         },
         {
           "id": "537",
           "type": "ingredient",
           "name": "муштук",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 6,
-          "reason": "unknown_weight_or_unit"
+          "reason": "non_food"
         }
-      ]
+      ],
+      "unresolved": []
     },
     {
       "productId": "531",
@@ -12947,6 +13545,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -12976,6 +13575,7 @@
           "rawBrutto": 3
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -12990,6 +13590,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 4,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -13031,6 +13632,7 @@
           "rawBrutto": 10
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -13045,6 +13647,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -13062,6 +13665,7 @@
           "rawBrutto": 200
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -13076,6 +13680,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -13093,6 +13698,7 @@
           "rawBrutto": 15
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -13107,6 +13713,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -13124,6 +13731,7 @@
           "rawBrutto": 10
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -13138,6 +13746,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 2,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -13155,6 +13764,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "564",
@@ -13181,6 +13791,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -13198,6 +13809,7 @@
           "rawBrutto": 250
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -13212,6 +13824,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -13241,6 +13854,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -13255,6 +13869,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -13272,6 +13887,7 @@
           "rawBrutto": 100
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -13286,6 +13902,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 8,
       "resolvedRows": 7,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -13327,6 +13944,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "436",
@@ -13352,6 +13970,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -13369,6 +13988,7 @@
           "rawBrutto": 70
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -13383,6 +14003,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 4,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -13424,6 +14045,7 @@
           "rawBrutto": 40
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -13438,6 +14060,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 7,
       "resolvedRows": 7,
+      "excludedRows": 0,
       "prepackRows": 3,
       "resolvedPrepackRows": 3,
       "suspicious": false,
@@ -13479,6 +14102,7 @@
           "rawBrutto": 70
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -13493,6 +14117,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -13510,6 +14135,7 @@
           "rawBrutto": 5
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -13524,6 +14150,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 10,
       "resolvedRows": 9,
+      "excludedRows": 0,
       "prepackRows": 8,
       "resolvedPrepackRows": 8,
       "suspicious": false,
@@ -13565,6 +14192,7 @@
           "rawBrutto": 150
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "264",
@@ -13590,6 +14218,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 9,
       "resolvedRows": 9,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -13631,6 +14260,7 @@
           "rawBrutto": 40
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -13645,6 +14275,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -13686,6 +14317,7 @@
           "rawBrutto": 15
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -13700,6 +14332,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 7,
       "resolvedRows": 7,
+      "excludedRows": 0,
       "prepackRows": 3,
       "resolvedPrepackRows": 3,
       "suspicious": false,
@@ -13741,6 +14374,7 @@
           "rawBrutto": 0
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -13755,6 +14389,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -13772,6 +14407,7 @@
           "rawBrutto": 150
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -13786,6 +14422,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 5,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -13827,6 +14464,7 @@
           "rawBrutto": 25
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -13841,6 +14479,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 7,
       "resolvedRows": 7,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -13882,6 +14521,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -13896,6 +14536,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -13913,6 +14554,7 @@
           "rawBrutto": 500
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -13927,6 +14569,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 4,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -13968,6 +14611,7 @@
           "rawBrutto": 30
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -13982,6 +14626,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 5,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -14023,6 +14668,7 @@
           "rawBrutto": 20
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -14037,6 +14683,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 4,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -14078,6 +14725,7 @@
           "rawBrutto": 25
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -14092,6 +14740,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 7,
       "resolvedRows": 6,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -14133,6 +14782,7 @@
           "rawBrutto": 100
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "480",
@@ -14158,6 +14808,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -14175,6 +14826,7 @@
           "rawBrutto": 100
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -14189,6 +14841,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -14206,6 +14859,7 @@
           "rawBrutto": 60
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -14220,6 +14874,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -14237,6 +14892,7 @@
           "rawBrutto": 80
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -14251,6 +14907,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -14268,6 +14925,7 @@
           "rawBrutto": 100
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -14282,6 +14940,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -14299,6 +14958,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -14313,6 +14973,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -14330,6 +14991,7 @@
           "rawBrutto": 120
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -14344,6 +15006,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -14361,6 +15024,7 @@
           "rawBrutto": 100
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -14375,6 +15039,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -14392,6 +15057,7 @@
           "rawBrutto": 100
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -14406,6 +15072,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -14423,6 +15090,7 @@
           "rawBrutto": 200
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -14437,6 +15105,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -14454,6 +15123,7 @@
           "rawBrutto": 0
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -14468,6 +15138,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -14497,6 +15168,7 @@
           "rawBrutto": 100
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -14511,6 +15183,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -14528,6 +15201,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -14542,6 +15216,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 4,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 3,
       "resolvedPrepackRows": 3,
       "suspicious": false,
@@ -14583,6 +15258,7 @@
           "rawBrutto": 70
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -14597,6 +15273,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -14626,6 +15303,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -14640,6 +15318,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 7,
       "resolvedRows": 6,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -14681,6 +15360,7 @@
           "rawBrutto": 3
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "492",
@@ -14707,6 +15387,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -14724,6 +15405,7 @@
           "rawBrutto": 80
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -14738,6 +15420,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -14767,6 +15450,7 @@
           "rawBrutto": 10
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -14781,10 +15465,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "292",
@@ -14810,6 +15496,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -14827,6 +15514,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -14841,6 +15529,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -14870,6 +15559,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -14884,10 +15574,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "597",
@@ -14913,6 +15605,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -14930,6 +15623,7 @@
           "rawBrutto": 60
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -14944,6 +15638,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 10,
       "resolvedRows": 9,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -14985,6 +15680,7 @@
           "rawBrutto": 200
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "264",
@@ -15010,6 +15706,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -15027,6 +15724,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -15041,6 +15739,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 5,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -15082,6 +15781,7 @@
           "rawBrutto": 2
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "597",
@@ -15107,6 +15807,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 13,
       "resolvedRows": 13,
+      "excludedRows": 0,
       "prepackRows": 5,
       "resolvedPrepackRows": 5,
       "suspicious": false,
@@ -15148,6 +15849,7 @@
           "rawBrutto": 150
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -15162,6 +15864,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 6,
       "resolvedRows": 6,
+      "excludedRows": 0,
       "prepackRows": 5,
       "resolvedPrepackRows": 5,
       "suspicious": false,
@@ -15203,6 +15906,7 @@
           "rawBrutto": 60
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -15217,6 +15921,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -15246,6 +15951,7 @@
           "rawBrutto": 175
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -15260,6 +15966,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -15301,6 +16008,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -15315,6 +16023,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -15332,6 +16041,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -15346,6 +16056,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 8,
       "resolvedRows": 8,
+      "excludedRows": 0,
       "prepackRows": 4,
       "resolvedPrepackRows": 4,
       "suspicious": false,
@@ -15387,6 +16098,7 @@
           "rawBrutto": 30
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -15401,6 +16113,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 11,
       "resolvedRows": 11,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -15442,6 +16155,7 @@
           "rawBrutto": 60
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -15456,6 +16170,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -15473,6 +16188,7 @@
           "rawBrutto": 30
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -15487,6 +16203,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 6,
       "resolvedRows": 6,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -15528,6 +16245,7 @@
           "rawBrutto": 6
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -15542,6 +16260,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -15559,6 +16278,7 @@
           "rawBrutto": 250
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -15573,6 +16293,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 5,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -15614,6 +16335,7 @@
           "rawBrutto": 40
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "597",
@@ -15639,6 +16361,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -15656,6 +16379,7 @@
           "rawBrutto": 150
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -15670,10 +16394,12 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 0,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
       "topResolvedContributions": [],
+      "excluded": [],
       "unresolved": [
         {
           "id": "105",
@@ -15699,6 +16425,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -15740,6 +16467,7 @@
           "rawBrutto": 15
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -15754,6 +16482,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 3,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -15783,6 +16512,7 @@
           "rawBrutto": 15
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "636",
@@ -15808,6 +16538,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 15,
       "resolvedRows": 15,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -15849,6 +16580,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -15863,6 +16595,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 6,
       "resolvedRows": 6,
+      "excludedRows": 0,
       "prepackRows": 3,
       "resolvedPrepackRows": 3,
       "suspicious": false,
@@ -15904,6 +16637,7 @@
           "rawBrutto": 40
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -15918,6 +16652,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 5,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -15959,6 +16694,7 @@
           "rawBrutto": 100
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -15973,6 +16709,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -15990,6 +16727,7 @@
           "rawBrutto": 5000
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -16004,6 +16742,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -16021,6 +16760,7 @@
           "rawBrutto": 2000
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -16035,6 +16775,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 12,
       "resolvedRows": 12,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -16076,6 +16817,7 @@
           "rawBrutto": 150
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -16090,6 +16832,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 6,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -16131,6 +16874,7 @@
           "rawBrutto": 6
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "436",
@@ -16156,6 +16900,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -16185,6 +16930,7 @@
           "rawBrutto": 12
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -16199,6 +16945,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -16240,6 +16987,7 @@
           "rawBrutto": 120
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -16254,6 +17002,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 12,
       "resolvedRows": 11,
+      "excludedRows": 0,
       "prepackRows": 5,
       "resolvedPrepackRows": 5,
       "suspicious": false,
@@ -16295,6 +17044,7 @@
           "rawBrutto": 35
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "480",
@@ -16320,6 +17070,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 11,
       "resolvedRows": 11,
+      "excludedRows": 0,
       "prepackRows": 8,
       "resolvedPrepackRows": 8,
       "suspicious": false,
@@ -16361,6 +17112,7 @@
           "rawBrutto": 5
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -16375,6 +17127,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 5,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -16416,6 +17169,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -16430,6 +17184,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 5,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -16471,6 +17226,7 @@
           "rawBrutto": 10
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -16485,6 +17241,7 @@
       "displayedAsMinimum": true,
       "recipeRows": 5,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 4,
       "resolvedPrepackRows": 4,
       "suspicious": false,
@@ -16526,6 +17283,7 @@
           "rawBrutto": 20
         }
       ],
+      "excluded": [],
       "unresolved": [
         {
           "id": "566",
@@ -16551,6 +17309,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 14,
       "resolvedRows": 14,
+      "excludedRows": 0,
       "prepackRows": 4,
       "resolvedPrepackRows": 4,
       "suspicious": false,
@@ -16592,6 +17351,7 @@
           "rawBrutto": 180
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -16606,6 +17366,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 5,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 3,
       "resolvedPrepackRows": 3,
       "suspicious": false,
@@ -16647,6 +17408,7 @@
           "rawBrutto": 9
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -16661,6 +17423,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 6,
       "resolvedRows": 6,
+      "excludedRows": 0,
       "prepackRows": 3,
       "resolvedPrepackRows": 3,
       "suspicious": false,
@@ -16702,6 +17465,7 @@
           "rawBrutto": 20
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -16716,6 +17480,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -16757,6 +17522,7 @@
           "rawBrutto": 2
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -16771,6 +17537,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 7,
       "resolvedRows": 7,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -16812,6 +17579,7 @@
           "rawBrutto": 30
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -16826,6 +17594,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 6,
       "resolvedRows": 6,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -16867,6 +17636,7 @@
           "rawBrutto": 100
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -16881,6 +17651,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 2,
       "resolvedRows": 2,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -16910,6 +17681,7 @@
           "rawBrutto": 30
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -16924,6 +17696,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 11,
       "resolvedRows": 11,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -16965,6 +17738,7 @@
           "rawBrutto": 50
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -16979,6 +17753,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 11,
       "resolvedRows": 11,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -17020,6 +17795,7 @@
           "rawBrutto": 40
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -17034,6 +17810,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 5,
       "resolvedRows": 5,
+      "excludedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "suspicious": false,
@@ -17075,6 +17852,7 @@
           "rawBrutto": 250
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -17089,6 +17867,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 7,
       "resolvedRows": 7,
+      "excludedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "suspicious": false,
@@ -17130,6 +17909,7 @@
           "rawBrutto": 25
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -17144,6 +17924,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -17185,6 +17966,7 @@
           "rawBrutto": 5
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -17199,6 +17981,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 4,
       "resolvedRows": 4,
+      "excludedRows": 0,
       "prepackRows": 3,
       "resolvedPrepackRows": 3,
       "suspicious": false,
@@ -17240,6 +18023,7 @@
           "rawBrutto": 70
         }
       ],
+      "excluded": [],
       "unresolved": []
     },
     {
@@ -17254,6 +18038,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 3,
+      "excludedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "suspicious": false,
@@ -17295,6 +18080,7 @@
           "rawBrutto": 5
         }
       ],
+      "excluded": [],
       "unresolved": []
     }
   ]

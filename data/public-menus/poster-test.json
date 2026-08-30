@@ -2,7 +2,7 @@
   "version": 2,
   "source": "firestore_public_menu_snapshot + local_live_poster_nutrition_with_prepacks",
   "restaurantId": "poster-test",
-  "exportedAt": "2026-08-30T11:49:05.292Z",
+  "exportedAt": "2026-08-30T11:57:08.621Z",
   "restaurant": {
     "name": {
       "hy": "Poster Restaurant",
@@ -527,6 +527,7 @@
           "knownGrams": 427.6,
           "recipeGrams": 427.6,
           "matchedIngredients": 6,
+          "excludedIngredients": 0,
           "reviewIngredients": 2,
           "totalIngredients": 8,
           "coverage": 0.75,
@@ -537,7 +538,7 @@
             "carbohydrates": 1.5
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -607,7 +608,7 @@
           "carbohydrates": 23.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -654,7 +655,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -732,6 +733,7 @@
           "knownGrams": 261.6,
           "recipeGrams": 261.6,
           "matchedIngredients": 6,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 7,
           "coverage": 0.8571,
@@ -742,7 +744,7 @@
             "carbohydrates": 8.2
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -817,7 +819,7 @@
           "carbohydrates": 25.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -899,7 +901,7 @@
           "carbohydrates": 48
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -1001,6 +1003,7 @@
           "knownGrams": 107,
           "recipeGrams": 107,
           "matchedIngredients": 9,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 10,
           "coverage": 0.9,
@@ -1011,7 +1014,7 @@
             "carbohydrates": 30.8
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -1080,7 +1083,7 @@
           "carbohydrates": 9.1
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -1142,7 +1145,7 @@
           "carbohydrates": 48
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -1221,7 +1224,7 @@
           "carbohydrates": 0.8
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -1288,7 +1291,7 @@
           "carbohydrates": 9.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -1367,6 +1370,7 @@
           "knownGrams": 2510,
           "recipeGrams": 2510,
           "matchedIngredients": 10,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 11,
           "coverage": 0.9091,
@@ -1377,7 +1381,7 @@
             "carbohydrates": 0.8
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -1419,7 +1423,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -1506,7 +1510,7 @@
           "carbohydrates": 4.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -1587,7 +1591,7 @@
           "carbohydrates": 0.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -1643,7 +1647,7 @@
           "carbohydrates": 4.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -1738,7 +1742,7 @@
           "carbohydrates": 38.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -1791,7 +1795,7 @@
           "carbohydrates": 5.8
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -1856,7 +1860,7 @@
           "carbohydrates": 3.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -1937,6 +1941,7 @@
           "knownGrams": 1466,
           "recipeGrams": 1466,
           "matchedIngredients": 7,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 8,
           "coverage": 0.875,
@@ -1947,7 +1952,7 @@
             "carbohydrates": 1.2
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -2015,7 +2020,7 @@
           "carbohydrates": 2.2
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -2083,7 +2088,7 @@
           "carbohydrates": 2.3
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -2145,7 +2150,7 @@
           "carbohydrates": 2.8
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -2229,7 +2234,7 @@
           "carbohydrates": 2
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -2311,6 +2316,7 @@
           "knownGrams": 582.4,
           "recipeGrams": 582.4,
           "matchedIngredients": 9,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 10,
           "coverage": 0.9,
@@ -2321,7 +2327,7 @@
             "carbohydrates": 4.8
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -2383,7 +2389,7 @@
           "carbohydrates": 13.3
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -2430,7 +2436,7 @@
           "carbohydrates": 10.4
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -2489,7 +2495,7 @@
           "carbohydrates": 22.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -2550,7 +2556,7 @@
           "carbohydrates": 24.9
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -2617,7 +2623,7 @@
           "carbohydrates": 15.2
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -2691,7 +2697,7 @@
           "carbohydrates": 12.4
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -2775,7 +2781,7 @@
           "carbohydrates": 22.9
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -2831,7 +2837,7 @@
           "carbohydrates": 1.3
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -2896,7 +2902,7 @@
           "carbohydrates": 20.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -2939,32 +2945,20 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
-        "partial": {
-          "calories": 129,
-          "protein": 0.3,
-          "fat": 0.1,
-          "carbohydrates": 31.9,
-          "knownGrams": 190,
-          "recipeGrams": 190,
-          "matchedIngredients": 3,
-          "reviewIngredients": 1,
-          "totalIngredients": 4,
-          "coverage": 0.75,
-          "per100g": {
-            "calories": 68,
-            "protein": 0.2,
-            "fat": 0.1,
-            "carbohydrates": 16.8
-          }
+        "status": "calculated",
+        "calories": 129,
+        "protein": 0.3,
+        "fat": 0.1,
+        "carbohydrates": 31.9,
+        "servingGrams": 440,
+        "per100g": {
+          "calories": 29,
+          "protein": 0.1,
+          "fat": 0,
+          "carbohydrates": 7.3
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "partial": null,
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -3050,7 +3044,7 @@
           "carbohydrates": 4.9
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -3135,7 +3129,7 @@
           "carbohydrates": 3.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -3200,7 +3194,7 @@
           "carbohydrates": 0.2
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -3262,7 +3256,7 @@
           "carbohydrates": 3.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -3348,6 +3342,7 @@
           "knownGrams": 333.5,
           "recipeGrams": 333.5,
           "matchedIngredients": 7,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 8,
           "coverage": 0.875,
@@ -3358,7 +3353,7 @@
             "carbohydrates": 3.1
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -3408,7 +3403,7 @@
           "carbohydrates": 4.1
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -3466,6 +3461,7 @@
           "knownGrams": 422,
           "recipeGrams": 422,
           "matchedIngredients": 3,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 4,
           "coverage": 0.75,
@@ -3476,7 +3472,7 @@
             "carbohydrates": 13.4
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -3523,7 +3519,7 @@
           "carbohydrates": 3.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -3600,7 +3596,7 @@
           "carbohydrates": 3.8
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -3661,6 +3657,7 @@
           "knownGrams": 108,
           "recipeGrams": 108,
           "matchedIngredients": 4,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 5,
           "coverage": 0.8,
@@ -3671,7 +3668,7 @@
             "carbohydrates": 17.6
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -3730,7 +3727,7 @@
           "carbohydrates": 9.4
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -3789,7 +3786,7 @@
           "carbohydrates": 15.9
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -3848,7 +3845,7 @@
           "carbohydrates": 0.1
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -3932,7 +3929,7 @@
           "carbohydrates": 2.2
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -3999,6 +3996,7 @@
           "knownGrams": 306,
           "recipeGrams": 306,
           "matchedIngredients": 4,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 5,
           "coverage": 0.8,
@@ -4009,7 +4007,7 @@
             "carbohydrates": 3.2
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -4068,7 +4066,7 @@
           "carbohydrates": 16.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -4141,7 +4139,7 @@
           "carbohydrates": 21.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -4200,7 +4198,7 @@
           "carbohydrates": 18.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -4266,7 +4264,7 @@
           "carbohydrates": 34
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -4350,7 +4348,7 @@
           "carbohydrates": 40.1
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -4428,7 +4426,7 @@
           "carbohydrates": 32.2
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -4505,7 +4503,7 @@
           "carbohydrates": 27.8
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -4572,7 +4570,7 @@
           "carbohydrates": 34.2
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -4619,7 +4617,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -4685,7 +4683,7 @@
           "carbohydrates": 30.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -4768,6 +4766,7 @@
           "knownGrams": 275,
           "recipeGrams": 305,
           "matchedIngredients": 6,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 7,
           "coverage": 0.8571,
@@ -4778,7 +4777,7 @@
             "carbohydrates": 15.3
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -4894,7 +4893,7 @@
           "carbohydrates": 36.8
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -4956,7 +4955,7 @@
           "carbohydrates": 10
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -5009,7 +5008,7 @@
           "carbohydrates": 23.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -5068,7 +5067,7 @@
           "carbohydrates": 11.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -5115,7 +5114,7 @@
           "carbohydrates": 1.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -5188,7 +5187,7 @@
           "carbohydrates": 3.3
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -5236,7 +5235,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -5295,7 +5294,7 @@
           "carbohydrates": 10.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -5343,7 +5342,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -5391,7 +5390,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -5439,7 +5438,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -5487,7 +5486,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -5535,7 +5534,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -5588,7 +5587,7 @@
           "carbohydrates": 44.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -5667,7 +5666,7 @@
           "carbohydrates": 2.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -5715,7 +5714,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -5763,7 +5762,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -5810,7 +5809,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -5857,7 +5856,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -5899,7 +5898,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -5946,7 +5945,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -5993,7 +5992,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -6040,7 +6039,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -6087,7 +6086,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -6152,7 +6151,7 @@
           "carbohydrates": 32
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -6214,7 +6213,7 @@
           "carbohydrates": 11.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -6261,7 +6260,7 @@
           "carbohydrates": 13.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -6317,7 +6316,7 @@
           "carbohydrates": 4.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -6357,15 +6356,20 @@
         }
       ],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
+        "status": "calculated",
+        "calories": 0,
+        "protein": 0,
+        "fat": 0,
+        "carbohydrates": 0,
+        "servingGrams": 330,
+        "per100g": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbohydrates": 0
+        },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -6413,7 +6417,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -6461,7 +6465,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -6508,7 +6512,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -6575,7 +6579,7 @@
           "carbohydrates": 38.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -6623,7 +6627,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -6676,7 +6680,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -6729,7 +6733,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -6776,7 +6780,7 @@
           "carbohydrates": 0.3
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -6829,7 +6833,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -6882,7 +6886,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -6930,7 +6934,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -6983,7 +6987,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -7036,7 +7040,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -7089,7 +7093,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -7142,7 +7146,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -7189,7 +7193,7 @@
           "carbohydrates": 1.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -7237,7 +7241,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -7284,7 +7288,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -7331,7 +7335,7 @@
           "carbohydrates": 0.3
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -7379,7 +7383,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -7432,7 +7436,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -7485,7 +7489,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -7538,7 +7542,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -7591,7 +7595,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -7644,7 +7648,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -7697,7 +7701,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -7745,7 +7749,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -7820,7 +7824,7 @@
           "carbohydrates": 27.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -7868,7 +7872,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -7916,7 +7920,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -7964,7 +7968,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -8012,7 +8016,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -8060,7 +8064,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -8100,32 +8104,20 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
-        "partial": {
+        "status": "calculated",
+        "calories": 0,
+        "protein": 0,
+        "fat": 0,
+        "carbohydrates": 0,
+        "servingGrams": 5,
+        "per100g": {
           "calories": 0,
           "protein": 0,
           "fat": 0,
-          "carbohydrates": 0,
-          "knownGrams": 5,
-          "recipeGrams": 5,
-          "matchedIngredients": 1,
-          "reviewIngredients": 2,
-          "totalIngredients": 3,
-          "coverage": 0.3333,
-          "per100g": {
-            "calories": 0,
-            "protein": 0,
-            "fat": 0,
-            "carbohydrates": 0
-          }
+          "carbohydrates": 0
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "partial": null,
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -8186,7 +8178,7 @@
           "carbohydrates": 0.1
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -8233,7 +8225,7 @@
           "carbohydrates": 26.2
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -8280,7 +8272,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -8327,7 +8319,7 @@
           "carbohydrates": 9.3
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -8386,7 +8378,7 @@
           "carbohydrates": 4.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -8445,7 +8437,7 @@
           "carbohydrates": 36.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -8492,7 +8484,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -8539,7 +8531,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -8586,7 +8578,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -8641,6 +8633,7 @@
           "knownGrams": 80,
           "recipeGrams": 80,
           "matchedIngredients": 2,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 3,
           "coverage": 0.6667000000000001,
@@ -8651,7 +8644,7 @@
             "carbohydrates": 58.2
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -8721,7 +8714,7 @@
           "carbohydrates": 4.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -8768,7 +8761,7 @@
           "carbohydrates": 25.8
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -8821,7 +8814,7 @@
           "carbohydrates": 0.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -8874,7 +8867,7 @@
           "carbohydrates": 5.8
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -8921,7 +8914,7 @@
           "carbohydrates": 82.4
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -8968,7 +8961,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -9021,7 +9014,7 @@
           "carbohydrates": 4.9
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -9068,7 +9061,7 @@
           "carbohydrates": 6.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -9115,7 +9108,7 @@
           "carbohydrates": 31.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -9162,7 +9155,7 @@
           "carbohydrates": 3.3
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -9209,7 +9202,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -9256,7 +9249,7 @@
           "carbohydrates": 1.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -9303,7 +9296,7 @@
           "carbohydrates": 14
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -9350,7 +9343,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -9397,7 +9390,7 @@
           "carbohydrates": 0.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -9450,7 +9443,7 @@
           "carbohydrates": 0.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -9497,7 +9490,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -9550,7 +9543,7 @@
           "carbohydrates": 0.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -9603,7 +9596,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -9671,7 +9664,7 @@
           "carbohydrates": 1.9
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -9727,7 +9720,7 @@
           "carbohydrates": 0.1
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -9780,7 +9773,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -9833,7 +9826,7 @@
           "carbohydrates": 3.2
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -9886,7 +9879,7 @@
           "carbohydrates": 2
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -9939,7 +9932,7 @@
           "carbohydrates": 0.4
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -9992,7 +9985,7 @@
           "carbohydrates": 4.1
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -10039,7 +10032,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -10086,7 +10079,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -10133,7 +10126,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -10186,7 +10179,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -10259,7 +10252,7 @@
           "carbohydrates": 0.1
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -10320,7 +10313,7 @@
           "carbohydrates": 2.9
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -10373,7 +10366,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -10426,7 +10419,7 @@
           "carbohydrates": 4.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -10479,7 +10472,7 @@
           "carbohydrates": 0.1
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -10532,7 +10525,7 @@
           "carbohydrates": 0.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -10585,7 +10578,7 @@
           "carbohydrates": 4.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -10638,7 +10631,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -10688,7 +10681,7 @@
           "carbohydrates": 11.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -10738,7 +10731,7 @@
           "carbohydrates": 10.4
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -10785,7 +10778,7 @@
           "carbohydrates": 9.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -10835,7 +10828,7 @@
           "carbohydrates": 10.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -10885,7 +10878,7 @@
           "carbohydrates": 13.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -10927,7 +10920,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -10980,7 +10973,7 @@
           "carbohydrates": 11.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -11059,6 +11052,7 @@
           "knownGrams": 445,
           "recipeGrams": 445,
           "matchedIngredients": 8,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 9,
           "coverage": 0.8889,
@@ -11069,7 +11063,7 @@
             "carbohydrates": 4.6
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -11154,6 +11148,7 @@
           "knownGrams": 374,
           "recipeGrams": 374,
           "matchedIngredients": 9,
+          "excludedIngredients": 0,
           "reviewIngredients": 2,
           "totalIngredients": 11,
           "coverage": 0.8182,
@@ -11164,7 +11159,7 @@
             "carbohydrates": 9.4
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -11229,7 +11224,7 @@
           "carbohydrates": 15.3
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -11290,6 +11285,7 @@
           "knownGrams": 185,
           "recipeGrams": 185,
           "matchedIngredients": 4,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 5,
           "coverage": 0.8,
@@ -11300,7 +11296,7 @@
             "carbohydrates": 9.8
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -11373,6 +11369,7 @@
           "knownGrams": 435,
           "recipeGrams": 535,
           "matchedIngredients": 8,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 9,
           "coverage": 0.8131,
@@ -11383,7 +11380,7 @@
             "carbohydrates": 5.9
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -11445,7 +11442,7 @@
           "carbohydrates": 3.3
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -11539,7 +11536,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -11581,7 +11578,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -11628,7 +11625,7 @@
           "carbohydrates": 25.2
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -11675,7 +11672,7 @@
           "carbohydrates": 14.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -11722,7 +11719,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -11769,7 +11766,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -11816,7 +11813,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -11863,7 +11860,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -11910,7 +11907,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -11957,7 +11954,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -12004,7 +12001,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -12063,7 +12060,7 @@
           "carbohydrates": 24.8
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -12110,7 +12107,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -12157,7 +12154,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -12204,7 +12201,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -12251,7 +12248,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -12298,7 +12295,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -12345,7 +12342,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -12392,7 +12389,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -12439,7 +12436,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -12486,7 +12483,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -12533,7 +12530,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -12580,7 +12577,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -12627,7 +12624,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -12674,7 +12671,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -12721,7 +12718,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -12768,7 +12765,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -12815,7 +12812,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -12862,7 +12859,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -12909,7 +12906,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -12956,7 +12953,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -13003,7 +13000,7 @@
           "carbohydrates": 6.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -13050,7 +13047,7 @@
           "carbohydrates": 20.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -13097,7 +13094,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -13144,7 +13141,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -13191,7 +13188,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -13238,7 +13235,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -13285,7 +13282,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -13332,7 +13329,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -13379,7 +13376,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -13426,7 +13423,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -13473,7 +13470,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -13520,7 +13517,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -13573,7 +13570,7 @@
           "carbohydrates": 14
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -13620,7 +13617,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -13667,7 +13664,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -13714,7 +13711,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -13761,7 +13758,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -13808,7 +13805,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -13855,7 +13852,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -13902,7 +13899,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -13949,7 +13946,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -13996,7 +13993,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -14043,7 +14040,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -14090,7 +14087,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -14143,7 +14140,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -14190,7 +14187,7 @@
           "carbohydrates": 27
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -14237,7 +14234,7 @@
           "carbohydrates": 44
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -14284,7 +14281,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -14331,7 +14328,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -14378,7 +14375,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -14437,7 +14434,7 @@
           "carbohydrates": 23.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -14508,7 +14505,7 @@
           "carbohydrates": 7.1
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -14576,7 +14573,7 @@
           "carbohydrates": 11
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -14640,6 +14637,7 @@
           "knownGrams": 100,
           "recipeGrams": 100,
           "matchedIngredients": 5,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 6,
           "coverage": 0.8332999999999999,
@@ -14650,7 +14648,7 @@
             "carbohydrates": 1.9
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -14726,7 +14724,7 @@
           "carbohydrates": 5.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -14785,7 +14783,7 @@
           "carbohydrates": 11.4
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -14850,7 +14848,7 @@
           "carbohydrates": 2.2
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -14929,7 +14927,7 @@
           "carbohydrates": 19.8
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -14988,7 +14986,7 @@
           "carbohydrates": 11.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -15041,7 +15039,7 @@
           "carbohydrates": 23.2
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -15094,7 +15092,7 @@
           "carbohydrates": 23.2
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -15150,7 +15148,7 @@
           "carbohydrates": 17.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -15209,7 +15207,7 @@
           "carbohydrates": 9.9
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -15265,7 +15263,7 @@
           "carbohydrates": 10.9
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -15329,6 +15327,7 @@
           "knownGrams": 177,
           "recipeGrams": 177,
           "matchedIngredients": 5,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 6,
           "coverage": 0.8332999999999999,
@@ -15339,7 +15338,7 @@
             "carbohydrates": 15.9
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -15400,6 +15399,7 @@
           "knownGrams": 152,
           "recipeGrams": 152,
           "matchedIngredients": 4,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 5,
           "coverage": 0.8,
@@ -15410,7 +15410,7 @@
             "carbohydrates": 18.1
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -15463,7 +15463,7 @@
           "carbohydrates": 32.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -15530,6 +15530,7 @@
           "knownGrams": 125,
           "recipeGrams": 125,
           "matchedIngredients": 6,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 7,
           "coverage": 0.8571,
@@ -15540,7 +15541,7 @@
             "carbohydrates": 6.2
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -15601,6 +15602,7 @@
           "knownGrams": 122,
           "recipeGrams": 122,
           "matchedIngredients": 4,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 5,
           "coverage": 0.8,
@@ -15611,7 +15613,7 @@
             "carbohydrates": 16.7
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -15669,6 +15671,7 @@
           "knownGrams": 105,
           "recipeGrams": 105,
           "matchedIngredients": 3,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 4,
           "coverage": 0.75,
@@ -15679,7 +15682,7 @@
             "carbohydrates": 22.7
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -15738,7 +15741,7 @@
           "carbohydrates": 10.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -15800,7 +15803,7 @@
           "carbohydrates": 19
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -15853,7 +15856,7 @@
           "carbohydrates": 4.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -15906,7 +15909,7 @@
           "carbohydrates": 39.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -15953,7 +15956,7 @@
           "carbohydrates": 9.3
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -16000,7 +16003,7 @@
           "carbohydrates": 61
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -16047,7 +16050,7 @@
           "carbohydrates": 80
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -16126,7 +16129,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -16168,7 +16171,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -16210,7 +16213,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -16252,7 +16255,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -16325,7 +16328,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -16392,7 +16395,7 @@
           "carbohydrates": 18.9
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -16445,7 +16448,7 @@
           "carbohydrates": 12
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -16504,7 +16507,7 @@
           "carbohydrates": 0.3
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -16560,7 +16563,7 @@
           "carbohydrates": 9.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -16607,7 +16610,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -16663,7 +16666,7 @@
           "carbohydrates": 3.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -16713,7 +16716,7 @@
           "carbohydrates": 34.4
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -16769,7 +16772,7 @@
           "carbohydrates": 12.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -16822,7 +16825,7 @@
           "carbohydrates": 19.9
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -16903,6 +16906,7 @@
           "knownGrams": 400,
           "recipeGrams": 400,
           "matchedIngredients": 7,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 8,
           "coverage": 0.875,
@@ -16913,7 +16917,7 @@
             "carbohydrates": 19.4
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -16960,7 +16964,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -17019,7 +17023,7 @@
           "carbohydrates": 13.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -17081,7 +17085,7 @@
           "carbohydrates": 16.1
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -17143,7 +17147,7 @@
           "carbohydrates": 16.9
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -17205,7 +17209,7 @@
           "carbohydrates": 11.4
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -17286,7 +17290,7 @@
           "carbohydrates": 19.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -17333,7 +17337,7 @@
           "carbohydrates": 1.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -17389,7 +17393,7 @@
           "carbohydrates": 0.1
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -17450,7 +17454,7 @@
           "carbohydrates": 0.1
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -17497,7 +17501,7 @@
           "carbohydrates": 3.9
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -17539,7 +17543,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -17586,7 +17590,7 @@
           "carbohydrates": 3.9
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -17636,7 +17640,7 @@
           "carbohydrates": 4.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -17683,7 +17687,7 @@
           "carbohydrates": 8.8
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -17730,7 +17734,7 @@
           "carbohydrates": 3.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -17809,7 +17813,7 @@
           "carbohydrates": 4.8
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -17868,7 +17872,7 @@
           "carbohydrates": 11.8
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -17929,7 +17933,7 @@
           "carbohydrates": 55
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -17999,7 +18003,7 @@
           "carbohydrates": 2.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -18058,7 +18062,7 @@
           "carbohydrates": 47.4
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -18122,7 +18126,7 @@
           "carbohydrates": 40.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -18184,7 +18188,7 @@
           "carbohydrates": 18.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -18254,6 +18258,7 @@
           "knownGrams": 567,
           "recipeGrams": 567,
           "matchedIngredients": 5,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 6,
           "coverage": 0.8332999999999999,
@@ -18264,7 +18269,7 @@
             "carbohydrates": 4.3
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -18329,7 +18334,7 @@
           "carbohydrates": 19.9
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -18377,7 +18382,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -18427,7 +18432,7 @@
           "carbohydrates": 1.3
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -18483,7 +18488,7 @@
           "carbohydrates": 16.1
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -18530,7 +18535,7 @@
           "carbohydrates": 0.4
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -18577,7 +18582,7 @@
           "carbohydrates": 1.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -18624,7 +18629,7 @@
           "carbohydrates": 1.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -18676,6 +18681,7 @@
           "knownGrams": 50,
           "recipeGrams": 400,
           "matchedIngredients": 1,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 2,
           "coverage": 0.125,
@@ -18686,7 +18692,7 @@
             "carbohydrates": 0
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -18733,7 +18739,7 @@
           "carbohydrates": 14.2
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -18783,7 +18789,7 @@
           "carbohydrates": 18.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -18830,7 +18836,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -18911,6 +18917,7 @@
           "knownGrams": 855,
           "recipeGrams": 855,
           "matchedIngredients": 7,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 8,
           "coverage": 0.875,
@@ -18921,7 +18928,7 @@
             "carbohydrates": 1.5
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -18968,7 +18975,7 @@
           "carbohydrates": 82.4
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -19045,7 +19052,7 @@
           "carbohydrates": 31.8
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -19126,7 +19133,7 @@
           "carbohydrates": 19.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -19173,7 +19180,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -19275,6 +19282,7 @@
           "knownGrams": 810,
           "recipeGrams": 810,
           "matchedIngredients": 9,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 10,
           "coverage": 0.9,
@@ -19285,7 +19293,7 @@
             "carbohydrates": 4.2
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -19367,7 +19375,7 @@
           "carbohydrates": 11.3
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -19426,7 +19434,7 @@
           "carbohydrates": 8.8
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -19491,7 +19499,7 @@
           "carbohydrates": 3.8
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -19538,7 +19546,7 @@
           "carbohydrates": 6.3
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -19603,7 +19611,7 @@
           "carbohydrates": 8.1
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -19668,7 +19676,7 @@
           "carbohydrates": 3.3
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -19715,7 +19723,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -19777,7 +19785,7 @@
           "carbohydrates": 6.4
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -19836,7 +19844,7 @@
           "carbohydrates": 12.8
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -19898,7 +19906,7 @@
           "carbohydrates": 7.4
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -19971,6 +19979,7 @@
           "knownGrams": 520,
           "recipeGrams": 520,
           "matchedIngredients": 6,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 7,
           "coverage": 0.8571,
@@ -19981,7 +19990,7 @@
             "carbohydrates": 13.9
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -20034,7 +20043,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -20087,7 +20096,7 @@
           "carbohydrates": 54.4
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -20134,7 +20143,7 @@
           "carbohydrates": 18.9
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -20187,7 +20196,7 @@
           "carbohydrates": 2.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -20234,7 +20243,7 @@
           "carbohydrates": 2.9
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -20281,7 +20290,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -20334,7 +20343,7 @@
           "carbohydrates": 2.8
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -20387,7 +20396,7 @@
           "carbohydrates": 41.9
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -20434,7 +20443,7 @@
           "carbohydrates": 17.8
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -20487,7 +20496,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -20543,7 +20552,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -20590,7 +20599,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -20662,7 +20671,7 @@
           "carbohydrates": 48.4
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -20712,7 +20721,7 @@
           "carbohydrates": 0.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -20790,6 +20799,7 @@
           "knownGrams": 212,
           "recipeGrams": 362,
           "matchedIngredients": 6,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 7,
           "coverage": 0.5856,
@@ -20800,7 +20810,7 @@
             "carbohydrates": 3.7
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -20853,7 +20863,7 @@
           "carbohydrates": 28.3
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -20909,7 +20919,7 @@
           "carbohydrates": 4.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -20957,7 +20967,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -21010,7 +21020,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -21066,7 +21076,7 @@
           "carbohydrates": 0.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -21114,7 +21124,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -21161,7 +21171,7 @@
           "carbohydrates": 68.9
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -21237,6 +21247,7 @@
           "knownGrams": 2500,
           "recipeGrams": 2500,
           "matchedIngredients": 9,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 10,
           "coverage": 0.9,
@@ -21247,7 +21258,7 @@
             "carbohydrates": 0.8
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -21294,7 +21305,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -21361,6 +21372,7 @@
           "knownGrams": 170,
           "recipeGrams": 170,
           "matchedIngredients": 4,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 5,
           "coverage": 0.8,
@@ -21371,7 +21383,7 @@
             "carbohydrates": 10.2
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -21465,7 +21477,7 @@
           "carbohydrates": 3.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -21538,7 +21550,7 @@
           "carbohydrates": 42.2
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -21588,7 +21600,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -21652,7 +21664,7 @@
           "carbohydrates": 32.2
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -21699,7 +21711,7 @@
           "carbohydrates": 0.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -21783,7 +21795,7 @@
           "carbohydrates": 13.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -21871,7 +21883,7 @@
           "carbohydrates": 3.9
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -21918,7 +21930,7 @@
           "carbohydrates": 43.3
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -21996,7 +22008,7 @@
           "carbohydrates": 36.8
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -22069,7 +22081,7 @@
           "carbohydrates": 7.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -22156,6 +22168,7 @@
           "knownGrams": 400,
           "recipeGrams": 400,
           "matchedIngredients": 4,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 5,
           "coverage": 0.8,
@@ -22166,7 +22179,7 @@
             "carbohydrates": 1.4
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -22239,7 +22252,7 @@
           "carbohydrates": 14.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -22287,7 +22300,7 @@
         "servingGrams": null,
         "per100g": null,
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -22351,7 +22364,7 @@
           "carbohydrates": 33.9
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -22422,6 +22435,7 @@
           "knownGrams": 115,
           "recipeGrams": 115,
           "matchedIngredients": 2,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 3,
           "coverage": 0.6667000000000001,
@@ -22432,7 +22446,7 @@
             "carbohydrates": 44.3
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -22542,7 +22556,7 @@
           "carbohydrates": 5.1
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -22610,7 +22624,7 @@
           "carbohydrates": 1.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -22680,7 +22694,7 @@
           "carbohydrates": 2.2
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -22727,7 +22741,7 @@
           "carbohydrates": 7.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -22774,7 +22788,7 @@
           "carbohydrates": 0
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -22870,7 +22884,7 @@
           "carbohydrates": 5.9
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -22950,6 +22964,7 @@
           "knownGrams": 1745.4,
           "recipeGrams": 1745.4,
           "matchedIngredients": 5,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 6,
           "coverage": 0.8332999999999999,
@@ -22960,7 +22975,7 @@
             "carbohydrates": 64
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -23016,7 +23031,7 @@
           "carbohydrates": 21.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -23080,7 +23095,7 @@
           "carbohydrates": 8.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -23173,6 +23188,7 @@
           "knownGrams": 366.4,
           "recipeGrams": 366.4,
           "matchedIngredients": 11,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 12,
           "coverage": 0.9167000000000001,
@@ -23183,7 +23199,7 @@
             "carbohydrates": 5.3
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -23266,7 +23282,7 @@
           "carbohydrates": 7.3
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -23341,7 +23357,7 @@
           "carbohydrates": 5.2
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -23416,7 +23432,7 @@
           "carbohydrates": 26.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -23493,6 +23509,7 @@
           "knownGrams": 125,
           "recipeGrams": 125,
           "matchedIngredients": 4,
+          "excludedIngredients": 0,
           "reviewIngredients": 1,
           "totalIngredients": 5,
           "coverage": 0.8,
@@ -23503,7 +23520,7 @@
             "carbohydrates": 42.7
           }
         },
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -23595,7 +23612,7 @@
           "carbohydrates": 6.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -23670,7 +23687,7 @@
           "carbohydrates": 49.2
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -23743,7 +23760,7 @@
           "carbohydrates": 10.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -23796,7 +23813,7 @@
           "carbohydrates": 8.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -23872,7 +23889,7 @@
           "carbohydrates": 1.8
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -23940,7 +23957,7 @@
           "carbohydrates": 0.8
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -23996,7 +24013,7 @@
           "carbohydrates": 1
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -24089,7 +24106,7 @@
           "carbohydrates": 9.1
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -24177,7 +24194,7 @@
           "carbohydrates": 14.6
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -24236,7 +24253,7 @@
           "carbohydrates": 1.7
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -24301,7 +24318,7 @@
           "carbohydrates": 14.9
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -24370,7 +24387,7 @@
           "carbohydrates": 44.1
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -24442,7 +24459,7 @@
           "carbohydrates": 27.5
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     },
@@ -24501,7 +24518,7 @@
           "carbohydrates": 27.1
         },
         "partial": null,
-        "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
+        "source": "CIA verified ingredients + reviewed USDA overrides + deterministic unit rules + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
     }

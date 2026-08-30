@@ -1,13 +1,13 @@
 {
   "version": "1.1.0",
   "restaurantId": "poster-test",
-  "sourceGeneratedAt": "2026-08-30T11:49:05.281Z",
-  "generatedAt": "2026-08-30T11:50:59.162Z",
+  "sourceGeneratedAt": "2026-08-30T11:57:08.613Z",
+  "generatedAt": "2026-08-30T11:57:08.668Z",
   "productsWithRecipe": 407,
-  "fullyCalculatedCount": 334,
-  "unresolvedCount": 73,
+  "fullyCalculatedCount": 337,
+  "unresolvedCount": 70,
   "byStatus": {
-    "needs_review": 73
+    "needs_review": 70
   },
   "products": [
     {
@@ -192,31 +192,6 @@
           "ingredientUnit": "p",
           "rawNetto": 0,
           "rawBrutto": 1
-        }
-      ]
-    },
-    {
-      "productId": "161",
-      "name": {
-        "hy": "լիմոնադ Մանգո+ մարակույա",
-        "ru": "Лимонад манго-маракуйя",
-        "en": "Mango & Passion Fruit Lemonade"
-      },
-      "status": "needs_review",
-      "displayedCalories": 129,
-      "displayedAsMinimum": true,
-      "recipeRows": 4,
-      "resolvedRows": 3,
-      "unresolved": [
-        {
-          "id": "296",
-          "type": "ingredient",
-          "name": "Натуральные соки /0,25/",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 0
         }
       ]
     },
@@ -571,31 +546,6 @@
       ]
     },
     {
-      "productId": "231",
-      "name": {
-        "hy": "Գարեջուր Krombacher",
-        "ru": "Пиво Krombacher",
-        "en": "Krombacher Beer"
-      },
-      "status": "needs_review",
-      "displayedCalories": null,
-      "displayedAsMinimum": false,
-      "recipeRows": 1,
-      "resolvedRows": 0,
-      "unresolved": [
-        {
-          "id": "119",
-          "type": "ingredient",
-          "name": "Krombacher 0.33",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        }
-      ]
-    },
-    {
       "productId": "232",
       "name": {
         "hy": "Գարեջուր Dargett",
@@ -892,41 +842,6 @@
           "ingredientUnit": "p",
           "rawNetto": 0,
           "rawBrutto": 1
-        }
-      ]
-    },
-    {
-      "productId": "278",
-      "name": {
-        "hy": "կոկտեյլ դասական",
-        "ru": "Классический коктейль",
-        "en": "Classic Cocktail"
-      },
-      "status": "needs_review",
-      "displayedCalories": 0,
-      "displayedAsMinimum": true,
-      "recipeRows": 3,
-      "resolvedRows": 1,
-      "unresolved": [
-        {
-          "id": "537",
-          "type": "ingredient",
-          "name": "муштук",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 6
-        },
-        {
-          "id": "538",
-          "type": "ingredient",
-          "name": "уголь",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 6
         }
       ]
     },
@@ -1452,38 +1367,7 @@
       "displayedAsMinimum": false,
       "recipeRows": 3,
       "resolvedRows": 0,
-      "unresolved": [
-        {
-          "id": "539",
-          "type": "ingredient",
-          "name": "табак Nur",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        },
-        {
-          "id": "538",
-          "type": "ingredient",
-          "name": "уголь",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 6
-        },
-        {
-          "id": "537",
-          "type": "ingredient",
-          "name": "муштук",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 6
-        }
-      ]
+      "unresolved": []
     },
     {
       "productId": "56",

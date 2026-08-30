@@ -5,6 +5,7 @@ const root = path.join(__dirname, '..');
 const limit = Number(process.env.CIA_PRIORITY_LIMIT || 500);
 const priorityPath = path.join(root, 'data', process.env.CIA_PRIORITY_FILE || `cia-nutrition-priority-top${limit}.json`);
 const manualPath = path.join(root, 'data', process.env.CIA_MANUAL_FILE || 'cia-nutrition-manual-top20.json');
+const verifiedOverridesPath = path.join(root, 'data', process.env.CIA_VERIFIED_OVERRIDES_FILE || 'cia-nutrition-verified-overrides.json');
 const outPath = path.join(root, 'data', process.env.CIA_RESEARCH_FILE || 'cia-nutrition-research-queue.json');
 
 function readJson(file, fallback = null) {
@@ -54,16 +55,16 @@ function hasPossibleAliasCollision(entry) {
 
 const NON_FOOD = /(уголь|табак|муштук|мундштук|coal|charcoal|tobacco|hookah)/i;
 const PREPARED = /(соус|крем|начинка|тесто|печенье|борщ|брауни|буженина|рулет|пюре|желато|морожен|салат|суп|джем|варень|глазур|маринованн.*овощ|каурма|дзадзики|ким\s*чи|сорбе|сосиск|тост|котлет|наггет|паштет|медовик|муравейник|безе|торт|чизкейк|фондан|харчо|харриса|спас|суджух|паста из перца|запеченн|вяленн|засахаренн|морс|компот|сцежанн|настойка фруктового чая|кофе восточн|кофе парижск)/i;
-const BRAND = /(monin|parmalat|ponti|caravella|fever.?tree|arcolad|gurme|red\s*bull|ред\s*булл|nutella|нутелла|perrier|перриер)/i;
+const BRAND = /(monin|parmalat|ponti|caravella|fever.?tree|arcolad|gurme|red\s*bull|ред\s*булл|nutella|нутелла|perrier|перриер|tabasco|табаско)/i;
 const ALCOHOL_BRAND = /(havana club|absolut|aperol|baileys|bombay|campari|grey goose|jameson|karas|koor|onegin|st\.?germain|takar|bacardi|ballantine|becherovka|beluga|chivas|corona|dargett|don julio|glenfiddich|hendrick|hennessy|jack daniel|jagermeister|malibu|mo[eë]t|patron|roku|sambuka|glenlivet|macallan|zonin|zorah|olmega|olmeca|beefeter|beefeater|cointreau|kahlua|martini|chistie\s*rosi|akhtamar|dvin|nairi|ohanyan|vaspurakan|jim\s*beam|jin\s*beam|keush|krombacher|piccini|attems|tariri|monkey\s*47)/i;
 const ALCOHOL = /(водка|вино\b|ром\b|джин\b|виски|текил|ликер|liqueur|liquor|brandy|бренди|коньяк|prosecco|brut\b|pinot\s+grigio|absent|absinthe|cachaca|calvados|sambuka|whisky|whiskey|gin\b|rum\b|vodka|wine\b|beer\b|пиво\b|хреновух)/i;
 
-function classify(entry, manualEntry) {
+function classify(entry, verifiedEntry) {
   const text = [entry.name, ...(entry.aliases || [])].join(' | ');
   // Source-name collisions always win over a previously verified value.
   // A Poster ID that points to multiple unrelated foods must never auto-pass.
   if (hasPossibleAliasCollision(entry)) return 'source_collision';
-  if (manualEntry?.verified === true) return 'verified';
+  if (verifiedEntry?.verified === true) return 'verified';
   if (NON_FOOD.test(text)) return 'non_food';
   // Alcohol brands must be classified as alcohol regardless of whether Poster
   // stores the recipe unit as ml, g or p (whole bottle/piece).
@@ -112,11 +113,15 @@ function researchPlan(kind, entry) {
 if (!fs.existsSync(priorityPath)) throw new Error(`Missing priority file: ${priorityPath}`);
 const priority = readJson(priorityPath, { entries: [] });
 const manual = readJson(manualPath, { entries: [] });
-const manualById = new Map((manual.entries || []).map(entry => [String(entry.id), entry]));
+const verifiedOverrides = readJson(verifiedOverridesPath, { entries: [] });
+const verifiedById = new Map();
+for (const entry of [...(manual.entries || []), ...(verifiedOverrides.entries || [])]) {
+  if (entry?.verified === true) verifiedById.set(String(entry.id), entry);
+}
 
 const queue = (priority.entries || []).map(entry => {
-  const manualEntry = manualById.get(String(entry.id));
-  const kind = classify(entry, manualEntry);
+  const verifiedEntry = verifiedById.get(String(entry.id));
+  const kind = classify(entry, verifiedEntry);
   return {
     priority: entry.priority,
     id: entry.id,
@@ -126,7 +131,7 @@ const queue = (priority.entries || []).map(entry => {
     units: entry.units || [],
     usedInProductCount: entry.usedInProductCount || 0,
     analysisStatus: entry.analysisStatus || 'unknown',
-    verified: manualEntry?.verified === true,
+    verified: verifiedEntry?.verified === true,
     kind,
     ...researchPlan(kind, entry)
   };
@@ -137,7 +142,7 @@ for (const item of queue) counts[item.kind] = (counts[item.kind] || 0) + 1;
 
 const output = {
   version: '1.0.0',
-  restaurantId: priority.restaurantId || manual.restaurantId || 'poster-test',
+  restaurantId: priority.restaurantId || manual.restaurantId || verifiedOverrides.restaurantId || 'poster-test',
   source: path.basename(priorityPath),
   total: queue.length,
   counts,
@@ -155,5 +160,6 @@ const output = {
 fs.writeFileSync(outPath, JSON.stringify(output, null, 2) + '\n');
 console.log(`[CIA Nutrition Research] source: ${path.basename(priorityPath)}`);
 console.log(`[CIA Nutrition Research] total: ${queue.length}`);
+console.log(`[CIA Nutrition Research] verified sources: manual=${(manual.entries || []).filter(e => e?.verified === true).length}; overrides=${(verifiedOverrides.entries || []).filter(e => e?.verified === true).length}`);
 console.log(`[CIA Nutrition Research] counts: ${JSON.stringify(counts)}`);
 console.log(`[CIA Nutrition Research] output: ${outPath}`);

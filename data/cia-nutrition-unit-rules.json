@@ -1,10 +1,30 @@
 {
-  "version": "1.0.1",
-  "description": "Operator-reviewed unit rules. Only deterministic mappings belong here; do not add guessed average piece weights.",
+  "version": "1.1.0",
+  "description": "Operator-reviewed nutrition scope and deterministic unit rules. Alcohol and non-food menu items are outside nutrition coverage; do not add guessed average piece weights.",
   "excludedIngredientIds": {
     "537": { "name": "муштук", "reason": "non_food" },
     "538": { "name": "уголь", "reason": "non_food" },
     "539": { "name": "табак Nur", "reason": "non_food" }
+  },
+  "excludedCategoryIds": {
+    "22": { "name": "Вино 150 мл", "reason": "alcohol_out_of_scope" },
+    "25": { "name": "Пиво", "reason": "alcohol_out_of_scope" },
+    "26": { "name": "Алкогольные напитки", "reason": "alcohol_out_of_scope" },
+    "27": { "name": "Аперитивы", "reason": "alcohol_out_of_scope" },
+    "28": { "name": "Джин", "reason": "alcohol_out_of_scope" },
+    "29": { "name": "Ром", "reason": "alcohol_out_of_scope" },
+    "30": { "name": "Текила", "reason": "alcohol_out_of_scope" },
+    "32": { "name": "Виски", "reason": "alcohol_out_of_scope" },
+    "33": { "name": "Бренди и коньяк", "reason": "alcohol_out_of_scope" },
+    "34": { "name": "Алкогольные коктейли", "reason": "alcohol_out_of_scope" },
+    "37": { "name": "Шампанское", "reason": "alcohol_out_of_scope" },
+    "39": { "name": "Розовое вино", "reason": "alcohol_out_of_scope" },
+    "40": { "name": "Белое вино", "reason": "alcohol_out_of_scope" },
+    "41": { "name": "Красное вино", "reason": "alcohol_out_of_scope" },
+    "50": { "name": "Алкогольные", "reason": "alcohol_out_of_scope" },
+    "52": { "name": "Водка — 1 бутылка", "reason": "alcohol_out_of_scope" },
+    "53": { "name": "Водка 50 мл", "reason": "alcohol_out_of_scope" },
+    "54": { "name": "Ликёр", "reason": "alcohol_out_of_scope" }
   },
   "pieceWeightGramsByIngredientId": {
     "296": { "name": "Натуральные соки /0,25/", "grams": 250, "basis": "package size encoded in Poster ingredient name: 0.25 L" }

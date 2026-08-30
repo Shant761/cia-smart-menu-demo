@@ -1,0 +1,59 @@
+name: Recalculate Poster Test Dishes With Prepacks
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/recalculate-snapshot-with-prepacks.cjs'
+      - 'data/poster-test-prepack-nutrition.json'
+      - 'data/cia-nutrition-manual-top20.json'
+      - 'data/cia-nutrition-research-queue.json'
+      - '.github/workflows/recalculate-poster-test-dishes-with-prepacks.yml'
+  workflow_dispatch:
+
+jobs:
+  recalculate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      CIA_RESTAURANT_ID: poster-test
+      POSTER_ACCESS_TOKEN: ${{ secrets.POSTER_TOKEN || secrets.POSTER_ACCESS_TOKEN }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate dish recalculator
+        run: node --check scripts/recalculate-snapshot-with-prepacks.cjs
+
+      - name: Verify poster-test token
+        run: |
+          test -n "$POSTER_ACCESS_TOKEN" || {
+            echo 'Missing POSTER_TOKEN / POSTER_ACCESS_TOKEN for poster-test'
+            exit 1
+          }
+
+      - name: Recalculate all dish nutrition with prepack tech cards
+        run: node scripts/recalculate-snapshot-with-prepacks.cjs
+
+      - name: Commit recalculated dish snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/public-menus/poster-test.json data/poster-test-dish-nutrition-summary.json
+          if git diff --cached --quiet; then
+            echo "No dish nutrition changes."
+          else
+            git commit -m "chore: recalculate poster-test dishes with prepacks"
+            git pull --rebase --autostash origin main
+            git push
+          fi

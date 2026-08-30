@@ -12,7 +12,6 @@ on:
       - 'data/poster-test-preparations.json'
       - 'data/cia-nutrition-manual-top20.json'
       - 'data/cia-nutrition-verified-overrides.json'
-      - 'data/cia-nutrition-research-queue.json'
       - '.github/workflows/recalculate-poster-test-dishes-with-prepacks.yml'
   workflow_dispatch:
 

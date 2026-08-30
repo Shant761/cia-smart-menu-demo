@@ -1,26 +1,9 @@
 {
   "version": "1.0.0",
   "source": "data/cia-nutrition-research-queue.json",
-  "remainingGenericCount": 96,
+  "remainingGenericCount": 81,
   "count": 50,
   "candidates": [
-    {
-      "priority": 103,
-      "id": "poster_197",
-      "posterIngredientId": "197",
-      "name": "Говядина /մեջքամիս/",
-      "aliases": [
-        "Говядина /մեջքամիս/"
-      ],
-      "units": [
-        "g"
-      ],
-      "usedInProductCount": 3,
-      "searchQueries": [
-        "Говядина /մեջքամիս/ USDA FoodData Central",
-        "Говядина /մեջքամիս/ calories kcal 100g"
-      ]
-    },
     {
       "priority": 107,
       "id": "poster_68",
@@ -36,23 +19,6 @@
       "searchQueries": [
         "Каламата USDA FoodData Central",
         "Каламата calories kcal 100g"
-      ]
-    },
-    {
-      "priority": 109,
-      "id": "poster_512",
-      "posterIngredientId": "512",
-      "name": "картофель очищенный",
-      "aliases": [
-        "картофель очищенный"
-      ],
-      "units": [
-        "g"
-      ],
-      "usedInProductCount": 3,
-      "searchQueries": [
-        "картофель очищенный USDA FoodData Central",
-        "картофель очищенный calories kcal 100g"
       ]
     },
     {
@@ -104,40 +70,6 @@
       "searchQueries": [
         "Нашараб USDA FoodData Central",
         "Нашараб calories kcal 100g"
-      ]
-    },
-    {
-      "priority": 129,
-      "id": "poster_500",
-      "posterIngredientId": "500",
-      "name": "сало",
-      "aliases": [
-        "сало"
-      ],
-      "units": [
-        "g"
-      ],
-      "usedInProductCount": 3,
-      "searchQueries": [
-        "сало USDA FoodData Central",
-        "сало calories kcal 100g"
-      ]
-    },
-    {
-      "priority": 131,
-      "id": "poster_202",
-      "posterIngredientId": "202",
-      "name": "Свиное каре /չալաղաջ/",
-      "aliases": [
-        "Свиное каре /չալաղաջ/"
-      ],
-      "units": [
-        "g"
-      ],
-      "usedInProductCount": 3,
-      "searchQueries": [
-        "Свиное каре /չալաղաջ/ USDA FoodData Central",
-        "Свиное каре /չալաղաջ/ calories kcal 100g"
       ]
     },
     {
@@ -243,57 +175,6 @@
       ]
     },
     {
-      "priority": 165,
-      "id": "poster_206",
-      "posterIngredientId": "206",
-      "name": "Баранина /մատ/",
-      "aliases": [
-        "Баранина /մատ/"
-      ],
-      "units": [
-        "g"
-      ],
-      "usedInProductCount": 2,
-      "searchQueries": [
-        "Баранина /մատ/ USDA FoodData Central",
-        "Баранина /մատ/ calories kcal 100g"
-      ]
-    },
-    {
-      "priority": 166,
-      "id": "poster_205",
-      "posterIngredientId": "205",
-      "name": "Баранина /չալաղաջ/",
-      "aliases": [
-        "Баранина /չալաղաջ/"
-      ],
-      "units": [
-        "g"
-      ],
-      "usedInProductCount": 2,
-      "searchQueries": [
-        "Баранина /չալաղաջ/ USDA FoodData Central",
-        "Баранина /չալաղաջ/ calories kcal 100g"
-      ]
-    },
-    {
-      "priority": 169,
-      "id": "poster_65",
-      "posterIngredientId": "65",
-      "name": "Виноградные листья",
-      "aliases": [
-        "Виноградные листья"
-      ],
-      "units": [
-        "g"
-      ],
-      "usedInProductCount": 2,
-      "searchQueries": [
-        "Виноградные листья USDA FoodData Central",
-        "Виноградные листья calories kcal 100g"
-      ]
-    },
-    {
       "priority": 170,
       "id": "poster_66",
       "posterIngredientId": "66",
@@ -379,23 +260,6 @@
       ]
     },
     {
-      "priority": 191,
-      "id": "poster_160",
-      "posterIngredientId": "160",
-      "name": "Моцарелла",
-      "aliases": [
-        "Моцарелла"
-      ],
-      "units": [
-        "g"
-      ],
-      "usedInProductCount": 2,
-      "searchQueries": [
-        "Моцарелла USDA FoodData Central",
-        "Моцарелла calories kcal 100g"
-      ]
-    },
-    {
       "priority": 193,
       "id": "poster_650",
       "posterIngredientId": "650",
@@ -464,40 +328,6 @@
       ]
     },
     {
-      "priority": 203,
-      "id": "poster_58",
-      "posterIngredientId": "58",
-      "name": "помидоры запеченные",
-      "aliases": [
-        "помидоры запеченные"
-      ],
-      "units": [
-        "g"
-      ],
-      "usedInProductCount": 2,
-      "searchQueries": [
-        "помидоры запеченные USDA FoodData Central",
-        "помидоры запеченные calories kcal 100g"
-      ]
-    },
-    {
-      "priority": 207,
-      "id": "poster_201",
-      "posterIngredientId": "201",
-      "name": "Свинина",
-      "aliases": [
-        "Свинина"
-      ],
-      "units": [
-        "g"
-      ],
-      "usedInProductCount": 2,
-      "searchQueries": [
-        "Свинина USDA FoodData Central",
-        "Свинина calories kcal 100g"
-      ]
-    },
-    {
       "priority": 214,
       "id": "poster_165",
       "posterIngredientId": "165",
@@ -529,40 +359,6 @@
       "searchQueries": [
         "табаско USDA FoodData Central",
         "табаско calories kcal 100g"
-      ]
-    },
-    {
-      "priority": 219,
-      "id": "poster_301",
-      "posterIngredientId": "301",
-      "name": "тоник",
-      "aliases": [
-        "тоник"
-      ],
-      "units": [
-        "p"
-      ],
-      "usedInProductCount": 2,
-      "searchQueries": [
-        "тоник USDA FoodData Central",
-        "тоник calories kcal 100g"
-      ]
-    },
-    {
-      "priority": 221,
-      "id": "poster_306",
-      "posterIngredientId": "306",
-      "name": "Цыпленок",
-      "aliases": [
-        "Цыпленок"
-      ],
-      "units": [
-        "p"
-      ],
-      "usedInProductCount": 2,
-      "searchQueries": [
-        "Цыпленок USDA FoodData Central",
-        "Цыпленок calories kcal 100g"
       ]
     },
     {
@@ -852,6 +648,210 @@
       "searchQueries": [
         "Vaspurakan USDA FoodData Central",
         "Vaspurakan calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 284,
+      "id": "poster_601",
+      "posterIngredientId": "601",
+      "name": "аришта/тальятелле",
+      "aliases": [
+        "аришта/тальятелле"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "аришта/тальятелле USDA FoodData Central",
+        "аришта/тальятелле calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 285,
+      "id": "poster_316",
+      "posterIngredientId": "316",
+      "name": "Барбарис",
+      "aliases": [
+        "Барбарис"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Барбарис USDA FoodData Central",
+        "Барбарис calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 297,
+      "id": "poster_171",
+      "posterIngredientId": "171",
+      "name": "Греческий йогурт",
+      "aliases": [
+        "Греческий йогурт"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Греческий йогурт USDA FoodData Central",
+        "Греческий йогурт calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 300,
+      "id": "poster_741",
+      "posterIngredientId": "741",
+      "name": "засахаренный персик",
+      "aliases": [
+        "засахаренный персик"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "засахаренный персик USDA FoodData Central",
+        "засахаренный персик calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 301,
+      "id": "poster_207",
+      "posterIngredientId": "207",
+      "name": "Зелень для жингала",
+      "aliases": [
+        "Зелень для жингала"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Зелень для жингала USDA FoodData Central",
+        "Зелень для жингала calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 306,
+      "id": "poster_292",
+      "posterIngredientId": "292",
+      "name": "Квас",
+      "aliases": [
+        "Квас"
+      ],
+      "units": [
+        "p"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Квас USDA FoodData Central",
+        "Квас calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 310,
+      "id": "poster_651",
+      "posterIngredientId": "651",
+      "name": "клюквенный морс",
+      "aliases": [
+        "клюквенный морс"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "клюквенный морс USDA FoodData Central",
+        "клюквенный морс calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 311,
+      "id": "poster_294",
+      "posterIngredientId": "294",
+      "name": "Компот",
+      "aliases": [
+        "Компот"
+      ],
+      "units": [
+        "p"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Компот USDA FoodData Central",
+        "Компот calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 315,
+      "id": "poster_255",
+      "posterIngredientId": "255",
+      "name": "кофе восточное",
+      "aliases": [
+        "кофе восточное"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "кофе восточное USDA FoodData Central",
+        "кофе восточное calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 316,
+      "id": "poster_257",
+      "posterIngredientId": "257",
+      "name": "кофе парижское",
+      "aliases": [
+        "кофе парижское"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "кофе парижское USDA FoodData Central",
+        "кофе парижское calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 322,
+      "id": "poster_41",
+      "posterIngredientId": "41",
+      "name": "Крисп",
+      "aliases": [
+        "Крисп"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Крисп USDA FoodData Central",
+        "Крисп calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 334,
+      "id": "poster_174",
+      "posterIngredientId": "174",
+      "name": "Мацони сцежанный",
+      "aliases": [
+        "Мацони сцежанный"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Мацони сцежанный USDA FoodData Central",
+        "Мацони сцежанный calories kcal 100g"
       ]
     }
   ]

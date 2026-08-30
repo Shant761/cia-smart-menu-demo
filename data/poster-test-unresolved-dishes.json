@@ -1,0 +1,1878 @@
+{
+  "version": "1.0.0",
+  "restaurantId": "poster-test",
+  "sourceGeneratedAt": "2026-08-30T11:47:40.677Z",
+  "generatedAt": "2026-08-30T11:47:40.741Z",
+  "productsWithRecipe": 407,
+  "fullyCalculatedCount": 334,
+  "unresolvedCount": 73,
+  "byStatus": {
+    "needs_review": 73
+  },
+  "products": [
+    {
+      "productId": "10",
+      "name": {
+        "hy": "Անգլիական նախաճաշ",
+        "ru": "Английский завтрак",
+        "en": "English Breakfast"
+      },
+      "status": "needs_review",
+      "displayedCalories": 541,
+      "displayedAsMinimum": true,
+      "recipeRows": 8,
+      "resolvedRows": 6,
+      "unresolved": [
+        {
+          "id": "532",
+          "type": "ingredient",
+          "name": "тосты",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        },
+        {
+          "id": "191",
+          "type": "ingredient",
+          "name": "Сосиски с беконом",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 2
+        }
+      ]
+    },
+    {
+      "productId": "11",
+      "name": {
+        "hy": "Ձվածեղ նռով պիտա հացի մեջ",
+        "ru": "Омлет с гранатом в пите",
+        "en": "Omelet with Pomegranate in Pita Bread"
+      },
+      "status": "needs_review",
+      "displayedCalories": 507,
+      "displayedAsMinimum": true,
+      "recipeRows": 7,
+      "resolvedRows": 6,
+      "unresolved": [
+        {
+          "id": "597",
+          "type": "ingredient",
+          "name": "пита",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "117",
+      "name": {
+        "hy": "Մարոկյան անանուխ",
+        "ru": "Марокканская мята",
+        "en": "Moroccan Mint"
+      },
+      "status": "needs_review",
+      "displayedCalories": 130,
+      "displayedAsMinimum": true,
+      "recipeRows": 10,
+      "resolvedRows": 9,
+      "unresolved": [
+        {
+          "id": "436",
+          "type": "ingredient",
+          "name": "Лимон",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 0
+        }
+      ]
+    },
+    {
+      "productId": "124",
+      "name": {
+        "hy": "Մսային միքս",
+        "ru": "Мясной микс",
+        "en": "Meat Mix"
+      },
+      "status": "needs_review",
+      "displayedCalories": 4685,
+      "displayedAsMinimum": true,
+      "recipeRows": 11,
+      "resolvedRows": 10,
+      "unresolved": [
+        {
+          "id": "264",
+          "type": "ingredient",
+          "name": "острый перец",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "125",
+      "name": {
+        "hy": "Խրենավուխա",
+        "ru": "Хреновуха",
+        "en": "Horseradish Vodka"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "657",
+          "type": "prepack",
+          "name": "хреновуха",
+          "reason": "prepack_nutrition_unresolved",
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "rawNetto": 50,
+          "rawBrutto": 50
+        }
+      ]
+    },
+    {
+      "productId": "138",
+      "name": {
+        "hy": "Ստերլետ խորոված",
+        "ru": "Стерлядь на гриле",
+        "en": "Grilled Sterlet"
+      },
+      "status": "needs_review",
+      "displayedCalories": 480,
+      "displayedAsMinimum": true,
+      "recipeRows": 8,
+      "resolvedRows": 7,
+      "unresolved": [
+        {
+          "id": "436",
+          "type": "ingredient",
+          "name": "Лимон",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 0
+        }
+      ]
+    },
+    {
+      "productId": "143",
+      "name": {
+        "hy": "Բանջարեղեն խորոված",
+        "ru": "Овощи на гриле",
+        "en": "Grilled Vegetables"
+      },
+      "status": "needs_review",
+      "displayedCalories": 643,
+      "displayedAsMinimum": true,
+      "recipeRows": 10,
+      "resolvedRows": 9,
+      "unresolved": [
+        {
+          "id": "264",
+          "type": "ingredient",
+          "name": "острый перец",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "161",
+      "name": {
+        "hy": "լիմոնադ Մանգո+ մարակույա",
+        "ru": "Лимонад манго-маракуйя",
+        "en": "Mango & Passion Fruit Lemonade"
+      },
+      "status": "needs_review",
+      "displayedCalories": 129,
+      "displayedAsMinimum": true,
+      "recipeRows": 4,
+      "resolvedRows": 3,
+      "unresolved": [
+        {
+          "id": "296",
+          "type": "ingredient",
+          "name": "Натуральные соки /0,25/",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 0
+        }
+      ]
+    },
+    {
+      "productId": "166",
+      "name": {
+        "hy": "Չկմերուլի",
+        "ru": "Чкмерули",
+        "en": "Chkmeruli"
+      },
+      "status": "needs_review",
+      "displayedCalories": 873,
+      "displayedAsMinimum": true,
+      "recipeRows": 8,
+      "resolvedRows": 7,
+      "unresolved": [
+        {
+          "id": "306",
+          "type": "ingredient",
+          "name": "Цыпленок",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "169",
+      "name": {
+        "hy": "Տապակած ճուտ կարտոֆիլով",
+        "ru": "Жареный цыплёнок с картофелем",
+        "en": "Fried Chicken with Potatoes"
+      },
+      "status": "needs_review",
+      "displayedCalories": 1062,
+      "displayedAsMinimum": true,
+      "recipeRows": 4,
+      "resolvedRows": 3,
+      "unresolved": [
+        {
+          "id": "306",
+          "type": "ingredient",
+          "name": "Цыпленок",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "171",
+      "name": {
+        "hy": "Թխած կողիկներ ռիբս",
+        "ru": "Запечённые рёбрышки",
+        "en": "Baked Ribs"
+      },
+      "status": "needs_review",
+      "displayedCalories": 82,
+      "displayedAsMinimum": true,
+      "recipeRows": 5,
+      "resolvedRows": 4,
+      "unresolved": [
+        {
+          "id": "525",
+          "type": "ingredient",
+          "name": "Рибс",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "177",
+      "name": {
+        "hy": "Սիգ ֆիլե լոլիկով",
+        "ru": "Филе сига с томатами",
+        "en": "Whitefish Fillet with Tomatoes"
+      },
+      "status": "needs_review",
+      "displayedCalories": 453,
+      "displayedAsMinimum": true,
+      "recipeRows": 5,
+      "resolvedRows": 4,
+      "unresolved": [
+        {
+          "id": "183",
+          "type": "ingredient",
+          "name": "Сига",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "191",
+      "name": {
+        "hy": "Տիրամիսու",
+        "ru": "Тирамису",
+        "en": "Tiramisu"
+      },
+      "status": "needs_review",
+      "displayedCalories": 761,
+      "displayedAsMinimum": true,
+      "recipeRows": 7,
+      "resolvedRows": 6,
+      "unresolved": [
+        {
+          "id": "49",
+          "type": "ingredient",
+          "name": "Печенье савоярди",
+          "reason": "verified_nutrition_missing",
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "rawNetto": 30,
+          "rawBrutto": 30
+        }
+      ]
+    },
+    {
+      "productId": "200",
+      "name": {
+        "hy": "Լավաշ",
+        "ru": "Лаваш",
+        "en": "Lavash"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "480",
+          "type": "ingredient",
+          "name": "лаваш",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "202",
+      "name": {
+        "hy": "Շամպայն Zonin Prosecco Cuvée DOC",
+        "ru": "Игристое вино Zonin Prosecco Cuvée DOC",
+        "en": "Zonin Prosecco Cuvée DOC Sparkling Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "98",
+          "type": "ingredient",
+          "name": "Zonin Prosecco Cuvée DOC",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "203",
+      "name": {
+        "hy": "Շամպայն Zonin Prosecco Cuvee Rose",
+        "ru": "Игристое вино Zonin Prosecco Cuvée Rosé",
+        "en": "Zonin Prosecco Cuvée Rosé Sparkling Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "97",
+          "type": "ingredient",
+          "name": "Zonin Prosecco Cuvee Rose",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "204",
+      "name": {
+        "hy": "Շամպայն Zonin Asti DOCG",
+        "ru": "Игристое вино Zonin Asti DOCG",
+        "en": "Zonin Asti DOCG Sparkling Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "99",
+          "type": "ingredient",
+          "name": "Zonin Asti DOCG",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "205",
+      "name": {
+        "hy": "Շամպայն Takar Rosé Extra Brut",
+        "ru": "Игристое вино Takar Rosé Extra Brut",
+        "en": "Takar Rosé Extra Brut Sparkling Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "100",
+          "type": "ingredient",
+          "name": "Takar Rosé Extra Brut",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "206",
+      "name": {
+        "hy": "Շամպայն Takar Extra Brut",
+        "ru": "Игристое вино Takar Extra Brut",
+        "en": "Takar Extra Brut Sparkling Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "101",
+          "type": "ingredient",
+          "name": "Takar Extra Brut",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "212",
+      "name": {
+        "hy": "Շամպայն Moët and Chandon Imperial Brut Rosé",
+        "ru": "Moët & Chandon Imperial Brut Rosé",
+        "en": "Moët & Chandon Imperial Brut Rosé"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "103",
+          "type": "ingredient",
+          "name": "Moët and Chandon Imperial Brut Rosé",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "213",
+      "name": {
+        "hy": "Շամպայն Moët and Chandon Imperial Brut",
+        "ru": "Moët & Chandon Imperial Brut",
+        "en": "Moët & Chandon Imperial Brut"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "104",
+          "type": "ingredient",
+          "name": "Moët and Chandon Imperial Brut",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "220",
+      "name": {
+        "hy": "Թեքիլա Don Julio 1942",
+        "ru": "Текила Don Julio 1942",
+        "en": "Don Julio 1942 Tequila"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "111",
+          "type": "ingredient",
+          "name": "Don Julio  1942",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "231",
+      "name": {
+        "hy": "Գարեջուր Krombacher",
+        "ru": "Пиво Krombacher",
+        "en": "Krombacher Beer"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "119",
+          "type": "ingredient",
+          "name": "Krombacher 0.33",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "232",
+      "name": {
+        "hy": "Գարեջուր Dargett",
+        "ru": "Пиво Dargett",
+        "en": "Dargett Beer"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "120",
+          "type": "ingredient",
+          "name": "Dargett",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "233",
+      "name": {
+        "hy": "Գարեջուր Corona",
+        "ru": "Пиво Corona",
+        "en": "Corona Beer"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "121",
+          "type": "ingredient",
+          "name": "Corona",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "242",
+      "name": {
+        "hy": "Գինի Attems Pinot Grigio",
+        "ru": "Вино Attems Pinot Grigio",
+        "en": "Attems Pinot Grigio Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "130",
+          "type": "ingredient",
+          "name": "Attems Pinot Grigio",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "252",
+      "name": {
+        "hy": "Գինի Karas Rezerve red",
+        "ru": "Красное вино Karas Reserve",
+        "en": "Karas Reserve Red Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "136",
+          "type": "ingredient",
+          "name": "Karas Rezerve /red/",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "258",
+      "name": {
+        "hy": "Գինի Koor Rezerve red",
+        "ru": "Красное вино Koor Reserve",
+        "en": "Koor Reserve Red Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "139",
+          "type": "ingredient",
+          "name": "Koor Rezerve /red/",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "260",
+      "name": {
+        "hy": "Գինի Piccini Memoro",
+        "ru": "Вино Piccini Memoro",
+        "en": "Piccini Memoro Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "140",
+          "type": "ingredient",
+          "name": "Piccini Memoro /white/",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "268",
+      "name": {
+        "hy": "Գինի Tariri red",
+        "ru": "Красное вино Tariri",
+        "en": "Tariri Red Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "144",
+          "type": "ingredient",
+          "name": "Tariri /red/",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "270",
+      "name": {
+        "hy": "Գինի Tariri white",
+        "ru": "Белое вино Tariri",
+        "en": "Tariri White Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "145",
+          "type": "ingredient",
+          "name": "Tariri /white/",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "271",
+      "name": {
+        "hy": "Գինի Tus white",
+        "ru": "Белое вино Tus",
+        "en": "Tus White Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "146",
+          "type": "ingredient",
+          "name": "Tus /white/",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "275",
+      "name": {
+        "hy": "Գինի Zorah Karasi /red/",
+        "ru": "Красное вино Zorah Karasi",
+        "en": "Zorah Karasi Red Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "150",
+          "type": "ingredient",
+          "name": "Zorah Karasi",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "276",
+      "name": {
+        "hy": "Գինի Zorah Voski",
+        "ru": "Вино Zorah Voski",
+        "en": "Zorah Voski Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "151",
+          "type": "ingredient",
+          "name": "Zorah Voski",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "277",
+      "name": {
+        "hy": "Գինի Zorah Yeraz /red/",
+        "ru": "Красное вино Zorah Yeraz",
+        "en": "Zorah Yeraz Red Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "152",
+          "type": "ingredient",
+          "name": "Zorah Yeraz /red/",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "278",
+      "name": {
+        "hy": "կոկտեյլ դասական",
+        "ru": "Классический коктейль",
+        "en": "Classic Cocktail"
+      },
+      "status": "needs_review",
+      "displayedCalories": 0,
+      "displayedAsMinimum": true,
+      "recipeRows": 3,
+      "resolvedRows": 1,
+      "unresolved": [
+        {
+          "id": "537",
+          "type": "ingredient",
+          "name": "муштук",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 6
+        },
+        {
+          "id": "538",
+          "type": "ingredient",
+          "name": "уголь",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 6
+        }
+      ]
+    },
+    {
+      "productId": "290",
+      "name": {
+        "hy": "Կիտրոն մեղր կոճապղպեղ",
+        "ru": "Лимон, мёд, имбирь",
+        "en": "Lemon, Honey and Ginger"
+      },
+      "status": "needs_review",
+      "displayedCalories": 176,
+      "displayedAsMinimum": true,
+      "recipeRows": 3,
+      "resolvedRows": 2,
+      "unresolved": [
+        {
+          "id": "436",
+          "type": "ingredient",
+          "name": "Лимон",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 0
+        }
+      ]
+    },
+    {
+      "productId": "332",
+      "name": {
+        "hy": "Քամած կիտրոն",
+        "ru": "Свежевыжатый лимонный сок",
+        "en": "Fresh Lemon Juice"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "436",
+          "type": "ingredient",
+          "name": "Лимон",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 2
+        }
+      ]
+    },
+    {
+      "productId": "334",
+      "name": {
+        "hy": "Գլինտվեյն",
+        "ru": "Глинтвейн",
+        "en": "Mulled Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": 79,
+      "displayedAsMinimum": true,
+      "recipeRows": 9,
+      "resolvedRows": 8,
+      "unresolved": [
+        {
+          "id": "436",
+          "type": "ingredient",
+          "name": "Лимон",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 0
+        }
+      ]
+    },
+    {
+      "productId": "335",
+      "name": {
+        "hy": "Սանգրիա /դասական/",
+        "ru": "Классическая сангрия",
+        "en": "Classic Sangria"
+      },
+      "status": "needs_review",
+      "displayedCalories": 135,
+      "displayedAsMinimum": true,
+      "recipeRows": 11,
+      "resolvedRows": 9,
+      "unresolved": [
+        {
+          "id": "436",
+          "type": "ingredient",
+          "name": "Лимон",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 0
+        },
+        {
+          "id": "301",
+          "type": "ingredient",
+          "name": "тоник",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "337",
+      "name": {
+        "hy": "լիմոնադ Թարխուն+տանձ",
+        "ru": "Лимонад тархун-груша",
+        "en": "Tarragon & Pear Lemonade"
+      },
+      "status": "needs_review",
+      "displayedCalories": 66,
+      "displayedAsMinimum": true,
+      "recipeRows": 5,
+      "resolvedRows": 4,
+      "unresolved": [
+        {
+          "id": "291",
+          "type": "ingredient",
+          "name": "Газированная вода (бар)",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 0
+        }
+      ]
+    },
+    {
+      "productId": "341",
+      "name": {
+        "hy": "լիմոնադ Ցիտրուսային",
+        "ru": "Цитрусовый лимонад",
+        "en": "Citrus Lemonade"
+      },
+      "status": "needs_review",
+      "displayedCalories": 86,
+      "displayedAsMinimum": true,
+      "recipeRows": 9,
+      "resolvedRows": 8,
+      "unresolved": [
+        {
+          "id": "647",
+          "type": "prepack",
+          "name": "цитрусовый сироп",
+          "reason": "prepack_nutrition_unresolved",
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "rawNetto": 100,
+          "rawBrutto": 100
+        }
+      ]
+    },
+    {
+      "productId": "347",
+      "name": {
+        "hy": "Կոմպոտ",
+        "ru": "Компот",
+        "en": "Compote"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "294",
+          "type": "ingredient",
+          "name": "Компот",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "348",
+      "name": {
+        "hy": "լիկյոր Լիմոնչելլո",
+        "ru": "Ликёр Лимончелло",
+        "en": "Limoncello Liqueur"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "654",
+          "type": "prepack",
+          "name": "ликер из лимона",
+          "reason": "prepack_nutrition_unresolved",
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "rawNetto": 50,
+          "rawBrutto": 50
+        }
+      ]
+    },
+    {
+      "productId": "414",
+      "name": {
+        "hy": "Կոկտեյլ Adioz",
+        "ru": "Коктейль Adios",
+        "en": "Adios Cocktail"
+      },
+      "status": "needs_review",
+      "displayedCalories": 191,
+      "displayedAsMinimum": true,
+      "recipeRows": 6,
+      "resolvedRows": 5,
+      "unresolved": [
+        {
+          "id": "293",
+          "type": "ingredient",
+          "name": "Кола",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "428",
+      "name": {
+        "hy": "Կոկտեյլ Fruit Mojito",
+        "ru": "Фруктовый мохито",
+        "en": "Fruit Mojito"
+      },
+      "status": "needs_review",
+      "displayedCalories": 247,
+      "displayedAsMinimum": true,
+      "recipeRows": 6,
+      "resolvedRows": 5,
+      "unresolved": [
+        {
+          "id": "293",
+          "type": "ingredient",
+          "name": "Кола",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "429",
+      "name": {
+        "hy": "Կոկտեյլ Fruit Mojito/ոչ ալկոհոլային",
+        "ru": "Фруктовый мохито без алкоголя",
+        "en": "Non-Alcoholic Fruit Mojito"
+      },
+      "status": "needs_review",
+      "displayedCalories": 104,
+      "displayedAsMinimum": true,
+      "recipeRows": 5,
+      "resolvedRows": 4,
+      "unresolved": [
+        {
+          "id": "293",
+          "type": "ingredient",
+          "name": "Кола",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 0
+        }
+      ]
+    },
+    {
+      "productId": "430",
+      "name": {
+        "hy": "Կոկտեյլ Long Islan Ice Tea",
+        "ru": "Коктейль Long Island Iced Tea",
+        "en": "Long Island Iced Tea Cocktail"
+      },
+      "status": "needs_review",
+      "displayedCalories": 254,
+      "displayedAsMinimum": true,
+      "recipeRows": 7,
+      "resolvedRows": 6,
+      "unresolved": [
+        {
+          "id": "293",
+          "type": "ingredient",
+          "name": "Кола",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "431",
+      "name": {
+        "hy": "Կոկտեյլ Mojito",
+        "ru": "Коктейль Мохито",
+        "en": "Mojito Cocktail"
+      },
+      "status": "needs_review",
+      "displayedCalories": 215,
+      "displayedAsMinimum": true,
+      "recipeRows": 5,
+      "resolvedRows": 4,
+      "unresolved": [
+        {
+          "id": "293",
+          "type": "ingredient",
+          "name": "Кола",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "432",
+      "name": {
+        "hy": "Կոկտեյլ Mojito /ոչ ալկոհոլային/",
+        "ru": "Мохито без алкоголя",
+        "en": "Non-Alcoholic Mojito"
+      },
+      "status": "needs_review",
+      "displayedCalories": 89,
+      "displayedAsMinimum": true,
+      "recipeRows": 4,
+      "resolvedRows": 3,
+      "unresolved": [
+        {
+          "id": "293",
+          "type": "ingredient",
+          "name": "Кола",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 0
+        }
+      ]
+    },
+    {
+      "productId": "447",
+      "name": {
+        "hy": "Perrier",
+        "ru": "Perrier",
+        "en": "Perrier"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "297",
+          "type": "ingredient",
+          "name": "Перриер",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "448",
+      "name": {
+        "hy": "Red Bull",
+        "ru": "Red Bull",
+        "en": "Red Bull"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "298",
+          "type": "ingredient",
+          "name": "Ред Булл",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "449",
+      "name": {
+        "hy": "Tonic Fever-Tree",
+        "ru": "Тоник Fever-Tree",
+        "en": "Fever-Tree Tonic"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "301",
+          "type": "ingredient",
+          "name": "тоник",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "461",
+      "name": {
+        "hy": "Սենդվիչներ խոզապուխտով,կարտոֆիլ ֆրիով",
+        "ru": "Сэндвичи с ветчиной и картофелем фри",
+        "en": "Ham Sandwiches with French Fries"
+      },
+      "status": "needs_review",
+      "displayedCalories": 729,
+      "displayedAsMinimum": true,
+      "recipeRows": 8,
+      "resolvedRows": 7,
+      "unresolved": [
+        {
+          "id": "532",
+          "type": "ingredient",
+          "name": "тосты",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 2
+        }
+      ]
+    },
+    {
+      "productId": "474",
+      "name": {
+        "hy": "Կծու ծիծակ",
+        "ru": "Острый перец цицак",
+        "en": "Hot Tsitsak Pepper"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "264",
+          "type": "ingredient",
+          "name": "острый перец",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "50",
+      "name": {
+        "hy": "Ձաձիկի Ավոկադոյով",
+        "ru": "Дзадзики с авокадо",
+        "en": "Tzatziki with Avocado"
+      },
+      "status": "needs_review",
+      "displayedCalories": 99,
+      "displayedAsMinimum": true,
+      "recipeRows": 6,
+      "resolvedRows": 5,
+      "unresolved": [
+        {
+          "id": "597",
+          "type": "ingredient",
+          "name": "пита",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "508",
+      "name": {
+        "hy": "կոկտեյլ Nur",
+        "ru": "Коктейль Nur",
+        "en": "Nur Cocktail"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "539",
+          "type": "ingredient",
+          "name": "табак Nur",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        },
+        {
+          "id": "538",
+          "type": "ingredient",
+          "name": "уголь",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 6
+        },
+        {
+          "id": "537",
+          "type": "ingredient",
+          "name": "муштук",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 6
+        }
+      ]
+    },
+    {
+      "productId": "56",
+      "name": {
+        "hy": "Խարչո",
+        "ru": "Харчо",
+        "en": "Kharcho"
+      },
+      "status": "needs_review",
+      "displayedCalories": 84,
+      "displayedAsMinimum": true,
+      "recipeRows": 2,
+      "resolvedRows": 1,
+      "unresolved": [
+        {
+          "id": "564",
+          "type": "prepack",
+          "name": "харчо",
+          "reason": "prepack_nutrition_unresolved",
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "rawNetto": 350,
+          "rawBrutto": 350
+        }
+      ]
+    },
+    {
+      "productId": "575",
+      "name": {
+        "hy": "Սեւանի իշխան",
+        "ru": "Севанская форель",
+        "en": "Sevan Trout"
+      },
+      "status": "needs_review",
+      "displayedCalories": 1502,
+      "displayedAsMinimum": true,
+      "recipeRows": 8,
+      "resolvedRows": 7,
+      "unresolved": [
+        {
+          "id": "436",
+          "type": "ingredient",
+          "name": "Лимон",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "638",
+      "name": {
+        "hy": "Բանջարեղենի զամբյուղ",
+        "ru": "Овощная корзина",
+        "en": "Vegetable Basket"
+      },
+      "status": "needs_review",
+      "displayedCalories": 155,
+      "displayedAsMinimum": true,
+      "recipeRows": 10,
+      "resolvedRows": 9,
+      "unresolved": [
+        {
+          "id": "264",
+          "type": "ingredient",
+          "name": "острый перец",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "664",
+      "name": {
+        "hy": "Կոկտել Mojito Pomegranate",
+        "ru": "Гранатовый мохито",
+        "en": "Pomegranate Mojito"
+      },
+      "status": "needs_review",
+      "displayedCalories": 435,
+      "displayedAsMinimum": true,
+      "recipeRows": 7,
+      "resolvedRows": 6,
+      "unresolved": [
+        {
+          "id": "480",
+          "type": "ingredient",
+          "name": "лаваш",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "679",
+      "name": {
+        "hy": "Նուշի կաթ",
+        "ru": "Миндальное молоко",
+        "en": "Almond Milk"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "69",
+      "name": {
+        "hy": "Տնական բուրատտա",
+        "ru": "Домашняя буррата",
+        "en": "House-Made Burrata"
+      },
+      "status": "needs_review",
+      "displayedCalories": 443,
+      "displayedAsMinimum": true,
+      "recipeRows": 7,
+      "resolvedRows": 6,
+      "unresolved": [
+        {
+          "id": "492",
+          "type": "prepack",
+          "name": "буратта Z",
+          "reason": "prepack_nutrition_unresolved",
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "rawNetto": 150,
+          "rawBrutto": 150
+        }
+      ]
+    },
+    {
+      "productId": "701",
+      "name": {
+        "hy": "Կվաս take away",
+        "ru": "Квас с собой",
+        "en": "Kvass To Go"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "292",
+          "type": "ingredient",
+          "name": "Квас",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "716",
+      "name": {
+        "hy": "Հաց Պիտա",
+        "ru": "Пита",
+        "en": "Pita Bread"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "597",
+          "type": "ingredient",
+          "name": "пита",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "718",
+      "name": {
+        "hy": "Մսային միքս 2",
+        "ru": "Мясной микс 2",
+        "en": "Meat Mix 2"
+      },
+      "status": "needs_review",
+      "displayedCalories": 4074,
+      "displayedAsMinimum": true,
+      "recipeRows": 10,
+      "resolvedRows": 9,
+      "unresolved": [
+        {
+          "id": "264",
+          "type": "ingredient",
+          "name": "острый перец",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "74",
+      "name": {
+        "hy": "Մութաբալ",
+        "ru": "Мутабаль",
+        "en": "Mutabbal"
+      },
+      "status": "needs_review",
+      "displayedCalories": 141,
+      "displayedAsMinimum": true,
+      "recipeRows": 5,
+      "resolvedRows": 4,
+      "unresolved": [
+        {
+          "id": "597",
+          "type": "ingredient",
+          "name": "пита",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "79",
+      "name": {
+        "hy": "Հավով աղցան",
+        "ru": "Салат с курицей",
+        "en": "Chicken Salad"
+      },
+      "status": "needs_review",
+      "displayedCalories": 892,
+      "displayedAsMinimum": true,
+      "recipeRows": 5,
+      "resolvedRows": 4,
+      "unresolved": [
+        {
+          "id": "597",
+          "type": "ingredient",
+          "name": "пита",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "795",
+      "name": {
+        "hy": "Keush Origins",
+        "ru": "Keush Origins",
+        "en": "Keush Origins"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "unresolved": [
+        {
+          "id": "105",
+          "type": "ingredient",
+          "name": "Keush Brut /white/",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "799",
+      "name": {
+        "hy": "Արջուկ",
+        "ru": "Мишка",
+        "en": "Teddy Bear"
+      },
+      "status": "needs_review",
+      "displayedCalories": 390,
+      "displayedAsMinimum": true,
+      "recipeRows": 3,
+      "resolvedRows": 2,
+      "unresolved": [
+        {
+          "id": "636",
+          "type": "ingredient",
+          "name": "печатная мастика",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "813",
+      "name": {
+        "hy": "Լիմոնով պիրոգ",
+        "ru": "Лимонный пирог",
+        "en": "Lemon Pie"
+      },
+      "status": "needs_review",
+      "displayedCalories": 5414,
+      "displayedAsMinimum": true,
+      "recipeRows": 6,
+      "resolvedRows": 5,
+      "unresolved": [
+        {
+          "id": "436",
+          "type": "ingredient",
+          "name": "Лимон",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 2
+        }
+      ]
+    },
+    {
+      "productId": "819",
+      "name": {
+        "hy": "Շաուրմա քյուֆթայով",
+        "ru": "Шаурма с кюфтой",
+        "en": "Shawarma with Kufta"
+      },
+      "status": "needs_review",
+      "displayedCalories": 293,
+      "displayedAsMinimum": true,
+      "recipeRows": 12,
+      "resolvedRows": 11,
+      "unresolved": [
+        {
+          "id": "480",
+          "type": "ingredient",
+          "name": "лаваш",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    },
+    {
+      "productId": "827",
+      "name": {
+        "hy": "Մեղրով մաշմելո",
+        "ru": "Медовый маршмеллоу",
+        "en": "Honey Marshmallow"
+      },
+      "status": "needs_review",
+      "displayedCalories": 291,
+      "displayedAsMinimum": true,
+      "recipeRows": 5,
+      "resolvedRows": 4,
+      "unresolved": [
+        {
+          "id": "566",
+          "type": "ingredient",
+          "name": "Фиалки",
+          "reason": "unknown_weight_or_unit",
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "rawNetto": 0,
+          "rawBrutto": 1
+        }
+      ]
+    }
+  ]
+}

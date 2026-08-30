@@ -1,8 +1,8 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "source": "data/cia-nutrition-research-queue.json",
   "remainingGenericCount": 56,
-  "count": 50,
+  "count": 56,
   "candidates": [
     {
       "priority": 107,
@@ -852,6 +852,108 @@
       "searchQueries": [
         "фарш мясной для долмы USDA FoodData Central",
         "фарш мясной для долмы calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 417,
+      "id": "poster_84",
+      "posterIngredientId": "84",
+      "name": "Фасоль в томате",
+      "aliases": [
+        "Фасоль в томате"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Фасоль в томате USDA FoodData Central",
+        "Фасоль в томате calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 418,
+      "id": "poster_566",
+      "posterIngredientId": "566",
+      "name": "Фиалки",
+      "aliases": [
+        "Фиалки"
+      ],
+      "units": [
+        "p"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Фиалки USDA FoodData Central",
+        "Фиалки calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 425,
+      "id": "poster_647",
+      "posterIngredientId": "647",
+      "name": "цитрусовый сироп",
+      "aliases": [
+        "цитрусовый сироп"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "цитрусовый сироп USDA FoodData Central",
+        "цитрусовый сироп calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 426,
+      "id": "poster_92",
+      "posterIngredientId": "92",
+      "name": "Чай Батерфляй",
+      "aliases": [
+        "Чай Батерфляй"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Чай Батерфляй USDA FoodData Central",
+        "Чай Батерфляй calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 431,
+      "id": "poster_56",
+      "posterIngredientId": "56",
+      "name": "Шоколадная плитка",
+      "aliases": [
+        "Шоколадная плитка"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "Шоколадная плитка USDA FoodData Central",
+        "Шоколадная плитка calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 437,
+      "id": "poster_235",
+      "posterIngredientId": "235",
+      "name": "գինի կարմիր",
+      "aliases": [
+        "գինի կարմիր"
+      ],
+      "units": [
+        "ml"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "գինի կարմիր USDA FoodData Central",
+        "գինի կարմիր calories kcal 100g"
       ]
     }
   ]

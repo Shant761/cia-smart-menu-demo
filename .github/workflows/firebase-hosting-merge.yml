@@ -1,5 +1,6 @@
 name: Deploy to Firebase Hosting on merge
 
+# Deploy the latest committed public snapshot, including nutrition recalculations.
 on:
   push:
     branches:

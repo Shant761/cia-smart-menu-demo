@@ -1,0 +1,90 @@
+{
+  "version": "1.0.0",
+  "restaurantId": "poster-test",
+  "calculationBasis": "per 100g edible portion",
+  "policy": "Reviewed source overrides for Poster ingredient IDs that were blocked by false/zero nutrition mappings. Generic references are documented explicitly and must not be treated as brand/cut-specific laboratory values.",
+  "entries": [
+    {
+      "id": "poster_196",
+      "name": "Говядина",
+      "kcalPer100g": 167,
+      "proteinPer100g": 21,
+      "fatPer100g": 9.3,
+      "carbsPer100g": 0,
+      "source": "USDA FoodData Central",
+      "sourceReference": "FDC 174757; beef composite of trimmed retail cuts, separable lean and fat, trimmed to 0 inch fat, all grades, raw",
+      "mappingQuality": "generic_reference_for_unspecified_beef",
+      "notes": "Poster ingredient name does not specify a cut. This is a documented USDA generic beef composite reference, not a cut-specific value.",
+      "verified": true,
+      "status": "verified"
+    },
+    {
+      "id": "poster_198",
+      "name": "Говяжье суки",
+      "kcalPer100g": 139,
+      "proteinPer100g": 21.94,
+      "fatPer100g": 5.74,
+      "carbsPer100g": 0,
+      "source": "USDA FoodData Central",
+      "sourceReference": "FDC 171765; beef loin tenderloin roast, boneless, separable lean only, raw",
+      "mappingQuality": "reviewed_name_mapping",
+      "notes": "Poster name 'суки' is treated as the local/Armenian usage for beef tenderloin (սուկի). Keep this mapping reviewable if the restaurant uses the name differently.",
+      "verified": true,
+      "status": "verified"
+    },
+    {
+      "id": "poster_305",
+      "name": "Курица",
+      "kcalPer100g": 215,
+      "proteinPer100g": 18.6,
+      "fatPer100g": 15.06,
+      "carbsPer100g": 0,
+      "source": "USDA FoodData Central",
+      "sourceReference": "FDC 171447; chicken, broilers or fryers, meat and skin, raw",
+      "mappingQuality": "generic_reference_for_unspecified_chicken",
+      "notes": "Generic whole chicken meat-and-skin reference because Poster ingredient does not specify a cut or skin removal.",
+      "verified": true,
+      "status": "verified"
+    },
+    {
+      "id": "poster_303",
+      "name": "Куриная печень",
+      "kcalPer100g": 119,
+      "proteinPer100g": 16.92,
+      "fatPer100g": 4.83,
+      "carbsPer100g": 0.73,
+      "source": "USDA FoodData Central",
+      "sourceReference": "FDC 171060; chicken liver, all classes, raw",
+      "mappingQuality": "direct_food_match",
+      "verified": true,
+      "status": "verified"
+    },
+    {
+      "id": "poster_304",
+      "name": "Куриные сердечки",
+      "kcalPer100g": 153,
+      "proteinPer100g": 15.55,
+      "fatPer100g": 9.33,
+      "carbsPer100g": 0.71,
+      "source": "USDA FoodData Central",
+      "sourceReference": "FDC 171458; chicken heart, all classes, raw",
+      "mappingQuality": "direct_food_match",
+      "verified": true,
+      "status": "verified"
+    },
+    {
+      "id": "poster_351",
+      "name": "Куринный окорок /բուդ/",
+      "kcalPer100g": 214,
+      "proteinPer100g": 16.37,
+      "fatPer100g": 15.95,
+      "carbsPer100g": 0.17,
+      "source": "USDA FoodData Central",
+      "sourceReference": "FDC 172378; chicken, broilers or fryers, leg, meat and skin, raw",
+      "mappingQuality": "direct_cut_match_with_skin_assumption",
+      "notes": "Poster name identifies chicken leg/thigh but does not say skinless; meat-and-skin reference is used.",
+      "verified": true,
+      "status": "verified"
+    }
+  ]
+}

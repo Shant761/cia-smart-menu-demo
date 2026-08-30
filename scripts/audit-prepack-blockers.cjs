@@ -3,11 +3,15 @@ const path = require('node:path');
 
 const ROOT = process.cwd();
 const INPUT = path.join(ROOT, 'data', 'poster-test-prepack-nutrition.json');
+const PREPACKS_INPUT = path.join(ROOT, 'data', 'poster-test-preparations.json');
 const OUTPUT = path.join(ROOT, 'data', 'poster-test-prepack-blockers.json');
 
 const data = JSON.parse(fs.readFileSync(INPUT, 'utf8'));
+const prepData = JSON.parse(fs.readFileSync(PREPACKS_INPUT, 'utf8'));
 const results = Array.isArray(data?.results) ? data.results : [];
+const prepacks = Array.isArray(prepData?.prepacks) ? prepData.prepacks : [];
 const byId = new Map(results.map((item) => [String(item.productId), item]));
+const rawById = new Map(prepacks.map((item) => [String(item.productId), item]));
 const review = results.filter((item) => item.status !== 'calculated');
 
 function keyFor(row) {
@@ -41,6 +45,42 @@ function leafBlockers(prepackId, stack = []) {
   return leaves;
 }
 
+function rawRowsFor(blocker, affectedPrepacks) {
+  const rows = [];
+  const seen = new Set();
+  for (const affected of affectedPrepacks) {
+    const prep = rawById.get(String(affected.productId));
+    for (const row of (Array.isArray(prep?.ingredients) ? prep.ingredients : [])) {
+      if (String(row?.ingredient_id ?? '') !== String(blocker.id)) continue;
+      const key = JSON.stringify([
+        affected.productId,
+        row?.structure_id,
+        row?.structure_type,
+        row?.structure_unit,
+        row?.ingredient_unit,
+        row?.structure_brutto,
+        row?.structure_netto,
+        row?.ingredient_weight
+      ]);
+      if (seen.has(key)) continue;
+      seen.add(key);
+      rows.push({
+        prepackId: String(affected.productId),
+        prepackName: affected.name,
+        structureId: row?.structure_id ?? null,
+        structureType: Number(row?.structure_type ?? 1),
+        structureUnit: row?.structure_unit ?? null,
+        ingredientUnit: row?.ingredient_unit ?? null,
+        structureBrutto: row?.structure_brutto ?? null,
+        structureNetto: row?.structure_netto ?? null,
+        ingredientWeight: row?.ingredient_weight ?? null,
+        ingredientName: row?.ingredient_name ?? blocker.name
+      });
+    }
+  }
+  return rows;
+}
+
 const blockerMap = new Map();
 for (const prep of review) {
   const leaves = leafBlockers(prep.productId);
@@ -70,9 +110,10 @@ const blockers = [...blockerMap.values()].sort((a, b) =>
   a.type.localeCompare(b.type) ||
   String(a.id).localeCompare(String(b.id))
 );
+for (const blocker of blockers) blocker.rawPosterRows = rawRowsFor(blocker, blocker.affectedPrepacks);
 
 const payload = {
-  version: '1.0.0',
+  version: '1.1.0',
   restaurantId: data?.restaurantId || 'poster-test',
   generatedAt: new Date().toISOString(),
   prepackCount: results.length,
@@ -86,4 +127,7 @@ fs.writeFileSync(OUTPUT, `${JSON.stringify(payload, null, 2)}\n`, 'utf8');
 console.log(`[Prepack blockers] prepacks=${payload.prepackCount}; calculated=${payload.calculatedCount}; review=${payload.needsReviewCount}; blockers=${payload.uniqueLeafBlockerCount}`);
 for (const blocker of blockers) {
   console.log(`[Prepack blocker] ${blocker.type} ${blocker.id} ${blocker.name}: reason=${blocker.reason}; affects=${blocker.affectedPrepackCount}`);
+  for (const row of blocker.rawPosterRows.slice(0, 5)) {
+    console.log(`[Prepack blocker raw] prep=${row.prepackId}; id=${blocker.id}; sUnit=${row.structureUnit}; iUnit=${row.ingredientUnit}; brutto=${row.structureBrutto}; netto=${row.structureNetto}; pieceWeight=${row.ingredientWeight}`);
+  }
 }

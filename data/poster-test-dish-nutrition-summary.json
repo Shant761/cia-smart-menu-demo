@@ -1,0 +1,7455 @@
+{
+  "version": "1.0.0",
+  "restaurantId": "poster-test",
+  "generatedAt": "2026-08-30T09:50:26.535Z",
+  "publicProductCount": 422,
+  "fetchedProductCount": 422,
+  "fetchErrorCount": 0,
+  "productsWithRecipe": 407,
+  "productsWithPrepackRows": 150,
+  "resolvedPrepackRows": 237,
+  "unresolvedPrepackRows": 46,
+  "fullyCalculatedCount": 300,
+  "partialCount": 69,
+  "reviewWithoutKnownCount": 38,
+  "products": [
+    {
+      "productId": "10",
+      "name": {
+        "hy": "Անգլիական նախաճաշ",
+        "ru": "Английский завтрак",
+        "en": "English Breakfast"
+      },
+      "status": "needs_review",
+      "displayedCalories": 1029969,
+      "displayedAsMinimum": true,
+      "recipeRows": 8,
+      "resolvedRows": 6,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": [
+        {
+          "id": "532",
+          "type": "ingredient",
+          "name": "тосты",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "191",
+          "type": "ingredient",
+          "name": "Сосиски с беконом",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "104",
+      "name": {
+        "hy": "մինի պիցցա Մարգարիտա",
+        "ru": "Мини-пицца Маргарита",
+        "en": "Mini Margherita Pizza"
+      },
+      "status": "calculated",
+      "displayedCalories": 689,
+      "displayedAsMinimum": false,
+      "recipeRows": 5,
+      "resolvedRows": 5,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    },
+    {
+      "productId": "105",
+      "name": {
+        "hy": "կանաչ թեյ ժասմինով",
+        "ru": "Зелёный чай с жасмином",
+        "en": "Green Tea with Jasmine"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "11",
+      "name": {
+        "hy": "Ձվածեղ նռով պիտա հացի մեջ",
+        "ru": "Омлет с гранатом в пите",
+        "en": "Omelet with Pomegranate in Pita Bread"
+      },
+      "status": "needs_review",
+      "displayedCalories": 1029936,
+      "displayedAsMinimum": true,
+      "recipeRows": 7,
+      "resolvedRows": 6,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": [
+        {
+          "id": "597",
+          "type": "ingredient",
+          "name": "пита",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "111",
+      "name": {
+        "hy": "Մատրյոշկա Պավլովա",
+        "ru": "Павлова «Матрёшка»",
+        "en": "Matryoshka Pavlova"
+      },
+      "status": "calculated",
+      "displayedCalories": 264441,
+      "displayedAsMinimum": false,
+      "recipeRows": 5,
+      "resolvedRows": 5,
+      "prepackRows": 4,
+      "resolvedPrepackRows": 4,
+      "unresolved": []
+    },
+    {
+      "productId": "115",
+      "name": {
+        "hy": "Մեղրով գնդիկ",
+        "ru": "Медовые шарики",
+        "en": "Honey Balls"
+      },
+      "status": "calculated",
+      "displayedCalories": 64144,
+      "displayedAsMinimum": false,
+      "recipeRows": 4,
+      "resolvedRows": 4,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    },
+    {
+      "productId": "117",
+      "name": {
+        "hy": "Մարոկյան անանուխ",
+        "ru": "Марокканская мята",
+        "en": "Moroccan Mint"
+      },
+      "status": "needs_review",
+      "displayedCalories": 130,
+      "displayedAsMinimum": true,
+      "recipeRows": 10,
+      "resolvedRows": 9,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "436",
+          "type": "ingredient",
+          "name": "Лимон",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "118",
+      "name": {
+        "hy": "Սան սեբաստիան",
+        "ru": "Сан-Себастьян",
+        "en": "San Sebastián Cheesecake"
+      },
+      "status": "needs_review",
+      "displayedCalories": 56,
+      "displayedAsMinimum": true,
+      "recipeRows": 3,
+      "resolvedRows": 2,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "722",
+          "type": "prepack",
+          "name": "сан себастьян",
+          "grams": 260,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "119",
+      "name": {
+        "hy": "Դեղձ թխվածքաբլիթ",
+        "ru": "Печенье «Персик»",
+        "en": "Peach-Shaped Cookie"
+      },
+      "status": "calculated",
+      "displayedCalories": 221715,
+      "displayedAsMinimum": false,
+      "recipeRows": 4,
+      "resolvedRows": 4,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    },
+    {
+      "productId": "12",
+      "name": {
+        "hy": "Սկրեմբլ ղավուրմայով եւ ստրաչատելլայով",
+        "ru": "Скрэмбл с кавурмой и страчателлой",
+        "en": "Scrambled Eggs with Kavurma and Stracciatella"
+      },
+      "status": "calculated",
+      "displayedCalories": 1030150,
+      "displayedAsMinimum": false,
+      "recipeRows": 8,
+      "resolvedRows": 8,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "120",
+      "name": {
+        "hy": "Դուբայի դեսերտ",
+        "ru": "Дубайский десерт",
+        "en": "Dubai Dessert"
+      },
+      "status": "calculated",
+      "displayedCalories": 275,
+      "displayedAsMinimum": false,
+      "recipeRows": 4,
+      "resolvedRows": 4,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "124",
+      "name": {
+        "hy": "Մսային միքս",
+        "ru": "Мясной микс",
+        "en": "Meat Mix"
+      },
+      "status": "needs_review",
+      "displayedCalories": 4685,
+      "displayedAsMinimum": true,
+      "recipeRows": 11,
+      "resolvedRows": 10,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": [
+        {
+          "id": "264",
+          "type": "ingredient",
+          "name": "острый перец",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "125",
+      "name": {
+        "hy": "Խրենավուխա",
+        "ru": "Хреновуха",
+        "en": "Horseradish Vodka"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "657",
+          "type": "prepack",
+          "name": "хреновуха",
+          "grams": 50,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "127",
+      "name": {
+        "hy": "Բորշ",
+        "ru": "Բորշ",
+        "en": "Բորշ"
+      },
+      "status": "calculated",
+      "displayedCalories": 456,
+      "displayedAsMinimum": false,
+      "recipeRows": 9,
+      "resolvedRows": 9,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    },
+    {
+      "productId": "13",
+      "name": {
+        "hy": "Ձու բենեդիկտ սաղմոնով",
+        "ru": "Яйца Бенедикт с лососем",
+        "en": "Eggs Benedict with Salmon"
+      },
+      "status": "needs_review",
+      "displayedCalories": 1544537,
+      "displayedAsMinimum": true,
+      "recipeRows": 7,
+      "resolvedRows": 5,
+      "prepackRows": 4,
+      "resolvedPrepackRows": 2,
+      "unresolved": [
+        {
+          "id": "513",
+          "type": "prepack",
+          "name": "авокадо чищенный",
+          "grams": 50,
+          "reason": "prepack_nutrition_unresolved"
+        },
+        {
+          "id": "617",
+          "type": "prepack",
+          "name": "соус бенедикта",
+          "grams": 30,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "131",
+      "name": {
+        "hy": "ֆլեթ վայթ",
+        "ru": "Флэт уайт",
+        "en": "Flat White"
+      },
+      "status": "calculated",
+      "displayedCalories": 128,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "133",
+      "name": {
+        "hy": "Բրաունի ընկույզով",
+        "ru": "Брауни с грецким орехом",
+        "en": "Walnut Brownie"
+      },
+      "status": "calculated",
+      "displayedCalories": 227769,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "135",
+      "name": {
+        "hy": "Սպաս",
+        "ru": "Спас",
+        "en": "Spas Yogurt Soup"
+      },
+      "status": "calculated",
+      "displayedCalories": 49664,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "136",
+      "name": {
+        "hy": "Դդմով կրեմ-ապուր",
+        "ru": "Тыквенный крем-суп",
+        "en": "Pumpkin Cream Soup"
+      },
+      "status": "calculated",
+      "displayedCalories": 292,
+      "displayedAsMinimum": false,
+      "recipeRows": 5,
+      "resolvedRows": 5,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    },
+    {
+      "productId": "138",
+      "name": {
+        "hy": "Ստերլետ խորոված",
+        "ru": "Стерлядь на гриле",
+        "en": "Grilled Sterlet"
+      },
+      "status": "needs_review",
+      "displayedCalories": 480,
+      "displayedAsMinimum": true,
+      "recipeRows": 8,
+      "resolvedRows": 6,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "526",
+          "type": "ingredient",
+          "name": "стерляд",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "436",
+          "type": "ingredient",
+          "name": "Лимон",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "139",
+      "name": {
+        "hy": "Խոզի չալաղաջ խորոված",
+        "ru": "Свиной чалагач на гриле",
+        "en": "Grilled Pork Chalagach"
+      },
+      "status": "calculated",
+      "displayedCalories": 854,
+      "displayedAsMinimum": false,
+      "recipeRows": 8,
+      "resolvedRows": 8,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "14",
+      "name": {
+        "hy": "Ձու բենեդիկտ բեկոնով",
+        "ru": "Яйца Бенедикт с беконом",
+        "en": "Eggs Benedict with Bacon"
+      },
+      "status": "needs_review",
+      "displayedCalories": 1544533,
+      "displayedAsMinimum": true,
+      "recipeRows": 6,
+      "resolvedRows": 4,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "436",
+          "type": "ingredient",
+          "name": "Лимон",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "513",
+          "type": "prepack",
+          "name": "авокадо чищенный",
+          "grams": 100,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "140",
+      "name": {
+        "hy": "Խոզի փափկամսի խորոված",
+        "ru": "Шашлык из свиной вырезки",
+        "en": "Grilled Pork Tenderloin"
+      },
+      "status": "calculated",
+      "displayedCalories": 306,
+      "displayedAsMinimum": false,
+      "recipeRows": 6,
+      "resolvedRows": 6,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "141",
+      "name": {
+        "hy": "Շիշ թաուկ",
+        "ru": "Шиш-таук",
+        "en": "Shish Tawook"
+      },
+      "status": "calculated",
+      "displayedCalories": 633,
+      "displayedAsMinimum": false,
+      "recipeRows": 8,
+      "resolvedRows": 8,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "143",
+      "name": {
+        "hy": "Բանջարեղեն խորոված",
+        "ru": "Овощи на гриле",
+        "en": "Grilled Vegetables"
+      },
+      "status": "needs_review",
+      "displayedCalories": 643,
+      "displayedAsMinimum": true,
+      "recipeRows": 10,
+      "resolvedRows": 9,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": [
+        {
+          "id": "264",
+          "type": "ingredient",
+          "name": "острый перец",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "145",
+      "name": {
+        "hy": "լիմոնադ նռան գույն",
+        "ru": "Лимонад «Гранатовый цвет»",
+        "en": "Pomegranate Color Lemonade"
+      },
+      "status": "needs_review",
+      "displayedCalories": 178,
+      "displayedAsMinimum": true,
+      "recipeRows": 6,
+      "resolvedRows": 5,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 1,
+      "unresolved": [
+        {
+          "id": "645",
+          "type": "prepack",
+          "name": "лимон/лайм",
+          "grams": 15,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "146",
+      "name": {
+        "hy": "բնական հյութ",
+        "ru": "Натуральный сок",
+        "en": "Natural Juice"
+      },
+      "status": "calculated",
+      "displayedCalories": 135,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "147",
+      "name": {
+        "hy": "Խինկալի",
+        "ru": "Хинкали",
+        "en": "Khinkali"
+      },
+      "status": "calculated",
+      "displayedCalories": 150,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    },
+    {
+      "productId": "149",
+      "name": {
+        "hy": "Մինի խաչապուրի պանրով",
+        "ru": "Мини-хачапури с сыром",
+        "en": "Mini Khachapuri with Cheese"
+      },
+      "status": "calculated",
+      "displayedCalories": 150557,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "15",
+      "name": {
+        "hy": "Սիռնիկներ",
+        "ru": "Сырники",
+        "en": "Syrniki"
+      },
+      "status": "calculated",
+      "displayedCalories": 169969,
+      "displayedAsMinimum": false,
+      "recipeRows": 4,
+      "resolvedRows": 4,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    },
+    {
+      "productId": "151",
+      "name": {
+        "hy": "Քինուա ծովախեձգետնով աղցան",
+        "ru": "Салат с киноа и креветками",
+        "en": "Quinoa and Shrimp Salad"
+      },
+      "status": "needs_review",
+      "displayedCalories": 537,
+      "displayedAsMinimum": true,
+      "recipeRows": 8,
+      "resolvedRows": 7,
+      "prepackRows": 4,
+      "resolvedPrepackRows": 3,
+      "unresolved": [
+        {
+          "id": "513",
+          "type": "prepack",
+          "name": "авокадо чищенный",
+          "grams": 80,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "153",
+      "name": {
+        "hy": "Մեգրելական խաչապուրի",
+        "ru": "Хачапури по-мегрельски",
+        "en": "Megrelian Khachapuri"
+      },
+      "status": "calculated",
+      "displayedCalories": 1033107,
+      "displayedAsMinimum": false,
+      "recipeRows": 8,
+      "resolvedRows": 8,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "154",
+      "name": {
+        "hy": "Գրիլ հավի կրծքամիս",
+        "ru": "Куриная грудка на гриле",
+        "en": "Grilled Chicken Breast"
+      },
+      "status": "calculated",
+      "displayedCalories": 215,
+      "displayedAsMinimum": false,
+      "recipeRows": 4,
+      "resolvedRows": 4,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "156",
+      "name": {
+        "hy": "Ժենգյալով հաց",
+        "ru": "Женгялов хац",
+        "en": "Jingalov Hats"
+      },
+      "status": "calculated",
+      "displayedCalories": 350,
+      "displayedAsMinimum": false,
+      "recipeRows": 5,
+      "resolvedRows": 5,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "161",
+      "name": {
+        "hy": "լիմոնադ Մանգո+ մարակույա",
+        "ru": "Лимонад манго-маракуйя",
+        "en": "Mango & Passion Fruit Lemonade"
+      },
+      "status": "needs_review",
+      "displayedCalories": 125,
+      "displayedAsMinimum": true,
+      "recipeRows": 4,
+      "resolvedRows": 2,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "645",
+          "type": "prepack",
+          "name": "лимон/лайм",
+          "grams": 15,
+          "reason": "prepack_nutrition_unresolved"
+        },
+        {
+          "id": "296",
+          "type": "ingredient",
+          "name": "Натуральные соки /0,25/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "162",
+      "name": {
+        "hy": "Տապակած քուֆթա բանջարեղենով",
+        "ru": "Жареная кюфта с овощами",
+        "en": "Fried Kufta with Vegetables"
+      },
+      "status": "calculated",
+      "displayedCalories": 81391,
+      "displayedAsMinimum": false,
+      "recipeRows": 12,
+      "resolvedRows": 12,
+      "prepackRows": 6,
+      "resolvedPrepackRows": 6,
+      "unresolved": []
+    },
+    {
+      "productId": "163",
+      "name": {
+        "hy": "Ղավուրմա սմբուկի խյուսով",
+        "ru": "Кавурма с пюре из баклажана",
+        "en": "Kavurma with Eggplant Purée"
+      },
+      "status": "calculated",
+      "displayedCalories": 1193,
+      "displayedAsMinimum": false,
+      "recipeRows": 10,
+      "resolvedRows": 10,
+      "prepackRows": 3,
+      "resolvedPrepackRows": 3,
+      "unresolved": []
+    },
+    {
+      "productId": "164",
+      "name": {
+        "hy": "Հորթի փափկամիս գրիլի վրա",
+        "ru": "Телячья вырезка на гриле",
+        "en": "Grilled Veal Tenderloin"
+      },
+      "status": "calculated",
+      "displayedCalories": 409,
+      "displayedAsMinimum": false,
+      "recipeRows": 7,
+      "resolvedRows": 7,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    },
+    {
+      "productId": "165",
+      "name": {
+        "hy": "Չաքափուլի թաջինի մեջ",
+        "ru": "Чакапули в таджине",
+        "en": "Chakapuli in a Tagine"
+      },
+      "status": "calculated",
+      "displayedCalories": 74,
+      "displayedAsMinimum": false,
+      "recipeRows": 6,
+      "resolvedRows": 6,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "166",
+      "name": {
+        "hy": "Չկմերուլի",
+        "ru": "Чкмерули",
+        "en": "Chkmeruli"
+      },
+      "status": "needs_review",
+      "displayedCalories": 873,
+      "displayedAsMinimum": true,
+      "recipeRows": 8,
+      "resolvedRows": 7,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": [
+        {
+          "id": "306",
+          "type": "ingredient",
+          "name": "Цыпленок",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "168",
+      "name": {
+        "hy": "Հավի կրծքամիս սնկով",
+        "ru": "Куриная грудка с грибами",
+        "en": "Chicken Breast with Mushrooms"
+      },
+      "status": "calculated",
+      "displayedCalories": 285,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "169",
+      "name": {
+        "hy": "Տապակած ճուտ կարտոֆիլով",
+        "ru": "Жареный цыплёнок с картофелем",
+        "en": "Fried Chicken with Potatoes"
+      },
+      "status": "needs_review",
+      "displayedCalories": 1062,
+      "displayedAsMinimum": true,
+      "recipeRows": 4,
+      "resolvedRows": 3,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "306",
+          "type": "ingredient",
+          "name": "Цыпленок",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "17",
+      "name": {
+        "hy": "սպանախ",
+        "ru": "Шпинат",
+        "en": "Spinach"
+      },
+      "status": "calculated",
+      "displayedCalories": 28,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "170",
+      "name": {
+        "hy": "Գառնի յարախ",
+        "ru": "Гарни-ярах",
+        "en": "Garni Yarakh"
+      },
+      "status": "calculated",
+      "displayedCalories": 735,
+      "displayedAsMinimum": false,
+      "recipeRows": 9,
+      "resolvedRows": 9,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    },
+    {
+      "productId": "171",
+      "name": {
+        "hy": "Թխած կողիկներ ռիբս",
+        "ru": "Запечённые рёбрышки",
+        "en": "Baked Ribs"
+      },
+      "status": "needs_review",
+      "displayedCalories": 82,
+      "displayedAsMinimum": true,
+      "recipeRows": 5,
+      "resolvedRows": 4,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": [
+        {
+          "id": "525",
+          "type": "ingredient",
+          "name": "Рибс",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "172",
+      "name": {
+        "hy": "Թփով տոլմա տավարի մսով",
+        "ru": "Долма в виноградных листьях с говядиной",
+        "en": "Beef Dolma in Grape Leaves"
+      },
+      "status": "calculated",
+      "displayedCalories": 357,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "173",
+      "name": {
+        "hy": "Նոր կարտոֆիլ",
+        "ru": "Молодой картофель",
+        "en": "New Potatoes"
+      },
+      "status": "calculated",
+      "displayedCalories": 526,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "175",
+      "name": {
+        "hy": "Հարիսա հավի մսով",
+        "ru": "Ариса с курицей",
+        "en": "Harissa with Chicken"
+      },
+      "status": "calculated",
+      "displayedCalories": 664,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    },
+    {
+      "productId": "176",
+      "name": {
+        "hy": "Ֆատտեհ լիբանանյան",
+        "ru": "Ливанский фаттех",
+        "en": "Lebanese Fatteh"
+      },
+      "status": "calculated",
+      "displayedCalories": 1709,
+      "displayedAsMinimum": false,
+      "recipeRows": 8,
+      "resolvedRows": 8,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    },
+    {
+      "productId": "177",
+      "name": {
+        "hy": "Սիգ ֆիլե լոլիկով",
+        "ru": "Филе сига с томатами",
+        "en": "Whitefish Fillet with Tomatoes"
+      },
+      "status": "needs_review",
+      "displayedCalories": 453,
+      "displayedAsMinimum": true,
+      "recipeRows": 5,
+      "resolvedRows": 4,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": [
+        {
+          "id": "183",
+          "type": "ingredient",
+          "name": "Сига",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "180",
+      "name": {
+        "hy": "Գյուղական կարտոֆիլ",
+        "ru": "Картофель по-деревенски",
+        "en": "Country-Style Potatoes"
+      },
+      "status": "calculated",
+      "displayedCalories": 386,
+      "displayedAsMinimum": false,
+      "recipeRows": 5,
+      "resolvedRows": 5,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "183",
+      "name": {
+        "hy": "Թումանյան",
+        "ru": "Туманян",
+        "en": "Tumanyan"
+      },
+      "status": "calculated",
+      "displayedCalories": 120862,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "184",
+      "name": {
+        "hy": "Դուբայի բատոն",
+        "ru": "Дубайский батончик",
+        "en": "Dubai Bar"
+      },
+      "status": "calculated",
+      "displayedCalories": 101,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "185",
+      "name": {
+        "hy": "Կիեւյան",
+        "ru": "Киевский",
+        "en": "Kyiv Cake"
+      },
+      "status": "calculated",
+      "displayedCalories": 649426,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    },
+    {
+      "productId": "186",
+      "name": {
+        "hy": "Չիզքեյք",
+        "ru": "Чизкейк",
+        "en": "Cheesecake"
+      },
+      "status": "needs_review",
+      "displayedCalories": 146197,
+      "displayedAsMinimum": true,
+      "recipeRows": 8,
+      "resolvedRows": 7,
+      "prepackRows": 3,
+      "resolvedPrepackRows": 2,
+      "unresolved": [
+        {
+          "id": "709",
+          "type": "prepack",
+          "name": "чизкейк",
+          "grams": 180,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "187",
+      "name": {
+        "hy": "Տարտ հատապտղային",
+        "ru": "Ягодный тарт",
+        "en": "Berry Tart"
+      },
+      "status": "calculated",
+      "displayedCalories": 255988,
+      "displayedAsMinimum": false,
+      "recipeRows": 6,
+      "resolvedRows": 6,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    },
+    {
+      "productId": "188",
+      "name": {
+        "hy": "Ֆոնդան",
+        "ru": "Фондан",
+        "en": "Chocolate Fondant"
+      },
+      "status": "calculated",
+      "displayedCalories": 422505,
+      "displayedAsMinimum": false,
+      "recipeRows": 4,
+      "resolvedRows": 4,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    },
+    {
+      "productId": "189",
+      "name": {
+        "hy": "Ընկույզ թխվածքաբլիթ",
+        "ru": "Печенье с грецким орехом",
+        "en": "Walnut Cookie"
+      },
+      "status": "calculated",
+      "displayedCalories": 94002,
+      "displayedAsMinimum": false,
+      "recipeRows": 4,
+      "resolvedRows": 4,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    },
+    {
+      "productId": "19",
+      "name": {
+        "hy": "բրոկոլի",
+        "ru": "Брокколи",
+        "en": "Broccoli"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "190",
+      "name": {
+        "hy": "Պրահա",
+        "ru": "Торт «Прага»",
+        "en": "Prague Cake"
+      },
+      "status": "calculated",
+      "displayedCalories": 206465,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    },
+    {
+      "productId": "191",
+      "name": {
+        "hy": "Տիրամիսու",
+        "ru": "Тирамису",
+        "en": "Tiramisu"
+      },
+      "status": "calculated",
+      "displayedCalories": 161609,
+      "displayedAsMinimum": false,
+      "recipeRows": 7,
+      "resolvedRows": 7,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "193",
+      "name": {
+        "hy": "Սեթ մինի խմորեղենների եւ շոկոլադների",
+        "ru": "Сет мини-десертов и шоколада",
+        "en": "Mini Pastry and Chocolate Set"
+      },
+      "status": "calculated",
+      "displayedCalories": 557446,
+      "displayedAsMinimum": false,
+      "recipeRows": 17,
+      "resolvedRows": 17,
+      "prepackRows": 12,
+      "resolvedPrepackRows": 12,
+      "unresolved": []
+    },
+    {
+      "productId": "194",
+      "name": {
+        "hy": "Սեզոնային մրգեր",
+        "ru": "Сезонные фрукты",
+        "en": "Seasonal Fruit"
+      },
+      "status": "calculated",
+      "displayedCalories": 430,
+      "displayedAsMinimum": false,
+      "recipeRows": 6,
+      "resolvedRows": 6,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "195",
+      "name": {
+        "hy": "Պաղպաղակ",
+        "ru": "Мороженое",
+        "en": "Ice Cream"
+      },
+      "status": "calculated",
+      "displayedCalories": 311,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "197",
+      "name": {
+        "hy": "Գլասե",
+        "ru": "Глясе",
+        "en": "Glacé Coffee"
+      },
+      "status": "calculated",
+      "displayedCalories": 302,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "198",
+      "name": {
+        "hy": "էսպրեսո Մակիատո",
+        "ru": "Эспрессо макиато",
+        "en": "Espresso Macchiato"
+      },
+      "status": "calculated",
+      "displayedCalories": 1,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "20",
+      "name": {
+        "hy": "սունկ",
+        "ru": "Грибы",
+        "en": "Mushrooms"
+      },
+      "status": "calculated",
+      "displayedCalories": 22,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "200",
+      "name": {
+        "hy": "Լավաշ",
+        "ru": "Лаваш",
+        "en": "Lavash"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "480",
+          "type": "ingredient",
+          "name": "лаваш",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "201",
+      "name": {
+        "hy": "Լիմոնադ Մանդարին ռոզմարին",
+        "ru": "Лимонад мандарин-розмарин",
+        "en": "Mandarin & Rosemary Lemonade"
+      },
+      "status": "needs_review",
+      "displayedCalories": 56,
+      "displayedAsMinimum": true,
+      "recipeRows": 5,
+      "resolvedRows": 3,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "645",
+          "type": "prepack",
+          "name": "лимон/лайм",
+          "grams": 15,
+          "reason": "prepack_nutrition_unresolved"
+        },
+        {
+          "id": "646",
+          "type": "prepack",
+          "name": "мандариновый сироп",
+          "grams": 50,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "202",
+      "name": {
+        "hy": "Շամպայն Zonin Prosecco Cuvée DOC",
+        "ru": "Игристое вино Zonin Prosecco Cuvée DOC",
+        "en": "Zonin Prosecco Cuvée DOC Sparkling Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "98",
+          "type": "ingredient",
+          "name": "Zonin Prosecco Cuvée DOC",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "203",
+      "name": {
+        "hy": "Շամպայն Zonin Prosecco Cuvee Rose",
+        "ru": "Игристое вино Zonin Prosecco Cuvée Rosé",
+        "en": "Zonin Prosecco Cuvée Rosé Sparkling Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "97",
+          "type": "ingredient",
+          "name": "Zonin Prosecco Cuvee Rose",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "204",
+      "name": {
+        "hy": "Շամպայն Zonin Asti DOCG",
+        "ru": "Игристое вино Zonin Asti DOCG",
+        "en": "Zonin Asti DOCG Sparkling Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "99",
+          "type": "ingredient",
+          "name": "Zonin Asti DOCG",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "205",
+      "name": {
+        "hy": "Շամպայն Takar Rosé Extra Brut",
+        "ru": "Игристое вино Takar Rosé Extra Brut",
+        "en": "Takar Rosé Extra Brut Sparkling Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "100",
+          "type": "ingredient",
+          "name": "Takar Rosé Extra Brut",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "206",
+      "name": {
+        "hy": "Շամպայն Takar Extra Brut",
+        "ru": "Игристое вино Takar Extra Brut",
+        "en": "Takar Extra Brut Sparkling Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "101",
+          "type": "ingredient",
+          "name": "Takar Extra Brut",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "208",
+      "name": {
+        "hy": "Մրջնի բույն եւ մեղրով գնդիկ շոկոլապատած բոմբոներկա",
+        "ru": "«Муравейник» и медовые шарики в шоколаде, бомбоньерка",
+        "en": "Anthill Cake and Chocolate-Covered Honey Balls Gift Box"
+      },
+      "status": "calculated",
+      "displayedCalories": 243353,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    },
+    {
+      "productId": "211",
+      "name": {
+        "hy": "Շամպայն Prosecco 150 ml",
+        "ru": "Просекко 150 мл",
+        "en": "Prosecco 150 ml"
+      },
+      "status": "calculated",
+      "displayedCalories": 105,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "212",
+      "name": {
+        "hy": "Շամպայն Moët and Chandon Imperial Brut Rosé",
+        "ru": "Moët & Chandon Imperial Brut Rosé",
+        "en": "Moët & Chandon Imperial Brut Rosé"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "103",
+          "type": "ingredient",
+          "name": "Moët and Chandon Imperial Brut Rosé",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "213",
+      "name": {
+        "hy": "Շամպայն Moët and Chandon Imperial Brut",
+        "ru": "Moët & Chandon Imperial Brut",
+        "en": "Moët & Chandon Imperial Brut"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "104",
+          "type": "ingredient",
+          "name": "Moët and Chandon Imperial Brut",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "216",
+      "name": {
+        "hy": "Թեքիլա Patron Silver",
+        "ru": "Текила Patrón Silver",
+        "en": "Patrón Silver Tequila"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "217",
+      "name": {
+        "hy": "Թեքիլա Patron Reposado",
+        "ru": "Текила Patrón Reposado",
+        "en": "Patrón Reposado Tequila"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "220",
+      "name": {
+        "hy": "Թեքիլա Don Julio 1942",
+        "ru": "Текила Don Julio 1942",
+        "en": "Don Julio 1942 Tequila"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "111",
+          "type": "ingredient",
+          "name": "Don Julio  1942",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "221",
+      "name": {
+        "hy": "Ռոմ Bacardi Carta Blanca",
+        "ru": "Ром Bacardi Carta Blanca",
+        "en": "Bacardi Carta Blanca Rum"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "222",
+      "name": {
+        "hy": "Ռոմ Bacardi Carta Negra",
+        "ru": "Ром Bacardi Carta Negra",
+        "en": "Bacardi Carta Negra Rum"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "224",
+      "name": {
+        "hy": "Ռոմ Havana Club 7 Anos",
+        "ru": "Ром Havana Club 7 Años",
+        "en": "Havana Club 7 Años Rum"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "225",
+      "name": {
+        "hy": "Ռոմ Havana Club Anejo Especial",
+        "ru": "Ром Havana Club Añejo Especial",
+        "en": "Havana Club Añejo Especial Rum"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "227",
+      "name": {
+        "hy": "Չիչխան տանձ մեղր",
+        "ru": "Облепиха, груша, мёд",
+        "en": "Sea Buckthorn, Pear and Honey"
+      },
+      "status": "calculated",
+      "displayedCalories": 222,
+      "displayedAsMinimum": false,
+      "recipeRows": 5,
+      "resolvedRows": 5,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "228",
+      "name": {
+        "hy": "Կարտոֆիլ եւ սունկ մանղալի վրա",
+        "ru": "Картофель и грибы на мангале",
+        "en": "Grilled Potatoes and Mushrooms"
+      },
+      "status": "calculated",
+      "displayedCalories": 457,
+      "displayedAsMinimum": false,
+      "recipeRows": 6,
+      "resolvedRows": 6,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "229",
+      "name": {
+        "hy": "Մորս",
+        "ru": "Морс",
+        "en": "Fruit Drink (Mors)"
+      },
+      "status": "calculated",
+      "displayedCalories": 159,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "23",
+      "name": {
+        "hy": "Կապուչինո",
+        "ru": "Капучино",
+        "en": "Cappuccino"
+      },
+      "status": "calculated",
+      "displayedCalories": 108,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "231",
+      "name": {
+        "hy": "Գարեջուր Krombacher",
+        "ru": "Пиво Krombacher",
+        "en": "Krombacher Beer"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "119",
+          "type": "ingredient",
+          "name": "Krombacher 0.33",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "232",
+      "name": {
+        "hy": "Գարեջուր Dargett",
+        "ru": "Пиво Dargett",
+        "en": "Dargett Beer"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "120",
+          "type": "ingredient",
+          "name": "Dargett",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "233",
+      "name": {
+        "hy": "Գարեջուր Corona",
+        "ru": "Пиво Corona",
+        "en": "Corona Beer"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "121",
+          "type": "ingredient",
+          "name": "Corona",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "238",
+      "name": {
+        "hy": "Գինի 365 Pomegranate",
+        "ru": "Вино 365 Pomegranate",
+        "en": "365 Pomegranate Wine"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "24",
+      "name": {
+        "hy": "Տաք թխվածք հապալասով",
+        "ru": "Тёплая выпечка с голубикой",
+        "en": "Warm Pastry with Blueberries"
+      },
+      "status": "calculated",
+      "displayedCalories": 136552,
+      "displayedAsMinimum": false,
+      "recipeRows": 4,
+      "resolvedRows": 4,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    },
+    {
+      "productId": "242",
+      "name": {
+        "hy": "Գինի Attems Pinot Grigio",
+        "ru": "Вино Attems Pinot Grigio",
+        "en": "Attems Pinot Grigio Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "130",
+          "type": "ingredient",
+          "name": "Attems Pinot Grigio",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "248",
+      "name": {
+        "hy": "Գինի Karas red",
+        "ru": "Красное вино Karas",
+        "en": "Karas Red Wine"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "249",
+      "name": {
+        "hy": "Karas red 150",
+        "ru": "Karas красное 150 мл",
+        "en": "Karas Red 150 ml"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "25",
+      "name": {
+        "hy": "Սեւ թեյ բերգամոտով",
+        "ru": "Чёрный чай с бергамотом",
+        "en": "Black Tea with Bergamot"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "250",
+      "name": {
+        "hy": "Գինի Karas white",
+        "ru": "Белое вино Karas",
+        "en": "Karas White Wine"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "251",
+      "name": {
+        "hy": "Karas white 150",
+        "ru": "Karas белое 150 мл",
+        "en": "Karas White 150 ml"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "252",
+      "name": {
+        "hy": "Գինի Karas Rezerve red",
+        "ru": "Красное вино Karas Reserve",
+        "en": "Karas Reserve Red Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "136",
+          "type": "ingredient",
+          "name": "Karas Rezerve /red/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "253",
+      "name": {
+        "hy": "Գինի Koor red",
+        "ru": "Красное вино Koor",
+        "en": "Koor Red Wine"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "254",
+      "name": {
+        "hy": "Koor red 150",
+        "ru": "Koor красное 150 мл",
+        "en": "Koor Red 150 ml"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "255",
+      "name": {
+        "hy": "Գինի Koor white",
+        "ru": "Белое вино Koor",
+        "en": "Koor White Wine"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "256",
+      "name": {
+        "hy": "Koor white 150",
+        "ru": "Koor белое 150 мл",
+        "en": "Koor White 150 ml"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "257",
+      "name": {
+        "hy": "Էսպրեսո",
+        "ru": "Эспрессо",
+        "en": "Espresso"
+      },
+      "status": "calculated",
+      "displayedCalories": 1,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "258",
+      "name": {
+        "hy": "Գինի Koor Rezerve red",
+        "ru": "Красное вино Koor Reserve",
+        "en": "Koor Reserve Red Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "139",
+          "type": "ingredient",
+          "name": "Koor Rezerve /red/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "259",
+      "name": {
+        "hy": "365 Pomegranate 150",
+        "ru": "365 Pomegranate 150 мл",
+        "en": "365 Pomegranate 150 ml"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "26",
+      "name": {
+        "hy": "Սեւ թեյ դասական",
+        "ru": "Классический чёрный чай",
+        "en": "Classic Black Tea"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "260",
+      "name": {
+        "hy": "Գինի Piccini Memoro",
+        "ru": "Вино Piccini Memoro",
+        "en": "Piccini Memoro Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "140",
+          "type": "ingredient",
+          "name": "Piccini Memoro /white/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "261",
+      "name": {
+        "hy": "Գինի Takar red",
+        "ru": "Красное вино Takar",
+        "en": "Takar Red Wine"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "262",
+      "name": {
+        "hy": "Takar red 150",
+        "ru": "Takar красное 150 мл",
+        "en": "Takar Red 150 ml"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "263",
+      "name": {
+        "hy": "Գինի Takar rosé",
+        "ru": "Розовое вино Takar",
+        "en": "Takar Rosé Wine"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "264",
+      "name": {
+        "hy": "Takar rosé 150",
+        "ru": "Takar розовое 150 мл",
+        "en": "Takar Rosé 150 ml"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "265",
+      "name": {
+        "hy": "Գինի Takar white",
+        "ru": "Белое вино Takar",
+        "en": "Takar White Wine"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "266",
+      "name": {
+        "hy": "Takar white 150",
+        "ru": "Takar белое 150 мл",
+        "en": "Takar White 150 ml"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "268",
+      "name": {
+        "hy": "Գինի Tariri red",
+        "ru": "Красное вино Tariri",
+        "en": "Tariri Red Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "144",
+          "type": "ingredient",
+          "name": "Tariri /red/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "27",
+      "name": {
+        "hy": "Էկլեր",
+        "ru": "Эклер",
+        "en": "Éclair"
+      },
+      "status": "calculated",
+      "displayedCalories": 824559,
+      "displayedAsMinimum": false,
+      "recipeRows": 5,
+      "resolvedRows": 5,
+      "prepackRows": 3,
+      "resolvedPrepackRows": 3,
+      "unresolved": []
+    },
+    {
+      "productId": "270",
+      "name": {
+        "hy": "Գինի Tariri white",
+        "ru": "Белое вино Tariri",
+        "en": "Tariri White Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "145",
+          "type": "ingredient",
+          "name": "Tariri /white/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "271",
+      "name": {
+        "hy": "Գինի Tus white",
+        "ru": "Белое вино Tus",
+        "en": "Tus White Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "146",
+          "type": "ingredient",
+          "name": "Tus /white/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "275",
+      "name": {
+        "hy": "Գինի Zorah Karasi /red/",
+        "ru": "Красное вино Zorah Karasi",
+        "en": "Zorah Karasi Red Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "150",
+          "type": "ingredient",
+          "name": "Zorah Karasi",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "276",
+      "name": {
+        "hy": "Գինի Zorah Voski",
+        "ru": "Вино Zorah Voski",
+        "en": "Zorah Voski Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "151",
+          "type": "ingredient",
+          "name": "Zorah Voski",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "277",
+      "name": {
+        "hy": "Գինի Zorah Yeraz /red/",
+        "ru": "Красное вино Zorah Yeraz",
+        "en": "Zorah Yeraz Red Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "152",
+          "type": "ingredient",
+          "name": "Zorah Yeraz /red/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "278",
+      "name": {
+        "hy": "կոկտեյլ դասական",
+        "ru": "Классический коктейль",
+        "en": "Classic Cocktail"
+      },
+      "status": "needs_review",
+      "displayedCalories": 0,
+      "displayedAsMinimum": true,
+      "recipeRows": 3,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "537",
+          "type": "ingredient",
+          "name": "муштук",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "538",
+          "type": "ingredient",
+          "name": "уголь",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "280",
+      "name": {
+        "hy": "Լատե նուշի կաթով",
+        "ru": "Латте на миндальном молоке",
+        "en": "Latte with Almond Milk"
+      },
+      "status": "calculated",
+      "displayedCalories": 1,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "281",
+      "name": {
+        "hy": "լիկյոր Նռան",
+        "ru": "Гранатовый ликёр",
+        "en": "Pomegranate Liqueur"
+      },
+      "status": "calculated",
+      "displayedCalories": 55,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "282",
+      "name": {
+        "hy": "Նռան օղի",
+        "ru": "Гранатовая водка",
+        "en": "Pomegranate Vodka"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "283",
+      "name": {
+        "hy": "Լայմ",
+        "ru": "Лайм",
+        "en": "Lime"
+      },
+      "status": "calculated",
+      "displayedCalories": 23,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "284",
+      "name": {
+        "hy": "Թան 1 լ",
+        "ru": "Тан 1 л",
+        "en": "Tan 1 L"
+      },
+      "status": "calculated",
+      "displayedCalories": 402,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "285",
+      "name": {
+        "hy": "Կոճապղպեղ հաղարջ բազիլիկ",
+        "ru": "Имбирь, смородина, базилик",
+        "en": "Ginger, Currant and Basil"
+      },
+      "status": "calculated",
+      "displayedCalories": 178,
+      "displayedAsMinimum": false,
+      "recipeRows": 5,
+      "resolvedRows": 5,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    },
+    {
+      "productId": "286",
+      "name": {
+        "hy": "Թաթարական հնդկաձավարով թեյ",
+        "ru": "Татарский чай с гречихой",
+        "en": "Tatar Buckwheat Tea"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "288",
+      "name": {
+        "hy": "Կաթնային ուլուն",
+        "ru": "Молочный улун",
+        "en": "Milk Oolong"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "289",
+      "name": {
+        "hy": "Կապույտ թեյ \"Անչան\"",
+        "ru": "Синий чай «Анчан»",
+        "en": "Blue Anchan Tea"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "290",
+      "name": {
+        "hy": "Կիտրոն մեղր կոճապղպեղ",
+        "ru": "Лимон, мёд, имбирь",
+        "en": "Lemon, Honey and Ginger"
+      },
+      "status": "needs_review",
+      "displayedCalories": 176,
+      "displayedAsMinimum": true,
+      "recipeRows": 3,
+      "resolvedRows": 2,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": [
+        {
+          "id": "436",
+          "type": "ingredient",
+          "name": "Лимон",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "291",
+      "name": {
+        "hy": "Վրացական աղցան",
+        "ru": "Грузинский салат",
+        "en": "Georgian Salad"
+      },
+      "status": "needs_review",
+      "displayedCalories": 243,
+      "displayedAsMinimum": true,
+      "recipeRows": 5,
+      "resolvedRows": 4,
+      "prepackRows": 3,
+      "resolvedPrepackRows": 2,
+      "unresolved": [
+        {
+          "id": "613",
+          "type": "prepack",
+          "name": "соус для грузинского",
+          "grams": 25,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "292",
+      "name": {
+        "hy": "կետչուպ",
+        "ru": "Кетчуп",
+        "en": "Ketchup"
+      },
+      "status": "calculated",
+      "displayedCalories": 67,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "293",
+      "name": {
+        "hy": "մայոնեզ",
+        "ru": "Майонез",
+        "en": "Mayonnaise"
+      },
+      "status": "calculated",
+      "displayedCalories": 408,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "294",
+      "name": {
+        "hy": "մանանեխ",
+        "ru": "Горчица",
+        "en": "Mustard"
+      },
+      "status": "calculated",
+      "displayedCalories": 40,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "295",
+      "name": {
+        "hy": "մեղր",
+        "ru": "Мёд",
+        "en": "Honey"
+      },
+      "status": "calculated",
+      "displayedCalories": 152,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "296",
+      "name": {
+        "hy": "նաշարաբ",
+        "ru": "Наршараб",
+        "en": "Narsharab"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "297",
+      "name": {
+        "hy": "սոյայի սոուս",
+        "ru": "Соевый соус",
+        "en": "Soy Sauce"
+      },
+      "status": "calculated",
+      "displayedCalories": 42,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "298",
+      "name": {
+        "hy": "սոուս Սացեբելի",
+        "ru": "Соус сацебели",
+        "en": "Satsebeli Sauce"
+      },
+      "status": "calculated",
+      "displayedCalories": 27,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "299",
+      "name": {
+        "hy": "սոուս BBQ",
+        "ru": "Соус BBQ",
+        "en": "BBQ Sauce"
+      },
+      "status": "calculated",
+      "displayedCalories": 65,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "300",
+      "name": {
+        "hy": "սոուս Ազիա",
+        "ru": "Соус «Азия»",
+        "en": "Asia Sauce"
+      },
+      "status": "calculated",
+      "displayedCalories": 8,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "301",
+      "name": {
+        "hy": "սոուս Պեստո",
+        "ru": "Соус песто",
+        "en": "Pesto Sauce"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "302",
+      "name": {
+        "hy": "Տաբասկո",
+        "ru": "Табаско",
+        "en": "Tabasco"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "303",
+      "name": {
+        "hy": "Տխեմալի",
+        "ru": "Ткемали",
+        "en": "Tkemali"
+      },
+      "status": "calculated",
+      "displayedCalories": 48,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "304",
+      "name": {
+        "hy": "սոուս Քիմ Չի",
+        "ru": "Соус кимчи",
+        "en": "Kimchi Sauce"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "305",
+      "name": {
+        "hy": "Բաստուրմա",
+        "ru": "Бастурма",
+        "en": "Basturma"
+      },
+      "status": "calculated",
+      "displayedCalories": 240,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "306",
+      "name": {
+        "hy": "Թել պանիր",
+        "ru": "Сыр чечил",
+        "en": "String Cheese"
+      },
+      "status": "calculated",
+      "displayedCalories": 320,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "307",
+      "name": {
+        "hy": "Նրբերշիկ",
+        "ru": "Сосиски",
+        "en": "Sausages"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "308",
+      "name": {
+        "hy": "Պանիր Բրի",
+        "ru": "Сыр бри",
+        "en": "Brie Cheese"
+      },
+      "status": "calculated",
+      "displayedCalories": 418,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "309",
+      "name": {
+        "hy": "Պանիր Լոռի",
+        "ru": "Сыр Лори",
+        "en": "Lori Cheese"
+      },
+      "status": "calculated",
+      "displayedCalories": 680,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "31",
+      "name": {
+        "hy": "Բանջարեղենային գրիլ",
+        "ru": "Овощи на гриле",
+        "en": "Grilled Vegetables"
+      },
+      "status": "calculated",
+      "displayedCalories": 227,
+      "displayedAsMinimum": false,
+      "recipeRows": 8,
+      "resolvedRows": 8,
+      "prepackRows": 4,
+      "resolvedPrepackRows": 4,
+      "unresolved": []
+    },
+    {
+      "productId": "310",
+      "name": {
+        "hy": "Պանիր ոչխարի",
+        "ru": "Овечий сыр",
+        "en": "Sheep's Milk Cheese"
+      },
+      "status": "calculated",
+      "displayedCalories": 1,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "311",
+      "name": {
+        "hy": "Պանիր Չանախ",
+        "ru": "Сыр чанах",
+        "en": "Chanakh Cheese"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "312",
+      "name": {
+        "hy": "Պանիր Պարմեզան",
+        "ru": "Пармезан",
+        "en": "Parmesan Cheese"
+      },
+      "status": "calculated",
+      "displayedCalories": 588,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "313",
+      "name": {
+        "hy": "Պանիր Ռոքվոր",
+        "ru": "Рокфор",
+        "en": "Roquefort Cheese"
+      },
+      "status": "calculated",
+      "displayedCalories": 369,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "314",
+      "name": {
+        "hy": "Պանիր Սուլուգունի",
+        "ru": "Сулугуни",
+        "en": "Suluguni Cheese"
+      },
+      "status": "calculated",
+      "displayedCalories": 286,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "315",
+      "name": {
+        "hy": "Պանիր Ֆետա",
+        "ru": "Фета",
+        "en": "Feta Cheese"
+      },
+      "status": "calculated",
+      "displayedCalories": 396,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "316",
+      "name": {
+        "hy": "Պաշինա",
+        "ru": "Пашина",
+        "en": "Pork Belly"
+      },
+      "status": "calculated",
+      "displayedCalories": 192,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "317",
+      "name": {
+        "hy": "Պրոշուտտո",
+        "ru": "Прошутто",
+        "en": "Prosciutto"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "318",
+      "name": {
+        "hy": "Սալ",
+        "ru": "Сало",
+        "en": "Cured Pork Fat"
+      },
+      "status": "calculated",
+      "displayedCalories": 406,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "319",
+      "name": {
+        "hy": "Ծովախեցգետին",
+        "ru": "Креветки",
+        "en": "Shrimp"
+      },
+      "status": "calculated",
+      "displayedCalories": 255,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "32",
+      "name": {
+        "hy": "Արիշտա ստրաչատելայով եւ ղավուրմայով",
+        "ru": "Аришта со страчателлой и кавурмой",
+        "en": "Arishta with Stracciatella and Kavurma"
+      },
+      "status": "calculated",
+      "displayedCalories": 418,
+      "displayedAsMinimum": false,
+      "recipeRows": 6,
+      "resolvedRows": 6,
+      "prepackRows": 3,
+      "resolvedPrepackRows": 3,
+      "unresolved": []
+    },
+    {
+      "productId": "320",
+      "name": {
+        "hy": "Կարմիր ձկնկիթ",
+        "ru": "Красная икра",
+        "en": "Red Caviar"
+      },
+      "status": "calculated",
+      "displayedCalories": 275,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "321",
+      "name": {
+        "hy": "Սաղմոն",
+        "ru": "Лосось",
+        "en": "Salmon"
+      },
+      "status": "calculated",
+      "displayedCalories": 374,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "322",
+      "name": {
+        "hy": "Թթվասեր",
+        "ru": "Сметана",
+        "en": "Sour Cream"
+      },
+      "status": "calculated",
+      "displayedCalories": 119,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "323",
+      "name": {
+        "hy": "Կարագ",
+        "ru": "Сливочное масло",
+        "en": "Butter"
+      },
+      "status": "calculated",
+      "displayedCalories": 359,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "324",
+      "name": {
+        "hy": "Ձու",
+        "ru": "Яйцо",
+        "en": "Egg"
+      },
+      "status": "calculated",
+      "displayedCalories": 514800,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "325",
+      "name": {
+        "hy": "Մածուն",
+        "ru": "Мацони",
+        "en": "Matsoni"
+      },
+      "status": "calculated",
+      "displayedCalories": 79,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "326",
+      "name": {
+        "hy": "Քամած մածուն",
+        "ru": "Сцеженный мацони",
+        "en": "Strained Matsoni"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "327",
+      "name": {
+        "hy": "Քամած նարինջ",
+        "ru": "Свежевыжатый апельсиновый сок",
+        "en": "Fresh Orange Juice"
+      },
+      "status": "calculated",
+      "displayedCalories": 493,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "328",
+      "name": {
+        "hy": "Քամած անանաս",
+        "ru": "Свежевыжатый ананасовый сок",
+        "en": "Fresh Pineapple Juice"
+      },
+      "status": "calculated",
+      "displayedCalories": 18023,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "329",
+      "name": {
+        "hy": "Քամած գազար",
+        "ru": "Свежевыжатый морковный сок",
+        "en": "Fresh Carrot Juice"
+      },
+      "status": "calculated",
+      "displayedCalories": 205,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "330",
+      "name": {
+        "hy": "Քամած թուրինջ",
+        "ru": "Свежевыжатый грейпфрутовый сок",
+        "en": "Fresh Grapefruit Juice"
+      },
+      "status": "calculated",
+      "displayedCalories": 359,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "331",
+      "name": {
+        "hy": "Քամած խնձոր",
+        "ru": "Свежевыжатый яблочный сок",
+        "en": "Fresh Apple Juice"
+      },
+      "status": "calculated",
+      "displayedCalories": 439,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "332",
+      "name": {
+        "hy": "Քամած կիտրոն",
+        "ru": "Свежевыжатый лимонный сок",
+        "en": "Fresh Lemon Juice"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "436",
+          "type": "ingredient",
+          "name": "Лимон",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "333",
+      "name": {
+        "hy": "Ելակի ֆրեշ",
+        "ru": "Клубничный фреш",
+        "en": "Fresh Strawberry Juice"
+      },
+      "status": "calculated",
+      "displayedCalories": 214,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "334",
+      "name": {
+        "hy": "Գլինտվեյն",
+        "ru": "Глинтвейн",
+        "en": "Mulled Wine"
+      },
+      "status": "needs_review",
+      "displayedCalories": 79,
+      "displayedAsMinimum": true,
+      "recipeRows": 9,
+      "resolvedRows": 8,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "436",
+          "type": "ingredient",
+          "name": "Лимон",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "335",
+      "name": {
+        "hy": "Սանգրիա /դասական/",
+        "ru": "Классическая сангрия",
+        "en": "Classic Sangria"
+      },
+      "status": "needs_review",
+      "displayedCalories": 135,
+      "displayedAsMinimum": true,
+      "recipeRows": 11,
+      "resolvedRows": 9,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "436",
+          "type": "ingredient",
+          "name": "Лимон",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "301",
+          "type": "ingredient",
+          "name": "тоник",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "336",
+      "name": {
+        "hy": "լիմոնադ Տրոպիկական",
+        "ru": "Тропический лимонад",
+        "en": "Tropical Lemonade"
+      },
+      "status": "needs_review",
+      "displayedCalories": 3000164,
+      "displayedAsMinimum": true,
+      "recipeRows": 7,
+      "resolvedRows": 6,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "645",
+          "type": "prepack",
+          "name": "лимон/лайм",
+          "grams": 25,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "337",
+      "name": {
+        "hy": "լիմոնադ Թարխուն+տանձ",
+        "ru": "Лимонад тархун-груша",
+        "en": "Tarragon & Pear Lemonade"
+      },
+      "status": "needs_review",
+      "displayedCalories": 57,
+      "displayedAsMinimum": true,
+      "recipeRows": 5,
+      "resolvedRows": 3,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "648",
+          "type": "prepack",
+          "name": "тархуновый сироп",
+          "grams": 50,
+          "reason": "prepack_nutrition_unresolved"
+        },
+        {
+          "id": "645",
+          "type": "prepack",
+          "name": "лимон/лайм",
+          "grams": 25,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "341",
+      "name": {
+        "hy": "լիմոնադ Ցիտրուսային",
+        "ru": "Цитрусовый лимонад",
+        "en": "Citrus Lemonade"
+      },
+      "status": "needs_review",
+      "displayedCalories": 24029,
+      "displayedAsMinimum": true,
+      "recipeRows": 9,
+      "resolvedRows": 6,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "647",
+          "type": "prepack",
+          "name": "цитрусовый сироп",
+          "grams": 100,
+          "reason": "prepack_nutrition_unresolved"
+        },
+        {
+          "id": "645",
+          "type": "prepack",
+          "name": "лимон/лайм",
+          "grams": 25,
+          "reason": "prepack_nutrition_unresolved"
+        },
+        {
+          "id": "436",
+          "type": "ingredient",
+          "name": "Лимон",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "342",
+      "name": {
+        "hy": "լիմոնադ Իզաբելլա",
+        "ru": "Лимонад «Изабелла»",
+        "en": "Isabella Lemonade"
+      },
+      "status": "calculated",
+      "displayedCalories": 48014,
+      "displayedAsMinimum": false,
+      "recipeRows": 4,
+      "resolvedRows": 4,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "347",
+      "name": {
+        "hy": "Կոմպոտ",
+        "ru": "Компот",
+        "en": "Compote"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "294",
+          "type": "ingredient",
+          "name": "Компот",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "348",
+      "name": {
+        "hy": "լիկյոր Լիմոնչելլո",
+        "ru": "Ликёр Лимончелло",
+        "en": "Limoncello Liqueur"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "654",
+          "type": "prepack",
+          "name": "ликер из лимона",
+          "grams": 50,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "350",
+      "name": {
+        "hy": "լիկյոր Բալի",
+        "ru": "Вишнёвый ликёр",
+        "en": "Cherry Liqueur"
+      },
+      "status": "calculated",
+      "displayedCalories": 51,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "351",
+      "name": {
+        "hy": "լիկյոր Լոռամրգի",
+        "ru": "Клюквенный ликёр",
+        "en": "Cranberry Liqueur"
+      },
+      "status": "calculated",
+      "displayedCalories": 30,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "352",
+      "name": {
+        "hy": "Ծիրանի օղի",
+        "ru": "Абрикосовая водка",
+        "en": "Apricot Vodka"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "353",
+      "name": {
+        "hy": "Հոնի օղի",
+        "ru": "Кизиловая водка",
+        "en": "Cornelian Cherry Vodka"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "354",
+      "name": {
+        "hy": "Թթի օղի",
+        "ru": "Тутовая водка",
+        "en": "Mulberry Vodka"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "355",
+      "name": {
+        "hy": "Վայրի տանձի օղի",
+        "ru": "Водка из дикой груши",
+        "en": "Wild Pear Vodka"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "356",
+      "name": {
+        "hy": "Օղի Absolut",
+        "ru": "Водка Absolut",
+        "en": "Absolut Vodka"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "357",
+      "name": {
+        "hy": "Օղի Absolut Elyx",
+        "ru": "Водка Absolut Elyx",
+        "en": "Absolut Elyx Vodka"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "359",
+      "name": {
+        "hy": "Օղի Chistie Rosi",
+        "ru": "Водка Chistie Rosi",
+        "en": "Chistie Rosi Vodka"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "36",
+      "name": {
+        "hy": "Լոռամիրգ բալ նարինջ",
+        "ru": "Клюква, вишня, апельсин",
+        "en": "Cranberry, Cherry and Orange"
+      },
+      "status": "calculated",
+      "displayedCalories": 193,
+      "displayedAsMinimum": false,
+      "recipeRows": 5,
+      "resolvedRows": 5,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "360",
+      "name": {
+        "hy": "Օղի Grey Goose",
+        "ru": "Водка Grey Goose",
+        "en": "Grey Goose Vodka"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "361",
+      "name": {
+        "hy": "Օղի Ohanyan Ice",
+        "ru": "Водка Ohanyan Ice",
+        "en": "Ohanyan Ice Vodka"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "362",
+      "name": {
+        "hy": "Օղի Onegin",
+        "ru": "Водка Онегин",
+        "en": "Onegin Vodka"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "363",
+      "name": {
+        "hy": "Օղի Absolut /1b/",
+        "ru": "Водка Absolut /1 бутылка/",
+        "en": "Absolut Vodka /1 Bottle/"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "364",
+      "name": {
+        "hy": "Օղի Absolut Elyx /1b/",
+        "ru": "Водка Absolut Elyx /1 бутылка/",
+        "en": "Absolut Elyx Vodka /1 Bottle/"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "365",
+      "name": {
+        "hy": "Օղի Beluga /1b/",
+        "ru": "Водка Beluga /1 бутылка/",
+        "en": "Beluga Vodka /1 Bottle/"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "366",
+      "name": {
+        "hy": "Օղի Chistie Rosi /1b/",
+        "ru": "Водка Chistie Rosi /1 бутылка/",
+        "en": "Chistie Rosi Vodka /1 Bottle/"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "367",
+      "name": {
+        "hy": "Օղի Grey Goose /1b/",
+        "ru": "Водка Grey Goose /1 бутылка/",
+        "en": "Grey Goose Vodka /1 Bottle/"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "369",
+      "name": {
+        "hy": "Օղի Onegin /1b/",
+        "ru": "Водка Онегин /1 бутылка/",
+        "en": "Onegin Vodka /1 Bottle/"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "370",
+      "name": {
+        "hy": "Վիսկի Ballantine՝s",
+        "ru": "Виски Ballantine's",
+        "en": "Ballantine's Whisky"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "371",
+      "name": {
+        "hy": "Վիսկի Chivas Regal 12 YO",
+        "ru": "Виски Chivas Regal 12 YO",
+        "en": "Chivas Regal 12 YO Whisky"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "372",
+      "name": {
+        "hy": "ՎԻսկի Chivas Regal 18 YO",
+        "ru": "Виски Chivas Regal 18 YO",
+        "en": "Chivas Regal 18 YO Whisky"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "373",
+      "name": {
+        "hy": "Վիսկի Glenfiddich 15",
+        "ru": "Виски Glenfiddich 15",
+        "en": "Glenfiddich 15 Whisky"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "374",
+      "name": {
+        "hy": "Վիսկի Jack Daniel`s",
+        "ru": "Виски Jack Daniel's",
+        "en": "Jack Daniel's Whiskey"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "375",
+      "name": {
+        "hy": "Վիսկի Jack Daniel`s Honey",
+        "ru": "Виски Jack Daniel's Honey",
+        "en": "Jack Daniel's Honey Whiskey"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "376",
+      "name": {
+        "hy": "Վիսկի Jameson",
+        "ru": "Виски Jameson",
+        "en": "Jameson Whiskey"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "377",
+      "name": {
+        "hy": "Վիսկի The Glenlivet 12 YO",
+        "ru": "Виски The Glenlivet 12 YO",
+        "en": "The Glenlivet 12 YO Whisky"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "378",
+      "name": {
+        "hy": "Վիսկի The Macallan 12 YO",
+        "ru": "Виски The Macallan 12 YO",
+        "en": "The Macallan 12 YO Whisky"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "379",
+      "name": {
+        "hy": "Վիսկի Jin Beam",
+        "ru": "Виски Jim Beam",
+        "en": "Jim Beam Whiskey"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "380",
+      "name": {
+        "hy": "Խալապենյո",
+        "ru": "Халапеньо",
+        "en": "Jalapeño"
+      },
+      "status": "calculated",
+      "displayedCalories": 15,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "381",
+      "name": {
+        "hy": "Սոուս հապալասենի",
+        "ru": "Соус из голубики",
+        "en": "Blueberry Sauce"
+      },
+      "status": "calculated",
+      "displayedCalories": 40,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "382",
+      "name": {
+        "hy": "Բրենդի Akhtamar",
+        "ru": "Бренди Akhtamar",
+        "en": "Akhtamar Brandy"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "383",
+      "name": {
+        "hy": "Բրենդի Dvin",
+        "ru": "Бренди Dvin",
+        "en": "Dvin Brandy"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "384",
+      "name": {
+        "hy": "Բրենդի Nairi",
+        "ru": "Бренди Nairi",
+        "en": "Nairi Brandy"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "385",
+      "name": {
+        "hy": "Բրենդի Ohanyan",
+        "ru": "Бренди Ohanyan",
+        "en": "Ohanyan Brandy"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "386",
+      "name": {
+        "hy": "Բրենդի Vaspurakan",
+        "ru": "Бренди Vaspurakan",
+        "en": "Vaspurakan Brandy"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "387",
+      "name": {
+        "hy": "Բիթեռ Aperol",
+        "ru": "Биттер Aperol",
+        "en": "Aperol Bitter"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "388",
+      "name": {
+        "hy": "Բիթեռ Becherovka",
+        "ru": "Биттер Becherovka",
+        "en": "Becherovka Herbal Liqueur"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "389",
+      "name": {
+        "hy": "Բիթեռ Campari",
+        "ru": "Биттер Campari",
+        "en": "Campari Bitter"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "390",
+      "name": {
+        "hy": "Բիթեռ Jagermeister",
+        "ru": "Ликёр Jägermeister",
+        "en": "Jägermeister Liqueur"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "391",
+      "name": {
+        "hy": "Բիթեռ Xenta",
+        "ru": "Абсент Xenta",
+        "en": "Xenta Absinthe"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "392",
+      "name": {
+        "hy": "Վերմուտ Martini",
+        "ru": "Вермут Martini",
+        "en": "Martini Vermouth"
+      },
+      "status": "calculated",
+      "displayedCalories": 73,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "393",
+      "name": {
+        "hy": "Բրենդի Calvados",
+        "ru": "Кальвадос",
+        "en": "Calvados"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "394",
+      "name": {
+        "hy": "Գինի կարմիր 150",
+        "ru": "Գինի կարմիր 150",
+        "en": "Գինի կարմիր 150"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "396",
+      "name": {
+        "hy": "Ջին Beefeter",
+        "ru": "Джин Beefeater",
+        "en": "Beefeater Gin"
+      },
+      "status": "calculated",
+      "displayedCalories": 116,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "397",
+      "name": {
+        "hy": "Ջին Bombay Sapphire",
+        "ru": "Джин Bombay Sapphire",
+        "en": "Bombay Sapphire Gin"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "398",
+      "name": {
+        "hy": "Ջին Hendrick`s",
+        "ru": "Джин Hendrick's",
+        "en": "Hendrick's Gin"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "399",
+      "name": {
+        "hy": "Ջին Monkey",
+        "ru": "Джин Monkey",
+        "en": "Monkey Gin"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "400",
+      "name": {
+        "hy": "Ջին Stin",
+        "ru": "Джин Stin",
+        "en": "Stin Gin"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "401",
+      "name": {
+        "hy": "Ջին Roku",
+        "ru": "Джин Roku",
+        "en": "Roku Gin"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "402",
+      "name": {
+        "hy": "Ռոմ Havana Club 3 Blanco",
+        "ru": "Ром Havana Club 3 Blanco",
+        "en": "Havana Club 3 Blanco Rum"
+      },
+      "status": "calculated",
+      "displayedCalories": 116,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "403",
+      "name": {
+        "hy": "Կոնյակ Hennessy VSOP",
+        "ru": "Коньяк Hennessy VSOP",
+        "en": "Hennessy VSOP Cognac"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "404",
+      "name": {
+        "hy": "Կոնյակ Hennessy XO",
+        "ru": "Коньяк Hennessy XO",
+        "en": "Hennessy XO Cognac"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "405",
+      "name": {
+        "hy": "ԼԻկյոր Baileys",
+        "ru": "Ликёр Baileys",
+        "en": "Baileys Liqueur"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "406",
+      "name": {
+        "hy": "Լիկյոր Cointreau",
+        "ru": "Ликёр Cointreau",
+        "en": "Cointreau Liqueur"
+      },
+      "status": "calculated",
+      "displayedCalories": 154,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "407",
+      "name": {
+        "hy": "Լիկյոր Kahlua",
+        "ru": "Ликёр Kahlúa",
+        "en": "Kahlúa Liqueur"
+      },
+      "status": "calculated",
+      "displayedCalories": 155,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "408",
+      "name": {
+        "hy": "Լիկյոր Malibu",
+        "ru": "Ликёр Malibu",
+        "en": "Malibu Liqueur"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "409",
+      "name": {
+        "hy": "Լիկյոր Sambuka",
+        "ru": "Самбука",
+        "en": "Sambuca"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "410",
+      "name": {
+        "hy": "Լիկյոր St.Germain",
+        "ru": "Ликёр St-Germain",
+        "en": "St-Germain Liqueur"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "411",
+      "name": {
+        "hy": "Կոկտել B52",
+        "ru": "Коктейль B-52",
+        "en": "B-52 Cocktail"
+      },
+      "status": "calculated",
+      "displayedCalories": 185,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "412",
+      "name": {
+        "hy": "Կոկտել Bloody Mery",
+        "ru": "Коктейль Bloody Mary",
+        "en": "Bloody Mary Cocktail"
+      },
+      "status": "needs_review",
+      "displayedCalories": 187,
+      "displayedAsMinimum": true,
+      "recipeRows": 7,
+      "resolvedRows": 6,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "645",
+          "type": "prepack",
+          "name": "лимон/лайм",
+          "grams": 25,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "413",
+      "name": {
+        "hy": "Կոկտել Brandy sour",
+        "ru": "Коктейль Brandy Sour",
+        "en": "Brandy Sour Cocktail"
+      },
+      "status": "needs_review",
+      "displayedCalories": 514876,
+      "displayedAsMinimum": true,
+      "recipeRows": 6,
+      "resolvedRows": 4,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "645",
+          "type": "prepack",
+          "name": "лимон/лайм",
+          "grams": 15,
+          "reason": "prepack_nutrition_unresolved"
+        },
+        {
+          "id": "436",
+          "type": "ingredient",
+          "name": "Лимон",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "414",
+      "name": {
+        "hy": "Կոկտեյլ Adioz",
+        "ru": "Коктейль Adios",
+        "en": "Adios Cocktail"
+      },
+      "status": "needs_review",
+      "displayedCalories": 185,
+      "displayedAsMinimum": true,
+      "recipeRows": 6,
+      "resolvedRows": 4,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "645",
+          "type": "prepack",
+          "name": "лимон/лайм",
+          "grams": 20,
+          "reason": "prepack_nutrition_unresolved"
+        },
+        {
+          "id": "293",
+          "type": "ingredient",
+          "name": "Кола",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "416",
+      "name": {
+        "hy": "Կոկտեյլ Aperol Spritz",
+        "ru": "Коктейль Aperol Spritz",
+        "en": "Aperol Spritz Cocktail"
+      },
+      "status": "calculated",
+      "displayedCalories": 753,
+      "displayedAsMinimum": false,
+      "recipeRows": 7,
+      "resolvedRows": 7,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "417",
+      "name": {
+        "hy": "Կոկտեյլ Bellini",
+        "ru": "Коктейль Bellini",
+        "en": "Bellini Cocktail"
+      },
+      "status": "calculated",
+      "displayedCalories": 240,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "418",
+      "name": {
+        "hy": "Կոկտեյլ Betty",
+        "ru": "Коктейль Betty",
+        "en": "Betty Cocktail"
+      },
+      "status": "needs_review",
+      "displayedCalories": 28,
+      "displayedAsMinimum": true,
+      "recipeRows": 5,
+      "resolvedRows": 4,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 1,
+      "unresolved": [
+        {
+          "id": "645",
+          "type": "prepack",
+          "name": "лимон/лайм",
+          "grams": 15,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "421",
+      "name": {
+        "hy": "Կոկտեյլ Caipirinha",
+        "ru": "Коктейль Кайпиринья",
+        "en": "Caipirinha Cocktail"
+      },
+      "status": "calculated",
+      "displayedCalories": 48076,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "422",
+      "name": {
+        "hy": "Կոկտեյլ Cosmopolitan",
+        "ru": "Коктейль Cosmopolitan",
+        "en": "Cosmopolitan Cocktail"
+      },
+      "status": "needs_review",
+      "displayedCalories": 201,
+      "displayedAsMinimum": true,
+      "recipeRows": 5,
+      "resolvedRows": 3,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "645",
+          "type": "prepack",
+          "name": "лимон/лайм",
+          "grams": 25,
+          "reason": "prepack_nutrition_unresolved"
+        },
+        {
+          "id": "658",
+          "type": "prepack",
+          "name": "сироп из клюквы",
+          "grams": 30,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "423",
+      "name": {
+        "hy": "Կոկտեյլ Daiquiri",
+        "ru": "Коктейль Дайкири",
+        "en": "Daiquiri Cocktail"
+      },
+      "status": "needs_review",
+      "displayedCalories": 192,
+      "displayedAsMinimum": true,
+      "recipeRows": 3,
+      "resolvedRows": 2,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "645",
+          "type": "prepack",
+          "name": "лимон/лайм",
+          "grams": 25,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "424",
+      "name": {
+        "hy": "Կոկտեյլ Frozen Daiquiri",
+        "ru": "Коктейль Frozen Daiquiri",
+        "en": "Frozen Daiquiri Cocktail"
+      },
+      "status": "needs_review",
+      "displayedCalories": 192,
+      "displayedAsMinimum": true,
+      "recipeRows": 3,
+      "resolvedRows": 2,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "645",
+          "type": "prepack",
+          "name": "лимон/лайм",
+          "grams": 25,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "425",
+      "name": {
+        "hy": "Կոկտեյլ Fruit Daiquiri",
+        "ru": "Фруктовый дайкири",
+        "en": "Fruit Daiquiri"
+      },
+      "status": "needs_review",
+      "displayedCalories": 212,
+      "displayedAsMinimum": true,
+      "recipeRows": 4,
+      "resolvedRows": 3,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "645",
+          "type": "prepack",
+          "name": "лимон/лайм",
+          "grams": 25,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "426",
+      "name": {
+        "hy": "Կոկտեյլ Fruit Margarita",
+        "ru": "Фруктовая Маргарита",
+        "en": "Fruit Margarita"
+      },
+      "status": "needs_review",
+      "displayedCalories": 216,
+      "displayedAsMinimum": true,
+      "recipeRows": 5,
+      "resolvedRows": 4,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "645",
+          "type": "prepack",
+          "name": "лимон/лайм",
+          "grams": 25,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "427",
+      "name": {
+        "hy": "Կոկտեյլ Margarita",
+        "ru": "Коктейль Маргарита",
+        "en": "Margarita Cocktail"
+      },
+      "status": "needs_review",
+      "displayedCalories": 200,
+      "displayedAsMinimum": true,
+      "recipeRows": 4,
+      "resolvedRows": 3,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "645",
+          "type": "prepack",
+          "name": "лимон/лайм",
+          "grams": 25,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "428",
+      "name": {
+        "hy": "Կոկտեյլ Fruit Mojito",
+        "ru": "Фруктовый мохито",
+        "en": "Fruit Mojito"
+      },
+      "status": "needs_review",
+      "displayedCalories": 48235,
+      "displayedAsMinimum": true,
+      "recipeRows": 6,
+      "resolvedRows": 5,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "293",
+          "type": "ingredient",
+          "name": "Кола",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "429",
+      "name": {
+        "hy": "Կոկտեյլ Fruit Mojito/ոչ ալկոհոլային",
+        "ru": "Фруктовый мохито без алкоголя",
+        "en": "Non-Alcoholic Fruit Mojito"
+      },
+      "status": "needs_review",
+      "displayedCalories": 104,
+      "displayedAsMinimum": true,
+      "recipeRows": 5,
+      "resolvedRows": 4,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "293",
+          "type": "ingredient",
+          "name": "Кола",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "43",
+      "name": {
+        "hy": "Սեւ թեյ դարչին մեխակով",
+        "ru": "Чёрный чай с корицей и гвоздикой",
+        "en": "Black Tea with Cinnamon and Clove"
+      },
+      "status": "calculated",
+      "displayedCalories": 10,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "430",
+      "name": {
+        "hy": "Կոկտեյլ Long Islan Ice Tea",
+        "ru": "Коктейль Long Island Iced Tea",
+        "en": "Long Island Iced Tea Cocktail"
+      },
+      "status": "needs_review",
+      "displayedCalories": 246,
+      "displayedAsMinimum": true,
+      "recipeRows": 7,
+      "resolvedRows": 5,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "293",
+          "type": "ingredient",
+          "name": "Кола",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "645",
+          "type": "prepack",
+          "name": "лимон/лайм",
+          "grams": 25,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "431",
+      "name": {
+        "hy": "Կոկտեյլ Mojito",
+        "ru": "Коктейль Мохито",
+        "en": "Mojito Cocktail"
+      },
+      "status": "needs_review",
+      "displayedCalories": 48203,
+      "displayedAsMinimum": true,
+      "recipeRows": 5,
+      "resolvedRows": 4,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "293",
+          "type": "ingredient",
+          "name": "Кола",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "432",
+      "name": {
+        "hy": "Կոկտեյլ Mojito /ոչ ալկոհոլային/",
+        "ru": "Мохито без алкоголя",
+        "en": "Non-Alcoholic Mojito"
+      },
+      "status": "needs_review",
+      "displayedCalories": 89,
+      "displayedAsMinimum": true,
+      "recipeRows": 4,
+      "resolvedRows": 3,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "293",
+          "type": "ingredient",
+          "name": "Кола",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "433",
+      "name": {
+        "hy": "Կոկտեյլ White Russian",
+        "ru": "Коктейль White Russian",
+        "en": "White Russian Cocktail"
+      },
+      "status": "calculated",
+      "displayedCalories": 533,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "435",
+      "name": {
+        "hy": "Պաղպաղակ հատապտուղներով",
+        "ru": "Мороженое с ягодами",
+        "en": "Ice Cream with Berries"
+      },
+      "status": "calculated",
+      "displayedCalories": 348,
+      "displayedAsMinimum": false,
+      "recipeRows": 4,
+      "resolvedRows": 4,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "437",
+      "name": {
+        "hy": "Կիտրոնի սորբեթ",
+        "ru": "Лимонный сорбет",
+        "en": "Lemon Sorbet"
+      },
+      "status": "needs_review",
+      "displayedCalories": 2,
+      "displayedAsMinimum": true,
+      "recipeRows": 3,
+      "resolvedRows": 2,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "436",
+          "type": "ingredient",
+          "name": "Лимон",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "439",
+      "name": {
+        "hy": "Սպորտային հաց",
+        "ru": "Спортивный хлеб",
+        "en": "Sports Bread"
+      },
+      "status": "calculated",
+      "displayedCalories": 210,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "440",
+      "name": {
+        "hy": "կիտրոն",
+        "ru": "Лимон",
+        "en": "Lemon"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "436",
+          "type": "ingredient",
+          "name": "Лимон",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "441",
+      "name": {
+        "hy": "Պյուրե Մոնին",
+        "ru": "Пюре Monin",
+        "en": "Monin Purée"
+      },
+      "status": "calculated",
+      "displayedCalories": 150,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "442",
+      "name": {
+        "hy": "Օշարակ մոնին",
+        "ru": "Сироп Monin",
+        "en": "Monin Syrup"
+      },
+      "status": "calculated",
+      "displayedCalories": 160,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "444",
+      "name": {
+        "hy": "Կոկոսի կաթ",
+        "ru": "Кокосовое молоко",
+        "en": "Coconut Milk"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "447",
+      "name": {
+        "hy": "Perrier",
+        "ru": "Perrier",
+        "en": "Perrier"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "297",
+          "type": "ingredient",
+          "name": "Перриер",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "448",
+      "name": {
+        "hy": "Red Bull",
+        "ru": "Red Bull",
+        "en": "Red Bull"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "298",
+          "type": "ingredient",
+          "name": "Ред Булл",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "449",
+      "name": {
+        "hy": "Tonic Fever-Tree",
+        "ru": "Тоник Fever-Tree",
+        "en": "Fever-Tree Tonic"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "301",
+          "type": "ingredient",
+          "name": "тоник",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "451",
+      "name": {
+        "hy": "Արեւելյան /կգ/",
+        "ru": "Восточный /кг/",
+        "en": "Oriental /kg/"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "452",
+      "name": {
+        "hy": "Աֆոգատո ելակով",
+        "ru": "Аффогато с клубникой",
+        "en": "Strawberry Affogato"
+      },
+      "status": "calculated",
+      "displayedCalories": 398,
+      "displayedAsMinimum": false,
+      "recipeRows": 4,
+      "resolvedRows": 4,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "453",
+      "name": {
+        "hy": "Բամբլ Մայիս",
+        "ru": "Бамбл «Майис»",
+        "en": "Mayis Bumble Coffee"
+      },
+      "status": "calculated",
+      "displayedCalories": 199,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "454",
+      "name": {
+        "hy": "Իռլանդական սուրճ",
+        "ru": "Ирландский кофе",
+        "en": "Irish Coffee"
+      },
+      "status": "calculated",
+      "displayedCalories": 1,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "455",
+      "name": {
+        "hy": "Տնական կակաո",
+        "ru": "Домашнее какао",
+        "en": "Homemade Cocoa"
+      },
+      "status": "calculated",
+      "displayedCalories": 214,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "456",
+      "name": {
+        "hy": "Փարիզյան սուրճ",
+        "ru": "Парижский кофе",
+        "en": "Parisian Coffee"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "457",
+      "name": {
+        "hy": "Բանջարեղենի ձողիկներ",
+        "ru": "Овощные палочки",
+        "en": "Vegetable Sticks"
+      },
+      "status": "calculated",
+      "displayedCalories": 84,
+      "displayedAsMinimum": false,
+      "recipeRows": 4,
+      "resolvedRows": 4,
+      "prepackRows": 3,
+      "resolvedPrepackRows": 3,
+      "unresolved": []
+    },
+    {
+      "productId": "458",
+      "name": {
+        "hy": "Կարտոֆիլ ֆրի",
+        "ru": "Картофель фри",
+        "en": "French Fries"
+      },
+      "status": "calculated",
+      "displayedCalories": 714,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "459",
+      "name": {
+        "hy": "Կարտոֆիլի խյուս կաթի վրա",
+        "ru": "Картофельное пюре на молоке",
+        "en": "Mashed Potatoes with Milk"
+      },
+      "status": "calculated",
+      "displayedCalories": 429,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "460",
+      "name": {
+        "hy": "Հավի նագեթս կարտոֆիլ ֆրիով",
+        "ru": "Куриные наггетсы с картофелем фри",
+        "en": "Chicken Nuggets with French Fries"
+      },
+      "status": "calculated",
+      "displayedCalories": 439676,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "461",
+      "name": {
+        "hy": "Սենդվիչներ խոզապուխտով,կարտոֆիլ ֆրիով",
+        "ru": "Сэндвичи с ветчиной и картофелем фри",
+        "en": "Ham Sandwiches with French Fries"
+      },
+      "status": "needs_review",
+      "displayedCalories": 729,
+      "displayedAsMinimum": true,
+      "recipeRows": 8,
+      "resolvedRows": 7,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": [
+        {
+          "id": "532",
+          "type": "ingredient",
+          "name": "тосты",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "464",
+      "name": {
+        "hy": "Մանգոյի հյութ /250մլ/",
+        "ru": "Манговый сок 250 мл",
+        "en": "Mango Juice 250 ml"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "296",
+          "type": "ingredient",
+          "name": "Натуральные соки /0,25/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "465",
+      "name": {
+        "hy": "Միլկ շեյք /շոկոլադե/",
+        "ru": "Шоколадный милкшейк",
+        "en": "Chocolate Milkshake"
+      },
+      "status": "calculated",
+      "displayedCalories": 405,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "466",
+      "name": {
+        "hy": "Միլք շեյք /վանիլային/",
+        "ru": "Ванильный милкшейк",
+        "en": "Vanilla Milkshake"
+      },
+      "status": "calculated",
+      "displayedCalories": 469,
+      "displayedAsMinimum": false,
+      "recipeRows": 4,
+      "resolvedRows": 4,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "467",
+      "name": {
+        "hy": "Միլք շեյք բանանով",
+        "ru": "Банановый милкшейк",
+        "en": "Banana Milkshake"
+      },
+      "status": "calculated",
+      "displayedCalories": 583,
+      "displayedAsMinimum": false,
+      "recipeRows": 4,
+      "resolvedRows": 4,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "468",
+      "name": {
+        "hy": "Միլք շեյք ելակով",
+        "ru": "Клубничный милкшейк",
+        "en": "Strawberry Milkshake"
+      },
+      "status": "calculated",
+      "displayedCalories": 453,
+      "displayedAsMinimum": false,
+      "recipeRows": 4,
+      "resolvedRows": 4,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "469",
+      "name": {
+        "hy": "Միլքշեյք",
+        "ru": "Милкшейк",
+        "en": "Milkshake"
+      },
+      "status": "calculated",
+      "displayedCalories": 617,
+      "displayedAsMinimum": false,
+      "recipeRows": 7,
+      "resolvedRows": 7,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "470",
+      "name": {
+        "hy": "Լունգո",
+        "ru": "Лунго",
+        "en": "Lungo"
+      },
+      "status": "calculated",
+      "displayedCalories": 1,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "471",
+      "name": {
+        "hy": "Կապուչինո կոկոսի կաթով",
+        "ru": "Капучино на кокосовом молоке",
+        "en": "Cappuccino with Coconut Milk"
+      },
+      "status": "calculated",
+      "displayedCalories": 1,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "472",
+      "name": {
+        "hy": "Կապուչինո նուշի կաթով",
+        "ru": "Капучино на миндальном молоке",
+        "en": "Cappuccino with Almond Milk"
+      },
+      "status": "calculated",
+      "displayedCalories": 1,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "473",
+      "name": {
+        "hy": "Լոլիկ",
+        "ru": "Помидор",
+        "en": "Tomato"
+      },
+      "status": "calculated",
+      "displayedCalories": 72,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "474",
+      "name": {
+        "hy": "Կծու ծիծակ",
+        "ru": "Острый перец цицак",
+        "en": "Hot Tsitsak Pepper"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "264",
+          "type": "ingredient",
+          "name": "острый перец",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "475",
+      "name": {
+        "hy": "Լոլիկ չերրի",
+        "ru": "Помидоры черри",
+        "en": "Cherry Tomatoes"
+      },
+      "status": "calculated",
+      "displayedCalories": 90,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "476",
+      "name": {
+        "hy": "Ձիթապտուղ",
+        "ru": "Оливки",
+        "en": "Olives"
+      },
+      "status": "calculated",
+      "displayedCalories": 136,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "477",
+      "name": {
+        "hy": "Պիրի-պիրի",
+        "ru": "Пири-пири",
+        "en": "Piri-Piri"
+      },
+      "status": "calculated",
+      "displayedCalories": 16,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "478",
+      "name": {
+        "hy": "Վարունգ",
+        "ru": "Огурец",
+        "en": "Cucumber"
+      },
+      "status": "calculated",
+      "displayedCalories": 45,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "48",
+      "name": {
+        "hy": "Տաք Կաթ",
+        "ru": "Тёплое молоко",
+        "en": "Warm Milk"
+      },
+      "status": "calculated",
+      "displayedCalories": 94,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "480",
+      "name": {
+        "hy": "Կոկտեյլ Rossini",
+        "ru": "Коктейль Rossini",
+        "en": "Rossini Cocktail"
+      },
+      "status": "calculated",
+      "displayedCalories": 250,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "481",
+      "name": {
+        "hy": "Գաթա",
+        "ru": "Гата",
+        "en": "Gata"
+      },
+      "status": "calculated",
+      "displayedCalories": 33505,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    },
+    {
+      "productId": "482",
+      "name": {
+        "hy": "Ձվածեղ լոլիկով",
+        "ru": "Омлет с помидорами",
+        "en": "Omelet with Tomatoes"
+      },
+      "status": "calculated",
+      "displayedCalories": 1029786,
+      "displayedAsMinimum": false,
+      "recipeRows": 5,
+      "resolvedRows": 5,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "483",
+      "name": {
+        "hy": "Թխվածքաբլիթ",
+        "ru": "Печенье",
+        "en": "Cookie"
+      },
+      "status": "calculated",
+      "displayedCalories": 98781,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 3,
+      "resolvedPrepackRows": 3,
+      "unresolved": []
+    },
+    {
+      "productId": "485",
+      "name": {
+        "hy": "Կոնֆետների հավաքածու բոմբոներկա",
+        "ru": "Набор конфет в бомбоньерке",
+        "en": "Chocolate Gift Box"
+      },
+      "status": "calculated",
+      "displayedCalories": 1096,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 3,
+      "resolvedPrepackRows": 3,
+      "unresolved": []
+    },
+    {
+      "productId": "488",
+      "name": {
+        "hy": "Ծիրանի թեյ",
+        "ru": "Абрикосовый чай",
+        "en": "Apricot Tea"
+      },
+      "status": "needs_review",
+      "displayedCalories": 97,
+      "displayedAsMinimum": true,
+      "recipeRows": 6,
+      "resolvedRows": 5,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "645",
+          "type": "prepack",
+          "name": "лимон/лайм",
+          "grams": 25,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "50",
+      "name": {
+        "hy": "Ձաձիկի Ավոկադոյով",
+        "ru": "Дзадзики с авокадо",
+        "en": "Tzatziki with Avocado"
+      },
+      "status": "needs_review",
+      "displayedCalories": 23,
+      "displayedAsMinimum": true,
+      "recipeRows": 6,
+      "resolvedRows": 3,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 1,
+      "unresolved": [
+        {
+          "id": "549",
+          "type": "prepack",
+          "name": "дзадзики с авокадо",
+          "grams": 200,
+          "reason": "prepack_nutrition_unresolved"
+        },
+        {
+          "id": "436",
+          "type": "ingredient",
+          "name": "Лимон",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "597",
+          "type": "ingredient",
+          "name": "пита",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "507",
+      "name": {
+        "hy": "լիմոնադ Չիչխան Մարակուա",
+        "ru": "Лимонад облепиха-маракуйя",
+        "en": "Sea Buckthorn & Passion Fruit Lemonade"
+      },
+      "status": "needs_review",
+      "displayedCalories": 225,
+      "displayedAsMinimum": true,
+      "recipeRows": 5,
+      "resolvedRows": 4,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "645",
+          "type": "prepack",
+          "name": "лимон/лайм",
+          "grams": 20,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "508",
+      "name": {
+        "hy": "կոկտեյլ Nur",
+        "ru": "Коктейль Nur",
+        "en": "Nur Cocktail"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "539",
+          "type": "ingredient",
+          "name": "табак Nur",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "538",
+          "type": "ingredient",
+          "name": "уголь",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "537",
+          "type": "ingredient",
+          "name": "муштук",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "531",
+      "name": {
+        "hy": "Մատչա լատե",
+        "ru": "Матча-латте",
+        "en": "Matcha Latte"
+      },
+      "status": "calculated",
+      "displayedCalories": 1,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "536",
+      "name": {
+        "hy": "լիմոնադ Յուզու+Մանգո",
+        "ru": "Лимонад юдзу-манго",
+        "en": "Yuzu & Mango Lemonade"
+      },
+      "status": "needs_review",
+      "displayedCalories": 129,
+      "displayedAsMinimum": true,
+      "recipeRows": 4,
+      "resolvedRows": 3,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "645",
+          "type": "prepack",
+          "name": "лимон/лайм",
+          "grams": 25,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "537",
+      "name": {
+        "hy": "ղավուրմա",
+        "ru": "Кавурма",
+        "en": "Kavurma"
+      },
+      "status": "calculated",
+      "displayedCalories": 552,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "54",
+      "name": {
+        "hy": "Էսպրեսսո /double/",
+        "ru": "Двойной эспрессо",
+        "en": "Double Espresso"
+      },
+      "status": "calculated",
+      "displayedCalories": 1,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "55",
+      "name": {
+        "hy": "Ամերիկանո",
+        "ru": "Американо",
+        "en": "Americano"
+      },
+      "status": "calculated",
+      "displayedCalories": 1,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "56",
+      "name": {
+        "hy": "Խարչո",
+        "ru": "Харчо",
+        "en": "Kharcho"
+      },
+      "status": "needs_review",
+      "displayedCalories": 0,
+      "displayedAsMinimum": true,
+      "recipeRows": 2,
+      "resolvedRows": 1,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 1,
+      "unresolved": [
+        {
+          "id": "564",
+          "type": "prepack",
+          "name": "харчо",
+          "grams": 350,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "57",
+      "name": {
+        "hy": "Կարտոֆիլի խյուս",
+        "ru": "Картофельное пюре",
+        "en": "Mashed Potatoes"
+      },
+      "status": "calculated",
+      "displayedCalories": 398,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "572",
+      "name": {
+        "hy": "Քամած նուռ",
+        "ru": "Свежевыжатый гранатовый сок",
+        "en": "Fresh Pomegranate Juice"
+      },
+      "status": "calculated",
+      "displayedCalories": 1023,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "574",
+      "name": {
+        "hy": "Ավոկադո",
+        "ru": "Авокадо",
+        "en": "Avocado"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "513",
+          "type": "prepack",
+          "name": "авокадо чищенный",
+          "grams": 100,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "575",
+      "name": {
+        "hy": "Սեւանի իշխան",
+        "ru": "Севанская форель",
+        "en": "Sevan Trout"
+      },
+      "status": "needs_review",
+      "displayedCalories": 466,
+      "displayedAsMinimum": true,
+      "recipeRows": 8,
+      "resolvedRows": 6,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "436",
+          "type": "ingredient",
+          "name": "Лимон",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "186",
+          "type": "ingredient",
+          "name": "Форель /шт/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "576",
+      "name": {
+        "hy": "Մեղր բար",
+        "ru": "Медовый бар",
+        "en": "Honey Bar"
+      },
+      "status": "calculated",
+      "displayedCalories": 213,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "59",
+      "name": {
+        "hy": "Նապոլեոն",
+        "ru": "Наполеон",
+        "en": "Napoleon Cake"
+      },
+      "status": "calculated",
+      "displayedCalories": 109396,
+      "displayedAsMinimum": false,
+      "recipeRows": 4,
+      "resolvedRows": 4,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    },
+    {
+      "productId": "61",
+      "name": {
+        "hy": "Բեզե կարամելիզացված դեղձով",
+        "ru": "Безе с карамелизированным персиком",
+        "en": "Meringue with Caramelized Peach"
+      },
+      "status": "calculated",
+      "displayedCalories": 267850,
+      "displayedAsMinimum": false,
+      "recipeRows": 7,
+      "resolvedRows": 7,
+      "prepackRows": 3,
+      "resolvedPrepackRows": 3,
+      "unresolved": []
+    },
+    {
+      "productId": "62",
+      "name": {
+        "hy": "Կանաչ թեյ դասական",
+        "ru": "Классический зелёный чай",
+        "en": "Classic Green Tea"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "638",
+      "name": {
+        "hy": "Բանջարեղենի զամբյուղ",
+        "ru": "Овощная корзина",
+        "en": "Vegetable Basket"
+      },
+      "status": "needs_review",
+      "displayedCalories": 155,
+      "displayedAsMinimum": true,
+      "recipeRows": 10,
+      "resolvedRows": 9,
+      "prepackRows": 8,
+      "resolvedPrepackRows": 8,
+      "unresolved": [
+        {
+          "id": "264",
+          "type": "ingredient",
+          "name": "острый перец",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "639",
+      "name": {
+        "hy": "Հայկական պանրի տեսականի",
+        "ru": "Ассорти армянских сыров",
+        "en": "Armenian Cheese Selection"
+      },
+      "status": "calculated",
+      "displayedCalories": 621,
+      "displayedAsMinimum": false,
+      "recipeRows": 9,
+      "resolvedRows": 9,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "64",
+      "name": {
+        "hy": "Լիբանանյան տոլմա",
+        "ru": "Ливанская долма",
+        "en": "Lebanese Dolma"
+      },
+      "status": "needs_review",
+      "displayedCalories": 157,
+      "displayedAsMinimum": true,
+      "recipeRows": 3,
+      "resolvedRows": 2,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": [
+        {
+          "id": "436",
+          "type": "ingredient",
+          "name": "Лимон",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "640",
+      "name": {
+        "hy": "Աղցան Ամառային",
+        "ru": "Салат «Летний»",
+        "en": "Summer Salad"
+      },
+      "status": "needs_review",
+      "displayedCalories": 73,
+      "displayedAsMinimum": true,
+      "recipeRows": 7,
+      "resolvedRows": 6,
+      "prepackRows": 3,
+      "resolvedPrepackRows": 3,
+      "unresolved": [
+        {
+          "id": "436",
+          "type": "ingredient",
+          "name": "Лимон",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "641",
+      "name": {
+        "hy": "Թարմ կանաչի",
+        "ru": "Свежая зелень",
+        "en": "Fresh Herbs"
+      },
+      "status": "calculated",
+      "displayedCalories": 54,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "65",
+      "name": {
+        "hy": "Պաշտետ \"Հավի լյարդի\"",
+        "ru": "Паштет из куриной печени",
+        "en": "Chicken Liver Pâté"
+      },
+      "status": "calculated",
+      "displayedCalories": 238,
+      "displayedAsMinimum": false,
+      "recipeRows": 5,
+      "resolvedRows": 5,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    },
+    {
+      "productId": "66",
+      "name": {
+        "hy": "Հորթի փափկամսի խորոված",
+        "ru": "Шашлык из телячьей вырезки",
+        "en": "Grilled Veal Tenderloin"
+      },
+      "status": "calculated",
+      "displayedCalories": 570,
+      "displayedAsMinimum": false,
+      "recipeRows": 7,
+      "resolvedRows": 7,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "660",
+      "name": {
+        "hy": "Օղի Stumbras 1bot",
+        "ru": "Водка Stumbras 1 бутылка",
+        "en": "Stumbras Vodka 1 Bottle"
+      },
+      "status": "calculated",
+      "displayedCalories": 1155,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "661",
+      "name": {
+        "hy": "Կոկտել Negroni",
+        "ru": "Коктейль Negroni",
+        "en": "Negroni Cocktail"
+      },
+      "status": "calculated",
+      "displayedCalories": 127,
+      "displayedAsMinimum": false,
+      "recipeRows": 4,
+      "resolvedRows": 4,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "662",
+      "name": {
+        "hy": "Կոկտել Tequila Sunrise",
+        "ru": "Коктейль Tequila Sunrise",
+        "en": "Tequila Sunrise Cocktail"
+      },
+      "status": "calculated",
+      "displayedCalories": 288,
+      "displayedAsMinimum": false,
+      "recipeRows": 5,
+      "resolvedRows": 5,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "663",
+      "name": {
+        "hy": "Կոկտել Martini Royal",
+        "ru": "Коктейль Martini Royale",
+        "en": "Martini Royale Cocktail"
+      },
+      "status": "needs_review",
+      "displayedCalories": 254,
+      "displayedAsMinimum": true,
+      "recipeRows": 4,
+      "resolvedRows": 3,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "645",
+          "type": "prepack",
+          "name": "лимон/лайм",
+          "grams": 25,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "664",
+      "name": {
+        "hy": "Կոկտել Mojito Pomegranate",
+        "ru": "Гранатовый мохито",
+        "en": "Pomegranate Mojito"
+      },
+      "status": "needs_review",
+      "displayedCalories": 332,
+      "displayedAsMinimum": true,
+      "recipeRows": 7,
+      "resolvedRows": 5,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": [
+        {
+          "id": "293",
+          "type": "ingredient",
+          "name": "Кола",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "480",
+          "type": "ingredient",
+          "name": "лаваш",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "666",
+      "name": {
+        "hy": "Հաց Բորոդինսկի",
+        "ru": "Бородинский хлеб",
+        "en": "Borodinsky Bread"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "667",
+      "name": {
+        "hy": "խտացրած կաթ",
+        "ru": "Сгущённое молоко",
+        "en": "Condensed Milk"
+      },
+      "status": "calculated",
+      "displayedCalories": 193,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "669",
+      "name": {
+        "hy": "թանձրուկ պղպեղի",
+        "ru": "Перечный соус",
+        "en": "Pepper Sauce"
+      },
+      "status": "calculated",
+      "displayedCalories": 274,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "670",
+      "name": {
+        "hy": "թանձրուկ պանրի",
+        "ru": "Сырный соус",
+        "en": "Cheese Sauce"
+      },
+      "status": "calculated",
+      "displayedCalories": 355,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "671",
+      "name": {
+        "hy": "թանձրուկ հոնի",
+        "ru": "Кизиловый соус",
+        "en": "Cornelian Cherry Sauce"
+      },
+      "status": "calculated",
+      "displayedCalories": 174,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "672",
+      "name": {
+        "hy": "ռուկոլլա",
+        "ru": "Руккола",
+        "en": "Arugula"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "673",
+      "name": {
+        "hy": "սերուցք",
+        "ru": "Сливки",
+        "en": "Cream"
+      },
+      "status": "calculated",
+      "displayedCalories": 343,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "674",
+      "name": {
+        "hy": "Սխտորի հաց",
+        "ru": "Чесночный хлеб",
+        "en": "Garlic Bread"
+      },
+      "status": "calculated",
+      "displayedCalories": 38146,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "675",
+      "name": {
+        "hy": "Քամած կոճապղպեղ",
+        "ru": "Свежевыжатый имбирный сок",
+        "en": "Fresh Ginger Juice"
+      },
+      "status": "calculated",
+      "displayedCalories": 160,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "679",
+      "name": {
+        "hy": "Նուշի կաթ",
+        "ru": "Миндальное молоко",
+        "en": "Almond Milk"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "681",
+      "name": {
+        "hy": "Բրինձ",
+        "ru": "Рис",
+        "en": "Rice"
+      },
+      "status": "calculated",
+      "displayedCalories": 143,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "684",
+      "name": {
+        "hy": "Օղի Stumbras 50 ml",
+        "ru": "Водка Stumbras 50 мл",
+        "en": "Stumbras Vodka 50 ml"
+      },
+      "status": "calculated",
+      "displayedCalories": 116,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "688",
+      "name": {
+        "hy": "Փարանջանով",
+        "ru": "Параджанов",
+        "en": "Parajanov"
+      },
+      "status": "needs_review",
+      "displayedCalories": 335,
+      "displayedAsMinimum": true,
+      "recipeRows": 4,
+      "resolvedRows": 3,
+      "prepackRows": 3,
+      "resolvedPrepackRows": 2,
+      "unresolved": [
+        {
+          "id": "785",
+          "type": "prepack",
+          "name": "тесто для Параджанова",
+          "grams": 280,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "689",
+      "name": {
+        "hy": "Խոզի կողիկներ",
+        "ru": "Свиные рёбрышки",
+        "en": "Pork Ribs"
+      },
+      "status": "calculated",
+      "displayedCalories": 562,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "69",
+      "name": {
+        "hy": "Տնական բուրատտա",
+        "ru": "Домашняя буррата",
+        "en": "House-Made Burrata"
+      },
+      "status": "needs_review",
+      "displayedCalories": 443,
+      "displayedAsMinimum": true,
+      "recipeRows": 7,
+      "resolvedRows": 6,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "492",
+          "type": "prepack",
+          "name": "буратта Z",
+          "grams": 150,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "697",
+      "name": {
+        "hy": "Աղի պիստակ",
+        "ru": "Солёные фисташки",
+        "en": "Salted Pistachios"
+      },
+      "status": "calculated",
+      "displayedCalories": 458,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "70",
+      "name": {
+        "hy": "Լատե",
+        "ru": "Латте",
+        "en": "Latte"
+      },
+      "status": "calculated",
+      "displayedCalories": 108,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "701",
+      "name": {
+        "hy": "Կվաս take away",
+        "ru": "Квас с собой",
+        "en": "Kvass To Go"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "292",
+          "type": "ingredient",
+          "name": "Квас",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "71",
+      "name": {
+        "hy": "բալզամիկ կրեմ",
+        "ru": "Бальзамический крем",
+        "en": "Balsamic Glaze"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "715",
+      "name": {
+        "hy": "Ձվածեղ բաստուրմայով",
+        "ru": "Омлет с бастурмой",
+        "en": "Omelet with Basturma"
+      },
+      "status": "calculated",
+      "displayedCalories": 1029720,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "716",
+      "name": {
+        "hy": "Հաց Պիտա",
+        "ru": "Пита",
+        "en": "Pita Bread"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "597",
+          "type": "ingredient",
+          "name": "пита",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "717",
+      "name": {
+        "hy": "Վարդի մուրաբա",
+        "ru": "Варенье из лепестков роз",
+        "en": "Rose Petal Jam"
+      },
+      "status": "calculated",
+      "displayedCalories": 167,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "718",
+      "name": {
+        "hy": "Մսային միքս 2",
+        "ru": "Мясной микс 2",
+        "en": "Meat Mix 2"
+      },
+      "status": "needs_review",
+      "displayedCalories": 4074,
+      "displayedAsMinimum": true,
+      "recipeRows": 10,
+      "resolvedRows": 9,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": [
+        {
+          "id": "264",
+          "type": "ingredient",
+          "name": "острый перец",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "72",
+      "name": {
+        "hy": "ձիթապտղի ձեթ",
+        "ru": "Оливковое масло",
+        "en": "Olive Oil"
+      },
+      "status": "calculated",
+      "displayedCalories": 407,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "74",
+      "name": {
+        "hy": "Մութաբալ",
+        "ru": "Мутабаль",
+        "en": "Mutabbal"
+      },
+      "status": "needs_review",
+      "displayedCalories": 18,
+      "displayedAsMinimum": true,
+      "recipeRows": 5,
+      "resolvedRows": 3,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 1,
+      "unresolved": [
+        {
+          "id": "496",
+          "type": "prepack",
+          "name": "мутабаль Z",
+          "grams": 150,
+          "reason": "prepack_nutrition_unresolved"
+        },
+        {
+          "id": "597",
+          "type": "ingredient",
+          "name": "пита",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "75",
+      "name": {
+        "hy": "Բանջարեղենային աղցան ֆետա պանրով",
+        "ru": "Овощной салат с сыром фета",
+        "en": "Vegetable Salad with Feta"
+      },
+      "status": "needs_review",
+      "displayedCalories": 380,
+      "displayedAsMinimum": true,
+      "recipeRows": 13,
+      "resolvedRows": 12,
+      "prepackRows": 5,
+      "resolvedPrepackRows": 4,
+      "unresolved": [
+        {
+          "id": "546",
+          "type": "prepack",
+          "name": "сок лимона Z",
+          "grams": 10,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "754",
+      "name": {
+        "hy": "Տնական շոկոլադների տեսականի",
+        "ru": "Ассорти домашнего шоколада",
+        "en": "House-Made Chocolate Selection"
+      },
+      "status": "calculated",
+      "displayedCalories": 88946,
+      "displayedAsMinimum": false,
+      "recipeRows": 6,
+      "resolvedRows": 6,
+      "prepackRows": 5,
+      "resolvedPrepackRows": 5,
+      "unresolved": []
+    },
+    {
+      "productId": "755",
+      "name": {
+        "hy": ": Գառի կողիկներ և չալաղաջ",
+        "ru": "Бараниее рёбрышки и корейка",
+        "en": "Lamb ribs and rack of lamb"
+      },
+      "status": "calculated",
+      "displayedCalories": 1087,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "758",
+      "name": {
+        "hy": "Գաթա մածունով/կլոր/",
+        "ru": "Круглая гата с мацони",
+        "en": "Round Gata with Matsoni"
+      },
+      "status": "calculated",
+      "displayedCalories": 96466,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    },
+    {
+      "productId": "761",
+      "name": {
+        "hy": "Սոուս շաուրմայի",
+        "ru": "Соус для шаурмы",
+        "en": "Shawarma Sauce"
+      },
+      "status": "calculated",
+      "displayedCalories": 327,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "77",
+      "name": {
+        "hy": "Քինոայով եւ ավոկադոյով աղցան",
+        "ru": "Салат с киноа и авокадо",
+        "en": "Quinoa and Avocado Salad"
+      },
+      "status": "needs_review",
+      "displayedCalories": 402,
+      "displayedAsMinimum": true,
+      "recipeRows": 8,
+      "resolvedRows": 6,
+      "prepackRows": 4,
+      "resolvedPrepackRows": 2,
+      "unresolved": [
+        {
+          "id": "513",
+          "type": "prepack",
+          "name": "авокадо чищенный",
+          "grams": 70,
+          "reason": "prepack_nutrition_unresolved"
+        },
+        {
+          "id": "614",
+          "type": "prepack",
+          "name": "соус для киноа",
+          "grams": 70,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "78",
+      "name": {
+        "hy": "Կանաչ թարմ աղցան էդամամեով",
+        "ru": "Свежий зелёный салат с эдамаме",
+        "en": "Fresh Green Salad with Edamame"
+      },
+      "status": "needs_review",
+      "displayedCalories": 212,
+      "displayedAsMinimum": true,
+      "recipeRows": 11,
+      "resolvedRows": 10,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 1,
+      "unresolved": [
+        {
+          "id": "513",
+          "type": "prepack",
+          "name": "авокадо чищенный",
+          "grams": 200,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "781",
+      "name": {
+        "hy": "Մրջնի բույն",
+        "ru": "Муравейник",
+        "en": "Anthill Cake"
+      },
+      "status": "calculated",
+      "displayedCalories": 13725,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "782",
+      "name": {
+        "hy": "Բուլկի",
+        "ru": "Булочка",
+        "en": "Bun"
+      },
+      "status": "calculated",
+      "displayedCalories": 3091450,
+      "displayedAsMinimum": false,
+      "recipeRows": 6,
+      "resolvedRows": 6,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "789",
+      "name": {
+        "hy": "Ելակ",
+        "ru": "Клубника",
+        "en": "Strawberry"
+      },
+      "status": "calculated",
+      "displayedCalories": 80,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "79",
+      "name": {
+        "hy": "Հավով աղցան",
+        "ru": "Салат с курицей",
+        "en": "Chicken Salad"
+      },
+      "status": "needs_review",
+      "displayedCalories": 892,
+      "displayedAsMinimum": true,
+      "recipeRows": 5,
+      "resolvedRows": 4,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": [
+        {
+          "id": "597",
+          "type": "ingredient",
+          "name": "пита",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "794",
+      "name": {
+        "hy": "Հապալաս",
+        "ru": "Голубика",
+        "en": "Blueberry"
+      },
+      "status": "calculated",
+      "displayedCalories": 86,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "795",
+      "name": {
+        "hy": "Keush Origins",
+        "ru": "Keush Origins",
+        "en": "Keush Origins"
+      },
+      "status": "needs_review",
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 0,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "105",
+          "type": "ingredient",
+          "name": "Keush Brut /white/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "797",
+      "name": {
+        "hy": "Քաղցր հիշողություն",
+        "ru": "Сладкое воспоминание",
+        "en": "Sweet Memory"
+      },
+      "status": "calculated",
+      "displayedCalories": 134999,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "799",
+      "name": {
+        "hy": "Արջուկ",
+        "ru": "Мишка",
+        "en": "Teddy Bear"
+      },
+      "status": "needs_review",
+      "displayedCalories": 390,
+      "displayedAsMinimum": true,
+      "recipeRows": 3,
+      "resolvedRows": 2,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": [
+        {
+          "id": "636",
+          "type": "ingredient",
+          "name": "печатная мастика",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "8",
+      "name": {
+        "hy": "Նախաճաշ Զոքանչից",
+        "ru": "Завтрак от тёщи",
+        "en": "Mother-in-law's Breakfast"
+      },
+      "status": "needs_review",
+      "displayedCalories": 1030209,
+      "displayedAsMinimum": true,
+      "recipeRows": 15,
+      "resolvedRows": 14,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": [
+        {
+          "id": "480",
+          "type": "ingredient",
+          "name": "лаваш",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "80",
+      "name": {
+        "hy": "Բազուկի եւ դդմի աղցան",
+        "ru": "Салат со свёклой и тыквой",
+        "en": "Beetroot and Pumpkin Salad"
+      },
+      "status": "calculated",
+      "displayedCalories": 269,
+      "displayedAsMinimum": false,
+      "recipeRows": 6,
+      "resolvedRows": 6,
+      "prepackRows": 3,
+      "resolvedPrepackRows": 3,
+      "unresolved": []
+    },
+    {
+      "productId": "804",
+      "name": {
+        "hy": "Վայրի սպանախ",
+        "ru": "Дикий шпинат",
+        "en": "Wild Spinach"
+      },
+      "status": "calculated",
+      "displayedCalories": 1029733,
+      "displayedAsMinimum": false,
+      "recipeRows": 5,
+      "resolvedRows": 5,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "806",
+      "name": {
+        "hy": "Ձմերուկ",
+        "ru": "Арбуз",
+        "en": "Watermelon"
+      },
+      "status": "calculated",
+      "displayedCalories": 1500,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "807",
+      "name": {
+        "hy": "Սեխ",
+        "ru": "Дыня",
+        "en": "Melon"
+      },
+      "status": "calculated",
+      "displayedCalories": 0,
+      "displayedAsMinimum": false,
+      "recipeRows": 1,
+      "resolvedRows": 1,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "812",
+      "name": {
+        "hy": "Ակռոշկա",
+        "ru": "Окрошка",
+        "en": "Okroshka"
+      },
+      "status": "calculated",
+      "displayedCalories": 515256,
+      "displayedAsMinimum": false,
+      "recipeRows": 12,
+      "resolvedRows": 12,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "813",
+      "name": {
+        "hy": "Լիմոնով պիրոգ",
+        "ru": "Лимонный пирог",
+        "en": "Lemon Pie"
+      },
+      "status": "needs_review",
+      "displayedCalories": 3093699,
+      "displayedAsMinimum": true,
+      "recipeRows": 6,
+      "resolvedRows": 5,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "436",
+          "type": "ingredient",
+          "name": "Лимон",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "814",
+      "name": {
+        "hy": "Աֆոգատո դասական",
+        "ru": "Классический аффогато",
+        "en": "Classic Affogato"
+      },
+      "status": "calculated",
+      "displayedCalories": 270,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "815",
+      "name": {
+        "hy": "Ձմերուկ Մատիկներ",
+        "ru": "Палочки из арбуза",
+        "en": "Watermelon Sticks"
+      },
+      "status": "calculated",
+      "displayedCalories": 152057,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "819",
+      "name": {
+        "hy": "Շաուրմա քյուֆթայով",
+        "ru": "Шаурма с кюфтой",
+        "en": "Shawarma with Kufta"
+      },
+      "status": "needs_review",
+      "displayedCalories": 40695,
+      "displayedAsMinimum": true,
+      "recipeRows": 12,
+      "resolvedRows": 11,
+      "prepackRows": 5,
+      "resolvedPrepackRows": 5,
+      "unresolved": [
+        {
+          "id": "480",
+          "type": "ingredient",
+          "name": "лаваш",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "82",
+      "name": {
+        "hy": "Տավարի մսով աղցան",
+        "ru": "Салат с говядиной",
+        "en": "Beef Salad"
+      },
+      "status": "needs_review",
+      "displayedCalories": 75,
+      "displayedAsMinimum": true,
+      "recipeRows": 11,
+      "resolvedRows": 10,
+      "prepackRows": 8,
+      "resolvedPrepackRows": 7,
+      "unresolved": [
+        {
+          "id": "616",
+          "type": "prepack",
+          "name": "соус гренадин",
+          "grams": 60,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "820",
+      "name": {
+        "hy": "Ձվածեղ",
+        "ru": "Омлет",
+        "en": "Omelet"
+      },
+      "status": "calculated",
+      "displayedCalories": 1029979,
+      "displayedAsMinimum": false,
+      "recipeRows": 5,
+      "resolvedRows": 5,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "822",
+      "name": {
+        "hy": "Վան",
+        "ru": "Ван",
+        "en": "Van"
+      },
+      "status": "calculated",
+      "displayedCalories": 124969,
+      "displayedAsMinimum": false,
+      "recipeRows": 5,
+      "resolvedRows": 5,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "827",
+      "name": {
+        "hy": "Մեղրով մաշմելո",
+        "ru": "Медовый маршмеллоу",
+        "en": "Honey Marshmallow"
+      },
+      "status": "needs_review",
+      "displayedCalories": 43184,
+      "displayedAsMinimum": true,
+      "recipeRows": 5,
+      "resolvedRows": 4,
+      "prepackRows": 4,
+      "resolvedPrepackRows": 4,
+      "unresolved": [
+        {
+          "id": "566",
+          "type": "ingredient",
+          "name": "Фиалки",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
+    },
+    {
+      "productId": "83",
+      "name": {
+        "hy": "Քաղցրահամ սմբուկով աղցան",
+        "ru": "Салат со сладким баклажаном",
+        "en": "Sweet Eggplant Salad"
+      },
+      "status": "calculated",
+      "displayedCalories": 466,
+      "displayedAsMinimum": false,
+      "recipeRows": 14,
+      "resolvedRows": 14,
+      "prepackRows": 4,
+      "resolvedPrepackRows": 4,
+      "unresolved": []
+    },
+    {
+      "productId": "831",
+      "name": {
+        "hy": "Օրվա առաջարկ",
+        "ru": "Предложение дня",
+        "en": "Daily Special"
+      },
+      "status": "calculated",
+      "displayedCalories": 102236,
+      "displayedAsMinimum": false,
+      "recipeRows": 5,
+      "resolvedRows": 5,
+      "prepackRows": 3,
+      "resolvedPrepackRows": 3,
+      "unresolved": []
+    },
+    {
+      "productId": "84",
+      "name": {
+        "hy": "Սմբուկ հավի մսով",
+        "ru": "Баклажан с курицей",
+        "en": "Eggplant with Chicken"
+      },
+      "status": "calculated",
+      "displayedCalories": 627,
+      "displayedAsMinimum": false,
+      "recipeRows": 6,
+      "resolvedRows": 6,
+      "prepackRows": 3,
+      "resolvedPrepackRows": 3,
+      "unresolved": []
+    },
+    {
+      "productId": "85",
+      "name": {
+        "hy": "Հավի ռուլետ ընկույզով",
+        "ru": "Куриный рулет с грецким орехом",
+        "en": "Chicken Roulade with Walnuts"
+      },
+      "status": "calculated",
+      "displayedCalories": 89,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "86",
+      "name": {
+        "hy": "Ղավուրմա եւ տնական սալ",
+        "ru": "Кавурма и домашнее сало",
+        "en": "Kavurma and House-Made Cured Pork Fat"
+      },
+      "status": "calculated",
+      "displayedCalories": 1133,
+      "displayedAsMinimum": false,
+      "recipeRows": 7,
+      "resolvedRows": 7,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 1,
+      "unresolved": []
+    },
+    {
+      "productId": "87",
+      "name": {
+        "hy": "Բուժենինա բաստուրմա սուջուխ",
+        "ru": "Буженина, бастурма и суджук",
+        "en": "Buzhenina, Basturma and Sujuk"
+      },
+      "status": "calculated",
+      "displayedCalories": 188,
+      "displayedAsMinimum": false,
+      "recipeRows": 6,
+      "resolvedRows": 6,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "88",
+      "name": {
+        "hy": "Համեմված հավի սիրտիկներ",
+        "ru": "Пряные куриные сердечки",
+        "en": "Spiced Chicken Hearts"
+      },
+      "status": "calculated",
+      "displayedCalories": 63,
+      "displayedAsMinimum": false,
+      "recipeRows": 2,
+      "resolvedRows": 2,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    },
+    {
+      "productId": "9",
+      "name": {
+        "hy": "Արեւելյան սկուտեղ",
+        "ru": "Восточное ассорти",
+        "en": "Oriental Platter"
+      },
+      "status": "calculated",
+      "displayedCalories": 1287594,
+      "displayedAsMinimum": false,
+      "recipeRows": 11,
+      "resolvedRows": 11,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    },
+    {
+      "productId": "91",
+      "name": {
+        "hy": "Պանրի տեսականի",
+        "ru": "Ассорти сыров",
+        "en": "Cheese Selection"
+      },
+      "status": "calculated",
+      "displayedCalories": 1111,
+      "displayedAsMinimum": false,
+      "recipeRows": 11,
+      "resolvedRows": 11,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "93",
+      "name": {
+        "hy": "Թթվի տեսականի",
+        "ru": "Ассорти солений",
+        "en": "Pickle Selection"
+      },
+      "status": "calculated",
+      "displayedCalories": 42,
+      "displayedAsMinimum": false,
+      "recipeRows": 5,
+      "resolvedRows": 5,
+      "prepackRows": 0,
+      "resolvedPrepackRows": 0,
+      "unresolved": []
+    },
+    {
+      "productId": "94",
+      "name": {
+        "hy": "լիմոնադ Հատապտղային",
+        "ru": "Ягодный лимонад",
+        "en": "Berry Lemonade"
+      },
+      "status": "needs_review",
+      "displayedCalories": 152,
+      "displayedAsMinimum": true,
+      "recipeRows": 7,
+      "resolvedRows": 6,
+      "prepackRows": 1,
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "645",
+          "type": "prepack",
+          "name": "лимон/лайм",
+          "grams": 25,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "95",
+      "name": {
+        "hy": "Թռչնի կաթ",
+        "ru": "Птичье молоко",
+        "en": "Bird's Milk Dessert"
+      },
+      "status": "calculated",
+      "displayedCalories": 260578,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    },
+    {
+      "productId": "96",
+      "name": {
+        "hy": "Հարբած բալ",
+        "ru": "Пьяная вишня",
+        "en": "Drunken Cherry Dessert"
+      },
+      "status": "calculated",
+      "displayedCalories": 436134,
+      "displayedAsMinimum": false,
+      "recipeRows": 4,
+      "resolvedRows": 4,
+      "prepackRows": 3,
+      "resolvedPrepackRows": 3,
+      "unresolved": []
+    },
+    {
+      "productId": "98",
+      "name": {
+        "hy": "Խինկալի XXL",
+        "ru": "Хинкали XXL",
+        "en": "Khinkali XXL"
+      },
+      "status": "calculated",
+      "displayedCalories": 1975,
+      "displayedAsMinimum": false,
+      "recipeRows": 3,
+      "resolvedRows": 3,
+      "prepackRows": 2,
+      "resolvedPrepackRows": 2,
+      "unresolved": []
+    }
+  ]
+}

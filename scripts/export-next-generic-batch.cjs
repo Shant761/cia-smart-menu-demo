@@ -1,12 +1,13 @@
 const fs = require('node:fs');
 const path = require('node:path');
 
-// Export a fresh, queue-derived shortlist so old classifications do not leak into later batches.
+// Export the complete queue-derived generic remainder so later review never hides
+// candidates behind a fixed 50-row shortlist.
 const input = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data', 'cia-nutrition-research-queue.json'), 'utf8'));
 const entries = Array.isArray(input?.entries) ? input.entries : [];
 const candidates = entries
   .filter((entry) => entry?.kind === 'generic_ingredient' && entry?.verified !== true)
-  .slice(0, 50)
+  .slice(0, 100)
   .map((entry) => ({
     priority: entry.priority,
     id: entry.id,
@@ -19,7 +20,7 @@ const candidates = entries
   }));
 
 const output = {
-  version: '1.0.0',
+  version: '1.1.0',
   source: 'data/cia-nutrition-research-queue.json',
   remainingGenericCount: entries.filter((entry) => entry?.kind === 'generic_ingredient' && entry?.verified !== true).length,
   count: candidates.length,

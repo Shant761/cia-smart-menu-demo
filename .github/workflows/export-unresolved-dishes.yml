@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: unresolved-dish-report-write
+  group: poster-test-nutrition-writes
   cancel-in-progress: false
 
 jobs:

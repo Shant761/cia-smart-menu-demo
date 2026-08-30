@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0",
+  "description": "Operator-reviewed unit rules. Only deterministic mappings belong here; do not add guessed average piece weights.",
+  "excludedIngredientIds": {
+    "681": { "name": "муштук", "reason": "non_food" },
+    "682": { "name": "уголь", "reason": "non_food" },
+    "683": { "name": "табак Nur", "reason": "non_food" }
+  },
+  "pieceWeightGramsByIngredientId": {
+    "296": { "name": "Натуральные соки /0,25/", "grams": 250, "basis": "package size encoded in Poster ingredient name: 0.25 L" },
+    "0": { "name": "reserved", "grams": 0, "basis": "placeholder; ignored" }
+  },
+  "pieceWeightGramsByName": {
+    "krombacher 0.33": { "grams": 330, "basis": "package size encoded in Poster ingredient name: 0.33 L" }
+  }
+}

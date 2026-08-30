@@ -12,6 +12,7 @@ function n(v) {
 
 function round1(v) { return Number(v.toFixed(1)); }
 function normalize(v) { return String(v || '').trim().toLowerCase(); }
+const ANIMAL_RE = /(говя|теля|свинин|свин|курин|куриц|цыплен|баран|ягн|мяс|печен|сердеч|бекон|индей|утк|pork|beef|chicken|lamb|veal|turkey|duck|meat)/i;
 
 function density(name) {
   const value = normalize(name);
@@ -31,9 +32,6 @@ function rowGrams(row) {
   if (['ml', 'мл'].includes(unit)) return value * density(row?.ingredient_name);
   if (['l', 'л'].includes(unit)) return value * 1000 * density(row?.ingredient_name);
   if (['p', 'pc', 'pcs', 'шт'].includes(unit)) {
-    // Poster returns structure_netto as the actual net weight for piece rows.
-    // structure_brutto is the piece count. Multiplying netto by ingredient_weight
-    // created values such as 720,000 g for two eggs.
     return value > 0 ? value : null;
   }
   return null;
@@ -50,14 +48,18 @@ const verified = new Map(
 const prepById = new Map(prepacks.map((prep) => [String(prep.productId), prep]));
 const memo = new Map();
 
-function nutrientValues(entry) {
+function nutrientValues(entry, name = '') {
   const values = {
     calories: n(entry?.kcalPer100g),
     protein: n(entry?.proteinPer100g),
     fat: n(entry?.fatPer100g),
     carbohydrates: n(entry?.carbsPer100g)
   };
-  return Object.values(values).every((v) => v != null) ? values : null;
+  if (!Object.values(values).every((v) => v != null)) return null;
+  // A verified mapping that yields 0 kcal for meat/offal is almost certainly an
+  // ID collision or bad source match. Never let it propagate into a preparation.
+  if (ANIMAL_RE.test(String(name || '')) && values.calories <= 0) return null;
+  return values;
 }
 
 function calculatePrep(prepId, stack = []) {
@@ -103,9 +105,9 @@ function calculatePrep(prepId, stack = []) {
 
     const ingredientId = String(row?.ingredient_id ?? '');
     const source = verified.get(`poster_${ingredientId}`);
-    const values = nutrientValues(source);
+    const values = nutrientValues(source, row?.ingredient_name);
     if (!values) {
-      unresolved.push({ type: 'ingredient', id: ingredientId, name: row?.ingredient_name || '', grams: round1(grams), reason: 'verified_nutrition_missing' });
+      unresolved.push({ type: 'ingredient', id: ingredientId, name: row?.ingredient_name || '', grams: round1(grams), reason: ANIMAL_RE.test(String(row?.ingredient_name || '')) ? 'animal_nutrition_missing_or_zero' : 'verified_nutrition_missing' });
       continue;
     }
 
@@ -127,17 +129,17 @@ function calculatePrep(prepId, stack = []) {
     carbohydrates: round1((totals.carbohydrates / outputGrams) * 100)
   } : null;
 
-  // Absolute safety guard: edible food cannot legitimately exceed ~900 kcal/100 g.
-  // Keep a little margin for rounding/data peculiarities; anything above 1000 is
-  // a unit/conversion error and must never propagate as an exact value.
   const implausibleCalories = Boolean(rawPer100g && rawPer100g.calories > 1000);
-  const canCalculate = unresolved.length === 0 && hasCompleteComposition && outputGrams != null && outputGrams > 0 && !implausibleCalories;
+  const animalZeroCalories = Boolean(rawPer100g && ANIMAL_RE.test(String(prep.name || '')) && rawPer100g.calories <= 0);
+  const canCalculate = unresolved.length === 0 && hasCompleteComposition && outputGrams != null && outputGrams > 0 && !implausibleCalories && !animalZeroCalories;
   const status = canCalculate ? 'calculated' : 'needs_review';
   const reason = rows.length === 0
     ? 'empty_tech_card'
     : implausibleCalories
       ? 'implausible_calories_per_100g'
-      : (!canCalculate && unresolved.length === 0 ? 'incomplete_composition' : undefined);
+      : animalZeroCalories
+        ? 'animal_nutrition_zero'
+        : (!canCalculate && unresolved.length === 0 ? 'incomplete_composition' : undefined);
 
   const result = {
     productId: id,
@@ -147,7 +149,7 @@ function calculatePrep(prepId, stack = []) {
     ...(reason ? { reason } : {}),
     source: 'Poster menu.getPrepacks + verified ingredient nutrition',
     per100g: canCalculate ? rawPer100g : null,
-    partialPer100g: !canCalculate && !implausibleCalories ? rawPer100g : null,
+    partialPer100g: !canCalculate && !implausibleCalories && !animalZeroCalories ? rawPer100g : null,
     knownInputGrams: round1(knownInputGrams),
     totalRows: rows.length,
     resolvedRows: resolved.length,
@@ -165,8 +167,14 @@ const review = results.filter((item) => item.status !== 'calculated');
 const targetIds = new Set((prepData?.targetPrepacks || []).map((prep) => String(prep.productId)));
 const targetResults = results.filter((item) => targetIds.has(String(item.productId)));
 
+const animalProblems = review.filter((item) => ANIMAL_RE.test(String(item.name || '')));
+for (const item of animalProblems) {
+  console.log(`[Prepack animal review] ${item.productId} ${item.name}: reason=${item.reason || 'nested/unresolved'}; unresolved=${item.unresolvedRows}; rows=${item.totalRows}`);
+  for (const row of (item.unresolved || []).slice(0, 5)) console.log(`[Prepack animal review]   ${row.type} ${row.id} ${row.name}: ${row.reason}`);
+}
+
 const payload = {
-  version: '1.2.0',
+  version: '1.3.0',
   restaurantId: prepData?.restaurantId || 'poster-test',
   source: 'Poster menu.getPrepacks + cia-nutrition-manual-top20 verified entries',
   generatedAt: new Date().toISOString(),

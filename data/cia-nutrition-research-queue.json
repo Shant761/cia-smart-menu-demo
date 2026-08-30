@@ -6,9 +6,9 @@
   "counts": {
     "verified": 173,
     "source_collision": 34,
-    "prepared_or_recipe": 89,
-    "generic_ingredient": 56,
-    "alcohol": 82,
+    "prepared_or_recipe": 108,
+    "generic_ingredient": 36,
+    "alcohol": 83,
     "non_food": 2,
     "branded_product": 1
   },
@@ -7620,16 +7620,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "медовые шарики USDA FoodData Central",
-        "медовые шарики calories kcal 100g"
+        "медовые шарики nutrition kcal 100g",
+        "медовые шарики калорийность 100 г"
       ]
     },
     {
@@ -7646,16 +7646,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "медовые шарики 2 USDA FoodData Central",
-        "медовые шарики 2 calories kcal 100g"
+        "медовые шарики 2 nutrition kcal 100g",
+        "медовые шарики 2 калорийность 100 г"
       ]
     },
     {
@@ -7698,16 +7698,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "меренговые кольца USDA FoodData Central",
-        "меренговые кольца calories kcal 100g"
+        "меренговые кольца nutrition kcal 100g",
+        "меренговые кольца калорийность 100 г"
       ]
     },
     {
@@ -8008,16 +8008,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "песочный персик USDA FoodData Central",
-        "песочный персик calories kcal 100g"
+        "песочный персик nutrition kcal 100g",
+        "песочный персик калорийность 100 г"
       ]
     },
     {
@@ -8034,16 +8034,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "песто USDA FoodData Central",
-        "песто calories kcal 100g"
+        "песто nutrition kcal 100g",
+        "песто калорийность 100 г"
       ]
     },
     {
@@ -8060,16 +8060,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "печатная мастика USDA FoodData Central",
-        "печатная мастика calories kcal 100g"
+        "печатная мастика nutrition kcal 100g",
+        "печатная мастика калорийность 100 г"
       ]
     },
     {
@@ -8131,16 +8131,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "покрытие эклера USDA FoodData Central",
-        "покрытие эклера calories kcal 100g"
+        "покрытие эклера nutrition kcal 100g",
+        "покрытие эклера калорийность 100 г"
       ]
     },
     {
@@ -8176,16 +8176,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "прага USDA FoodData Central",
-        "прага calories kcal 100g"
+        "прага nutrition kcal 100g",
+        "прага калорийность 100 г"
       ]
     },
     {
@@ -8280,16 +8280,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "птичье молоко конфета USDA FoodData Central",
-        "птичье молоко конфета calories kcal 100g"
+        "птичье молоко конфета nutrition kcal 100g",
+        "птичье молоко конфета калорийность 100 г"
       ]
     },
     {
@@ -8306,16 +8306,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "птичье молоко/суфле/ USDA FoodData Central",
-        "птичье молоко/суфле/ calories kcal 100g"
+        "птичье молоко/суфле/ nutrition kcal 100g",
+        "птичье молоко/суфле/ калорийность 100 г"
       ]
     },
     {
@@ -8474,16 +8474,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "сан себастьян USDA FoodData Central",
-        "сан себастьян calories kcal 100g"
+        "сан себастьян nutrition kcal 100g",
+        "сан себастьян калорийность 100 г"
       ]
     },
     {
@@ -8640,16 +8640,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "сироп из клюквы USDA FoodData Central",
-        "сироп из клюквы calories kcal 100g"
+        "сироп из клюквы nutrition kcal 100g",
+        "сироп из клюквы калорийность 100 г"
       ]
     },
     {
@@ -9224,16 +9224,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "сулугуни в тесте USDA FoodData Central",
-        "сулугуни в тесте calories kcal 100g"
+        "сулугуни в тесте nutrition kcal 100g",
+        "сулугуни в тесте калорийность 100 г"
       ]
     },
     {
@@ -9321,16 +9321,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "тархуновый сироп USDA FoodData Central",
-        "тархуновый сироп calories kcal 100g"
+        "тархуновый сироп nutrition kcal 100g",
+        "тархуновый сироп калорийность 100 г"
       ]
     },
     {
@@ -9425,16 +9425,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "том ям USDA FoodData Central",
-        "том ям calories kcal 100g"
+        "том ям nutrition kcal 100g",
+        "том ям калорийность 100 г"
       ]
     },
     {
@@ -9503,16 +9503,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "фарш для ярах USDA FoodData Central",
-        "фарш для ярах calories kcal 100g"
+        "фарш для ярах nutrition kcal 100g",
+        "фарш для ярах калорийность 100 г"
       ]
     },
     {
@@ -9529,16 +9529,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "фарш мясной для долмы USDA FoodData Central",
-        "фарш мясной для долмы calories kcal 100g"
+        "фарш мясной для долмы nutrition kcal 100g",
+        "фарш мясной для долмы калорийность 100 г"
       ]
     },
     {
@@ -9555,16 +9555,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "Фасоль в томате USDA FoodData Central",
-        "Фасоль в томате calories kcal 100g"
+        "Фасоль в томате nutrition kcal 100g",
+        "Фасоль в томате калорийность 100 г"
       ]
     },
     {
@@ -9749,16 +9749,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "цитрусовый сироп USDA FoodData Central",
-        "цитрусовый сироп calories kcal 100g"
+        "цитрусовый сироп nutrition kcal 100g",
+        "цитрусовый сироп калорийность 100 г"
       ]
     },
     {
@@ -10019,16 +10019,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "pending_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Manufacturer",
+        "Open Food Facts",
+        "official product specification"
       ],
       "searchQueries": [
-        "գինի կարմիր USDA FoodData Central",
-        "գինի կարմիր calories kcal 100g"
+        "գինի կարմիր calories 100 ml nutrition",
+        "գինի կարմիր ABV calories"
       ]
     }
   ]

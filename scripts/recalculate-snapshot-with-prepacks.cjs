@@ -19,31 +19,44 @@ const queue = JSON.parse(fs.readFileSync(queuePath, 'utf8'));
 const prepackNutrition = JSON.parse(fs.readFileSync(prepackNutritionPath, 'utf8'));
 const manualById = new Map((manual.entries || []).map((entry) => [String(entry.id), entry]));
 const safeVerifiedIds = new Set((queue.entries || []).filter((entry) => entry.kind === 'verified' && entry.verified === true).map((entry) => String(entry.id)));
-const prepackById = new Map((prepackNutrition.results || []).filter((entry) => entry.status === 'calculated' && entry.per100g).map((entry) => [String(entry.productId), entry]));
+const prepackById = new Map(
+  (prepackNutrition.results || [])
+    .filter((entry) => entry.status === 'calculated' && entry.per100g && Number(entry.per100g.calories) <= 1000)
+    .map((entry) => [String(entry.productId), entry])
+);
 const ANIMAL_RE = /(говя|теля|свинин|свин|курин|куриц|цыплен|баран|ягн|мяс|печен|сердеч|бекон|индей|утк|pork|beef|chicken|lamb|veal|turkey|duck|meat)/i;
 
 function n(v) { const x = Number(String(v ?? '').replace(',', '.')); return Number.isFinite(x) ? x : null; }
 function round1(v) { return Math.round(v * 10) / 10; }
 function normalize(v) { return String(v || '').trim().toLowerCase(); }
+function density(name) {
+  const value = normalize(name);
+  if (/масло|oil/.test(value)) return 0.92;
+  if (/молоко|milk/.test(value)) return 1.03;
+  if (/сливк|cream/.test(value)) return 1.01;
+  if (/сироп|syrup/.test(value)) return 1.32;
+  return 1;
+}
 
-// Poster dish tech cards in this account store structure_netto/brutto as grams.
-// Do not multiply values just because ingredient_unit says kg: that field describes
-// the inventory unit and caused 50 g rows to become 50,000 g and million-kcal dishes.
-// Piece rows are accepted only when Poster supplies an explicit piece weight.
+// In Poster dish tech cards structure_netto is already the net weight for piece rows.
+// Example from the live account: 2 eggs => brutto=2, netto=120. Multiplying netto by
+// ingredient_weight produced 720,000 g. Use the positive netto directly.
 function rowGrams(row) {
-  const value = n(row?.structure_netto ?? row?.structure_brutto);
-  if (value == null || value < 0) return null;
+  const netto = n(row?.structure_netto);
+  const brutto = n(row?.structure_brutto);
   const unit = normalize(row?.structure_unit);
+  if (unit === 'p' || ['pc', 'pcs', 'шт'].includes(unit)) return netto != null && netto > 0 ? netto : null;
+  const value = netto ?? brutto;
+  if (value == null || value < 0) return null;
   if (!unit || ['g', 'гр', 'г', 'gram', 'grams'].includes(unit)) return value;
-  if (['p', 'pc', 'pcs', 'шт'].includes(unit)) {
-    const pieceWeight = n(row?.ingredient_weight);
-    return pieceWeight && pieceWeight > 0 ? value * pieceWeight : null;
-  }
+  if (['ml', 'мл'].includes(unit)) return value * density(row?.ingredient_name);
+  if (['l', 'л'].includes(unit)) return value * 1000 * density(row?.ingredient_name);
   return null;
 }
 function nutrientValues(entry, name = '') {
   const values = { calories: n(entry?.kcalPer100g), protein: n(entry?.proteinPer100g), fat: n(entry?.fatPer100g), carbohydrates: n(entry?.carbsPer100g) };
   if (!Object.values(values).every((v) => v != null)) return null;
+  if (values.calories > 1000) return null;
   if (ANIMAL_RE.test(String(name)) && values.calories <= 0) return null;
   return values;
 }
@@ -59,7 +72,7 @@ function per100(total, grams) {
 async function posterRequest(method, params = {}) {
   const url = new URL(`${POSTER_API_BASE}${method}`); url.searchParams.set('token', POSTER_TOKEN); url.searchParams.set('format', 'json');
   for (const [key, value] of Object.entries(params)) if (value !== undefined && value !== null && value !== '') url.searchParams.set(key, String(value));
-  const response = await fetch(url, { headers: { Accept: 'application/json', 'User-Agent': 'CIA-Smart-Menu-Dish-Recalc/1.2' }, signal: AbortSignal.timeout(30000) });
+  const response = await fetch(url, { headers: { Accept: 'application/json', 'User-Agent': 'CIA-Smart-Menu-Dish-Recalc/1.3' }, signal: AbortSignal.timeout(30000) });
   if (!response.ok) throw new Error(`Poster ${method}: HTTP ${response.status}`);
   const payload = await response.json(); if (payload?.error) throw new Error(`Poster ${method}: ${payload.error.message || payload.error.error_message || JSON.stringify(payload.error)}`); return payload?.response;
 }
@@ -82,7 +95,7 @@ function calculateRows(rows) {
       sourceName = prep?.name || '';
       if (prep?.per100g) {
         values = { calories: n(prep.per100g.calories), protein: n(prep.per100g.protein), fat: n(prep.per100g.fat), carbohydrates: n(prep.per100g.carbohydrates) };
-        if (!Object.values(values).every((v) => v != null) || (ANIMAL_RE.test(String(row?.ingredient_name || prep.name || '')) && values.calories <= 0)) values = null;
+        if (!Object.values(values).every((v) => v != null) || values.calories > 1000 || (ANIMAL_RE.test(String(row?.ingredient_name || prep.name || '')) && values.calories <= 0)) values = null;
       }
     } else {
       const source = verifiedIngredient(String(row?.ingredient_id ?? ''));
@@ -94,18 +107,7 @@ function calculateRows(rows) {
     const rowCalories = values.calories * factor;
     totals.calories += rowCalories; totals.protein += values.protein * factor; totals.fat += values.fat * factor; totals.carbohydrates += values.carbohydrates * factor;
     knownGrams += grams; resolvedRows += 1; if (isPrepack) resolvedPrepackRows += 1;
-    resolved.push({
-      id: String(row?.ingredient_id ?? ''),
-      type: isPrepack ? 'prepack' : 'ingredient',
-      name: String(row?.ingredient_name || sourceName || '').trim(),
-      grams: round1(grams),
-      kcalPer100g: round1(values.calories),
-      calories: Math.round(rowCalories),
-      structureUnit: String(row?.structure_unit || ''),
-      ingredientUnit: String(row?.ingredient_unit || ''),
-      rawNetto: n(row?.structure_netto),
-      rawBrutto: n(row?.structure_brutto)
-    });
+    resolved.push({ id: String(row?.ingredient_id ?? ''), type: isPrepack ? 'prepack' : 'ingredient', name: String(row?.ingredient_name || sourceName || '').trim(), grams: round1(grams), kcalPer100g: round1(values.calories), calories: Math.round(rowCalories), structureUnit: String(row?.structure_unit || ''), ingredientUnit: String(row?.ingredient_unit || ''), rawNetto: n(row?.structure_netto), rawBrutto: n(row?.structure_brutto) });
   }
   const fullyResolved = rows.length > 0 && unresolved.length === 0 && resolvedRows === rows.length && knownGrams > 0;
   return { totals, totalGrams, knownGrams, resolvedRows, prepackRows, resolvedPrepackRows, unresolved, resolved, fullyResolved };
@@ -120,7 +122,7 @@ function makeNutrition(result) {
 async function main() {
   const products = Array.isArray(snapshot.products) ? snapshot.products : []; const productById = new Map(products.map((product) => [String(product.posterProductId ?? product.id), product])); const ids = [...productById.keys()].filter(Boolean);
   const details = await mapLimit(ids, 6, async (productId) => { try { return { productId, detail: await posterRequest('menu.getProduct', { product_id: productId }) }; } catch (error) { return { productId, error: error.message }; } });
-  const summary = { version: '1.2.0', restaurantId: RESTAURANT_ID, generatedAt: new Date().toISOString(), publicProductCount: products.length, fetchedProductCount: 0, fetchErrorCount: 0, productsWithRecipe: 0, productsWithPrepackRows: 0, resolvedPrepackRows: 0, unresolvedPrepackRows: 0, fullyCalculatedCount: 0, partialCount: 0, reviewWithoutKnownCount: 0, suspiciousProductCount: 0, products: [] };
+  const summary = { version: '1.3.0', restaurantId: RESTAURANT_ID, generatedAt: new Date().toISOString(), publicProductCount: products.length, fetchedProductCount: 0, fetchErrorCount: 0, productsWithRecipe: 0, productsWithPrepackRows: 0, resolvedPrepackRows: 0, unresolvedPrepackRows: 0, fullyCalculatedCount: 0, partialCount: 0, reviewWithoutKnownCount: 0, suspiciousProductCount: 0, products: [] };
   for (const item of details) {
     if (item.error) { summary.fetchErrorCount += 1; summary.products.push({ productId: item.productId, status: 'fetch_error', error: item.error }); continue; }
     summary.fetchedProductCount += 1; const rows = Array.isArray(item.detail?.ingredients) ? item.detail.ingredients : []; if (!rows.length) continue; summary.productsWithRecipe += 1;

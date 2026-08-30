@@ -4,13 +4,13 @@
   "source": "cia-nutrition-priority-top500.json",
   "total": 437,
   "counts": {
-    "verified": 172,
+    "verified": 173,
     "source_collision": 34,
     "prepared_or_recipe": 89,
     "generic_ingredient": 56,
     "alcohol": 82,
     "non_food": 2,
-    "branded_product": 2
+    "branded_product": 1
   },
   "policy": {
     "generic_ingredient": "USDA first; CIQUAL secondary; accept only close food matches.",
@@ -4640,18 +4640,11 @@
       ],
       "usedInProductCount": 2,
       "analysisStatus": "needs_review",
-      "verified": false,
-      "kind": "branded_product",
-      "action": "internet_lookup_brand_first",
-      "preferredSources": [
-        "Manufacturer nutrition label",
-        "Open Food Facts",
-        "USDA Global Branded Foods"
-      ],
-      "searchQueries": [
-        "табаско nutrition 100g",
-        "табаско calories nutrition label"
-      ]
+      "verified": true,
+      "kind": "verified",
+      "action": "done",
+      "preferredSources": [],
+      "searchQueries": []
     },
     {
       "priority": 217,

@@ -6,9 +6,9 @@
   "counts": {
     "verified": 172,
     "source_collision": 34,
-    "prepared_or_recipe": 80,
-    "generic_ingredient": 81,
-    "alcohol": 67,
+    "prepared_or_recipe": 89,
+    "generic_ingredient": 57,
+    "alcohol": 82,
     "non_food": 2,
     "branded_product": 1
   },
@@ -2780,16 +2780,16 @@
       "usedInProductCount": 3,
       "analysisStatus": "rule_analyzed",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "тыква запеченная Z USDA FoodData Central",
-        "тыква запеченная Z calories kcal 100g"
+        "тыква запеченная Z nutrition kcal 100g",
+        "тыква запеченная Z калорийность 100 г"
       ]
     },
     {
@@ -3089,16 +3089,16 @@
       "usedInProductCount": 2,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Manufacturer",
+        "Open Food Facts",
+        "official product specification"
       ],
       "searchQueries": [
-        "Chistie Rosi USDA FoodData Central",
-        "Chistie Rosi calories kcal 100g"
+        "Chistie Rosi calories 100 ml nutrition",
+        "Chistie Rosi ABV calories"
       ]
     },
     {
@@ -3579,16 +3579,16 @@
       "usedInProductCount": 2,
       "analysisStatus": "rule_analyzed",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "Вяленные маслины USDA FoodData Central",
-        "Вяленные маслины calories kcal 100g"
+        "Вяленные маслины nutrition kcal 100g",
+        "Вяленные маслины калорийность 100 г"
       ]
     },
     {
@@ -4102,16 +4102,16 @@
       "usedInProductCount": 2,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "настойка фруктового чая USDA FoodData Central",
-        "настойка фруктового чая calories kcal 100g"
+        "настойка фруктового чая nutrition kcal 100g",
+        "настойка фруктового чая калорийность 100 г"
       ]
     },
     {
@@ -4848,16 +4848,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Manufacturer",
+        "Open Food Facts",
+        "official product specification"
       ],
       "searchQueries": [
-        "Akhtamar USDA FoodData Central",
-        "Akhtamar calories kcal 100g"
+        "Akhtamar calories 100 ml nutrition",
+        "Akhtamar ABV calories"
       ]
     },
     {
@@ -4874,16 +4874,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Manufacturer",
+        "Open Food Facts",
+        "official product specification"
       ],
       "searchQueries": [
-        "Attems Pinot Grigio USDA FoodData Central",
-        "Attems Pinot Grigio calories kcal 100g"
+        "Attems Pinot Grigio calories 100 ml nutrition",
+        "Attems Pinot Grigio ABV calories"
       ]
     },
     {
@@ -5212,16 +5212,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Manufacturer",
+        "Open Food Facts",
+        "official product specification"
       ],
       "searchQueries": [
-        "Dvin USDA FoodData Central",
-        "Dvin calories kcal 100g"
+        "Dvin calories 100 ml nutrition",
+        "Dvin ABV calories"
       ]
     },
     {
@@ -5238,16 +5238,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Manufacturer",
+        "Open Food Facts",
+        "official product specification"
       ],
       "searchQueries": [
-        "fruit liquor USDA FoodData Central",
-        "fruit liquor calories kcal 100g"
+        "fruit liquor calories 100 ml nutrition",
+        "fruit liquor ABV calories"
       ]
     },
     {
@@ -5498,16 +5498,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Manufacturer",
+        "Open Food Facts",
+        "official product specification"
       ],
       "searchQueries": [
-        "Jin Beam USDA FoodData Central",
-        "Jin Beam calories kcal 100g"
+        "Jin Beam calories 100 ml nutrition",
+        "Jin Beam ABV calories"
       ]
     },
     {
@@ -5550,16 +5550,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Manufacturer",
+        "Open Food Facts",
+        "official product specification"
       ],
       "searchQueries": [
-        "Keush Brut /white/ USDA FoodData Central",
-        "Keush Brut /white/ calories kcal 100g"
+        "Keush Brut /white/ calories 100 ml nutrition",
+        "Keush Brut /white/ ABV calories"
       ]
     },
     {
@@ -5602,16 +5602,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Manufacturer",
+        "Open Food Facts",
+        "official product specification"
       ],
       "searchQueries": [
-        "Krombacher 0.33 USDA FoodData Central",
-        "Krombacher 0.33 calories kcal 100g"
+        "Krombacher 0.33 calories 100 ml nutrition",
+        "Krombacher 0.33 ABV calories"
       ]
     },
     {
@@ -5732,16 +5732,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Manufacturer",
+        "Open Food Facts",
+        "official product specification"
       ],
       "searchQueries": [
-        "Nairi USDA FoodData Central",
-        "Nairi calories kcal 100g"
+        "Nairi calories 100 ml nutrition",
+        "Nairi ABV calories"
       ]
     },
     {
@@ -5758,16 +5758,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Manufacturer",
+        "Open Food Facts",
+        "official product specification"
       ],
       "searchQueries": [
-        "Ohanyan USDA FoodData Central",
-        "Ohanyan calories kcal 100g"
+        "Ohanyan calories 100 ml nutrition",
+        "Ohanyan ABV calories"
       ]
     },
     {
@@ -5784,16 +5784,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Manufacturer",
+        "Open Food Facts",
+        "official product specification"
       ],
       "searchQueries": [
-        "Ohanyan Ice USDA FoodData Central",
-        "Ohanyan Ice calories kcal 100g"
+        "Ohanyan Ice calories 100 ml nutrition",
+        "Ohanyan Ice ABV calories"
       ]
     },
     {
@@ -5862,16 +5862,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Manufacturer",
+        "Open Food Facts",
+        "official product specification"
       ],
       "searchQueries": [
-        "Piccini Memoro /white/ USDA FoodData Central",
-        "Piccini Memoro /white/ calories kcal 100g"
+        "Piccini Memoro /white/ calories 100 ml nutrition",
+        "Piccini Memoro /white/ ABV calories"
       ]
     },
     {
@@ -6018,16 +6018,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Manufacturer",
+        "Open Food Facts",
+        "official product specification"
       ],
       "searchQueries": [
-        "Tariri /red/ USDA FoodData Central",
-        "Tariri /red/ calories kcal 100g"
+        "Tariri /red/ calories 100 ml nutrition",
+        "Tariri /red/ ABV calories"
       ]
     },
     {
@@ -6044,16 +6044,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Manufacturer",
+        "Open Food Facts",
+        "official product specification"
       ],
       "searchQueries": [
-        "Tariri /white/ USDA FoodData Central",
-        "Tariri /white/ calories kcal 100g"
+        "Tariri /white/ calories 100 ml nutrition",
+        "Tariri /white/ ABV calories"
       ]
     },
     {
@@ -6148,16 +6148,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "alcohol",
+      "action": "internet_lookup_label_or_abv",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Manufacturer",
+        "Open Food Facts",
+        "official product specification"
       ],
       "searchQueries": [
-        "Vaspurakan USDA FoodData Central",
-        "Vaspurakan calories kcal 100g"
+        "Vaspurakan calories 100 ml nutrition",
+        "Vaspurakan ABV calories"
       ]
     },
     {
@@ -6730,16 +6730,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "засахаренный персик USDA FoodData Central",
-        "засахаренный персик calories kcal 100g"
+        "засахаренный персик nutrition kcal 100g",
+        "засахаренный персик калорийность 100 г"
       ]
     },
     {
@@ -6955,16 +6955,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "клюквенный морс USDA FoodData Central",
-        "клюквенный морс calories kcal 100g"
+        "клюквенный морс nutrition kcal 100g",
+        "клюквенный морс калорийность 100 г"
       ]
     },
     {
@@ -6981,16 +6981,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "Компот USDA FoodData Central",
-        "Компот calories kcal 100g"
+        "Компот nutrition kcal 100g",
+        "Компот калорийность 100 г"
       ]
     },
     {
@@ -7071,16 +7071,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "кофе восточное USDA FoodData Central",
-        "кофе восточное calories kcal 100g"
+        "кофе восточное nutrition kcal 100g",
+        "кофе восточное калорийность 100 г"
       ]
     },
     {
@@ -7097,16 +7097,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "needs_review",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "кофе парижское USDA FoodData Central",
-        "кофе парижское calories kcal 100g"
+        "кофе парижское nutrition kcal 100g",
+        "кофе парижское калорийность 100 г"
       ]
     },
     {
@@ -7523,16 +7523,16 @@
       "usedInProductCount": 1,
       "analysisStatus": "rule_analyzed",
       "verified": false,
-      "kind": "generic_ingredient",
-      "action": "internet_lookup_generic",
+      "kind": "prepared_or_recipe",
+      "action": "calculate_from_poster_recipe_first",
       "preferredSources": [
-        "USDA FoodData Central",
-        "CIQUAL",
-        "Open Food Facts as secondary reference"
+        "Poster tech card",
+        "USDA FoodData Central as ingredient reference",
+        "CIQUAL as secondary reference"
       ],
       "searchQueries": [
-        "Мацони сцежанный USDA FoodData Central",
-        "Мацони сцежанный calories kcal 100g"
+        "Мацони сцежанный nutrition kcal 100g",
+        "Мацони сцежанный калорийность 100 г"
       ]
     },
     {

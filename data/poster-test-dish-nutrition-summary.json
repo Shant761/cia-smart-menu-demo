@@ -1,17 +1,17 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "restaurantId": "poster-test",
-  "generatedAt": "2026-08-30T09:50:26.535Z",
+  "generatedAt": "2026-08-30T10:02:14.141Z",
   "publicProductCount": 422,
   "fetchedProductCount": 422,
   "fetchErrorCount": 0,
   "productsWithRecipe": 407,
   "productsWithPrepackRows": 150,
-  "resolvedPrepackRows": 237,
-  "unresolvedPrepackRows": 46,
-  "fullyCalculatedCount": 300,
-  "partialCount": 69,
-  "reviewWithoutKnownCount": 38,
+  "resolvedPrepackRows": 232,
+  "unresolvedPrepackRows": 51,
+  "fullyCalculatedCount": 160,
+  "partialCount": 116,
+  "reviewWithoutKnownCount": 131,
   "products": [
     {
       "productId": "10",
@@ -21,10 +21,10 @@
         "en": "English Breakfast"
       },
       "status": "needs_review",
-      "displayedCalories": 1029969,
+      "displayedCalories": 1029725,
       "displayedAsMinimum": true,
       "recipeRows": 8,
-      "resolvedRows": 6,
+      "resolvedRows": 5,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "unresolved": [
@@ -32,6 +32,12 @@
           "id": "532",
           "type": "ingredient",
           "name": "тосты",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "395",
+          "type": "ingredient",
+          "name": "растительное масло",
           "reason": "unknown_weight_or_unit"
         },
         {
@@ -49,14 +55,21 @@
         "ru": "Мини-пицца Маргарита",
         "en": "Mini Margherita Pizza"
       },
-      "status": "calculated",
-      "displayedCalories": 689,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 649,
+      "displayedAsMinimum": true,
       "recipeRows": 5,
-      "resolvedRows": 5,
+      "resolvedRows": 4,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "443",
+          "type": "ingredient",
+          "name": "оливковое масло",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "105",
@@ -82,13 +95,19 @@
         "en": "Omelet with Pomegranate in Pita Bread"
       },
       "status": "needs_review",
-      "displayedCalories": 1029936,
+      "displayedCalories": 1029692,
       "displayedAsMinimum": true,
       "recipeRows": 7,
-      "resolvedRows": 6,
+      "resolvedRows": 5,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "unresolved": [
+        {
+          "id": "395",
+          "type": "ingredient",
+          "name": "растительное масло",
+          "reason": "unknown_weight_or_unit"
+        },
         {
           "id": "597",
           "type": "ingredient",
@@ -199,14 +218,21 @@
         "ru": "Скрэмбл с кавурмой и страчателлой",
         "en": "Scrambled Eggs with Kavurma and Stracciatella"
       },
-      "status": "calculated",
-      "displayedCalories": 1030150,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 1029743,
+      "displayedAsMinimum": true,
       "recipeRows": 8,
-      "resolvedRows": 8,
+      "resolvedRows": 7,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "395",
+          "type": "ingredient",
+          "name": "растительное масло",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "120",
@@ -278,14 +304,22 @@
         "ru": "Բորշ",
         "en": "Բորշ"
       },
-      "status": "calculated",
+      "status": "needs_review",
       "displayedCalories": 456,
-      "displayedAsMinimum": false,
+      "displayedAsMinimum": true,
       "recipeRows": 9,
-      "resolvedRows": 9,
+      "resolvedRows": 8,
       "prepackRows": 2,
-      "resolvedPrepackRows": 2,
-      "unresolved": []
+      "resolvedPrepackRows": 1,
+      "unresolved": [
+        {
+          "id": "529",
+          "type": "prepack",
+          "name": "говядина отварная",
+          "grams": 50,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
     },
     {
       "productId": "13",
@@ -295,13 +329,19 @@
         "en": "Eggs Benedict with Salmon"
       },
       "status": "needs_review",
-      "displayedCalories": 1544537,
+      "displayedCalories": 1544527,
       "displayedAsMinimum": true,
       "recipeRows": 7,
-      "resolvedRows": 5,
+      "resolvedRows": 4,
       "prepackRows": 4,
       "resolvedPrepackRows": 2,
       "unresolved": [
+        {
+          "id": "431",
+          "type": "ingredient",
+          "name": "уксус Ponti",
+          "reason": "unknown_weight_or_unit"
+        },
         {
           "id": "513",
           "type": "prepack",
@@ -325,14 +365,21 @@
         "ru": "Флэт уайт",
         "en": "Flat White"
       },
-      "status": "calculated",
-      "displayedCalories": 128,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 2,
+      "displayedAsMinimum": true,
       "recipeRows": 2,
-      "resolvedRows": 2,
+      "resolvedRows": 1,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "287",
+          "type": "ingredient",
+          "name": "молоко /Parmalat/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "133",
@@ -390,13 +437,25 @@
         "en": "Grilled Sterlet"
       },
       "status": "needs_review",
-      "displayedCalories": 480,
+      "displayedCalories": 74,
       "displayedAsMinimum": true,
       "recipeRows": 8,
-      "resolvedRows": 6,
+      "resolvedRows": 4,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "unresolved": [
+        {
+          "id": "395",
+          "type": "ingredient",
+          "name": "растительное масло",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "419",
+          "type": "ingredient",
+          "name": "Нашараб",
+          "reason": "unknown_weight_or_unit"
+        },
         {
           "id": "526",
           "type": "ingredient",
@@ -435,13 +494,19 @@
         "en": "Eggs Benedict with Bacon"
       },
       "status": "needs_review",
-      "displayedCalories": 1544533,
+      "displayedCalories": 1544522,
       "displayedAsMinimum": true,
       "recipeRows": 6,
-      "resolvedRows": 4,
+      "resolvedRows": 3,
       "prepackRows": 1,
       "resolvedPrepackRows": 0,
       "unresolved": [
+        {
+          "id": "431",
+          "type": "ingredient",
+          "name": "уксус Ponti",
+          "reason": "unknown_weight_or_unit"
+        },
         {
           "id": "436",
           "type": "ingredient",
@@ -497,13 +562,19 @@
         "en": "Grilled Vegetables"
       },
       "status": "needs_review",
-      "displayedCalories": 643,
+      "displayedCalories": 480,
       "displayedAsMinimum": true,
       "recipeRows": 10,
-      "resolvedRows": 9,
+      "resolvedRows": 8,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
       "unresolved": [
+        {
+          "id": "395",
+          "type": "ingredient",
+          "name": "растительное масло",
+          "reason": "unknown_weight_or_unit"
+        },
         {
           "id": "264",
           "type": "ingredient",
@@ -520,10 +591,10 @@
         "en": "Pomegranate Color Lemonade"
       },
       "status": "needs_review",
-      "displayedCalories": 178,
+      "displayedCalories": 97,
       "displayedAsMinimum": true,
       "recipeRows": 6,
-      "resolvedRows": 5,
+      "resolvedRows": 4,
       "prepackRows": 2,
       "resolvedPrepackRows": 1,
       "unresolved": [
@@ -533,6 +604,12 @@
           "name": "лимон/лайм",
           "grams": 15,
           "reason": "prepack_nutrition_unresolved"
+        },
+        {
+          "id": "300",
+          "type": "ingredient",
+          "name": "Сок граната",
+          "reason": "unknown_weight_or_unit"
         }
       ]
     },
@@ -543,14 +620,21 @@
         "ru": "Натуральный сок",
         "en": "Natural Juice"
       },
-      "status": "calculated",
-      "displayedCalories": 135,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "251",
+          "type": "ingredient",
+          "name": "натуральный сок",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "147",
@@ -591,14 +675,21 @@
         "ru": "Сырники",
         "en": "Syrniki"
       },
-      "status": "calculated",
-      "displayedCalories": 169969,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 169807,
+      "displayedAsMinimum": true,
       "recipeRows": 4,
-      "resolvedRows": 4,
+      "resolvedRows": 3,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "395",
+          "type": "ingredient",
+          "name": "растительное масло",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "151",
@@ -663,14 +754,21 @@
         "ru": "Женгялов хац",
         "en": "Jingalov Hats"
       },
-      "status": "calculated",
-      "displayedCalories": 350,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 187,
+      "displayedAsMinimum": true,
       "recipeRows": 5,
-      "resolvedRows": 5,
+      "resolvedRows": 4,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "395",
+          "type": "ingredient",
+          "name": "растительное масло",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "161",
@@ -709,14 +807,21 @@
         "ru": "Жареная кюфта с овощами",
         "en": "Fried Kufta with Vegetables"
       },
-      "status": "calculated",
-      "displayedCalories": 81391,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 81065,
+      "displayedAsMinimum": true,
       "recipeRows": 12,
-      "resolvedRows": 12,
+      "resolvedRows": 11,
       "prepackRows": 6,
       "resolvedPrepackRows": 6,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "395",
+          "type": "ingredient",
+          "name": "растительное масло",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "163",
@@ -725,14 +830,21 @@
         "ru": "Кавурма с пюре из баклажана",
         "en": "Kavurma with Eggplant Purée"
       },
-      "status": "calculated",
-      "displayedCalories": 1193,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 678,
+      "displayedAsMinimum": true,
       "recipeRows": 10,
-      "resolvedRows": 10,
+      "resolvedRows": 9,
       "prepackRows": 3,
       "resolvedPrepackRows": 3,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "175",
+          "type": "ingredient",
+          "name": "Сливки /M Gurme/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "164",
@@ -741,14 +853,28 @@
         "ru": "Телячья вырезка на гриле",
         "en": "Grilled Veal Tenderloin"
       },
-      "status": "calculated",
-      "displayedCalories": 409,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 3,
+      "displayedAsMinimum": true,
       "recipeRows": 7,
-      "resolvedRows": 7,
+      "resolvedRows": 5,
       "prepackRows": 2,
-      "resolvedPrepackRows": 2,
-      "unresolved": []
+      "resolvedPrepackRows": 1,
+      "unresolved": [
+        {
+          "id": "515",
+          "type": "prepack",
+          "name": "говяжье суки очищенная",
+          "grams": 300,
+          "reason": "prepack_nutrition_unresolved"
+        },
+        {
+          "id": "395",
+          "type": "ingredient",
+          "name": "растительное масло",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "165",
@@ -757,14 +883,28 @@
         "ru": "Чакапули в таджине",
         "en": "Chakapuli in a Tagine"
       },
-      "status": "calculated",
-      "displayedCalories": 74,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 72,
+      "displayedAsMinimum": true,
       "recipeRows": 6,
-      "resolvedRows": 6,
+      "resolvedRows": 4,
       "prepackRows": 1,
-      "resolvedPrepackRows": 1,
-      "unresolved": []
+      "resolvedPrepackRows": 0,
+      "unresolved": [
+        {
+          "id": "529",
+          "type": "prepack",
+          "name": "говядина отварная",
+          "grams": 170,
+          "reason": "prepack_nutrition_unresolved"
+        },
+        {
+          "id": "431",
+          "type": "ingredient",
+          "name": "уксус Ponti",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "166",
@@ -774,10 +914,10 @@
         "en": "Chkmeruli"
       },
       "status": "needs_review",
-      "displayedCalories": 873,
+      "displayedCalories": 14,
       "displayedAsMinimum": true,
       "recipeRows": 8,
-      "resolvedRows": 7,
+      "resolvedRows": 6,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "unresolved": [
@@ -785,6 +925,12 @@
           "id": "306",
           "type": "ingredient",
           "name": "Цыпленок",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "175",
+          "type": "ingredient",
+          "name": "Сливки /M Gurme/",
           "reason": "unknown_weight_or_unit"
         }
       ]
@@ -813,10 +959,10 @@
         "en": "Fried Chicken with Potatoes"
       },
       "status": "needs_review",
-      "displayedCalories": 1062,
+      "displayedCalories": 249,
       "displayedAsMinimum": true,
       "recipeRows": 4,
-      "resolvedRows": 3,
+      "resolvedRows": 2,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "unresolved": [
@@ -824,6 +970,12 @@
           "id": "306",
           "type": "ingredient",
           "name": "Цыпленок",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "395",
+          "type": "ingredient",
+          "name": "растительное масло",
           "reason": "unknown_weight_or_unit"
         }
       ]
@@ -851,14 +1003,21 @@
         "ru": "Гарни-ярах",
         "en": "Garni Yarakh"
       },
-      "status": "calculated",
-      "displayedCalories": 735,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 573,
+      "displayedAsMinimum": true,
       "recipeRows": 9,
-      "resolvedRows": 9,
+      "resolvedRows": 8,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "395",
+          "type": "ingredient",
+          "name": "растительное масло",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "171",
@@ -938,14 +1097,21 @@
         "ru": "Ливанский фаттех",
         "en": "Lebanese Fatteh"
       },
-      "status": "calculated",
-      "displayedCalories": 1709,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 489,
+      "displayedAsMinimum": true,
       "recipeRows": 8,
-      "resolvedRows": 8,
+      "resolvedRows": 7,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "395",
+          "type": "ingredient",
+          "name": "растительное масло",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "177",
@@ -955,13 +1121,19 @@
         "en": "Whitefish Fillet with Tomatoes"
       },
       "status": "needs_review",
-      "displayedCalories": 453,
+      "displayedCalories": 47,
       "displayedAsMinimum": true,
       "recipeRows": 5,
-      "resolvedRows": 4,
+      "resolvedRows": 3,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "unresolved": [
+        {
+          "id": "395",
+          "type": "ingredient",
+          "name": "растительное масло",
+          "reason": "unknown_weight_or_unit"
+        },
         {
           "id": "183",
           "type": "ingredient",
@@ -1145,14 +1317,28 @@
         "ru": "Тирамису",
         "en": "Tiramisu"
       },
-      "status": "calculated",
+      "status": "needs_review",
       "displayedCalories": 161609,
-      "displayedAsMinimum": false,
+      "displayedAsMinimum": true,
       "recipeRows": 7,
-      "resolvedRows": 7,
+      "resolvedRows": 5,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "49",
+          "type": "ingredient",
+          "name": "Печенье савоярди",
+          "grams": 30,
+          "reason": "verified_nutrition_missing"
+        },
+        {
+          "id": "441",
+          "type": "ingredient",
+          "name": "коньяк для кухни",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "193",
@@ -1209,14 +1395,21 @@
         "ru": "Глясе",
         "en": "Glacé Coffee"
       },
-      "status": "calculated",
-      "displayedCalories": 302,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 208,
+      "displayedAsMinimum": true,
       "recipeRows": 3,
-      "resolvedRows": 3,
+      "resolvedRows": 2,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "287",
+          "type": "ingredient",
+          "name": "молоко /Parmalat/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "198",
@@ -1442,14 +1635,21 @@
         "ru": "Просекко 150 мл",
         "en": "Prosecco 150 ml"
       },
-      "status": "calculated",
-      "displayedCalories": 105,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "102",
+          "type": "ingredient",
+          "name": "Prosecco",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "212",
@@ -1504,14 +1704,21 @@
         "ru": "Текила Patrón Silver",
         "en": "Patrón Silver Tequila"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "107",
+          "type": "ingredient",
+          "name": "Patron Silver",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "217",
@@ -1520,14 +1727,21 @@
         "ru": "Текила Patrón Reposado",
         "en": "Patrón Reposado Tequila"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "108",
+          "type": "ingredient",
+          "name": "Patron Reposado",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "220",
@@ -1559,14 +1773,21 @@
         "ru": "Ром Bacardi Carta Blanca",
         "en": "Bacardi Carta Blanca Rum"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "112",
+          "type": "ingredient",
+          "name": "Bacardi Carta Blanca",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "222",
@@ -1575,14 +1796,21 @@
         "ru": "Ром Bacardi Carta Negra",
         "en": "Bacardi Carta Negra Rum"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "113",
+          "type": "ingredient",
+          "name": "Bacardi Carta Negra",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "224",
@@ -1591,14 +1819,21 @@
         "ru": "Ром Havana Club 7 Años",
         "en": "Havana Club 7 Años Rum"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "116",
+          "type": "ingredient",
+          "name": "Havana Club 7 Anos",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "225",
@@ -1607,14 +1842,21 @@
         "ru": "Ром Havana Club Añejo Especial",
         "en": "Havana Club Añejo Especial Rum"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "117",
+          "type": "ingredient",
+          "name": "Havana Club Anejo Especial",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "227",
@@ -1639,14 +1881,21 @@
         "ru": "Картофель и грибы на мангале",
         "en": "Grilled Potatoes and Mushrooms"
       },
-      "status": "calculated",
-      "displayedCalories": 457,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 335,
+      "displayedAsMinimum": true,
       "recipeRows": 6,
-      "resolvedRows": 6,
+      "resolvedRows": 5,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "395",
+          "type": "ingredient",
+          "name": "растительное масло",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "229",
@@ -1671,14 +1920,21 @@
         "ru": "Капучино",
         "en": "Cappuccino"
       },
-      "status": "calculated",
-      "displayedCalories": 108,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 1,
+      "displayedAsMinimum": true,
       "recipeRows": 2,
-      "resolvedRows": 2,
+      "resolvedRows": 1,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "287",
+          "type": "ingredient",
+          "name": "молоко /Parmalat/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "231",
@@ -1756,14 +2012,21 @@
         "ru": "Вино 365 Pomegranate",
         "en": "365 Pomegranate Wine"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "126",
+          "type": "ingredient",
+          "name": "Ariats Pomegranate",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "24",
@@ -1811,14 +2074,21 @@
         "ru": "Красное вино Karas",
         "en": "Karas Red Wine"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "134",
+          "type": "ingredient",
+          "name": "Karas /red/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "249",
@@ -1827,14 +2097,21 @@
         "ru": "Karas красное 150 мл",
         "en": "Karas Red 150 ml"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "134",
+          "type": "ingredient",
+          "name": "Karas /red/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "25",
@@ -1859,14 +2136,21 @@
         "ru": "Белое вино Karas",
         "en": "Karas White Wine"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "135",
+          "type": "ingredient",
+          "name": "Karas /white/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "251",
@@ -1875,14 +2159,21 @@
         "ru": "Karas белое 150 мл",
         "en": "Karas White 150 ml"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "135",
+          "type": "ingredient",
+          "name": "Karas /white/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "252",
@@ -1914,14 +2205,21 @@
         "ru": "Красное вино Koor",
         "en": "Koor Red Wine"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "137",
+          "type": "ingredient",
+          "name": "Koor /red/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "254",
@@ -1930,14 +2228,21 @@
         "ru": "Koor красное 150 мл",
         "en": "Koor Red 150 ml"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "137",
+          "type": "ingredient",
+          "name": "Koor /red/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "255",
@@ -1946,14 +2251,21 @@
         "ru": "Белое вино Koor",
         "en": "Koor White Wine"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "138",
+          "type": "ingredient",
+          "name": "Koor /white/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "256",
@@ -1962,14 +2274,21 @@
         "ru": "Koor белое 150 мл",
         "en": "Koor White 150 ml"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "138",
+          "type": "ingredient",
+          "name": "Koor /white/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "257",
@@ -2017,14 +2336,21 @@
         "ru": "365 Pomegranate 150 мл",
         "en": "365 Pomegranate 150 ml"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "126",
+          "type": "ingredient",
+          "name": "Ariats Pomegranate",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "26",
@@ -2072,14 +2398,21 @@
         "ru": "Красное вино Takar",
         "en": "Takar Red Wine"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "141",
+          "type": "ingredient",
+          "name": "Takar /red/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "262",
@@ -2088,14 +2421,21 @@
         "ru": "Takar красное 150 мл",
         "en": "Takar Red 150 ml"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "141",
+          "type": "ingredient",
+          "name": "Takar /red/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "263",
@@ -2104,14 +2444,21 @@
         "ru": "Розовое вино Takar",
         "en": "Takar Rosé Wine"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "142",
+          "type": "ingredient",
+          "name": "Takar /rosé/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "264",
@@ -2120,14 +2467,21 @@
         "ru": "Takar розовое 150 мл",
         "en": "Takar Rosé 150 ml"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "142",
+          "type": "ingredient",
+          "name": "Takar /rosé/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "265",
@@ -2136,14 +2490,21 @@
         "ru": "Белое вино Takar",
         "en": "Takar White Wine"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "143",
+          "type": "ingredient",
+          "name": "Takar /white/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "266",
@@ -2152,14 +2513,21 @@
         "ru": "Takar белое 150 мл",
         "en": "Takar White 150 ml"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "143",
+          "type": "ingredient",
+          "name": "Takar /white/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "268",
@@ -2351,14 +2719,21 @@
         "ru": "Латте на миндальном молоке",
         "en": "Latte with Almond Milk"
       },
-      "status": "calculated",
+      "status": "needs_review",
       "displayedCalories": 1,
-      "displayedAsMinimum": false,
+      "displayedAsMinimum": true,
       "recipeRows": 2,
-      "resolvedRows": 2,
+      "resolvedRows": 1,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "269",
+          "type": "ingredient",
+          "name": "Миндальное молоко",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "281",
@@ -2383,14 +2758,21 @@
         "ru": "Гранатовая водка",
         "en": "Pomegranate Vodka"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "543",
+          "type": "ingredient",
+          "name": "гранатовая водка",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "283",
@@ -2606,14 +2988,21 @@
         "ru": "Наршараб",
         "en": "Narsharab"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "419",
+          "type": "ingredient",
+          "name": "Нашараб",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "297",
@@ -2622,14 +3011,21 @@
         "ru": "Соевый соус",
         "en": "Soy Sauce"
       },
-      "status": "calculated",
-      "displayedCalories": 42,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "406",
+          "type": "ingredient",
+          "name": "соевый соус",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "298",
@@ -2830,14 +3226,21 @@
         "ru": "Овощи на гриле",
         "en": "Grilled Vegetables"
       },
-      "status": "calculated",
-      "displayedCalories": 227,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 65,
+      "displayedAsMinimum": true,
       "recipeRows": 8,
-      "resolvedRows": 8,
+      "resolvedRows": 7,
       "prepackRows": 4,
       "resolvedPrepackRows": 4,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "395",
+          "type": "ingredient",
+          "name": "растительное масло",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "310",
@@ -3134,14 +3537,21 @@
         "ru": "Свежевыжатый апельсиновый сок",
         "en": "Fresh Orange Juice"
       },
-      "status": "calculated",
-      "displayedCalories": 493,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 470,
+      "displayedAsMinimum": true,
       "recipeRows": 2,
-      "resolvedRows": 2,
+      "resolvedRows": 1,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "251",
+          "type": "ingredient",
+          "name": "натуральный сок",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "328",
@@ -3150,14 +3560,21 @@
         "ru": "Свежевыжатый ананасовый сок",
         "en": "Fresh Pineapple Juice"
       },
-      "status": "calculated",
-      "displayedCalories": 18023,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 18000,
+      "displayedAsMinimum": true,
       "recipeRows": 2,
-      "resolvedRows": 2,
+      "resolvedRows": 1,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "251",
+          "type": "ingredient",
+          "name": "натуральный сок",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "329",
@@ -3182,14 +3599,21 @@
         "ru": "Свежевыжатый грейпфрутовый сок",
         "en": "Fresh Grapefruit Juice"
       },
-      "status": "calculated",
-      "displayedCalories": 359,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 336,
+      "displayedAsMinimum": true,
       "recipeRows": 2,
-      "resolvedRows": 2,
+      "resolvedRows": 1,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "251",
+          "type": "ingredient",
+          "name": "натуральный сок",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "331",
@@ -3198,14 +3622,21 @@
         "ru": "Свежевыжатый яблочный сок",
         "en": "Fresh Apple Juice"
       },
-      "status": "calculated",
-      "displayedCalories": 439,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 416,
+      "displayedAsMinimum": true,
       "recipeRows": 2,
-      "resolvedRows": 2,
+      "resolvedRows": 1,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "251",
+          "type": "ingredient",
+          "name": "натуральный сок",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "332",
@@ -3237,14 +3668,21 @@
         "ru": "Клубничный фреш",
         "en": "Fresh Strawberry Juice"
       },
-      "status": "calculated",
-      "displayedCalories": 214,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 160,
+      "displayedAsMinimum": true,
       "recipeRows": 3,
-      "resolvedRows": 3,
+      "resolvedRows": 2,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "251",
+          "type": "ingredient",
+          "name": "натуральный сок",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "334",
@@ -3257,10 +3695,16 @@
       "displayedCalories": 79,
       "displayedAsMinimum": true,
       "recipeRows": 9,
-      "resolvedRows": 8,
+      "resolvedRows": 7,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "unresolved": [
+        {
+          "id": "546",
+          "type": "ingredient",
+          "name": "вино для кухни",
+          "reason": "unknown_weight_or_unit"
+        },
         {
           "id": "436",
           "type": "ingredient",
@@ -3280,10 +3724,16 @@
       "displayedCalories": 135,
       "displayedAsMinimum": true,
       "recipeRows": 11,
-      "resolvedRows": 9,
+      "resolvedRows": 7,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "unresolved": [
+        {
+          "id": "546",
+          "type": "ingredient",
+          "name": "вино для кухни",
+          "reason": "unknown_weight_or_unit"
+        },
         {
           "id": "436",
           "type": "ingredient",
@@ -3294,6 +3744,12 @@
           "id": "301",
           "type": "ingredient",
           "name": "тоник",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "547",
+          "type": "ingredient",
+          "name": "Ararat 3*",
           "reason": "unknown_weight_or_unit"
         }
       ]
@@ -3397,14 +3853,21 @@
         "ru": "Лимонад «Изабелла»",
         "en": "Isabella Lemonade"
       },
-      "status": "calculated",
+      "status": "needs_review",
       "displayedCalories": 48014,
-      "displayedAsMinimum": false,
+      "displayedAsMinimum": true,
       "recipeRows": 4,
-      "resolvedRows": 4,
+      "resolvedRows": 3,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "548",
+          "type": "ingredient",
+          "name": "виноградный сироп W",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "347",
@@ -3492,14 +3955,21 @@
         "ru": "Абрикосовая водка",
         "en": "Apricot Vodka"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "541",
+          "type": "ingredient",
+          "name": "абрикосовая водка",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "353",
@@ -3508,14 +3978,21 @@
         "ru": "Кизиловая водка",
         "en": "Cornelian Cherry Vodka"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "542",
+          "type": "ingredient",
+          "name": "кизиловая водка",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "354",
@@ -3524,14 +4001,21 @@
         "ru": "Тутовая водка",
         "en": "Mulberry Vodka"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "540",
+          "type": "ingredient",
+          "name": "тутовая водка",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "355",
@@ -3540,14 +4024,21 @@
         "ru": "Водка из дикой груши",
         "en": "Wild Pear Vodka"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "544",
+          "type": "ingredient",
+          "name": "водка из груши",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "356",
@@ -3556,14 +4047,21 @@
         "ru": "Водка Absolut",
         "en": "Absolut Vodka"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "208",
+          "type": "ingredient",
+          "name": "Absolut",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "357",
@@ -3572,14 +4070,21 @@
         "ru": "Водка Absolut Elyx",
         "en": "Absolut Elyx Vodka"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "209",
+          "type": "ingredient",
+          "name": "Absolut Elyx",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "359",
@@ -3588,14 +4093,21 @@
         "ru": "Водка Chistie Rosi",
         "en": "Chistie Rosi Vodka"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "211",
+          "type": "ingredient",
+          "name": "Chistie Rosi",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "36",
@@ -3620,14 +4132,21 @@
         "ru": "Водка Grey Goose",
         "en": "Grey Goose Vodka"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "212",
+          "type": "ingredient",
+          "name": "Grey Goose",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "361",
@@ -3636,14 +4155,21 @@
         "ru": "Водка Ohanyan Ice",
         "en": "Ohanyan Ice Vodka"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "213",
+          "type": "ingredient",
+          "name": "Ohanyan Ice",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "362",
@@ -3652,14 +4178,21 @@
         "ru": "Водка Онегин",
         "en": "Onegin Vodka"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "214",
+          "type": "ingredient",
+          "name": "Onegin",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "363",
@@ -3668,14 +4201,21 @@
         "ru": "Водка Absolut /1 бутылка/",
         "en": "Absolut Vodka /1 Bottle/"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "208",
+          "type": "ingredient",
+          "name": "Absolut",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "364",
@@ -3684,14 +4224,21 @@
         "ru": "Водка Absolut Elyx /1 бутылка/",
         "en": "Absolut Elyx Vodka /1 Bottle/"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "209",
+          "type": "ingredient",
+          "name": "Absolut Elyx",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "365",
@@ -3700,14 +4247,21 @@
         "ru": "Водка Beluga /1 бутылка/",
         "en": "Beluga Vodka /1 Bottle/"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "210",
+          "type": "ingredient",
+          "name": "Beluga",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "366",
@@ -3716,14 +4270,21 @@
         "ru": "Водка Chistie Rosi /1 бутылка/",
         "en": "Chistie Rosi Vodka /1 Bottle/"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "211",
+          "type": "ingredient",
+          "name": "Chistie Rosi",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "367",
@@ -3732,14 +4293,21 @@
         "ru": "Водка Grey Goose /1 бутылка/",
         "en": "Grey Goose Vodka /1 Bottle/"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "212",
+          "type": "ingredient",
+          "name": "Grey Goose",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "369",
@@ -3748,14 +4316,21 @@
         "ru": "Водка Онегин /1 бутылка/",
         "en": "Onegin Vodka /1 Bottle/"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "214",
+          "type": "ingredient",
+          "name": "Onegin",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "370",
@@ -3764,14 +4339,21 @@
         "ru": "Виски Ballantine's",
         "en": "Ballantine's Whisky"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "215",
+          "type": "ingredient",
+          "name": "Ballantine՝s",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "371",
@@ -3780,14 +4362,21 @@
         "ru": "Виски Chivas Regal 12 YO",
         "en": "Chivas Regal 12 YO Whisky"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "216",
+          "type": "ingredient",
+          "name": "Chivas Regal 12 YO",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "372",
@@ -3796,14 +4385,21 @@
         "ru": "Виски Chivas Regal 18 YO",
         "en": "Chivas Regal 18 YO Whisky"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "217",
+          "type": "ingredient",
+          "name": "Chivas Regal 18 YO",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "373",
@@ -3812,14 +4408,21 @@
         "ru": "Виски Glenfiddich 15",
         "en": "Glenfiddich 15 Whisky"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "218",
+          "type": "ingredient",
+          "name": "Glenfiddich 15",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "374",
@@ -3828,14 +4431,21 @@
         "ru": "Виски Jack Daniel's",
         "en": "Jack Daniel's Whiskey"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "219",
+          "type": "ingredient",
+          "name": "Jack Daniel`s",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "375",
@@ -3844,14 +4454,21 @@
         "ru": "Виски Jack Daniel's Honey",
         "en": "Jack Daniel's Honey Whiskey"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "220",
+          "type": "ingredient",
+          "name": "Jack Daniel`s Honey",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "376",
@@ -3860,14 +4477,21 @@
         "ru": "Виски Jameson",
         "en": "Jameson Whiskey"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "221",
+          "type": "ingredient",
+          "name": "Jameson",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "377",
@@ -3876,14 +4500,21 @@
         "ru": "Виски The Glenlivet 12 YO",
         "en": "The Glenlivet 12 YO Whisky"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "222",
+          "type": "ingredient",
+          "name": "The Glenlivet 12 YO",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "378",
@@ -3892,14 +4523,21 @@
         "ru": "Виски The Macallan 12 YO",
         "en": "The Macallan 12 YO Whisky"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "223",
+          "type": "ingredient",
+          "name": "The Macallan 12 YO",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "379",
@@ -3908,14 +4546,21 @@
         "ru": "Виски Jim Beam",
         "en": "Jim Beam Whiskey"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "224",
+          "type": "ingredient",
+          "name": "Jin Beam",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "380",
@@ -3956,14 +4601,21 @@
         "ru": "Бренди Akhtamar",
         "en": "Akhtamar Brandy"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "225",
+          "type": "ingredient",
+          "name": "Akhtamar",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "383",
@@ -3972,14 +4624,21 @@
         "ru": "Бренди Dvin",
         "en": "Dvin Brandy"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "226",
+          "type": "ingredient",
+          "name": "Dvin",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "384",
@@ -3988,14 +4647,21 @@
         "ru": "Бренди Nairi",
         "en": "Nairi Brandy"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "227",
+          "type": "ingredient",
+          "name": "Nairi",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "385",
@@ -4004,14 +4670,21 @@
         "ru": "Бренди Ohanyan",
         "en": "Ohanyan Brandy"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "228",
+          "type": "ingredient",
+          "name": "Ohanyan",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "386",
@@ -4020,14 +4693,21 @@
         "ru": "Бренди Vaspurakan",
         "en": "Vaspurakan Brandy"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "229",
+          "type": "ingredient",
+          "name": "Vaspurakan",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "387",
@@ -4036,14 +4716,21 @@
         "ru": "Биттер Aperol",
         "en": "Aperol Bitter"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "89",
+          "type": "ingredient",
+          "name": "Aperol",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "388",
@@ -4052,14 +4739,21 @@
         "ru": "Биттер Becherovka",
         "en": "Becherovka Herbal Liqueur"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "230",
+          "type": "ingredient",
+          "name": "Becherovka",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "389",
@@ -4068,14 +4762,21 @@
         "ru": "Биттер Campari",
         "en": "Campari Bitter"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "231",
+          "type": "ingredient",
+          "name": "Campari",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "390",
@@ -4084,14 +4785,21 @@
         "ru": "Ликёр Jägermeister",
         "en": "Jägermeister Liqueur"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "232",
+          "type": "ingredient",
+          "name": "Jagermeister",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "391",
@@ -4100,14 +4808,21 @@
         "ru": "Абсент Xenta",
         "en": "Xenta Absinthe"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "86",
+          "type": "ingredient",
+          "name": "Absent Xenta",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "392",
@@ -4116,14 +4831,21 @@
         "ru": "Вермут Martini",
         "en": "Martini Vermouth"
       },
-      "status": "calculated",
-      "displayedCalories": 73,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "233",
+          "type": "ingredient",
+          "name": "Martini",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "393",
@@ -4132,14 +4854,21 @@
         "ru": "Кальвадос",
         "en": "Calvados"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "234",
+          "type": "ingredient",
+          "name": "Calvados",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "394",
@@ -4148,14 +4877,21 @@
         "ru": "Գինի կարմիր 150",
         "en": "Գինի կարմիր 150"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "235",
+          "type": "ingredient",
+          "name": "գինի կարմիր",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "396",
@@ -4164,14 +4900,21 @@
         "ru": "Джин Beefeater",
         "en": "Beefeater Gin"
       },
-      "status": "calculated",
-      "displayedCalories": 116,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "237",
+          "type": "ingredient",
+          "name": "Beefeter",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "397",
@@ -4180,14 +4923,21 @@
         "ru": "Джин Bombay Sapphire",
         "en": "Bombay Sapphire Gin"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "238",
+          "type": "ingredient",
+          "name": "Bombay Sapphire",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "398",
@@ -4196,14 +4946,21 @@
         "ru": "Джин Hendrick's",
         "en": "Hendrick's Gin"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "239",
+          "type": "ingredient",
+          "name": "Hendrick`s",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "399",
@@ -4212,14 +4969,21 @@
         "ru": "Джин Monkey",
         "en": "Monkey Gin"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "240",
+          "type": "ingredient",
+          "name": "Monkey",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "400",
@@ -4228,14 +4992,21 @@
         "ru": "Джин Stin",
         "en": "Stin Gin"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "241",
+          "type": "ingredient",
+          "name": "Stin",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "401",
@@ -4244,14 +5015,21 @@
         "ru": "Джин Roku",
         "en": "Roku Gin"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "242",
+          "type": "ingredient",
+          "name": "Roku",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "402",
@@ -4260,14 +5038,21 @@
         "ru": "Ром Havana Club 3 Blanco",
         "en": "Havana Club 3 Blanco Rum"
       },
-      "status": "calculated",
-      "displayedCalories": 116,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "115",
+          "type": "ingredient",
+          "name": "Havana Club 3 Anos",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "403",
@@ -4276,14 +5061,21 @@
         "ru": "Коньяк Hennessy VSOP",
         "en": "Hennessy VSOP Cognac"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "243",
+          "type": "ingredient",
+          "name": "Hennessy VSOP",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "404",
@@ -4292,14 +5084,21 @@
         "ru": "Коньяк Hennessy XO",
         "en": "Hennessy XO Cognac"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "244",
+          "type": "ingredient",
+          "name": "Hennessy XO",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "405",
@@ -4308,14 +5107,21 @@
         "ru": "Ликёр Baileys",
         "en": "Baileys Liqueur"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "245",
+          "type": "ingredient",
+          "name": "Baileys",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "406",
@@ -4324,14 +5130,21 @@
         "ru": "Ликёр Cointreau",
         "en": "Cointreau Liqueur"
       },
-      "status": "calculated",
-      "displayedCalories": 154,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "246",
+          "type": "ingredient",
+          "name": "Cointreau",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "407",
@@ -4340,14 +5153,21 @@
         "ru": "Ликёр Kahlúa",
         "en": "Kahlúa Liqueur"
       },
-      "status": "calculated",
-      "displayedCalories": 155,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "247",
+          "type": "ingredient",
+          "name": "Kahlua",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "408",
@@ -4356,14 +5176,21 @@
         "ru": "Ликёр Malibu",
         "en": "Malibu Liqueur"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "248",
+          "type": "ingredient",
+          "name": "Malibu",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "409",
@@ -4372,14 +5199,21 @@
         "ru": "Самбука",
         "en": "Sambuca"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "249",
+          "type": "ingredient",
+          "name": "Sambuka",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "410",
@@ -4388,14 +5222,21 @@
         "ru": "Ликёр St-Germain",
         "en": "St-Germain Liqueur"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "250",
+          "type": "ingredient",
+          "name": "St.Germain",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "411",
@@ -4404,14 +5245,33 @@
         "ru": "Коктейль B-52",
         "en": "B-52 Cocktail"
       },
-      "status": "calculated",
-      "displayedCalories": 185,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 3,
-      "resolvedRows": 3,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "245",
+          "type": "ingredient",
+          "name": "Baileys",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "247",
+          "type": "ingredient",
+          "name": "Kahlua",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "246",
+          "type": "ingredient",
+          "name": "Cointreau",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "412",
@@ -4421,13 +5281,31 @@
         "en": "Bloody Mary Cocktail"
       },
       "status": "needs_review",
-      "displayedCalories": 187,
+      "displayedCalories": 4,
       "displayedAsMinimum": true,
       "recipeRows": 7,
-      "resolvedRows": 6,
+      "resolvedRows": 3,
       "prepackRows": 1,
       "resolvedPrepackRows": 0,
       "unresolved": [
+        {
+          "id": "521",
+          "type": "ingredient",
+          "name": "Водка для коктелйей",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "423",
+          "type": "ingredient",
+          "name": "соус вольчестор",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "251",
+          "type": "ingredient",
+          "name": "натуральный сок",
+          "reason": "unknown_weight_or_unit"
+        },
         {
           "id": "645",
           "type": "prepack",
@@ -4448,10 +5326,16 @@
       "displayedCalories": 514876,
       "displayedAsMinimum": true,
       "recipeRows": 6,
-      "resolvedRows": 4,
+      "resolvedRows": 3,
       "prepackRows": 1,
       "resolvedPrepackRows": 0,
       "unresolved": [
+        {
+          "id": "547",
+          "type": "ingredient",
+          "name": "Ararat 3*",
+          "reason": "unknown_weight_or_unit"
+        },
         {
           "id": "645",
           "type": "prepack",
@@ -4475,13 +5359,37 @@
         "en": "Adios Cocktail"
       },
       "status": "needs_review",
-      "displayedCalories": 185,
-      "displayedAsMinimum": true,
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
       "recipeRows": 6,
-      "resolvedRows": 4,
+      "resolvedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 0,
       "unresolved": [
+        {
+          "id": "237",
+          "type": "ingredient",
+          "name": "Beefeter",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "115",
+          "type": "ingredient",
+          "name": "Havana Club 3 Anos",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "110",
+          "type": "ingredient",
+          "name": "Olmeca Blanco",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "521",
+          "type": "ingredient",
+          "name": "Водка для коктелйей",
+          "reason": "unknown_weight_or_unit"
+        },
         {
           "id": "645",
           "type": "prepack",
@@ -4504,14 +5412,27 @@
         "ru": "Коктейль Aperol Spritz",
         "en": "Aperol Spritz Cocktail"
       },
-      "status": "calculated",
-      "displayedCalories": 753,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 613,
+      "displayedAsMinimum": true,
       "recipeRows": 7,
-      "resolvedRows": 7,
+      "resolvedRows": 5,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "89",
+          "type": "ingredient",
+          "name": "Aperol",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "102",
+          "type": "ingredient",
+          "name": "Prosecco",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "417",
@@ -4520,14 +5441,21 @@
         "ru": "Коктейль Bellini",
         "en": "Bellini Cocktail"
       },
-      "status": "calculated",
-      "displayedCalories": 240,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 100,
+      "displayedAsMinimum": true,
       "recipeRows": 3,
-      "resolvedRows": 3,
+      "resolvedRows": 2,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "102",
+          "type": "ingredient",
+          "name": "Prosecco",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "418",
@@ -4537,13 +5465,31 @@
         "en": "Betty Cocktail"
       },
       "status": "needs_review",
-      "displayedCalories": 28,
+      "displayedCalories": 0,
       "displayedAsMinimum": true,
       "recipeRows": 5,
-      "resolvedRows": 4,
+      "resolvedRows": 1,
       "prepackRows": 2,
       "resolvedPrepackRows": 1,
       "unresolved": [
+        {
+          "id": "238",
+          "type": "ingredient",
+          "name": "Bombay Sapphire",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "250",
+          "type": "ingredient",
+          "name": "St.Germain",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "102",
+          "type": "ingredient",
+          "name": "Prosecco",
+          "reason": "unknown_weight_or_unit"
+        },
         {
           "id": "645",
           "type": "prepack",
@@ -4560,14 +5506,21 @@
         "ru": "Коктейль Кайпиринья",
         "en": "Caipirinha Cocktail"
       },
-      "status": "calculated",
+      "status": "needs_review",
       "displayedCalories": 48076,
-      "displayedAsMinimum": false,
+      "displayedAsMinimum": true,
       "recipeRows": 3,
-      "resolvedRows": 3,
+      "resolvedRows": 2,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "114",
+          "type": "ingredient",
+          "name": "Cachaca",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "422",
@@ -4577,10 +5530,10 @@
         "en": "Cosmopolitan Cocktail"
       },
       "status": "needs_review",
-      "displayedCalories": 201,
-      "displayedAsMinimum": true,
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
       "recipeRows": 5,
-      "resolvedRows": 3,
+      "resolvedRows": 0,
       "prepackRows": 2,
       "resolvedPrepackRows": 0,
       "unresolved": [
@@ -4590,6 +5543,24 @@
           "name": "лимон/лайм",
           "grams": 25,
           "reason": "prepack_nutrition_unresolved"
+        },
+        {
+          "id": "251",
+          "type": "ingredient",
+          "name": "натуральный сок",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "246",
+          "type": "ingredient",
+          "name": "Cointreau",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "521",
+          "type": "ingredient",
+          "name": "Водка для коктелйей",
+          "reason": "unknown_weight_or_unit"
         },
         {
           "id": "658",
@@ -4608,10 +5579,10 @@
         "en": "Daiquiri Cocktail"
       },
       "status": "needs_review",
-      "displayedCalories": 192,
+      "displayedCalories": 76,
       "displayedAsMinimum": true,
       "recipeRows": 3,
-      "resolvedRows": 2,
+      "resolvedRows": 1,
       "prepackRows": 1,
       "resolvedPrepackRows": 0,
       "unresolved": [
@@ -4621,6 +5592,12 @@
           "name": "лимон/лайм",
           "grams": 25,
           "reason": "prepack_nutrition_unresolved"
+        },
+        {
+          "id": "115",
+          "type": "ingredient",
+          "name": "Havana Club 3 Anos",
+          "reason": "unknown_weight_or_unit"
         }
       ]
     },
@@ -4632,13 +5609,19 @@
         "en": "Frozen Daiquiri Cocktail"
       },
       "status": "needs_review",
-      "displayedCalories": 192,
+      "displayedCalories": 76,
       "displayedAsMinimum": true,
       "recipeRows": 3,
-      "resolvedRows": 2,
+      "resolvedRows": 1,
       "prepackRows": 1,
       "resolvedPrepackRows": 0,
       "unresolved": [
+        {
+          "id": "115",
+          "type": "ingredient",
+          "name": "Havana Club 3 Anos",
+          "reason": "unknown_weight_or_unit"
+        },
         {
           "id": "645",
           "type": "prepack",
@@ -4656,10 +5639,10 @@
         "en": "Fruit Daiquiri"
       },
       "status": "needs_review",
-      "displayedCalories": 212,
+      "displayedCalories": 96,
       "displayedAsMinimum": true,
       "recipeRows": 4,
-      "resolvedRows": 3,
+      "resolvedRows": 2,
       "prepackRows": 1,
       "resolvedPrepackRows": 0,
       "unresolved": [
@@ -4669,6 +5652,12 @@
           "name": "лимон/лайм",
           "grams": 25,
           "reason": "prepack_nutrition_unresolved"
+        },
+        {
+          "id": "115",
+          "type": "ingredient",
+          "name": "Havana Club 3 Anos",
+          "reason": "unknown_weight_or_unit"
         }
       ]
     },
@@ -4680,13 +5669,25 @@
         "en": "Fruit Margarita"
       },
       "status": "needs_review",
-      "displayedCalories": 216,
+      "displayedCalories": 24,
       "displayedAsMinimum": true,
       "recipeRows": 5,
-      "resolvedRows": 4,
+      "resolvedRows": 2,
       "prepackRows": 1,
       "resolvedPrepackRows": 0,
       "unresolved": [
+        {
+          "id": "110",
+          "type": "ingredient",
+          "name": "Olmeca Blanco",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "246",
+          "type": "ingredient",
+          "name": "Cointreau",
+          "reason": "unknown_weight_or_unit"
+        },
         {
           "id": "645",
           "type": "prepack",
@@ -4704,10 +5705,10 @@
         "en": "Margarita Cocktail"
       },
       "status": "needs_review",
-      "displayedCalories": 200,
+      "displayedCalories": 8,
       "displayedAsMinimum": true,
       "recipeRows": 4,
-      "resolvedRows": 3,
+      "resolvedRows": 1,
       "prepackRows": 1,
       "resolvedPrepackRows": 0,
       "unresolved": [
@@ -4717,6 +5718,18 @@
           "name": "лимон/лайм",
           "grams": 25,
           "reason": "prepack_nutrition_unresolved"
+        },
+        {
+          "id": "246",
+          "type": "ingredient",
+          "name": "Cointreau",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "110",
+          "type": "ingredient",
+          "name": "Olmeca Blanco",
+          "reason": "unknown_weight_or_unit"
         }
       ]
     },
@@ -4728,13 +5741,19 @@
         "en": "Fruit Mojito"
       },
       "status": "needs_review",
-      "displayedCalories": 48235,
+      "displayedCalories": 48097,
       "displayedAsMinimum": true,
       "recipeRows": 6,
-      "resolvedRows": 5,
+      "resolvedRows": 4,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "unresolved": [
+        {
+          "id": "115",
+          "type": "ingredient",
+          "name": "Havana Club 3 Anos",
+          "reason": "unknown_weight_or_unit"
+        },
         {
           "id": "293",
           "type": "ingredient",
@@ -4790,13 +5809,43 @@
         "en": "Long Island Iced Tea Cocktail"
       },
       "status": "needs_review",
-      "displayedCalories": 246,
-      "displayedAsMinimum": true,
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
       "recipeRows": 7,
-      "resolvedRows": 5,
+      "resolvedRows": 0,
       "prepackRows": 1,
       "resolvedPrepackRows": 0,
       "unresolved": [
+        {
+          "id": "115",
+          "type": "ingredient",
+          "name": "Havana Club 3 Anos",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "237",
+          "type": "ingredient",
+          "name": "Beefeter",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "110",
+          "type": "ingredient",
+          "name": "Olmeca Blanco",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "246",
+          "type": "ingredient",
+          "name": "Cointreau",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "521",
+          "type": "ingredient",
+          "name": "Водка для коктелйей",
+          "reason": "unknown_weight_or_unit"
+        },
         {
           "id": "293",
           "type": "ingredient",
@@ -4820,13 +5869,19 @@
         "en": "Mojito Cocktail"
       },
       "status": "needs_review",
-      "displayedCalories": 48203,
+      "displayedCalories": 48065,
       "displayedAsMinimum": true,
       "recipeRows": 5,
-      "resolvedRows": 4,
+      "resolvedRows": 3,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "unresolved": [
+        {
+          "id": "115",
+          "type": "ingredient",
+          "name": "Havana Club 3 Anos",
+          "reason": "unknown_weight_or_unit"
+        },
         {
           "id": "293",
           "type": "ingredient",
@@ -4865,14 +5920,33 @@
         "ru": "Коктейль White Russian",
         "en": "White Russian Cocktail"
       },
-      "status": "calculated",
-      "displayedCalories": 533,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 3,
-      "resolvedRows": 3,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "521",
+          "type": "ingredient",
+          "name": "Водка для коктелйей",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "247",
+          "type": "ingredient",
+          "name": "Kahlua",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "175",
+          "type": "ingredient",
+          "name": "Сливки /M Gurme/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "435",
@@ -4991,14 +6065,21 @@
         "ru": "Кокосовое молоко",
         "en": "Coconut Milk"
       },
-      "status": "calculated",
-      "displayedCalories": 0,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "172",
+          "type": "ingredient",
+          "name": "Кокосовое молоко",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "447",
@@ -5124,14 +6205,21 @@
         "ru": "Ирландский кофе",
         "en": "Irish Coffee"
       },
-      "status": "calculated",
+      "status": "needs_review",
       "displayedCalories": 1,
-      "displayedAsMinimum": false,
+      "displayedAsMinimum": true,
       "recipeRows": 3,
-      "resolvedRows": 3,
+      "resolvedRows": 2,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "221",
+          "type": "ingredient",
+          "name": "Jameson",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "455",
@@ -5140,14 +6228,21 @@
         "ru": "Домашнее какао",
         "en": "Homemade Cocoa"
       },
-      "status": "calculated",
-      "displayedCalories": 214,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 57,
+      "displayedAsMinimum": true,
       "recipeRows": 2,
-      "resolvedRows": 2,
+      "resolvedRows": 1,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "287",
+          "type": "ingredient",
+          "name": "молоко /Parmalat/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "456",
@@ -5204,14 +6299,21 @@
         "ru": "Картофельное пюре на молоке",
         "en": "Mashed Potatoes with Milk"
       },
-      "status": "calculated",
-      "displayedCalories": 429,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 398,
+      "displayedAsMinimum": true,
       "recipeRows": 2,
-      "resolvedRows": 2,
+      "resolvedRows": 1,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "416",
+          "type": "ingredient",
+          "name": "молоко",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "460",
@@ -5282,14 +6384,21 @@
         "ru": "Шоколадный милкшейк",
         "en": "Chocolate Milkshake"
       },
-      "status": "calculated",
-      "displayedCalories": 405,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 311,
+      "displayedAsMinimum": true,
       "recipeRows": 3,
-      "resolvedRows": 3,
+      "resolvedRows": 2,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "287",
+          "type": "ingredient",
+          "name": "молоко /Parmalat/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "466",
@@ -5298,14 +6407,21 @@
         "ru": "Ванильный милкшейк",
         "en": "Vanilla Milkshake"
       },
-      "status": "calculated",
-      "displayedCalories": 469,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 375,
+      "displayedAsMinimum": true,
       "recipeRows": 4,
-      "resolvedRows": 4,
+      "resolvedRows": 3,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "287",
+          "type": "ingredient",
+          "name": "молоко /Parmalat/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "467",
@@ -5314,14 +6430,21 @@
         "ru": "Банановый милкшейк",
         "en": "Banana Milkshake"
       },
-      "status": "calculated",
-      "displayedCalories": 583,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 489,
+      "displayedAsMinimum": true,
       "recipeRows": 4,
-      "resolvedRows": 4,
+      "resolvedRows": 3,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "287",
+          "type": "ingredient",
+          "name": "молоко /Parmalat/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "468",
@@ -5330,14 +6453,21 @@
         "ru": "Клубничный милкшейк",
         "en": "Strawberry Milkshake"
       },
-      "status": "calculated",
-      "displayedCalories": 453,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 359,
+      "displayedAsMinimum": true,
       "recipeRows": 4,
-      "resolvedRows": 4,
+      "resolvedRows": 3,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "287",
+          "type": "ingredient",
+          "name": "молоко /Parmalat/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "469",
@@ -5346,14 +6476,21 @@
         "ru": "Милкшейк",
         "en": "Milkshake"
       },
-      "status": "calculated",
-      "displayedCalories": 617,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 554,
+      "displayedAsMinimum": true,
       "recipeRows": 7,
-      "resolvedRows": 7,
+      "resolvedRows": 6,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "287",
+          "type": "ingredient",
+          "name": "молоко /Parmalat/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "470",
@@ -5378,14 +6515,21 @@
         "ru": "Капучино на кокосовом молоке",
         "en": "Cappuccino with Coconut Milk"
       },
-      "status": "calculated",
+      "status": "needs_review",
       "displayedCalories": 1,
-      "displayedAsMinimum": false,
+      "displayedAsMinimum": true,
       "recipeRows": 2,
-      "resolvedRows": 2,
+      "resolvedRows": 1,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "172",
+          "type": "ingredient",
+          "name": "Кокосовое молоко",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "472",
@@ -5394,14 +6538,21 @@
         "ru": "Капучино на миндальном молоке",
         "en": "Cappuccino with Almond Milk"
       },
-      "status": "calculated",
+      "status": "needs_review",
       "displayedCalories": 1,
-      "displayedAsMinimum": false,
+      "displayedAsMinimum": true,
       "recipeRows": 2,
-      "resolvedRows": 2,
+      "resolvedRows": 1,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "269",
+          "type": "ingredient",
+          "name": "Миндальное молоко",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "473",
@@ -5513,14 +6664,21 @@
         "ru": "Тёплое молоко",
         "en": "Warm Milk"
       },
-      "status": "calculated",
-      "displayedCalories": 94,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "287",
+          "type": "ingredient",
+          "name": "молоко /Parmalat/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "480",
@@ -5529,14 +6687,21 @@
         "ru": "Коктейль Rossini",
         "en": "Rossini Cocktail"
       },
-      "status": "calculated",
-      "displayedCalories": 250,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 110,
+      "displayedAsMinimum": true,
       "recipeRows": 3,
-      "resolvedRows": 3,
+      "resolvedRows": 2,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "102",
+          "type": "ingredient",
+          "name": "Prosecco",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "481",
@@ -5817,18 +6982,25 @@
         "en": "Kharcho"
       },
       "status": "needs_review",
-      "displayedCalories": 0,
-      "displayedAsMinimum": true,
+      "displayedCalories": null,
+      "displayedAsMinimum": false,
       "recipeRows": 2,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 2,
-      "resolvedPrepackRows": 1,
+      "resolvedPrepackRows": 0,
       "unresolved": [
         {
           "id": "564",
           "type": "prepack",
           "name": "харчо",
           "grams": 350,
+          "reason": "prepack_nutrition_unresolved"
+        },
+        {
+          "id": "529",
+          "type": "prepack",
+          "name": "говядина отварная",
+          "grams": 50,
           "reason": "prepack_nutrition_unresolved"
         }
       ]
@@ -5856,14 +7028,21 @@
         "ru": "Свежевыжатый гранатовый сок",
         "en": "Fresh Pomegranate Juice"
       },
-      "status": "calculated",
-      "displayedCalories": 1023,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 996,
+      "displayedAsMinimum": true,
       "recipeRows": 2,
-      "resolvedRows": 2,
+      "resolvedRows": 1,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "300",
+          "type": "ingredient",
+          "name": "Сок граната",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "574",
@@ -5897,13 +7076,19 @@
         "en": "Sevan Trout"
       },
       "status": "needs_review",
-      "displayedCalories": 466,
+      "displayedCalories": 59,
       "displayedAsMinimum": true,
       "recipeRows": 8,
-      "resolvedRows": 6,
+      "resolvedRows": 5,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "unresolved": [
+        {
+          "id": "395",
+          "type": "ingredient",
+          "name": "растительное масло",
+          "reason": "unknown_weight_or_unit"
+        },
         {
           "id": "436",
           "type": "ingredient",
@@ -6090,14 +7275,21 @@
         "ru": "Паштет из куриной печени",
         "en": "Chicken Liver Pâté"
       },
-      "status": "calculated",
-      "displayedCalories": 238,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 157,
+      "displayedAsMinimum": true,
       "recipeRows": 5,
-      "resolvedRows": 5,
+      "resolvedRows": 4,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "443",
+          "type": "ingredient",
+          "name": "оливковое масло",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "66",
@@ -6122,14 +7314,21 @@
         "ru": "Водка Stumbras 1 бутылка",
         "en": "Stumbras Vodka 1 Bottle"
       },
-      "status": "calculated",
-      "displayedCalories": 1155,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "521",
+          "type": "ingredient",
+          "name": "Водка для коктелйей",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "661",
@@ -6138,14 +7337,33 @@
         "ru": "Коктейль Negroni",
         "en": "Negroni Cocktail"
       },
-      "status": "calculated",
-      "displayedCalories": 127,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 14,
+      "displayedAsMinimum": true,
       "recipeRows": 4,
-      "resolvedRows": 4,
+      "resolvedRows": 1,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "237",
+          "type": "ingredient",
+          "name": "Beefeter",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "231",
+          "type": "ingredient",
+          "name": "Campari",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "233",
+          "type": "ingredient",
+          "name": "Martini",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "662",
@@ -6154,14 +7372,27 @@
         "ru": "Коктейль Tequila Sunrise",
         "en": "Tequila Sunrise Cocktail"
       },
-      "status": "calculated",
-      "displayedCalories": 288,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 83,
+      "displayedAsMinimum": true,
       "recipeRows": 5,
-      "resolvedRows": 5,
+      "resolvedRows": 3,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "110",
+          "type": "ingredient",
+          "name": "Olmeca Blanco",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "251",
+          "type": "ingredient",
+          "name": "натуральный сок",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "663",
@@ -6171,13 +7402,25 @@
         "en": "Martini Royale Cocktail"
       },
       "status": "needs_review",
-      "displayedCalories": 254,
+      "displayedCalories": 4,
       "displayedAsMinimum": true,
       "recipeRows": 4,
-      "resolvedRows": 3,
+      "resolvedRows": 1,
       "prepackRows": 1,
       "resolvedPrepackRows": 0,
       "unresolved": [
+        {
+          "id": "233",
+          "type": "ingredient",
+          "name": "Martini",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "102",
+          "type": "ingredient",
+          "name": "Prosecco",
+          "reason": "unknown_weight_or_unit"
+        },
         {
           "id": "645",
           "type": "prepack",
@@ -6195,13 +7438,25 @@
         "en": "Pomegranate Mojito"
       },
       "status": "needs_review",
-      "displayedCalories": 332,
+      "displayedCalories": 156,
       "displayedAsMinimum": true,
       "recipeRows": 7,
-      "resolvedRows": 5,
+      "resolvedRows": 3,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "unresolved": [
+        {
+          "id": "115",
+          "type": "ingredient",
+          "name": "Havana Club 3 Anos",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "300",
+          "type": "ingredient",
+          "name": "Сок граната",
+          "reason": "unknown_weight_or_unit"
+        },
         {
           "id": "293",
           "type": "ingredient",
@@ -6319,14 +7574,21 @@
         "ru": "Сливки",
         "en": "Cream"
       },
-      "status": "calculated",
-      "displayedCalories": 343,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "175",
+          "type": "ingredient",
+          "name": "Сливки /M Gurme/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "674",
@@ -6371,10 +7633,17 @@
       "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "269",
+          "type": "ingredient",
+          "name": "Миндальное молоко",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "681",
@@ -6399,14 +7668,21 @@
         "ru": "Водка Stumbras 50 мл",
         "en": "Stumbras Vodka 50 ml"
       },
-      "status": "calculated",
-      "displayedCalories": 116,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "521",
+          "type": "ingredient",
+          "name": "Водка для коктелйей",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "688",
@@ -6456,13 +7732,19 @@
         "en": "House-Made Burrata"
       },
       "status": "needs_review",
-      "displayedCalories": 443,
+      "displayedCalories": 36,
       "displayedAsMinimum": true,
       "recipeRows": 7,
-      "resolvedRows": 6,
+      "resolvedRows": 5,
       "prepackRows": 1,
       "resolvedPrepackRows": 0,
       "unresolved": [
+        {
+          "id": "443",
+          "type": "ingredient",
+          "name": "оливковое масло",
+          "reason": "unknown_weight_or_unit"
+        },
         {
           "id": "492",
           "type": "prepack",
@@ -6495,14 +7777,21 @@
         "ru": "Латте",
         "en": "Latte"
       },
-      "status": "calculated",
-      "displayedCalories": 108,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 1,
+      "displayedAsMinimum": true,
       "recipeRows": 2,
-      "resolvedRows": 2,
+      "resolvedRows": 1,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "287",
+          "type": "ingredient",
+          "name": "молоко /Parmalat/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "701",
@@ -6628,14 +7917,21 @@
         "ru": "Оливковое масло",
         "en": "Olive Oil"
       },
-      "status": "calculated",
-      "displayedCalories": 407,
+      "status": "needs_review",
+      "displayedCalories": null,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 1,
+      "resolvedRows": 0,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "443",
+          "type": "ingredient",
+          "name": "оливковое масло",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "74",
@@ -6675,10 +7971,10 @@
         "en": "Vegetable Salad with Feta"
       },
       "status": "needs_review",
-      "displayedCalories": 380,
+      "displayedCalories": 218,
       "displayedAsMinimum": true,
       "recipeRows": 13,
-      "resolvedRows": 12,
+      "resolvedRows": 11,
       "prepackRows": 5,
       "resolvedPrepackRows": 4,
       "unresolved": [
@@ -6688,6 +7984,12 @@
           "name": "сок лимона Z",
           "grams": 10,
           "reason": "prepack_nutrition_unresolved"
+        },
+        {
+          "id": "443",
+          "type": "ingredient",
+          "name": "оливковое масло",
+          "reason": "unknown_weight_or_unit"
         }
       ]
     },
@@ -6794,13 +8096,19 @@
         "en": "Fresh Green Salad with Edamame"
       },
       "status": "needs_review",
-      "displayedCalories": 212,
+      "displayedCalories": 171,
       "displayedAsMinimum": true,
       "recipeRows": 11,
-      "resolvedRows": 10,
+      "resolvedRows": 9,
       "prepackRows": 2,
       "resolvedPrepackRows": 1,
       "unresolved": [
+        {
+          "id": "443",
+          "type": "ingredient",
+          "name": "оливковое масло",
+          "reason": "unknown_weight_or_unit"
+        },
         {
           "id": "513",
           "type": "prepack",
@@ -6967,13 +8275,25 @@
         "en": "Mother-in-law's Breakfast"
       },
       "status": "needs_review",
-      "displayedCalories": 1030209,
+      "displayedCalories": 1030043,
       "displayedAsMinimum": true,
       "recipeRows": 15,
-      "resolvedRows": 14,
+      "resolvedRows": 12,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
       "unresolved": [
+        {
+          "id": "395",
+          "type": "ingredient",
+          "name": "растительное масло",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "431",
+          "type": "ingredient",
+          "name": "уксус Ponti",
+          "reason": "unknown_weight_or_unit"
+        },
         {
           "id": "480",
           "type": "ingredient",
@@ -7053,14 +8373,27 @@
         "ru": "Окрошка",
         "en": "Okroshka"
       },
-      "status": "calculated",
-      "displayedCalories": 515256,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 515175,
+      "displayedAsMinimum": true,
       "recipeRows": 12,
-      "resolvedRows": 12,
+      "resolvedRows": 10,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "395",
+          "type": "ingredient",
+          "name": "растительное масло",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "428",
+          "type": "ingredient",
+          "name": "вода",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "813",
@@ -7070,10 +8403,10 @@
         "en": "Lemon Pie"
       },
       "status": "needs_review",
-      "displayedCalories": 3093699,
+      "displayedCalories": 3093649,
       "displayedAsMinimum": true,
       "recipeRows": 6,
-      "resolvedRows": 5,
+      "resolvedRows": 4,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
       "unresolved": [
@@ -7081,6 +8414,12 @@
           "id": "436",
           "type": "ingredient",
           "name": "Лимон",
+          "reason": "unknown_weight_or_unit"
+        },
+        {
+          "id": "416",
+          "type": "ingredient",
+          "name": "молоко",
           "reason": "unknown_weight_or_unit"
         }
       ]
@@ -7125,13 +8464,19 @@
         "en": "Shawarma with Kufta"
       },
       "status": "needs_review",
-      "displayedCalories": 40695,
+      "displayedCalories": 40533,
       "displayedAsMinimum": true,
       "recipeRows": 12,
-      "resolvedRows": 11,
+      "resolvedRows": 10,
       "prepackRows": 5,
       "resolvedPrepackRows": 5,
       "unresolved": [
+        {
+          "id": "395",
+          "type": "ingredient",
+          "name": "растительное масло",
+          "reason": "unknown_weight_or_unit"
+        },
         {
           "id": "480",
           "type": "ingredient",
@@ -7171,14 +8516,21 @@
         "ru": "Омлет",
         "en": "Omelet"
       },
-      "status": "calculated",
-      "displayedCalories": 1029979,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 1029735,
+      "displayedAsMinimum": true,
       "recipeRows": 5,
-      "resolvedRows": 5,
+      "resolvedRows": 4,
       "prepackRows": 0,
       "resolvedPrepackRows": 0,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "395",
+          "type": "ingredient",
+          "name": "растительное масло",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "822",
@@ -7187,14 +8539,21 @@
         "ru": "Ван",
         "en": "Van"
       },
-      "status": "calculated",
+      "status": "needs_review",
       "displayedCalories": 124969,
-      "displayedAsMinimum": false,
+      "displayedAsMinimum": true,
       "recipeRows": 5,
-      "resolvedRows": 5,
+      "resolvedRows": 4,
       "prepackRows": 1,
       "resolvedPrepackRows": 1,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "176",
+          "type": "ingredient",
+          "name": "Сливки /кондитерия/",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "827",
@@ -7226,14 +8585,21 @@
         "ru": "Салат со сладким баклажаном",
         "en": "Sweet Eggplant Salad"
       },
-      "status": "calculated",
-      "displayedCalories": 466,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 222,
+      "displayedAsMinimum": true,
       "recipeRows": 14,
-      "resolvedRows": 14,
+      "resolvedRows": 13,
       "prepackRows": 4,
       "resolvedPrepackRows": 4,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "443",
+          "type": "ingredient",
+          "name": "оливковое масло",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "831",
@@ -7258,14 +8624,21 @@
         "ru": "Баклажан с курицей",
         "en": "Eggplant with Chicken"
       },
-      "status": "calculated",
+      "status": "needs_review",
       "displayedCalories": 627,
-      "displayedAsMinimum": false,
+      "displayedAsMinimum": true,
       "recipeRows": 6,
-      "resolvedRows": 6,
+      "resolvedRows": 5,
       "prepackRows": 3,
       "resolvedPrepackRows": 3,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "419",
+          "type": "ingredient",
+          "name": "Нашараб",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "85",
@@ -7322,14 +8695,22 @@
         "ru": "Пряные куриные сердечки",
         "en": "Spiced Chicken Hearts"
       },
-      "status": "calculated",
+      "status": "needs_review",
       "displayedCalories": 63,
-      "displayedAsMinimum": false,
+      "displayedAsMinimum": true,
       "recipeRows": 2,
-      "resolvedRows": 2,
+      "resolvedRows": 1,
       "prepackRows": 2,
-      "resolvedPrepackRows": 2,
-      "unresolved": []
+      "resolvedPrepackRows": 1,
+      "unresolved": [
+        {
+          "id": "608",
+          "type": "prepack",
+          "name": "сердечки отварные",
+          "grams": 80,
+          "reason": "prepack_nutrition_unresolved"
+        }
+      ]
     },
     {
       "productId": "9",
@@ -7338,14 +8719,21 @@
         "ru": "Восточное ассорти",
         "en": "Oriental Platter"
       },
-      "status": "calculated",
-      "displayedCalories": 1287594,
-      "displayedAsMinimum": false,
+      "status": "needs_review",
+      "displayedCalories": 1287472,
+      "displayedAsMinimum": true,
       "recipeRows": 11,
-      "resolvedRows": 11,
+      "resolvedRows": 10,
       "prepackRows": 2,
       "resolvedPrepackRows": 2,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "395",
+          "type": "ingredient",
+          "name": "растительное масло",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "91",
@@ -7426,14 +8814,21 @@
         "ru": "Пьяная вишня",
         "en": "Drunken Cherry Dessert"
       },
-      "status": "calculated",
+      "status": "needs_review",
       "displayedCalories": 436134,
-      "displayedAsMinimum": false,
+      "displayedAsMinimum": true,
       "recipeRows": 4,
-      "resolvedRows": 4,
+      "resolvedRows": 3,
       "prepackRows": 3,
       "resolvedPrepackRows": 3,
-      "unresolved": []
+      "unresolved": [
+        {
+          "id": "578",
+          "type": "ingredient",
+          "name": "fruit liquor",
+          "reason": "unknown_weight_or_unit"
+        }
+      ]
     },
     {
       "productId": "98",

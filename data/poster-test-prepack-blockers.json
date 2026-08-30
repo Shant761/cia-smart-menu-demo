@@ -1,79 +1,12 @@
 {
   "version": "1.1.0",
   "restaurantId": "poster-test",
-  "generatedAt": "2026-08-30T10:54:15.377Z",
+  "generatedAt": "2026-08-30T11:18:20.688Z",
   "prepackCount": 219,
-  "calculatedCount": 206,
-  "needsReviewCount": 13,
-  "uniqueLeafBlockerCount": 6,
+  "calculatedCount": 212,
+  "needsReviewCount": 7,
+  "uniqueLeafBlockerCount": 4,
   "blockers": [
-    {
-      "type": "ingredient",
-      "id": "352",
-      "name": "Куриный отвал",
-      "reason": "animal_nutrition_missing_or_zero",
-      "affectedPrepackCount": 5,
-      "affectedPrepacks": [
-        {
-          "productId": "511",
-          "name": "куриный отвал б/к"
-        },
-        {
-          "productId": "525",
-          "name": "курица с грибами"
-        },
-        {
-          "productId": "584",
-          "name": "кябаб из телятины"
-        },
-        {
-          "productId": "510",
-          "name": "фарш для баклажана"
-        },
-        {
-          "productId": "581",
-          "name": "фарш для цыпленка"
-        }
-      ],
-      "rawPosterRows": [
-        {
-          "prepackId": "511",
-          "prepackName": "куриный отвал б/к",
-          "structureId": "246",
-          "structureType": 1,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "structureBrutto": "8000.00",
-          "structureNetto": 6700,
-          "ingredientWeight": 0,
-          "ingredientName": "Куриный отвал "
-        },
-        {
-          "prepackId": "584",
-          "prepackName": "кябаб из телятины",
-          "structureId": "558",
-          "structureType": 1,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "structureBrutto": "1000.00",
-          "structureNetto": 1000,
-          "ingredientWeight": 0,
-          "ingredientName": "Куриный отвал "
-        },
-        {
-          "prepackId": "581",
-          "prepackName": "фарш для цыпленка",
-          "structureId": "544",
-          "structureType": 1,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "structureBrutto": "800.00",
-          "structureNetto": 800,
-          "ingredientWeight": 0,
-          "ingredientName": "Куриный отвал "
-        }
-      ]
-    },
     {
       "type": "ingredient",
       "id": "436",
@@ -227,33 +160,6 @@
           "structureNetto": 0,
           "ingredientWeight": 0,
           "ingredientName": "острый перец"
-        }
-      ]
-    },
-    {
-      "type": "ingredient",
-      "id": "50",
-      "name": "Печенье Юбилейное",
-      "reason": "animal_nutrition_missing_or_zero",
-      "affectedPrepackCount": 1,
-      "affectedPrepacks": [
-        {
-          "productId": "709",
-          "name": "чизкейк"
-        }
-      ],
-      "rawPosterRows": [
-        {
-          "prepackId": "709",
-          "prepackName": "чизкейк",
-          "structureId": "2337",
-          "structureType": 1,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "structureBrutto": "280.00",
-          "structureNetto": 280,
-          "ingredientWeight": 0,
-          "ingredientName": "Печенье Юбилейное"
         }
       ]
     }

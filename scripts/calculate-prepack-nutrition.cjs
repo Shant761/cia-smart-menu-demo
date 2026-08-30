@@ -31,8 +31,10 @@ function rowGrams(row) {
   if (['ml', 'мл'].includes(unit)) return value * density(row?.ingredient_name);
   if (['l', 'л'].includes(unit)) return value * 1000 * density(row?.ingredient_name);
   if (['p', 'pc', 'pcs', 'шт'].includes(unit)) {
-    const pieceWeight = n(row?.ingredient_weight);
-    return pieceWeight && pieceWeight > 0 ? value * pieceWeight : null;
+    // Poster returns structure_netto as the actual net weight for piece rows.
+    // structure_brutto is the piece count. Multiplying netto by ingredient_weight
+    // created values such as 720,000 g for two eggs.
+    return value > 0 ? value : null;
   }
   return null;
 }
@@ -117,19 +119,25 @@ function calculatePrep(prepId, stack = []) {
   }
 
   const outputGrams = n(prep.out);
-  // Never mark an empty tech card as calculated. Previously a prepack with a valid
-  // `out` value but zero exported rows became a fake 0 kcal/100g source and could
-  // contaminate every parent recipe that referenced it.
   const hasCompleteComposition = rows.length > 0 && resolved.length === rows.length && knownInputGrams > 0;
-  const canCalculate = unresolved.length === 0 && hasCompleteComposition && outputGrams != null && outputGrams > 0;
-  const status = canCalculate ? 'calculated' : 'needs_review';
-  const reason = rows.length === 0 ? 'empty_tech_card' : (!canCalculate && unresolved.length === 0 ? 'incomplete_composition' : undefined);
-  const per100g = outputGrams && outputGrams > 0 && knownInputGrams > 0 ? {
+  const rawPer100g = outputGrams && outputGrams > 0 && knownInputGrams > 0 ? {
     calories: Math.round((totals.calories / outputGrams) * 100),
     protein: round1((totals.protein / outputGrams) * 100),
     fat: round1((totals.fat / outputGrams) * 100),
     carbohydrates: round1((totals.carbohydrates / outputGrams) * 100)
   } : null;
+
+  // Absolute safety guard: edible food cannot legitimately exceed ~900 kcal/100 g.
+  // Keep a little margin for rounding/data peculiarities; anything above 1000 is
+  // a unit/conversion error and must never propagate as an exact value.
+  const implausibleCalories = Boolean(rawPer100g && rawPer100g.calories > 1000);
+  const canCalculate = unresolved.length === 0 && hasCompleteComposition && outputGrams != null && outputGrams > 0 && !implausibleCalories;
+  const status = canCalculate ? 'calculated' : 'needs_review';
+  const reason = rows.length === 0
+    ? 'empty_tech_card'
+    : implausibleCalories
+      ? 'implausible_calories_per_100g'
+      : (!canCalculate && unresolved.length === 0 ? 'incomplete_composition' : undefined);
 
   const result = {
     productId: id,
@@ -138,8 +146,8 @@ function calculatePrep(prepId, stack = []) {
     status,
     ...(reason ? { reason } : {}),
     source: 'Poster menu.getPrepacks + verified ingredient nutrition',
-    per100g: canCalculate ? per100g : null,
-    partialPer100g: !canCalculate ? per100g : null,
+    per100g: canCalculate ? rawPer100g : null,
+    partialPer100g: !canCalculate && !implausibleCalories ? rawPer100g : null,
     knownInputGrams: round1(knownInputGrams),
     totalRows: rows.length,
     resolvedRows: resolved.length,
@@ -158,7 +166,7 @@ const targetIds = new Set((prepData?.targetPrepacks || []).map((prep) => String(
 const targetResults = results.filter((item) => targetIds.has(String(item.productId)));
 
 const payload = {
-  version: '1.1.0',
+  version: '1.2.0',
   restaurantId: prepData?.restaurantId || 'poster-test',
   source: 'Poster menu.getPrepacks + cia-nutrition-manual-top20 verified entries',
   generatedAt: new Date().toISOString(),

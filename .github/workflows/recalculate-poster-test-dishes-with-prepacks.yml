@@ -9,6 +9,7 @@ on:
       - 'scripts/recalculate-snapshot-with-prepacks.cjs'
       - 'scripts/calculate-prepack-nutrition.cjs'
       - 'scripts/audit-prepack-blockers.cjs'
+      - 'scripts/export-unresolved-dish-report.cjs'
       - 'data/poster-test-preparations.json'
       - 'data/cia-nutrition-manual-top20.json'
       - 'data/cia-nutrition-verified-overrides.json'
@@ -44,6 +45,7 @@ jobs:
           node --check scripts/calculate-prepack-nutrition.cjs
           node --check scripts/audit-prepack-blockers.cjs
           node --check scripts/recalculate-snapshot-with-prepacks.cjs
+          node --check scripts/export-unresolved-dish-report.cjs
 
       - name: Verify poster-test token
         run: |
@@ -59,6 +61,9 @@ jobs:
 
       - name: Recalculate all dish nutrition with prepack tech cards
         run: node scripts/recalculate-snapshot-with-prepacks.cjs
+
+      - name: Export unresolved dish nutrition report
+        run: node scripts/export-unresolved-dish-report.cjs
 
       - name: Inspect Chakapuli and cooked beef consumers
         run: |
@@ -81,7 +86,8 @@ jobs:
             data/poster-test-prepack-nutrition.json \
             data/poster-test-prepack-blockers.json \
             data/public-menus/poster-test.json \
-            data/poster-test-dish-nutrition-summary.json
+            data/poster-test-dish-nutrition-summary.json \
+            data/poster-test-unresolved-dishes.json
           if git diff --cached --quiet; then
             echo "No nutrition changes."
           else

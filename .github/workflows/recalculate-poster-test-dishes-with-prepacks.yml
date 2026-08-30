@@ -13,6 +13,7 @@ on:
       - 'data/poster-test-preparations.json'
       - 'data/cia-nutrition-manual-top20.json'
       - 'data/cia-nutrition-verified-overrides.json'
+      - 'data/cia-nutrition-unit-rules.json'
       - '.github/workflows/recalculate-poster-test-dishes-with-prepacks.yml'
   workflow_dispatch:
 
@@ -87,7 +88,8 @@ jobs:
             data/poster-test-prepack-blockers.json \
             data/public-menus/poster-test.json \
             data/poster-test-dish-nutrition-summary.json \
-            data/poster-test-unresolved-dishes.json
+            data/poster-test-unresolved-dishes.json \
+            data/poster-test-unresolved-dishes.txt
           if git diff --cached --quiet; then
             echo "No nutrition changes."
           else

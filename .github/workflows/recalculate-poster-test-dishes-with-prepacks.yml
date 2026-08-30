@@ -16,6 +16,10 @@ on:
       - '.github/workflows/recalculate-poster-test-dishes-with-prepacks.yml'
   workflow_dispatch:
 
+concurrency:
+  group: poster-test-nutrition-writes
+  cancel-in-progress: false
+
 jobs:
   recalculate:
     runs-on: ubuntu-latest

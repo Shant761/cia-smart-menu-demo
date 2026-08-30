@@ -1,14 +1,1339 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "restaurantId": "poster-test",
-  "sourceGeneratedAt": "2026-08-30T12:03:07.420Z",
-  "generatedAt": "2026-08-30T12:03:07.491Z",
-  "productsWithRecipe": 407,
-  "fullyCalculatedCount": 337,
-  "unresolvedCount": 70,
+  "sourceGeneratedAt": "2026-08-30T12:04:50.306Z",
+  "generatedAt": "2026-08-30T12:04:50.376Z",
+  "rawProductsWithRecipe": 407,
+  "excludedFromNutritionScopeCount": 132,
+  "nutritionScopeProductsWithRecipe": 275,
+  "fullyCalculatedCount": 235,
+  "coveragePercent": 85.5,
+  "unresolvedCount": 40,
   "byStatus": {
-    "needs_review": 70
+    "needs_review": 40
   },
+  "excludedProducts": [
+    {
+      "productId": "125",
+      "name": {
+        "hy": "Խրենավուխա",
+        "ru": "Хреновуха",
+        "en": "Horseradish Vodka"
+      },
+      "categoryId": "50",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "202",
+      "name": {
+        "hy": "Շամպայն Zonin Prosecco Cuvée DOC",
+        "ru": "Игристое вино Zonin Prosecco Cuvée DOC",
+        "en": "Zonin Prosecco Cuvée DOC Sparkling Wine"
+      },
+      "categoryId": "37",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "203",
+      "name": {
+        "hy": "Շամպայն Zonin Prosecco Cuvee Rose",
+        "ru": "Игристое вино Zonin Prosecco Cuvée Rosé",
+        "en": "Zonin Prosecco Cuvée Rosé Sparkling Wine"
+      },
+      "categoryId": "37",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "204",
+      "name": {
+        "hy": "Շամպայն Zonin Asti DOCG",
+        "ru": "Игристое вино Zonin Asti DOCG",
+        "en": "Zonin Asti DOCG Sparkling Wine"
+      },
+      "categoryId": "37",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "205",
+      "name": {
+        "hy": "Շամպայն Takar Rosé Extra Brut",
+        "ru": "Игристое вино Takar Rosé Extra Brut",
+        "en": "Takar Rosé Extra Brut Sparkling Wine"
+      },
+      "categoryId": "37",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "206",
+      "name": {
+        "hy": "Շամպայն Takar Extra Brut",
+        "ru": "Игристое вино Takar Extra Brut",
+        "en": "Takar Extra Brut Sparkling Wine"
+      },
+      "categoryId": "37",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "211",
+      "name": {
+        "hy": "Շամպայն Prosecco 150 ml",
+        "ru": "Просекко 150 мл",
+        "en": "Prosecco 150 ml"
+      },
+      "categoryId": "37",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "212",
+      "name": {
+        "hy": "Շամպայն Moët and Chandon Imperial Brut Rosé",
+        "ru": "Moët & Chandon Imperial Brut Rosé",
+        "en": "Moët & Chandon Imperial Brut Rosé"
+      },
+      "categoryId": "37",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "213",
+      "name": {
+        "hy": "Շամպայն Moët and Chandon Imperial Brut",
+        "ru": "Moët & Chandon Imperial Brut",
+        "en": "Moët & Chandon Imperial Brut"
+      },
+      "categoryId": "37",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "216",
+      "name": {
+        "hy": "Թեքիլա Patron Silver",
+        "ru": "Текила Patrón Silver",
+        "en": "Patrón Silver Tequila"
+      },
+      "categoryId": "30",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "217",
+      "name": {
+        "hy": "Թեքիլա Patron Reposado",
+        "ru": "Текила Patrón Reposado",
+        "en": "Patrón Reposado Tequila"
+      },
+      "categoryId": "30",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "220",
+      "name": {
+        "hy": "Թեքիլա Don Julio 1942",
+        "ru": "Текила Don Julio 1942",
+        "en": "Don Julio 1942 Tequila"
+      },
+      "categoryId": "30",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "221",
+      "name": {
+        "hy": "Ռոմ Bacardi Carta Blanca",
+        "ru": "Ром Bacardi Carta Blanca",
+        "en": "Bacardi Carta Blanca Rum"
+      },
+      "categoryId": "29",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "222",
+      "name": {
+        "hy": "Ռոմ Bacardi Carta Negra",
+        "ru": "Ром Bacardi Carta Negra",
+        "en": "Bacardi Carta Negra Rum"
+      },
+      "categoryId": "29",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "224",
+      "name": {
+        "hy": "Ռոմ Havana Club 7 Anos",
+        "ru": "Ром Havana Club 7 Años",
+        "en": "Havana Club 7 Años Rum"
+      },
+      "categoryId": "29",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "225",
+      "name": {
+        "hy": "Ռոմ Havana Club Anejo Especial",
+        "ru": "Ром Havana Club Añejo Especial",
+        "en": "Havana Club Añejo Especial Rum"
+      },
+      "categoryId": "29",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "231",
+      "name": {
+        "hy": "Գարեջուր Krombacher",
+        "ru": "Пиво Krombacher",
+        "en": "Krombacher Beer"
+      },
+      "categoryId": "25",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "232",
+      "name": {
+        "hy": "Գարեջուր Dargett",
+        "ru": "Пиво Dargett",
+        "en": "Dargett Beer"
+      },
+      "categoryId": "25",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "233",
+      "name": {
+        "hy": "Գարեջուր Corona",
+        "ru": "Пиво Corona",
+        "en": "Corona Beer"
+      },
+      "categoryId": "25",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "238",
+      "name": {
+        "hy": "Գինի 365 Pomegranate",
+        "ru": "Вино 365 Pomegranate",
+        "en": "365 Pomegranate Wine"
+      },
+      "categoryId": "41",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "242",
+      "name": {
+        "hy": "Գինի Attems Pinot Grigio",
+        "ru": "Вино Attems Pinot Grigio",
+        "en": "Attems Pinot Grigio Wine"
+      },
+      "categoryId": "40",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "248",
+      "name": {
+        "hy": "Գինի Karas red",
+        "ru": "Красное вино Karas",
+        "en": "Karas Red Wine"
+      },
+      "categoryId": "41",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "249",
+      "name": {
+        "hy": "Karas red 150",
+        "ru": "Karas красное 150 мл",
+        "en": "Karas Red 150 ml"
+      },
+      "categoryId": "22",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "250",
+      "name": {
+        "hy": "Գինի Karas white",
+        "ru": "Белое вино Karas",
+        "en": "Karas White Wine"
+      },
+      "categoryId": "40",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "251",
+      "name": {
+        "hy": "Karas white 150",
+        "ru": "Karas белое 150 мл",
+        "en": "Karas White 150 ml"
+      },
+      "categoryId": "22",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "252",
+      "name": {
+        "hy": "Գինի Karas Rezerve red",
+        "ru": "Красное вино Karas Reserve",
+        "en": "Karas Reserve Red Wine"
+      },
+      "categoryId": "41",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "253",
+      "name": {
+        "hy": "Գինի Koor red",
+        "ru": "Красное вино Koor",
+        "en": "Koor Red Wine"
+      },
+      "categoryId": "41",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "254",
+      "name": {
+        "hy": "Koor red 150",
+        "ru": "Koor красное 150 мл",
+        "en": "Koor Red 150 ml"
+      },
+      "categoryId": "22",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "255",
+      "name": {
+        "hy": "Գինի Koor white",
+        "ru": "Белое вино Koor",
+        "en": "Koor White Wine"
+      },
+      "categoryId": "40",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "256",
+      "name": {
+        "hy": "Koor white 150",
+        "ru": "Koor белое 150 мл",
+        "en": "Koor White 150 ml"
+      },
+      "categoryId": "22",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "258",
+      "name": {
+        "hy": "Գինի Koor Rezerve red",
+        "ru": "Красное вино Koor Reserve",
+        "en": "Koor Reserve Red Wine"
+      },
+      "categoryId": "41",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "259",
+      "name": {
+        "hy": "365 Pomegranate 150",
+        "ru": "365 Pomegranate 150 мл",
+        "en": "365 Pomegranate 150 ml"
+      },
+      "categoryId": "22",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "260",
+      "name": {
+        "hy": "Գինի Piccini Memoro",
+        "ru": "Вино Piccini Memoro",
+        "en": "Piccini Memoro Wine"
+      },
+      "categoryId": "40",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "261",
+      "name": {
+        "hy": "Գինի Takar red",
+        "ru": "Красное вино Takar",
+        "en": "Takar Red Wine"
+      },
+      "categoryId": "41",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "262",
+      "name": {
+        "hy": "Takar red 150",
+        "ru": "Takar красное 150 мл",
+        "en": "Takar Red 150 ml"
+      },
+      "categoryId": "22",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "263",
+      "name": {
+        "hy": "Գինի Takar rosé",
+        "ru": "Розовое вино Takar",
+        "en": "Takar Rosé Wine"
+      },
+      "categoryId": "39",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "264",
+      "name": {
+        "hy": "Takar rosé 150",
+        "ru": "Takar розовое 150 мл",
+        "en": "Takar Rosé 150 ml"
+      },
+      "categoryId": "22",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "265",
+      "name": {
+        "hy": "Գինի Takar white",
+        "ru": "Белое вино Takar",
+        "en": "Takar White Wine"
+      },
+      "categoryId": "40",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "266",
+      "name": {
+        "hy": "Takar white 150",
+        "ru": "Takar белое 150 мл",
+        "en": "Takar White 150 ml"
+      },
+      "categoryId": "22",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "268",
+      "name": {
+        "hy": "Գինի Tariri red",
+        "ru": "Красное вино Tariri",
+        "en": "Tariri Red Wine"
+      },
+      "categoryId": "41",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "270",
+      "name": {
+        "hy": "Գինի Tariri white",
+        "ru": "Белое вино Tariri",
+        "en": "Tariri White Wine"
+      },
+      "categoryId": "40",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "271",
+      "name": {
+        "hy": "Գինի Tus white",
+        "ru": "Белое вино Tus",
+        "en": "Tus White Wine"
+      },
+      "categoryId": "40",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "275",
+      "name": {
+        "hy": "Գինի Zorah Karasi /red/",
+        "ru": "Красное вино Zorah Karasi",
+        "en": "Zorah Karasi Red Wine"
+      },
+      "categoryId": "41",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "276",
+      "name": {
+        "hy": "Գինի Zorah Voski",
+        "ru": "Вино Zorah Voski",
+        "en": "Zorah Voski Wine"
+      },
+      "categoryId": "40",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "277",
+      "name": {
+        "hy": "Գինի Zorah Yeraz /red/",
+        "ru": "Красное вино Zorah Yeraz",
+        "en": "Zorah Yeraz Red Wine"
+      },
+      "categoryId": "41",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "281",
+      "name": {
+        "hy": "լիկյոր Նռան",
+        "ru": "Гранатовый ликёр",
+        "en": "Pomegranate Liqueur"
+      },
+      "categoryId": "50",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "282",
+      "name": {
+        "hy": "Նռան օղի",
+        "ru": "Гранатовая водка",
+        "en": "Pomegranate Vodka"
+      },
+      "categoryId": "50",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "334",
+      "name": {
+        "hy": "Գլինտվեյն",
+        "ru": "Глинтвейн",
+        "en": "Mulled Wine"
+      },
+      "categoryId": "50",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "335",
+      "name": {
+        "hy": "Սանգրիա /դասական/",
+        "ru": "Классическая сангрия",
+        "en": "Classic Sangria"
+      },
+      "categoryId": "50",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "348",
+      "name": {
+        "hy": "լիկյոր Լիմոնչելլո",
+        "ru": "Ликёр Лимончелло",
+        "en": "Limoncello Liqueur"
+      },
+      "categoryId": "50",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "350",
+      "name": {
+        "hy": "լիկյոր Բալի",
+        "ru": "Вишнёвый ликёр",
+        "en": "Cherry Liqueur"
+      },
+      "categoryId": "50",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "351",
+      "name": {
+        "hy": "լիկյոր Լոռամրգի",
+        "ru": "Клюквенный ликёр",
+        "en": "Cranberry Liqueur"
+      },
+      "categoryId": "50",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "352",
+      "name": {
+        "hy": "Ծիրանի օղի",
+        "ru": "Абрикосовая водка",
+        "en": "Apricot Vodka"
+      },
+      "categoryId": "50",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "353",
+      "name": {
+        "hy": "Հոնի օղի",
+        "ru": "Кизиловая водка",
+        "en": "Cornelian Cherry Vodka"
+      },
+      "categoryId": "50",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "354",
+      "name": {
+        "hy": "Թթի օղի",
+        "ru": "Тутовая водка",
+        "en": "Mulberry Vodka"
+      },
+      "categoryId": "50",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "355",
+      "name": {
+        "hy": "Վայրի տանձի օղի",
+        "ru": "Водка из дикой груши",
+        "en": "Wild Pear Vodka"
+      },
+      "categoryId": "50",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "356",
+      "name": {
+        "hy": "Օղի Absolut",
+        "ru": "Водка Absolut",
+        "en": "Absolut Vodka"
+      },
+      "categoryId": "53",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "357",
+      "name": {
+        "hy": "Օղի Absolut Elyx",
+        "ru": "Водка Absolut Elyx",
+        "en": "Absolut Elyx Vodka"
+      },
+      "categoryId": "53",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "359",
+      "name": {
+        "hy": "Օղի Chistie Rosi",
+        "ru": "Водка Chistie Rosi",
+        "en": "Chistie Rosi Vodka"
+      },
+      "categoryId": "53",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "360",
+      "name": {
+        "hy": "Օղի Grey Goose",
+        "ru": "Водка Grey Goose",
+        "en": "Grey Goose Vodka"
+      },
+      "categoryId": "53",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "361",
+      "name": {
+        "hy": "Օղի Ohanyan Ice",
+        "ru": "Водка Ohanyan Ice",
+        "en": "Ohanyan Ice Vodka"
+      },
+      "categoryId": "53",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "362",
+      "name": {
+        "hy": "Օղի Onegin",
+        "ru": "Водка Онегин",
+        "en": "Onegin Vodka"
+      },
+      "categoryId": "53",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "363",
+      "name": {
+        "hy": "Օղի Absolut /1b/",
+        "ru": "Водка Absolut /1 бутылка/",
+        "en": "Absolut Vodka /1 Bottle/"
+      },
+      "categoryId": "52",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "364",
+      "name": {
+        "hy": "Օղի Absolut Elyx /1b/",
+        "ru": "Водка Absolut Elyx /1 бутылка/",
+        "en": "Absolut Elyx Vodka /1 Bottle/"
+      },
+      "categoryId": "52",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "365",
+      "name": {
+        "hy": "Օղի Beluga /1b/",
+        "ru": "Водка Beluga /1 бутылка/",
+        "en": "Beluga Vodka /1 Bottle/"
+      },
+      "categoryId": "52",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "366",
+      "name": {
+        "hy": "Օղի Chistie Rosi /1b/",
+        "ru": "Водка Chistie Rosi /1 бутылка/",
+        "en": "Chistie Rosi Vodka /1 Bottle/"
+      },
+      "categoryId": "52",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "367",
+      "name": {
+        "hy": "Օղի Grey Goose /1b/",
+        "ru": "Водка Grey Goose /1 бутылка/",
+        "en": "Grey Goose Vodka /1 Bottle/"
+      },
+      "categoryId": "52",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "369",
+      "name": {
+        "hy": "Օղի Onegin /1b/",
+        "ru": "Водка Онегин /1 бутылка/",
+        "en": "Onegin Vodka /1 Bottle/"
+      },
+      "categoryId": "52",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "370",
+      "name": {
+        "hy": "Վիսկի Ballantine՝s",
+        "ru": "Виски Ballantine's",
+        "en": "Ballantine's Whisky"
+      },
+      "categoryId": "32",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "371",
+      "name": {
+        "hy": "Վիսկի Chivas Regal 12 YO",
+        "ru": "Виски Chivas Regal 12 YO",
+        "en": "Chivas Regal 12 YO Whisky"
+      },
+      "categoryId": "32",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "372",
+      "name": {
+        "hy": "ՎԻսկի Chivas Regal 18 YO",
+        "ru": "Виски Chivas Regal 18 YO",
+        "en": "Chivas Regal 18 YO Whisky"
+      },
+      "categoryId": "32",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "373",
+      "name": {
+        "hy": "Վիսկի Glenfiddich 15",
+        "ru": "Виски Glenfiddich 15",
+        "en": "Glenfiddich 15 Whisky"
+      },
+      "categoryId": "32",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "374",
+      "name": {
+        "hy": "Վիսկի Jack Daniel`s",
+        "ru": "Виски Jack Daniel's",
+        "en": "Jack Daniel's Whiskey"
+      },
+      "categoryId": "32",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "375",
+      "name": {
+        "hy": "Վիսկի Jack Daniel`s Honey",
+        "ru": "Виски Jack Daniel's Honey",
+        "en": "Jack Daniel's Honey Whiskey"
+      },
+      "categoryId": "32",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "376",
+      "name": {
+        "hy": "Վիսկի Jameson",
+        "ru": "Виски Jameson",
+        "en": "Jameson Whiskey"
+      },
+      "categoryId": "32",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "377",
+      "name": {
+        "hy": "Վիսկի The Glenlivet 12 YO",
+        "ru": "Виски The Glenlivet 12 YO",
+        "en": "The Glenlivet 12 YO Whisky"
+      },
+      "categoryId": "32",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "378",
+      "name": {
+        "hy": "Վիսկի The Macallan 12 YO",
+        "ru": "Виски The Macallan 12 YO",
+        "en": "The Macallan 12 YO Whisky"
+      },
+      "categoryId": "32",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "379",
+      "name": {
+        "hy": "Վիսկի Jin Beam",
+        "ru": "Виски Jim Beam",
+        "en": "Jim Beam Whiskey"
+      },
+      "categoryId": "32",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "382",
+      "name": {
+        "hy": "Բրենդի Akhtamar",
+        "ru": "Бренди Akhtamar",
+        "en": "Akhtamar Brandy"
+      },
+      "categoryId": "33",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "383",
+      "name": {
+        "hy": "Բրենդի Dvin",
+        "ru": "Бренди Dvin",
+        "en": "Dvin Brandy"
+      },
+      "categoryId": "33",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "384",
+      "name": {
+        "hy": "Բրենդի Nairi",
+        "ru": "Бренди Nairi",
+        "en": "Nairi Brandy"
+      },
+      "categoryId": "33",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "385",
+      "name": {
+        "hy": "Բրենդի Ohanyan",
+        "ru": "Бренди Ohanyan",
+        "en": "Ohanyan Brandy"
+      },
+      "categoryId": "33",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "386",
+      "name": {
+        "hy": "Բրենդի Vaspurakan",
+        "ru": "Бренди Vaspurakan",
+        "en": "Vaspurakan Brandy"
+      },
+      "categoryId": "33",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "387",
+      "name": {
+        "hy": "Բիթեռ Aperol",
+        "ru": "Биттер Aperol",
+        "en": "Aperol Bitter"
+      },
+      "categoryId": "27",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "388",
+      "name": {
+        "hy": "Բիթեռ Becherovka",
+        "ru": "Биттер Becherovka",
+        "en": "Becherovka Herbal Liqueur"
+      },
+      "categoryId": "27",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "389",
+      "name": {
+        "hy": "Բիթեռ Campari",
+        "ru": "Биттер Campari",
+        "en": "Campari Bitter"
+      },
+      "categoryId": "27",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "390",
+      "name": {
+        "hy": "Բիթեռ Jagermeister",
+        "ru": "Ликёр Jägermeister",
+        "en": "Jägermeister Liqueur"
+      },
+      "categoryId": "27",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "391",
+      "name": {
+        "hy": "Բիթեռ Xenta",
+        "ru": "Абсент Xenta",
+        "en": "Xenta Absinthe"
+      },
+      "categoryId": "27",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "392",
+      "name": {
+        "hy": "Վերմուտ Martini",
+        "ru": "Вермут Martini",
+        "en": "Martini Vermouth"
+      },
+      "categoryId": "27",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "393",
+      "name": {
+        "hy": "Բրենդի Calvados",
+        "ru": "Кальвадос",
+        "en": "Calvados"
+      },
+      "categoryId": "33",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "394",
+      "name": {
+        "hy": "Գինի կարմիր 150",
+        "ru": "Գինի կարմիր 150",
+        "en": "Գինի կարմիր 150"
+      },
+      "categoryId": "22",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "396",
+      "name": {
+        "hy": "Ջին Beefeter",
+        "ru": "Джин Beefeater",
+        "en": "Beefeater Gin"
+      },
+      "categoryId": "28",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "397",
+      "name": {
+        "hy": "Ջին Bombay Sapphire",
+        "ru": "Джин Bombay Sapphire",
+        "en": "Bombay Sapphire Gin"
+      },
+      "categoryId": "28",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "398",
+      "name": {
+        "hy": "Ջին Hendrick`s",
+        "ru": "Джин Hendrick's",
+        "en": "Hendrick's Gin"
+      },
+      "categoryId": "28",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "399",
+      "name": {
+        "hy": "Ջին Monkey",
+        "ru": "Джин Monkey",
+        "en": "Monkey Gin"
+      },
+      "categoryId": "28",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "400",
+      "name": {
+        "hy": "Ջին Stin",
+        "ru": "Джин Stin",
+        "en": "Stin Gin"
+      },
+      "categoryId": "28",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "401",
+      "name": {
+        "hy": "Ջին Roku",
+        "ru": "Джин Roku",
+        "en": "Roku Gin"
+      },
+      "categoryId": "28",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "402",
+      "name": {
+        "hy": "Ռոմ Havana Club 3 Blanco",
+        "ru": "Ром Havana Club 3 Blanco",
+        "en": "Havana Club 3 Blanco Rum"
+      },
+      "categoryId": "29",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "403",
+      "name": {
+        "hy": "Կոնյակ Hennessy VSOP",
+        "ru": "Коньяк Hennessy VSOP",
+        "en": "Hennessy VSOP Cognac"
+      },
+      "categoryId": "33",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "404",
+      "name": {
+        "hy": "Կոնյակ Hennessy XO",
+        "ru": "Коньяк Hennessy XO",
+        "en": "Hennessy XO Cognac"
+      },
+      "categoryId": "33",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "405",
+      "name": {
+        "hy": "ԼԻկյոր Baileys",
+        "ru": "Ликёр Baileys",
+        "en": "Baileys Liqueur"
+      },
+      "categoryId": "54",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "406",
+      "name": {
+        "hy": "Լիկյոր Cointreau",
+        "ru": "Ликёр Cointreau",
+        "en": "Cointreau Liqueur"
+      },
+      "categoryId": "54",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "407",
+      "name": {
+        "hy": "Լիկյոր Kahlua",
+        "ru": "Ликёр Kahlúa",
+        "en": "Kahlúa Liqueur"
+      },
+      "categoryId": "54",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "408",
+      "name": {
+        "hy": "Լիկյոր Malibu",
+        "ru": "Ликёр Malibu",
+        "en": "Malibu Liqueur"
+      },
+      "categoryId": "54",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "409",
+      "name": {
+        "hy": "Լիկյոր Sambuka",
+        "ru": "Самбука",
+        "en": "Sambuca"
+      },
+      "categoryId": "54",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "410",
+      "name": {
+        "hy": "Լիկյոր St.Germain",
+        "ru": "Ликёр St-Germain",
+        "en": "St-Germain Liqueur"
+      },
+      "categoryId": "54",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "411",
+      "name": {
+        "hy": "Կոկտել B52",
+        "ru": "Коктейль B-52",
+        "en": "B-52 Cocktail"
+      },
+      "categoryId": "34",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "412",
+      "name": {
+        "hy": "Կոկտել Bloody Mery",
+        "ru": "Коктейль Bloody Mary",
+        "en": "Bloody Mary Cocktail"
+      },
+      "categoryId": "34",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "413",
+      "name": {
+        "hy": "Կոկտել Brandy sour",
+        "ru": "Коктейль Brandy Sour",
+        "en": "Brandy Sour Cocktail"
+      },
+      "categoryId": "34",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "414",
+      "name": {
+        "hy": "Կոկտեյլ Adioz",
+        "ru": "Коктейль Adios",
+        "en": "Adios Cocktail"
+      },
+      "categoryId": "34",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "416",
+      "name": {
+        "hy": "Կոկտեյլ Aperol Spritz",
+        "ru": "Коктейль Aperol Spritz",
+        "en": "Aperol Spritz Cocktail"
+      },
+      "categoryId": "34",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "417",
+      "name": {
+        "hy": "Կոկտեյլ Bellini",
+        "ru": "Коктейль Bellini",
+        "en": "Bellini Cocktail"
+      },
+      "categoryId": "34",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "418",
+      "name": {
+        "hy": "Կոկտեյլ Betty",
+        "ru": "Коктейль Betty",
+        "en": "Betty Cocktail"
+      },
+      "categoryId": "34",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "421",
+      "name": {
+        "hy": "Կոկտեյլ Caipirinha",
+        "ru": "Коктейль Кайпиринья",
+        "en": "Caipirinha Cocktail"
+      },
+      "categoryId": "34",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "422",
+      "name": {
+        "hy": "Կոկտեյլ Cosmopolitan",
+        "ru": "Коктейль Cosmopolitan",
+        "en": "Cosmopolitan Cocktail"
+      },
+      "categoryId": "34",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "423",
+      "name": {
+        "hy": "Կոկտեյլ Daiquiri",
+        "ru": "Коктейль Дайкири",
+        "en": "Daiquiri Cocktail"
+      },
+      "categoryId": "34",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "424",
+      "name": {
+        "hy": "Կոկտեյլ Frozen Daiquiri",
+        "ru": "Коктейль Frozen Daiquiri",
+        "en": "Frozen Daiquiri Cocktail"
+      },
+      "categoryId": "34",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "425",
+      "name": {
+        "hy": "Կոկտեյլ Fruit Daiquiri",
+        "ru": "Фруктовый дайкири",
+        "en": "Fruit Daiquiri"
+      },
+      "categoryId": "34",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "426",
+      "name": {
+        "hy": "Կոկտեյլ Fruit Margarita",
+        "ru": "Фруктовая Маргарита",
+        "en": "Fruit Margarita"
+      },
+      "categoryId": "34",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "427",
+      "name": {
+        "hy": "Կոկտեյլ Margarita",
+        "ru": "Коктейль Маргарита",
+        "en": "Margarita Cocktail"
+      },
+      "categoryId": "34",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "428",
+      "name": {
+        "hy": "Կոկտեյլ Fruit Mojito",
+        "ru": "Фруктовый мохито",
+        "en": "Fruit Mojito"
+      },
+      "categoryId": "34",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "430",
+      "name": {
+        "hy": "Կոկտեյլ Long Islan Ice Tea",
+        "ru": "Коктейль Long Island Iced Tea",
+        "en": "Long Island Iced Tea Cocktail"
+      },
+      "categoryId": "34",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "431",
+      "name": {
+        "hy": "Կոկտեյլ Mojito",
+        "ru": "Коктейль Мохито",
+        "en": "Mojito Cocktail"
+      },
+      "categoryId": "34",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "433",
+      "name": {
+        "hy": "Կոկտեյլ White Russian",
+        "ru": "Коктейль White Russian",
+        "en": "White Russian Cocktail"
+      },
+      "categoryId": "34",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "480",
+      "name": {
+        "hy": "Կոկտեյլ Rossini",
+        "ru": "Коктейль Rossini",
+        "en": "Rossini Cocktail"
+      },
+      "categoryId": "34",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "660",
+      "name": {
+        "hy": "Օղի Stumbras 1bot",
+        "ru": "Водка Stumbras 1 бутылка",
+        "en": "Stumbras Vodka 1 Bottle"
+      },
+      "categoryId": "52",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "661",
+      "name": {
+        "hy": "Կոկտել Negroni",
+        "ru": "Коктейль Negroni",
+        "en": "Negroni Cocktail"
+      },
+      "categoryId": "34",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "662",
+      "name": {
+        "hy": "Կոկտել Tequila Sunrise",
+        "ru": "Коктейль Tequila Sunrise",
+        "en": "Tequila Sunrise Cocktail"
+      },
+      "categoryId": "34",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "663",
+      "name": {
+        "hy": "Կոկտել Martini Royal",
+        "ru": "Коктейль Martini Royale",
+        "en": "Martini Royale Cocktail"
+      },
+      "categoryId": "34",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "664",
+      "name": {
+        "hy": "Կոկտել Mojito Pomegranate",
+        "ru": "Гранатовый мохито",
+        "en": "Pomegranate Mojito"
+      },
+      "categoryId": "34",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "684",
+      "name": {
+        "hy": "Օղի Stumbras 50 ml",
+        "ru": "Водка Stumbras 50 мл",
+        "en": "Stumbras Vodka 50 ml"
+      },
+      "categoryId": "53",
+      "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "795",
+      "name": {
+        "hy": "Keush Origins",
+        "ru": "Keush Origins",
+        "en": "Keush Origins"
+      },
+      "categoryId": "37",
+      "reason": "alcohol_out_of_scope"
+    }
+  ],
   "products": [
     {
       "productId": "10",
@@ -117,31 +1442,6 @@
           "ingredientUnit": "p",
           "rawNetto": 0,
           "rawBrutto": 1
-        }
-      ]
-    },
-    {
-      "productId": "125",
-      "name": {
-        "hy": "Խրենավուխա",
-        "ru": "Хреновуха",
-        "en": "Horseradish Vodka"
-      },
-      "status": "needs_review",
-      "displayedCalories": null,
-      "displayedAsMinimum": false,
-      "recipeRows": 1,
-      "resolvedRows": 0,
-      "unresolved": [
-        {
-          "id": "657",
-          "type": "prepack",
-          "name": "хреновуха",
-          "reason": "prepack_nutrition_unresolved",
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 50,
-          "rawBrutto": 50
         }
       ]
     },
@@ -346,506 +1646,6 @@
       ]
     },
     {
-      "productId": "202",
-      "name": {
-        "hy": "Շամպայն Zonin Prosecco Cuvée DOC",
-        "ru": "Игристое вино Zonin Prosecco Cuvée DOC",
-        "en": "Zonin Prosecco Cuvée DOC Sparkling Wine"
-      },
-      "status": "needs_review",
-      "displayedCalories": null,
-      "displayedAsMinimum": false,
-      "recipeRows": 1,
-      "resolvedRows": 0,
-      "unresolved": [
-        {
-          "id": "98",
-          "type": "ingredient",
-          "name": "Zonin Prosecco Cuvée DOC",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        }
-      ]
-    },
-    {
-      "productId": "203",
-      "name": {
-        "hy": "Շամպայն Zonin Prosecco Cuvee Rose",
-        "ru": "Игристое вино Zonin Prosecco Cuvée Rosé",
-        "en": "Zonin Prosecco Cuvée Rosé Sparkling Wine"
-      },
-      "status": "needs_review",
-      "displayedCalories": null,
-      "displayedAsMinimum": false,
-      "recipeRows": 1,
-      "resolvedRows": 0,
-      "unresolved": [
-        {
-          "id": "97",
-          "type": "ingredient",
-          "name": "Zonin Prosecco Cuvee Rose",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        }
-      ]
-    },
-    {
-      "productId": "204",
-      "name": {
-        "hy": "Շամպայն Zonin Asti DOCG",
-        "ru": "Игристое вино Zonin Asti DOCG",
-        "en": "Zonin Asti DOCG Sparkling Wine"
-      },
-      "status": "needs_review",
-      "displayedCalories": null,
-      "displayedAsMinimum": false,
-      "recipeRows": 1,
-      "resolvedRows": 0,
-      "unresolved": [
-        {
-          "id": "99",
-          "type": "ingredient",
-          "name": "Zonin Asti DOCG",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        }
-      ]
-    },
-    {
-      "productId": "205",
-      "name": {
-        "hy": "Շամպայն Takar Rosé Extra Brut",
-        "ru": "Игристое вино Takar Rosé Extra Brut",
-        "en": "Takar Rosé Extra Brut Sparkling Wine"
-      },
-      "status": "needs_review",
-      "displayedCalories": null,
-      "displayedAsMinimum": false,
-      "recipeRows": 1,
-      "resolvedRows": 0,
-      "unresolved": [
-        {
-          "id": "100",
-          "type": "ingredient",
-          "name": "Takar Rosé Extra Brut",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        }
-      ]
-    },
-    {
-      "productId": "206",
-      "name": {
-        "hy": "Շամպայն Takar Extra Brut",
-        "ru": "Игристое вино Takar Extra Brut",
-        "en": "Takar Extra Brut Sparkling Wine"
-      },
-      "status": "needs_review",
-      "displayedCalories": null,
-      "displayedAsMinimum": false,
-      "recipeRows": 1,
-      "resolvedRows": 0,
-      "unresolved": [
-        {
-          "id": "101",
-          "type": "ingredient",
-          "name": "Takar Extra Brut",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        }
-      ]
-    },
-    {
-      "productId": "212",
-      "name": {
-        "hy": "Շամպայն Moët and Chandon Imperial Brut Rosé",
-        "ru": "Moët & Chandon Imperial Brut Rosé",
-        "en": "Moët & Chandon Imperial Brut Rosé"
-      },
-      "status": "needs_review",
-      "displayedCalories": null,
-      "displayedAsMinimum": false,
-      "recipeRows": 1,
-      "resolvedRows": 0,
-      "unresolved": [
-        {
-          "id": "103",
-          "type": "ingredient",
-          "name": "Moët and Chandon Imperial Brut Rosé",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        }
-      ]
-    },
-    {
-      "productId": "213",
-      "name": {
-        "hy": "Շամպայն Moët and Chandon Imperial Brut",
-        "ru": "Moët & Chandon Imperial Brut",
-        "en": "Moët & Chandon Imperial Brut"
-      },
-      "status": "needs_review",
-      "displayedCalories": null,
-      "displayedAsMinimum": false,
-      "recipeRows": 1,
-      "resolvedRows": 0,
-      "unresolved": [
-        {
-          "id": "104",
-          "type": "ingredient",
-          "name": "Moët and Chandon Imperial Brut",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        }
-      ]
-    },
-    {
-      "productId": "220",
-      "name": {
-        "hy": "Թեքիլա Don Julio 1942",
-        "ru": "Текила Don Julio 1942",
-        "en": "Don Julio 1942 Tequila"
-      },
-      "status": "needs_review",
-      "displayedCalories": null,
-      "displayedAsMinimum": false,
-      "recipeRows": 1,
-      "resolvedRows": 0,
-      "unresolved": [
-        {
-          "id": "111",
-          "type": "ingredient",
-          "name": "Don Julio  1942",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        }
-      ]
-    },
-    {
-      "productId": "232",
-      "name": {
-        "hy": "Գարեջուր Dargett",
-        "ru": "Пиво Dargett",
-        "en": "Dargett Beer"
-      },
-      "status": "needs_review",
-      "displayedCalories": null,
-      "displayedAsMinimum": false,
-      "recipeRows": 1,
-      "resolvedRows": 0,
-      "unresolved": [
-        {
-          "id": "120",
-          "type": "ingredient",
-          "name": "Dargett",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        }
-      ]
-    },
-    {
-      "productId": "233",
-      "name": {
-        "hy": "Գարեջուր Corona",
-        "ru": "Пиво Corona",
-        "en": "Corona Beer"
-      },
-      "status": "needs_review",
-      "displayedCalories": null,
-      "displayedAsMinimum": false,
-      "recipeRows": 1,
-      "resolvedRows": 0,
-      "unresolved": [
-        {
-          "id": "121",
-          "type": "ingredient",
-          "name": "Corona",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        }
-      ]
-    },
-    {
-      "productId": "242",
-      "name": {
-        "hy": "Գինի Attems Pinot Grigio",
-        "ru": "Вино Attems Pinot Grigio",
-        "en": "Attems Pinot Grigio Wine"
-      },
-      "status": "needs_review",
-      "displayedCalories": null,
-      "displayedAsMinimum": false,
-      "recipeRows": 1,
-      "resolvedRows": 0,
-      "unresolved": [
-        {
-          "id": "130",
-          "type": "ingredient",
-          "name": "Attems Pinot Grigio",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        }
-      ]
-    },
-    {
-      "productId": "252",
-      "name": {
-        "hy": "Գինի Karas Rezerve red",
-        "ru": "Красное вино Karas Reserve",
-        "en": "Karas Reserve Red Wine"
-      },
-      "status": "needs_review",
-      "displayedCalories": null,
-      "displayedAsMinimum": false,
-      "recipeRows": 1,
-      "resolvedRows": 0,
-      "unresolved": [
-        {
-          "id": "136",
-          "type": "ingredient",
-          "name": "Karas Rezerve /red/",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        }
-      ]
-    },
-    {
-      "productId": "258",
-      "name": {
-        "hy": "Գինի Koor Rezerve red",
-        "ru": "Красное вино Koor Reserve",
-        "en": "Koor Reserve Red Wine"
-      },
-      "status": "needs_review",
-      "displayedCalories": null,
-      "displayedAsMinimum": false,
-      "recipeRows": 1,
-      "resolvedRows": 0,
-      "unresolved": [
-        {
-          "id": "139",
-          "type": "ingredient",
-          "name": "Koor Rezerve /red/",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        }
-      ]
-    },
-    {
-      "productId": "260",
-      "name": {
-        "hy": "Գինի Piccini Memoro",
-        "ru": "Вино Piccini Memoro",
-        "en": "Piccini Memoro Wine"
-      },
-      "status": "needs_review",
-      "displayedCalories": null,
-      "displayedAsMinimum": false,
-      "recipeRows": 1,
-      "resolvedRows": 0,
-      "unresolved": [
-        {
-          "id": "140",
-          "type": "ingredient",
-          "name": "Piccini Memoro /white/",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        }
-      ]
-    },
-    {
-      "productId": "268",
-      "name": {
-        "hy": "Գինի Tariri red",
-        "ru": "Красное вино Tariri",
-        "en": "Tariri Red Wine"
-      },
-      "status": "needs_review",
-      "displayedCalories": null,
-      "displayedAsMinimum": false,
-      "recipeRows": 1,
-      "resolvedRows": 0,
-      "unresolved": [
-        {
-          "id": "144",
-          "type": "ingredient",
-          "name": "Tariri /red/",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        }
-      ]
-    },
-    {
-      "productId": "270",
-      "name": {
-        "hy": "Գինի Tariri white",
-        "ru": "Белое вино Tariri",
-        "en": "Tariri White Wine"
-      },
-      "status": "needs_review",
-      "displayedCalories": null,
-      "displayedAsMinimum": false,
-      "recipeRows": 1,
-      "resolvedRows": 0,
-      "unresolved": [
-        {
-          "id": "145",
-          "type": "ingredient",
-          "name": "Tariri /white/",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        }
-      ]
-    },
-    {
-      "productId": "271",
-      "name": {
-        "hy": "Գինի Tus white",
-        "ru": "Белое вино Tus",
-        "en": "Tus White Wine"
-      },
-      "status": "needs_review",
-      "displayedCalories": null,
-      "displayedAsMinimum": false,
-      "recipeRows": 1,
-      "resolvedRows": 0,
-      "unresolved": [
-        {
-          "id": "146",
-          "type": "ingredient",
-          "name": "Tus /white/",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        }
-      ]
-    },
-    {
-      "productId": "275",
-      "name": {
-        "hy": "Գինի Zorah Karasi /red/",
-        "ru": "Красное вино Zorah Karasi",
-        "en": "Zorah Karasi Red Wine"
-      },
-      "status": "needs_review",
-      "displayedCalories": null,
-      "displayedAsMinimum": false,
-      "recipeRows": 1,
-      "resolvedRows": 0,
-      "unresolved": [
-        {
-          "id": "150",
-          "type": "ingredient",
-          "name": "Zorah Karasi",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        }
-      ]
-    },
-    {
-      "productId": "276",
-      "name": {
-        "hy": "Գինի Zorah Voski",
-        "ru": "Вино Zorah Voski",
-        "en": "Zorah Voski Wine"
-      },
-      "status": "needs_review",
-      "displayedCalories": null,
-      "displayedAsMinimum": false,
-      "recipeRows": 1,
-      "resolvedRows": 0,
-      "unresolved": [
-        {
-          "id": "151",
-          "type": "ingredient",
-          "name": "Zorah Voski",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        }
-      ]
-    },
-    {
-      "productId": "277",
-      "name": {
-        "hy": "Գինի Zorah Yeraz /red/",
-        "ru": "Красное вино Zorah Yeraz",
-        "en": "Zorah Yeraz Red Wine"
-      },
-      "status": "needs_review",
-      "displayedCalories": null,
-      "displayedAsMinimum": false,
-      "recipeRows": 1,
-      "resolvedRows": 0,
-      "unresolved": [
-        {
-          "id": "152",
-          "type": "ingredient",
-          "name": "Zorah Yeraz /red/",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        }
-      ]
-    },
-    {
       "productId": "290",
       "name": {
         "hy": "Կիտրոն մեղր կոճապղպեղ",
@@ -892,66 +1692,6 @@
           "ingredientUnit": "p",
           "rawNetto": 0,
           "rawBrutto": 2
-        }
-      ]
-    },
-    {
-      "productId": "334",
-      "name": {
-        "hy": "Գլինտվեյն",
-        "ru": "Глинтвейн",
-        "en": "Mulled Wine"
-      },
-      "status": "needs_review",
-      "displayedCalories": 79,
-      "displayedAsMinimum": true,
-      "recipeRows": 9,
-      "resolvedRows": 8,
-      "unresolved": [
-        {
-          "id": "436",
-          "type": "ingredient",
-          "name": "Лимон",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 0
-        }
-      ]
-    },
-    {
-      "productId": "335",
-      "name": {
-        "hy": "Սանգրիա /դասական/",
-        "ru": "Классическая сангрия",
-        "en": "Classic Sangria"
-      },
-      "status": "needs_review",
-      "displayedCalories": 135,
-      "displayedAsMinimum": true,
-      "recipeRows": 11,
-      "resolvedRows": 9,
-      "unresolved": [
-        {
-          "id": "436",
-          "type": "ingredient",
-          "name": "Лимон",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 0
-        },
-        {
-          "id": "301",
-          "type": "ingredient",
-          "name": "тоник",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
         }
       ]
     },
@@ -1031,81 +1771,6 @@
       ]
     },
     {
-      "productId": "348",
-      "name": {
-        "hy": "լիկյոր Լիմոնչելլո",
-        "ru": "Ликёр Лимончелло",
-        "en": "Limoncello Liqueur"
-      },
-      "status": "needs_review",
-      "displayedCalories": null,
-      "displayedAsMinimum": false,
-      "recipeRows": 1,
-      "resolvedRows": 0,
-      "unresolved": [
-        {
-          "id": "654",
-          "type": "prepack",
-          "name": "ликер из лимона",
-          "reason": "prepack_nutrition_unresolved",
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 50,
-          "rawBrutto": 50
-        }
-      ]
-    },
-    {
-      "productId": "414",
-      "name": {
-        "hy": "Կոկտեյլ Adioz",
-        "ru": "Коктейль Adios",
-        "en": "Adios Cocktail"
-      },
-      "status": "needs_review",
-      "displayedCalories": 191,
-      "displayedAsMinimum": true,
-      "recipeRows": 6,
-      "resolvedRows": 5,
-      "unresolved": [
-        {
-          "id": "293",
-          "type": "ingredient",
-          "name": "Кола",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        }
-      ]
-    },
-    {
-      "productId": "428",
-      "name": {
-        "hy": "Կոկտեյլ Fruit Mojito",
-        "ru": "Фруктовый мохито",
-        "en": "Fruit Mojito"
-      },
-      "status": "needs_review",
-      "displayedCalories": 247,
-      "displayedAsMinimum": true,
-      "recipeRows": 6,
-      "resolvedRows": 5,
-      "unresolved": [
-        {
-          "id": "293",
-          "type": "ingredient",
-          "name": "Кола",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        }
-      ]
-    },
-    {
       "productId": "429",
       "name": {
         "hy": "Կոկտեյլ Fruit Mojito/ոչ ալկոհոլային",
@@ -1127,56 +1792,6 @@
           "ingredientUnit": "p",
           "rawNetto": 0,
           "rawBrutto": 0
-        }
-      ]
-    },
-    {
-      "productId": "430",
-      "name": {
-        "hy": "Կոկտեյլ Long Islan Ice Tea",
-        "ru": "Коктейль Long Island Iced Tea",
-        "en": "Long Island Iced Tea Cocktail"
-      },
-      "status": "needs_review",
-      "displayedCalories": 254,
-      "displayedAsMinimum": true,
-      "recipeRows": 7,
-      "resolvedRows": 6,
-      "unresolved": [
-        {
-          "id": "293",
-          "type": "ingredient",
-          "name": "Кола",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        }
-      ]
-    },
-    {
-      "productId": "431",
-      "name": {
-        "hy": "Կոկտեյլ Mojito",
-        "ru": "Коктейль Мохито",
-        "en": "Mojito Cocktail"
-      },
-      "status": "needs_review",
-      "displayedCalories": 215,
-      "displayedAsMinimum": true,
-      "recipeRows": 5,
-      "resolvedRows": 4,
-      "unresolved": [
-        {
-          "id": "293",
-          "type": "ingredient",
-          "name": "Кола",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
         }
       ]
     },
@@ -1445,31 +2060,6 @@
       ]
     },
     {
-      "productId": "664",
-      "name": {
-        "hy": "Կոկտել Mojito Pomegranate",
-        "ru": "Гранатовый мохито",
-        "en": "Pomegranate Mojito"
-      },
-      "status": "needs_review",
-      "displayedCalories": 435,
-      "displayedAsMinimum": true,
-      "recipeRows": 7,
-      "resolvedRows": 6,
-      "unresolved": [
-        {
-          "id": "480",
-          "type": "ingredient",
-          "name": "лаваш",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        }
-      ]
-    },
-    {
       "productId": "679",
       "name": {
         "hy": "Նուշի կաթ",
@@ -1625,31 +2215,6 @@
           "id": "597",
           "type": "ingredient",
           "name": "пита",
-          "reason": "unknown_weight_or_unit",
-          "structureUnit": "p",
-          "ingredientUnit": "p",
-          "rawNetto": 0,
-          "rawBrutto": 1
-        }
-      ]
-    },
-    {
-      "productId": "795",
-      "name": {
-        "hy": "Keush Origins",
-        "ru": "Keush Origins",
-        "en": "Keush Origins"
-      },
-      "status": "needs_review",
-      "displayedCalories": null,
-      "displayedAsMinimum": false,
-      "recipeRows": 1,
-      "resolvedRows": 0,
-      "unresolved": [
-        {
-          "id": "105",
-          "type": "ingredient",
-          "name": "Keush Brut /white/",
           "reason": "unknown_weight_or_unit",
           "structureUnit": "p",
           "ingredientUnit": "p",

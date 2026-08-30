@@ -3,6 +3,7 @@ const path = require('node:path');
 
 const PREPACKS_PATH = path.join(process.cwd(), 'data', 'poster-test-preparations.json');
 const MANUAL_PATH = path.join(process.cwd(), 'data', 'cia-nutrition-manual-top20.json');
+const OVERRIDES_PATH = path.join(process.cwd(), 'data', 'cia-nutrition-verified-overrides.json');
 const OUTPUT_PATH = path.join(process.cwd(), 'data', 'poster-test-prepack-nutrition.json');
 
 function n(v) {
@@ -12,7 +13,9 @@ function n(v) {
 
 function round1(v) { return Number(v.toFixed(1)); }
 function normalize(v) { return String(v || '').trim().toLowerCase(); }
-const ANIMAL_RE = /(говя|теля|свинин|свин|курин|куриц|цыплен|баран|ягн|мяс|печен|сердеч|бекон|индей|утк|pork|beef|chicken|lamb|veal|turkey|duck|meat)/i;
+// Keep this narrow: "печен" also matches Russian "печенье" (cookie), which caused
+// a false meat/offal classification. Match печень/liver explicitly instead.
+const ANIMAL_RE = /(говя|теля|свинин|свин|курин|куриц|цыплен|баран|ягн|мяс|печень|сердеч|бекон|индей|утк|pork|beef|chicken|lamb|veal|turkey|duck|meat|liver|heart)/i;
 
 function density(name) {
   const value = normalize(name);
@@ -24,24 +27,42 @@ function density(name) {
 }
 
 function rowGrams(row) {
-  const value = n(row?.structure_netto);
-  if (value == null || value < 0) return null;
+  const netto = n(row?.structure_netto);
+  const brutto = n(row?.structure_brutto);
   const unit = normalize(row?.structure_unit || row?.ingredient_unit);
-  if (['g', 'гр', 'г'].includes(unit)) return value;
+
+  if (['p', 'pc', 'pcs', 'шт'].includes(unit)) {
+    // Poster commonly supplies the already-calculated net gram weight for piece rows.
+    // Use it directly. Only when that is absent do we fall back to piece count ×
+    // ingredient_weight. Never multiply a positive netto by ingredient_weight.
+    if (netto != null && netto > 0) return netto;
+    const pieceWeight = n(row?.ingredient_weight);
+    if (brutto != null && brutto > 0 && pieceWeight != null && pieceWeight > 0) {
+      return brutto * pieceWeight;
+    }
+    return null;
+  }
+
+  const value = netto ?? brutto;
+  if (value == null || value < 0) return null;
+  if (!unit || ['g', 'гр', 'г', 'gram', 'grams'].includes(unit)) return value;
   if (['kg', 'кг'].includes(unit)) return value * 1000;
   if (['ml', 'мл'].includes(unit)) return value * density(row?.ingredient_name);
   if (['l', 'л'].includes(unit)) return value * 1000 * density(row?.ingredient_name);
-  if (['p', 'pc', 'pcs', 'шт'].includes(unit)) {
-    return value > 0 ? value : null;
-  }
   return null;
 }
 
 const prepData = JSON.parse(fs.readFileSync(PREPACKS_PATH, 'utf8'));
 const manual = JSON.parse(fs.readFileSync(MANUAL_PATH, 'utf8'));
+const overrides = fs.existsSync(OVERRIDES_PATH)
+  ? JSON.parse(fs.readFileSync(OVERRIDES_PATH, 'utf8'))
+  : { entries: [] };
 const prepacks = Array.isArray(prepData?.prepacks) ? prepData.prepacks : [];
 const verified = new Map(
-  (Array.isArray(manual?.entries) ? manual.entries : [])
+  [
+    ...(Array.isArray(manual?.entries) ? manual.entries : []),
+    ...(Array.isArray(overrides?.entries) ? overrides.entries : [])
+  ]
     .filter((entry) => entry?.verified === true && entry?.status === 'verified')
     .map((entry) => [String(entry.id), entry])
 );
@@ -56,6 +77,7 @@ function nutrientValues(entry, name = '') {
     carbohydrates: n(entry?.carbsPer100g)
   };
   if (!Object.values(values).every((v) => v != null)) return null;
+  if (values.calories > 1000) return null;
   // A verified mapping that yields 0 kcal for meat/offal is almost certainly an
   // ID collision or bad source match. Never let it propagate into a preparation.
   if (ANIMAL_RE.test(String(name || '')) && values.calories <= 0) return null;
@@ -147,7 +169,7 @@ function calculatePrep(prepId, stack = []) {
     outputGrams,
     status,
     ...(reason ? { reason } : {}),
-    source: 'Poster menu.getPrepacks + verified ingredient nutrition',
+    source: 'Poster menu.getPrepacks + verified ingredient nutrition + reviewed USDA overrides',
     per100g: canCalculate ? rawPer100g : null,
     partialPer100g: !canCalculate && !implausibleCalories && !animalZeroCalories ? rawPer100g : null,
     knownInputGrams: round1(knownInputGrams),
@@ -174,9 +196,9 @@ for (const item of animalProblems) {
 }
 
 const payload = {
-  version: '1.3.0',
+  version: '1.4.0',
   restaurantId: prepData?.restaurantId || 'poster-test',
-  source: 'Poster menu.getPrepacks + cia-nutrition-manual-top20 verified entries',
+  source: 'Poster menu.getPrepacks + cia-nutrition-manual-top20 verified entries + reviewed USDA overrides',
   generatedAt: new Date().toISOString(),
   prepackCount: results.length,
   calculatedCount: calculated.length,

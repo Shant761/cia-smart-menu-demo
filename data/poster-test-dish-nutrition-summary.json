@@ -1,7 +1,7 @@
 {
   "version": "1.4.0",
   "restaurantId": "poster-test",
-  "generatedAt": "2026-08-30T11:22:39.355Z",
+  "generatedAt": "2026-08-30T11:34:11.139Z",
   "publicProductCount": 422,
   "fetchedProductCount": 422,
   "fetchErrorCount": 0,
@@ -6207,7 +6207,7 @@
         "en": "Tabasco"
       },
       "status": "calculated",
-      "displayedCalories": 0,
+      "displayedCalories": 2,
       "displayedAsMinimum": false,
       "recipeRows": 1,
       "resolvedRows": 1,
@@ -6220,8 +6220,8 @@
           "type": "ingredient",
           "name": "табаско",
           "grams": 10,
-          "kcalPer100g": 0,
-          "calories": 0,
+          "kcalPer100g": 16,
+          "calories": 2,
           "structureUnit": "g",
           "ingredientUnit": "kg",
           "rawNetto": 10,
@@ -9755,7 +9755,7 @@
         "en": "Bloody Mary Cocktail"
       },
       "status": "calculated",
-      "displayedCalories": 194,
+      "displayedCalories": 195,
       "displayedAsMinimum": false,
       "recipeRows": 7,
       "resolvedRows": 7,

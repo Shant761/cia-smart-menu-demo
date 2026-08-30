@@ -9,6 +9,7 @@ on:
       - 'scripts/export-next-generic-batch.cjs'
       - 'data/cia-nutrition-priority-top500.json'
       - 'data/cia-nutrition-manual-top20.json'
+      - 'data/cia-nutrition-verified-overrides.json'
       - '.github/workflows/rebuild-nutrition-research-queue.yml'
   workflow_dispatch:
 

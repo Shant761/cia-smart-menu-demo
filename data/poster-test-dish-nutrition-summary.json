@@ -1,16 +1,16 @@
 {
   "version": "1.4.0",
   "restaurantId": "poster-test",
-  "generatedAt": "2026-08-30T11:18:28.915Z",
+  "generatedAt": "2026-08-30T11:22:39.355Z",
   "publicProductCount": 422,
   "fetchedProductCount": 422,
   "fetchErrorCount": 0,
   "productsWithRecipe": 407,
   "productsWithPrepackRows": 150,
-  "resolvedPrepackRows": 275,
-  "unresolvedPrepackRows": 8,
-  "fullyCalculatedCount": 331,
-  "partialCount": 41,
+  "resolvedPrepackRows": 278,
+  "unresolvedPrepackRows": 5,
+  "fullyCalculatedCount": 334,
+  "partialCount": 38,
   "reviewWithoutKnownCount": 35,
   "suspiciousProductCount": 0,
   "products": [
@@ -2198,15 +2198,27 @@
         "ru": "Куриная грудка с грибами",
         "en": "Chicken Breast with Mushrooms"
       },
-      "status": "needs_review",
-      "displayedCalories": 0,
-      "displayedAsMinimum": true,
+      "status": "calculated",
+      "displayedCalories": 467,
+      "displayedAsMinimum": false,
       "recipeRows": 2,
-      "resolvedRows": 1,
+      "resolvedRows": 2,
       "prepackRows": 1,
-      "resolvedPrepackRows": 0,
+      "resolvedPrepackRows": 1,
       "suspicious": false,
       "topResolvedContributions": [
+        {
+          "id": "525",
+          "type": "prepack",
+          "name": "курица с грибами",
+          "grams": 320,
+          "kcalPer100g": 146,
+          "calories": 467,
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "rawNetto": 320,
+          "rawBrutto": 320
+        },
         {
           "id": "493",
           "type": "ingredient",
@@ -2220,19 +2232,7 @@
           "rawBrutto": 2
         }
       ],
-      "unresolved": [
-        {
-          "id": "525",
-          "type": "prepack",
-          "name": "курица с грибами",
-          "grams": 320,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 320,
-          "rawBrutto": 320,
-          "reason": "prepack_nutrition_unresolved"
-        }
-      ]
+      "unresolved": []
     },
     {
       "productId": "169",
@@ -2929,15 +2929,27 @@
         "ru": "Чизкейк",
         "en": "Cheesecake"
       },
-      "status": "needs_review",
-      "displayedCalories": 523,
-      "displayedAsMinimum": true,
+      "status": "calculated",
+      "displayedCalories": 869,
+      "displayedAsMinimum": false,
       "recipeRows": 8,
-      "resolvedRows": 7,
+      "resolvedRows": 8,
       "prepackRows": 3,
-      "resolvedPrepackRows": 2,
+      "resolvedPrepackRows": 3,
       "suspicious": false,
       "topResolvedContributions": [
+        {
+          "id": "709",
+          "type": "prepack",
+          "name": "чизкейк",
+          "grams": 180,
+          "kcalPer100g": 192,
+          "calories": 346,
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "rawNetto": 180,
+          "rawBrutto": 180
+        },
         {
           "id": "52",
           "type": "ingredient",
@@ -2961,33 +2973,9 @@
           "ingredientUnit": "kg",
           "rawNetto": 100,
           "rawBrutto": 100
-        },
-        {
-          "id": "731",
-          "type": "prepack",
-          "name": "безе",
-          "grams": 30,
-          "kcalPer100g": 246,
-          "calories": 74,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 30,
-          "rawBrutto": 30
         }
       ],
-      "unresolved": [
-        {
-          "id": "709",
-          "type": "prepack",
-          "name": "чизкейк",
-          "grams": 180,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 180,
-          "rawBrutto": 180,
-          "reason": "prepack_nutrition_unresolved"
-        }
-      ]
+      "unresolved": []
     },
     {
       "productId": "187",
@@ -16668,15 +16656,27 @@
         "ru": "Баклажан с курицей",
         "en": "Eggplant with Chicken"
       },
-      "status": "needs_review",
-      "displayedCalories": 258,
-      "displayedAsMinimum": true,
+      "status": "calculated",
+      "displayedCalories": 726,
+      "displayedAsMinimum": false,
       "recipeRows": 6,
-      "resolvedRows": 5,
+      "resolvedRows": 6,
       "prepackRows": 3,
-      "resolvedPrepackRows": 2,
+      "resolvedPrepackRows": 3,
       "suspicious": false,
       "topResolvedContributions": [
+        {
+          "id": "510",
+          "type": "prepack",
+          "name": "фарш для баклажана",
+          "grams": 120,
+          "kcalPer100g": 390,
+          "calories": 468,
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "rawNetto": 120,
+          "rawBrutto": 120
+        },
         {
           "id": "408",
           "type": "ingredient",
@@ -16700,33 +16700,9 @@
           "ingredientUnit": "kg",
           "rawNetto": 20,
           "rawBrutto": 20
-        },
-        {
-          "id": "605",
-          "type": "prepack",
-          "name": "баклажан чищенный",
-          "grams": 150,
-          "kcalPer100g": 25,
-          "calories": 38,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 150,
-          "rawBrutto": 150
         }
       ],
-      "unresolved": [
-        {
-          "id": "510",
-          "type": "prepack",
-          "name": "фарш для баклажана",
-          "grams": 120,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 120,
-          "rawBrutto": 120,
-          "reason": "prepack_nutrition_unresolved"
-        }
-      ]
+      "unresolved": []
     },
     {
       "productId": "85",

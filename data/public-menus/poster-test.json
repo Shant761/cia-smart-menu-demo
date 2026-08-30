@@ -2,7 +2,7 @@
   "version": 2,
   "source": "firestore_public_menu_snapshot + local_live_poster_nutrition_with_prepacks",
   "restaurantId": "poster-test",
-  "exportedAt": "2026-08-30T11:18:28.924Z",
+  "exportedAt": "2026-08-30T11:22:39.364Z",
   "restaurant": {
     "name": {
       "hy": "Poster Restaurant",
@@ -3395,31 +3395,19 @@
       },
       "allergens": [],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
-        "partial": {
-          "calories": 0,
-          "protein": 0,
-          "fat": 0,
-          "carbohydrates": 0,
-          "knownGrams": 2,
-          "recipeGrams": 322,
-          "matchedIngredients": 1,
-          "reviewIngredients": 1,
-          "totalIngredients": 2,
-          "coverage": 0.0062,
-          "per100g": {
-            "calories": 0,
-            "protein": 0,
-            "fat": 0,
-            "carbohydrates": 0
-          }
+        "status": "calculated",
+        "calories": 467,
+        "protein": 21.1,
+        "fat": 36.8,
+        "carbohydrates": 13.1,
+        "servingGrams": 322,
+        "per100g": {
+          "calories": 145,
+          "protein": 6.6,
+          "fat": 11.4,
+          "carbohydrates": 4.1
         },
+        "partial": null,
         "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
@@ -4349,31 +4337,19 @@
         }
       ],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
-        "partial": {
-          "calories": 523,
-          "protein": 3.3,
-          "fat": 2.2,
-          "carbohydrates": 127.7,
-          "knownGrams": 260,
-          "recipeGrams": 440,
-          "matchedIngredients": 7,
-          "reviewIngredients": 1,
-          "totalIngredients": 8,
-          "coverage": 0.5909,
-          "per100g": {
-            "calories": 201,
-            "protein": 1.3,
-            "fat": 0.8,
-            "carbohydrates": 49.1
-          }
+        "status": "calculated",
+        "calories": 869,
+        "protein": 7.1,
+        "fat": 17.9,
+        "carbohydrates": 176.3,
+        "servingGrams": 440,
+        "per100g": {
+          "calories": 197,
+          "protein": 1.6,
+          "fat": 4.1,
+          "carbohydrates": 40.1
         },
+        "partial": null,
         "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999
@@ -23754,31 +23730,19 @@
         }
       ],
       "nutrition": {
-        "status": "needs_review",
-        "calories": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrates": null,
-        "servingGrams": null,
-        "per100g": null,
-        "partial": {
-          "calories": 258,
-          "protein": 7,
-          "fat": 13.8,
-          "carbohydrates": 30.6,
-          "knownGrams": 230,
-          "recipeGrams": 350,
-          "matchedIngredients": 5,
-          "reviewIngredients": 1,
-          "totalIngredients": 6,
-          "coverage": 0.6571,
-          "per100g": {
-            "calories": 112,
-            "protein": 3,
-            "fat": 6,
-            "carbohydrates": 13.3
-          }
+        "status": "calculated",
+        "calories": 726,
+        "protein": 20,
+        "fat": 58.7,
+        "carbohydrates": 36.7,
+        "servingGrams": 350,
+        "per100g": {
+          "calories": 207,
+          "protein": 5.7,
+          "fat": 16.8,
+          "carbohydrates": 10.5
         },
+        "partial": null,
         "source": "CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe"
       },
       "sortOrder": 999

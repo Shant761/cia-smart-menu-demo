@@ -1,8 +1,8 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "restaurantId": "poster-test",
-  "sourceGeneratedAt": "2026-08-30T11:47:40.677Z",
-  "generatedAt": "2026-08-30T11:48:02.896Z",
+  "sourceGeneratedAt": "2026-08-30T11:49:05.281Z",
+  "generatedAt": "2026-08-30T11:49:05.358Z",
   "productsWithRecipe": 407,
   "fullyCalculatedCount": 334,
   "unresolvedCount": 73,

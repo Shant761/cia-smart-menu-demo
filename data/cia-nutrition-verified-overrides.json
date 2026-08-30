@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "restaurantId": "poster-test",
   "calculationBasis": "per 100g edible portion",
   "policy": "Reviewed source overrides for Poster ingredient IDs that were blocked by false/zero nutrition mappings. Generic references are documented explicitly and must not be treated as brand/cut-specific laboratory values.",
@@ -111,6 +111,20 @@
       "sourceReference": "Юбилейное Традиционное 403 g; nutrition per 100 g: 463 kcal, protein 7.5 g, fat 18 g, carbohydrates 67 g",
       "mappingQuality": "reviewed_brand_label_reference",
       "notes": "Used as the closest current Armenian retail label reference for the Poster ingredient 'Печенье Юбилейное'. Recheck if the restaurant uses another Юбилейное variety.",
+      "verified": true,
+      "status": "verified"
+    },
+    {
+      "id": "poster_488",
+      "name": "табаско",
+      "kcalPer100g": 16,
+      "proteinPer100g": 1,
+      "fatPer100g": 0.7,
+      "carbsPer100g": 1.6,
+      "source": "TABASCO product specification via official distributor Develey",
+      "sourceReference": "TABASCO Original Red Sauce; per 100 g: 16 kcal, protein 1 g, fat 0.7 g, carbohydrates 1.6 g",
+      "mappingQuality": "reviewed_brand_product_match",
+      "notes": "Poster name 'табаско' is mapped to the classic TABASCO Original Red Sauce. Recheck only if the restaurant uses another TABASCO variety such as Chipotle or Sriracha.",
       "verified": true,
       "status": "verified"
     }

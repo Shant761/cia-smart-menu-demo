@@ -1,13 +1,15 @@
 {
-  "version": "4.0.0",
+  "version": "5.0.0",
   "restaurantId": "poster-test",
-  "source": "Poster menu.getProducts exact-name matching + raw menu.getProduct preparation rows",
-  "exportedAt": "2026-08-29T14:27:42.022Z",
-  "menuProductCount": 484,
+  "source": "Poster menu.getProducts type=1 semi-finished probe + menu.getProduct recipe expansion",
+  "exportedAt": "2026-08-30T09:17:58.416Z",
+  "menuProductCount": 485,
+  "semiFinishedCount": 0,
+  "semiFinishedSample": [],
   "targetCount": 8,
-  "exactProductMatchCount": 0,
-  "exactProductMatches": [],
-  "productDetails": [],
+  "targetPreparationMatchCount": 0,
+  "targetPreparations": [],
+  "preparationDetails": [],
   "preparationUsageRows": [
     {
       "usedInProductId": "127",

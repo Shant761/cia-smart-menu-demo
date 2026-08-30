@@ -1,7 +1,7 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "restaurantId": "poster-test",
-  "generatedAt": "2026-08-30T10:42:11.022Z",
+  "generatedAt": "2026-08-30T10:54:15.377Z",
   "prepackCount": 219,
   "calculatedCount": 206,
   "needsReviewCount": 13,
@@ -34,6 +34,44 @@
           "productId": "581",
           "name": "фарш для цыпленка"
         }
+      ],
+      "rawPosterRows": [
+        {
+          "prepackId": "511",
+          "prepackName": "куриный отвал б/к",
+          "structureId": "246",
+          "structureType": 1,
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "structureBrutto": "8000.00",
+          "structureNetto": 6700,
+          "ingredientWeight": 0,
+          "ingredientName": "Куриный отвал "
+        },
+        {
+          "prepackId": "584",
+          "prepackName": "кябаб из телятины",
+          "structureId": "558",
+          "structureType": 1,
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "structureBrutto": "1000.00",
+          "structureNetto": 1000,
+          "ingredientWeight": 0,
+          "ingredientName": "Куриный отвал "
+        },
+        {
+          "prepackId": "581",
+          "prepackName": "фарш для цыпленка",
+          "structureId": "544",
+          "structureType": 1,
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "structureBrutto": "800.00",
+          "structureNetto": 800,
+          "ingredientWeight": 0,
+          "ingredientName": "Куриный отвал "
+        }
       ]
     },
     {
@@ -59,6 +97,56 @@
           "productId": "647",
           "name": "цитрусовый сироп"
         }
+      ],
+      "rawPosterRows": [
+        {
+          "prepackId": "625",
+          "prepackName": "вяленые маслины",
+          "structureId": "810",
+          "structureType": 1,
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "structureBrutto": "1.00",
+          "structureNetto": 0,
+          "ingredientWeight": 0,
+          "ingredientName": "Лимон "
+        },
+        {
+          "prepackId": "654",
+          "prepackName": "ликер из лимона",
+          "structureId": "1209",
+          "structureType": 1,
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "structureBrutto": "20.00",
+          "structureNetto": 0,
+          "ingredientWeight": 0,
+          "ingredientName": "Лимон "
+        },
+        {
+          "prepackId": "657",
+          "prepackName": "хреновуха",
+          "structureId": "1223",
+          "structureType": 1,
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "structureBrutto": "2.00",
+          "structureNetto": 0,
+          "ingredientWeight": 0,
+          "ingredientName": "Лимон "
+        },
+        {
+          "prepackId": "647",
+          "prepackName": "цитрусовый сироп",
+          "structureId": "1193",
+          "structureType": 1,
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "structureBrutto": "5.00",
+          "structureNetto": 0,
+          "ingredientWeight": 0,
+          "ingredientName": "Лимон "
+        }
       ]
     },
     {
@@ -71,6 +159,20 @@
         {
           "productId": "492",
           "name": "буратта Z"
+        }
+      ],
+      "rawPosterRows": [
+        {
+          "prepackId": "492",
+          "prepackName": "буратта Z",
+          "structureId": "187",
+          "structureType": 1,
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "structureBrutto": "1.00",
+          "structureNetto": 0,
+          "ingredientWeight": 0,
+          "ingredientName": "Буратта "
         }
       ]
     },
@@ -85,6 +187,20 @@
           "productId": "583",
           "name": "форель маринованная"
         }
+      ],
+      "rawPosterRows": [
+        {
+          "prepackId": "583",
+          "prepackName": "форель маринованная",
+          "structureId": "551",
+          "structureType": 1,
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "structureBrutto": "1.00",
+          "structureNetto": 0,
+          "ingredientWeight": 0,
+          "ingredientName": "Форель /шт/ "
+        }
       ]
     },
     {
@@ -98,6 +214,20 @@
           "productId": "564",
           "name": "харчо"
         }
+      ],
+      "rawPosterRows": [
+        {
+          "prepackId": "564",
+          "prepackName": "харчо",
+          "structureId": "475",
+          "structureType": 1,
+          "structureUnit": "p",
+          "ingredientUnit": "p",
+          "structureBrutto": "1.00",
+          "structureNetto": 0,
+          "ingredientWeight": 0,
+          "ingredientName": "острый перец"
+        }
       ]
     },
     {
@@ -110,6 +240,20 @@
         {
           "productId": "709",
           "name": "чизкейк"
+        }
+      ],
+      "rawPosterRows": [
+        {
+          "prepackId": "709",
+          "prepackName": "чизкейк",
+          "structureId": "2337",
+          "structureType": 1,
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "structureBrutto": "280.00",
+          "structureNetto": 280,
+          "ingredientWeight": 0,
+          "ingredientName": "Печенье Юбилейное"
         }
       ]
     }

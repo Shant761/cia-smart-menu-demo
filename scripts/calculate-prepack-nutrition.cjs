@@ -70,12 +70,13 @@ function calculatePrep(prepId, stack = []) {
     return { status: 'needs_review', productId: id, reason: 'prepack_not_found', unresolved: [{ type: 'prepack', id, reason: 'prepack_not_found' }] };
   }
 
+  const rows = Array.isArray(prep.ingredients) ? prep.ingredients : [];
   const totals = { calories: 0, protein: 0, fat: 0, carbohydrates: 0 };
   const resolved = [];
   const unresolved = [];
   let knownInputGrams = 0;
 
-  for (const row of (Array.isArray(prep.ingredients) ? prep.ingredients : [])) {
+  for (const row of rows) {
     const grams = rowGrams(row);
     if (grams == null) {
       unresolved.push({ type: Number(row?.structure_type) === 2 ? 'prepack' : 'ingredient', id: String(row?.ingredient_id ?? ''), name: row?.ingredient_name || '', reason: 'unknown_weight_or_unit' });
@@ -116,8 +117,13 @@ function calculatePrep(prepId, stack = []) {
   }
 
   const outputGrams = n(prep.out);
-  const canCalculate = unresolved.length === 0 && outputGrams != null && outputGrams > 0;
+  // Never mark an empty tech card as calculated. Previously a prepack with a valid
+  // `out` value but zero exported rows became a fake 0 kcal/100g source and could
+  // contaminate every parent recipe that referenced it.
+  const hasCompleteComposition = rows.length > 0 && resolved.length === rows.length && knownInputGrams > 0;
+  const canCalculate = unresolved.length === 0 && hasCompleteComposition && outputGrams != null && outputGrams > 0;
   const status = canCalculate ? 'calculated' : 'needs_review';
+  const reason = rows.length === 0 ? 'empty_tech_card' : (!canCalculate && unresolved.length === 0 ? 'incomplete_composition' : undefined);
   const per100g = outputGrams && outputGrams > 0 && knownInputGrams > 0 ? {
     calories: Math.round((totals.calories / outputGrams) * 100),
     protein: round1((totals.protein / outputGrams) * 100),
@@ -130,11 +136,12 @@ function calculatePrep(prepId, stack = []) {
     name: prep.name,
     outputGrams,
     status,
+    ...(reason ? { reason } : {}),
     source: 'Poster menu.getPrepacks + verified ingredient nutrition',
     per100g: canCalculate ? per100g : null,
     partialPer100g: !canCalculate ? per100g : null,
     knownInputGrams: round1(knownInputGrams),
-    totalRows: Array.isArray(prep.ingredients) ? prep.ingredients.length : 0,
+    totalRows: rows.length,
     resolvedRows: resolved.length,
     unresolvedRows: unresolved.length,
     resolved,
@@ -151,7 +158,7 @@ const targetIds = new Set((prepData?.targetPrepacks || []).map((prep) => String(
 const targetResults = results.filter((item) => targetIds.has(String(item.productId)));
 
 const payload = {
-  version: '1.0.0',
+  version: '1.1.0',
   restaurantId: prepData?.restaurantId || 'poster-test',
   source: 'Poster menu.getPrepacks + cia-nutrition-manual-top20 verified entries',
   generatedAt: new Date().toISOString(),

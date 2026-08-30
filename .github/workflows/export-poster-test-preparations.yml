@@ -5,6 +5,8 @@ on:
     paths:
       - '.github/workflows/export-poster-test-preparations.yml'
       - 'scripts/export-poster-test-preparations.cjs'
+      - 'scripts/calculate-prepack-nutrition.cjs'
+      - 'data/cia-nutrition-manual-top20.json'
   workflow_dispatch:
 
 jobs:
@@ -28,8 +30,10 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Validate exporter
-        run: node --check scripts/export-poster-test-preparations.cjs
+      - name: Validate scripts
+        run: |
+          node --check scripts/export-poster-test-preparations.cjs
+          node --check scripts/calculate-prepack-nutrition.cjs
 
       - name: Verify poster-test token
         run: |
@@ -41,15 +45,18 @@ jobs:
       - name: Export preparations directly from Poster
         run: node scripts/export-poster-test-preparations.cjs
 
-      - name: Commit preparation snapshot
+      - name: Calculate prepack nutrition locally
+        run: node scripts/calculate-prepack-nutrition.cjs
+
+      - name: Commit preparation snapshots
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/poster-test-preparations.json
+          git add data/poster-test-preparations.json data/poster-test-prepack-nutrition.json
           if git diff --cached --quiet; then
             echo 'No preparation changes.'
             exit 0
           fi
-          git commit -m 'chore: update poster-test preparations'
+          git commit -m 'chore: update poster-test preparations and nutrition'
           git pull --rebase origin main
           git push origin HEAD:main

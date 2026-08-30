@@ -1,17 +1,17 @@
 {
-  "version": "1.3.0",
+  "version": "1.4.0",
   "restaurantId": "poster-test",
-  "generatedAt": "2026-08-30T10:28:36.301Z",
+  "generatedAt": "2026-08-30T10:43:12.893Z",
   "publicProductCount": 422,
   "fetchedProductCount": 422,
   "fetchErrorCount": 0,
   "productsWithRecipe": 407,
   "productsWithPrepackRows": 150,
-  "resolvedPrepackRows": 257,
-  "unresolvedPrepackRows": 26,
-  "fullyCalculatedCount": 314,
-  "partialCount": 56,
-  "reviewWithoutKnownCount": 37,
+  "resolvedPrepackRows": 275,
+  "unresolvedPrepackRows": 8,
+  "fullyCalculatedCount": 331,
+  "partialCount": 41,
+  "reviewWithoutKnownCount": 35,
   "suspiciousProductCount": 0,
   "products": [
     {
@@ -535,13 +535,13 @@
         "ru": "Скрэмбл с кавурмой и страчателлой",
         "en": "Scrambled Eggs with Kavurma and Stracciatella"
       },
-      "status": "needs_review",
-      "displayedCalories": 583,
-      "displayedAsMinimum": true,
+      "status": "calculated",
+      "displayedCalories": 767,
+      "displayedAsMinimum": false,
       "recipeRows": 8,
-      "resolvedRows": 7,
+      "resolvedRows": 8,
       "prepackRows": 1,
-      "resolvedPrepackRows": 0,
+      "resolvedPrepackRows": 1,
       "suspicious": false,
       "topResolvedContributions": [
         {
@@ -557,6 +557,18 @@
           "rawBrutto": 50
         },
         {
+          "id": "602",
+          "type": "prepack",
+          "name": "каурма",
+          "grams": 50,
+          "kcalPer100g": 368,
+          "calories": 184,
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "rawNetto": 50,
+          "rawBrutto": 50
+        },
+        {
           "id": "353",
           "type": "ingredient",
           "name": "Яйца",
@@ -567,33 +579,9 @@
           "ingredientUnit": "p",
           "rawNetto": 120,
           "rawBrutto": 2
-        },
-        {
-          "id": "337",
-          "type": "ingredient",
-          "name": "Перец черный /молотый/",
-          "grams": 2,
-          "kcalPer100g": 251,
-          "calories": 5,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 2,
-          "rawBrutto": 2
         }
       ],
-      "unresolved": [
-        {
-          "id": "602",
-          "type": "prepack",
-          "name": "каурма",
-          "grams": 50,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 50,
-          "rawBrutto": 50,
-          "reason": "prepack_nutrition_unresolved"
-        }
-      ]
+      "unresolved": []
     },
     {
       "productId": "120",
@@ -753,13 +741,13 @@
         "ru": "Բորշ",
         "en": "Բորշ"
       },
-      "status": "needs_review",
-      "displayedCalories": 456,
-      "displayedAsMinimum": true,
+      "status": "calculated",
+      "displayedCalories": 540,
+      "displayedAsMinimum": false,
       "recipeRows": 9,
-      "resolvedRows": 8,
+      "resolvedRows": 9,
       "prepackRows": 2,
-      "resolvedPrepackRows": 1,
+      "resolvedPrepackRows": 2,
       "suspicious": false,
       "topResolvedContributions": [
         {
@@ -775,6 +763,18 @@
           "rawBrutto": 30
         },
         {
+          "id": "529",
+          "type": "prepack",
+          "name": "говядина отварная",
+          "grams": 50,
+          "kcalPer100g": 167,
+          "calories": 84,
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "rawNetto": 50,
+          "rawBrutto": 50
+        },
+        {
           "id": "286",
           "type": "ingredient",
           "name": "чеснок",
@@ -785,33 +785,9 @@
           "ingredientUnit": "kg",
           "rawNetto": 50,
           "rawBrutto": 50
-        },
-        {
-          "id": "270",
-          "type": "ingredient",
-          "name": "Сметана",
-          "grams": 30,
-          "kcalPer100g": 198,
-          "calories": 59,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 30,
-          "rawBrutto": 30
         }
       ],
-      "unresolved": [
-        {
-          "id": "529",
-          "type": "prepack",
-          "name": "говядина отварная",
-          "grams": 50,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 50,
-          "rawBrutto": 50,
-          "reason": "prepack_nutrition_unresolved"
-        }
-      ]
+      "unresolved": []
     },
     {
       "productId": "13",
@@ -1497,13 +1473,13 @@
         "ru": "Хинкали",
         "en": "Khinkali"
       },
-      "status": "needs_review",
-      "displayedCalories": 107,
-      "displayedAsMinimum": true,
+      "status": "calculated",
+      "displayedCalories": 179,
+      "displayedAsMinimum": false,
       "recipeRows": 3,
-      "resolvedRows": 2,
+      "resolvedRows": 3,
       "prepackRows": 2,
-      "resolvedPrepackRows": 1,
+      "resolvedPrepackRows": 2,
       "suspicious": false,
       "topResolvedContributions": [
         {
@@ -1513,6 +1489,18 @@
           "grams": 45,
           "kcalPer100g": 238,
           "calories": 107,
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "rawNetto": 45,
+          "rawBrutto": 45
+        },
+        {
+          "id": "543",
+          "type": "prepack",
+          "name": "фарш для хинкали",
+          "grams": 45,
+          "kcalPer100g": 159,
+          "calories": 72,
           "structureUnit": "g",
           "ingredientUnit": "kg",
           "rawNetto": 45,
@@ -1531,19 +1519,7 @@
           "rawBrutto": 3
         }
       ],
-      "unresolved": [
-        {
-          "id": "543",
-          "type": "prepack",
-          "name": "фарш для хинкали",
-          "grams": 45,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 45,
-          "rawBrutto": 45,
-          "reason": "prepack_nutrition_unresolved"
-        }
-      ]
+      "unresolved": []
     },
     {
       "productId": "149",
@@ -1991,13 +1967,13 @@
         "ru": "Кавурма с пюре из баклажана",
         "en": "Kavurma with Eggplant Purée"
       },
-      "status": "needs_review",
-      "displayedCalories": 917,
-      "displayedAsMinimum": true,
+      "status": "calculated",
+      "displayedCalories": 1285,
+      "displayedAsMinimum": false,
       "recipeRows": 10,
-      "resolvedRows": 9,
+      "resolvedRows": 10,
       "prepackRows": 3,
-      "resolvedPrepackRows": 2,
+      "resolvedPrepackRows": 3,
       "suspicious": false,
       "topResolvedContributions": [
         {
@@ -2013,6 +1989,18 @@
           "rawBrutto": 150
         },
         {
+          "id": "602",
+          "type": "prepack",
+          "name": "каурма",
+          "grams": 100,
+          "kcalPer100g": 368,
+          "calories": 368,
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "rawNetto": 100,
+          "rawBrutto": 100
+        },
+        {
           "id": "396",
           "type": "ingredient",
           "name": "сливочное масло",
@@ -2023,33 +2011,9 @@
           "ingredientUnit": "kg",
           "rawNetto": 20,
           "rawBrutto": 20
-        },
-        {
-          "id": "157",
-          "type": "ingredient",
-          "name": "Лоры",
-          "grams": 30,
-          "kcalPer100g": 340,
-          "calories": 102,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 30,
-          "rawBrutto": 30
         }
       ],
-      "unresolved": [
-        {
-          "id": "602",
-          "type": "prepack",
-          "name": "каурма",
-          "grams": 100,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 100,
-          "rawBrutto": 100,
-          "reason": "prepack_nutrition_unresolved"
-        }
-      ]
+      "unresolved": []
     },
     {
       "productId": "164",
@@ -2058,15 +2022,27 @@
         "ru": "Телячья вырезка на гриле",
         "en": "Grilled Veal Tenderloin"
       },
-      "status": "needs_review",
-      "displayedCalories": 409,
-      "displayedAsMinimum": true,
+      "status": "calculated",
+      "displayedCalories": 826,
+      "displayedAsMinimum": false,
       "recipeRows": 7,
-      "resolvedRows": 6,
+      "resolvedRows": 7,
       "prepackRows": 2,
-      "resolvedPrepackRows": 1,
+      "resolvedPrepackRows": 2,
       "suspicious": false,
       "topResolvedContributions": [
+        {
+          "id": "515",
+          "type": "prepack",
+          "name": "говяжье суки очищенная",
+          "grams": 300,
+          "kcalPer100g": 139,
+          "calories": 417,
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "rawNetto": 300,
+          "rawBrutto": 300
+        },
         {
           "id": "395",
           "type": "ingredient",
@@ -2090,33 +2066,9 @@
           "ingredientUnit": "kg",
           "rawNetto": 1,
           "rawBrutto": 1
-        },
-        {
-          "id": "334",
-          "type": "ingredient",
-          "name": "Перец букет (горошек)",
-          "grams": 2,
-          "kcalPer100g": 0,
-          "calories": 0,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 2,
-          "rawBrutto": 2
         }
       ],
-      "unresolved": [
-        {
-          "id": "515",
-          "type": "prepack",
-          "name": "говяжье суки очищенная",
-          "grams": 300,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 300,
-          "rawBrutto": 300,
-          "reason": "prepack_nutrition_unresolved"
-        }
-      ]
+      "unresolved": []
     },
     {
       "productId": "165",
@@ -2125,15 +2077,27 @@
         "ru": "Чакапули в таджине",
         "en": "Chakapuli in a Tagine"
       },
-      "status": "needs_review",
-      "displayedCalories": 74,
-      "displayedAsMinimum": true,
+      "status": "calculated",
+      "displayedCalories": 358,
+      "displayedAsMinimum": false,
       "recipeRows": 6,
-      "resolvedRows": 5,
+      "resolvedRows": 6,
       "prepackRows": 1,
-      "resolvedPrepackRows": 0,
+      "resolvedPrepackRows": 1,
       "suspicious": false,
       "topResolvedContributions": [
+        {
+          "id": "529",
+          "type": "prepack",
+          "name": "говядина отварная",
+          "grams": 170,
+          "kcalPer100g": 167,
+          "calories": 284,
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "rawNetto": 170,
+          "rawBrutto": 170
+        },
         {
           "id": "278",
           "type": "ingredient",
@@ -2157,33 +2121,9 @@
           "ingredientUnit": "kg",
           "rawNetto": 20,
           "rawBrutto": 20
-        },
-        {
-          "id": "335",
-          "type": "ingredient",
-          "name": "Перец красный /молотый/",
-          "grams": 2,
-          "kcalPer100g": 282,
-          "calories": 6,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 2,
-          "rawBrutto": 2
         }
       ],
-      "unresolved": [
-        {
-          "id": "529",
-          "type": "prepack",
-          "name": "говядина отварная",
-          "grams": 170,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 170,
-          "rawBrutto": 170,
-          "reason": "prepack_nutrition_unresolved"
-        }
-      ]
+      "unresolved": []
     },
     {
       "productId": "166",
@@ -2398,13 +2338,13 @@
         "ru": "Гарни-ярах",
         "en": "Garni Yarakh"
       },
-      "status": "needs_review",
-      "displayedCalories": 723,
-      "displayedAsMinimum": true,
+      "status": "calculated",
+      "displayedCalories": 834,
+      "displayedAsMinimum": false,
       "recipeRows": 9,
-      "resolvedRows": 8,
+      "resolvedRows": 9,
       "prepackRows": 2,
-      "resolvedPrepackRows": 1,
+      "resolvedPrepackRows": 2,
       "suspicious": false,
       "topResolvedContributions": [
         {
@@ -2444,19 +2384,7 @@
           "rawBrutto": 50
         }
       ],
-      "unresolved": [
-        {
-          "id": "594",
-          "type": "prepack",
-          "name": "фарш для ярах",
-          "grams": 100,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 100,
-          "rawBrutto": 100,
-          "reason": "prepack_nutrition_unresolved"
-        }
-      ]
+      "unresolved": []
     },
     {
       "productId": "171",
@@ -2531,15 +2459,27 @@
         "ru": "Долма в виноградных листьях с говядиной",
         "en": "Beef Dolma in Grape Leaves"
       },
-      "status": "needs_review",
-      "displayedCalories": 235,
-      "displayedAsMinimum": true,
+      "status": "calculated",
+      "displayedCalories": 499,
+      "displayedAsMinimum": false,
       "recipeRows": 3,
-      "resolvedRows": 2,
+      "resolvedRows": 3,
       "prepackRows": 1,
-      "resolvedPrepackRows": 0,
+      "resolvedPrepackRows": 1,
       "suspicious": false,
       "topResolvedContributions": [
+        {
+          "id": "588",
+          "type": "prepack",
+          "name": "фарш мясной для долмы",
+          "grams": 200,
+          "kcalPer100g": 132,
+          "calories": 264,
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "rawNetto": 200,
+          "rawBrutto": 200
+        },
         {
           "id": "65",
           "type": "ingredient",
@@ -2565,19 +2505,7 @@
           "rawBrutto": 80
         }
       ],
-      "unresolved": [
-        {
-          "id": "588",
-          "type": "prepack",
-          "name": "фарш мясной для долмы",
-          "grams": 200,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 200,
-          "rawBrutto": 200,
-          "reason": "prepack_nutrition_unresolved"
-        }
-      ]
+      "unresolved": []
     },
     {
       "productId": "173",
@@ -2641,13 +2569,13 @@
         "ru": "Ариса с курицей",
         "en": "Harissa with Chicken"
       },
-      "status": "needs_review",
-      "displayedCalories": 568,
-      "displayedAsMinimum": true,
+      "status": "calculated",
+      "displayedCalories": 849,
+      "displayedAsMinimum": false,
       "recipeRows": 3,
-      "resolvedRows": 2,
+      "resolvedRows": 3,
       "prepackRows": 2,
-      "resolvedPrepackRows": 1,
+      "resolvedPrepackRows": 2,
       "suspicious": false,
       "topResolvedContributions": [
         {
@@ -2663,6 +2591,18 @@
           "rawBrutto": 80
         },
         {
+          "id": "582",
+          "type": "prepack",
+          "name": "харриса",
+          "grams": 370,
+          "kcalPer100g": 76,
+          "calories": 281,
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "rawNetto": 370,
+          "rawBrutto": 370
+        },
+        {
           "id": "73",
           "type": "ingredient",
           "name": "Маринованные овощи",
@@ -2675,19 +2615,7 @@
           "rawBrutto": 150
         }
       ],
-      "unresolved": [
-        {
-          "id": "582",
-          "type": "prepack",
-          "name": "харриса",
-          "grams": 370,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 370,
-          "rawBrutto": 370,
-          "reason": "prepack_nutrition_unresolved"
-        }
-      ]
+      "unresolved": []
     },
     {
       "productId": "176",
@@ -6915,15 +6843,27 @@
         "ru": "Аришта со страчателлой и кавурмой",
         "en": "Arishta with Stracciatella and Kavurma"
       },
-      "status": "needs_review",
-      "displayedCalories": 142,
-      "displayedAsMinimum": true,
+      "status": "calculated",
+      "displayedCalories": 510,
+      "displayedAsMinimum": false,
       "recipeRows": 6,
-      "resolvedRows": 5,
+      "resolvedRows": 6,
       "prepackRows": 3,
-      "resolvedPrepackRows": 2,
+      "resolvedPrepackRows": 3,
       "suspicious": false,
       "topResolvedContributions": [
+        {
+          "id": "602",
+          "type": "prepack",
+          "name": "каурма",
+          "grams": 100,
+          "kcalPer100g": 368,
+          "calories": 368,
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "rawNetto": 100,
+          "rawBrutto": 100
+        },
         {
           "id": "554",
           "type": "prepack",
@@ -6947,33 +6887,9 @@
           "ingredientUnit": "kg",
           "rawNetto": 2,
           "rawBrutto": 2
-        },
-        {
-          "id": "165",
-          "type": "ingredient",
-          "name": "Страчателла",
-          "grams": 30,
-          "kcalPer100g": 0,
-          "calories": 0,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 30,
-          "rawBrutto": 30
         }
       ],
-      "unresolved": [
-        {
-          "id": "602",
-          "type": "prepack",
-          "name": "каурма",
-          "grams": 100,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 100,
-          "rawBrutto": 100,
-          "reason": "prepack_nutrition_unresolved"
-        }
-      ]
+      "unresolved": []
     },
     {
       "productId": "320",
@@ -13136,28 +13052,29 @@
         "ru": "Кавурма",
         "en": "Kavurma"
       },
-      "status": "needs_review",
-      "displayedCalories": null,
+      "status": "calculated",
+      "displayedCalories": 736,
       "displayedAsMinimum": false,
       "recipeRows": 1,
-      "resolvedRows": 0,
+      "resolvedRows": 1,
       "prepackRows": 1,
-      "resolvedPrepackRows": 0,
+      "resolvedPrepackRows": 1,
       "suspicious": false,
-      "topResolvedContributions": [],
-      "unresolved": [
+      "topResolvedContributions": [
         {
           "id": "602",
           "type": "prepack",
           "name": "каурма",
           "grams": 200,
+          "kcalPer100g": 368,
+          "calories": 736,
           "structureUnit": "g",
           "ingredientUnit": "kg",
           "rawNetto": 200,
-          "rawBrutto": 200,
-          "reason": "prepack_nutrition_unresolved"
+          "rawBrutto": 200
         }
-      ]
+      ],
+      "unresolved": []
     },
     {
       "productId": "54",
@@ -13229,14 +13146,27 @@
         "en": "Kharcho"
       },
       "status": "needs_review",
-      "displayedCalories": null,
-      "displayedAsMinimum": false,
+      "displayedCalories": 84,
+      "displayedAsMinimum": true,
       "recipeRows": 2,
-      "resolvedRows": 0,
+      "resolvedRows": 1,
       "prepackRows": 2,
-      "resolvedPrepackRows": 0,
+      "resolvedPrepackRows": 1,
       "suspicious": false,
-      "topResolvedContributions": [],
+      "topResolvedContributions": [
+        {
+          "id": "529",
+          "type": "prepack",
+          "name": "говядина отварная",
+          "grams": 50,
+          "kcalPer100g": 167,
+          "calories": 84,
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "rawNetto": 50,
+          "rawBrutto": 50
+        }
+      ],
       "unresolved": [
         {
           "id": "564",
@@ -13247,17 +13177,6 @@
           "ingredientUnit": "kg",
           "rawNetto": 350,
           "rawBrutto": 350,
-          "reason": "prepack_nutrition_unresolved"
-        },
-        {
-          "id": "529",
-          "type": "prepack",
-          "name": "говядина отварная",
-          "grams": 50,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 50,
-          "rawBrutto": 50,
           "reason": "prepack_nutrition_unresolved"
         }
       ]
@@ -13874,15 +13793,27 @@
         "ru": "Паштет из куриной печени",
         "en": "Chicken Liver Pâté"
       },
-      "status": "needs_review",
-      "displayedCalories": 101,
-      "displayedAsMinimum": true,
+      "status": "calculated",
+      "displayedCalories": 278,
+      "displayedAsMinimum": false,
       "recipeRows": 5,
-      "resolvedRows": 4,
+      "resolvedRows": 5,
       "prepackRows": 2,
-      "resolvedPrepackRows": 1,
+      "resolvedPrepackRows": 2,
       "suspicious": false,
       "topResolvedContributions": [
+        {
+          "id": "530",
+          "type": "prepack",
+          "name": "куринный паштет",
+          "grams": 100,
+          "kcalPer100g": 177,
+          "calories": 177,
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "rawNetto": 100,
+          "rawBrutto": 100
+        },
         {
           "id": "443",
           "type": "ingredient",
@@ -13906,33 +13837,9 @@
           "ingredientUnit": "kg",
           "rawNetto": 25,
           "rawBrutto": 25
-        },
-        {
-          "id": "492",
-          "type": "ingredient",
-          "name": "семена тыквы",
-          "grams": 3,
-          "kcalPer100g": 0,
-          "calories": 0,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 3,
-          "rawBrutto": 3
         }
       ],
-      "unresolved": [
-        {
-          "id": "530",
-          "type": "prepack",
-          "name": "куринный паштет",
-          "grams": 100,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 100,
-          "rawBrutto": 100,
-          "reason": "prepack_nutrition_unresolved"
-        }
-      ]
+      "unresolved": []
     },
     {
       "productId": "66",
@@ -16420,13 +16327,13 @@
         "ru": "Салат с говядиной",
         "en": "Beef Salad"
       },
-      "status": "needs_review",
-      "displayedCalories": 341,
-      "displayedAsMinimum": true,
+      "status": "calculated",
+      "displayedCalories": 444,
+      "displayedAsMinimum": false,
       "recipeRows": 11,
-      "resolvedRows": 10,
+      "resolvedRows": 11,
       "prepackRows": 8,
-      "resolvedPrepackRows": 7,
+      "resolvedPrepackRows": 8,
       "suspicious": false,
       "topResolvedContributions": [
         {
@@ -16442,6 +16349,18 @@
           "rawBrutto": 60
         },
         {
+          "id": "634",
+          "type": "prepack",
+          "name": "маринованная гов вырезка",
+          "grams": 80,
+          "kcalPer100g": 129,
+          "calories": 103,
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "rawNetto": 80,
+          "rawBrutto": 80
+        },
+        {
           "id": "468",
           "type": "ingredient",
           "name": "сахарная пудра",
@@ -16452,33 +16371,9 @@
           "ingredientUnit": "kg",
           "rawNetto": 5,
           "rawBrutto": 5
-        },
-        {
-          "id": "632",
-          "type": "prepack",
-          "name": "помидоры чищенные",
-          "grams": 70,
-          "kcalPer100g": 18,
-          "calories": 13,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 70,
-          "rawBrutto": 70
         }
       ],
-      "unresolved": [
-        {
-          "id": "634",
-          "type": "prepack",
-          "name": "маринованная гов вырезка",
-          "grams": 80,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 80,
-          "rawBrutto": 80,
-          "reason": "prepack_nutrition_unresolved"
-        }
-      ]
+      "unresolved": []
     },
     {
       "productId": "820",
@@ -16840,15 +16735,27 @@
         "ru": "Куриный рулет с грецким орехом",
         "en": "Chicken Roulade with Walnuts"
       },
-      "status": "needs_review",
-      "displayedCalories": 30,
-      "displayedAsMinimum": true,
+      "status": "calculated",
+      "displayedCalories": 351,
+      "displayedAsMinimum": false,
       "recipeRows": 3,
-      "resolvedRows": 2,
+      "resolvedRows": 3,
       "prepackRows": 1,
-      "resolvedPrepackRows": 0,
+      "resolvedPrepackRows": 1,
       "suspicious": false,
       "topResolvedContributions": [
+        {
+          "id": "522",
+          "type": "prepack",
+          "name": "куриный рулет",
+          "grams": 150,
+          "kcalPer100g": 214,
+          "calories": 321,
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "rawNetto": 150,
+          "rawBrutto": 150
+        },
         {
           "id": "446",
           "type": "ingredient",
@@ -16874,19 +16781,7 @@
           "rawBrutto": 2
         }
       ],
-      "unresolved": [
-        {
-          "id": "522",
-          "type": "prepack",
-          "name": "куриный рулет",
-          "grams": 150,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 150,
-          "rawBrutto": 150,
-          "reason": "prepack_nutrition_unresolved"
-        }
-      ]
+      "unresolved": []
     },
     {
       "productId": "86",
@@ -16895,13 +16790,13 @@
         "ru": "Кавурма и домашнее сало",
         "en": "Kavurma and House-Made Cured Pork Fat"
       },
-      "status": "needs_review",
-      "displayedCalories": 857,
-      "displayedAsMinimum": true,
+      "status": "calculated",
+      "displayedCalories": 1225,
+      "displayedAsMinimum": false,
       "recipeRows": 7,
-      "resolvedRows": 6,
+      "resolvedRows": 7,
       "prepackRows": 1,
-      "resolvedPrepackRows": 0,
+      "resolvedPrepackRows": 1,
       "suspicious": false,
       "topResolvedContributions": [
         {
@@ -16911,6 +16806,18 @@
           "grams": 100,
           "kcalPer100g": 812,
           "calories": 812,
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "rawNetto": 100,
+          "rawBrutto": 100
+        },
+        {
+          "id": "602",
+          "type": "prepack",
+          "name": "каурма",
+          "grams": 100,
+          "kcalPer100g": 368,
+          "calories": 368,
           "structureUnit": "g",
           "ingredientUnit": "kg",
           "rawNetto": 100,
@@ -16927,33 +16834,9 @@
           "ingredientUnit": "kg",
           "rawNetto": 30,
           "rawBrutto": 30
-        },
-        {
-          "id": "278",
-          "type": "ingredient",
-          "name": "свежая зелень",
-          "grams": 30,
-          "kcalPer100g": 36,
-          "calories": 11,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 30,
-          "rawBrutto": 30
         }
       ],
-      "unresolved": [
-        {
-          "id": "602",
-          "type": "prepack",
-          "name": "каурма",
-          "grams": 100,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 100,
-          "rawBrutto": 100,
-          "reason": "prepack_nutrition_unresolved"
-        }
-      ]
+      "unresolved": []
     },
     {
       "productId": "87",
@@ -17017,15 +16900,27 @@
         "ru": "Пряные куриные сердечки",
         "en": "Spiced Chicken Hearts"
       },
-      "status": "needs_review",
-      "displayedCalories": 63,
-      "displayedAsMinimum": true,
+      "status": "calculated",
+      "displayedCalories": 185,
+      "displayedAsMinimum": false,
       "recipeRows": 2,
-      "resolvedRows": 1,
+      "resolvedRows": 2,
       "prepackRows": 2,
-      "resolvedPrepackRows": 1,
+      "resolvedPrepackRows": 2,
       "suspicious": false,
       "topResolvedContributions": [
+        {
+          "id": "608",
+          "type": "prepack",
+          "name": "сердечки отварные",
+          "grams": 80,
+          "kcalPer100g": 153,
+          "calories": 122,
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "rawNetto": 80,
+          "rawBrutto": 80
+        },
         {
           "id": "535",
           "type": "prepack",
@@ -17039,19 +16934,7 @@
           "rawBrutto": 30
         }
       ],
-      "unresolved": [
-        {
-          "id": "608",
-          "type": "prepack",
-          "name": "сердечки отварные",
-          "grams": 80,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 80,
-          "rawBrutto": 80,
-          "reason": "prepack_nutrition_unresolved"
-        }
-      ]
+      "unresolved": []
     },
     {
       "productId": "9",
@@ -17390,13 +17273,13 @@
         "ru": "Хинкали XXL",
         "en": "Khinkali XXL"
       },
-      "status": "needs_review",
-      "displayedCalories": 1547,
-      "displayedAsMinimum": true,
+      "status": "calculated",
+      "displayedCalories": 2263,
+      "displayedAsMinimum": false,
       "recipeRows": 3,
-      "resolvedRows": 2,
+      "resolvedRows": 3,
       "prepackRows": 2,
-      "resolvedPrepackRows": 1,
+      "resolvedPrepackRows": 2,
       "suspicious": false,
       "topResolvedContributions": [
         {
@@ -17412,6 +17295,18 @@
           "rawBrutto": 650
         },
         {
+          "id": "543",
+          "type": "prepack",
+          "name": "фарш для хинкали",
+          "grams": 450,
+          "kcalPer100g": 159,
+          "calories": 716,
+          "structureUnit": "g",
+          "ingredientUnit": "kg",
+          "rawNetto": 450,
+          "rawBrutto": 450
+        },
+        {
           "id": "339",
           "type": "ingredient",
           "name": "Соль",
@@ -17424,19 +17319,7 @@
           "rawBrutto": 5
         }
       ],
-      "unresolved": [
-        {
-          "id": "543",
-          "type": "prepack",
-          "name": "фарш для хинкали",
-          "grams": 450,
-          "structureUnit": "g",
-          "ingredientUnit": "kg",
-          "rawNetto": 450,
-          "rawBrutto": 450,
-          "reason": "prepack_nutrition_unresolved"
-        }
-      ]
+      "unresolved": []
     }
   ]
 }

@@ -1,0 +1,56 @@
+name: Rebuild Nutrition Research Queue
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/build-nutrition-research-queue.cjs'
+      - 'scripts/export-next-generic-batch.cjs'
+      - 'data/cia-nutrition-priority-top500.json'
+      - 'data/cia-nutrition-manual-top20.json'
+      - '.github/workflows/rebuild-nutrition-research-queue.yml'
+  workflow_dispatch:
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate scripts
+        run: |
+          node --check scripts/build-nutrition-research-queue.cjs
+          node --check scripts/export-next-generic-batch.cjs
+
+      - name: Rebuild research queue
+        env:
+          CIA_PRIORITY_LIMIT: 500
+        run: node scripts/build-nutrition-research-queue.cjs
+
+      - name: Export next generic candidates
+        run: node scripts/export-next-generic-batch.cjs
+
+      - name: Commit refreshed queues
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/cia-nutrition-research-queue.json data/cia-nutrition-next-generic.json
+          if git diff --cached --quiet; then
+            echo 'No queue changes.'
+            exit 0
+          fi
+          git commit -m 'chore: refresh nutrition research queue'
+          git pull --rebase --autostash origin main
+          git push origin HEAD:main

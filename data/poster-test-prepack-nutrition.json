@@ -2,7 +2,7 @@
   "version": "1.4.0",
   "restaurantId": "poster-test",
   "source": "Poster menu.getPrepacks + cia-nutrition-manual-top20 verified entries + reviewed USDA overrides",
-  "generatedAt": "2026-08-30T10:41:50.975Z",
+  "generatedAt": "2026-08-30T10:42:10.835Z",
   "prepackCount": 219,
   "calculatedCount": 206,
   "needsReviewCount": 13,

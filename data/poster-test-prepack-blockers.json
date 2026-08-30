@@ -1,61 +1,12 @@
 {
   "version": "1.0.0",
   "restaurantId": "poster-test",
-  "generatedAt": "2026-08-30T10:36:00.417Z",
+  "generatedAt": "2026-08-30T10:41:51.157Z",
   "prepackCount": 219,
-  "calculatedCount": 185,
-  "needsReviewCount": 34,
-  "uniqueLeafBlockerCount": 12,
+  "calculatedCount": 206,
+  "needsReviewCount": 13,
+  "uniqueLeafBlockerCount": 6,
   "blockers": [
-    {
-      "type": "ingredient",
-      "id": "196",
-      "name": "Говядина",
-      "reason": "animal_nutrition_missing_or_zero",
-      "affectedPrepackCount": 10,
-      "affectedPrepacks": [
-        {
-          "productId": "529",
-          "name": "говядина отварная"
-        },
-        {
-          "productId": "595",
-          "name": "говядина тушенная"
-        },
-        {
-          "productId": "514",
-          "name": "говядиня очищенная"
-        },
-        {
-          "productId": "602",
-          "name": "каурма"
-        },
-        {
-          "productId": "584",
-          "name": "кябаб из телятины"
-        },
-        {
-          "productId": "603",
-          "name": "фарш для пальчиков"
-        },
-        {
-          "productId": "543",
-          "name": "фарш для хинкали"
-        },
-        {
-          "productId": "594",
-          "name": "фарш для ярах"
-        },
-        {
-          "productId": "588",
-          "name": "фарш мясной для долмы"
-        },
-        {
-          "productId": "630",
-          "name": "чакабули"
-        }
-      ]
-    },
     {
       "type": "ingredient",
       "id": "352",
@@ -87,31 +38,6 @@
     },
     {
       "type": "ingredient",
-      "id": "305",
-      "name": "Курица",
-      "reason": "animal_nutrition_missing_or_zero",
-      "affectedPrepackCount": 4,
-      "affectedPrepacks": [
-        {
-          "productId": "522",
-          "name": "куриный рулет"
-        },
-        {
-          "productId": "523",
-          "name": "курица отварная"
-        },
-        {
-          "productId": "519",
-          "name": "курица чищенная"
-        },
-        {
-          "productId": "678",
-          "name": "шила"
-        }
-      ]
-    },
-    {
-      "type": "ingredient",
       "id": "436",
       "name": "Лимон",
       "reason": "unknown_weight_or_unit",
@@ -132,61 +58,6 @@
         {
           "productId": "647",
           "name": "цитрусовый сироп"
-        }
-      ]
-    },
-    {
-      "type": "ingredient",
-      "id": "198",
-      "name": "Говяжье суки",
-      "reason": "animal_nutrition_missing_or_zero",
-      "affectedPrepackCount": 3,
-      "affectedPrepacks": [
-        {
-          "productId": "515",
-          "name": "говяжье суки очищенная"
-        },
-        {
-          "productId": "634",
-          "name": "маринованная гов вырезка"
-        },
-        {
-          "productId": "570",
-          "name": "мини кябаба"
-        }
-      ]
-    },
-    {
-      "type": "ingredient",
-      "id": "303",
-      "name": "Куриная печень",
-      "reason": "animal_nutrition_missing_or_zero",
-      "affectedPrepackCount": 2,
-      "affectedPrepacks": [
-        {
-          "productId": "520",
-          "name": "куриная печень очищенная"
-        },
-        {
-          "productId": "530",
-          "name": "куринный паштет"
-        }
-      ]
-    },
-    {
-      "type": "ingredient",
-      "id": "304",
-      "name": "Куриные сердечки",
-      "reason": "animal_nutrition_missing_or_zero",
-      "affectedPrepackCount": 2,
-      "affectedPrepacks": [
-        {
-          "productId": "608",
-          "name": "сердечки отварные"
-        },
-        {
-          "productId": "499",
-          "name": "сердечки чищенные"
         }
       ]
     },
@@ -226,19 +97,6 @@
         {
           "productId": "564",
           "name": "харчо"
-        }
-      ]
-    },
-    {
-      "type": "ingredient",
-      "id": "351",
-      "name": "Куринный окорок /բուդ/",
-      "reason": "animal_nutrition_missing_or_zero",
-      "affectedPrepackCount": 1,
-      "affectedPrepacks": [
-        {
-          "productId": "582",
-          "name": "харриса"
         }
       ]
     },

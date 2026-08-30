@@ -1,6 +1,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 
+// Export a fresh, queue-derived shortlist so old classifications do not leak into later batches.
 const input = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data', 'cia-nutrition-research-queue.json'), 'utf8'));
 const entries = Array.isArray(input?.entries) ? input.entries : [];
 const candidates = entries

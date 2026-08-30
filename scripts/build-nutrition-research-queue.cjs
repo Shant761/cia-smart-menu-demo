@@ -54,10 +54,10 @@ function hasPossibleAliasCollision(entry) {
 }
 
 const NON_FOOD = /(уголь|табак|муштук|мундштук|coal|charcoal|tobacco|hookah)/i;
-const PREPARED = /(соус|крем|начинка|тесто|печенье|борщ|брауни|буженина|рулет|пюре|желато|морожен|салат|суп|джем|варень|глазур|маринованн.*овощ|каурма|дзадзики|ким\s*чи|сорбе|сосиск|тост|котлет|наггет|паштет|медовик|муравейник|безе|торт|чизкейк|фондан|харчо|харриса|спас|суджух|паста из перца|запеченн|вяленн|засахаренн|морс|компот|сцежанн|настойка фруктового чая|кофе восточн|кофе парижск)/i;
+const PREPARED = /(соус|сироп|крем|начинка|тест[оае]|печенье|борщ|брауни|буженина|рулет|пюре|желато|морожен|салат|суп|джем|варень|глазур|маринованн.*овощ|каурма|дзадзики|ким\s*чи|сорбе|сосиск|тост|котлет|наггет|паштет|медовик|муравейник|безе|торт|чизкейк|фондан|харчо|харриса|спас|суджух|паста из перца|запеченн|вяленн|засахаренн|морс|компот|сцежанн|настойка фруктового чая|кофе восточн|кофе парижск|фарш|песто|суфле|конфет|мастик|меренг|медов.*шарик|фасол.*томат|сан\s*себастьян|птичье\s*молоко|том\s*ям|песочн.*персик|покрытие\s*эклер|прага)/i;
 const BRAND = /(monin|parmalat|ponti|caravella|fever.?tree|arcolad|gurme|red\s*bull|ред\s*булл|nutella|нутелла|perrier|перриер|tabasco|табаско)/i;
 const ALCOHOL_BRAND = /(havana club|absolut|aperol|baileys|bombay|campari|grey goose|jameson|karas|koor|onegin|st\.?germain|takar|bacardi|ballantine|becherovka|beluga|chivas|corona|dargett|don julio|glenfiddich|hendrick|hennessy|jack daniel|jagermeister|malibu|mo[eë]t|patron|roku|sambuka|glenlivet|macallan|zonin|zorah|olmega|olmeca|beefeter|beefeater|cointreau|kahlua|martini|chistie\s*rosi|akhtamar|dvin|nairi|ohanyan|vaspurakan|jim\s*beam|jin\s*beam|keush|krombacher|piccini|attems|tariri|monkey\s*47)/i;
-const ALCOHOL = /(водка|вино\b|ром\b|джин\b|виски|текил|ликер|liqueur|liquor|brandy|бренди|коньяк|prosecco|brut\b|pinot\s+grigio|absent|absinthe|cachaca|calvados|sambuka|whisky|whiskey|gin\b|rum\b|vodka|wine\b|beer\b|пиво\b|хреновух)/i;
+const ALCOHOL = /(водка|вино\b|գինի|ром\b|джин\b|виски|текил|ликер|liqueur|liquor|brandy|бренди|коньяк|prosecco|brut\b|pinot\s+grigio|absent|absinthe|cachaca|calvados|sambuka|whisky|whiskey|gin\b|rum\b|vodka|wine\b|beer\b|пиво\b|хреновух)/i;
 
 function classify(entry, verifiedEntry) {
   const text = [entry.name, ...(entry.aliases || [])].join(' | ');

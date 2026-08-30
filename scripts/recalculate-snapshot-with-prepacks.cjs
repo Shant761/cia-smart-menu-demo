@@ -9,22 +9,35 @@ if (!POSTER_TOKEN) throw new Error('POSTER_ACCESS_TOKEN is required');
 const root = path.join(__dirname, '..');
 const snapshotPath = path.join(root, 'data', 'public-menus', `${RESTAURANT_ID}.json`);
 const manualPath = path.join(root, 'data', 'cia-nutrition-manual-top20.json');
+const overridesPath = path.join(root, 'data', 'cia-nutrition-verified-overrides.json');
 const queuePath = path.join(root, 'data', 'cia-nutrition-research-queue.json');
 const prepackNutritionPath = path.join(root, 'data', `${RESTAURANT_ID}-prepack-nutrition.json`);
 const summaryPath = path.join(root, 'data', `${RESTAURANT_ID}-dish-nutrition-summary.json`);
 
 const snapshot = JSON.parse(fs.readFileSync(snapshotPath, 'utf8'));
 const manual = JSON.parse(fs.readFileSync(manualPath, 'utf8'));
+const overrides = fs.existsSync(overridesPath)
+  ? JSON.parse(fs.readFileSync(overridesPath, 'utf8'))
+  : { entries: [] };
 const queue = JSON.parse(fs.readFileSync(queuePath, 'utf8'));
 const prepackNutrition = JSON.parse(fs.readFileSync(prepackNutritionPath, 'utf8'));
-const manualById = new Map((manual.entries || []).map((entry) => [String(entry.id), entry]));
-const safeVerifiedIds = new Set((queue.entries || []).filter((entry) => entry.kind === 'verified' && entry.verified === true).map((entry) => String(entry.id)));
+const overrideEntries = (Array.isArray(overrides?.entries) ? overrides.entries : [])
+  .filter((entry) => entry?.verified === true && entry?.status === 'verified');
+const manualById = new Map([
+  ...(manual.entries || []),
+  ...overrideEntries
+].map((entry) => [String(entry.id), entry]));
+const safeVerifiedIds = new Set([
+  ...(queue.entries || []).filter((entry) => entry.kind === 'verified' && entry.verified === true).map((entry) => String(entry.id)),
+  ...overrideEntries.map((entry) => String(entry.id))
+]);
 const prepackById = new Map(
   (prepackNutrition.results || [])
     .filter((entry) => entry.status === 'calculated' && entry.per100g && Number(entry.per100g.calories) <= 1000)
     .map((entry) => [String(entry.productId), entry])
 );
-const ANIMAL_RE = /(говя|теля|свинин|свин|курин|куриц|цыплен|баран|ягн|мяс|печен|сердеч|бекон|индей|утк|pork|beef|chicken|lamb|veal|turkey|duck|meat)/i;
+// "печен" also matches "печенье". Keep liver matching explicit.
+const ANIMAL_RE = /(говя|теля|свинин|свин|курин|куриц|цыплен|баран|ягн|мяс|печень|сердеч|бекон|индей|утк|pork|beef|chicken|lamb|veal|turkey|duck|meat|liver|heart)/i;
 
 function n(v) { const x = Number(String(v ?? '').replace(',', '.')); return Number.isFinite(x) ? x : null; }
 function round1(v) { return Math.round(v * 10) / 10; }
@@ -38,17 +51,24 @@ function density(name) {
   return 1;
 }
 
-// In Poster dish tech cards structure_netto is already the net weight for piece rows.
-// Example from the live account: 2 eggs => brutto=2, netto=120. Multiplying netto by
-// ingredient_weight produced 720,000 g. Use the positive netto directly.
+// In Poster tech cards structure_netto is often already the net gram weight for a
+// piece row. Use it directly. If absent, fall back to piece count × ingredient_weight.
+// Never multiply a positive netto by ingredient_weight (that previously produced
+// values such as 720,000 g for two eggs).
 function rowGrams(row) {
   const netto = n(row?.structure_netto);
   const brutto = n(row?.structure_brutto);
-  const unit = normalize(row?.structure_unit);
-  if (unit === 'p' || ['pc', 'pcs', 'шт'].includes(unit)) return netto != null && netto > 0 ? netto : null;
+  const unit = normalize(row?.structure_unit || row?.ingredient_unit);
+  if (['p', 'pc', 'pcs', 'шт'].includes(unit)) {
+    if (netto != null && netto > 0) return netto;
+    const pieceWeight = n(row?.ingredient_weight);
+    if (brutto != null && brutto > 0 && pieceWeight != null && pieceWeight > 0) return brutto * pieceWeight;
+    return null;
+  }
   const value = netto ?? brutto;
   if (value == null || value < 0) return null;
   if (!unit || ['g', 'гр', 'г', 'gram', 'grams'].includes(unit)) return value;
+  if (['kg', 'кг'].includes(unit)) return value * 1000;
   if (['ml', 'мл'].includes(unit)) return value * density(row?.ingredient_name);
   if (['l', 'л'].includes(unit)) return value * 1000 * density(row?.ingredient_name);
   return null;
@@ -72,7 +92,7 @@ function per100(total, grams) {
 async function posterRequest(method, params = {}) {
   const url = new URL(`${POSTER_API_BASE}${method}`); url.searchParams.set('token', POSTER_TOKEN); url.searchParams.set('format', 'json');
   for (const [key, value] of Object.entries(params)) if (value !== undefined && value !== null && value !== '') url.searchParams.set(key, String(value));
-  const response = await fetch(url, { headers: { Accept: 'application/json', 'User-Agent': 'CIA-Smart-Menu-Dish-Recalc/1.3' }, signal: AbortSignal.timeout(30000) });
+  const response = await fetch(url, { headers: { Accept: 'application/json', 'User-Agent': 'CIA-Smart-Menu-Dish-Recalc/1.4' }, signal: AbortSignal.timeout(30000) });
   if (!response.ok) throw new Error(`Poster ${method}: HTTP ${response.status}`);
   const payload = await response.json(); if (payload?.error) throw new Error(`Poster ${method}: ${payload.error.message || payload.error.error_message || JSON.stringify(payload.error)}`); return payload?.response;
 }
@@ -113,7 +133,7 @@ function calculateRows(rows) {
   return { totals, totalGrams, knownGrams, resolvedRows, prepackRows, resolvedPrepackRows, unresolved, resolved, fullyResolved };
 }
 function makeNutrition(result) {
-  const source = 'CIA verified ingredients + Poster menu.getPrepacks + live Poster dish recipe';
+  const source = 'CIA verified ingredients + reviewed USDA overrides + Poster menu.getPrepacks + live Poster dish recipe';
   if (result.fullyResolved) return { status: 'calculated', calories: Math.round(result.totals.calories), protein: round1(result.totals.protein), fat: round1(result.totals.fat), carbohydrates: round1(result.totals.carbohydrates), servingGrams: round1(result.totalGrams), per100g: per100(result.totals, result.totalGrams), partial: null, source };
   if (!(result.knownGrams > 0)) return { status: 'needs_review', calories: null, protein: null, fat: null, carbohydrates: null, servingGrams: null, per100g: null, partial: null, source };
   const gramCoverage = result.totalGrams > 0 ? result.knownGrams / result.totalGrams : 0; const rowCoverage = result.rowsLength > 0 ? result.resolvedRows / result.rowsLength : 0; const coverage = Math.max(0, Math.min(0.999, Math.min(gramCoverage || rowCoverage, rowCoverage)));
@@ -122,7 +142,7 @@ function makeNutrition(result) {
 async function main() {
   const products = Array.isArray(snapshot.products) ? snapshot.products : []; const productById = new Map(products.map((product) => [String(product.posterProductId ?? product.id), product])); const ids = [...productById.keys()].filter(Boolean);
   const details = await mapLimit(ids, 6, async (productId) => { try { return { productId, detail: await posterRequest('menu.getProduct', { product_id: productId }) }; } catch (error) { return { productId, error: error.message }; } });
-  const summary = { version: '1.3.0', restaurantId: RESTAURANT_ID, generatedAt: new Date().toISOString(), publicProductCount: products.length, fetchedProductCount: 0, fetchErrorCount: 0, productsWithRecipe: 0, productsWithPrepackRows: 0, resolvedPrepackRows: 0, unresolvedPrepackRows: 0, fullyCalculatedCount: 0, partialCount: 0, reviewWithoutKnownCount: 0, suspiciousProductCount: 0, products: [] };
+  const summary = { version: '1.4.0', restaurantId: RESTAURANT_ID, generatedAt: new Date().toISOString(), publicProductCount: products.length, fetchedProductCount: 0, fetchErrorCount: 0, productsWithRecipe: 0, productsWithPrepackRows: 0, resolvedPrepackRows: 0, unresolvedPrepackRows: 0, fullyCalculatedCount: 0, partialCount: 0, reviewWithoutKnownCount: 0, suspiciousProductCount: 0, products: [] };
   for (const item of details) {
     if (item.error) { summary.fetchErrorCount += 1; summary.products.push({ productId: item.productId, status: 'fetch_error', error: item.error }); continue; }
     summary.fetchedProductCount += 1; const rows = Array.isArray(item.detail?.ingredients) ? item.detail.ingredients : []; if (!rows.length) continue; summary.productsWithRecipe += 1;

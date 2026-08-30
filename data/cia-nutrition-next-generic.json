@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "source": "data/cia-nutrition-research-queue.json",
-  "remainingGenericCount": 57,
+  "remainingGenericCount": 56,
   "count": 50,
   "candidates": [
     {
@@ -274,23 +274,6 @@
       "searchQueries": [
         "Страчателла USDA FoodData Central",
         "Страчателла calories kcal 100g"
-      ]
-    },
-    {
-      "priority": 216,
-      "id": "poster_488",
-      "posterIngredientId": "488",
-      "name": "табаско",
-      "aliases": [
-        "табаско"
-      ],
-      "units": [
-        "g"
-      ],
-      "usedInProductCount": 2,
-      "searchQueries": [
-        "табаско USDA FoodData Central",
-        "табаско calories kcal 100g"
       ]
     },
     {
@@ -852,6 +835,23 @@
       "searchQueries": [
         "фарш для ярах USDA FoodData Central",
         "фарш для ярах calories kcal 100g"
+      ]
+    },
+    {
+      "priority": 416,
+      "id": "poster_588",
+      "posterIngredientId": "588",
+      "name": "фарш мясной для долмы",
+      "aliases": [
+        "фарш мясной для долмы"
+      ],
+      "units": [
+        "g"
+      ],
+      "usedInProductCount": 1,
+      "searchQueries": [
+        "фарш мясной для долмы USDA FoodData Central",
+        "фарш мясной для долмы calories kcal 100g"
       ]
     }
   ]

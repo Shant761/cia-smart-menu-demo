@@ -1,13 +1,15 @@
 name: Recalculate Poster Test Dishes With Prepacks
 
-# Re-run dish nutrition whenever preparation safety rules change.
+# Re-run preparation and dish nutrition whenever preparation safety rules or source data change.
 on:
   push:
     branches:
       - main
     paths:
       - 'scripts/recalculate-snapshot-with-prepacks.cjs'
-      - 'data/poster-test-prepack-nutrition.json'
+      - 'scripts/calculate-prepack-nutrition.cjs'
+      - 'scripts/audit-prepack-blockers.cjs'
+      - 'data/poster-test-preparations.json'
       - 'data/cia-nutrition-manual-top20.json'
       - 'data/cia-nutrition-verified-overrides.json'
       - 'data/cia-nutrition-research-queue.json'
@@ -34,8 +36,11 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Validate dish recalculator
-        run: node --check scripts/recalculate-snapshot-with-prepacks.cjs
+      - name: Validate nutrition recalculators
+        run: |
+          node --check scripts/calculate-prepack-nutrition.cjs
+          node --check scripts/audit-prepack-blockers.cjs
+          node --check scripts/recalculate-snapshot-with-prepacks.cjs
 
       - name: Verify poster-test token
         run: |
@@ -43,6 +48,11 @@ jobs:
             echo 'Missing POSTER_TOKEN / POSTER_ACCESS_TOKEN for poster-test'
             exit 1
           }
+
+      - name: Recalculate preparation nutrition and blockers
+        run: |
+          node scripts/calculate-prepack-nutrition.cjs
+          node scripts/audit-prepack-blockers.cjs
 
       - name: Recalculate all dish nutrition with prepack tech cards
         run: node scripts/recalculate-snapshot-with-prepacks.cjs
@@ -60,15 +70,19 @@ jobs:
           for (const product of rows) console.log(JSON.stringify(product, null, 2));
           NODE
 
-      - name: Commit recalculated dish snapshot
+      - name: Commit recalculated nutrition snapshots
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/public-menus/poster-test.json data/poster-test-dish-nutrition-summary.json
+          git add \
+            data/poster-test-prepack-nutrition.json \
+            data/poster-test-prepack-blockers.json \
+            data/public-menus/poster-test.json \
+            data/poster-test-dish-nutrition-summary.json
           if git diff --cached --quiet; then
-            echo "No dish nutrition changes."
+            echo "No nutrition changes."
           else
-            git commit -m "chore: recalculate poster-test dishes with prepacks"
+            git commit -m "chore: recalculate poster-test nutrition snapshots"
             git pull --rebase --autostash origin main
             git push
           fi

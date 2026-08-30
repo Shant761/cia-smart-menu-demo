@@ -1,16 +1,16 @@
 {
   "version": "1.2.0",
   "restaurantId": "poster-test",
-  "sourceGeneratedAt": "2026-08-30T12:04:50.306Z",
-  "generatedAt": "2026-08-30T12:04:50.376Z",
+  "sourceGeneratedAt": "2026-08-30T12:12:53.191Z",
+  "generatedAt": "2026-08-30T12:12:53.272Z",
   "rawProductsWithRecipe": 407,
-  "excludedFromNutritionScopeCount": 132,
-  "nutritionScopeProductsWithRecipe": 275,
-  "fullyCalculatedCount": 235,
-  "coveragePercent": 85.5,
-  "unresolvedCount": 40,
+  "excludedFromNutritionScopeCount": 134,
+  "nutritionScopeProductsWithRecipe": 273,
+  "fullyCalculatedCount": 234,
+  "coveragePercent": 85.7,
+  "unresolvedCount": 39,
   "byStatus": {
-    "needs_review": 40
+    "needs_review": 39
   },
   "excludedProducts": [
     {
@@ -462,6 +462,16 @@
       },
       "categoryId": "41",
       "reason": "alcohol_out_of_scope"
+    },
+    {
+      "productId": "278",
+      "name": {
+        "hy": "կոկտեյլ դասական",
+        "ru": "Классический коктейль",
+        "en": "Classic Cocktail"
+      },
+      "categoryId": "36",
+      "reason": "non_food_out_of_scope"
     },
     {
       "productId": "281",
@@ -1264,6 +1274,16 @@
       "reason": "alcohol_out_of_scope"
     },
     {
+      "productId": "508",
+      "name": {
+        "hy": "կոկտեյլ Nur",
+        "ru": "Коктейль Nur",
+        "en": "Nur Cocktail"
+      },
+      "categoryId": "36",
+      "reason": "non_food_out_of_scope"
+    },
+    {
       "productId": "660",
       "name": {
         "hy": "Օղի Stumbras 1bot",
@@ -1969,20 +1989,6 @@
           "rawBrutto": 1
         }
       ]
-    },
-    {
-      "productId": "508",
-      "name": {
-        "hy": "կոկտեյլ Nur",
-        "ru": "Коктейль Nur",
-        "en": "Nur Cocktail"
-      },
-      "status": "needs_review",
-      "displayedCalories": null,
-      "displayedAsMinimum": false,
-      "recipeRows": 3,
-      "resolvedRows": 0,
-      "unresolved": []
     },
     {
       "productId": "56",

@@ -22,6 +22,7 @@ on:
       - 'scripts/verify-clean-generic-batch-05.cjs'
       - 'scripts/verify-clean-generic-batch-06.cjs'
       - 'scripts/verify-clean-generic-batch-07.cjs'
+      - 'scripts/verify-clean-generic-batch-08.cjs'
       - 'scripts/verify-branded-batch-01.cjs'
       - 'scripts/verify-meat-batch-01.cjs'
       - 'scripts/verify-meat-batch-02.cjs'
@@ -77,6 +78,7 @@ jobs:
           node --check scripts/verify-clean-generic-batch-05.cjs
           node --check scripts/verify-clean-generic-batch-06.cjs
           node --check scripts/verify-clean-generic-batch-07.cjs
+          node --check scripts/verify-clean-generic-batch-08.cjs
           node --check scripts/verify-branded-batch-01.cjs
           node --check scripts/verify-meat-batch-01.cjs
           node --check scripts/verify-meat-batch-02.cjs
@@ -137,6 +139,9 @@ jobs:
 
       - name: Apply verified clean generic batch 07
         run: node scripts/verify-clean-generic-batch-07.cjs
+
+      - name: Apply verified clean generic batch 08
+        run: node scripts/verify-clean-generic-batch-08.cjs
 
       - name: Apply verified branded batch 01
         run: node scripts/verify-branded-batch-01.cjs

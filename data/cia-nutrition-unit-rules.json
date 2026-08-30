@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Operator-reviewed nutrition scope and deterministic unit rules. Alcohol and non-food menu items are outside nutrition coverage; do not add guessed average piece weights.",
   "excludedIngredientIds": {
     "537": { "name": "муштук", "reason": "non_food" },
@@ -17,6 +17,7 @@
     "32": { "name": "Виски", "reason": "alcohol_out_of_scope" },
     "33": { "name": "Бренди и коньяк", "reason": "alcohol_out_of_scope" },
     "34": { "name": "Алкогольные коктейли", "reason": "alcohol_out_of_scope" },
+    "36": { "name": "Кальян", "reason": "non_food_out_of_scope" },
     "37": { "name": "Шампанское", "reason": "alcohol_out_of_scope" },
     "39": { "name": "Розовое вино", "reason": "alcohol_out_of_scope" },
     "40": { "name": "Белое вино", "reason": "alcohol_out_of_scope" },

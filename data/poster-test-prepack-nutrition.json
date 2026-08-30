@@ -1,88 +1,78 @@
 {
-  "version": "1.2.0",
+  "version": "1.3.0",
   "restaurantId": "poster-test",
   "source": "Poster menu.getPrepacks + cia-nutrition-manual-top20 verified entries",
-  "generatedAt": "2026-08-30T10:12:52.573Z",
+  "generatedAt": "2026-08-30T10:25:45.578Z",
   "prepackCount": 219,
-  "calculatedCount": 212,
-  "needsReviewCount": 7,
+  "calculatedCount": 185,
+  "needsReviewCount": 34,
   "targetCount": 8,
-  "targetCalculatedCount": 8,
-  "targetNeedsReviewCount": 0,
+  "targetCalculatedCount": 0,
+  "targetNeedsReviewCount": 8,
   "targetResults": [
     {
       "productId": "529",
       "name": "говядина отварная",
       "outputGrams": 2700,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
-        "calories": 0,
-        "protein": 0,
-        "fat": 0,
-        "carbohydrates": 0
-      },
+      "per100g": null,
       "partialPer100g": null,
-      "knownInputGrams": 2700,
+      "knownInputGrams": 0,
       "totalRows": 1,
-      "resolvedRows": 1,
-      "unresolvedRows": 0,
-      "resolved": [
+      "resolvedRows": 0,
+      "unresolvedRows": 1,
+      "resolved": [],
+      "unresolved": [
         {
           "type": "prepack",
           "id": "514",
           "name": "говядиня очищенная",
           "grams": 2700,
-          "calories": 0
+          "reason": "nested_prepack_unresolved"
         }
-      ],
-      "unresolved": []
+      ]
     },
     {
       "productId": "520",
       "name": "куриная печень очищенная",
       "outputGrams": 2800,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
-        "calories": 0,
-        "protein": 0,
-        "fat": 0,
-        "carbohydrates": 0
-      },
+      "per100g": null,
       "partialPer100g": null,
-      "knownInputGrams": 2800,
+      "knownInputGrams": 0,
       "totalRows": 1,
-      "resolvedRows": 1,
-      "unresolvedRows": 0,
-      "resolved": [
+      "resolvedRows": 0,
+      "unresolvedRows": 1,
+      "resolved": [],
+      "unresolved": [
         {
           "type": "ingredient",
           "id": "303",
           "name": "Куриная печень ",
           "grams": 2800,
-          "calories": 0
+          "reason": "animal_nutrition_missing_or_zero"
         }
-      ],
-      "unresolved": []
+      ]
     },
     {
       "productId": "530",
       "name": "куринный паштет",
       "outputGrams": 3576,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
+      "per100g": null,
+      "partialPer100g": {
         "calories": 137,
         "protein": 1.3,
         "fat": 12.4,
         "carbohydrates": 6
       },
-      "partialPer100g": null,
-      "knownInputGrams": 3600.6,
+      "knownInputGrams": 2400.6,
       "totalRows": 11,
-      "resolvedRows": 11,
-      "unresolvedRows": 0,
+      "resolvedRows": 10,
+      "unresolvedRows": 1,
       "resolved": [
         {
           "type": "ingredient",
@@ -148,13 +138,6 @@
           "calories": 0
         },
         {
-          "type": "prepack",
-          "id": "520",
-          "name": "куриная печень очищенная",
-          "grams": 1200,
-          "calories": 0
-        },
-        {
           "type": "ingredient",
           "id": "396",
           "name": "сливочное масло",
@@ -162,25 +145,33 @@
           "calories": 2653
         }
       ],
-      "unresolved": []
+      "unresolved": [
+        {
+          "type": "prepack",
+          "id": "520",
+          "name": "куриная печень очищенная",
+          "grams": 1200,
+          "reason": "nested_prepack_unresolved"
+        }
+      ]
     },
     {
       "productId": "522",
       "name": "куриный рулет",
       "outputGrams": 1355,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
+      "per100g": null,
+      "partialPer100g": {
         "calories": 39,
         "protein": 0.6,
         "fat": 1.5,
         "carbohydrates": 6.8
       },
-      "partialPer100g": null,
-      "knownInputGrams": 1355,
+      "knownInputGrams": 255,
       "totalRows": 9,
-      "resolvedRows": 9,
-      "unresolvedRows": 0,
+      "resolvedRows": 8,
+      "unresolvedRows": 1,
       "resolved": [
         {
           "type": "ingredient",
@@ -237,34 +228,35 @@
           "name": "Желатин",
           "grams": 25,
           "calories": 0
-        },
+        }
+      ],
+      "unresolved": [
         {
           "type": "prepack",
           "id": "519",
           "name": "курица чищенная",
           "grams": 1100,
-          "calories": 0
+          "reason": "nested_prepack_unresolved"
         }
-      ],
-      "unresolved": []
+      ]
     },
     {
       "productId": "510",
       "name": "фарш для баклажана",
       "outputGrams": 790,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
+      "per100g": null,
+      "partialPer100g": {
         "calories": 308,
         "protein": 3.8,
         "fat": 31.6,
         "carbohydrates": 5.1
       },
-      "partialPer100g": null,
-      "knownInputGrams": 790,
+      "knownInputGrams": 490,
       "totalRows": 9,
-      "resolvedRows": 9,
-      "unresolvedRows": 0,
+      "resolvedRows": 8,
+      "unresolvedRows": 1,
       "resolved": [
         {
           "type": "ingredient",
@@ -321,42 +313,36 @@
           "name": "Перец красный /молотый/ ",
           "grams": 10,
           "calories": 28
-        },
+        }
+      ],
+      "unresolved": [
         {
           "type": "prepack",
           "id": "511",
           "name": "куриный отвал б/к",
           "grams": 300,
-          "calories": 0
+          "reason": "nested_prepack_unresolved"
         }
-      ],
-      "unresolved": []
+      ]
     },
     {
       "productId": "543",
       "name": "фарш для хинкали",
       "outputGrams": 1305,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
+      "per100g": null,
+      "partialPer100g": {
         "calories": 95,
         "protein": 10.3,
         "fat": 5.1,
         "carbohydrates": 1.6
       },
-      "partialPer100g": null,
-      "knownInputGrams": 1305,
+      "knownInputGrams": 805,
       "totalRows": 7,
-      "resolvedRows": 7,
-      "unresolvedRows": 0,
+      "resolvedRows": 6,
+      "unresolvedRows": 1,
       "resolved": [
-        {
-          "type": "prepack",
-          "id": "514",
-          "name": "говядиня очищенная",
-          "grams": 500,
-          "calories": 0
-        },
         {
           "type": "ingredient",
           "id": "201",
@@ -400,25 +386,33 @@
           "calories": 0
         }
       ],
-      "unresolved": []
+      "unresolved": [
+        {
+          "type": "prepack",
+          "id": "514",
+          "name": "говядиня очищенная",
+          "grams": 500,
+          "reason": "nested_prepack_unresolved"
+        }
+      ]
     },
     {
       "productId": "594",
       "name": "фарш для ярах",
       "outputGrams": 505,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
+      "per100g": null,
+      "partialPer100g": {
         "calories": 12,
         "protein": 0.7,
         "fat": 0.7,
         "carbohydrates": 1.1
       },
-      "partialPer100g": null,
-      "knownInputGrams": 505,
+      "knownInputGrams": 205,
       "totalRows": 5,
-      "resolvedRows": 5,
-      "unresolvedRows": 0,
+      "resolvedRows": 4,
+      "unresolvedRows": 1,
       "resolved": [
         {
           "type": "prepack",
@@ -447,34 +441,35 @@
           "name": "Помидоры в соку ",
           "grams": 80,
           "calories": 13
-        },
+        }
+      ],
+      "unresolved": [
         {
           "type": "prepack",
           "id": "595",
           "name": "говядина тушенная",
           "grams": 300,
-          "calories": 0
+          "reason": "nested_prepack_unresolved"
         }
-      ],
-      "unresolved": []
+      ]
     },
     {
       "productId": "588",
       "name": "фарш мясной для долмы",
       "outputGrams": 2360,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
+      "per100g": null,
+      "partialPer100g": {
         "calories": 61,
         "protein": 2.5,
         "fat": 4.4,
         "carbohydrates": 3.5
       },
-      "partialPer100g": null,
-      "knownInputGrams": 2360,
+      "knownInputGrams": 1360,
       "totalRows": 11,
-      "resolvedRows": 11,
-      "unresolvedRows": 0,
+      "resolvedRows": 10,
+      "unresolvedRows": 1,
       "resolved": [
         {
           "type": "ingredient",
@@ -482,13 +477,6 @@
           "name": "Свинина ",
           "grams": 200,
           "calories": 354
-        },
-        {
-          "type": "prepack",
-          "id": "514",
-          "name": "говядиня очищенная",
-          "grams": 1000,
-          "calories": 0
         },
         {
           "type": "ingredient",
@@ -554,7 +542,15 @@
           "calories": 160
         }
       ],
-      "unresolved": []
+      "unresolved": [
+        {
+          "type": "prepack",
+          "id": "514",
+          "name": "говядиня очищенная",
+          "grams": 1000,
+          "reason": "nested_prepack_unresolved"
+        }
+      ]
     }
   ],
   "results": [
@@ -1801,113 +1797,93 @@
       "productId": "529",
       "name": "говядина отварная",
       "outputGrams": 2700,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
-        "calories": 0,
-        "protein": 0,
-        "fat": 0,
-        "carbohydrates": 0
-      },
+      "per100g": null,
       "partialPer100g": null,
-      "knownInputGrams": 2700,
+      "knownInputGrams": 0,
       "totalRows": 1,
-      "resolvedRows": 1,
-      "unresolvedRows": 0,
-      "resolved": [
+      "resolvedRows": 0,
+      "unresolvedRows": 1,
+      "resolved": [],
+      "unresolved": [
         {
           "type": "prepack",
           "id": "514",
           "name": "говядиня очищенная",
           "grams": 2700,
-          "calories": 0
+          "reason": "nested_prepack_unresolved"
         }
-      ],
-      "unresolved": []
+      ]
     },
     {
       "productId": "595",
       "name": "говядина тушенная",
       "outputGrams": 960,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
-        "calories": 0,
-        "protein": 0,
-        "fat": 0,
-        "carbohydrates": 0
-      },
+      "per100g": null,
       "partialPer100g": null,
-      "knownInputGrams": 960,
+      "knownInputGrams": 0,
       "totalRows": 1,
-      "resolvedRows": 1,
-      "unresolvedRows": 0,
-      "resolved": [
+      "resolvedRows": 0,
+      "unresolvedRows": 1,
+      "resolved": [],
+      "unresolved": [
         {
           "type": "prepack",
           "id": "514",
           "name": "говядиня очищенная",
           "grams": 960,
-          "calories": 0
+          "reason": "nested_prepack_unresolved"
         }
-      ],
-      "unresolved": []
+      ]
     },
     {
       "productId": "514",
       "name": "говядиня очищенная",
       "outputGrams": 4400,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
-        "calories": 0,
-        "protein": 0,
-        "fat": 0,
-        "carbohydrates": 0
-      },
+      "per100g": null,
       "partialPer100g": null,
-      "knownInputGrams": 4400,
+      "knownInputGrams": 0,
       "totalRows": 1,
-      "resolvedRows": 1,
-      "unresolvedRows": 0,
-      "resolved": [
+      "resolvedRows": 0,
+      "unresolvedRows": 1,
+      "resolved": [],
+      "unresolved": [
         {
           "type": "ingredient",
           "id": "196",
           "name": "Говядина  ",
           "grams": 4400,
-          "calories": 0
+          "reason": "animal_nutrition_missing_or_zero"
         }
-      ],
-      "unresolved": []
+      ]
     },
     {
       "productId": "515",
       "name": "говяжье суки очищенная",
       "outputGrams": 4900,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
-        "calories": 0,
-        "protein": 0,
-        "fat": 0,
-        "carbohydrates": 0
-      },
+      "per100g": null,
       "partialPer100g": null,
-      "knownInputGrams": 4900,
+      "knownInputGrams": 0,
       "totalRows": 1,
-      "resolvedRows": 1,
-      "unresolvedRows": 0,
-      "resolved": [
+      "resolvedRows": 0,
+      "unresolvedRows": 1,
+      "resolved": [],
+      "unresolved": [
         {
           "type": "ingredient",
           "id": "198",
           "name": "Говяжье суки ",
           "grams": 4900,
-          "calories": 0
+          "reason": "animal_nutrition_missing_or_zero"
         }
-      ],
-      "unresolved": []
+      ]
     },
     {
       "productId": "516",
@@ -2438,27 +2414,20 @@
       "productId": "602",
       "name": "каурма",
       "outputGrams": 18250,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
+      "per100g": null,
+      "partialPer100g": {
         "calories": 276,
         "protein": 0.4,
         "fat": 31.2,
         "carbohydrates": 0.4
       },
-      "partialPer100g": null,
-      "knownInputGrams": 18250,
+      "knownInputGrams": 8250,
       "totalRows": 6,
-      "resolvedRows": 6,
-      "unresolvedRows": 0,
+      "resolvedRows": 5,
+      "unresolvedRows": 1,
       "resolved": [
-        {
-          "type": "prepack",
-          "id": "514",
-          "name": "говядиня очищенная",
-          "grams": 10000,
-          "calories": 0
-        },
         {
           "type": "ingredient",
           "id": "396",
@@ -2495,7 +2464,15 @@
           "calories": 0
         }
       ],
-      "unresolved": []
+      "unresolved": [
+        {
+          "type": "prepack",
+          "id": "514",
+          "name": "говядиня очищенная",
+          "grams": 10000,
+          "reason": "nested_prepack_unresolved"
+        }
+      ]
     },
     {
       "productId": "711",
@@ -3208,47 +3185,42 @@
       "productId": "520",
       "name": "куриная печень очищенная",
       "outputGrams": 2800,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
-        "calories": 0,
-        "protein": 0,
-        "fat": 0,
-        "carbohydrates": 0
-      },
+      "per100g": null,
       "partialPer100g": null,
-      "knownInputGrams": 2800,
+      "knownInputGrams": 0,
       "totalRows": 1,
-      "resolvedRows": 1,
-      "unresolvedRows": 0,
-      "resolved": [
+      "resolvedRows": 0,
+      "unresolvedRows": 1,
+      "resolved": [],
+      "unresolved": [
         {
           "type": "ingredient",
           "id": "303",
           "name": "Куриная печень ",
           "grams": 2800,
-          "calories": 0
+          "reason": "animal_nutrition_missing_or_zero"
         }
-      ],
-      "unresolved": []
+      ]
     },
     {
       "productId": "530",
       "name": "куринный паштет",
       "outputGrams": 3576,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
+      "per100g": null,
+      "partialPer100g": {
         "calories": 137,
         "protein": 1.3,
         "fat": 12.4,
         "carbohydrates": 6
       },
-      "partialPer100g": null,
-      "knownInputGrams": 3600.6,
+      "knownInputGrams": 2400.6,
       "totalRows": 11,
-      "resolvedRows": 11,
-      "unresolvedRows": 0,
+      "resolvedRows": 10,
+      "unresolvedRows": 1,
       "resolved": [
         {
           "type": "ingredient",
@@ -3314,13 +3286,6 @@
           "calories": 0
         },
         {
-          "type": "prepack",
-          "id": "520",
-          "name": "куриная печень очищенная",
-          "grams": 1200,
-          "calories": 0
-        },
-        {
           "type": "ingredient",
           "id": "396",
           "name": "сливочное масло",
@@ -3328,53 +3293,56 @@
           "calories": 2653
         }
       ],
-      "unresolved": []
+      "unresolved": [
+        {
+          "type": "prepack",
+          "id": "520",
+          "name": "куриная печень очищенная",
+          "grams": 1200,
+          "reason": "nested_prepack_unresolved"
+        }
+      ]
     },
     {
       "productId": "511",
       "name": "куриный отвал б/к",
       "outputGrams": 6700,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
-        "calories": 0,
-        "protein": 0,
-        "fat": 0,
-        "carbohydrates": 0
-      },
+      "per100g": null,
       "partialPer100g": null,
-      "knownInputGrams": 6700,
+      "knownInputGrams": 0,
       "totalRows": 1,
-      "resolvedRows": 1,
-      "unresolvedRows": 0,
-      "resolved": [
+      "resolvedRows": 0,
+      "unresolvedRows": 1,
+      "resolved": [],
+      "unresolved": [
         {
           "type": "ingredient",
           "id": "352",
           "name": "Куриный отвал ",
           "grams": 6700,
-          "calories": 0
+          "reason": "animal_nutrition_missing_or_zero"
         }
-      ],
-      "unresolved": []
+      ]
     },
     {
       "productId": "522",
       "name": "куриный рулет",
       "outputGrams": 1355,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
+      "per100g": null,
+      "partialPer100g": {
         "calories": 39,
         "protein": 0.6,
         "fat": 1.5,
         "carbohydrates": 6.8
       },
-      "partialPer100g": null,
-      "knownInputGrams": 1355,
+      "knownInputGrams": 255,
       "totalRows": 9,
-      "resolvedRows": 9,
-      "unresolvedRows": 0,
+      "resolvedRows": 8,
+      "unresolvedRows": 1,
       "resolved": [
         {
           "type": "ingredient",
@@ -3431,16 +3399,17 @@
           "name": "Желатин",
           "grams": 25,
           "calories": 0
-        },
+        }
+      ],
+      "unresolved": [
         {
           "type": "prepack",
           "id": "519",
           "name": "курица чищенная",
           "grams": 1100,
-          "calories": 0
+          "reason": "nested_prepack_unresolved"
         }
-      ],
-      "unresolved": []
+      ]
     },
     {
       "productId": "644",
@@ -3565,47 +3534,42 @@
       "productId": "523",
       "name": "курица отварная",
       "outputGrams": 760,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
-        "calories": 0,
-        "protein": 0,
-        "fat": 0,
-        "carbohydrates": 0
-      },
+      "per100g": null,
       "partialPer100g": null,
-      "knownInputGrams": 760,
+      "knownInputGrams": 0,
       "totalRows": 1,
-      "resolvedRows": 1,
-      "unresolvedRows": 0,
-      "resolved": [
+      "resolvedRows": 0,
+      "unresolvedRows": 1,
+      "resolved": [],
+      "unresolved": [
         {
           "type": "ingredient",
           "id": "305",
           "name": "Курица ",
           "grams": 760,
-          "calories": 0
+          "reason": "animal_nutrition_missing_or_zero"
         }
-      ],
-      "unresolved": []
+      ]
     },
     {
       "productId": "525",
       "name": "курица с грибами",
       "outputGrams": 1260,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
+      "per100g": null,
+      "partialPer100g": {
         "calories": 89,
         "protein": 1.7,
         "fat": 7.6,
         "carbohydrates": 4.1
       },
-      "partialPer100g": null,
-      "knownInputGrams": 1256,
+      "knownInputGrams": 926,
       "totalRows": 9,
-      "resolvedRows": 9,
-      "unresolvedRows": 0,
+      "resolvedRows": 8,
+      "unresolvedRows": 1,
       "resolved": [
         {
           "type": "ingredient",
@@ -3658,48 +3622,44 @@
         },
         {
           "type": "prepack",
-          "id": "511",
-          "name": "куриный отвал б/к",
-          "grams": 330,
-          "calories": 0
-        },
-        {
-          "type": "prepack",
           "id": "527",
           "name": "соус бешамель",
           "grams": 500,
           "calories": 675
         }
       ],
-      "unresolved": []
+      "unresolved": [
+        {
+          "type": "prepack",
+          "id": "511",
+          "name": "куриный отвал б/к",
+          "grams": 330,
+          "reason": "nested_prepack_unresolved"
+        }
+      ]
     },
     {
       "productId": "519",
       "name": "курица чищенная",
       "outputGrams": 2200,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
-        "calories": 0,
-        "protein": 0,
-        "fat": 0,
-        "carbohydrates": 0
-      },
+      "per100g": null,
       "partialPer100g": null,
-      "knownInputGrams": 2200,
+      "knownInputGrams": 0,
       "totalRows": 1,
-      "resolvedRows": 1,
-      "unresolvedRows": 0,
-      "resolved": [
+      "resolvedRows": 0,
+      "unresolvedRows": 1,
+      "resolved": [],
+      "unresolved": [
         {
           "type": "ingredient",
           "id": "305",
           "name": "Курица ",
           "grams": 2200,
-          "calories": 0
+          "reason": "animal_nutrition_missing_or_zero"
         }
-      ],
-      "unresolved": []
+      ]
     },
     {
       "productId": "548",
@@ -3768,34 +3728,20 @@
       "productId": "584",
       "name": "кябаб из телятины",
       "outputGrams": 4800,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
+      "per100g": null,
+      "partialPer100g": {
         "calories": 23,
         "protein": 2.2,
         "fat": 1.1,
         "carbohydrates": 1
       },
-      "partialPer100g": null,
-      "knownInputGrams": 4800,
+      "knownInputGrams": 1000,
       "totalRows": 4,
-      "resolvedRows": 4,
-      "unresolvedRows": 0,
+      "resolvedRows": 2,
+      "unresolvedRows": 2,
       "resolved": [
-        {
-          "type": "prepack",
-          "id": "514",
-          "name": "говядиня очищенная",
-          "grams": 2800,
-          "calories": 0
-        },
-        {
-          "type": "ingredient",
-          "id": "352",
-          "name": "Куриный отвал ",
-          "grams": 1000,
-          "calories": 0
-        },
         {
           "type": "ingredient",
           "id": "272",
@@ -3811,7 +3757,22 @@
           "calories": 885
         }
       ],
-      "unresolved": []
+      "unresolved": [
+        {
+          "type": "prepack",
+          "id": "514",
+          "name": "говядиня очищенная",
+          "grams": 2800,
+          "reason": "nested_prepack_unresolved"
+        },
+        {
+          "type": "ingredient",
+          "id": "352",
+          "name": "Куриный отвал ",
+          "grams": 1000,
+          "reason": "animal_nutrition_missing_or_zero"
+        }
+      ]
     },
     {
       "productId": "652",
@@ -4209,19 +4170,19 @@
       "productId": "634",
       "name": "маринованная гов вырезка",
       "outputGrams": 330,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
+      "per100g": null,
+      "partialPer100g": {
         "calories": 2,
         "protein": 0.4,
         "fat": 0,
         "carbohydrates": 0.2
       },
-      "partialPer100g": null,
-      "knownInputGrams": 330,
+      "knownInputGrams": 30,
       "totalRows": 3,
-      "resolvedRows": 3,
-      "unresolvedRows": 0,
+      "resolvedRows": 2,
+      "unresolvedRows": 1,
       "resolved": [
         {
           "type": "ingredient",
@@ -4236,16 +4197,17 @@
           "name": "соус устричный",
           "grams": 15,
           "calories": 0
-        },
+        }
+      ],
+      "unresolved": [
         {
           "type": "prepack",
           "id": "515",
           "name": "говяжье суки очищенная",
           "grams": 300,
-          "calories": 0
+          "reason": "nested_prepack_unresolved"
         }
-      ],
-      "unresolved": []
+      ]
     },
     {
       "productId": "642",
@@ -4720,27 +4682,20 @@
       "productId": "570",
       "name": "мини кябаба",
       "outputGrams": 11950,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
+      "per100g": null,
+      "partialPer100g": {
         "calories": 69,
         "protein": 7.1,
         "fat": 3.5,
         "carbohydrates": 2.2
       },
-      "partialPer100g": null,
-      "knownInputGrams": 11950,
+      "knownInputGrams": 5950,
       "totalRows": 9,
-      "resolvedRows": 9,
-      "unresolvedRows": 0,
+      "resolvedRows": 8,
+      "unresolvedRows": 1,
       "resolved": [
-        {
-          "type": "prepack",
-          "id": "515",
-          "name": "говяжье суки очищенная",
-          "grams": 6000,
-          "calories": 0
-        },
         {
           "type": "ingredient",
           "id": "201",
@@ -4798,7 +4753,15 @@
           "calories": 126
         }
       ],
-      "unresolved": []
+      "unresolved": [
+        {
+          "type": "prepack",
+          "id": "515",
+          "name": "говяжье суки очищенная",
+          "grams": 6000,
+          "reason": "nested_prepack_unresolved"
+        }
+      ]
     },
     {
       "productId": "798",
@@ -7282,57 +7245,47 @@
       "productId": "608",
       "name": "сердечки отварные",
       "outputGrams": 430,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
-        "calories": 0,
-        "protein": 0,
-        "fat": 0,
-        "carbohydrates": 0
-      },
+      "per100g": null,
       "partialPer100g": null,
-      "knownInputGrams": 430,
+      "knownInputGrams": 0,
       "totalRows": 1,
-      "resolvedRows": 1,
-      "unresolvedRows": 0,
-      "resolved": [
+      "resolvedRows": 0,
+      "unresolvedRows": 1,
+      "resolved": [],
+      "unresolved": [
         {
           "type": "prepack",
           "id": "499",
           "name": "сердечки чищенные",
           "grams": 430,
-          "calories": 0
+          "reason": "nested_prepack_unresolved"
         }
-      ],
-      "unresolved": []
+      ]
     },
     {
       "productId": "499",
       "name": "сердечки чищенные",
       "outputGrams": 2300,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
-        "calories": 0,
-        "protein": 0,
-        "fat": 0,
-        "carbohydrates": 0
-      },
+      "per100g": null,
       "partialPer100g": null,
-      "knownInputGrams": 2300,
+      "knownInputGrams": 0,
       "totalRows": 1,
-      "resolvedRows": 1,
-      "unresolvedRows": 0,
-      "resolved": [
+      "resolvedRows": 0,
+      "unresolvedRows": 1,
+      "resolved": [],
+      "unresolved": [
         {
           "type": "ingredient",
           "id": "304",
           "name": "Куриные сердечки ",
           "grams": 2300,
-          "calories": 0
+          "reason": "animal_nutrition_missing_or_zero"
         }
-      ],
-      "unresolved": []
+      ]
     },
     {
       "productId": "658",
@@ -10362,19 +10315,19 @@
       "productId": "510",
       "name": "фарш для баклажана",
       "outputGrams": 790,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
+      "per100g": null,
+      "partialPer100g": {
         "calories": 308,
         "protein": 3.8,
         "fat": 31.6,
         "carbohydrates": 5.1
       },
-      "partialPer100g": null,
-      "knownInputGrams": 790,
+      "knownInputGrams": 490,
       "totalRows": 9,
-      "resolvedRows": 9,
-      "unresolvedRows": 0,
+      "resolvedRows": 8,
+      "unresolvedRows": 1,
       "resolved": [
         {
           "type": "ingredient",
@@ -10431,44 +10384,40 @@
           "name": "Перец красный /молотый/ ",
           "grams": 10,
           "calories": 28
-        },
+        }
+      ],
+      "unresolved": [
         {
           "type": "prepack",
           "id": "511",
           "name": "куриный отвал б/к",
           "grams": 300,
-          "calories": 0
+          "reason": "nested_prepack_unresolved"
         }
-      ],
-      "unresolved": []
+      ]
     },
     {
       "productId": "603",
       "name": "фарш для пальчиков",
       "outputGrams": 700,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
-        "calories": 95,
-        "protein": 10.3,
-        "fat": 5.1,
-        "carbohydrates": 1.6
-      },
+      "per100g": null,
       "partialPer100g": null,
-      "knownInputGrams": 700,
+      "knownInputGrams": 0,
       "totalRows": 1,
-      "resolvedRows": 1,
-      "unresolvedRows": 0,
-      "resolved": [
+      "resolvedRows": 0,
+      "unresolvedRows": 1,
+      "resolved": [],
+      "unresolved": [
         {
           "type": "prepack",
           "id": "543",
           "name": "фарш для хинкали",
           "grams": 700,
-          "calories": 665
+          "reason": "nested_prepack_unresolved"
         }
-      ],
-      "unresolved": []
+      ]
     },
     {
       "productId": "544",
@@ -10558,27 +10507,20 @@
       "productId": "543",
       "name": "фарш для хинкали",
       "outputGrams": 1305,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
+      "per100g": null,
+      "partialPer100g": {
         "calories": 95,
         "protein": 10.3,
         "fat": 5.1,
         "carbohydrates": 1.6
       },
-      "partialPer100g": null,
-      "knownInputGrams": 1305,
+      "knownInputGrams": 805,
       "totalRows": 7,
-      "resolvedRows": 7,
-      "unresolvedRows": 0,
+      "resolvedRows": 6,
+      "unresolvedRows": 1,
       "resolved": [
-        {
-          "type": "prepack",
-          "id": "514",
-          "name": "говядиня очищенная",
-          "grams": 500,
-          "calories": 0
-        },
         {
           "type": "ingredient",
           "id": "201",
@@ -10622,25 +10564,33 @@
           "calories": 0
         }
       ],
-      "unresolved": []
+      "unresolved": [
+        {
+          "type": "prepack",
+          "id": "514",
+          "name": "говядиня очищенная",
+          "grams": 500,
+          "reason": "nested_prepack_unresolved"
+        }
+      ]
     },
     {
       "productId": "581",
       "name": "фарш для цыпленка",
       "outputGrams": 2169,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
+      "per100g": null,
+      "partialPer100g": {
         "calories": 271,
         "protein": 5.2,
         "fat": 23,
         "carbohydrates": 13.4
       },
-      "partialPer100g": null,
-      "knownInputGrams": 2169,
+      "knownInputGrams": 1369,
       "totalRows": 10,
-      "resolvedRows": 10,
-      "unresolvedRows": 0,
+      "resolvedRows": 9,
+      "unresolvedRows": 1,
       "resolved": [
         {
           "type": "ingredient",
@@ -10704,16 +10654,17 @@
           "name": "Майонез ",
           "grams": 400,
           "calories": 2720
-        },
+        }
+      ],
+      "unresolved": [
         {
           "type": "ingredient",
           "id": "352",
           "name": "Куриный отвал ",
           "grams": 800,
-          "calories": 0
+          "reason": "animal_nutrition_missing_or_zero"
         }
-      ],
-      "unresolved": []
+      ]
     },
     {
       "productId": "596",
@@ -10824,19 +10775,19 @@
       "productId": "594",
       "name": "фарш для ярах",
       "outputGrams": 505,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
+      "per100g": null,
+      "partialPer100g": {
         "calories": 12,
         "protein": 0.7,
         "fat": 0.7,
         "carbohydrates": 1.1
       },
-      "partialPer100g": null,
-      "knownInputGrams": 505,
+      "knownInputGrams": 205,
       "totalRows": 5,
-      "resolvedRows": 5,
-      "unresolvedRows": 0,
+      "resolvedRows": 4,
+      "unresolvedRows": 1,
       "resolved": [
         {
           "type": "prepack",
@@ -10865,34 +10816,35 @@
           "name": "Помидоры в соку ",
           "grams": 80,
           "calories": 13
-        },
+        }
+      ],
+      "unresolved": [
         {
           "type": "prepack",
           "id": "595",
           "name": "говядина тушенная",
           "grams": 300,
-          "calories": 0
+          "reason": "nested_prepack_unresolved"
         }
-      ],
-      "unresolved": []
+      ]
     },
     {
       "productId": "588",
       "name": "фарш мясной для долмы",
       "outputGrams": 2360,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
+      "per100g": null,
+      "partialPer100g": {
         "calories": 61,
         "protein": 2.5,
         "fat": 4.4,
         "carbohydrates": 3.5
       },
-      "partialPer100g": null,
-      "knownInputGrams": 2360,
+      "knownInputGrams": 1360,
       "totalRows": 11,
-      "resolvedRows": 11,
-      "unresolvedRows": 0,
+      "resolvedRows": 10,
+      "unresolvedRows": 1,
       "resolved": [
         {
           "type": "ingredient",
@@ -10900,13 +10852,6 @@
           "name": "Свинина ",
           "grams": 200,
           "calories": 354
-        },
-        {
-          "type": "prepack",
-          "id": "514",
-          "name": "говядиня очищенная",
-          "grams": 1000,
-          "calories": 0
         },
         {
           "type": "ingredient",
@@ -10972,7 +10917,15 @@
           "calories": 160
         }
       ],
-      "unresolved": []
+      "unresolved": [
+        {
+          "type": "prepack",
+          "id": "514",
+          "name": "говядиня очищенная",
+          "grams": 1000,
+          "reason": "nested_prepack_unresolved"
+        }
+      ]
     },
     {
       "productId": "597",
@@ -11293,27 +11246,20 @@
       "productId": "582",
       "name": "харриса",
       "outputGrams": 13870,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
+      "per100g": null,
+      "partialPer100g": {
         "calories": 26,
         "protein": 0,
         "fat": 2.9,
         "carbohydrates": 0.1
       },
-      "partialPer100g": null,
-      "knownInputGrams": 13870,
+      "knownInputGrams": 10620,
       "totalRows": 6,
-      "resolvedRows": 6,
-      "unresolvedRows": 0,
+      "resolvedRows": 5,
+      "unresolvedRows": 1,
       "resolved": [
-        {
-          "type": "ingredient",
-          "id": "351",
-          "name": "Куринный окорок /բուդ/ ",
-          "grams": 3250,
-          "calories": 0
-        },
         {
           "type": "ingredient",
           "id": "460",
@@ -11350,7 +11296,15 @@
           "calories": 0
         }
       ],
-      "unresolved": []
+      "unresolved": [
+        {
+          "type": "ingredient",
+          "id": "351",
+          "name": "Куринный окорок /բուդ/ ",
+          "grams": 3250,
+          "reason": "animal_nutrition_missing_or_zero"
+        }
+      ]
     },
     {
       "productId": "564",
@@ -11853,27 +11807,20 @@
       "productId": "630",
       "name": "чакабули",
       "outputGrams": 1130,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
+      "per100g": null,
+      "partialPer100g": {
         "calories": 22,
         "protein": 1.5,
         "fat": 0.5,
         "carbohydrates": 4
       },
-      "partialPer100g": null,
-      "knownInputGrams": 1130,
+      "knownInputGrams": 630,
       "totalRows": 6,
-      "resolvedRows": 6,
-      "unresolvedRows": 0,
+      "resolvedRows": 5,
+      "unresolvedRows": 1,
       "resolved": [
-        {
-          "type": "prepack",
-          "id": "529",
-          "name": "говядина отварная",
-          "grams": 500,
-          "calories": 0
-        },
         {
           "type": "ingredient",
           "id": "335",
@@ -11910,7 +11857,15 @@
           "calories": 0
         }
       ],
-      "unresolved": []
+      "unresolved": [
+        {
+          "type": "prepack",
+          "id": "529",
+          "name": "говядина отварная",
+          "grams": 500,
+          "reason": "nested_prepack_unresolved"
+        }
+      ]
     },
     {
       "productId": "751",
@@ -12056,19 +12011,19 @@
       "productId": "709",
       "name": "чизкейк",
       "outputGrams": 1825,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
+      "per100g": null,
+      "partialPer100g": {
         "calories": 121,
         "protein": 0.9,
         "fat": 6,
         "carbohydrates": 16.7
       },
-      "partialPer100g": null,
-      "knownInputGrams": 1826.5,
+      "knownInputGrams": 1546.5,
       "totalRows": 9,
-      "resolvedRows": 9,
-      "unresolvedRows": 0,
+      "resolvedRows": 8,
+      "unresolvedRows": 1,
       "resolved": [
         {
           "type": "ingredient",
@@ -12083,13 +12038,6 @@
           "name": "сливочное масло",
           "grams": 120,
           "calories": 860
-        },
-        {
-          "type": "ingredient",
-          "id": "50",
-          "name": "Печенье Юбилейное",
-          "grams": 280,
-          "calories": 0
         },
         {
           "type": "ingredient",
@@ -12134,33 +12082,34 @@
           "calories": 15
         }
       ],
-      "unresolved": []
+      "unresolved": [
+        {
+          "type": "ingredient",
+          "id": "50",
+          "name": "Печенье Юбилейное",
+          "grams": 280,
+          "reason": "animal_nutrition_missing_or_zero"
+        }
+      ]
     },
     {
       "productId": "678",
       "name": "шила",
       "outputGrams": 6300,
-      "status": "calculated",
+      "status": "needs_review",
       "source": "Poster menu.getPrepacks + verified ingredient nutrition",
-      "per100g": {
+      "per100g": null,
+      "partialPer100g": {
         "calories": 0,
         "protein": 0,
         "fat": 0,
         "carbohydrates": 0
       },
-      "partialPer100g": null,
-      "knownInputGrams": 6300,
+      "knownInputGrams": 5550,
       "totalRows": 3,
-      "resolvedRows": 3,
-      "unresolvedRows": 0,
+      "resolvedRows": 2,
+      "unresolvedRows": 1,
       "resolved": [
-        {
-          "type": "prepack",
-          "id": "519",
-          "name": "курица чищенная",
-          "grams": 750,
-          "calories": 0
-        },
         {
           "type": "ingredient",
           "id": "62",
@@ -12176,7 +12125,15 @@
           "calories": 0
         }
       ],
-      "unresolved": []
+      "unresolved": [
+        {
+          "type": "prepack",
+          "id": "519",
+          "name": "курица чищенная",
+          "grams": 750,
+          "reason": "nested_prepack_unresolved"
+        }
+      ]
     },
     {
       "productId": "604",

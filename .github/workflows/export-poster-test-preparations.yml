@@ -5,11 +5,11 @@ on:
     paths:
       - '.github/workflows/export-poster-test-preparations.yml'
       - 'scripts/export-poster-test-preparations.cjs'
-      - 'scripts/calculate-prepack-nutrition.cjs'
-      - 'scripts/audit-prepack-blockers.cjs'
-      - 'data/cia-nutrition-manual-top20.json'
-      - 'data/cia-nutrition-verified-overrides.json'
   workflow_dispatch:
+
+concurrency:
+  group: poster-test-nutrition-writes
+  cancel-in-progress: false
 
 jobs:
   export:
